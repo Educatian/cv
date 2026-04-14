@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Jewoong Moon | Research CV</title>
+    <meta
+      name="description"
+      content="GitHub-inspired academic CV website for Dr. Jewoong Moon, featuring research in AI, XR, game-based learning, and learning analytics."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#overview">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="brand-lockup">
+          <span class="repo-owner">jmoon19</span>
+          <span class="repo-separator">/</span>
+          <span class="repo-name">research-cv</span>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#overview">Overview</a>
+          <a href="#publications">Publications</a>
+          <a href="#grants">Grants</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#service">Service</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">README.md</p>
+            <h1>Dr. Jewoong Moon</h1>
+            <p class="hero-summary">
+              Assistant Professor of Instructional Technology at The University
+              of Alabama designing AI, XR, game-based, and analytics-driven
+              learning systems for more adaptive and inclusive education.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:jmoon19@ua.edu"
+                >Email</a
+              >
+              <a class="button" href="assets/CV_202604_MOON.docx" download
+                >Download CV</a
+              >
+              <a
+                class="button"
+                href="https://adielab.ua.edu"
+                target="_blank"
+                rel="noreferrer"
+                >Lab Website</a
+              >
+            </div>
+            <ul class="hero-stats" id="hero-stats" aria-label="Profile metrics"></ul>
+          </div>
+
+          <div class="hero-panel reveal">
+            <div class="panel-kicker">Current research profile</div>
+            <p class="panel-title">
+              Human-centered educational technology research spanning
+              generative AI, immersive simulation, learning analytics, and
+              computationally rich teacher and STEM learning environments.
+            </p>
+            <div class="focus-chip-row" id="focus-chips"></div>
+          </div>
+        </section>
+
+        <section class="main-grid">
+          <aside class="profile-rail">
+            <div class="rail-block profile-intro reveal">
+              <div class="monogram" aria-hidden="true">JM</div>
+              <p class="role-line">Assistant Professor</p>
+              <p class="affiliation-line">
+                Department of Educational Leadership, Policy, and Technology
+                Studies
+              </p>
+              <p class="affiliation-line">The University of Alabama</p>
+            </div>
+
+            <div class="rail-block reveal">
+              <h2>Contact</h2>
+              <ul class="compact-list">
+                <li><a href="mailto:jmoon19@ua.edu">jmoon19@ua.edu</a></li>
+                <li>
+                  <a
+                    href="https://jmoon.people.ua.edu"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Personal homepage</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.researchgate.net/profile/Jewoong-Moon"
+                    target="_blank"
+                    rel="noreferrer"
+                    >ResearchGate</a
+                  >
+                </li>
+                <li>Autherine Lucy Hall 315E, Tuscaloosa, Alabama</li>
+              </ul>
+            </div>
+
+            <div class="rail-block reveal">
+              <h2>Research Expertise</h2>
+              <ul class="compact-list">
+                <li>Digital game-based learning</li>
+                <li>Inclusive and immersive learning design</li>
+                <li>Learning analytics and educational data mining</li>
+                <li>Adaptive learning system design</li>
+                <li>Engineering education</li>
+              </ul>
+            </div>
+
+            <div class="rail-block reveal">
+              <h2>Appointments and Education</h2>
+              <ol class="timeline-list">
+                <li>
+                  <span class="timeline-year">2021-present</span>
+                  <span class="timeline-detail"
+                    >Assistant Professor, Instructional Technology, The
+                    University of Alabama</span
+                  >
+                </li>
+                <li>
+                  <span class="timeline-year">2021</span>
+                  <span class="timeline-detail"
+                    >PhD, Instructional Systems and Learning Technologies,
+                    Florida State University</span
+                  >
+                </li>
+                <li>
+                  <span class="timeline-year">2014</span>
+                  <span class="timeline-detail"
+                    >MA, Educational Technology, Chonnam National University</span
+                  >
+                </li>
+                <li>
+                  <span class="timeline-year">2012</span>
+                  <span class="timeline-detail"
+                    >BEd, Educational Foundations, Chonnam National
+                    University</span
+                  >
+                </li>
+              </ol>
+            </div>
+
+            <div class="rail-block reveal">
+              <h2>Selected Honors</h2>
+              <ul class="compact-list" id="honor-list"></ul>
+            </div>
+          </aside>
+
+          <div class="readme-column">
+            <section id="overview" class="content-section reveal">
+              <div class="section-heading">
+                <span class="section-label">Overview</span>
+                <h2>Research at the intersection of AI, XR, analytics, and learning design</h2>
+              </div>
+              <p class="lead-paragraph">
+                Dr. Jewoong Moon studies how computationally rich learning
+                environments can better support teacher education, inclusive
+                STEM learning, and adaptive educational experiences. His work
+                integrates generative AI, virtual and mixed reality, game-based
+                learning, and multimodal analytics to model learning dynamics
+                and design new forms of feedback, assessment, and immersive
+                instruction.
+              </p>
+              <p class="lead-paragraph">
+                The site below reframes the attached CV as a GitHub-inspired
+                research profile: a concise readme, pinned initiatives, selected
+                publications, grant activity, mentoring footprint, and academic
+                leadership.
+              </p>
+              <div class="pinned-grid" id="initiative-grid"></div>
+            </section>
+
+            <section id="publications" class="content-section reveal">
+              <div class="section-heading">
+                <span class="section-label">Selected Publications</span>
+                <h2>Recent and representative scholarship</h2>
+              </div>
+              <p class="section-note">
+                Curated from a publication record that includes 57 journal
+                articles, 21 refereed conference proceedings, 8 book chapters,
+                and 70 presentations.
+              </p>
+              <div class="filter-bar" id="publication-filters" aria-label="Publication filters"></div>
+              <ol class="publication-list" id="publication-list"></ol>
+            </section>
+
+            <section id="grants" class="content-section reveal">
+              <div class="section-heading">
+                <span class="section-label">Funding</span>
+                <h2>Funded work and proposal pipeline</h2>
+              </div>
+              <p class="section-note">
+                The CV reports $107,459 in funded awards, with active proposal
+                development around AI, immersive learning, STEM education, and
+                archival retrieval.
+              </p>
+              <div class="split-columns">
+                <div>
+                  <h3>Funded</h3>
+                  <ul class="stack-list" id="funded-list"></ul>
+                </div>
+                <div>
+                  <h3>Submitted and Pending</h3>
+                  <ul class="stack-list" id="pending-list"></ul>
+                </div>
+              </div>
+            </section>
+
+            <section id="teaching" class="content-section reveal">
+              <div class="section-heading">
+                <span class="section-label">Teaching and Mentoring</span>
+                <h2>Doctoral instruction, course design, and advising</h2>
+              </div>
+              <div class="mini-metric-grid" id="mentoring-metrics"></div>
+              <div class="split-columns teaching-columns">
+                <div>
+                  <h3>Recent Teaching Portfolio</h3>
+                  <ul class="compact-list">
+                    <li>AIL 689 Practicum in Instructional Technology</li>
+                    <li>AIL 690 Seminar in Instructional Technology</li>
+                    <li>AIL 699 Dissertation Research</li>
+                    <li>AIL 605 Interactive Multimedia Processes</li>
+                    <li>AIL 606 Software Technology</li>
+                    <li>INTE534 Issues and Trends of Instructional Technology</li>
+                    <li>INTE535 Analysis, Implementation, and Evaluation of Assistive Technology</li>
+                    <li>CAT100, CAT200, and CAT250 undergraduate computing courses</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Course Development and Mentoring Scope</h3>
+                  <ul class="compact-list">
+                    <li>Developed AIL 691 AI, Learning, and Instructional Systems</li>
+                    <li>Developed AIL 692 Introduction to Literature Synthesis in Instructional Technology Research</li>
+                    <li>Redesigned doctoral and masters courses across instructional technology and assistive technology</li>
+                    <li>Chair or co-chair for five doctoral dissertations</li>
+                    <li>Committee member across nine doctoral dissertations and one masters thesis</li>
+                    <li>Advises and mentors doctoral, masters, and undergraduate researchers across education, nursing, and engineering</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="section-note">
+                Earlier teaching at Florida State University included graduate
+                instruction in multimedia development and instructional systems
+                research writing.
+              </p>
+            </section>
+
+            <section id="service" class="content-section reveal">
+              <div class="section-heading">
+                <span class="section-label">Service and Leadership</span>
+                <h2>Editorial work, society leadership, and field-building</h2>
+              </div>
+              <div class="split-columns">
+                <div>
+                  <h3>Editorial Roles</h3>
+                  <ul class="compact-list" id="editorial-list"></ul>
+                </div>
+                <div>
+                  <h3>Professional Leadership</h3>
+                  <ul class="compact-list" id="leadership-list"></ul>
+                </div>
+              </div>
+              <div class="service-foot">
+                <p>
+                  Review service includes journals such as <span>Computers &amp;
+                  Education</span>, <span>British Journal of Educational
+                  Technology</span>, <span>IEEE Transactions on Learning
+                  Technologies</span>, <span>Journal of Learning Analytics</span>,
+                  and <span>Virtual Reality</span>, alongside grant review for
+                  the National Science Foundation and the Swiss National Science
+                  Foundation.
+                </p>
+              </div>
+            </section>
+
+            <section id="talks" class="content-section reveal">
+              <div class="section-heading">
+                <span class="section-label">Talks and Proceedings</span>
+                <h2>Recent scholarly communication and project visibility</h2>
+              </div>
+              <ul class="talk-list" id="talk-list"></ul>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          Built as a GitHub Pages-ready academic profile using the attached CV
+          as source material.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
