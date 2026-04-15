@@ -1,13 +1,50 @@
 # Dr. Jewoong Moon Research CV Site
 
-Static GitHub Pages-style academic CV website built from `CV_202604_MOON.docx`.
+Static academic CV website that can now be regenerated from a CV `.docx`.
 
-## Files
+## Core Files
 
 - `index.html` - page structure
-- `styles.css` - GitHub-inspired visual system and responsive layout
-- `app.js` - structured data and client-side rendering
-- `assets/CV_202604_MOON.docx` - downloadable source CV
+- `styles.css` - responsive visual system
+- `app.js` - client-side rendering with generated-data fallback
+- `publication.html` / `publication.js` - publication detail pages
+- `assets/current-cv.docx` - stable downloadable CV asset used by the site
+- `assets/site-data.generated.json` - parsed CV data for inspection
+- `assets/site-data.js` - browser-ready generated data file
+- `assets/publication-abstracts.json` - abstract library used by publication cards/detail pages
+
+## CV-Driven Update Flow
+
+Drop in a new CV and run one command:
+
+```bash
+npm run site:update -- --cv "C:\path\to\new-cv.docx"
+```
+
+This will:
+
+1. copy the file into `assets/current-cv.docx`
+2. parse the CV into site data
+3. refresh the publication abstract library
+
+If you also want the slower Playwright recovery pass for missing abstracts:
+
+```bash
+npm run site:update:playwright -- --cv "C:\path\to\new-cv.docx"
+```
+
+If the new CV is already saved as `assets/current-cv.docx`, you can simply run:
+
+```bash
+npm run site:update
+```
+
+## Parsing Scripts
+
+- `scripts/generate_site_data.py` - extracts profile, education, affiliations, teaching, grants, service, talks, and publications into structured site data
+- `scripts/update_publication_abstracts.py` - base DOI-driven abstract collection
+- `scripts/update_publication_abstracts_playwright.mjs` - Playwright fallback for harder publisher pages
+- `scripts/update_site_from_cv.py` - orchestration script for the full update cycle
 
 ## Publish on GitHub Pages
 

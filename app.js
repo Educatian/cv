@@ -1,4 +1,6 @@
-const stats = [
+const siteData = window.__cvSiteData || {};
+
+const stats = siteData.stats || [
   { value: "57", label: "Journal articles" },
   { value: "21", label: "Conference proceedings" },
   { value: "8", label: "Book chapters" },
@@ -6,7 +8,7 @@ const stats = [
   { value: "$107K+", label: "Funded awards" },
 ];
 
-const focusAreas = [
+const focusAreas = siteData.focusAreas || [
   "Generative AI in education",
   "Extended reality",
   "Learning analytics",
@@ -15,28 +17,60 @@ const focusAreas = [
   "Inclusive STEM design",
 ];
 
-const affiliations = [
-  "American Educational Research Association (AERA)",
-  "Association for Education Communications and Technology (AECT)",
-  "International Society of the Learning Sciences (ISLS)",
-  "Immersive Learning Research Network (iLRN)",
+const affiliations = siteData.affiliations || [
+  {
+    acronym: "AERA",
+    name: "American Educational Research Association",
+    label: "Research Association",
+    logo: "assets/affiliation-logos/aera.png",
+    alt: "AERA logo",
+    url: "https://www.aera.net/",
+    theme: "sand",
+  },
+  {
+    acronym: "AECT",
+    name: "Association for Education Communications and Technology",
+    label: "Professional Association",
+    logo: "assets/affiliation-logos/aect.png",
+    alt: "AECT logo",
+    url: "https://www.aect.org/",
+    theme: "sky",
+  },
+  {
+    acronym: "ISLS",
+    name: "International Society of the Learning Sciences",
+    label: "Scholarly Society",
+    logo: "assets/affiliation-logos/isls.png",
+    alt: "ISLS logo",
+    url: "https://www.isls.org/",
+    theme: "sage",
+  },
+  {
+    acronym: "iLRN",
+    name: "Immersive Learning Research Network",
+    label: "Research Network",
+    logo: "assets/affiliation-logos/ilrn.png",
+    alt: "Immersive Learning Research Network logo",
+    url: "https://www.immersivelrn.org/",
+    theme: "night",
+  },
 ];
 
-const honors = [
+const honors = siteData.honors || [
   "2026 Nellie Rose McCrory Faculty Excellence Award - Research Division",
   "2026 William T. Grant Foundation Scholars Program Finalist",
   "2025 Dean's Merit Award in Research Excellence",
   "2024 Outstanding iLEAD Paper Award",
 ];
 
-const grantPortfolio = {
+const grantPortfolio = siteData.grantPortfolio || {
   fundedTotal: 107459,
   pendingTotal: 638536,
   fundedCount: 12,
   pendingCount: 4,
 };
 
-const news = [
+const news = siteData.news || [
   {
     date: "Apr 2026",
     type: "Conference",
@@ -75,7 +109,7 @@ const news = [
   },
 ];
 
-const initiatives = [
+const initiatives = siteData.initiatives || [
   {
     name: "ReviewLens",
     badge: "2026",
@@ -113,7 +147,7 @@ const initiatives = [
   },
 ];
 
-const publications = [
+const publications = siteData.publications || [
   {
     year: "2026",
     title:
@@ -250,7 +284,7 @@ const publications = [
   },
 ];
 
-const completeJournalArticles = [
+const completeJournalArticles = siteData.completeJournalArticles || [
   {
     year: "2026",
     category: "International",
@@ -652,7 +686,7 @@ const completeJournalArticles = [
   },
 ];
 
-const grants = {
+const grants = siteData.grants || {
   funded: [
     {
       title:
@@ -726,14 +760,14 @@ const grants = {
   ],
 };
 
-const mentoringMetrics = [
+const mentoringMetrics = siteData.mentoringMetrics || [
   { value: "5", label: "doctoral chairs or co-chairs" },
   { value: "9", label: "doctoral committee appointments" },
   { value: "7", label: "current course advisees" },
   { value: "10", label: "research mentees across projects" },
 ];
 
-const editorialRoles = [
+const editorialRoles = siteData.editorialRoles || [
   {
     badge: "BIT",
     label: "Journal",
@@ -776,7 +810,7 @@ const editorialRoles = [
   },
 ];
 
-const leadershipRoles = [
+const leadershipRoles = siteData.leadershipRoles || [
   {
     badge: "APSCE",
     label: "Society",
@@ -819,7 +853,7 @@ const leadershipRoles = [
   },
 ];
 
-const talks = [
+const talks = siteData.talks || [
   {
     title:
       "Teachers Designing AI: A Mentored Model of Situated Learning in the National AI Challenge",
@@ -851,6 +885,112 @@ const talks = [
     meta: "Panel Discussion, AECT 2025 | Las Vegas, United States",
   },
 ];
+
+const contact = siteData.contact || {
+  email: "jmoon19@ua.edu",
+  homepage: "https://jmoon.people.ua.edu",
+  researchgate: "https://www.researchgate.net/profile/Jewoong-Moon",
+  labWebsite: "https://adielab.ua.edu",
+  universityAddress:
+    "Department of Educational Leadership, Policy, and Technology Studies Autherine Lucy Hall 315E The University of Alabama Tuscaloosa, Alabama",
+};
+
+const profile = siteData.profile || {
+  name: "Dr. Jewoong Moon",
+  eyebrow: "Instructional Technology | College of Education",
+  heroTitleMeta: "Assistant Professor of Instructional Technology",
+  heroSummary:
+    "Research at The University of Alabama focused on generative AI, extended reality, game-based learning, and learning analytics for adaptive, inclusive, and computationally rich educational environments.",
+  heroPanelTitle:
+    "A research agenda centered on teacher learning, immersive simulation, AI-enhanced pedagogy, and evidence-rich models of how learners act, adapt, and solve problems across digital settings.",
+  roleLine: "Assistant Professor",
+  affiliationLines: [
+    "Department of Educational Leadership, Policy, and Technology Studies",
+    "The University of Alabama",
+  ],
+  officeLocation: "Autherine Lucy Hall 315E, Tuscaloosa, Alabama",
+  department: "Department of Educational Leadership, Policy, and Technology Studies",
+  institution: "The University of Alabama",
+  email: contact.email,
+  homepage: contact.homepage,
+  researchgate: contact.researchgate,
+  labWebsite: contact.labWebsite,
+  cvDownloadPath: "assets/CV_202604_MOON.docx",
+};
+
+const overview = siteData.overview || {
+  title: "Research at the intersection of AI, XR, analytics, and learning experience design",
+  paragraphs: [
+    "Dr. Jewoong Moon studies how computationally rich learning environments can better support teacher education, inclusive STEM learning, and adaptive educational experiences. His work integrates generative AI, virtual and mixed reality, game-based learning, and multimodal analytics to model learning dynamics and design new forms of feedback, assessment, and immersive instruction.",
+    "The site below reframes the attached CV as a GitHub-inspired research profile: a concise readme, pinned initiatives, selected publications, grant activity, mentoring footprint, and academic leadership.",
+  ],
+};
+
+const appointmentsEducation = siteData.appointmentsEducation || [
+  {
+    year: "2021-present",
+    title: "Assistant Professor",
+    detail: "Instructional Technology, The University of Alabama",
+    institution: "The University of Alabama",
+    logo: "assets/institution-logos/ua-capstone-a-crimson.svg",
+    logoAlt: "The University of Alabama logo",
+    logoTheme: "ua",
+  },
+  {
+    year: "2021",
+    title: "PhD",
+    detail: "Instructional Systems and Learning Technologies, Florida State University",
+    institution: "Florida State University",
+    logo: "assets/institution-logos/fsu-wordmark-gold.svg",
+    logoAlt: "Florida State University logo",
+    logoTheme: "fsu",
+  },
+  {
+    year: "2014",
+    title: "MA",
+    detail: "Educational Technology, Chonnam National University",
+    institution: "Chonnam National University",
+    logo: "assets/institution-logos/chonnam-national-university.png",
+    logoAlt: "Chonnam National University logo",
+    logoTheme: "cnu",
+  },
+  {
+    year: "2012",
+    title: "BEd",
+    detail: "Educational Foundations, Chonnam National University",
+    institution: "Chonnam National University",
+    logo: "assets/institution-logos/chonnam-national-university.png",
+    logoAlt: "Chonnam National University logo",
+    logoTheme: "cnu",
+  },
+];
+
+const teaching = siteData.teaching || {
+  teachingPortfolio: [
+    "AIL 689 Practicum in Instructional Technology",
+    "AIL 690 Seminar in Instructional Technology",
+    "AIL 699 Dissertation Research",
+    "AIL 605 Interactive Multimedia Processes",
+    "AIL 606 Software Technology",
+    "INTE534 Issues and Trends of Instructional Technology",
+    "INTE535 Analysis, Implementation, and Evaluation of Assistive Technology",
+    "CAT100, CAT200, and CAT250 undergraduate computing courses",
+  ],
+  courseDevelopment: [
+    "Developed AIL 691 AI, Learning, and Instructional Systems",
+    "Developed AIL 692 Introduction to Literature Synthesis in Instructional Technology Research",
+    "Redesigned doctoral and masters courses across instructional technology and assistive technology",
+    "Chair or co-chair for five doctoral dissertations",
+    "Committee member across nine doctoral dissertations and one masters thesis",
+    "Advises and mentors doctoral, masters, and undergraduate researchers across education, nursing, and engineering",
+  ],
+  earlierTeachingNote:
+    "Earlier teaching at Florida State University included graduate instruction in multimedia development and instructional systems research writing.",
+};
+
+const serviceReviewCopy =
+  siteData.serviceReviewCopy ||
+  "Review service includes journals such as Computers & Education, British Journal of Educational Technology, IEEE Transactions on Learning Technologies, Journal of Learning Analytics, and Virtual Reality, alongside grant review for the National Science Foundation and the Swiss National Science Foundation.";
 
 let activeFilter = "All";
 let currentPublicationPage = 1;
@@ -1340,6 +1480,160 @@ function getPublicationDetailUrl(item) {
   return `publication.html?id=${encodeURIComponent(item.id)}`;
 }
 
+function renderProfile() {
+  const heroName = document.getElementById("hero-name");
+  const heroEyebrow = document.getElementById("hero-eyebrow");
+  const heroTitleMeta = document.getElementById("hero-title-meta");
+  const heroSummary = document.getElementById("hero-summary");
+  const heroPanelTitle = document.getElementById("hero-panel-title");
+  const heroActions = document.getElementById("hero-actions");
+  const profileRoleLine = document.getElementById("profile-role-line");
+  const profileAffiliationLines = document.getElementById("profile-affiliation-lines");
+
+  if (heroName) {
+    heroName.textContent = profile.name;
+  }
+  if (heroEyebrow) {
+    heroEyebrow.textContent = profile.eyebrow;
+  }
+  if (heroTitleMeta) {
+    heroTitleMeta.textContent = profile.heroTitleMeta;
+  }
+  if (heroSummary) {
+    heroSummary.textContent = profile.heroSummary;
+  }
+  if (heroPanelTitle) {
+    heroPanelTitle.textContent = profile.heroPanelTitle;
+  }
+  if (profileRoleLine) {
+    profileRoleLine.textContent = profile.roleLine;
+  }
+  if (profileAffiliationLines) {
+    profileAffiliationLines.innerHTML = (profile.affiliationLines || [])
+      .map((line) => `<p class="affiliation-line">${escapeHtml(line)}</p>`)
+      .join("");
+  }
+  if (heroActions) {
+    const actions = [
+      profile.email
+        ? `<a class="button button-primary" href="mailto:${escapeHtml(profile.email)}">Contact</a>`
+        : "",
+      profile.cvDownloadPath
+        ? `<a class="button" href="${escapeHtml(profile.cvDownloadPath)}" download>Curriculum Vitae</a>`
+        : "",
+      profile.labWebsite
+        ? `<a class="button" href="${escapeHtml(profile.labWebsite)}" target="_blank" rel="noreferrer">ADIE Lab</a>`
+        : "",
+    ].filter(Boolean);
+
+    heroActions.innerHTML = actions.join("");
+  }
+}
+
+function renderContactDetails() {
+  const list = document.getElementById("contact-list");
+  if (!list) {
+    return;
+  }
+
+  const items = [
+    profile.email
+      ? `<li><a href="mailto:${escapeHtml(profile.email)}">${escapeHtml(profile.email)}</a></li>`
+      : "",
+    profile.homepage
+      ? `<li><a href="${escapeHtml(profile.homepage)}" target="_blank" rel="noreferrer">Personal homepage</a></li>`
+      : "",
+    profile.researchgate
+      ? `<li><a href="${escapeHtml(profile.researchgate)}" target="_blank" rel="noreferrer">ResearchGate</a></li>`
+      : "",
+    profile.labWebsite
+      ? `<li><a href="${escapeHtml(profile.labWebsite)}" target="_blank" rel="noreferrer">ADIE Lab</a></li>`
+      : "",
+    profile.officeLocation ? `<li>${escapeHtml(profile.officeLocation)}</li>` : "",
+  ].filter(Boolean);
+
+  list.innerHTML = items.join("");
+}
+
+function renderResearchExpertise() {
+  const list = document.getElementById("expertise-list");
+  if (!list) {
+    return;
+  }
+
+  list.innerHTML = focusAreas
+    .map((item) => `<li>${escapeHtml(item)}</li>`)
+    .join("");
+}
+
+function renderAppointmentsEducation() {
+  const list = document.getElementById("appointment-list");
+  if (!list) {
+    return;
+  }
+
+  list.innerHTML = appointmentsEducation
+    .map(
+      (item) => `
+        <li class="credential-item">
+          <div class="credential-logo credential-logo-${escapeHtml(item.logoTheme || "ua")}">
+            <img src="${escapeHtml(item.logo || "")}" alt="${escapeHtml(item.logoAlt || item.institution || "Institution logo")}" loading="lazy" />
+          </div>
+          <div class="credential-copy">
+            <span class="timeline-year">${escapeHtml(item.year || "")}</span>
+            <span class="credential-title">${escapeHtml(item.title || "")}</span>
+            <span class="timeline-detail">${escapeHtml(item.detail || "")}</span>
+          </div>
+        </li>
+      `
+    )
+    .join("");
+}
+
+function renderOverview() {
+  const heading = document.getElementById("overview-heading");
+  const copy = document.getElementById("overview-copy");
+
+  if (heading) {
+    heading.textContent = overview.title;
+  }
+
+  if (copy) {
+    copy.innerHTML = (overview.paragraphs || [])
+      .map((paragraph) => `<p class="lead-paragraph">${escapeHtml(paragraph)}</p>`)
+      .join("");
+  }
+}
+
+function renderTeachingSection() {
+  const recentTeachingList = document.getElementById("recent-teaching-list");
+  const courseDevelopmentList = document.getElementById("course-development-list");
+  const earlierTeachingNote = document.getElementById("earlier-teaching-note");
+
+  if (recentTeachingList) {
+    recentTeachingList.innerHTML = (teaching.teachingPortfolio || [])
+      .map((item) => `<li>${escapeHtml(item)}</li>`)
+      .join("");
+  }
+
+  if (courseDevelopmentList) {
+    courseDevelopmentList.innerHTML = (teaching.courseDevelopment || [])
+      .map((item) => `<li>${escapeHtml(item)}</li>`)
+      .join("");
+  }
+
+  if (earlierTeachingNote) {
+    earlierTeachingNote.textContent = teaching.earlierTeachingNote || "";
+  }
+}
+
+function renderServiceReview() {
+  const copy = document.getElementById("service-review-copy");
+  if (copy) {
+    copy.textContent = serviceReviewCopy;
+  }
+}
+
 function renderStats() {
   const list = document.getElementById("hero-stats");
   list.innerHTML = stats
@@ -1368,7 +1662,29 @@ function renderHonors() {
 
 function renderAffiliations() {
   const list = document.getElementById("affiliation-list");
-  list.innerHTML = affiliations.map((item) => `<li>${item}</li>`).join("");
+  list.innerHTML = affiliations
+    .map(
+      (item) => `
+        <li class="affiliation-item">
+          <a
+            class="affiliation-card affiliation-theme-${item.theme}"
+            href="${item.url}"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div class="affiliation-logo-shell">
+              <img class="affiliation-logo" src="${item.logo}" alt="${item.alt}" loading="lazy" />
+            </div>
+            <div class="affiliation-copy">
+              <span class="affiliation-acronym">${item.acronym}</span>
+              <span class="affiliation-name">${item.name}</span>
+              <span class="affiliation-label">${item.label}</span>
+            </div>
+          </a>
+        </li>
+      `
+    )
+    .join("");
 }
 
 function renderNews() {
@@ -1869,6 +2185,11 @@ window.__cvSite = {
 };
 
 if (document.getElementById("content-deck")) {
+  renderProfile();
+  renderContactDetails();
+  renderResearchExpertise();
+  renderAppointmentsEducation();
+  renderOverview();
   renderStats();
   renderFocusAreas();
   renderHonors();
@@ -1880,9 +2201,11 @@ if (document.getElementById("content-deck")) {
   renderGrantList("funded-list", grants.funded);
   renderGrantList("pending-list", grants.pending);
   renderGrantDashboard();
+  renderTeachingSection();
   renderMentoringMetrics();
   renderServiceCards("editorial-list", editorialRoles);
   renderServiceCards("leadership-list", leadershipRoles);
+  renderServiceReview();
   renderTalks();
   enableRevealMotion();
   enablePanelNavigation();

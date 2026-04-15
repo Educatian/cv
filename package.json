@@ -4,6 +4,9 @@
   "description": "Static GitHub Pages-style academic CV website built from `CV_202604_MOON.docx`.",
   "main": "app.js",
   "scripts": {
+    "site:data": "python scripts/generate_site_data.py",
+    "site:update": "python scripts/update_site_from_cv.py",
+    "site:update:playwright": "python scripts/update_site_from_cv.py --with-playwright",
     "abstracts:base": "python scripts/update_publication_abstracts.py",
     "abstracts:playwright": "node scripts/update_publication_abstracts_playwright.mjs",
     "abstracts:update": "python scripts/update_publication_abstracts.py && node scripts/update_publication_abstracts_playwright.mjs"

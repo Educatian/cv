@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import json
 import re
 from pathlib import Path
@@ -11,8 +12,9 @@ from lxml import html
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
-OUTPUT_PATH = ROOT / "assets" / "publication-abstracts.json"
+DEFAULT_CV_PATH = ROOT / "assets" / "current-cv.docx"
+LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
+DEFAULT_OUTPUT_PATH = ROOT / "assets" / "publication-abstracts.json"
 
 HEADERS = {
     "User-Agent": (
@@ -38,8 +40,16 @@ def clean_text(value: str) -> str:
     return " ".join(value.replace("\u200b", "").split()).strip()
 
 
-def parse_cv_entries() -> List[Dict[str, str]]:
-    doc = Document(str(CV_PATH))
+def choose_cv_path(explicit_path: Optional[Path]) -> Path:
+    if explicit_path:
+        return explicit_path.resolve()
+    if DEFAULT_CV_PATH.exists():
+        return DEFAULT_CV_PATH
+    return LEGACY_CV_PATH
+
+
+def parse_cv_entries(cv_path: Path) -> List[Dict[str, str]]:
+    doc = Document(str(cv_path))
     paragraphs = [clean_text(p.text) for p in doc.paragraphs if p.text.strip()]
 
     start = next(
@@ -175,11 +185,11 @@ def fetch_landing_page_abstract(session: requests.Session, doi: str) -> str:
     return find_html_abstract(tree)
 
 
-def build_library() -> Dict[str, Dict[str, str]]:
+def build_library(cv_path: Path) -> Dict[str, Dict[str, str]]:
     session = requests.Session()
     session.headers.update(HEADERS)
 
-    entries = parse_cv_entries()
+    entries = parse_cv_entries(cv_path)
     library: Dict[str, Dict[str, str]] = {}
 
     for entry in entries:
@@ -215,13 +225,22 @@ def build_library() -> Dict[str, Dict[str, str]]:
 
 
 def main() -> None:
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    library = build_library()
-    OUTPUT_PATH.write_text(json.dumps(library, indent=2, ensure_ascii=False), encoding="utf-8")
+    parser = argparse.ArgumentParser(description="Build a DOI-indexed abstract library from the CV.")
+    parser.add_argument("--cv", type=Path, help="Path to the source CV DOCX.")
+    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT_PATH)
+    args = parser.parse_args()
+
+    cv_path = choose_cv_path(args.cv)
+    if not cv_path.exists():
+        raise FileNotFoundError(f"CV not found: {cv_path}")
+
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    library = build_library(cv_path)
+    args.output.write_text(json.dumps(library, indent=2, ensure_ascii=False), encoding="utf-8")
 
     total = len(library)
     with_abstract = sum(1 for item in library.values() if item["abstract"])
-    print(f"Wrote {OUTPUT_PATH}")
+    print(f"Wrote {args.output}")
     print(f"Abstracts found for {with_abstract}/{total} DOI-backed journal articles")
 
 

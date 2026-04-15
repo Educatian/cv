@@ -9,6 +9,7 @@
       content="GitHub-inspired academic CV website for Dr. Jewoong Moon, featuring research in AI, XR, game-based learning, and learning analytics."
     />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="assets/site-data.js"></script>
     <script defer src="app.js"></script>
   </head>
   <body>
@@ -40,22 +41,22 @@
       <main>
         <section class="hero">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Instructional Technology | College of Education</p>
-            <h1>Dr. Jewoong Moon</h1>
-            <p class="hero-title-meta">
+            <p class="eyebrow" id="hero-eyebrow">Instructional Technology | College of Education</p>
+            <h1 id="hero-name">Dr. Jewoong Moon</h1>
+            <p class="hero-title-meta" id="hero-title-meta">
               Assistant Professor of Instructional Technology
             </p>
-            <p class="hero-summary">
+            <p class="hero-summary" id="hero-summary">
               Research at The University of Alabama focused on generative AI,
               extended reality, game-based learning, and learning analytics for
               adaptive, inclusive, and computationally rich educational
               environments.
             </p>
-            <div class="hero-actions">
+            <div class="hero-actions" id="hero-actions">
               <a class="button button-primary" href="mailto:jmoon19@ua.edu"
                 >Contact</a
               >
-              <a class="button" href="assets/CV_202604_MOON.docx" download
+              <a class="button" href="assets/current-cv.docx" download
                 >Curriculum Vitae</a
               >
               <a
@@ -71,7 +72,7 @@
 
           <div class="hero-panel reveal">
             <div class="panel-kicker">At Alabama</div>
-            <p class="panel-title">
+            <p class="panel-title" id="hero-panel-title">
               A research agenda centered on teacher learning, immersive
               simulation, AI-enhanced pedagogy, and evidence-rich models of how
               learners act, adapt, and solve problems across digital settings.
@@ -90,17 +91,19 @@
                   alt="Portrait of Dr. Jewoong Moon"
                 />
               </div>
-              <p class="role-line">Assistant Professor</p>
-              <p class="affiliation-line">
-                Department of Educational Leadership, Policy, and Technology
-                Studies
-              </p>
-              <p class="affiliation-line">The University of Alabama</p>
+              <p class="role-line" id="profile-role-line">Assistant Professor</p>
+              <div id="profile-affiliation-lines">
+                <p class="affiliation-line">
+                  Department of Educational Leadership, Policy, and Technology
+                  Studies
+                </p>
+                <p class="affiliation-line">The University of Alabama</p>
+              </div>
             </div>
 
             <div class="rail-block reveal">
               <h2>Contact</h2>
-              <ul class="compact-list">
+              <ul class="compact-list" id="contact-list">
                 <li><a href="mailto:jmoon19@ua.edu">jmoon19@ua.edu</a></li>
                 <li>
                   <a
@@ -124,7 +127,7 @@
 
             <div class="rail-block reveal">
               <h2>Research Expertise</h2>
-              <ul class="compact-list">
+              <ul class="compact-list" id="expertise-list">
                 <li>Digital game-based learning</li>
                 <li>Inclusive and immersive learning experience design</li>
                 <li>Learning analytics and educational data mining</li>
@@ -133,48 +136,101 @@
               </ul>
             </div>
 
-            <div class="rail-block reveal">
-              <h2>Affiliations</h2>
-              <ul class="compact-list" id="affiliation-list"></ul>
-            </div>
+            <details class="rail-block rail-block-collapsible reveal" open>
+              <summary class="rail-summary">
+                <h2>Affiliations</h2>
+                <span class="rail-toggle-indicator" aria-hidden="true"></span>
+              </summary>
+              <div class="rail-collapsible-body">
+                <ul class="affiliation-list" id="affiliation-list"></ul>
+              </div>
+            </details>
 
-            <div class="rail-block reveal">
-              <h2>Appointments and Education</h2>
-              <ol class="timeline-list">
-                <li>
-                  <span class="timeline-year">2021-present</span>
-                  <span class="timeline-detail"
-                    >Assistant Professor, Instructional Technology, The
-                    University of Alabama</span
-                  >
+            <details class="rail-block rail-block-collapsible reveal" open>
+              <summary class="rail-summary">
+                <h2>Appointments and Education</h2>
+                <span class="rail-toggle-indicator" aria-hidden="true"></span>
+              </summary>
+              <div class="rail-collapsible-body">
+                <ol class="credential-list" id="appointment-list">
+                <li class="credential-item">
+                  <div class="credential-logo credential-logo-ua">
+                    <img
+                      src="assets/institution-logos/ua-capstone-a-crimson.svg"
+                      alt="The University of Alabama logo"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="credential-copy">
+                    <span class="timeline-year">2021-present</span>
+                    <span class="credential-title">Assistant Professor</span>
+                    <span class="timeline-detail"
+                      >Instructional Technology, The University of Alabama</span
+                    >
+                  </div>
                 </li>
-                <li>
-                  <span class="timeline-year">2021</span>
-                  <span class="timeline-detail"
-                    >PhD, Instructional Systems and Learning Technologies,
-                    Florida State University</span
-                  >
+                <li class="credential-item">
+                  <div class="credential-logo credential-logo-fsu">
+                    <img
+                      src="assets/institution-logos/fsu-wordmark-gold.svg"
+                      alt="Florida State University logo"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="credential-copy">
+                    <span class="timeline-year">2021</span>
+                    <span class="credential-title">PhD</span>
+                    <span class="timeline-detail"
+                      >Instructional Systems and Learning Technologies, Florida
+                      State University</span
+                    >
+                  </div>
                 </li>
-                <li>
-                  <span class="timeline-year">2014</span>
-                  <span class="timeline-detail"
-                    >MA, Educational Technology, Chonnam National University</span
-                  >
+                <li class="credential-item">
+                  <div class="credential-logo credential-logo-cnu">
+                    <img
+                      src="assets/institution-logos/chonnam-national-university.png"
+                      alt="Chonnam National University logo"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="credential-copy">
+                    <span class="timeline-year">2014</span>
+                    <span class="credential-title">MA</span>
+                    <span class="timeline-detail"
+                      >Educational Technology, Chonnam National University</span
+                    >
+                  </div>
                 </li>
-                <li>
-                  <span class="timeline-year">2012</span>
-                  <span class="timeline-detail"
-                    >BEd, Educational Foundations, Chonnam National
-                    University</span
-                  >
+                <li class="credential-item">
+                  <div class="credential-logo credential-logo-cnu">
+                    <img
+                      src="assets/institution-logos/chonnam-national-university.png"
+                      alt="Chonnam National University logo"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="credential-copy">
+                    <span class="timeline-year">2012</span>
+                    <span class="credential-title">BEd</span>
+                    <span class="timeline-detail"
+                      >Educational Foundations, Chonnam National University</span
+                    >
+                  </div>
                 </li>
-              </ol>
-            </div>
+                </ol>
+              </div>
+            </details>
 
-            <div class="rail-block reveal">
-              <h2>Selected Honors</h2>
-              <ul class="compact-list" id="honor-list"></ul>
-            </div>
+            <details class="rail-block rail-block-collapsible reveal" open>
+              <summary class="rail-summary">
+                <h2>Selected Honors</h2>
+                <span class="rail-toggle-indicator" aria-hidden="true"></span>
+              </summary>
+              <div class="rail-collapsible-body">
+                <ul class="compact-list" id="honor-list"></ul>
+              </div>
+            </details>
           </aside>
 
           <div class="readme-column">
@@ -183,23 +239,25 @@
                 <section id="overview" class="content-section reveal">
                   <div class="section-heading">
                     <span class="section-label">Overview</span>
-                    <h2>Research at the intersection of AI, XR, analytics, and learning experience design</h2>
+                    <h2 id="overview-heading">Research at the intersection of AI, XR, analytics, and learning experience design</h2>
                   </div>
-                  <p class="lead-paragraph">
-                    Dr. Jewoong Moon studies how computationally rich learning
-                    environments can better support teacher education, inclusive
-                    STEM learning, and adaptive educational experiences. His work
-                    integrates generative AI, virtual and mixed reality, game-based
-                    learning, and multimodal analytics to model learning dynamics
-                    and design new forms of feedback, assessment, and immersive
-                    instruction.
-                  </p>
-                  <p class="lead-paragraph">
-                    The site below reframes the attached CV as a GitHub-inspired
-                    research profile: a concise readme, pinned initiatives, selected
-                    publications, grant activity, mentoring footprint, and academic
-                    leadership.
-                  </p>
+                  <div id="overview-copy">
+                    <p class="lead-paragraph">
+                      Dr. Jewoong Moon studies how computationally rich learning
+                      environments can better support teacher education, inclusive
+                      STEM learning, and adaptive educational experiences. His work
+                      integrates generative AI, virtual and mixed reality, game-based
+                      learning, and multimodal analytics to model learning dynamics
+                      and design new forms of feedback, assessment, and immersive
+                      instruction.
+                    </p>
+                    <p class="lead-paragraph">
+                      The site below reframes the attached CV as a GitHub-inspired
+                      research profile: a concise readme, pinned initiatives, selected
+                      publications, grant activity, mentoring footprint, and academic
+                      leadership.
+                    </p>
+                  </div>
                   <div class="pinned-grid" id="initiative-grid"></div>
                 </section>
               </div>
@@ -310,7 +368,7 @@
                   <div class="split-columns teaching-columns">
                     <div>
                       <h3>Recent Teaching Portfolio</h3>
-                      <ul class="compact-list">
+                      <ul class="compact-list" id="recent-teaching-list">
                         <li>AIL 689 Practicum in Instructional Technology</li>
                         <li>AIL 690 Seminar in Instructional Technology</li>
                         <li>AIL 699 Dissertation Research</li>
@@ -323,7 +381,7 @@
                     </div>
                     <div>
                       <h3>Course Development and Mentoring Scope</h3>
-                      <ul class="compact-list">
+                      <ul class="compact-list" id="course-development-list">
                         <li>Developed AIL 691 AI, Learning, and Instructional Systems</li>
                         <li>Developed AIL 692 Introduction to Literature Synthesis in Instructional Technology Research</li>
                         <li>Redesigned doctoral and masters courses across instructional technology and assistive technology</li>
@@ -333,7 +391,7 @@
                       </ul>
                     </div>
                   </div>
-                  <p class="section-note">
+                  <p class="section-note" id="earlier-teaching-note">
                     Earlier teaching at Florida State University included graduate
                     instruction in multimedia development and instructional systems
                     research writing.
@@ -358,7 +416,7 @@
                     </div>
                   </div>
                   <div class="service-foot">
-                    <p>
+                    <p id="service-review-copy">
                       Review service includes journals such as <span>Computers &amp;
                       Education</span>, <span>British Journal of Educational
                       Technology</span>, <span>IEEE Transactions on Learning

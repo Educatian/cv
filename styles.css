@@ -396,6 +396,53 @@ a {
   border-top: 4px solid var(--accent);
 }
 
+.rail-block-collapsible {
+  padding: 0;
+  overflow: hidden;
+}
+
+.rail-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 1.1rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.rail-summary::-webkit-details-marker {
+  display: none;
+}
+
+.rail-summary:hover {
+  background: rgba(158, 27, 50, 0.04);
+}
+
+.rail-summary h2 {
+  margin: 0;
+}
+
+.rail-toggle-indicator {
+  width: 0.78rem;
+  height: 0.78rem;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+  transition: transform 180ms ease;
+  flex: 0 0 auto;
+  margin-right: 0.2rem;
+}
+
+.rail-block-collapsible[open] .rail-toggle-indicator {
+  transform: rotate(225deg);
+}
+
+.rail-collapsible-body {
+  padding: 0 1.25rem 1.2rem;
+}
+
 .profile-intro {
   display: grid;
   gap: 0.45rem;
@@ -429,11 +476,130 @@ a {
   line-height: 1.55;
 }
 
+.affiliation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.affiliation-item {
+  margin: 0;
+}
+
+.affiliation-card {
+  display: grid;
+  grid-template-columns: 4.4rem minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(25, 39, 52, 0.1);
+  text-decoration: none;
+  box-shadow: 0 16px 32px rgba(25, 39, 52, 0.07);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.affiliation-card:hover,
+.affiliation-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px rgba(25, 39, 52, 0.12);
+  border-color: rgba(158, 27, 50, 0.24);
+}
+
+.affiliation-logo-shell {
+  min-height: 4.4rem;
+  border-radius: 0.95rem;
+  display: grid;
+  place-items: center;
+  padding: 0.55rem;
+  overflow: hidden;
+}
+
+.affiliation-logo {
+  width: 100%;
+  max-width: 100%;
+  max-height: 3rem;
+  object-fit: contain;
+  display: block;
+}
+
+.affiliation-copy {
+  min-width: 0;
+  display: grid;
+  gap: 0.12rem;
+}
+
+.affiliation-acronym {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.affiliation-name {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+.affiliation-label {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.affiliation-theme-sand {
+  background: linear-gradient(145deg, #fffaf0, #ffffff);
+}
+
+.affiliation-theme-sand .affiliation-logo-shell {
+  background: linear-gradient(145deg, #efe6d8, #fdf7ed);
+}
+
+.affiliation-theme-sky {
+  background: linear-gradient(145deg, #eef8ff, #ffffff);
+}
+
+.affiliation-theme-sky .affiliation-logo-shell {
+  background: linear-gradient(145deg, #ffffff, #e9f8ff);
+}
+
+.affiliation-theme-sage {
+  background: linear-gradient(145deg, #f4faf6, #ffffff);
+}
+
+.affiliation-theme-sage .affiliation-logo-shell {
+  background: linear-gradient(145deg, #ffffff, #eef8f0);
+}
+
+.affiliation-theme-night {
+  background: linear-gradient(145deg, #203246, #2b425d);
+}
+
+.affiliation-theme-night .affiliation-logo-shell {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.affiliation-theme-night .affiliation-acronym,
+.affiliation-theme-night .affiliation-name,
+.affiliation-theme-night .affiliation-label {
+  color: #f5f1e8;
+}
+
 .rail-block h2,
 .content-section h2,
 .content-section h3,
 .mini-panel h3 {
   margin: 0 0 0.85rem;
+}
+
+.rail-summary h2 {
+  margin: 0;
 }
 
 .compact-list li,
@@ -474,6 +640,66 @@ a {
 
 .timeline-detail {
   color: var(--muted);
+}
+
+.credential-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.credential-item {
+  display: grid;
+  grid-template-columns: 4.8rem minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.credential-logo {
+  min-height: 4.8rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(25, 39, 52, 0.1);
+  display: grid;
+  place-items: center;
+  padding: 0.75rem;
+  box-shadow: 0 18px 36px rgba(25, 39, 52, 0.08);
+}
+
+.credential-logo img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 2.5rem;
+  object-fit: contain;
+  display: block;
+}
+
+.credential-logo-ua {
+  background:
+    linear-gradient(145deg, rgba(158, 27, 50, 0.1), rgba(255, 255, 255, 0.96));
+}
+
+.credential-logo-fsu {
+  background: linear-gradient(145deg, #782f40, #5f2230);
+}
+
+.credential-logo-cnu {
+  background: linear-gradient(145deg, #ffffff, #f4f8f7);
+}
+
+.credential-copy {
+  display: grid;
+  gap: 0.16rem;
+  min-width: 0;
+}
+
+.credential-title {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .readme-column {
