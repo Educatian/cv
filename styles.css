@@ -989,6 +989,17 @@ a {
   line-height: 1.65;
 }
 
+.publication-abstract {
+  margin: 0.7rem 0 0;
+  color: var(--ink);
+  line-height: 1.72;
+}
+
+.publication-abstract.is-loading,
+.publication-abstract.is-empty {
+  color: var(--muted);
+}
+
 .publication-citation {
   margin: 0.65rem 0 0;
   color: var(--muted);

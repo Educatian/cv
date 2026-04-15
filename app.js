@@ -857,6 +857,7 @@ let currentPublicationPage = 1;
 const publicationsPerPage = 6;
 let currentCompletePublicationPage = 1;
 const completePublicationsPerPage = 10;
+const abstractCache = new Map();
 
 const journalFrontProfiles = {
   "AI & Ethics": {
@@ -1024,12 +1025,26 @@ function normalizeLink(link = "") {
     .replace(/\/$/, "");
 }
 
+function escapeHtml(value = "") {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function cleanCitationText(citation = "") {
   return citation.replace(/^[*‡\s]+/, "").replace(/\s+/g, " ").trim();
 }
 
 function extractCitationYearMatch(citation = "") {
   return cleanCitationText(citation).match(/\([^)]*\d{4}\)\.\s*/);
+}
+
+function extractDoi(value = "") {
+  const match = value.match(/10\.\d{4,9}\/[-._;()/:A-Z0-9]+/i);
+  return match ? match[0].replace(/[)\].,;]+$/, "") : "";
 }
 
 function extractAuthorsFromCitation(citation = "") {
@@ -1126,6 +1141,114 @@ function renderJournalFrontThumb(item) {
       </div>
     </div>
   `;
+}
+
+function decodeAbstractInvertedIndex(invertedIndex) {
+  if (!invertedIndex) {
+    return "";
+  }
+
+  const words = [];
+  Object.entries(invertedIndex).forEach(([word, positions]) => {
+    positions.forEach((position) => {
+      words[position] = word;
+    });
+  });
+
+  return words
+    .filter(Boolean)
+    .join(" ")
+    .replace(/\s+([,.;:?!])/g, "$1")
+    .trim();
+}
+
+function stripMarkup(value = "") {
+  return value
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+async function fetchAbstractText(doi) {
+  if (!doi) {
+    return "";
+  }
+
+  if (abstractCache.has(doi)) {
+    return abstractCache.get(doi);
+  }
+
+  let abstractText = "";
+
+  try {
+    const openAlexUrl = new URL("https://api.openalex.org/works");
+    openAlexUrl.searchParams.set("filter", `doi:https://doi.org/${doi}`);
+
+    const openAlexResponse = await fetch(openAlexUrl.toString());
+    if (openAlexResponse.ok) {
+      const openAlexData = await openAlexResponse.json();
+      abstractText = decodeAbstractInvertedIndex(
+        openAlexData.results?.[0]?.abstract_inverted_index
+      );
+    }
+  } catch (error) {
+    abstractText = "";
+  }
+
+  if (!abstractText) {
+    try {
+      const crossrefResponse = await fetch(
+        `https://api.crossref.org/works/${encodeURIComponent(doi)}`
+      );
+
+      if (crossrefResponse.ok) {
+        const crossrefData = await crossrefResponse.json();
+        abstractText = stripMarkup(crossrefData.message?.abstract || "");
+      }
+    } catch (error) {
+      abstractText = "";
+    }
+  }
+
+  abstractCache.set(doi, abstractText);
+  return abstractText;
+}
+
+function getAbstractFallback(item) {
+  if (!item.doi && /(Accepted|In Press|Minor revision|Major revision)/i.test(item.citation || "")) {
+    return "Abstract will appear after the manuscript is publicly indexed.";
+  }
+
+  if (!item.doi) {
+    return "Abstract unavailable for this publication record.";
+  }
+
+  return "Loading abstract...";
+}
+
+async function hydratePublicationAbstracts() {
+  const abstractNodes = Array.from(
+    document.querySelectorAll("[data-publication-doi]")
+  );
+
+  await Promise.all(
+    abstractNodes.map(async (node) => {
+      const doi = node.dataset.publicationDoi;
+      if (!doi) {
+        return;
+      }
+
+      const abstractText = await fetchAbstractText(doi);
+      node.textContent =
+        abstractText || "Abstract unavailable for this publication record.";
+      node.classList.remove("is-loading");
+      node.classList.toggle("is-empty", !abstractText);
+    })
+  );
 }
 
 function renderStats() {
@@ -1235,6 +1358,10 @@ function renderPublications() {
     const detailed = detailedByLink.get(normalizeLink(item.link));
     const venue = detailed?.venue || extractVenueFromCitation(item.citation);
     const tags = detailed?.tags || [item.category];
+    const doi =
+      extractDoi(item.link || "") ||
+      extractDoi(detailed?.link || "") ||
+      extractDoi(item.citation || "");
 
     return {
       year: item.year,
@@ -1246,6 +1373,7 @@ function renderPublications() {
       authors: detailed?.authors || extractAuthorsFromCitation(item.citation),
       venue,
       tags,
+      doi,
       showCitation: !detailed,
     };
   });
@@ -1290,6 +1418,10 @@ function renderPublications() {
             </h3>
             ${item.authors ? `<p class="publication-authors">${item.authors}</p>` : ""}
             ${item.venue ? `<p class="publication-venue">${item.venue}</p>` : ""}
+            <p
+              class="publication-abstract ${item.doi ? "is-loading" : "is-empty"}"
+              data-publication-doi="${escapeHtml(item.doi || "")}"
+            >${escapeHtml(getAbstractFallback(item))}</p>
             ${
               item.showCitation
                 ? `<p class="publication-citation">${item.citation}</p>`
@@ -1302,6 +1434,7 @@ function renderPublications() {
     .join("");
 
   renderPublicationPagination(totalPages);
+  hydratePublicationAbstracts();
 }
 
 function renderPublicationPagination(totalPages) {
