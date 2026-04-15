@@ -859,6 +859,7 @@ let currentCompletePublicationPage = 1;
 const completePublicationsPerPage = 10;
 const abstractCache = new Map();
 let publicationRecordsCache = null;
+let abstractLibraryPromise = null;
 
 const journalFrontProfiles = {
   "AI & Ethics": {
@@ -1182,6 +1183,16 @@ function stripMarkup(value = "") {
     .trim();
 }
 
+async function loadAbstractLibrary() {
+  if (!abstractLibraryPromise) {
+    abstractLibraryPromise = fetch("assets/publication-abstracts.json")
+      .then((response) => (response.ok ? response.json() : {}))
+      .catch(() => ({}));
+  }
+
+  return abstractLibraryPromise;
+}
+
 async function fetchAbstractText(doi) {
   if (!doi) {
     return "";
@@ -1189,6 +1200,16 @@ async function fetchAbstractText(doi) {
 
   if (abstractCache.has(doi)) {
     return abstractCache.get(doi);
+  }
+
+  const abstractLibrary = await loadAbstractLibrary();
+  if (
+    abstractLibrary &&
+    Object.prototype.hasOwnProperty.call(abstractLibrary, doi)
+  ) {
+    const storedAbstract = abstractLibrary[doi].abstract || "";
+    abstractCache.set(doi, storedAbstract);
+    return storedAbstract;
   }
 
   let abstractText = "";
