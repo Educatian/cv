@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" role="img" aria-labelledby="bitTitle bitDesc">
+  <title id="bitTitle">Behaviour and Information Technology cover-style thumbnail</title>
+  <desc id="bitDesc">A cover-style thumbnail for Behaviour and Information Technology.</desc>
+  <defs>
+    <linearGradient id="bitBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1c24"/>
+      <stop offset="100%" stop-color="#3b4d57"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="420" rx="22" fill="url(#bitBg)"/>
+  <rect x="24" y="24" width="272" height="42" rx="8" fill="#dceff6" opacity="0.95"/>
+  <text x="36" y="51" fill="#18313e" font-family="Georgia, 'Times New Roman', serif" font-size="18">Taylor &amp; Francis</text>
+  <circle cx="248" cy="306" r="92" fill="#8dd7d1" opacity="0.16"/>
+  <circle cx="278" cy="340" r="46" fill="#4bb5b0" opacity="0.2"/>
+  <path d="M44 354c42-62 104-115 194-141" stroke="#dceff6" stroke-width="4" opacity="0.35" fill="none"/>
+  <text x="34" y="134" fill="#f4fbfd" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="3">JOURNAL</text>
+  <text x="34" y="204" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700">BIT</text>
+  <text x="34" y="250" fill="#dceff6" font-family="Arial, Helvetica, sans-serif" font-size="22">Behaviour &amp;</text>
+  <text x="34" y="278" fill="#dceff6" font-family="Arial, Helvetica, sans-serif" font-size="22">Information Technology</text>
+  <rect x="34" y="322" width="112" height="2" fill="#dceff6" opacity="0.65"/>
+  <text x="34" y="352" fill="#f4fbfd" font-family="Arial, Helvetica, sans-serif" font-size="16">Human-computer interaction,</text>
+  <text x="34" y="375" fill="#f4fbfd" font-family="Arial, Helvetica, sans-serif" font-size="16">usability, and information systems</text>
+</svg>

@@ -1000,6 +1000,7 @@ const completePublicationsPerPage = 10;
 const abstractCache = new Map();
 const abstractRecordCache = new Map();
 let publicationRecordsCache = null;
+let publicationLookupCache = null;
 let abstractLibraryPromise = null;
 
 const journalFrontProfiles = {
@@ -1149,6 +1150,75 @@ const journalFrontProfiles = {
   },
 };
 
+const serviceThumbProfiles = {
+  "Behaviour & Information Technology": {
+    image: "assets/service-thumbs/bit-cover.svg",
+    alt: "Behaviour & Information Technology thumbnail",
+    surface: "cover",
+    fit: "cover",
+  },
+  "International Journal of Computer-Supported Collaborative Learning": {
+    image: "assets/service-thumbs/ijcscl-cover.svg",
+    alt: "International Journal of Computer-Supported Collaborative Learning thumbnail",
+    surface: "cover",
+    fit: "cover",
+  },
+  "Artificial Intelligence in Language Education": {
+    image: "assets/service-thumbs/aile-cover.svg",
+    alt: "Artificial Intelligence in Language Education thumbnail",
+    surface: "cover",
+    fit: "cover",
+  },
+  "Journal of Applied Instructional Design": {
+    image: "assets/service-thumbs/jaid-cover.svg",
+    alt: "Journal of Applied Instructional Design thumbnail",
+    surface: "cover",
+    fit: "cover",
+  },
+  "Computers and Education: X Reality": {
+    image: journalFrontProfiles["Computers and Education: X Reality"].coverImage,
+    alt: "Computers and Education: X Reality cover",
+    surface: "cover",
+    fit: "cover",
+  },
+  "Computers & Education: X Reality": {
+    image: journalFrontProfiles["Computers & Education: X Reality"].coverImage,
+    alt: "Computers and Education: X Reality cover",
+    surface: "cover",
+    fit: "cover",
+  },
+  "ICCE Educational Gamification and Game-based Learning Section": {
+    image: "assets/service-thumbs/icce-logo.svg",
+    alt: "ICCE thumbnail",
+    surface: "logo",
+    fit: "contain",
+  },
+  "iLRN Practitioner Stream": {
+    image: "assets/affiliation-logos/ilrn.png",
+    alt: "iLRN logo",
+    surface: "logo",
+    fit: "contain",
+  },
+  "AERA SIG Instructional Technology": {
+    image: "assets/affiliation-logos/aera.png",
+    alt: "AERA logo",
+    surface: "logo",
+    fit: "contain",
+  },
+  "APSCE SIG Educational Games and Gamification": {
+    image: "assets/service-thumbs/apsce-logo.svg",
+    alt: "APSCE thumbnail",
+    surface: "logo",
+    fit: "contain",
+  },
+  "Immersive Learning Research Network (iLRN)": {
+    image: "assets/affiliation-logos/ilrn.png",
+    alt: "Immersive Learning Research Network logo",
+    surface: "logo",
+    fit: "contain",
+  },
+};
+
 function getJournalFrontConfig(item) {
   return (
     journalFrontProfiles[item.venue] || {
@@ -1264,6 +1334,32 @@ function extractVenueFromCitation(citation = "") {
   return venueChunk.split(",")[0].trim();
 }
 
+function buildPublicationLookupKey({ year = "", title = "", venue = "", citation = "" }) {
+  const resolvedTitle = title || extractTitleFromCitation(citation);
+  const resolvedVenue = venue || extractVenueFromCitation(citation);
+  return `${year}::${slugify(resolvedTitle || resolvedVenue || citation)}`;
+}
+
+function getPublicationLookups() {
+  if (!publicationLookupCache) {
+    const byLink = new Map();
+    const byKey = new Map();
+
+    publications.forEach((entry) => {
+      const normalizedLink = normalizeLink(entry.link);
+      if (normalizedLink) {
+        byLink.set(normalizedLink, entry);
+      }
+
+      byKey.set(buildPublicationLookupKey(entry), entry);
+    });
+
+    publicationLookupCache = { byLink, byKey };
+  }
+
+  return publicationLookupCache;
+}
+
 function renderJournalFrontThumb(item) {
   const front = getJournalFrontConfig(item);
   const featureLabel = item.tags.slice(0, 2).join(" / ") || "Research article";
@@ -1289,6 +1385,45 @@ function renderJournalFrontThumb(item) {
       <div class="journal-front-footer">
         <span>${item.year}</span>
         <span>${featureLabel}</span>
+      </div>
+    </div>
+  `;
+}
+
+function getServiceThumbProfile(item) {
+  return serviceThumbProfiles[item.title] || null;
+}
+
+function renderServiceThumb(item) {
+  const profile = getServiceThumbProfile(item);
+
+  if (!profile?.image) {
+    return `
+      <div class="service-thumb theme-${item.theme}">
+        <span class="service-thumb-label">${escapeHtml(item.label)}</span>
+        <strong class="service-thumb-badge">${escapeHtml(item.badge)}</strong>
+        <span class="service-thumb-rule"></span>
+        <span class="service-thumb-years">${escapeHtml(item.years)}</span>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="service-thumb theme-${item.theme} has-art art-${profile.surface}">
+      <div class="service-thumb-media">
+        <img
+          class="service-thumb-image ${profile.fit === "contain" ? "is-contain" : ""}"
+          src="${profile.image}"
+          alt="${escapeHtml(profile.alt || `${item.title} thumbnail`)}"
+          loading="lazy"
+        />
+      </div>
+      <div class="service-thumb-topline">
+        <span class="service-thumb-label">${escapeHtml(item.label)}</span>
+        <strong class="service-thumb-badge service-thumb-badge-chip">${escapeHtml(item.badge)}</strong>
+      </div>
+      <div class="service-thumb-bottomline">
+        <span class="service-thumb-years">${escapeHtml(item.years)}</span>
       </div>
     </div>
   `;
@@ -1439,17 +1574,27 @@ async function hydratePublicationAbstracts() {
 }
 
 function buildPublicationRecord(item) {
-  const detailedByLink = new Map(
-    publications.map((entry) => [normalizeLink(entry.link), entry])
-  );
-  const detailed = detailedByLink.get(normalizeLink(item.link));
-  const venue = detailed?.venue || extractVenueFromCitation(item.citation);
-  const tags = detailed?.tags || [item.category];
+  const lookups = getPublicationLookups();
   const citation = cleanCitationText(item.citation);
+  const parsedTitle = extractTitleFromCitation(item.citation);
+  const parsedVenue = extractVenueFromCitation(item.citation);
+  const normalizedLink = normalizeLink(item.link);
+  const detailed =
+    (normalizedLink ? lookups.byLink.get(normalizedLink) : null) ||
+    lookups.byKey.get(
+      buildPublicationLookupKey({
+        year: item.year,
+        title: parsedTitle,
+        venue: parsedVenue,
+        citation: item.citation,
+      })
+    );
+  const venue = detailed?.venue || parsedVenue;
+  const tags = detailed?.tags || [item.category];
   const link = item.link || detailed?.link || "";
   const doi =
     extractDoi(link) || extractDoi(detailed?.link || "") || extractDoi(citation);
-  const title = detailed?.title || extractTitleFromCitation(item.citation) || venue;
+  const title = detailed?.title || parsedTitle || venue;
   const authors = detailed?.authors || extractAuthorsFromCitation(item.citation);
 
   return {
@@ -2067,12 +2212,7 @@ function renderServiceCards(targetId, items) {
       (item) => `
         <li>
           <article class="service-card">
-            <div class="service-thumb theme-${item.theme}">
-              <span class="service-thumb-label">${item.label}</span>
-              <strong class="service-thumb-badge">${item.badge}</strong>
-              <span class="service-thumb-rule"></span>
-              <span class="service-thumb-years">${item.years}</span>
-            </div>
+            ${renderServiceThumb(item)}
             <div class="service-card-body">
               <p class="service-role">${item.role}</p>
               <h4 class="service-title">${item.title}</h4>

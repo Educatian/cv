@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" role="img" aria-labelledby="jaidTitle jaidDesc">
+  <title id="jaidTitle">Journal of Applied Instructional Design cover-style thumbnail</title>
+  <desc id="jaidDesc">A cover-style thumbnail for the Journal of Applied Instructional Design.</desc>
+  <rect width="320" height="420" rx="22" fill="#f3eadc"/>
+  <rect x="0" y="0" width="320" height="82" rx="22" fill="#1f2327"/>
+  <rect x="32" y="116" width="118" height="198" rx="12" fill="#d27d42" opacity="0.24"/>
+  <path d="M56 328h208" stroke="#262626" stroke-width="2" opacity="0.24"/>
+  <path d="M56 340h172" stroke="#262626" stroke-width="2" opacity="0.18"/>
+  <text x="32" y="54" fill="#f8f4ee" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3">AECT JOURNAL</text>
+  <text x="32" y="170" fill="#1f2327" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700">JAID</text>
+  <text x="32" y="222" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="22">Journal of Applied</text>
+  <text x="32" y="250" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="22">Instructional Design</text>
+  <text x="32" y="294" fill="#5b5147" font-family="Arial, Helvetica, sans-serif" font-size="16">Design cases, practice, and</text>
+  <text x="32" y="317" fill="#5b5147" font-family="Arial, Helvetica, sans-serif" font-size="16">applied instructional systems work</text>
+</svg>

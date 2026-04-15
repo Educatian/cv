@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="icceTitle icceDesc">
+  <title id="icceTitle">ICCE conference thumbnail</title>
+  <desc id="icceDesc">A conference-style thumbnail for the International Conference on Computers in Education.</desc>
+  <defs>
+    <linearGradient id="icceBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#113f67"/>
+      <stop offset="100%" stop-color="#1978a5"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="32" fill="url(#icceBg)"/>
+  <rect x="42" y="42" width="236" height="102" rx="20" fill="#fef7ef" opacity="0.96"/>
+  <rect x="42" y="174" width="104" height="104" rx="20" fill="#ff8c42"/>
+  <rect x="174" y="174" width="104" height="104" rx="20" fill="#0f2f4a" opacity="0.75"/>
+  <text x="160" y="103" fill="#163047" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700">ICCE</text>
+  <text x="94" y="234" fill="#ffffff" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17">Conference</text>
+  <text x="226" y="220" fill="#f7efe4" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16">Computers</text>
+  <text x="226" y="241" fill="#f7efe4" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16">in Education</text>
+  <text x="160" y="302" fill="#d5ebf7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15">International Conference on Computers in Education</text>
+</svg>

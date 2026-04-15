@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="apsceTitle apsceDesc">
+  <title id="apsceTitle">APSCE society thumbnail</title>
+  <desc id="apsceDesc">A society-style thumbnail for APSCE.</desc>
+  <defs>
+    <linearGradient id="apsceBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7b1e2b"/>
+      <stop offset="100%" stop-color="#24364d"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="32" fill="url(#apsceBg)"/>
+  <circle cx="160" cy="136" r="82" fill="none" stroke="#f3ddc0" stroke-width="5" opacity="0.45"/>
+  <circle cx="160" cy="136" r="50" fill="none" stroke="#f3ddc0" stroke-width="3" opacity="0.35"/>
+  <circle cx="112" cy="98" r="7" fill="#f3ddc0"/>
+  <circle cx="194" cy="84" r="7" fill="#f3ddc0"/>
+  <circle cx="222" cy="146" r="7" fill="#f3ddc0"/>
+  <circle cx="140" cy="186" r="7" fill="#f3ddc0"/>
+  <circle cx="88" cy="154" r="7" fill="#f3ddc0"/>
+  <text x="160" y="234" fill="#ffffff" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700">APSCE</text>
+  <text x="160" y="270" fill="#f3ddc0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18">Asia-Pacific Society for</text>
+  <text x="160" y="292" fill="#f3ddc0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18">Computers in Education</text>
+</svg>
