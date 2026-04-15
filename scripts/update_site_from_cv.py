@@ -13,6 +13,8 @@ LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
 SITE_DATA_SCRIPT = ROOT / "scripts" / "generate_site_data.py"
 ABSTRACTS_SCRIPT = ROOT / "scripts" / "update_publication_abstracts.py"
 PLAYWRIGHT_SCRIPT = ROOT / "scripts" / "update_publication_abstracts_playwright.mjs"
+ANALYTICS_SCRIPT = ROOT / "scripts" / "update_research_analytics.py"
+SCHOLAR_ANALYTICS_SCRIPT = ROOT / "scripts" / "update_research_analytics_scholar.mjs"
 
 
 def resolve_source_cv(explicit_path: Path | None) -> Path:
@@ -51,6 +53,11 @@ def main() -> None:
         help="Skip rebuilding the abstract library.",
     )
     parser.add_argument(
+        "--skip-analytics",
+        action="store_true",
+        help="Skip refreshing external research analytics data.",
+    )
+    parser.add_argument(
         "--with-playwright",
         action="store_true",
         help="Run the slower Playwright pass for missing abstracts after the base abstract refresh.",
@@ -64,6 +71,16 @@ def main() -> None:
         [sys.executable, str(SITE_DATA_SCRIPT), "--cv", str(current_cv)],
         "Generating site data",
     )
+
+    if not args.skip_analytics:
+        run_step(
+            ["node", str(SCHOLAR_ANALYTICS_SCRIPT)],
+            "Refreshing Google Scholar citation analytics",
+        )
+        run_step(
+            [sys.executable, str(ANALYTICS_SCRIPT)],
+            "Refreshing research analytics",
+        )
 
     if not args.skip_abstracts:
         run_step(

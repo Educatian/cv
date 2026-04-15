@@ -5,6 +5,8 @@
   "main": "app.js",
   "scripts": {
     "site:data": "python scripts/generate_site_data.py",
+    "analytics:scholar": "node scripts/update_research_analytics_scholar.mjs",
+    "analytics:update": "node scripts/update_research_analytics_scholar.mjs && python scripts/update_research_analytics.py",
     "site:update": "python scripts/update_site_from_cv.py",
     "site:update:playwright": "python scripts/update_site_from_cv.py --with-playwright",
     "abstracts:base": "python scripts/update_publication_abstracts.py",

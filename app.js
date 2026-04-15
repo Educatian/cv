@@ -2299,6 +2299,11 @@ function enablePanelNavigation() {
     });
 
     requestAnimationFrame(syncDeckHeight);
+    document.dispatchEvent(
+      new CustomEvent("panel:activated", {
+        detail: { panel: targetPanel.dataset.panel },
+      })
+    );
   }
 
   tabs.forEach((tab) => {
@@ -2312,6 +2317,7 @@ function enablePanelNavigation() {
 
   activatePanel(validHash ? hashTarget : "overview");
   window.addEventListener("resize", syncDeckHeight);
+  document.addEventListener("panel:content-updated", syncDeckHeight);
 }
 
 window.__cvSite = {

@@ -25,7 +25,8 @@ This will:
 
 1. copy the file into `assets/current-cv.docx`
 2. parse the CV into site data
-3. refresh the publication abstract library
+3. refresh Google Scholar citation metrics and merge them with OpenAlex analytics
+4. refresh the publication abstract library
 
 If you also want the slower Playwright recovery pass for missing abstracts:
 
@@ -42,6 +43,8 @@ npm run site:update
 ## Parsing Scripts
 
 - `scripts/generate_site_data.py` - extracts profile, education, affiliations, teaching, grants, service, talks, and publications into structured site data
+- `scripts/update_research_analytics_scholar.mjs` - scrapes public Google Scholar profile metrics and cited-by counts with Playwright
+- `scripts/update_research_analytics.py` - merges Scholar citation data with OpenAlex network, topic, venue, and access analytics
 - `scripts/update_publication_abstracts.py` - base DOI-driven abstract collection
 - `scripts/update_publication_abstracts_playwright.mjs` - Playwright fallback for harder publisher pages
 - `scripts/update_site_from_cv.py` - orchestration script for the full update cycle

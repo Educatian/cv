@@ -10,7 +10,9 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="assets/site-data.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
     <script defer src="app.js"></script>
+    <script defer src="analytics.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#overview">Skip to content</a>
@@ -32,6 +34,7 @@
           <button type="button" class="nav-tab is-active" data-panel-target="overview">Overview</button>
           <button type="button" class="nav-tab" data-panel-target="news">News</button>
           <button type="button" class="nav-tab" data-panel-target="publications">Publications</button>
+          <button type="button" class="nav-tab" data-panel-target="analytics">Analytics</button>
           <button type="button" class="nav-tab" data-panel-target="grants">Grants</button>
           <button type="button" class="nav-tab" data-panel-target="teaching">Teaching</button>
           <button type="button" class="nav-tab" data-panel-target="service">Service</button>
@@ -354,6 +357,124 @@
                       <h3>Selected Submitted and Pending</h3>
                       <ul class="stack-list" id="pending-list"></ul>
                     </div>
+                  </div>
+                </section>
+              </div>
+
+              <div class="content-panel" data-panel="analytics">
+                <section id="analytics" class="content-section reveal">
+                  <div class="section-heading">
+                    <span class="section-label">Research Analytics</span>
+                    <h2>Research dashboard and scholarly impact analytics</h2>
+                  </div>
+                  <p class="section-note">
+                    A hybrid dashboard that uses Google Scholar for citation metrics and OpenAlex for network, topic, venue, and access analytics, with the current results labeled as an April 2026 snapshot.
+                  </p>
+
+                  <div class="analytics-pill-row" aria-label="Analytics sections">
+                    <span class="analytics-pill">Impact</span>
+                    <span class="analytics-pill">Outputs</span>
+                    <span class="analytics-pill">Network</span>
+                    <span class="analytics-pill">Topics</span>
+                    <span class="analytics-pill">Access</span>
+                  </div>
+
+                  <div class="analytics-loading" id="analytics-loading">
+                    Loading research analytics...
+                  </div>
+
+                  <div class="analytics-dashboard" id="analytics-dashboard" hidden>
+                    <section class="analytics-panel analytics-meta-panel">
+                      <div class="analytics-panel-head">
+                        <h3>Data Source</h3>
+                        <p id="analytics-source-note">
+                          Google Scholar and OpenAlex records are used together to build this dashboard.
+                        </p>
+                      </div>
+                      <div class="analytics-link-row" id="analytics-link-row"></div>
+                    </section>
+
+                    <div class="analytics-metric-grid" id="analytics-metric-grid"></div>
+
+                    <div class="analytics-two-up">
+                      <section class="analytics-panel analytics-panel-wide">
+                        <div class="analytics-panel-head">
+                          <h3>Annual Citation Trend</h3>
+                          <p>Year-over-year citation trajectory from the public Google Scholar profile.</p>
+                        </div>
+                        <div class="analytics-chart-shell">
+                          <div class="analytics-chart" id="annual-citations-chart"></div>
+                        </div>
+                      </section>
+
+                      <section class="analytics-panel">
+                        <div class="analytics-panel-head">
+                          <h3>Public Access</h3>
+                          <p>OpenAlex-based open access, repository full text, and OA status mix.</p>
+                        </div>
+                        <div class="analytics-access-summary" id="analytics-access-summary"></div>
+                        <div class="analytics-status-list" id="analytics-status-list"></div>
+                      </section>
+                    </div>
+
+                    <div class="analytics-two-up">
+                      <section class="analytics-panel">
+                        <div class="analytics-panel-head">
+                          <h3>Top Cited Works</h3>
+                          <p>Most-cited publications using Google Scholar cited-by counts matched to local records.</p>
+                        </div>
+                        <div class="analytics-bar-list" id="analytics-top-works"></div>
+                      </section>
+
+                      <section class="analytics-panel">
+                        <div class="analytics-panel-head">
+                          <h3>Venue Distribution</h3>
+                          <p>Top journals, conferences, and publication outlets by output count from OpenAlex.</p>
+                        </div>
+                        <div class="analytics-type-chip-row" id="analytics-type-chip-row"></div>
+                        <div class="analytics-bar-list" id="analytics-source-distribution"></div>
+                      </section>
+                    </div>
+
+                    <div class="analytics-two-up analytics-visuals">
+                      <section class="analytics-panel">
+                        <div class="analytics-panel-head">
+                          <h3>Topic Cluster</h3>
+                          <p>Aggregated interests from OpenAlex topics and work-level keywords.</p>
+                        </div>
+                        <div class="analytics-chart analytics-bubble-chart" id="analytics-topic-cluster"></div>
+                      </section>
+
+                      <section class="analytics-panel analytics-panel-network">
+                        <div class="analytics-panel-head">
+                          <h3>Coauthor Network</h3>
+                          <p>D3 force network of recurring collaborators across OpenAlex-indexed works.</p>
+                        </div>
+                        <div class="analytics-chart analytics-network-chart" id="analytics-network"></div>
+                      </section>
+                    </div>
+
+                    <section class="analytics-panel">
+                      <div class="analytics-panel-head">
+                        <h3>Per-Work Citation Table</h3>
+                        <p>Scholar cited-by counts merged with OpenAlex venue and access metadata.</p>
+                      </div>
+                      <div class="analytics-table-shell">
+                        <table class="analytics-table">
+                          <thead>
+                            <tr>
+                              <th>Title</th>
+                              <th>Year</th>
+                              <th>Source</th>
+                              <th>Citations</th>
+                              <th>Citations / Year</th>
+                              <th>Access</th>
+                            </tr>
+                          </thead>
+                          <tbody id="analytics-work-table"></tbody>
+                        </table>
+                      </div>
+                    </section>
                   </div>
                 </section>
               </div>
