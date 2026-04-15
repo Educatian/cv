@@ -28,6 +28,10 @@ async function renderPublicationDetailPage() {
 
   document.title = `${publication.title} | Dr. Jewoong Moon`;
 
+  const initialDoiUrl = publication.doi
+    ? `https://doi.org/${publication.doi}`
+    : "";
+
   root.innerHTML = `
     <div class="publication-detail-grid">
       <div class="publication-detail-cover">
@@ -86,7 +90,7 @@ async function renderPublicationDetailPage() {
         publication.doi
           ? `<section class="publication-detail-section">
               <h2>DOI</h2>
-              <p><a class="publication-link is-primary" href="https://doi.org/${publication.doi}" target="_blank" rel="noreferrer">https://doi.org/${publication.doi}</a></p>
+              <p><a class="publication-link is-primary" id="publication-detail-doi-link" href="${initialDoiUrl}" target="_blank" rel="noreferrer">${initialDoiUrl}</a></p>
             </section>`
           : ""
       }
@@ -95,7 +99,18 @@ async function renderPublicationDetailPage() {
 
   if (publication.doi) {
     const abstractNode = document.getElementById("publication-detail-abstract");
+    const doiLinkNode = document.getElementById("publication-detail-doi-link");
+    const abstractRecord = await siteApi.fetchAbstractRecord(publication.doi);
     const abstractText = await siteApi.fetchAbstractText(publication.doi);
+
+    if (doiLinkNode && abstractRecord) {
+      const resolvedDoi = abstractRecord.resolvedDoi || publication.doi;
+      const resolvedUrl =
+        abstractRecord.resolvedUrl || `https://doi.org/${resolvedDoi}`;
+      doiLinkNode.href = resolvedUrl;
+      doiLinkNode.textContent = `https://doi.org/${resolvedDoi}`;
+    }
+
     abstractNode.textContent =
       abstractText || "Abstract unavailable for this publication record.";
     abstractNode.classList.remove("is-loading");

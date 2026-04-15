@@ -858,6 +858,7 @@ const publicationsPerPage = 6;
 let currentCompletePublicationPage = 1;
 const completePublicationsPerPage = 10;
 const abstractCache = new Map();
+const abstractRecordCache = new Map();
 let publicationRecordsCache = null;
 let abstractLibraryPromise = null;
 
@@ -1193,6 +1194,25 @@ async function loadAbstractLibrary() {
   return abstractLibraryPromise;
 }
 
+async function fetchAbstractRecord(doi) {
+  if (!doi) {
+    return null;
+  }
+
+  if (abstractRecordCache.has(doi)) {
+    return abstractRecordCache.get(doi);
+  }
+
+  const abstractLibrary = await loadAbstractLibrary();
+  const record =
+    abstractLibrary && Object.prototype.hasOwnProperty.call(abstractLibrary, doi)
+      ? abstractLibrary[doi]
+      : null;
+
+  abstractRecordCache.set(doi, record);
+  return record;
+}
+
 async function fetchAbstractText(doi) {
   if (!doi) {
     return "";
@@ -1202,12 +1222,9 @@ async function fetchAbstractText(doi) {
     return abstractCache.get(doi);
   }
 
-  const abstractLibrary = await loadAbstractLibrary();
-  if (
-    abstractLibrary &&
-    Object.prototype.hasOwnProperty.call(abstractLibrary, doi)
-  ) {
-    const storedAbstract = abstractLibrary[doi].abstract || "";
+  const storedRecord = await fetchAbstractRecord(doi);
+  if (storedRecord) {
+    const storedAbstract = storedRecord.abstract || "";
     abstractCache.set(doi, storedAbstract);
     return storedAbstract;
   }
@@ -1843,6 +1860,7 @@ function enablePanelNavigation() {
 
 window.__cvSite = {
   escapeHtml,
+  fetchAbstractRecord,
   fetchAbstractText,
   getAbstractFallback,
   getAllPublicationRecords,
