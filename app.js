@@ -858,6 +858,7 @@ const publicationsPerPage = 6;
 let currentCompletePublicationPage = 1;
 const completePublicationsPerPage = 10;
 const abstractCache = new Map();
+let publicationRecordsCache = null;
 
 const journalFrontProfiles = {
   "AI & Ethics": {
@@ -1032,6 +1033,14 @@ function escapeHtml(value = "") {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function slugify(value = "") {
+  return value
+    .toLowerCase()
+    .replace(/^https?:\/\/doi\.org\//, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 function cleanCitationText(citation = "") {
@@ -1251,6 +1260,48 @@ async function hydratePublicationAbstracts() {
   );
 }
 
+function buildPublicationRecord(item) {
+  const detailedByLink = new Map(
+    publications.map((entry) => [normalizeLink(entry.link), entry])
+  );
+  const detailed = detailedByLink.get(normalizeLink(item.link));
+  const venue = detailed?.venue || extractVenueFromCitation(item.citation);
+  const tags = detailed?.tags || [item.category];
+  const citation = cleanCitationText(item.citation);
+  const link = item.link || detailed?.link || "";
+  const doi =
+    extractDoi(link) || extractDoi(detailed?.link || "") || extractDoi(citation);
+  const title = detailed?.title || extractTitleFromCitation(item.citation) || venue;
+  const authors = detailed?.authors || extractAuthorsFromCitation(item.citation);
+
+  return {
+    id: slugify(doi || `${item.year}-${title}-${venue}`),
+    year: item.year,
+    category: item.category,
+    citation,
+    link,
+    note: detailed?.note || "",
+    title,
+    authors,
+    venue,
+    tags,
+    doi,
+    showCitation: !detailed,
+  };
+}
+
+function getAllPublicationRecords() {
+  if (!publicationRecordsCache) {
+    publicationRecordsCache = completeJournalArticles.map(buildPublicationRecord);
+  }
+
+  return publicationRecordsCache;
+}
+
+function getPublicationDetailUrl(item) {
+  return `publication.html?id=${encodeURIComponent(item.id)}`;
+}
+
 function renderStats() {
   const list = document.getElementById("hero-stats");
   list.innerHTML = stats
@@ -1350,33 +1401,11 @@ function renderFilters() {
 
 function renderPublications() {
   const list = document.getElementById("publication-list");
-  const detailedByLink = new Map(
-    publications.map((item) => [normalizeLink(item.link), item])
-  );
+  if (!list) {
+    return;
+  }
 
-  const visibleItems = completeJournalArticles.map((item) => {
-    const detailed = detailedByLink.get(normalizeLink(item.link));
-    const venue = detailed?.venue || extractVenueFromCitation(item.citation);
-    const tags = detailed?.tags || [item.category];
-    const doi =
-      extractDoi(item.link || "") ||
-      extractDoi(detailed?.link || "") ||
-      extractDoi(item.citation || "");
-
-    return {
-      year: item.year,
-      category: item.category,
-      citation: cleanCitationText(item.citation),
-      link: item.link || detailed?.link || "",
-      note: detailed?.note || "",
-      title: detailed?.title || extractTitleFromCitation(item.citation),
-      authors: detailed?.authors || extractAuthorsFromCitation(item.citation),
-      venue,
-      tags,
-      doi,
-      showCitation: !detailed,
-    };
-  });
+  const visibleItems = getAllPublicationRecords();
 
   const totalPages = Math.max(
     1,
@@ -1419,14 +1448,17 @@ function renderPublications() {
             ${item.authors ? `<p class="publication-authors">${item.authors}</p>` : ""}
             ${item.venue ? `<p class="publication-venue">${item.venue}</p>` : ""}
             <p
-              class="publication-abstract ${item.doi ? "is-loading" : "is-empty"}"
+              class="publication-abstract publication-abstract-preview ${item.doi ? "is-loading" : "is-empty"}"
               data-publication-doi="${escapeHtml(item.doi || "")}"
             >${escapeHtml(getAbstractFallback(item))}</p>
-            ${
-              item.showCitation
-                ? `<p class="publication-citation">${item.citation}</p>`
-                : ""
-            }
+            <div class="publication-actions">
+              ${
+                item.link
+                  ? `<a class="publication-link" href="${item.link}" target="_blank" rel="noreferrer">Journal page</a>`
+                  : ""
+              }
+              <a class="publication-link is-primary" href="${getPublicationDetailUrl(item)}">Read more</a>
+            </div>
           </div>
         </li>
       `
@@ -1788,20 +1820,31 @@ function enablePanelNavigation() {
   window.addEventListener("resize", syncDeckHeight);
 }
 
-renderStats();
-renderFocusAreas();
-renderHonors();
-renderAffiliations();
-renderNews();
-renderInitiatives();
-renderPublications();
-renderCompletePublications();
-renderGrantList("funded-list", grants.funded);
-renderGrantList("pending-list", grants.pending);
-renderGrantDashboard();
-renderMentoringMetrics();
-renderServiceCards("editorial-list", editorialRoles);
-renderServiceCards("leadership-list", leadershipRoles);
-renderTalks();
-enableRevealMotion();
-enablePanelNavigation();
+window.__cvSite = {
+  escapeHtml,
+  fetchAbstractText,
+  getAbstractFallback,
+  getAllPublicationRecords,
+  getPublicationDetailUrl,
+  renderJournalFrontThumb,
+};
+
+if (document.getElementById("content-deck")) {
+  renderStats();
+  renderFocusAreas();
+  renderHonors();
+  renderAffiliations();
+  renderNews();
+  renderInitiatives();
+  renderPublications();
+  renderCompletePublications();
+  renderGrantList("funded-list", grants.funded);
+  renderGrantList("pending-list", grants.pending);
+  renderGrantDashboard();
+  renderMentoringMetrics();
+  renderServiceCards("editorial-list", editorialRoles);
+  renderServiceCards("leadership-list", leadershipRoles);
+  renderTalks();
+  enableRevealMotion();
+  enablePanelNavigation();
+}

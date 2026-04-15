@@ -995,15 +995,116 @@ a {
   line-height: 1.72;
 }
 
+.publication-abstract-preview {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
 .publication-abstract.is-loading,
 .publication-abstract.is-empty {
   color: var(--muted);
+}
+
+.publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.95rem;
+}
+
+.publication-link {
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.publication-link.is-primary,
+.publication-link:hover,
+.publication-link:focus-visible {
+  color: var(--accent);
 }
 
 .publication-citation {
   margin: 0.65rem 0 0;
   color: var(--muted);
   line-height: 1.68;
+}
+
+.publication-detail-page {
+  min-height: 100vh;
+}
+
+.publication-detail-shell {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.2rem 1.5rem 3rem;
+}
+
+.publication-detail-card {
+  padding: 1.6rem;
+}
+
+.publication-detail-grid {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 1.4rem;
+}
+
+.publication-detail-cover .publication-thumb {
+  max-width: 240px;
+}
+
+.publication-detail-title {
+  margin: 0.6rem 0 0;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+}
+
+.publication-detail-authors,
+.publication-detail-venue,
+.publication-detail-citation,
+.publication-detail-abstract {
+  margin: 0.75rem 0 0;
+  line-height: 1.8;
+}
+
+.publication-detail-authors,
+.publication-detail-venue {
+  color: var(--muted);
+}
+
+.publication-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.3rem;
+}
+
+.publication-detail-sections {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.publication-detail-section {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.publication-detail-section h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.publication-detail-abstract.is-loading,
+.publication-detail-abstract.is-empty {
+  color: var(--muted);
 }
 
 .complete-publications-block {
@@ -1628,5 +1729,13 @@ a {
   .section-subheading,
   .complete-publication-item {
     grid-template-columns: 1fr;
+  }
+
+  .publication-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-detail-cover .publication-thumb {
+    max-width: 320px;
   }
 }
