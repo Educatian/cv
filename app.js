@@ -1028,9 +1028,13 @@ function cleanCitationText(citation = "") {
   return citation.replace(/^[*‡\s]+/, "").replace(/\s+/g, " ").trim();
 }
 
+function extractCitationYearMatch(citation = "") {
+  return cleanCitationText(citation).match(/\([^)]*\d{4}\)\.\s*/);
+}
+
 function extractAuthorsFromCitation(citation = "") {
   const cleaned = cleanCitationText(citation);
-  const yearMatch = cleaned.match(/\((?:Accepted,\s*)?\d{4}\)\./);
+  const yearMatch = extractCitationYearMatch(citation);
 
   if (!yearMatch) {
     return "";
@@ -1041,7 +1045,7 @@ function extractAuthorsFromCitation(citation = "") {
 
 function extractTitleFromCitation(citation = "") {
   const cleaned = cleanCitationText(citation);
-  const yearMatch = cleaned.match(/\((?:Accepted,\s*)?\d{4}\)\.\s*/);
+  const yearMatch = extractCitationYearMatch(citation);
 
   if (!yearMatch) {
     return "";
@@ -1067,7 +1071,7 @@ function extractVenueFromCitation(citation = "") {
     return matchedVenue;
   }
 
-  const yearMatch = cleaned.match(/\((?:Accepted,\s*)?\d{4}\)\.\s*/);
+  const yearMatch = extractCitationYearMatch(citation);
 
   if (!yearMatch) {
     return "";
