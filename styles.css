@@ -1948,6 +1948,11 @@ a {
   background: #fffdf9;
 }
 
+.analytics-loading[hidden],
+.analytics-dashboard[hidden] {
+  display: none !important;
+}
+
 .analytics-dashboard {
   display: grid;
   gap: 1.1rem;
