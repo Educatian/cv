@@ -913,6 +913,53 @@ a {
   margin: 1.15rem 0 0.85rem;
 }
 
+.publication-tools {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.15rem 0 1.05rem;
+  padding: 0.9rem;
+  border: 1px solid rgba(18, 24, 32, 0.1);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(31, 78, 121, 0.035), transparent 80%),
+    #ffffff;
+}
+
+.publication-search {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.publication-search span {
+  color: #314154;
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.publication-search input {
+  width: 100%;
+  min-height: 2.9rem;
+  padding: 0 0.9rem;
+  border: 1px solid rgba(18, 24, 32, 0.14);
+  border-radius: 6px;
+  background: #fbfcfe;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.95rem;
+}
+
+.publication-search input:focus {
+  border-color: rgba(158, 27, 50, 0.45);
+  box-shadow: 0 0 0 3px rgba(158, 27, 50, 0.08);
+  outline: none;
+}
+
+.publication-tools .filter-bar {
+  margin: 0;
+}
+
 .filter-button {
   border: 1px solid var(--line);
   background: transparent;
@@ -941,6 +988,14 @@ a {
   list-style: none;
   display: grid;
   gap: 0.8rem;
+}
+
+.publication-empty {
+  padding: 1.2rem;
+  border: 1px dashed rgba(18, 24, 32, 0.18);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--muted);
 }
 
 .publication-pagination {
@@ -2602,6 +2657,81 @@ body::before {
   box-shadow: 0 14px 26px rgba(158, 27, 50, 0.24);
 }
 
+.scholar-snapshot {
+  display: grid;
+  gap: 0.72rem;
+  max-width: 45rem;
+  margin-top: 1.3rem;
+  padding: 0.9rem;
+  border: 1px solid rgba(18, 24, 32, 0.1);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(31, 78, 121, 0.035), transparent 72%),
+    #ffffff;
+}
+
+.scholar-snapshot-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  color: #314154;
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.scholar-snapshot-head a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.scholar-snapshot-head a:hover,
+.scholar-snapshot-head a:focus-visible {
+  text-decoration: underline;
+}
+
+.scholar-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid rgba(18, 24, 32, 0.08);
+  border-radius: 7px;
+}
+
+.scholar-metric {
+  display: grid;
+  gap: 0.16rem;
+  padding: 0.74rem 0.85rem;
+  border-left: 1px solid rgba(18, 24, 32, 0.08);
+  background: rgba(251, 252, 254, 0.9);
+}
+
+.scholar-metric:first-child {
+  border-left: 0;
+}
+
+.scholar-metric strong {
+  color: #111722;
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.scholar-metric span {
+  color: #314154;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.scholar-metric small {
+  color: #667386;
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+
 .hero-stats {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
@@ -2744,8 +2874,22 @@ body::before {
 }
 
 .rail-block.profile-intro {
-  padding: 0;
+  position: relative;
+  padding: 1.18rem;
   overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(158, 27, 50, 0.07), transparent 48%),
+    linear-gradient(180deg, #ffffff, #fbfcfe);
+}
+
+.rail-block.profile-intro::before {
+  content: "";
+  display: block;
+  width: 2.6rem;
+  height: 0.22rem;
+  margin-bottom: 0.95rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--steel));
 }
 
 .profile-photo-frame {
@@ -2758,12 +2902,12 @@ body::before {
 
 .profile-intro .role-line,
 .profile-intro #profile-affiliation-lines {
-  padding-right: 1.18rem;
-  padding-left: 1.18rem;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .profile-intro #profile-affiliation-lines {
-  padding-bottom: 1.18rem;
+  padding-bottom: 0;
 }
 
 .affiliation-card,
@@ -3088,6 +3232,19 @@ body::before {
 
   .hero-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .scholar-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .scholar-metric {
+    border-top: 1px solid rgba(18, 24, 32, 0.08);
+    border-left: 0;
+  }
+
+  .scholar-metric:first-child {
+    border-top: 0;
   }
 
   .hero-stats li:nth-child(3) {

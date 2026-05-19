@@ -70,6 +70,21 @@
                 >ADIE Lab</a
               >
             </div>
+            <div class="scholar-snapshot" aria-label="Google Scholar impact snapshot">
+              <div class="scholar-snapshot-head">
+                <span>Scholar Snapshot</span>
+                <a
+                  id="scholar-profile-link"
+                  href="https://scholar.google.com/citations?user=b-epW38AAAAJ&hl=en&oi=ao"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Google Scholar</a
+                >
+              </div>
+              <div class="scholar-metrics" id="scholar-metrics">
+                <span>Loading citation metrics...</span>
+              </div>
+            </div>
             <ul class="hero-stats" id="hero-stats" aria-label="Profile metrics"></ul>
           </div>
 
@@ -96,13 +111,6 @@
         <section class="main-grid">
           <aside class="profile-rail">
             <div class="rail-block profile-intro reveal">
-              <div class="profile-photo-frame">
-                <img
-                  class="profile-photo"
-                  src="assets/headshot.jpg"
-                  alt="Portrait of Dr. Jewoong Moon"
-                />
-              </div>
               <p class="role-line" id="profile-role-line">Assistant Professor</p>
               <div id="profile-affiliation-lines">
                 <p class="affiliation-line">
@@ -306,6 +314,18 @@
                     All peer-reviewed journal articles from the attached CV are
                     shown here in one unified publication gallery.
                   </p>
+                  <div class="publication-tools" aria-label="Publication search and filters">
+                    <label class="publication-search">
+                      <span>Search publications</span>
+                      <input
+                        id="publication-search"
+                        type="search"
+                        placeholder="Title, author, venue, or keyword"
+                        autocomplete="off"
+                      />
+                    </label>
+                    <div class="filter-bar" id="publication-filters"></div>
+                  </div>
                   <ol class="publication-list" id="publication-list"></ol>
                   <div class="publication-pagination" id="publication-pagination" aria-label="Publication pages"></div>
                 </section>

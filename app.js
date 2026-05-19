@@ -993,6 +993,7 @@ const serviceReviewCopy =
   "Review service includes journals such as Computers & Education, British Journal of Educational Technology, IEEE Transactions on Learning Technologies, Journal of Learning Analytics, and Virtual Reality, alongside grant review for the National Science Foundation and the Swiss National Science Foundation.";
 
 let activeFilter = "All";
+let publicationSearchQuery = "";
 let currentPublicationPage = 1;
 const publicationsPerPage = 6;
 let currentCompletePublicationPage = 1;
@@ -1793,6 +1794,70 @@ function renderStats() {
     .join("");
 }
 
+function renderScholarSnapshot() {
+  const root = document.getElementById("scholar-metrics");
+  const link = document.getElementById("scholar-profile-link");
+
+  if (!root) {
+    return;
+  }
+
+  fetch("assets/research-analytics.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Scholar metrics unavailable");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      const summary = data.summary || {};
+      const source = data.source || {};
+      const sinceLabel = summary.sinceLabel || "recent";
+      const metrics = [
+        {
+          value: summary.totalCitations,
+          label: "Citations",
+          note: `${sinceLabel}: ${summary.sinceYearCitations?.toLocaleString?.() || "n/a"}`,
+        },
+        {
+          value: summary.hIndex,
+          label: "h-index",
+          note: `${sinceLabel}: ${summary.sinceYearHIndex ?? "n/a"}`,
+        },
+        {
+          value: summary.i10Index,
+          label: "i10-index",
+          note: `${sinceLabel}: ${summary.sinceYearI10Index ?? "n/a"}`,
+        },
+      ];
+
+      if (link && source.scholarProfileUrl) {
+        link.href = source.scholarProfileUrl;
+      }
+
+      root.innerHTML = metrics
+        .map(
+          (item) => `
+            <article class="scholar-metric">
+              <strong>${Number(item.value || 0).toLocaleString()}</strong>
+              <span>${item.label}</span>
+              <small>${item.note}</small>
+            </article>
+          `
+        )
+        .join("");
+    })
+    .catch(() => {
+      root.innerHTML = `
+        <article class="scholar-metric">
+          <strong>Live</strong>
+          <span>Scholar metrics</span>
+          <small>Open the Scholar profile for current citation totals.</small>
+        </article>
+      `;
+    });
+}
+
 function renderFocusAreas() {
   const row = document.getElementById("focus-chips");
   row.innerHTML = focusAreas
@@ -1898,13 +1963,58 @@ function renderFilters() {
   });
 }
 
+function enablePublicationSearch() {
+  const input = document.getElementById("publication-search");
+
+  if (!input) {
+    return;
+  }
+
+  input.addEventListener("input", () => {
+    publicationSearchQuery = input.value.trim().toLowerCase();
+    currentPublicationPage = 1;
+    renderPublications();
+  });
+}
+
+function getVisiblePublicationRecords() {
+  const query = publicationSearchQuery;
+
+  return getAllPublicationRecords().filter((item) => {
+    const matchesFilter =
+      activeFilter === "All" || (item.tags || []).includes(activeFilter);
+
+    if (!matchesFilter) {
+      return false;
+    }
+
+    if (!query) {
+      return true;
+    }
+
+    const searchable = [
+      item.title,
+      item.authors,
+      item.venue,
+      item.year,
+      item.citation,
+      ...(item.tags || []),
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+
+    return searchable.includes(query);
+  });
+}
+
 function renderPublications() {
   const list = document.getElementById("publication-list");
   if (!list) {
     return;
   }
 
-  const visibleItems = getAllPublicationRecords();
+  const visibleItems = getVisiblePublicationRecords();
 
   const totalPages = Math.max(
     1,
@@ -1917,6 +2027,17 @@ function renderPublications() {
     startIndex,
     startIndex + publicationsPerPage
   );
+
+  if (!pagedItems.length) {
+    list.innerHTML = `
+      <li class="publication-empty">
+        No publications match the current search and filter.
+      </li>
+    `;
+    renderPublicationPagination(totalPages);
+    document.dispatchEvent(new CustomEvent("panel:content-updated"));
+    return;
+  }
 
   list.innerHTML = pagedItems
     .map(
@@ -1966,6 +2087,7 @@ function renderPublications() {
 
   renderPublicationPagination(totalPages);
   hydratePublicationAbstracts();
+  document.dispatchEvent(new CustomEvent("panel:content-updated"));
 }
 
 function renderPublicationPagination(totalPages) {
@@ -2337,11 +2459,14 @@ if (document.getElementById("content-deck")) {
   renderAppointmentsEducation();
   renderOverview();
   renderStats();
+  renderScholarSnapshot();
   renderFocusAreas();
   renderHonors();
   renderAffiliations();
   renderNews();
   renderInitiatives();
+  renderFilters();
+  enablePublicationSearch();
   renderPublications();
   renderCompletePublications();
   renderGrantList("funded-list", grants.funded);
