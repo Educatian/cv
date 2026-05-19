@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-15T04:24:09.122453+00:00",
-  "sourceCv": "C:\\Users\\jewoo\\Documents\\Playground\\jmoon-github-cv\\assets\\current-cv.docx",
+  "generatedAt": "2026-05-19T22:11:07.376954+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\cv\\assets\\current-cv.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
-    "cvDate": "April 1, 2026",
+    "cvDate": "May 1, 2026",
     "eyebrow": "Instructional Technology | College of Education",
     "heroTitleMeta": "Assistant Professor of Instructional Technology, The University of Alabama",
     "heroSummary": "Research at The University of Alabama focused on Digital Game-Based Learning, Inclusive and Immersive learning experience design (Extended Reality), Learning Analytics, and Educational Data Mining.",
@@ -38,7 +38,7 @@
   },
   "stats": [
     {
-      "value": "57",
+      "value": "58",
       "label": "Journal articles"
     },
     {
@@ -144,15 +144,20 @@
   ],
   "honors": [
     "Nellie Rose McCrory Faculty Excellence Award – Research Division (2026), College of Education, The University of Alabama",
+    "President’s Faculty Research Excellence Award (2026), The University of Alabama",
     "Finalist (selected as one of 11 finalists from 159 applicants). William T. Grant Foundation Scholars Program (2026).",
     "Dean’s Merit Award in Research Excellence (2025), College of Education, The University of Alabama",
     "Outstanding iLEAD Paper Award (2024). Immersive Learning Research Network Conference (iLRN) 2024",
     "Outstanding Practitioner Paper Award (2023). Immersive Learning Research Network Conference (iLRN) 2023",
     "Featured Emerging Scholar (2021). CIRCLS (The Center for Integrative Research in Computing and Learning Sciences)",
-    "Finalist (2016-2021), Instructional Systems and Learning Technologies Program Award, Florida State University",
-    "Travel Grants at Florida State University (2015-Present)"
+    "Finalist (2016-2021), Instructional Systems and Learning Technologies Program Award, Florida State University"
   ],
   "news": [
+    {
+      "date": "2026",
+      "type": "Publication",
+      "text": "Journal article in Interactive Learning Environments: Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review."
+    },
     {
       "date": "2026",
       "type": "Publication",
@@ -162,11 +167,6 @@
       "date": "2026",
       "type": "Publication",
       "text": "Journal article in Simulation & Gaming: Navigating practitioner roles in generative AI-enhanced educational game design: A collective autoethnography."
-    },
-    {
-      "date": "2026",
-      "type": "Publication",
-      "text": "Journal article in AI & Ethics: An ethical framework for conversational AI in higher education: Toward an evidence-based ethical governance."
     },
     {
       "date": "2027",
@@ -215,26 +215,40 @@
       ]
     },
     {
-      "name": "Collaborative Research",
+      "name": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration",
       "badge": "Pending",
-      "summary": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
+      "summary": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
       "tags": [
-        "Key Personnel / External Evaluator",
-        "January 2027 - December 2029"
+        "$35,000",
+        "Lead PI",
+        "AERA-NSF Research Grant Program, PENDING"
       ]
     },
     {
-      "name": "Immersive Remembrance",
+      "name": "Shift the Lens",
       "badge": "Pending",
-      "summary": "Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning",
+      "summary": "Shift the Lens: Uncovering Students' Assets in Written Math Work via Multimodal AI",
       "tags": [
-        "$478,690",
+        "$50,000",
         "Lead PI",
-        "Institute of Museum and Library Services - IMLS, PENDING"
+        "Advanced Innovative Math Solutions Collaboratory, PENDING"
       ]
     }
   ],
   "publications": [
+    {
+      "year": "2026",
+      "title": "Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review",
+      "authors": "Uddin, M., Luo, F., & Moon, J.",
+      "venue": "Interactive Learning Environments",
+      "link": "",
+      "tags": [
+        "GenAI",
+        "STEM",
+        "Review"
+      ],
+      "note": ""
+    },
     {
       "year": "2026",
       "title": "Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers",
@@ -929,13 +943,19 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Accepted, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed]",
+      "citation": "Uddin, M., Luo, F., & Moon, J. (Accepted, 2026). Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review. Interactive Learning Environments. [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
       "link": ""
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Jeong, Y., Lee, Y., Byun, G., & Moon, J. (Minor revision, 2026). Navigating practitioner roles in generative AI-enhanced educational game design: A collective autoethnography. Simulation & Gaming [ESCI-indexed]",
+      "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Accepted, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
+      "link": ""
+    },
+    {
+      "year": "2026",
+      "category": "International",
+      "citation": "* Jeong, Y., Lee, Y., Byun, G., & Moon, J. (Minor revision, 2026). Navigating practitioner roles in generative AI-enhanced educational game design: A collective autoethnography. Simulation & Gaming [ESCI-indexed, IF = 1.8, IF5 = 2.7]",
       "link": ""
     },
     {
@@ -953,7 +973,7 @@
     {
       "year": "2025",
       "category": "International",
-      "citation": "Moon, J., Jung, Y., Kim, S., Bae, Y., & Schneider, B. (2025). Fostering innovation at the intersection of maker education and extended reality (XR). Computers and Education: X Reality. https://doi.org/10.1016/j.cexr.2025.100124 [ESCI-indexed]",
+      "citation": "Moon, J., Jung, Y., Kim, S., Bae, Y., & Schneider, B. (2025). Fostering innovation at the intersection of maker education and extended reality (XR). Computers and Education: X Reality. https://doi.org/10.1016/j.cexr.2025.100124 [ESCI-indexed, Q1]",
       "link": "https://doi.org/10.1016/j.cexr.2025.100124"
     },
     {
@@ -1346,6 +1366,18 @@
     ],
     "pending": [
       {
+        "title": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
+        "meta": "Lead PI | AERA-NSF Research Grant Program, PENDING | September 2026 - August 2028",
+        "amount": "$35,000",
+        "amountValue": 35000.0
+      },
+      {
+        "title": "Shift the Lens: Uncovering Students' Assets in Written Math Work via Multimodal AI",
+        "meta": "Lead PI | Advanced Innovative Math Solutions Collaboratory, PENDING | August 2026 - August 2027",
+        "amount": "$50,000",
+        "amountValue": 50000.0
+      },
+      {
         "title": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
         "meta": "Key Personnel / External Evaluator | January 2027 - December 2029",
         "amount": "pending",
@@ -1362,20 +1394,14 @@
         "meta": "Lead PI | Advanced Innovative Math Solutions Collaboratory, PENDING | June 2026 - May 2027",
         "amount": "$50,000",
         "amountValue": 50000.0
-      },
-      {
-        "title": "Data-informed Adaptive Teaching Analytics (DATA): Leveraging Artificial Intelligence for Adaptive Teaching and Generative Learning. National Science Foundation",
-        "meta": "Lead PI | RITEL, PENDING | July 2026 - June 2029",
-        "amount": "$109,846",
-        "amountValue": 109846.0
       }
     ]
   },
   "grantPortfolio": {
     "fundedTotal": 107459,
-    "pendingTotal": 638536,
+    "pendingTotal": 613690,
     "fundedCount": 12,
-    "pendingCount": 4
+    "pendingCount": 5
   },
   "teaching": {
     "teachingPortfolio": [
@@ -1403,7 +1429,7 @@
       "label": "doctoral chairs or co-chairs"
     },
     {
-      "value": "9",
+      "value": "10",
       "label": "doctoral committee appointments"
     },
     {
