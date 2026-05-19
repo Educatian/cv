@@ -922,7 +922,7 @@ const overview = siteData.overview || {
   title: "Research at the intersection of AI, XR, analytics, and learning experience design",
   paragraphs: [
     "Dr. Jewoong Moon studies how computationally rich learning environments can better support teacher education, inclusive STEM learning, and adaptive educational experiences. His work integrates generative AI, virtual and mixed reality, game-based learning, and multimodal analytics to model learning dynamics and design new forms of feedback, assessment, and immersive instruction.",
-    "The site below reframes the attached CV as a GitHub-inspired research profile: a concise readme, pinned initiatives, selected publications, grant activity, mentoring footprint, and academic leadership.",
+    "This portfolio brings the CV into a concise web format: research themes, current initiatives, selected publications, grant activity, mentoring, and academic leadership in one navigable profile.",
   ],
 };
 
