@@ -11,11 +11,11 @@ from docx import Document
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CV_PATH = ROOT / "assets" / "current-cv.docx"
+DEFAULT_CV_PATH = ROOT / "CV_202605_MOON.docx"
+FALLBACK_CV_PATH = ROOT / "assets" / "current-cv.docx"
 LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
 DEFAULT_JSON_PATH = ROOT / "assets" / "site-data.generated.json"
 DEFAULT_JS_PATH = ROOT / "assets" / "site-data.js"
-BACKUP_NAME_PATTERN = re.compile(r"(?:before-codex|backup|old|legacy)", re.I)
 
 HEADERS = {
     "contact": "CONTACT INFORMATION",
@@ -1042,8 +1042,8 @@ def build_profile(
         "homepage": contact.get("homepage", ""),
         "researchgate": contact.get("researchgate", ""),
         "labWebsite": contact.get("labWebsite", ""),
-        "cvDownloadPath": "assets/current-cv.docx",
-        "cvDownloadFilename": f"Jewoong_Moon_CV_{dt.date.today().strftime('%Y%m%d')}.docx",
+        "cvDownloadPath": "CV_202605_MOON.docx",
+        "cvDownloadFilename": "CV_202605_MOON.docx",
     }
 
 
@@ -1174,16 +1174,10 @@ def choose_cv_path(explicit_path: Optional[Path]) -> Path:
     if explicit_path:
         return explicit_path.resolve()
 
-    candidates = [
-        path
-        for path in ROOT.glob("*.docx")
-        if path.name != LEGACY_CV_PATH.name and not BACKUP_NAME_PATTERN.search(path.name)
-    ]
-    if candidates:
-        return max(candidates, key=lambda path: path.stat().st_mtime)
-
     if DEFAULT_CV_PATH.exists():
         return DEFAULT_CV_PATH
+    if FALLBACK_CV_PATH.exists():
+        return FALLBACK_CV_PATH
     return LEGACY_CV_PATH
 
 

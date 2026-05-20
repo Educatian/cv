@@ -12,11 +12,11 @@ from lxml import html
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CV_PATH = ROOT / "assets" / "current-cv.docx"
+DEFAULT_CV_PATH = ROOT / "CV_202605_MOON.docx"
+FALLBACK_CV_PATH = ROOT / "assets" / "current-cv.docx"
 LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
 DEFAULT_OUTPUT_PATH = ROOT / "assets" / "publication-abstracts.json"
 OVERRIDES_PATH = ROOT / "assets" / "publication-abstract-overrides.json"
-BACKUP_NAME_PATTERN = re.compile(r"(?:before-codex|backup|old|legacy)", re.I)
 
 HEADERS = {
     "User-Agent": (
@@ -46,16 +46,10 @@ def choose_cv_path(explicit_path: Optional[Path]) -> Path:
     if explicit_path:
         return explicit_path.resolve()
 
-    candidates = [
-        path
-        for path in ROOT.glob("*.docx")
-        if path.name != LEGACY_CV_PATH.name and not BACKUP_NAME_PATTERN.search(path.name)
-    ]
-    if candidates:
-        return max(candidates, key=lambda path: path.stat().st_mtime)
-
     if DEFAULT_CV_PATH.exists():
         return DEFAULT_CV_PATH
+    if FALLBACK_CV_PATH.exists():
+        return FALLBACK_CV_PATH
     return LEGACY_CV_PATH
 
 

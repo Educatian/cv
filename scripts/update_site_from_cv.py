@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import re
 import shutil
 import subprocess
 import sys
@@ -9,9 +8,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+CANONICAL_CV_PATH = ROOT / "CV_202605_MOON.docx"
 CURRENT_CV_PATH = ROOT / "assets" / "current-cv.docx"
 LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
-BACKUP_NAME_PATTERN = re.compile(r"(?:before-codex|backup|old|legacy)", re.I)
 SITE_DATA_SCRIPT = ROOT / "scripts" / "generate_site_data.py"
 ABSTRACTS_SCRIPT = ROOT / "scripts" / "update_publication_abstracts.py"
 PLAYWRIGHT_SCRIPT = ROOT / "scripts" / "update_publication_abstracts_playwright.mjs"
@@ -23,14 +22,8 @@ def resolve_source_cv(explicit_path: Path | None) -> Path:
     if explicit_path:
         return explicit_path.resolve()
 
-    candidates = [
-        path
-        for path in ROOT.glob("*.docx")
-        if path.name != LEGACY_CV_PATH.name and not BACKUP_NAME_PATTERN.search(path.name)
-    ]
-    if candidates:
-        return max(candidates, key=lambda path: path.stat().st_mtime)
-
+    if CANONICAL_CV_PATH.exists():
+        return CANONICAL_CV_PATH
     if CURRENT_CV_PATH.exists():
         return CURRENT_CV_PATH
     if LEGACY_CV_PATH.exists():
@@ -38,14 +31,16 @@ def resolve_source_cv(explicit_path: Path | None) -> Path:
     raise FileNotFoundError("No CV file was found. Provide one with --cv.")
 
 
-def sync_current_cv(source_path: Path) -> Path:
+def sync_canonical_cv(source_path: Path) -> Path:
     source_path = source_path.resolve()
+    CANONICAL_CV_PATH.parent.mkdir(parents=True, exist_ok=True)
     CURRENT_CV_PATH.parent.mkdir(parents=True, exist_ok=True)
 
-    if source_path != CURRENT_CV_PATH.resolve():
-        shutil.copy2(source_path, CURRENT_CV_PATH)
+    if source_path != CANONICAL_CV_PATH.resolve():
+        shutil.copy2(source_path, CANONICAL_CV_PATH)
 
-    return CURRENT_CV_PATH
+    shutil.copy2(CANONICAL_CV_PATH, CURRENT_CV_PATH)
+    return CANONICAL_CV_PATH
 
 
 def run_step(command: list[str], label: str) -> None:
@@ -76,10 +71,10 @@ def main() -> None:
     args = parser.parse_args()
 
     source_cv = resolve_source_cv(args.cv)
-    current_cv = sync_current_cv(source_cv)
+    canonical_cv = sync_canonical_cv(source_cv)
 
     run_step(
-        [sys.executable, str(SITE_DATA_SCRIPT), "--cv", str(current_cv)],
+        [sys.executable, str(SITE_DATA_SCRIPT), "--cv", str(canonical_cv)],
         "Generating site data",
     )
 
@@ -95,14 +90,15 @@ def main() -> None:
 
     if not args.skip_abstracts:
         run_step(
-            [sys.executable, str(ABSTRACTS_SCRIPT), "--cv", str(current_cv)],
+            [sys.executable, str(ABSTRACTS_SCRIPT), "--cv", str(canonical_cv)],
             "Refreshing publication abstracts",
         )
 
         if args.with_playwright:
             run_step(["node", str(PLAYWRIGHT_SCRIPT)], "Running Playwright abstract recovery")
 
-    print(f"[site-update] Current CV: {current_cv}")
+    print(f"[site-update] Canonical CV: {canonical_cv}")
+    print(f"[site-update] Compatibility copy: {CURRENT_CV_PATH}")
     print("[site-update] Done")
 
 

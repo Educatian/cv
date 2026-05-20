@@ -924,7 +924,8 @@ const profile = siteData.profile || {
   homepage: contact.homepage,
   researchgate: contact.researchgate,
   labWebsite: contact.labWebsite,
-  cvDownloadPath: "assets/CV_202604_MOON.docx",
+  cvDownloadPath: "CV_202605_MOON.docx",
+  cvDownloadFilename: "CV_202605_MOON.docx",
 };
 
 const overview = siteData.overview || {
