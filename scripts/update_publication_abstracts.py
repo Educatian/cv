@@ -15,6 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CV_PATH = ROOT / "assets" / "current-cv.docx"
 LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
 DEFAULT_OUTPUT_PATH = ROOT / "assets" / "publication-abstracts.json"
+OVERRIDES_PATH = ROOT / "assets" / "publication-abstract-overrides.json"
+BACKUP_NAME_PATTERN = re.compile(r"(?:before-codex|backup|old|legacy)", re.I)
 
 HEADERS = {
     "User-Agent": (
@@ -43,6 +45,15 @@ def clean_text(value: str) -> str:
 def choose_cv_path(explicit_path: Optional[Path]) -> Path:
     if explicit_path:
         return explicit_path.resolve()
+
+    candidates = [
+        path
+        for path in ROOT.glob("*.docx")
+        if path.name != LEGACY_CV_PATH.name and not BACKUP_NAME_PATTERN.search(path.name)
+    ]
+    if candidates:
+        return max(candidates, key=lambda path: path.stat().st_mtime)
+
     if DEFAULT_CV_PATH.exists():
         return DEFAULT_CV_PATH
     return LEGACY_CV_PATH
@@ -182,7 +193,19 @@ def fetch_landing_page_abstract(session: requests.Session, doi: str) -> str:
         return ""
 
     tree = html.fromstring(response.text)
-    return find_html_abstract(tree)
+    abstract = find_html_abstract(tree)
+    if abstract:
+        return abstract
+
+    sciencedirect_match = re.search(r"sciencedirect\.com/science/article/pii/([^?/#]+)", response.url, re.I)
+    if sciencedirect_match and "/article/abs/pii/" not in response.url:
+        abs_url = f"https://www.sciencedirect.com/science/article/abs/pii/{sciencedirect_match.group(1)}"
+        abs_response = session.get(abs_url, headers=HEADERS, timeout=30, allow_redirects=True)
+        abs_response.raise_for_status()
+        if "text/html" in abs_response.headers.get("content-type", ""):
+            return find_html_abstract(html.fromstring(abs_response.text))
+
+    return ""
 
 
 def build_library(cv_path: Path) -> Dict[str, Dict[str, str]]:
@@ -221,7 +244,25 @@ def build_library(cv_path: Path) -> Dict[str, Dict[str, str]]:
             "category": entry["category"],
         }
 
+    apply_abstract_overrides(library)
     return library
+
+
+def apply_abstract_overrides(library: Dict[str, Dict[str, str]]) -> None:
+    if not OVERRIDES_PATH.exists():
+        return
+
+    overrides = json.loads(OVERRIDES_PATH.read_text(encoding="utf-8"))
+    for doi, override in overrides.items():
+        if doi not in library:
+            continue
+        if not library[doi].get("abstract") and override.get("abstract"):
+            library[doi] = {
+                **library[doi],
+                "abstract": clean_text(override["abstract"]),
+                "source": override.get("source", "override"),
+                **({"resolvedUrl": override["resolvedUrl"]} if override.get("resolvedUrl") else {}),
+            }
 
 
 def main() -> None:

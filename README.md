@@ -28,6 +28,8 @@ This will:
 3. refresh Google Scholar citation metrics and merge them with OpenAlex analytics
 4. refresh the publication abstract library
 
+When no `--cv` path is supplied, the updater now selects the newest root-level CV `.docx` and ignores backup-style files such as `before-codex`, `backup`, `old`, or `legacy`. This keeps the downloadable `assets/current-cv.docx` aligned with the latest working CV.
+
 If you also want the slower Playwright recovery pass for missing abstracts:
 
 ```bash
@@ -38,6 +40,28 @@ If the new CV is already saved as `assets/current-cv.docx`, you can simply run:
 
 ```bash
 npm run site:update
+```
+
+## Biweekly Refresh
+
+Register the 14-day Windows scheduled task once:
+
+```bash
+npm run update:biweekly:register
+```
+
+The task runs `npm run site:update:playwright` every 14 days. That refresh includes:
+
+- latest CV `.docx` detection and `assets/current-cv.docx` sync
+- generated site data, including journal articles and working papers
+- Google Scholar metrics and per-work citation counts
+- OpenAlex author, venue, topic, open-access, and coauthor analytics
+- DOI/frontpage abstract extraction with Playwright recovery
+
+Manual full refresh:
+
+```bash
+npm run update:biweekly
 ```
 
 ## Parsing Scripts

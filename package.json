@@ -9,6 +9,8 @@
     "analytics:update": "node scripts/update_research_analytics_scholar.mjs && python scripts/update_research_analytics.py",
     "site:update": "python scripts/update_site_from_cv.py",
     "site:update:playwright": "python scripts/update_site_from_cv.py --with-playwright",
+    "update:biweekly": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/cv_biweekly_update.ps1",
+    "update:biweekly:register": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/register_biweekly_update.ps1",
     "abstracts:base": "python scripts/update_publication_abstracts.py",
     "abstracts:playwright": "node scripts/update_publication_abstracts_playwright.mjs",
     "abstracts:update": "python scripts/update_publication_abstracts.py && node scripts/update_publication_abstracts_playwright.mjs"

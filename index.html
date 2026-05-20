@@ -59,8 +59,11 @@
               <a class="button button-primary" href="mailto:jmoon19@ua.edu"
                 >Contact</a
               >
-              <a class="button" href="assets/current-cv.docx" download
-                >Curriculum Vitae</a
+              <a
+                class="button"
+                href="assets/current-cv.docx"
+                download="Jewoong_Moon_CV_20260520.docx"
+                >Download Current CV</a
               >
               <a
                 class="button"
@@ -328,6 +331,26 @@
                   </div>
                   <ol class="publication-list" id="publication-list"></ol>
                   <div class="publication-pagination" id="publication-pagination" aria-label="Publication pages"></div>
+                  <section class="working-paper-block" aria-labelledby="working-paper-heading">
+                    <div class="working-paper-head">
+                      <div>
+                        <span class="section-label">Pipeline</span>
+                        <h3 id="working-paper-heading">Working papers</h3>
+                      </div>
+                      <div class="working-paper-summary" id="working-paper-summary"></div>
+                    </div>
+                    <div class="working-paper-tools" aria-label="Working paper filters">
+                      <button class="filter-button is-active" type="button" data-working-filter="All">All</button>
+                      <button class="filter-button" type="button" data-working-filter="Submitted or Under Review">
+                        Submitted / under review
+                      </button>
+                      <button class="filter-button" type="button" data-working-filter="In Preparation">
+                        In preparation
+                      </button>
+                    </div>
+                    <ol class="working-paper-list" id="working-paper-list"></ol>
+                    <div class="publication-pagination" id="working-paper-pagination" aria-label="Working paper pages"></div>
+                  </section>
                 </section>
               </div>
 

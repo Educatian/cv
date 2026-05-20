@@ -15,7 +15,7 @@
   },
   "10.1016/j.cexr.2025.100124": {
     "title": "Fostering innovation at the intersection of maker education and extended reality (XR)",
-    "citation": "Moon, J., Jung, Y., Kim, S., Bae, Y., & Schneider, B. (2025). Fostering innovation at the intersection of maker education and extended reality (XR). Computers and Education: X Reality. https://doi.org/10.1016/j.cexr.2025.100124 [ESCI-indexed]",
+    "citation": "Moon, J., Jung, Y., Kim, S., Bae, Y., & Schneider, B. (2025). Fostering innovation at the intersection of maker education and extended reality (XR). Computers and Education: X Reality. https://doi.org/10.1016/j.cexr.2025.100124 [ESCI-indexed, Q1]",
     "abstract": "Fostering innovation at the intersection of maker education and extended reality (XR) Introduction: The emerging landscape of immersive makingOver the past two decades, the convergence of maker education (Blikstein, 2013) and immersive technologies has opened new doors for innovative learning experiences.Rooted in constructionism (Papert, 1980), the maker movement emphasizes creativity, iteration, and problem-solving through the design and fabrication of personally meaningful artifacts.Makerspaces, in particular, have emerged as vibrant constructionist environments where learners construct knowledge by making things (Halverson & Sheridan, 2014).In parallel, immersive technologies (including virtual reality (VR), augmented reality (AR), and extended reality (XR)) have rapidly evolved, offering learners opportunities to experience content in embodied, interactive, and context-rich ways (e.g., Yannier et al., 2020).These technologies range from low-immersion desktop-based virtual worlds to high-fidelity VR simulations, enabling users to build, manipulate, and inhabit digital environments.Taken together, this special issue highlights the synergy of making and immersive technologies, which can create a rich design space for new forms of learning that are at once hands-on, embodied, collaborative, and distributed. New possibilitiesThe integration of making and immersive media extends the possibilities of constructionist learning in several ways.Immersive maker environments can act as new microworlds, supporting Papert's vision of \"low floors, high ceilings, and wide walls\" (Resnick & Silverman, 2005).They reduce barriers to entry by allowing rapid prototyping without expensive equipment or materials, while also enabling more ambitious projects and diverse pathways of engagement.For example, XR-enhanced environments let learners iterate quickly without the time, cost, or physical limitations of traditional fabrication (Aldemir et al., 2025).These environments also expand possibilities for embodied and body-syntonic learning (Papert, 1980).Learners engage with digital artifacts through movement, gesture, and spatial reasoning, creating powerful new entry points for computational thinking (CT) and design (Khorasani et al., 2025).Finally, immersive makerspaces can foster distributed collaboration: learners interact not only with physical and virtual artifacts, but also with remote peers and even AI agents.Technologies such as REACH (Remote Embodiment for Augmented Collaborative Help) illustrate how XR can support tangible collaboration across distance, preserving the embodied, artifact-centered character of making while expanding access and community (Smith & Tissenbaum, 2025). 1.2.",
     "source": "openalex",
     "category": "International"
@@ -23,9 +23,10 @@
   "10.1016/j.edurev.2025.100743": {
     "title": "Virtual reality simulation to foster authentic learning in pre-service teacher education: A systematic literature review",
     "citation": "Hong, S., Eom, T., & Moon, J. (2025). Virtual reality simulation to foster authentic learning in pre-service teacher education: A systematic literature review. Educational Research Review https://doi.org/10.1016/j.edurev.2025.100743 [SSCI-indexed; IF = 10.6, IF5 = 14.9]",
-    "abstract": "",
-    "source": "unavailable",
-    "category": "International"
+    "abstract": "Pre-service teacher education faces an ongoing challenge in bridging theory and practice. This systematic review synthesizes findings from 52 empirical studies (2016-2025) to address a critical gap: how the pedagogical design of virtual reality (VR) simulations aligns with authentic learning principles. Using Herrington and Oliver's authentic learning framework, we analyze the characteristics of these simulations and the extent to which they embody authenticity. Findings reveal a landscape of short, infrequent interventions that prioritize affective outcomes like self-efficacy over skill-based competencies. While VR simulations show promise, key authentic learning elements such as in-situ collaboration, adaptive scaffolding, and authentic assessment are consistently underdeveloped or externalized from the immersive environment. This review highlights a significant pedagogical-technological misalignment and proposes a research agenda focused on integrating robust assessment, longitudinal tracking of skill transfer, and the inclusion of psychomotor learning domains.",
+    "source": "science_direct_frontpage_override",
+    "category": "International",
+    "resolvedUrl": "https://www.sciencedirect.com/science/article/abs/pii/S1747938X25000806"
   },
   "10.1016/j.tate.2025.105231": {
     "title": "Exploring emergent AI-TPACK competencies in a two-week AI literacy module for preservice teachers",
@@ -51,9 +52,10 @@
   "10.1080/14703297.2025.2534189": {
     "title": "Socio-material interactions: A multi-case study on AI chatbot integration in asynchronous online learning",
     "citation": "‡ Moon, J., Jung, Y., Bae, H., Lee, U., & Kim, K. (2025). Socio-material interactions: A multi-case study on AI chatbot integration in asynchronous online learning. Innovation in Education and Teaching International http://dx.doi.org/10.1080/14703297.2025.2534189 [SSCI-indexed; IF = 4.9, IF5 = 3.5]",
-    "abstract": "",
-    "source": "unavailable",
-    "category": "International"
+    "abstract": "This multi-case study investigates how AI chatbots enhance asynchronous learning by fostering critical ideation, structured argumentation, and collaborative knowledge construction across three U.S. higher education institutions. Drawing on a socio-material perspective, we examine the socio-material assemblages formed through interactions between students, instructors, and chatbots. Analysis of interaction logs, discussion posts, and reflections from 74 students reveals how varying levels of structured guidance shape socio-material assemblages. Key findings include the creative repurposing of chatbot affordances (bricolage), alignment of technological affordances with pedagogical strategies, and significance of structured guidance. The study introduces a Triangular framework connecting Pedagogical Design, Student Agency, and Technology Integration, providing actionable insights for educators.",
+    "source": "playwright",
+    "category": "International",
+    "resolvedUrl": "https://www.tandfonline.com/doi/full/10.1080/14703297.2025.2534189"
   },
   "10.1016/j.cexr.2025.100099": {
     "title": "How Non-CS preservice teachers conceptualize and engage with computational thinking through 3D game design: Insights from an extended reality (XR)-enhanced maker experience",
@@ -65,9 +67,10 @@
   "10.1016/j.compedu.2025.105306": {
     "title": "Development and implementation of a generative artificial intelligence-enhanced simulation to enhance problem-solving skills for pre-service teachers",
     "citation": "‡ Lim, J., Lee, U., Koh, J., Jung, Y., Jung, H., Lee, Y., Byun, G., Jang, Y., Lee, S., & Moon, J. (2025). Development and implementation of a generative artificial intelligence-enhanced simulation to enhance problem-solving skills for pre-service teachers. Computers & Education https://doi.org/10.1016/j.compedu.2025.105306 [SSCI-, SCIE-indexed; IF = 10.5, IF5 = 13.0]",
-    "abstract": "",
-    "source": "unavailable",
-    "category": "International"
+    "abstract": "Effective teachers should be equipped to solve complex problems across diverse instructional and learning contexts. However, many teacher training programs struggle to bridge the gap between theoretical knowledge to real-world applications. The current study tackles this challenge by developing a generative artificial intelligence (GenAI)-enhanced simulation to improve preservice teachers' problem-solving abilities. Using design-based research (DBR), we created a virtual environment that integrates problem-based learning (PBL) with GenAI technology. The simulation was rigorously refined through expert review and usability testing before being implemented in a teacher training program. We evaluated its effectiveness by comparing three groups: (1) a text-based scenario, (2) a rule-based simulation, and (3) a GenAI-enhanced simulation. Pre- and post-test results showed significant improvements in problem-solving skills for both the rule-based and GenAI-enhanced simulation groups compared to the text-based scenario group. Notably, qualitative findings revealed that students reported heightened realism and immersion in the GenAI-enhanced simulation, attributing this to more dynamic interactions with AI agents that helped them better contextualize PBL and increased their motivation. Our study findings contribute design principles for developing GenAI-enhanced simulations in teacher education, offering promising insights into leveraging AI technology to create more engaging and effective training experiences.",
+    "source": "science_direct_frontpage_override",
+    "category": "International",
+    "resolvedUrl": "https://www.sciencedirect.com/science/article/abs/pii/S0360131525000740"
   },
   "10.24059/olj.v29i1.4102": {
     "title": "Elementary STEM teachers' open educational resources and TPACK in a professional learning network: A case study",
@@ -77,11 +80,12 @@
     "category": "International"
   },
   "10.1016/j.jsr.2024.11.027": {
-    "title": "Developing heat stress training programs: A training-driven assessment approach to enhance safety in the construction industry",
-    "citation": "Marchiori, R., Song, S., & Moon, J. (2025). Developing heat stress training programs: A training-driven assessment approach to enhance safety in the construction industry. Journal of Safety Research. 92, 262-271 https://doi.org/10.1016/j.jsr.2024.11.027 [SSCI-indexed; IF = 4.4, IF5 = 4.7]",
-    "abstract": "",
-    "source": "unavailable",
-    "category": "International"
+    "title": "Developing heat stress training assessments: A training-driven methodology approach to enhance safety in the construction industry",
+    "citation": "Marchiori, R., Song, S., & Moon, J. (2025). Developing heat stress training assessments: A training-driven methodology approach to enhance safety in the construction industry. Journal of Safety Research. 92, 262-271 https://doi.org/10.1016/j.jsr.2024.11.027 [SSCI-indexed; IF = 4.4, IF5 = 4.7]",
+    "abstract": "Introduction: The construction industry, characterized by its hazardous working conditions, particularly in extreme environments such as high temperatures, presents significant challenges for construction workers in mitigating heat-related illnesses (HRIs). Method: This study advances the application of evidence-centered design (ECD) in developing an effective heat stress training program for construction and general workers. The methodology encompasses comprehensive steps, including: (1) defining training objectives, (2) determining relevant knowledge domains, (3) designing assessments, (4) providing evidence of training effectiveness, and (5) developing practical tasks using real-world case studies. The training's effectiveness was evaluated through an experimental training session in which 311 construction and general workers participated. The efficiency of the training was measured by calculating short-term, middle-term, and long-term knowledge gains about heat-related illnesses. Results: Statistical analysis revealed significant improvements in workers' understanding of heat stress concepts, risk factor identification, prevention strategies, symptom and sign recognition, and first aid application from the short-term to the middle-term and into the long-term. Trainees' feedback also affirmed the training's effectiveness in enhancing awareness and preparing them to implement preventive measures against heat stress. Conclusions: The study demonstrates that a heat stress training program utilizing ECD significantly enhances the efficiency of heat stress awareness. These assessments effectively evaluate construction workers' ability to recognize and respond to heat-related hazards. Practical applications: This finding contributes to the theoretical knowledge of construction worker safety and provides a practical framework for guiding the design of training assessments. The study addresses a gap in literature regarding the assessment of training effectiveness, offering insights for iterative improvement of safety training in construction industry.",
+    "source": "science_direct_frontpage_override",
+    "category": "International",
+    "resolvedUrl": "https://www.sciencedirect.com/science/article/abs/pii/S0022437524002081"
   },
   "10.1007/s10758-024-09806-6": {
     "title": "Game-based performance tasks for assessing representational flexibility of autistic adolescents in a virtual world",
@@ -128,16 +132,19 @@
   "10.7468/mathedu.2024.63.2.387": {
     "title": "Transforming mathematics education with AI: Innovations, implementations, and insights",
     "citation": "Yeo, S., Moon, J., & Kim, D. J. (2024). Transforming mathematics education with AI: Innovations, implementations, and insights. The Mathematical Education https://doi.org/10.7468/mathedu.2024.63.2.387 [KCI-indexed, IF5 =1.28]",
-    "abstract": "",
-    "source": "unavailable",
-    "category": "International"
+    "abstract": "The use of artificial intelligence (AI) in mathematics education has advanced as a means for promoting understanding of mathematical concepts, academic achievement, computational thinking, and problem-solving. From a total of 13 studies in this special issue, this editorial reveals threads of potential and future directions to advance mathematics education with the integration of AI. We generated five themes as follows: (1) using ChatGPT for learning mathematical content, (2) automated grading systems, (3) statistical literacy and computational thinking, (4) integration of AI and digital technology into mathematics lessons and resources, and (5) teachers’ perceptions of AI education. These themes elaborate on the benefits and opportunities of integrating AI in teaching and learning mathematics. In addition, the themes suggest practical implementations of AI for developing students’ computational thinking and teachers’ expertise.",
+    "source": "playwright",
+    "category": "International",
+    "resolvedUrl": "https://www.jksmea.org/journal/view.html?doi=10.7468/mathedu.2024.63.2.387"
   },
   "10.7468/mathedu.2024.63.2.1": {
     "title": "A narrative review of immersive virtual reality to enhance high school students’ mathematics competence",
     "citation": "‡ * Awoyemi, I. D., Mercado, F., & Moon, J. (2024). A narrative review of immersive virtual reality to enhance high school students’ mathematics competence. The Mathematical Education https://doi.org/10.7468/mathedu.2024.63.2.1 [KCI-indexed, IF5 = 1.28]",
-    "abstract": "",
-    "source": "unavailable",
-    "category": "International"
+    "abstract": "This narrative review explores the transformative potential of immersive virtual reality (IVR) in enhancing high school students’ mathematics competence, viewed through the lens of the technological, pedagogical, and content knowledge (TPACK) framework. This review comprehensively illustrates how IVR technologies have not only fostered a deeper understanding and engagement with mathematical concepts but have also enhanced the practical application of these skills. Through the careful examination of seminal papers, this study carefully explores the integration of IVR in high school mathematics education. It highlights significant contributions of IVR in improving students' computational proficiency, problem-solving skills, and spatial visualization abilities. These enhancements are crucial for developing a robust mathematical understanding and aptitude, positioning students for success in an increasingly technology-driven educational landscape. This review emphasizes the pivotal role of teachers in facilitating IVR-based learning experiences. It points to the necessity for comprehensive teacher training and professional development to fully harness the educational potential of IVR technologies. Equipping educators with the right tools and knowledge is essential for maximizing the effectiveness of this innovative teaching approach. The findings also indicate that while IVR holds promising prospects for enriching mathematics education, more research is needed to elaborate on instructional integration approaches that effectively overcome existing barriers. This includes technological limitations, access issues, and the need for curriculum adjustments to accommodate new teaching methods. In conclusion, this review calls for continued exploration into the effective use of IVR in educational settings, aiming to inform future practices and contribute to the evolving landscape of educational technology. The potential of IVR to transform educational experiences offers a compelling avenue for research and application in the field of mathematics education.",
+    "source": "playwright",
+    "category": "International",
+    "resolvedDoi": "10.7468/mathedu.2024.63.2.295",
+    "resolvedUrl": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003087565"
   },
   "10.34105/j.kmel.2024.16.013": {
     "title": "A case study of South Korean elementary school teachers’ emergence remote teaching",
@@ -247,7 +254,7 @@
   "10.1080/17483107.2022.2156630": {
     "title": "Designing and deploying a virtual social sandbox for children with autism",
     "citation": "Ke, F., Moon, J., & Sokolikj, Z. (2022). Designing and deploying a virtual social sandbox for children with autism. Disability and Rehabilitation: Assistive Technology, 19(4), 1178-1209. https://doi.org/10.1080/17483107.2022.2156630 [SSCI-indexed, IF = 2.2, IF5 = 2.7]",
-    "abstract": "Play- and design-oriented social tasks in the three-dimensional virtual world framed meaningful social experiences or the naturalistic intervention for social skills development.",
+    "abstract": "PURPOSE: This exploratory study was intended to investigate the design and feasibility of using a web virtual reality based social learning space for autistic children at home. MATERIALS AND METHODS: The researchers of the current study developed and implemented an open-source, web virtual reality based learning program for children with autism. Endorsing mixed-method convergent parallel design, we collected both qualitative and quantitative data from four autistic children, including repeated measures of social skills performance, self- and parent-reported social and communication competence, observation notes, and individual interviews. RESULTS: The study found preliminary evidence for a positive impact of deploying a virtual reality-based social sandbox on the practice and development of complex social skills for autistic children. All participants showed significant reduced social communication impairments from the pre- to the post-intervention phases. Nevertheless, participants' social skills performance in the virtual world was mediated by two social task design features-external goal structure and individualization. CONCLUSIONS: Play- and design-oriented social tasks in the three-dimensional virtual world framed meaningful social experiences or the naturalistic intervention for social skills development.",
     "source": "openalex",
     "category": "International"
   },

@@ -760,6 +760,15 @@ const grants = siteData.grants || {
   ],
 };
 
+const workingPapers = siteData.workingPapers || [];
+const workingPaperSummary = siteData.workingPaperSummary || {
+  total: workingPapers.length,
+  submittedOrUnderReview: workingPapers.filter(
+    (item) => item.bucket === "Submitted or Under Review"
+  ).length,
+  inPreparation: workingPapers.filter((item) => item.bucket === "In Preparation").length,
+};
+
 const mentoringMetrics = siteData.mentoringMetrics || [
   { value: "5", label: "doctoral chairs or co-chairs" },
   { value: "9", label: "doctoral committee appointments" },
@@ -998,6 +1007,9 @@ let currentPublicationPage = 1;
 const publicationsPerPage = 6;
 let currentCompletePublicationPage = 1;
 const completePublicationsPerPage = 10;
+let activeWorkingPaperFilter = "All";
+let currentWorkingPaperPage = 1;
+const workingPapersPerPage = 8;
 const abstractCache = new Map();
 const abstractRecordCache = new Map();
 let publicationRecordsCache = null;
@@ -1665,7 +1677,7 @@ function renderProfile() {
         ? `<a class="button button-primary" href="mailto:${escapeHtml(profile.email)}">Contact</a>`
         : "",
       profile.cvDownloadPath
-        ? `<a class="button" href="${escapeHtml(profile.cvDownloadPath)}" download>Curriculum Vitae</a>`
+        ? `<a class="button" href="${escapeHtml(profile.cvDownloadPath)}" download="${escapeHtml(profile.cvDownloadFilename || "Jewoong_Moon_CV.docx")}">Download Current CV</a>`
         : "",
       profile.labWebsite
         ? `<a class="button" href="${escapeHtml(profile.labWebsite)}" target="_blank" rel="noreferrer">ADIE Lab</a>`
@@ -2208,6 +2220,129 @@ function renderCompletePublicationPagination(totalPages) {
     });
 }
 
+function getVisibleWorkingPapers() {
+  if (activeWorkingPaperFilter === "All") {
+    return workingPapers;
+  }
+
+  return workingPapers.filter((item) => item.bucket === activeWorkingPaperFilter);
+}
+
+function renderWorkingPaperSummary() {
+  const root = document.getElementById("working-paper-summary");
+  if (!root) {
+    return;
+  }
+
+  const metrics = [
+    ["Total", workingPaperSummary.total || workingPapers.length],
+    ["Submitted / review", workingPaperSummary.submittedOrUnderReview || 0],
+    ["In preparation", workingPaperSummary.inPreparation || 0],
+  ];
+
+  root.innerHTML = metrics
+    .map(
+      ([label, value]) => `
+        <span class="working-paper-metric">
+          <strong>${Number(value || 0).toLocaleString()}</strong>
+          <span>${escapeHtml(label)}</span>
+        </span>
+      `
+    )
+    .join("");
+}
+
+function renderWorkingPaperFilters() {
+  document.querySelectorAll("[data-working-filter]").forEach((button) => {
+    button.classList.toggle(
+      "is-active",
+      button.dataset.workingFilter === activeWorkingPaperFilter
+    );
+
+    button.onclick = () => {
+      activeWorkingPaperFilter = button.dataset.workingFilter || "All";
+      currentWorkingPaperPage = 1;
+      renderWorkingPaperFilters();
+      renderWorkingPapers();
+    };
+  });
+}
+
+function renderWorkingPapers() {
+  const list = document.getElementById("working-paper-list");
+  if (!list) {
+    return;
+  }
+
+  if (!workingPapers.length) {
+    list.innerHTML = `<li class="publication-empty">No working papers are available in the current CV data.</li>`;
+    renderWorkingPaperPagination(1);
+    return;
+  }
+
+  const visibleItems = getVisibleWorkingPapers();
+  const totalPages = Math.max(1, Math.ceil(visibleItems.length / workingPapersPerPage));
+  currentWorkingPaperPage = Math.min(currentWorkingPaperPage, totalPages);
+  const startIndex = (currentWorkingPaperPage - 1) * workingPapersPerPage;
+  const pagedItems = visibleItems.slice(startIndex, startIndex + workingPapersPerPage);
+
+  list.innerHTML = pagedItems
+    .map(
+      (item, index) => `
+        <li class="working-paper-item">
+          <span class="working-paper-index">${startIndex + index + 1}</span>
+          <div class="working-paper-body">
+            <div class="working-paper-meta">
+              <span class="publication-year">${escapeHtml(item.year || "Pipeline")}</span>
+              <span class="working-paper-status">${escapeHtml(item.status || item.bucket || "Working paper")}</span>
+              <span class="complete-publication-category">${escapeHtml(item.type || "Manuscript")}</span>
+            </div>
+            <h4 class="working-paper-title">${escapeHtml(item.title || item.citation || "Working paper")}</h4>
+            ${item.authors ? `<p class="publication-authors">${escapeHtml(item.authors)}</p>` : ""}
+            ${item.venue ? `<p class="publication-venue">${escapeHtml(item.venue)}</p>` : ""}
+            <p class="working-paper-citation">${escapeHtml(item.citation || "")}</p>
+          </div>
+        </li>
+      `
+    )
+    .join("");
+
+  renderWorkingPaperPagination(totalPages);
+  document.dispatchEvent(new CustomEvent("panel:content-updated"));
+}
+
+function renderWorkingPaperPagination(totalPages) {
+  const root = document.getElementById("working-paper-pagination");
+  if (!root) {
+    return;
+  }
+
+  if (totalPages <= 1) {
+    root.innerHTML = "";
+    return;
+  }
+
+  root.innerHTML = Array.from({ length: totalPages }, (_, index) => {
+    const page = index + 1;
+    return `
+      <button
+        type="button"
+        class="page-number ${page === currentWorkingPaperPage ? "is-active" : ""}"
+        data-working-paper-page="${page}"
+      >
+        ${page}
+      </button>
+    `;
+  }).join("");
+
+  root.querySelectorAll("[data-working-paper-page]").forEach((button) => {
+    button.addEventListener("click", () => {
+      currentWorkingPaperPage = Number(button.dataset.workingPaperPage);
+      renderWorkingPapers();
+    });
+  });
+}
+
 function renderGrantList(targetId, items) {
   const list = document.getElementById(targetId);
   list.innerHTML = items
@@ -2469,6 +2604,9 @@ if (document.getElementById("content-deck")) {
   enablePublicationSearch();
   renderPublications();
   renderCompletePublications();
+  renderWorkingPaperSummary();
+  renderWorkingPaperFilters();
+  renderWorkingPapers();
   renderGrantList("funded-list", grants.funded);
   renderGrantList("pending-list", grants.pending);
   renderGrantDashboard();

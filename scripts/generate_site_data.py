@@ -15,6 +15,7 @@ DEFAULT_CV_PATH = ROOT / "assets" / "current-cv.docx"
 LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
 DEFAULT_JSON_PATH = ROOT / "assets" / "site-data.generated.json"
 DEFAULT_JS_PATH = ROOT / "assets" / "site-data.js"
+BACKUP_NAME_PATTERN = re.compile(r"(?:before-codex|backup|old|legacy)", re.I)
 
 HEADERS = {
     "contact": "CONTACT INFORMATION",
@@ -684,6 +685,125 @@ def parse_publications(paragraphs: Sequence[str]) -> Dict[str, object]:
     }
 
 
+def parse_status_from_working_paper(citation: str) -> str:
+    match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|abstract accepted[^)]*)\)", citation, re.I)
+    return clean_text(match.group(1)) if match else "Working paper"
+
+
+def parse_authors_from_working_paper(citation: str) -> str:
+    status_match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|abstract accepted[^)]*)\)", citation, re.I)
+    if not status_match:
+        return parse_authors_from_citation(citation)
+    return clean_text(citation[: status_match.start()])
+
+
+def clean_working_paper_remainder(text: str) -> str:
+    text = re.sub(r"\s*\([^)]*indexed[^)]*\)\s*\.?\s*$", "", text, flags=re.I)
+    return clean_text(text.strip(" ."))
+
+
+def parse_title_from_working_paper(citation: str) -> str:
+    status_match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|abstract accepted[^)]*)\)\.\s*", citation, re.I)
+    if not status_match:
+        return parse_title_from_citation(citation)
+    after_status = clean_working_paper_remainder(citation[status_match.end() :])
+    title, _, _venue = after_status.rpartition(". ")
+    return clean_text(title or after_status)
+
+
+def parse_working_paper_venue(citation: str) -> str:
+    status_match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|abstract accepted[^)]*)\)\.\s*", citation, re.I)
+    if not status_match:
+        return ""
+    after_status = clean_working_paper_remainder(citation[status_match.end() :])
+    if ". " not in after_status:
+        return ""
+    venue_part = after_status.rsplit(". ", 1)[-1]
+    return clean_text(venue_part.strip(" ."))
+
+
+def parse_working_papers(paragraphs: Sequence[str]) -> Dict[str, object]:
+    lines = section_between(paragraphs, HEADERS["working_papers"], HEADERS["service"])
+
+    items: List[Dict[str, str]] = []
+    bucket = "Submitted or Under Review"
+    paper_type = "Journal Manuscript"
+    buffer: List[str] = []
+
+    def flush_buffer() -> None:
+        nonlocal buffer
+        if not buffer:
+            return
+        citation = clean_text(" ".join(buffer))
+        title = parse_title_from_working_paper(citation)
+        status = parse_status_from_working_paper(citation)
+        items.append(
+            {
+                "bucket": bucket,
+                "type": paper_type,
+                "status": sentence_case(status),
+                "year": extract_year(citation) or "Pipeline",
+                "title": title,
+                "authors": parse_authors_from_working_paper(citation),
+                "venue": parse_working_paper_venue(citation),
+                "citation": citation,
+                "link": extract_url(citation),
+            }
+        )
+        buffer = []
+
+    for raw_line in lines:
+        line = clean_text(raw_line)
+        if not line or line.startswith("Note "):
+            continue
+        if line.startswith("Submitted or Under Review"):
+            flush_buffer()
+            bucket = "Submitted or Under Review"
+            continue
+        if line.startswith("In Preparation"):
+            flush_buffer()
+            bucket = "In Preparation"
+            continue
+        if line.startswith("Journal Manuscript"):
+            flush_buffer()
+            paper_type = "Journal Manuscript"
+            continue
+        if line.startswith("Book Chapter"):
+            flush_buffer()
+            paper_type = "Book Chapter"
+            continue
+        if line.startswith("Conference Proposals"):
+            flush_buffer()
+            paper_type = "Conference Proposal"
+            continue
+
+        parts = [part for part in re.split(r"(?=\[\d+\]\s*)", line) if part.strip()]
+        for part in parts:
+            text = clean_text(part)
+            if RECORD_START.match(text):
+                flush_buffer()
+                buffer = [RECORD_START.sub("", text)]
+            elif buffer:
+                buffer.append(text)
+
+    flush_buffer()
+
+    submitted = [item for item in items if item["bucket"] == "Submitted or Under Review"]
+    preparation = [item for item in items if item["bucket"] == "In Preparation"]
+
+    return {
+        "workingPapers": items,
+        "workingPaperSummary": {
+            "total": len(items),
+            "submittedOrUnderReview": len(submitted),
+            "inPreparation": len(preparation),
+            "journalManuscripts": sum(1 for item in items if item["type"] == "Journal Manuscript"),
+            "bookChapters": sum(1 for item in items if item["type"] == "Book Chapter"),
+            "conferenceProposals": sum(1 for item in items if item["type"] == "Conference Proposal"),
+        },
+    }
+
+
 def parse_talks(paragraphs: Sequence[str], limit: int = 8) -> List[Dict[str, str]]:
     lines = section_between(paragraphs, HEADERS["presentations"], HEADERS["working_papers"])
     talks = []
@@ -837,11 +957,13 @@ def parse_stats(paragraphs: Sequence[str], grant_portfolio: Dict[str, int]) -> L
     )
     book_count = extract_count(paragraphs[find_section_index(paragraphs, HEADERS["book_chapters"])])
     presentation_count = extract_count(paragraphs[find_section_index(paragraphs, HEADERS["presentations"])])
+    working_paper_count = extract_count(paragraphs[find_section_index(paragraphs, HEADERS["working_papers"])])
 
     return [
         {"value": str(journal_count), "label": "Journal articles"},
         {"value": str(conference_count), "label": "Conference proceedings"},
         {"value": str(book_count), "label": "Book chapters"},
+        {"value": str(working_paper_count), "label": "Working papers"},
         {"value": str(presentation_count), "label": "Presentations"},
         {
             "value": format_compact_currency(grant_portfolio["fundedTotal"]),
@@ -921,6 +1043,7 @@ def build_profile(
         "researchgate": contact.get("researchgate", ""),
         "labWebsite": contact.get("labWebsite", ""),
         "cvDownloadPath": "assets/current-cv.docx",
+        "cvDownloadFilename": f"Jewoong_Moon_CV_{dt.date.today().strftime('%Y%m%d')}.docx",
     }
 
 
@@ -1050,6 +1173,15 @@ def parse_initiatives(
 def choose_cv_path(explicit_path: Optional[Path]) -> Path:
     if explicit_path:
         return explicit_path.resolve()
+
+    candidates = [
+        path
+        for path in ROOT.glob("*.docx")
+        if path.name != LEGACY_CV_PATH.name and not BACKUP_NAME_PATTERN.search(path.name)
+    ]
+    if candidates:
+        return max(candidates, key=lambda path: path.stat().st_mtime)
+
     if DEFAULT_CV_PATH.exists():
         return DEFAULT_CV_PATH
     return LEGACY_CV_PATH
@@ -1065,6 +1197,7 @@ def build_site_data(cv_path: Path) -> Dict[str, object]:
     mentoring_metrics = parse_mentoring_metrics(paragraphs)
     grants_data = parse_grants(paragraphs)
     publications_data = parse_publications(paragraphs)
+    working_papers_data = parse_working_papers(paragraphs)
     talks = parse_talks(paragraphs)
     honors = parse_honors(paragraphs)
     service = parse_service(paragraphs)
@@ -1089,6 +1222,8 @@ def build_site_data(cv_path: Path) -> Dict[str, object]:
         "initiatives": initiatives,
         "publications": publications_data["publications"],
         "completeJournalArticles": publications_data["completeJournalArticles"],
+        "workingPapers": working_papers_data["workingPapers"],
+        "workingPaperSummary": working_papers_data["workingPaperSummary"],
         "grants": grants_data["grants"],
         "grantPortfolio": grants_data["grantPortfolio"],
         "teaching": teaching,

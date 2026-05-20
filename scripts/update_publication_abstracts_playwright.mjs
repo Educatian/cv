@@ -268,6 +268,17 @@ async function navigateToRecord(page, doi) {
   await waitOutChallenge(page);
   await page.waitForTimeout(2000);
 
+  const scienceDirectPiiMatch = page.url().match(/sciencedirect\.com\/science\/article\/pii\/([^?/#]+)/i);
+  if (scienceDirectPiiMatch && !/\/science\/article\/abs\/pii\//i.test(page.url())) {
+    await page.goto(`https://www.sciencedirect.com/science/article/abs/pii/${scienceDirectPiiMatch[1]}`, {
+      waitUntil: "domcontentloaded",
+      timeout: 30000,
+    });
+    await page.waitForLoadState("networkidle", { timeout: 6000 }).catch(() => {});
+    await waitOutChallenge(page);
+    await page.waitForTimeout(2000);
+  }
+
   return override;
 }
 

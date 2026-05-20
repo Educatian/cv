@@ -2,3 +2,5 @@
 Thumbs.db
 node_modules/
 __pycache__/
+logs/
+*.before-codex-*.docx

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
 import subprocess
 import sys
@@ -10,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CURRENT_CV_PATH = ROOT / "assets" / "current-cv.docx"
 LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
+BACKUP_NAME_PATTERN = re.compile(r"(?:before-codex|backup|old|legacy)", re.I)
 SITE_DATA_SCRIPT = ROOT / "scripts" / "generate_site_data.py"
 ABSTRACTS_SCRIPT = ROOT / "scripts" / "update_publication_abstracts.py"
 PLAYWRIGHT_SCRIPT = ROOT / "scripts" / "update_publication_abstracts_playwright.mjs"
@@ -20,6 +22,15 @@ SCHOLAR_ANALYTICS_SCRIPT = ROOT / "scripts" / "update_research_analytics_scholar
 def resolve_source_cv(explicit_path: Path | None) -> Path:
     if explicit_path:
         return explicit_path.resolve()
+
+    candidates = [
+        path
+        for path in ROOT.glob("*.docx")
+        if path.name != LEGACY_CV_PATH.name and not BACKUP_NAME_PATTERN.search(path.name)
+    ]
+    if candidates:
+        return max(candidates, key=lambda path: path.stat().st_mtime)
+
     if CURRENT_CV_PATH.exists():
         return CURRENT_CV_PATH
     if LEGACY_CV_PATH.exists():
