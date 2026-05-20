@@ -21,6 +21,15 @@ const META_SELECTORS = [
   'meta[name="twitter:description"]',
 ];
 
+const IMAGE_SELECTORS = [
+  'meta[property="og:image"]',
+  'meta[property="og:image:secure_url"]',
+  'meta[name="twitter:image"]',
+  'meta[name="twitter:image:src"]',
+  'meta[name="citation_cover_image_url"]',
+  'meta[name="citation_image"]',
+];
+
 const URL_OVERRIDES = {
   // The CV currently contains an outdated DOI for this article.
   "10.7468/mathedu.2024.63.2.1": {
@@ -28,6 +37,13 @@ const URL_OVERRIDES = {
     resolvedDoi: "10.7468/mathedu.2024.63.2.295",
   },
 };
+
+function getThumbnailRecoveryLimit() {
+  const arg = process.argv.find((value) => value.startsWith("--thumbnail-limit="));
+  const raw = arg ? arg.split("=", 2)[1] : process.env.CV_THUMBNAIL_RECOVERY_LIMIT || "0";
+  const parsed = Number.parseInt(raw, 10);
+  return Number.isFinite(parsed) && parsed >= 0 ? parsed : 0;
+}
 
 function normalizeWhitespace(value = "") {
   return value.replace(/\s+/g, " ").trim();
@@ -79,6 +95,56 @@ function bestCandidate(candidates) {
   return filtered[0] || "";
 }
 
+function normalizeImageUrl(baseUrl, value = "") {
+  const trimmed = normalizeWhitespace(value);
+  if (!trimmed || trimmed.startsWith("data:")) {
+    return "";
+  }
+
+  try {
+    return new URL(trimmed, baseUrl).toString();
+  } catch (error) {
+    return "";
+  }
+}
+
+function scoreImageCandidate(imageUrl = "") {
+  const lowered = imageUrl.toLowerCase();
+  let score = 0;
+
+  if (
+    ["cover", "journal", "issue", "article", "mediaobjects", "els-cdn", "static-content"].some(
+      (fragment) => lowered.includes(fragment)
+    )
+  ) {
+    score += 4;
+  }
+
+  if (
+    ["logo", "icon", "favicon", "apple-touch", "placeholder", "spinner"].some((fragment) =>
+      lowered.includes(fragment)
+    )
+  ) {
+    score -= 6;
+  }
+
+  if (/\.(jpe?g|png|webp)([?#].*)?$/i.test(lowered)) {
+    score += 2;
+  }
+
+  if (lowered.endsWith(".svg") || lowered.includes(".svg?")) {
+    score -= 2;
+  }
+
+  return score;
+}
+
+function bestImageCandidate(candidates) {
+  const unique = [...new Set(candidates.filter(Boolean))];
+  unique.sort((left, right) => scoreImageCandidate(right) - scoreImageCandidate(left));
+  return unique[0] || "";
+}
+
 async function loadLibrary() {
   const raw = await fs.readFile(ABSTRACTS_PATH, "utf8");
   return JSON.parse(raw);
@@ -94,6 +160,16 @@ async function createBrowserContext(browser) {
     viewport: { width: 1440, height: 900 },
     locale: "en-US",
     timezoneId: "America/Chicago",
+  });
+
+  await context.route("**/*", (route) => {
+    const blockedTypes = new Set(["image", "media", "font", "stylesheet"]);
+    if (blockedTypes.has(route.request().resourceType())) {
+      route.abort();
+      return;
+    }
+
+    route.continue();
   });
 
   await context.addInitScript(() => {
@@ -170,6 +246,69 @@ async function extractMetaAbstract(page) {
   }
 
   return bestCandidate(candidates);
+}
+
+async function extractThumbnail(page) {
+  const candidates = [];
+
+  for (const selector of IMAGE_SELECTORS) {
+    const content = await page.locator(selector).first().getAttribute("content").catch(() => null);
+    if (content) {
+      candidates.push(normalizeImageUrl(page.url(), content));
+    }
+  }
+
+  const linkImage = await page
+    .locator('link[rel="image_src" i]')
+    .first()
+    .getAttribute("href")
+    .catch(() => null);
+  if (linkImage) {
+    candidates.push(normalizeImageUrl(page.url(), linkImage));
+  }
+
+  const jsonLdImages = await page.evaluate(() => {
+    const values = [];
+
+    function visit(node) {
+      if (!node || typeof node !== "object") {
+        return;
+      }
+
+      const image = node.image;
+      if (typeof image === "string") {
+        values.push(image);
+      } else if (Array.isArray(image)) {
+        image.forEach((item) => visit({ image: item }));
+      } else if (image && typeof image === "object") {
+        const contentUrl = image.contentUrl || image.url;
+        if (typeof contentUrl === "string") {
+          values.push(contentUrl);
+        }
+      }
+
+      if (Array.isArray(node)) {
+        node.forEach(visit);
+        return;
+      }
+
+      Object.values(node).forEach(visit);
+    }
+
+    document.querySelectorAll('script[type="application/ld+json"]').forEach((scriptNode) => {
+      try {
+        visit(JSON.parse(scriptNode.textContent || ""));
+      } catch (error) {
+        // Ignore malformed JSON-LD blocks.
+      }
+    });
+
+    return values;
+  });
+
+  jsonLdImages.forEach((image) => candidates.push(normalizeImageUrl(page.url(), image)));
+
+  return bestImageCandidate(candidates);
 }
 
 async function extractJsonLdAbstract(page) {
@@ -262,21 +401,21 @@ async function navigateToRecord(page, doi) {
 
   await page.goto(targetUrl, {
     waitUntil: "domcontentloaded",
-    timeout: 30000,
+    timeout: 15000,
   });
-  await page.waitForLoadState("networkidle", { timeout: 6000 }).catch(() => {});
+  await page.waitForLoadState("networkidle", { timeout: 2500 }).catch(() => {});
   await waitOutChallenge(page);
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(600);
 
   const scienceDirectPiiMatch = page.url().match(/sciencedirect\.com\/science\/article\/pii\/([^?/#]+)/i);
   if (scienceDirectPiiMatch && !/\/science\/article\/abs\/pii\//i.test(page.url())) {
     await page.goto(`https://www.sciencedirect.com/science/article/abs/pii/${scienceDirectPiiMatch[1]}`, {
       waitUntil: "domcontentloaded",
-      timeout: 30000,
+      timeout: 15000,
     });
-    await page.waitForLoadState("networkidle", { timeout: 6000 }).catch(() => {});
+    await page.waitForLoadState("networkidle", { timeout: 2500 }).catch(() => {});
     await waitOutChallenge(page);
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(600);
   }
 
   return override;
@@ -284,7 +423,7 @@ async function navigateToRecord(page, doi) {
 
 async function scrapeAbstract(context, doi) {
   const page = await context.newPage();
-  page.setDefaultTimeout(8000);
+  page.setDefaultTimeout(5000);
 
   try {
     const override = await navigateToRecord(page, doi);
@@ -292,6 +431,7 @@ async function scrapeAbstract(context, doi) {
 
     return {
       abstract,
+      thumbnailUrl: await extractThumbnail(page),
       finalUrl: page.url(),
       override,
       title: await page.title().catch(() => ""),
@@ -303,10 +443,15 @@ async function scrapeAbstract(context, doi) {
 
 async function main() {
   const library = await loadLibrary();
-  const targets = Object.entries(library).filter(([, record]) => !record.abstract);
+  const entries = Object.entries(library);
+  const missingAbstractTargets = entries.filter(([, record]) => !record.abstract);
+  const missingThumbnailTargets = entries
+    .filter(([, record]) => record.abstract && !record.thumbnailUrl)
+    .slice(0, getThumbnailRecoveryLimit());
+  const targets = [...missingAbstractTargets, ...missingThumbnailTargets];
 
   if (!targets.length) {
-    console.log("No missing abstracts found.");
+    console.log("No missing abstracts or thumbnails found.");
     return;
   }
 
@@ -324,15 +469,25 @@ async function main() {
 
       try {
         const result = await scrapeAbstract(context, doi);
-        if (!result.abstract) {
-          console.log(`No abstract extracted for ${doi} (${result.finalUrl})`);
+        if (!result.abstract && !result.thumbnailUrl) {
+          console.log(`No abstract or thumbnail extracted for ${doi} (${result.finalUrl})`);
           continue;
         }
 
         library[doi] = {
           ...record,
-          abstract: result.abstract,
-          source: "playwright",
+          ...(result.abstract
+            ? {
+                abstract: result.abstract,
+                source: "playwright",
+              }
+            : {}),
+          ...(result.thumbnailUrl
+            ? {
+                thumbnailUrl: result.thumbnailUrl,
+                thumbnailSource: "playwright",
+              }
+            : {}),
           ...(result.override?.resolvedDoi ? { resolvedDoi: result.override.resolvedDoi } : {}),
           ...(result.finalUrl ? { resolvedUrl: result.finalUrl } : {}),
         };

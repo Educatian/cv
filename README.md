@@ -51,7 +51,13 @@ The task runs `npm run site:update:playwright` every 14 days. That refresh inclu
 - generated site data, including journal articles and working papers
 - Google Scholar metrics and per-work citation counts
 - OpenAlex author, venue, topic, open-access, and coauthor analytics
-- DOI/frontpage abstract extraction with Playwright recovery
+- DOI/frontpage abstract and thumbnail extraction, with bounded Playwright recovery for missing abstracts
+
+Publisher thumbnails are parsed into `assets/publication-abstracts.json` as `thumbnailUrl` when available. Publications without a parsed image render an infographic-style journal card so the site never shows an empty thumbnail slot. To manually attempt additional browser-based thumbnail recovery, run:
+
+```bash
+node scripts/update_publication_abstracts_playwright.mjs --thumbnail-limit=8
+```
 
 Manual full refresh:
 

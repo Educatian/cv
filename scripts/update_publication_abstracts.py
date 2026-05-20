@@ -5,6 +5,7 @@ import json
 import re
 from pathlib import Path
 from typing import Dict, List, Optional
+from urllib.parse import urljoin
 
 import requests
 from docx import Document
@@ -35,6 +36,14 @@ META_PATTERNS = [
     ("name", "description"),
     ("property", "og:description"),
     ("name", "twitter:description"),
+]
+IMAGE_META_PATTERNS = [
+    ("property", "og:image"),
+    ("property", "og:image:secure_url"),
+    ("name", "twitter:image"),
+    ("name", "twitter:image:src"),
+    ("name", "citation_cover_image_url"),
+    ("name", "citation_image"),
 ]
 
 
@@ -180,16 +189,93 @@ def find_html_abstract(tree: html.HtmlElement) -> str:
     return ""
 
 
-def fetch_landing_page_abstract(session: requests.Session, doi: str) -> str:
+def normalize_image_url(base_url: str, value: str) -> str:
+    image_url = clean_text(value)
+    if not image_url or image_url.startswith("data:"):
+        return ""
+    return urljoin(base_url, image_url)
+
+
+def candidate_score(image_url: str) -> int:
+    lowered = image_url.lower()
+    score = 0
+    if any(fragment in lowered for fragment in ["cover", "journal", "issue", "article", "mediaobjects", "els-cdn", "static-content"]):
+        score += 4
+    if any(fragment in lowered for fragment in ["logo", "icon", "favicon", "apple-touch", "placeholder", "spinner"]):
+        score -= 6
+    if re.search(r"\.(?:jpe?g|png|webp)(?:[?#].*)?$", lowered):
+        score += 2
+    if lowered.endswith(".svg") or ".svg?" in lowered:
+        score -= 2
+    return score
+
+
+def best_image_candidate(candidates: List[str]) -> str:
+    unique = []
+    seen = set()
+    for candidate in candidates:
+        if candidate and candidate not in seen:
+            unique.append(candidate)
+            seen.add(candidate)
+    if not unique:
+        return ""
+    return max(unique, key=candidate_score)
+
+
+def find_html_image(tree: html.HtmlElement, base_url: str) -> str:
+    candidates: List[str] = []
+
+    for attr, name in IMAGE_META_PATTERNS:
+        for node in tree.xpath(f"//meta[@{attr}='{name}']/@content"):
+            candidates.append(normalize_image_url(base_url, node))
+
+    for node in tree.xpath("//link[translate(@rel,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')='image_src']/@href"):
+        candidates.append(normalize_image_url(base_url, node))
+
+    for script_text in tree.xpath("//script[@type='application/ld+json']/text()"):
+        try:
+            payload = json.loads(script_text)
+        except Exception:
+            continue
+
+        def visit(value: object) -> None:
+            if isinstance(value, dict):
+                image = value.get("image")
+                if isinstance(image, str):
+                    candidates.append(normalize_image_url(base_url, image))
+                elif isinstance(image, list):
+                    for item in image:
+                        visit({"image": item})
+                elif isinstance(image, dict):
+                    content_url = image.get("contentUrl") or image.get("url")
+                    if isinstance(content_url, str):
+                        candidates.append(normalize_image_url(base_url, content_url))
+                for child in value.values():
+                    visit(child)
+            elif isinstance(value, list):
+                for item in value:
+                    visit(item)
+
+        visit(payload)
+
+    return best_image_candidate(candidates)
+
+
+def fetch_landing_page_metadata(session: requests.Session, doi: str) -> Dict[str, str]:
     response = session.get(f"https://doi.org/{doi}", headers=HEADERS, timeout=30, allow_redirects=True)
     response.raise_for_status()
     if "text/html" not in response.headers.get("content-type", ""):
-        return ""
+        return {"resolvedUrl": response.url}
 
     tree = html.fromstring(response.text)
+    metadata = {
+        "resolvedUrl": response.url,
+        "thumbnailUrl": find_html_image(tree, response.url),
+    }
     abstract = find_html_abstract(tree)
     if abstract:
-        return abstract
+        metadata["abstract"] = abstract
+        return metadata
 
     sciencedirect_match = re.search(r"sciencedirect\.com/science/article/pii/([^?/#]+)", response.url, re.I)
     if sciencedirect_match and "/article/abs/pii/" not in response.url:
@@ -197,9 +283,17 @@ def fetch_landing_page_abstract(session: requests.Session, doi: str) -> str:
         abs_response = session.get(abs_url, headers=HEADERS, timeout=30, allow_redirects=True)
         abs_response.raise_for_status()
         if "text/html" in abs_response.headers.get("content-type", ""):
-            return find_html_abstract(html.fromstring(abs_response.text))
+            abs_tree = html.fromstring(abs_response.text)
+            metadata["resolvedUrl"] = abs_response.url
+            metadata["thumbnailUrl"] = find_html_image(abs_tree, abs_response.url) or metadata["thumbnailUrl"]
+            metadata["abstract"] = find_html_abstract(abs_tree)
+            return metadata
 
-    return ""
+    return metadata
+
+
+def fetch_landing_page_abstract(session: requests.Session, doi: str) -> str:
+    return fetch_landing_page_metadata(session, doi).get("abstract", "")
 
 
 def build_library(cv_path: Path) -> Dict[str, Dict[str, str]]:
@@ -216,6 +310,7 @@ def build_library(cv_path: Path) -> Dict[str, Dict[str, str]]:
 
         abstract = ""
         source = ""
+        landing_metadata: Dict[str, str] = {}
 
         for label, fetcher in [
             ("openalex", fetch_openalex_abstract),
@@ -230,12 +325,24 @@ def build_library(cv_path: Path) -> Dict[str, Dict[str, str]]:
                 source = label
                 break
 
+        try:
+            landing_metadata = fetch_landing_page_metadata(session, doi)
+        except Exception:
+            landing_metadata = {}
+
+        if not abstract and landing_metadata.get("abstract"):
+            abstract = landing_metadata["abstract"]
+            source = "landing_page"
+
         library[doi] = {
             "title": extract_title(entry["citation"]),
             "citation": entry["citation"],
             "abstract": abstract,
             "source": source or "unavailable",
             "category": entry["category"],
+            **({"thumbnailUrl": landing_metadata["thumbnailUrl"]} if landing_metadata.get("thumbnailUrl") else {}),
+            **({"thumbnailSource": "landing_page"} if landing_metadata.get("thumbnailUrl") else {}),
+            **({"resolvedUrl": landing_metadata["resolvedUrl"]} if landing_metadata.get("resolvedUrl") else {}),
         }
 
     apply_abstract_overrides(library)
@@ -255,8 +362,10 @@ def apply_abstract_overrides(library: Dict[str, Dict[str, str]]) -> None:
                 **library[doi],
                 "abstract": clean_text(override["abstract"]),
                 "source": override.get("source", "override"),
-                **({"resolvedUrl": override["resolvedUrl"]} if override.get("resolvedUrl") else {}),
             }
+        for key in ["resolvedUrl", "thumbnailUrl", "thumbnailSource"]:
+            if override.get(key):
+                library[doi][key] = override[key]
 
 
 def main() -> None:

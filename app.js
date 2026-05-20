@@ -289,7 +289,7 @@ const completeJournalArticles = siteData.completeJournalArticles || [
     year: "2026",
     category: "International",
     citation:
-      "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Accepted, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed]",
+      "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Minor revision, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed]",
     link: "",
   },
   {
@@ -1348,6 +1348,18 @@ function extractVenueFromCitation(citation = "") {
   return venueChunk.split(",")[0].trim();
 }
 
+function parsePublicationStatus(citation = "") {
+  const match = citation.match(
+    /\((Accepted|In Press|Minor revision|Major revision|Revise and resubmit|Under review|Submitted),\s*(?:19|20)\d{2}\)/i
+  );
+
+  if (!match) {
+    return "";
+  }
+
+  return match[1].charAt(0).toUpperCase() + match[1].slice(1).toLowerCase();
+}
+
 function buildPublicationLookupKey({ year = "", title = "", venue = "", citation = "" }) {
   const resolvedTitle = title || extractTitleFromCitation(citation);
   const resolvedVenue = venue || extractVenueFromCitation(citation);
@@ -1389,7 +1401,7 @@ function renderJournalFrontThumb(item) {
     `;
   }
 
-  return `
+  const fallbackFront = `
     <div class="journal-front ${front.theme}">
       <div class="journal-front-topline">${front.publisher}</div>
       <div class="journal-front-masthead">${front.masthead}</div>
@@ -1402,6 +1414,51 @@ function renderJournalFrontThumb(item) {
       </div>
     </div>
   `;
+
+  if (item.doi) {
+    return `
+      <div
+        class="journal-thumb-dynamic"
+        data-publication-thumb-doi="${escapeHtml(item.doi)}"
+        data-publication-thumb-alt="${escapeHtml(`${front.masthead} journal thumbnail`)}"
+      >
+        ${fallbackFront}
+      </div>
+    `;
+  }
+
+  return fallbackFront;
+}
+
+async function hydratePublicationThumbnailNode(node) {
+  const doi = node.dataset.publicationThumbDoi;
+  if (!doi) {
+    return;
+  }
+
+  const record = await fetchAbstractRecord(doi);
+  const thumbnailUrl = record?.thumbnailUrl || record?.coverImage || record?.imageUrl || "";
+  if (!thumbnailUrl) {
+    return;
+  }
+
+  const alt = node.dataset.publicationThumbAlt || "Journal thumbnail";
+  node.outerHTML = `
+    <img
+      class="journal-cover-image"
+      src="${escapeHtml(thumbnailUrl)}"
+      alt="${escapeHtml(alt)}"
+      loading="lazy"
+    />
+  `;
+}
+
+async function hydratePublicationThumbnails(root = document) {
+  const nodes = Array.from(root.querySelectorAll("[data-publication-thumb-doi]"));
+  await Promise.all(nodes.map(hydratePublicationThumbnailNode));
+  if (nodes.length) {
+    document.dispatchEvent(new CustomEvent("panel:content-updated"));
+  }
 }
 
 function getServiceThumbProfile(item) {
@@ -1555,7 +1612,11 @@ async function fetchAbstractText(doi) {
 }
 
 function getAbstractFallback(item) {
-  if (!item.doi && /(Accepted|In Press|Minor revision|Major revision)/i.test(item.citation || "")) {
+  if (!item.doi && /(Minor revision|Major revision|Revise and resubmit)/i.test(item.citation || "")) {
+    return "Manuscript is under revision; public abstract will appear after indexing.";
+  }
+
+  if (!item.doi && /(Accepted|In Press)/i.test(item.citation || "")) {
     return "Abstract will appear after the manuscript is publicly indexed.";
   }
 
@@ -1618,6 +1679,7 @@ function buildPublicationRecord(item) {
     citation,
     link,
     note: detailed?.note || "",
+    status: detailed?.status || parsePublicationStatus(citation),
     title,
     authors,
     venue,
@@ -2063,23 +2125,28 @@ function renderPublications() {
             <div class="publication-meta">
               <span class="publication-year">${item.year}</span>
               ${
+                item.status
+                  ? `<span class="publication-status">${escapeHtml(item.status)}</span>`
+                  : ""
+              }
+              ${
                 item.note
-                  ? `<span class="publication-note">${item.note}</span>`
+                  ? `<span class="publication-note">${escapeHtml(item.note)}</span>`
                   : ""
               }
               ${item.tags
-                .map((tag) => `<span class="tag-pill">${tag}</span>`)
+                .map((tag) => `<span class="tag-pill">${escapeHtml(tag)}</span>`)
                 .join("")}
             </div>
             <h3 class="publication-title">
               ${
                 item.link
-                  ? `<a href="${item.link}" target="_blank" rel="noreferrer">${item.title || item.venue}</a>`
-                  : `${item.title || item.venue}`
+                  ? `<a href="${escapeHtml(item.link)}" target="_blank" rel="noreferrer">${escapeHtml(item.title || item.venue)}</a>`
+                  : `${escapeHtml(item.title || item.venue)}`
               }
             </h3>
-            ${item.authors ? `<p class="publication-authors">${item.authors}</p>` : ""}
-            ${item.venue ? `<p class="publication-venue">${item.venue}</p>` : ""}
+            ${item.authors ? `<p class="publication-authors">${escapeHtml(item.authors)}</p>` : ""}
+            ${item.venue ? `<p class="publication-venue">${escapeHtml(item.venue)}</p>` : ""}
             <p
               class="publication-abstract publication-abstract-preview ${item.doi ? "is-loading" : "is-empty"}"
               data-publication-doi="${escapeHtml(item.doi || "")}"
@@ -2087,7 +2154,7 @@ function renderPublications() {
             <div class="publication-actions">
               ${
                 item.link
-                  ? `<a class="publication-link" href="${item.link}" target="_blank" rel="noreferrer">Journal page</a>`
+                  ? `<a class="publication-link" href="${escapeHtml(item.link)}" target="_blank" rel="noreferrer">Journal page</a>`
                   : ""
               }
               <a class="publication-link is-primary" href="${getPublicationDetailUrl(item)}">Read more</a>
@@ -2100,6 +2167,7 @@ function renderPublications() {
 
   renderPublicationPagination(totalPages);
   hydratePublicationAbstracts();
+  hydratePublicationThumbnails(list);
   document.dispatchEvent(new CustomEvent("panel:content-updated"));
 }
 
@@ -2585,6 +2653,7 @@ window.__cvSite = {
   getAbstractFallback,
   getAllPublicationRecords,
   getPublicationDetailUrl,
+  hydratePublicationThumbnails,
   renderJournalFrontThumb,
 };
 

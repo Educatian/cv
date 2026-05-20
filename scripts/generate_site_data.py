@@ -338,6 +338,15 @@ def derive_publication_note(citation: str) -> str:
     return ""
 
 
+def parse_publication_status(citation: str) -> str:
+    match = re.search(
+        r"\((Accepted|In Press|Minor revision|Major revision|Revise and resubmit|Under review|Submitted),\s*(?:19|20)\d{2}\)",
+        citation,
+        re.I,
+    )
+    return sentence_case(match.group(1)) if match else ""
+
+
 def abbreviate_name(name: str) -> str:
     if name in SPECIAL_SERVICE_BADGES:
         return SPECIAL_SERVICE_BADGES[name]
@@ -657,6 +666,7 @@ def parse_publications(paragraphs: Sequence[str]) -> Dict[str, object]:
         authors = parse_authors_from_citation(citation)
         venue = parse_venue_from_citation(citation)
         note = derive_publication_note(citation)
+        status = parse_publication_status(citation)
         tags = derive_publication_tags(title, venue, category)
 
         complete_records.append(
@@ -676,6 +686,7 @@ def parse_publications(paragraphs: Sequence[str]) -> Dict[str, object]:
                 "link": link,
                 "tags": tags,
                 "note": note,
+                "status": status,
             }
         )
 
@@ -1081,11 +1092,18 @@ def parse_news(
     for publication in publication_items[:3]:
         venue = publication.get("venue", "journal article")
         title = publication.get("title", "New publication")
+        status = publication.get("status", "")
+        if status and status.lower() not in {"accepted", "in press"}:
+            text = f"{status} manuscript for {venue}: {title}."
+        elif status:
+            text = f"{status} article in {venue}: {title}."
+        else:
+            text = f"Journal article in {venue}: {title}."
         items.append(
             {
                 "date": publication.get("year", "Recent"),
                 "type": "Publication",
-                "text": f"Journal article in {venue}: {title}.",
+                "text": text,
             }
         )
 

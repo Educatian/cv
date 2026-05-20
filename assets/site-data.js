@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-05-20T17:39:17.010985+00:00",
+  "generatedAt": "2026-05-20T18:36:50.365791+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -161,17 +161,17 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Journal article in ZDM – International Journal on Mathematics Education: How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge."
+      "text": "Minor revision manuscript for ZDM – International Journal on Mathematics Education: How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge."
     },
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Journal article in Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
+      "text": "Minor revision manuscript for Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
     },
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Journal article in Simulation & Gaming: Navigating practitioner roles in generative AI-enhanced educational game design: A collective autoethnography."
+      "text": "Minor revision manuscript for Simulation & Gaming: Navigating practitioner roles in generative AI-enhanced educational game design: A collective autoethnography."
     },
     {
       "date": "2027",
@@ -252,7 +252,8 @@ window.__cvSiteData = {
         "Teacher Ed",
         "STEM"
       ],
-      "note": ""
+      "note": "",
+      "status": "Minor revision"
     },
     {
       "year": "2026",
@@ -264,7 +265,8 @@ window.__cvSiteData = {
         "GenAI",
         "Teacher Ed"
       ],
-      "note": ""
+      "note": "",
+      "status": "Minor revision"
     },
     {
       "year": "2026",
@@ -276,7 +278,8 @@ window.__cvSiteData = {
         "GenAI",
         "Game-Based"
       ],
-      "note": "mentored collaboration"
+      "note": "mentored collaboration",
+      "status": "Minor revision"
     },
     {
       "year": "2026",
@@ -289,7 +292,8 @@ window.__cvSiteData = {
         "STEM",
         "Review"
       ],
-      "note": ""
+      "note": "",
+      "status": "Accepted"
     },
     {
       "year": "2026",
@@ -301,7 +305,8 @@ window.__cvSiteData = {
         "Higher Ed",
         "Ethics"
       ],
-      "note": "mentored collaboration"
+      "note": "mentored collaboration",
+      "status": ""
     },
     {
       "year": "2026",
@@ -312,7 +317,8 @@ window.__cvSiteData = {
       "tags": [
         "XR"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2025",
@@ -323,7 +329,8 @@ window.__cvSiteData = {
       "tags": [
         "XR"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2025",
@@ -337,7 +344,8 @@ window.__cvSiteData = {
         "STEM",
         "Review"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2025",
@@ -349,7 +357,8 @@ window.__cvSiteData = {
         "GenAI",
         "Teacher Ed"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2025",
@@ -361,7 +370,8 @@ window.__cvSiteData = {
         "STEM",
         "Review"
       ],
-      "note": "mentored collaboration"
+      "note": "mentored collaboration",
+      "status": ""
     },
     {
       "year": "2025",
@@ -374,7 +384,8 @@ window.__cvSiteData = {
         "Teacher Ed",
         "STEM"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2025",
@@ -386,7 +397,8 @@ window.__cvSiteData = {
         "GenAI",
         "Higher Ed"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2025",
@@ -399,7 +411,8 @@ window.__cvSiteData = {
         "Game-Based",
         "Teacher Ed"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2025",
@@ -411,7 +424,8 @@ window.__cvSiteData = {
         "GenAI",
         "Teacher Ed"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2025",
@@ -424,7 +438,8 @@ window.__cvSiteData = {
         "Higher Ed",
         "STEM"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2025",
@@ -435,7 +450,8 @@ window.__cvSiteData = {
       "tags": [
         "International"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2024",
@@ -447,7 +463,8 @@ window.__cvSiteData = {
         "Game-Based",
         "Autism"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2024",
@@ -460,7 +477,8 @@ window.__cvSiteData = {
         "Analytics",
         "Teacher Ed"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2024",
@@ -473,7 +491,8 @@ window.__cvSiteData = {
         "Teacher Ed",
         "Higher Ed"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2024",
@@ -485,7 +504,8 @@ window.__cvSiteData = {
         "GenAI",
         "Game-Based"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2024",
@@ -498,7 +518,8 @@ window.__cvSiteData = {
         "Game-Based",
         "Higher Ed"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2024",
@@ -511,7 +532,8 @@ window.__cvSiteData = {
         "Teacher Ed",
         "STEM"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2024",
@@ -522,7 +544,8 @@ window.__cvSiteData = {
       "tags": [
         "STEM"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2024",
@@ -535,7 +558,8 @@ window.__cvSiteData = {
         "STEM",
         "Review"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2024",
@@ -546,7 +570,8 @@ window.__cvSiteData = {
       "tags": [
         "Teacher Ed"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2024",
@@ -559,7 +584,8 @@ window.__cvSiteData = {
         "Game-Based",
         "Higher Ed"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2024",
@@ -570,7 +596,8 @@ window.__cvSiteData = {
       "tags": [
         "GenAI"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2024",
@@ -584,7 +611,8 @@ window.__cvSiteData = {
         "STEM",
         "Review"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2024",
@@ -597,7 +625,8 @@ window.__cvSiteData = {
         "Analytics",
         "Autism"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2024",
@@ -608,7 +637,8 @@ window.__cvSiteData = {
       "tags": [
         "Higher Ed"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2024",
@@ -619,7 +649,8 @@ window.__cvSiteData = {
       "tags": [
         "International"
       ],
-      "note": "mentored collaboration"
+      "note": "mentored collaboration",
+      "status": ""
     },
     {
       "year": "2024",
@@ -631,7 +662,8 @@ window.__cvSiteData = {
         "GenAI",
         "Review"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2024",
@@ -643,7 +675,8 @@ window.__cvSiteData = {
         "XR",
         "Autism"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2023",
@@ -657,7 +690,8 @@ window.__cvSiteData = {
         "STEM",
         "Review"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2023",
@@ -669,7 +703,8 @@ window.__cvSiteData = {
         "GenAI",
         "STEM"
       ],
-      "note": "mentored collaboration"
+      "note": "mentored collaboration",
+      "status": ""
     },
     {
       "year": "2023",
@@ -681,7 +716,8 @@ window.__cvSiteData = {
         "XR",
         "Autism"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2023",
@@ -693,7 +729,8 @@ window.__cvSiteData = {
         "XR",
         "Autism"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2023",
@@ -705,7 +742,8 @@ window.__cvSiteData = {
         "Analytics",
         "Game-Based"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2023",
@@ -718,7 +756,8 @@ window.__cvSiteData = {
         "STEM",
         "Review"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2022",
@@ -729,7 +768,8 @@ window.__cvSiteData = {
       "tags": [
         "Autism"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2022",
@@ -741,7 +781,8 @@ window.__cvSiteData = {
         "Analytics",
         "STEM"
       ],
-      "note": "mentored collaboration"
+      "note": "mentored collaboration",
+      "status": ""
     },
     {
       "year": "2022",
@@ -753,7 +794,8 @@ window.__cvSiteData = {
         "Analytics",
         "Game-Based"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2022",
@@ -764,7 +806,8 @@ window.__cvSiteData = {
       "tags": [
         "Review"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2022",
@@ -776,7 +819,8 @@ window.__cvSiteData = {
         "XR",
         "Autism"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2022",
@@ -787,7 +831,8 @@ window.__cvSiteData = {
       "tags": [
         "Teacher Ed"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2021",
@@ -798,7 +843,8 @@ window.__cvSiteData = {
       "tags": [
         "Review"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2021",
@@ -813,7 +859,8 @@ window.__cvSiteData = {
         "STEM",
         "Review"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2020",
@@ -825,7 +872,8 @@ window.__cvSiteData = {
         "XR",
         "Autism"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2020",
@@ -837,7 +885,8 @@ window.__cvSiteData = {
         "Game-Based",
         "Review"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2020",
@@ -848,7 +897,8 @@ window.__cvSiteData = {
       "tags": [
         "Higher Ed"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2020",
@@ -859,7 +909,8 @@ window.__cvSiteData = {
       "tags": [
         "Game-Based"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2020",
@@ -870,7 +921,8 @@ window.__cvSiteData = {
       "tags": [
         "International"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2019",
@@ -881,7 +933,8 @@ window.__cvSiteData = {
       "tags": [
         "Game-Based"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2019",
@@ -893,7 +946,8 @@ window.__cvSiteData = {
         "XR",
         "Autism"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2018",
@@ -905,7 +959,8 @@ window.__cvSiteData = {
         "Game-Based",
         "Autism"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2018",
@@ -920,7 +975,8 @@ window.__cvSiteData = {
         "Review",
         "Korean"
       ],
-      "note": "corresponding author"
+      "note": "corresponding author",
+      "status": ""
     },
     {
       "year": "2020",
@@ -931,7 +987,8 @@ window.__cvSiteData = {
       "tags": [
         "Korean"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2013",
@@ -943,7 +1000,8 @@ window.__cvSiteData = {
         "Review",
         "Korean"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     },
     {
       "year": "2013",
@@ -954,7 +1012,8 @@ window.__cvSiteData = {
       "tags": [
         "Korean"
       ],
-      "note": ""
+      "note": "",
+      "status": ""
     }
   ],
   "completeJournalArticles": [

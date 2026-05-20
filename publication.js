@@ -45,6 +45,11 @@ async function renderPublicationDetailPage() {
           <span class="publication-year">${siteApi.escapeHtml(publication.year)}</span>
           <span class="complete-publication-category">${siteApi.escapeHtml(publication.category)}</span>
           ${
+            publication.status
+              ? `<span class="publication-status">${siteApi.escapeHtml(publication.status)}</span>`
+              : ""
+          }
+          ${
             publication.note
               ? `<span class="publication-note">${siteApi.escapeHtml(publication.note)}</span>`
               : ""
@@ -96,6 +101,8 @@ async function renderPublicationDetailPage() {
       }
     </div>
   `;
+
+  await siteApi.hydratePublicationThumbnails(root);
 
   if (publication.doi) {
     const abstractNode = document.getElementById("publication-detail-abstract");
