@@ -4269,3 +4269,215 @@ body::before {
   color: var(--accent);
 }
 
+/* === Fixes from Playwright contrast audit === */
+
+:root[data-theme="dark"] .skip-link {
+  background: #111111;
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .site-nav {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--line-strong);
+}
+
+:root[data-theme="dark"] .nav-tab {
+  background: transparent;
+  color: var(--muted);
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .nav-tab:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .nav-tab.is-active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+:root[data-theme="dark"] .repo-separator {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .metric-value,
+:root[data-theme="dark"] .grant-metric-card strong,
+:root[data-theme="dark"] .analytics-metric-value,
+:root[data-theme="dark"] .metric-tile strong {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .metric-label,
+:root[data-theme="dark"] .analytics-metric-label,
+:root[data-theme="dark"] .grant-metric-label {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .scholar-metric-value {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .scholar-metric small,
+:root[data-theme="dark"] .scholar-metric-label {
+  color: var(--muted);
+}
+
+/* Brighten badge text so the 4.06:1 pills clear AA on dark crimson tint */
+:root[data-theme="dark"] .news-date,
+:root[data-theme="dark"] .publication-year,
+:root[data-theme="dark"] .publication-status,
+:root[data-theme="dark"] .news-type,
+:root[data-theme="dark"] .publication-note,
+:root[data-theme="dark"] .repo-badge,
+:root[data-theme="dark"] .tag-pill,
+:root[data-theme="dark"] .analytics-pill,
+:root[data-theme="dark"] .complete-publication-category,
+:root[data-theme="dark"] .service-meta-pill {
+  color: #ff7d96;
+  background: rgba(232, 73, 104, 0.18);
+}
+
+/* Analytics access pills: original earth tones too dark for dark mode */
+:root[data-theme="dark"] .analytics-access-pill.is-open {
+  color: #ffd07a;
+  background: rgba(255, 208, 122, 0.14);
+}
+
+:root[data-theme="dark"] .analytics-access-pill.is-closed {
+  color: #c7ced6;
+  background: rgba(199, 206, 214, 0.12);
+}
+
+:root[data-theme="dark"] .analytics-access-pill.is-unknown {
+  color: #f4d68a;
+  background: rgba(244, 214, 138, 0.12);
+}
+
+:root[data-theme="dark"] .analytics-table thead th {
+  background: var(--surface-strong);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .analytics-table tbody td {
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .analytics-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Publication detail page (publication.html) — same dark overrides */
+:root[data-theme="dark"] .publication-detail-title {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .publication-detail-authors,
+:root[data-theme="dark"] .publication-detail-venue,
+:root[data-theme="dark"] .publication-detail-citation,
+:root[data-theme="dark"] .publication-detail-abstract {
+  color: var(--muted);
+}
+
+/* Repo nameplate (project tile head) — was rgb(232,73,104) on light surface */
+:root[data-theme="dark"] .repo-nameplate {
+  color: var(--ink);
+}
+
+/* Tool panels still hardcoded to white in the premium dossier layer */
+:root[data-theme="dark"] .publication-tools,
+:root[data-theme="dark"] .analytics-panel,
+:root[data-theme="dark"] .analytics-table-shell {
+  background:
+    linear-gradient(180deg, rgba(232, 73, 104, 0.06), transparent 80%),
+    var(--surface);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .publication-search span,
+:root[data-theme="dark"] .publication-search label,
+:root[data-theme="dark"] .working-paper-tools label {
+  color: var(--ink);
+}
+
+/* Brand bar gradient skews too hot in dark mode; settle it for WCAG */
+:root[data-theme="dark"] .brand-bar {
+  background: linear-gradient(
+    90deg,
+    #771426 0%,
+    #9e1b32 58%,
+    #1b1b22 100%
+  );
+}
+
+:root[data-theme="dark"] .brand-university,
+:root[data-theme="dark"] .brand-subtitle {
+  color: #ffffff;
+}
+
+/* Service thumbs render light-on-grey when themed art is loaded.
+   Tint the topline/bottomline overlays so labels read at AA. */
+:root[data-theme="dark"] .service-thumb-topline,
+:root[data-theme="dark"] .service-thumb-bottomline {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+:root[data-theme="dark"] .service-thumb-topline {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* Boost accent text on small badges so the 3.7–4.1 hits land above 4.5 */
+:root[data-theme="dark"] .nav-tab.is-active,
+:root[data-theme="dark"] .filter-button.is-active,
+:root[data-theme="dark"] .page-number.is-active,
+:root[data-theme="dark"] .page-number[aria-current="page"],
+:root[data-theme="dark"] .project-lang,
+:root[data-theme="dark"] .scholar-snapshot-head a,
+:root[data-theme="dark"] .publication-link,
+:root[data-theme="dark"] .complete-publication-link,
+:root[data-theme="dark"] .analytics-link-chip,
+:root[data-theme="dark"] .project-link-live {
+  color: #ff7d96;
+}
+
+:root[data-theme="dark"] .nav-tab.is-active {
+  background: rgba(232, 73, 104, 0.22);
+}
+
+:root[data-theme="dark"] .project-lang {
+  background: rgba(232, 73, 104, 0.18);
+}
+
+/* D3 chart labels (analytics topic bubble): force light text + dark
+   stroke halo for legibility on any bubble color. */
+:root[data-theme="dark"] svg text,
+:root[data-theme="dark"] svg tspan {
+  fill: #ffffff !important;
+  paint-order: stroke;
+  stroke: rgba(0, 0, 0, 0.55);
+  stroke-width: 2.5px;
+  stroke-linejoin: round;
+}
+
+/* D3 axis tick labels — drop the stroke so it doesn't look bolded */
+:root[data-theme="dark"] svg g.tick text,
+:root[data-theme="dark"] svg g.tick tspan {
+  fill: var(--muted) !important;
+  stroke: none;
+}
+
+/* Bar value chip: brighten so we clear AA on dark bg */
+:root[data-theme="dark"] .analytics-bar-value {
+  color: #ff7d96;
+}
+

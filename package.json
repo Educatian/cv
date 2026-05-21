@@ -13,7 +13,8 @@
     "update:biweekly:register": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/register_biweekly_update.ps1",
     "abstracts:base": "python scripts/update_publication_abstracts.py",
     "abstracts:playwright": "node scripts/update_publication_abstracts_playwright.mjs",
-    "abstracts:update": "python scripts/update_publication_abstracts.py && node scripts/update_publication_abstracts_playwright.mjs"
+    "abstracts:update": "python scripts/update_publication_abstracts.py && node scripts/update_publication_abstracts_playwright.mjs",
+    "audit:dark": "node scripts/dark_contrast_audit.mjs"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,8 @@
   "homepage": "https://github.com/Educatian/cv#readme",
   "dependencies": {
     "playwright": "^1.59.1"
+  },
+  "devDependencies": {
+    "pngjs": "^7.0.0"
   }
 }
