@@ -3949,3 +3949,316 @@ body::before {
     scroll-behavior: auto;
   }
 }
+
+/* === Dark mode overrides for the 2026 premium dossier layer === */
+/* Many selectors above (~line 3030+) hardcode light backgrounds and
+   slate-blue text colors that bypass the token system. The rules below
+   force them onto dark-theme values when [data-theme="dark"] is active. */
+
+:root[data-theme="dark"] body {
+  background: linear-gradient(180deg, #0e0e10 0%, #131317 44%, #15151a 100%);
+}
+
+:root[data-theme="dark"] body::before {
+  background:
+    linear-gradient(180deg, rgba(232, 73, 104, 0.06), transparent 18rem),
+    linear-gradient(90deg, rgba(180, 200, 230, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(180, 200, 230, 0.025) 1px, transparent 1px);
+}
+
+:root[data-theme="dark"] .site-header {
+  background: var(--header-bg);
+  border-bottom-color: var(--header-border);
+}
+
+:root[data-theme="dark"] .nav-tab {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .nav-tab.is-active,
+:root[data-theme="dark"] .nav-tab:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+:root[data-theme="dark"] .hero h1 {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .hero-title-meta {
+  color: var(--accent);
+}
+
+:root[data-theme="dark"] .hero-summary {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .button {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+
+:root[data-theme="dark"] .button:hover,
+:root[data-theme="dark"] .button:focus-visible {
+  border-color: rgba(232, 73, 104, 0.55);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
+}
+
+:root[data-theme="dark"] .button-primary {
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .scholar-snapshot {
+  background: var(--surface);
+  border-color: var(--line-strong);
+}
+
+:root[data-theme="dark"] .scholar-snapshot-head {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .scholar-metric-value,
+:root[data-theme="dark"] .scholar-metric-label,
+:root[data-theme="dark"] .scholar-metric-secondary {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .scholar-metric-label,
+:root[data-theme="dark"] .scholar-metric-secondary {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .content-section h2 {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .content-section h3,
+:root[data-theme="dark"] .mini-panel h3,
+:root[data-theme="dark"] .grant-panel-head h3,
+:root[data-theme="dark"] .analytics-panel-head h3 {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .lead-paragraph,
+:root[data-theme="dark"] .section-note,
+:root[data-theme="dark"] .service-foot p,
+:root[data-theme="dark"] .news-copy,
+:root[data-theme="dark"] .mini-panel p,
+:root[data-theme="dark"] .repo-tile p,
+:root[data-theme="dark"] .grant-panel-head p,
+:root[data-theme="dark"] .grant-bar-meta,
+:root[data-theme="dark"] .analytics-panel-head p,
+:root[data-theme="dark"] .publication-authors,
+:root[data-theme="dark"] .publication-venue,
+:root[data-theme="dark"] .publication-abstract,
+:root[data-theme="dark"] .timeline-detail,
+:root[data-theme="dark"] .affiliation-line {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .self-author {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .repo-tile,
+:root[data-theme="dark"] .news-item,
+:root[data-theme="dark"] .publication-item,
+:root[data-theme="dark"] .working-paper-item,
+:root[data-theme="dark"] .working-paper-metric,
+:root[data-theme="dark"] .mini-panel,
+:root[data-theme="dark"] .grant-metric-card,
+:root[data-theme="dark"] .grant-compare-panel,
+:root[data-theme="dark"] .grant-pipeline-panel,
+:root[data-theme="dark"] .grant-bar-card,
+:root[data-theme="dark"] .service-card,
+:root[data-theme="dark"] .analytics-panel,
+:root[data-theme="dark"] .analytics-metric-card,
+:root[data-theme="dark"] .analytics-access-card,
+:root[data-theme="dark"] .complete-publication-item {
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .repo-tile {
+  background:
+    linear-gradient(180deg, rgba(232, 73, 104, 0.06), transparent 64%),
+    var(--surface);
+}
+
+:root[data-theme="dark"] .news-date,
+:root[data-theme="dark"] .publication-year,
+:root[data-theme="dark"] .publication-status {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+:root[data-theme="dark"] .news-type,
+:root[data-theme="dark"] .publication-note,
+:root[data-theme="dark"] .repo-badge,
+:root[data-theme="dark"] .tag-pill,
+:root[data-theme="dark"] .analytics-pill,
+:root[data-theme="dark"] .complete-publication-category {
+  background: rgba(232, 73, 104, 0.12);
+  color: var(--accent);
+}
+
+:root[data-theme="dark"] .publication-thumb,
+:root[data-theme="dark"] .publication-thumb.is-journal-front {
+  border-color: var(--line);
+  background: var(--surface-strong);
+}
+
+:root[data-theme="dark"] .profile-photo-frame {
+  background: var(--surface-strong);
+}
+
+:root[data-theme="dark"] .affiliation-theme-sand,
+:root[data-theme="dark"] .affiliation-theme-sky,
+:root[data-theme="dark"] .affiliation-theme-sage {
+  background: var(--surface);
+}
+
+:root[data-theme="dark"] .affiliation-theme-sand .affiliation-logo-shell,
+:root[data-theme="dark"] .affiliation-theme-sky .affiliation-logo-shell,
+:root[data-theme="dark"] .affiliation-theme-sage .affiliation-logo-shell {
+  background: var(--surface-strong);
+}
+
+:root[data-theme="dark"] .metric-tile,
+:root[data-theme="dark"] .hero-stats li,
+:root[data-theme="dark"] .analytics-metric-card,
+:root[data-theme="dark"] .analytics-access-card {
+  background:
+    linear-gradient(180deg, rgba(232, 73, 104, 0.06), transparent 80%),
+    var(--surface);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .working-paper-metric,
+:root[data-theme="dark"] .working-paper-item {
+  background:
+    linear-gradient(180deg, rgba(232, 73, 104, 0.05), transparent 76%),
+    var(--surface);
+}
+
+:root[data-theme="dark"] .working-paper-index,
+:root[data-theme="dark"] .working-paper-status {
+  background: rgba(180, 200, 230, 0.08);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .grant-metric-card {
+  background:
+    linear-gradient(180deg, rgba(232, 73, 104, 0.07), transparent 78%),
+    var(--surface);
+}
+
+:root[data-theme="dark"] .filter-button,
+:root[data-theme="dark"] .page-number {
+  background: var(--surface);
+  color: var(--muted);
+  border-color: var(--line-strong);
+}
+
+:root[data-theme="dark"] .filter-button.is-active,
+:root[data-theme="dark"] .page-number.is-active,
+:root[data-theme="dark"] .page-number[aria-current="page"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+:root[data-theme="dark"] .journal-front-footer span:first-child {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+:root[data-theme="dark"] .credential-logo,
+:root[data-theme="dark"] .affiliation-card {
+  background: var(--surface);
+}
+
+:root[data-theme="dark"] .rail-block,
+:root[data-theme="dark"] .content-section {
+  background: rgba(24, 24, 27, 0.85);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .rail-block h2,
+:root[data-theme="dark"] .publication-title,
+:root[data-theme="dark"] .working-paper-title,
+:root[data-theme="dark"] .complete-publication-citation {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .compact-list li,
+:root[data-theme="dark"] .timeline-list li,
+:root[data-theme="dark"] .stack-list li,
+:root[data-theme="dark"] .talk-list li {
+  border-top-color: var(--line);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .credential-title,
+:root[data-theme="dark"] .timeline-year,
+:root[data-theme="dark"] .role-line {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .timeline-year {
+  color: var(--accent);
+}
+
+:root[data-theme="dark"] .panel-kicker,
+:root[data-theme="dark"] .eyebrow,
+:root[data-theme="dark"] .section-label,
+:root[data-theme="dark"] .repo-nameplate {
+  color: var(--accent);
+}
+
+:root[data-theme="dark"] .focus-chip,
+:root[data-theme="dark"] .filter-button {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+
+:root[data-theme="dark"] .filter-button.is-active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+:root[data-theme="dark"] .site-footer {
+  background: var(--surface);
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .site-footer .footer-title {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] input[type="search"],
+:root[data-theme="dark"] input[type="text"] {
+  background: var(--surface-strong);
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+
+:root[data-theme="dark"] input[type="search"]::placeholder {
+  color: var(--gray);
+}
+
+:root[data-theme="dark"] a {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .publication-link,
+:root[data-theme="dark"] .complete-publication-link,
+:root[data-theme="dark"] .analytics-link-chip,
+:root[data-theme="dark"] .project-link-live,
+:root[data-theme="dark"] .scholar-snapshot-head a {
+  color: var(--accent);
+}
+
