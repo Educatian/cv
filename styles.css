@@ -314,10 +314,11 @@ a {
 
 .hero h1 {
   margin: 0;
-  max-width: 9ch;
   font-family: var(--serif);
-  font-size: clamp(3.2rem, 7vw, 5.8rem);
+  font-size: clamp(3.4rem, 8vw, 6.4rem);
   line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-weight: 600;
 }
 
 .hero-title-meta {
@@ -408,7 +409,26 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 0.8rem;
-  margin-top: 2rem;
+  margin-top: 0;
+}
+
+.impact-band {
+  max-width: var(--max);
+  margin: 1rem auto 2rem;
+  padding: 0 1.5rem;
+}
+
+.impact-band-inner {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+  align-items: stretch;
+}
+
+@media (max-width: 760px) {
+  .impact-band-inner {
+    grid-template-columns: 1fr;
+  }
 }
 
 .hero-stats li,
