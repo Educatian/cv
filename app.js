@@ -1039,14 +1039,14 @@ const journalFrontProfiles = {
     masthead: "C&E:X Reality",
     spotlight: "XR, simulation, and design",
     theme: "theme-gold",
-    coverImage: "https://ars.els-cdn.com/content/image/X29496780.jpg",
+    coverImage: "assets/journal-covers/cexr.webp",
   },
   "Computers & Education: X Reality": {
     publisher: "Elsevier",
     masthead: "C&E:X Reality",
     spotlight: "XR, simulation, and design",
     theme: "theme-gold",
-    coverImage: "https://ars.els-cdn.com/content/image/X29496780.jpg",
+    coverImage: "assets/journal-covers/cexr.webp",
   },
   "Educational Research Review": {
     publisher: "Elsevier",
@@ -1182,6 +1182,27 @@ const journalFrontProfiles = {
     spotlight: "Mathematics education research and theory",
     theme: "theme-gold",
     coverImage: "assets/journal-covers/zdm.jpg",
+  },
+  "Journal of Applied Instructional Design": {
+    publisher: "AECT",
+    masthead: "JAID",
+    spotlight: "Applied instructional design and practice",
+    theme: "theme-cobalt",
+    coverImage: "assets/journal-covers/jaid.webp",
+  },
+  "Educational Technology & Society": {
+    publisher: "IFETS",
+    masthead: "Educational Technology & Society",
+    spotlight: "Educational technology, society, and learning systems",
+    theme: "theme-crimson",
+    coverImage: "assets/journal-covers/ets.jpg",
+  },
+  "Journal of Educational Technology & Society": {
+    publisher: "IFETS",
+    masthead: "Educational Technology & Society",
+    spotlight: "Educational technology, society, and learning systems",
+    theme: "theme-crimson",
+    coverImage: "assets/journal-covers/ets.jpg",
   },
 };
 
