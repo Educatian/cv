@@ -6,7 +6,7 @@
   --line: rgba(27, 27, 27, 0.1);
   --line-strong: rgba(27, 27, 27, 0.18);
   --ink: #211c1c;
-  --muted: #5f5a5a;
+  --muted: #4a4646;
   --accent: #9e1b32;
   --accent-dark: #771426;
   --accent-soft: rgba(158, 27, 50, 0.09);
@@ -888,13 +888,24 @@ a {
 }
 
 .news-item {
-  padding: 1rem 1.05rem;
+  padding: 0.95rem 1.1rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfaf8 100%);
+  transition: transform 160ms ease, box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.news-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(158, 27, 50, 0.08);
+  border-color: rgba(158, 27, 50, 0.25);
+  border-left-color: var(--accent-dark);
 }
 
 .news-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -916,20 +927,35 @@ a {
 
 .news-date,
 .publication-year {
-  background: rgba(27, 27, 27, 0.06);
+  background: var(--accent-soft);
+  color: var(--accent);
   font-family: var(--mono);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  min-height: 1.7rem;
+  border-radius: 3px;
 }
 
 .news-type,
 .publication-note,
 .repo-badge {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: #ffffff;
+  color: var(--accent-dark);
+  border: 1px solid rgba(158, 27, 50, 0.25);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  min-height: 1.6rem;
+  border-radius: 999px;
 }
 
 .news-copy {
-  margin: 0.7rem 0 0;
-  line-height: 1.65;
+  margin: 0.65rem 0 0;
+  line-height: 1.6;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 0.95rem;
 }
 
 .mini-panel {
@@ -3614,5 +3640,25 @@ body::before {
 
   .content-section h2 {
     max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 }

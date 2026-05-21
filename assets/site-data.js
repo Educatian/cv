@@ -1456,9 +1456,9 @@ window.__cvSiteData = {
       "status": "Under review",
       "year": "Pipeline",
       "title": "Human-centered generative AI in education: Ethical challenges and equity-driven solutions",
-      "authors": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A.",
+      "authors": "Abu, S., Uddin, M., Moon, J., Awoyemi, I., Mintah, R., & Ghooreian, A.",
       "venue": "Ethics and Behavior",
-      "citation": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A. (Under review). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior (SSCI-indexed).",
+      "citation": "Abu, S., Uddin, M., Moon, J., Awoyemi, I., Mintah, R., & Ghooreian, A. (Under review). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior (SSCI-indexed).",
       "link": ""
     },
     {
@@ -2089,8 +2089,8 @@ window.__cvSiteData = {
       "meta": "Poster Session, AERA 2026, Los Angeles, United States."
     },
     {
-      "title": "(Upcoming 2026, April)",
-      "meta": "Modeling behavioral dynamics and cognitive states in VR safety training: A learning analytics approach. Poster Session, AERA 2026, Los Angeles, United States."
+      "title": "Modeling behavioral dynamics and cognitive states in VR safety training: A learning analytics approach",
+      "meta": "Poster Session, AERA 2026, Los Angeles, United States (Upcoming, April 2026)."
     }
   ]
 };
