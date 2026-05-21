@@ -17,7 +17,6 @@ window.__cvSiteData = {
     "department": "Department of Educational Leadership, Policy, and Technology Studies",
     "institution": "The University of Alabama",
     "email": "jmoon19@ua.edu",
-    "homepage": "https://jmoon.people.ua.edu",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://adielab.ua.edu",
     "cvDownloadPath": "CV_202605_MOON.docx",
@@ -25,7 +24,6 @@ window.__cvSiteData = {
   },
   "contact": {
     "email": "jmoon19@ua.edu",
-    "homepage": "https://jmoon.people.ua.edu",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://adielab.ua.edu",
     "universityAddress": "Department of Educational Leadership, Policy, and Technology Studies Autherine Lucy Hall 315E The University of Alabama Tuscaloosa, Alabama"
