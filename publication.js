@@ -61,7 +61,7 @@ async function renderPublicationDetailPage() {
         <h1 class="publication-detail-title">${siteApi.escapeHtml(publication.title)}</h1>
         ${
           publication.authors
-            ? `<p class="publication-detail-authors">${siteApi.escapeHtml(publication.authors)}</p>`
+            ? `<p class="publication-detail-authors">${siteApi.highlightSelfAuthor(siteApi.escapeHtml(publication.authors))}</p>`
             : ""
         }
         ${
@@ -89,7 +89,7 @@ async function renderPublicationDetailPage() {
       </section>
       <section class="publication-detail-section">
         <h2>Citation</h2>
-        <p class="publication-detail-citation">${siteApi.escapeHtml(publication.citation)}</p>
+        <p class="publication-detail-citation">${siteApi.highlightSelfAuthor(siteApi.escapeHtml(publication.citation))}</p>
       </section>
       ${
         publication.doi

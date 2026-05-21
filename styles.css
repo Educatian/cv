@@ -1009,6 +1009,11 @@ a {
   text-decoration: underline;
 }
 
+.self-author {
+  font-weight: 700;
+  color: var(--ink);
+}
+
 .credential-list {
   margin: 0;
   padding: 0;

@@ -1282,6 +1282,13 @@ function escapeHtml(value = "") {
     .replace(/'/g, "&#39;");
 }
 
+function highlightSelfAuthor(html = "") {
+  return html.replace(
+    /(Moon,\s*J\.)/g,
+    '<strong class="self-author">$1</strong>'
+  );
+}
+
 function slugify(value = "") {
   return value
     .toLowerCase()
@@ -2277,7 +2284,7 @@ function renderPublications() {
                   : `${escapeHtml(item.title || item.venue)}`
               }
             </h3>
-            ${item.authors ? `<p class="publication-authors">${escapeHtml(item.authors)}</p>` : ""}
+            ${item.authors ? `<p class="publication-authors">${highlightSelfAuthor(escapeHtml(item.authors))}</p>` : ""}
             ${item.venue ? `<p class="publication-venue">${escapeHtml(item.venue)}</p>` : ""}
             <p
               class="publication-abstract publication-abstract-preview ${item.doi ? "is-loading" : "is-empty"}"
@@ -2369,7 +2376,7 @@ function renderCompletePublications() {
               <span class="publication-year">${item.year}</span>
               <span class="complete-publication-category">${item.category}</span>
             </div>
-            <p class="complete-publication-citation">${item.citation}</p>
+            <p class="complete-publication-citation">${highlightSelfAuthor(escapeHtml(item.citation || ""))}</p>
             ${
               item.link
                 ? `<a class="complete-publication-link" href="${item.link}" target="_blank" rel="noreferrer">View journal record</a>`
@@ -2499,9 +2506,9 @@ function renderWorkingPapers() {
               <span class="complete-publication-category">${escapeHtml(item.type || "Manuscript")}</span>
             </div>
             <h4 class="working-paper-title">${escapeHtml(item.title || item.citation || "Working paper")}</h4>
-            ${item.authors ? `<p class="publication-authors">${escapeHtml(item.authors)}</p>` : ""}
+            ${item.authors ? `<p class="publication-authors">${highlightSelfAuthor(escapeHtml(item.authors))}</p>` : ""}
             ${item.venue ? `<p class="publication-venue">${escapeHtml(item.venue)}</p>` : ""}
-            <p class="working-paper-citation">${escapeHtml(item.citation || "")}</p>
+            <p class="working-paper-citation">${highlightSelfAuthor(escapeHtml(item.citation || ""))}</p>
           </div>
         </li>
       `
@@ -2780,6 +2787,7 @@ function enablePanelNavigation() {
 
 window.__cvSite = {
   escapeHtml,
+  highlightSelfAuthor,
   fetchAbstractRecord,
   fetchAbstractText,
   getAbstractFallback,

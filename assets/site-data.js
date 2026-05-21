@@ -972,8 +972,7 @@ window.__cvSiteData = {
         "XR",
         "Analytics",
         "Autism",
-        "Review",
-        "Korean"
+        "Review"
       ],
       "note": "corresponding author",
       "status": ""
@@ -1349,7 +1348,7 @@ window.__cvSiteData = {
     },
     {
       "year": "2018",
-      "category": "Korean",
+      "category": "International",
       "citation": "‡ Moon, J. (2018). Reviews of social embodiment for design of non-player characters in virtual reality-based social skill training for autistic children. Multimodal Technologies and Interaction, 2(3), 53-62. https://doi.org/10.3390/mti2030053 [ESCI-indexed, IF = 2.4, IF5= 2.7]",
       "link": "https://doi.org/10.3390/mti2030053"
     },
