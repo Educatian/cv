@@ -2741,4 +2741,33 @@ if (document.getElementById("content-deck")) {
   renderTalks();
   enableRevealMotion();
   enablePanelNavigation();
+  enableThemeToggle();
+}
+
+function enableThemeToggle() {
+  const button = document.getElementById("theme-toggle");
+  if (!button) return;
+  const root = document.documentElement;
+  const updateLabel = () => {
+    const isDark = root.getAttribute("data-theme") === "dark";
+    button.setAttribute("aria-pressed", String(isDark));
+    button.setAttribute(
+      "aria-label",
+      isDark ? "Switch to light mode" : "Switch to dark mode"
+    );
+    button.setAttribute(
+      "title",
+      isDark ? "Switch to light mode" : "Switch to dark mode"
+    );
+  };
+  updateLabel();
+  button.addEventListener("click", () => {
+    const next =
+      root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try {
+      localStorage.setItem("theme", next);
+    } catch (e) {}
+    updateLabel();
+  });
 }
