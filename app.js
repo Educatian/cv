@@ -1162,6 +1162,27 @@ const journalFrontProfiles = {
     spotlight: "Educational technology and experience design research",
     theme: "theme-navy",
   },
+  "Interactive Learning Environments": {
+    publisher: "Taylor & Francis (Routledge)",
+    masthead: "Interactive Learning Environments",
+    spotlight: "Interactive systems, immersive learning, and learner analytics",
+    theme: "theme-cobalt",
+    coverImage: "assets/journal-covers/ile.webp",
+  },
+  "ZDM – International Journal on Mathematics Education": {
+    publisher: "Springer Nature",
+    masthead: "ZDM Mathematics Education",
+    spotlight: "Mathematics education research and theory",
+    theme: "theme-gold",
+    coverImage: "assets/journal-covers/zdm.jpg",
+  },
+  "ZDM - International Journal on Mathematics Education": {
+    publisher: "Springer Nature",
+    masthead: "ZDM Mathematics Education",
+    spotlight: "Mathematics education research and theory",
+    theme: "theme-gold",
+    coverImage: "assets/journal-covers/zdm.jpg",
+  },
 };
 
 const serviceThumbProfiles = {
