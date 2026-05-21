@@ -2792,9 +2792,25 @@ function enablePanelNavigation() {
     );
   }
 
+  function scrollToActivePanel() {
+    const target =
+      document.querySelector(".readme-column") ||
+      document.getElementById("content-deck");
+    if (!target) return;
+    const header = document.querySelector(".site-header");
+    const headerHeight = header ? header.offsetHeight : 0;
+    const top =
+      target.getBoundingClientRect().top + window.scrollY - headerHeight - 12;
+    const reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    window.scrollTo({ top, behavior: reduce ? "auto" : "smooth" });
+  }
+
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       activatePanel(tab.dataset.panelTarget);
+      scrollToActivePanel();
     });
   });
 
@@ -2802,6 +2818,9 @@ function enablePanelNavigation() {
   const validHash = panels.some((panel) => panel.dataset.panel === hashTarget);
 
   activatePanel(validHash ? hashTarget : "overview");
+  if (validHash && hashTarget !== "overview") {
+    requestAnimationFrame(scrollToActivePanel);
+  }
   window.addEventListener("resize", syncDeckHeight);
   document.addEventListener("panel:content-updated", syncDeckHeight);
 }
