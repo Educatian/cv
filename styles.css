@@ -642,6 +642,91 @@ a {
   color: var(--muted);
 }
 
+.honor-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.honor-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 0.8rem;
+  padding: 0.72rem 0.85rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfaf8 100%);
+  transition: transform 160ms ease, box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.honor-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(158, 27, 50, 0.09);
+  border-color: rgba(158, 27, 50, 0.28);
+  border-left-color: var(--accent-dark);
+}
+
+.honor-year {
+  align-self: start;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.28rem 0.5rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  line-height: 1.1;
+  margin-top: 0.12rem;
+}
+
+.honor-year-empty {
+  color: var(--muted);
+  background: rgba(130, 138, 143, 0.1);
+}
+
+.honor-body {
+  display: grid;
+  gap: 0.22rem;
+  min-width: 0;
+}
+
+.honor-title {
+  font-family: var(--serif);
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.honor-org {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.honor-tag {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-dark);
+  background: #ffffff;
+  border: 1px solid rgba(158, 27, 50, 0.3);
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+  margin-top: 0.18rem;
+}
+
 .credential-list {
   margin: 0;
   padding: 0;

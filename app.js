@@ -1940,9 +1940,62 @@ function renderFocusAreas() {
     .join("");
 }
 
+function parseHonor(raw) {
+  let text = String(raw).trim().replace(/\.$/, "");
+  let accolade = null;
+
+  const finalistPrefix = text.match(
+    /^Finalist\s*\(([^)]*finalists?[^)]*)\)\.\s*(.+)$/i
+  );
+  if (finalistPrefix) {
+    accolade = "Finalist";
+    const ratio = finalistPrefix[1].match(/(\d+)\s+finalists?\s+from\s+(\d+)/i);
+    if (ratio) accolade = `Finalist · ${ratio[1]} of ${ratio[2]}`;
+    text = finalistPrefix[2].replace(/\.$/, "");
+  }
+
+  let year = null;
+  const yearMatch = text.match(/\((\d{4}(?:-\d{4})?)\)/);
+  if (yearMatch) year = yearMatch[1];
+
+  let cleaned = text.replace(/\s*\((\d{4}(?:-\d{4})?)\)\s*/g, "|Y|");
+  cleaned = cleaned.replace(/\s+(\d{4})\s*\.?$/, "");
+
+  const parts = cleaned.split("|Y|");
+  let title = parts[0].trim().replace(/[,.\s]+$/, "");
+  let org = (parts[1] || "")
+    .trim()
+    .replace(/^[,.\s]+/, "")
+    .replace(/[,.\s]+$/, "");
+
+  if (/^Finalist$/i.test(title) && org) {
+    accolade = accolade || "Finalist";
+    const orgParts = org.split(/,\s+/);
+    title = orgParts[0].trim();
+    org = orgParts.slice(1).join(", ").trim();
+  }
+
+  return { year, title, org, accolade, raw: text };
+}
+
 function renderHonors() {
   const list = document.getElementById("honor-list");
-  list.innerHTML = honors.map((item) => `<li>${item}</li>`).join("");
+  list.innerHTML = honors
+    .map((item) => {
+      const h = parseHonor(item);
+      const year = h.year
+        ? `<span class="honor-year">${escapeHtml(h.year)}</span>`
+        : `<span class="honor-year honor-year-empty">—</span>`;
+      const title = `<span class="honor-title">${escapeHtml(h.title || item)}</span>`;
+      const org = h.org
+        ? `<span class="honor-org">${escapeHtml(h.org)}</span>`
+        : "";
+      const tag = h.accolade
+        ? `<span class="honor-tag">${escapeHtml(h.accolade)}</span>`
+        : "";
+      return `<li class="honor-card">${year}<div class="honor-body">${title}${org}${tag}</div></li>`;
+    })
+    .join("");
 }
 
 function renderAffiliations() {
