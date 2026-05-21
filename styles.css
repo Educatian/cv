@@ -14,9 +14,23 @@
   --shadow: 0 18px 40px rgba(33, 28, 28, 0.06);
   --radius: 8px;
   --max: 1380px;
-  --mono: "Consolas", monospace;
-  --sans: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
-  --serif: Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", "Cascadia Mono",
+    Consolas, monospace;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    Arial, sans-serif;
+  --serif: "Newsreader", "Source Serif Pro", "Iowan Old Style", Georgia,
+    "Times New Roman", serif;
+}
+
+html {
+  font-feature-settings: "cv11", "ss01", "ss03";
+}
+
+body {
+  font-feature-settings: "cv11", "ss01", "ss03";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 * {
