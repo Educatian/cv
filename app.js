@@ -2042,6 +2042,64 @@ function renderNews() {
     .join("");
 }
 
+function renderProjects() {
+  const root = document.getElementById("project-deck");
+  if (!root) return;
+  const data =
+    (typeof window !== "undefined" && window.__cvProjects) || {
+      categories: [],
+      projects: [],
+    };
+  const categories = data.categories || [];
+  const projects = data.projects || [];
+
+  root.innerHTML = categories
+    .map((cat) => {
+      const items = projects.filter((p) => p.category === cat.id);
+      if (!items.length) return "";
+      const cards = items
+        .map((p) => {
+          const lang = p.language
+            ? `<span class="project-lang">${escapeHtml(p.language)}</span>`
+            : "";
+          const tags = (p.tags || [])
+            .map(
+              (t) =>
+                `<span class="project-tag">${escapeHtml(t)}</span>`
+            )
+            .join("");
+          const live = p.live
+            ? `<a class="project-link project-link-live" href="${escapeHtml(p.live)}" target="_blank" rel="noreferrer">Live demo &rarr;</a>`
+            : "";
+          const repo = p.repo
+            ? `<a class="project-link project-link-repo" href="${escapeHtml(p.repo)}" target="_blank" rel="noreferrer">Source &rarr;</a>`
+            : "";
+          return `
+            <article class="project-card">
+              <header class="project-head">
+                <h4 class="project-title">${escapeHtml(p.title || p.name)}</h4>
+                ${lang}
+              </header>
+              <p class="project-summary">${escapeHtml(p.summary || "")}</p>
+              <div class="project-tag-row">${tags}</div>
+              <div class="project-link-row">${live}${repo}</div>
+            </article>
+          `;
+        })
+        .join("");
+      return `
+        <section class="project-category">
+          <header class="project-category-head">
+            <h3>${escapeHtml(cat.label)}</h3>
+            <p>${escapeHtml(cat.summary || "")}</p>
+          </header>
+          <div class="project-grid">${cards}</div>
+        </section>
+      `;
+    })
+    .join("");
+}
+
 function renderInitiatives() {
   const grid = document.getElementById("initiative-grid");
   grid.innerHTML = initiatives
@@ -2722,6 +2780,7 @@ if (document.getElementById("content-deck")) {
   renderHonors();
   renderAffiliations();
   renderNews();
+  renderProjects();
   renderInitiatives();
   renderFilters();
   enablePublicationSearch();
