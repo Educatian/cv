@@ -1,0 +1,54 @@
+name: Regenerate CV site data
+
+# Keeps assets/site-data.generated.json + site-data.js in sync with the CV .docx.
+# The AdDIE Lab site (educatian.github.io/adie) fetches this JSON live, so once this
+# commits, the lab page auto-updates on its next load — no rebuild needed.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "CV_202605_MOON.docx"
+      - "assets/current-cv.docx"
+      - "scripts/generate_site_data.py"
+  schedule:
+    - cron: "17 13 * * 1" # weekly, Monday 13:17 UTC (off-peak minute)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: regenerate-site-data
+  cancel-in-progress: true
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install python-docx
+
+      - name: Regenerate site data from CV docx
+        run: python scripts/generate_site_data.py
+
+      - name: Commit regenerated data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain assets/site-data.generated.json assets/site-data.js)" ]; then
+            git add assets/site-data.generated.json assets/site-data.js
+            git commit -m "Auto-regenerate CV site data from docx [skip ci]"
+            git push
+            echo "Site data updated and pushed."
+          else
+            echo "No site-data changes."
+          fi
