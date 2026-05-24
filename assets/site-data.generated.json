@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-20T18:36:50.365791+00:00",
-  "sourceCv": "C:\\Users\\jewoo\\Desktop\\cv\\CV_202605_MOON.docx",
+  "generatedAt": "2026-05-24T23:33:27.196176+00:00",
+  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "May 20, 2026",
@@ -17,6 +17,7 @@
     "department": "Department of Educational Leadership, Policy, and Technology Studies",
     "institution": "The University of Alabama",
     "email": "jmoon19@ua.edu",
+    "homepage": "https://jmoon.people.ua.edu",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://adielab.ua.edu",
     "cvDownloadPath": "CV_202605_MOON.docx",
@@ -24,6 +25,7 @@
   },
   "contact": {
     "email": "jmoon19@ua.edu",
+    "homepage": "https://jmoon.people.ua.edu",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://adielab.ua.edu",
     "universityAddress": "Department of Educational Leadership, Policy, and Technology Studies Autherine Lucy Hall 315E The University of Alabama Tuscaloosa, Alabama"
@@ -970,7 +972,8 @@
         "XR",
         "Analytics",
         "Autism",
-        "Review"
+        "Review",
+        "Korean"
       ],
       "note": "corresponding author",
       "status": ""
@@ -1346,7 +1349,7 @@
     },
     {
       "year": "2018",
-      "category": "International",
+      "category": "Korean",
       "citation": "‡ Moon, J. (2018). Reviews of social embodiment for design of non-player characters in virtual reality-based social skill training for autistic children. Multimodal Technologies and Interaction, 2(3), 53-62. https://doi.org/10.3390/mti2030053 [ESCI-indexed, IF = 2.4, IF5= 2.7]",
       "link": "https://doi.org/10.3390/mti2030053"
     },
@@ -1379,6 +1382,17 @@
       "authors": "Moon, J.",
       "venue": "IEEE Transactions on Learning Technologies",
       "citation": "Moon, J. (Submitted). Simplicity first in adaptive educational games: A cross-game benchmark of multivariate Elo and knowledge-tracing baselines. IEEE Transactions on Learning Technologies.",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "In preparation",
+      "year": "Pipeline",
+      "title": "Operationalising CEFR in L2 English writing assessment: Divergence patterns between human teachers and large language model judges",
+      "authors": "‡ Wong, W. L., & Moon, J.",
+      "venue": "Assessment Writing",
+      "citation": "‡ Wong, W. L., & Moon, J. (In preparation). Operationalising CEFR in L2 English writing assessment: Divergence patterns between human teachers and large language model judges. Assessment Writing. (SSCI-indexed).",
       "link": ""
     },
     {
@@ -1453,9 +1467,9 @@
       "status": "Under review",
       "year": "Pipeline",
       "title": "Human-centered generative AI in education: Ethical challenges and equity-driven solutions",
-      "authors": "Abu, S., Uddin, M., Moon, J., Awoyemi, I., Mintah, R., & Ghooreian, A.",
+      "authors": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A.",
       "venue": "Ethics and Behavior",
-      "citation": "Abu, S., Uddin, M., Moon, J., Awoyemi, I., Mintah, R., & Ghooreian, A. (Under review). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior (SSCI-indexed).",
+      "citation": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A. (Under review). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior (SSCI-indexed).",
       "link": ""
     },
     {
@@ -2086,8 +2100,8 @@
       "meta": "Poster Session, AERA 2026, Los Angeles, United States."
     },
     {
-      "title": "Modeling behavioral dynamics and cognitive states in VR safety training: A learning analytics approach",
-      "meta": "Poster Session, AERA 2026, Los Angeles, United States (Upcoming, April 2026)."
+      "title": "(Upcoming 2026, April)",
+      "meta": "Modeling behavioral dynamics and cognitive states in VR safety training: A learning analytics approach. Poster Session, AERA 2026, Los Angeles, United States."
     }
   ]
 }
