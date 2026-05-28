@@ -1275,9 +1275,40 @@ const serviceThumbProfiles = {
   },
 };
 
+function slugifyVenue(value = "") {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
+const journalFrontProfileSlugIndex = (() => {
+  const index = new Map();
+  for (const key of Object.keys(journalFrontProfiles)) {
+    const slug = slugifyVenue(key);
+    if (!index.has(slug)) index.set(slug, key);
+  }
+  return index;
+})();
+
+function findJournalFrontProfile(venue) {
+  if (!venue) return null;
+  if (journalFrontProfiles[venue]) return journalFrontProfiles[venue];
+
+  const slug = slugifyVenue(venue);
+  if (journalFrontProfileSlugIndex.has(slug)) {
+    return journalFrontProfiles[journalFrontProfileSlugIndex.get(slug)];
+  }
+  // singular/plural tolerance: "Environment" <-> "Environments"
+  if (journalFrontProfileSlugIndex.has(slug + "s")) {
+    return journalFrontProfiles[journalFrontProfileSlugIndex.get(slug + "s")];
+  }
+  if (slug.endsWith("s") && journalFrontProfileSlugIndex.has(slug.slice(0, -1))) {
+    return journalFrontProfiles[journalFrontProfileSlugIndex.get(slug.slice(0, -1))];
+  }
+  return null;
+}
+
 function getJournalFrontConfig(item) {
   return (
-    journalFrontProfiles[item.venue] || {
+    findJournalFrontProfile(item.venue) || {
       publisher: "Peer-reviewed journal",
       masthead: item.venue,
       spotlight: "Research article",

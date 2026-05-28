@@ -301,6 +301,27 @@ def parse_authors_from_citation(citation: str) -> str:
     return clean_text(authors.lstrip("*‡ "))
 
 
+JOURNAL_INDEXING_PAREN_RE = re.compile(
+    r"\s*\([^)]*?(?:"
+    r"SSCI|SCIE|ESCI|Scopus|Q[1234]|ABDC|ABS|JCR|"
+    r"SSCI-indexed|SCIE-indexed|ESCI-indexed|"
+    r"indexed journal|indexed"
+    r")[^)]*\)\s*",
+    re.I,
+)
+
+
+def strip_journal_indexing_paren(venue: str) -> str:
+    """Remove parenthetical indexing/quality annotations like '(SSCI-indexed journal)'.
+
+    Cover-image lookup in app.js keys on the bare journal name; inline parenthetical
+    annotations in the docx (e.g. '... Interactive Learning Environments (SSCI-indexed
+    journal)') prevent the match. This normalises the venue so any docx authoring
+    variant still resolves to the canonical journal entry.
+    """
+    return clean_text(JOURNAL_INDEXING_PAREN_RE.sub("", venue))
+
+
 def parse_venue_from_citation(citation: str) -> str:
     year_match = re.search(r"\([^)]*\d{4}[^)]*\)\.\s*", citation)
     if not year_match:
@@ -317,6 +338,7 @@ def parse_venue_from_citation(citation: str) -> str:
     venue_part = re.split(r"https?://|10\.\d{4,9}/", venue_part, maxsplit=1)[0]
     venue_part = re.sub(r"\[[^\]]+\]", "", venue_part)
     venue_part = re.sub(r"[.,]\s*\d[\d()\-–,: ]*$", "", venue_part).strip(" .,;")
+    venue_part = strip_journal_indexing_paren(venue_part)
     return clean_text(venue_part)
 
 
