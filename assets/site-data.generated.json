@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-28T09:53:03.249147+00:00",
-  "sourceCv": "C:\\Users\\jewoo\\Desktop\\cv\\CV_202605_MOON.docx",
+  "generatedAt": "2026-05-28T09:53:17.499657+00:00",
+  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "May 27, 2026",
@@ -986,7 +986,8 @@
         "XR",
         "Analytics",
         "Autism",
-        "Review"
+        "Review",
+        "Korean"
       ],
       "note": "corresponding author",
       "status": ""
@@ -1368,7 +1369,7 @@
     },
     {
       "year": "2018",
-      "category": "International",
+      "category": "Korean",
       "citation": "‡ Moon, J. (2018). Reviews of social embodiment for design of non-player characters in virtual reality-based social skill training for autistic children. Multimodal Technologies and Interaction, 2(3), 53-62. https://doi.org/10.3390/mti2030053 [ESCI-indexed, IF = 2.4, IF5= 2.7]",
       "link": "https://doi.org/10.3390/mti2030053"
     },
