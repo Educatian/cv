@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-05-28T09:59:16.239562+00:00",
+  "generatedAt": "2026-05-28T16:00:02.455595+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -161,7 +161,7 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Minor revision manuscript for Interactive Learning Environments: A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education."
+      "text": "Minor revision manuscript for Interactive Learning Environments: A Cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education."
     },
     {
       "date": "2026",
@@ -243,7 +243,7 @@ window.__cvSiteData = {
   "publications": [
     {
       "year": "2026",
-      "title": "A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
+      "title": "A Cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
       "authors": "Moon, J.",
       "venue": "Interactive Learning Environments",
       "link": "",
@@ -1033,7 +1033,7 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Moon, J. (Minor revision, 2026). A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments.",
+      "citation": "‡ Moon, J. (Minor revision, 2026). A Cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments.",
       "link": ""
     },
     {
