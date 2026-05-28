@@ -14,15 +14,15 @@ $ErrorActionPreference = "Continue"
 $ErrorActionPreference = "Stop"
 
 # Register via schtasks.exe — same toolchain as JewoongCvBiweeklyUpdate.
-# Trigger: every 5 minutes, indefinitely, starting now. Runs as current interactive user.
+# Trigger: every 2 days at 09:00, runs as current interactive user.
 $cmd = "powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$scriptPath`""
-$startTime = (Get-Date).AddMinutes(1).ToString("HH:mm")
+$startTime = "09:00"
 
 & schtasks.exe /Create `
   /TN $taskName `
   /TR $cmd `
-  /SC MINUTE `
-  /MO 5 `
+  /SC DAILY `
+  /MO 2 `
   /ST $startTime `
   /RL LIMITED `
   /F
@@ -33,7 +33,7 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host ""
 Write-Host "Registered scheduled task: $taskName"
-Write-Host "Schedule: every 5 minutes, starting at $startTime today"
+Write-Host "Schedule: every 2 days at $startTime"
 Write-Host "Script: $scriptPath"
 Write-Host ""
 Write-Host "Inspect:  schtasks /Query /TN $taskName /V /FO LIST"
