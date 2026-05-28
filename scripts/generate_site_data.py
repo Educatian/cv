@@ -633,9 +633,15 @@ def parse_publications(paragraphs: Sequence[str]) -> Dict[str, object]:
     buffer: List[str] = []
     for line in lines:
         if line.startswith("International and Peer-reviewed"):
+            if buffer:
+                category_lines.append((category, " ".join(buffer)))
+                buffer = []
             category = "International"
             continue
         if line.startswith("Korean-written and Peer-reviewed"):
+            if buffer:
+                category_lines.append((category, " ".join(buffer)))
+                buffer = []
             category = "Korean"
             continue
         if line.startswith("Note "):

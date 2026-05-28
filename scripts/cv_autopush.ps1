@@ -53,24 +53,35 @@ if ($LASTEXITCODE -ne 0) {
 # the docx's "International and Peer-reviewed" header. If they disagree, the
 # parser dropped an entry — abort so we never push a corrupted site.
 $sanity = & python -c @"
-import json, re
+import json, re, sys
 from pathlib import Path
 from docx import Document
 
 doc = Document('CV_202605_MOON.docx')
 paras = [p.text for p in doc.paragraphs if p.text.strip()]
-declared = None
-for p in paras:
-    m = re.match(r'International and Peer-reviewed\s*\(n\s*=\s*(\d+)\)', p)
-    if m:
-        declared = int(m.group(1))
-        break
+
+def find_header_count(prefix):
+    for p in paras:
+        m = re.match(rf'{re.escape(prefix)}\s*[\[\(]n\s*=\s*(\d+)[\]\)]', p)
+        if m:
+            return int(m.group(1))
+    return None
+
+declared_intl = find_header_count('International and Peer-reviewed')
+declared_wp_total = find_header_count('WORKING PAPERS')
 
 data = json.loads(Path('assets/site-data.generated.json').read_text(encoding='utf-8'))
 intl = sum(1 for r in data['completeJournalArticles'] if r['category'] == 'International')
+wp_total = data['workingPaperSummary']['total']
 
-print(f'declared={declared} parsed_international={intl}')
-if declared is not None and intl != declared:
+print(f'intl declared={declared_intl} parsed={intl}; wp declared={declared_wp_total} parsed={wp_total}')
+errors = []
+if declared_intl is not None and intl != declared_intl:
+    errors.append(f'International journals: declared {declared_intl} != parsed {intl}')
+if declared_wp_total is not None and wp_total != declared_wp_total:
+    errors.append(f'Working papers: declared {declared_wp_total} != parsed {wp_total}')
+if errors:
+    for e in errors: print(f'MISMATCH: {e}', file=sys.stderr)
     raise SystemExit(2)
 "@ 2>&1
 L "[sanity] $sanity"
