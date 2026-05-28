@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-05-28T09:53:03.249147+00:00",
+  "generatedAt": "2026-05-28T09:59:16.239562+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -161,7 +161,7 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Minor revision manuscript for Interactive Learning Environment (SSCI-indexed journal): A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education."
+      "text": "Minor revision manuscript for Interactive Learning Environments: A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education."
     },
     {
       "date": "2026",
@@ -245,7 +245,7 @@ window.__cvSiteData = {
       "year": "2026",
       "title": "A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
       "authors": "Moon, J.",
-      "venue": "Interactive Learning Environment (SSCI-indexed journal)",
+      "venue": "Interactive Learning Environments",
       "link": "",
       "tags": [
         "GenAI",
@@ -1033,7 +1033,7 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Moon, J. (Minor revision, 2026). A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environment (SSCI-indexed journal).",
+      "citation": "‡ Moon, J. (Minor revision, 2026). A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments.",
       "link": ""
     },
     {
