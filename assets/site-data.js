@@ -1,9 +1,9 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-05-25T14:18:01.387732+00:00",
+  "generatedAt": "2026-05-28T09:32:06.597028+00:00",
   "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
-    "cvDate": "May 20, 2026",
+    "cvDate": "May 27, 2026",
     "eyebrow": "Instructional Technology | College of Education",
     "heroTitleMeta": "Assistant Professor of Instructional Technology, The University of Alabama",
     "heroSummary": "Research at The University of Alabama focused on Digital Game-Based Learning, Inclusive and Immersive learning experience design (Extended Reality), Learning Analytics, and Educational Data Mining.",
@@ -39,7 +39,7 @@ window.__cvSiteData = {
   },
   "stats": [
     {
-      "value": "59",
+      "value": "60",
       "label": "Journal articles"
     },
     {
@@ -47,11 +47,11 @@ window.__cvSiteData = {
       "label": "Conference proceedings"
     },
     {
-      "value": "8",
+      "value": "10",
       "label": "Book chapters"
     },
     {
-      "value": "42",
+      "value": "43",
       "label": "Working papers"
     },
     {
@@ -161,17 +161,17 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
+      "text": "Minor revision manuscript for Interactive Learning Environment (SSCI-indexed journal): A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education."
+    },
+    {
+      "date": "2026",
+      "type": "Publication",
       "text": "Minor revision manuscript for ZDM – International Journal on Mathematics Education: How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge."
     },
     {
       "date": "2026",
       "type": "Publication",
       "text": "Minor revision manuscript for Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
-    },
-    {
-      "date": "2026",
-      "type": "Publication",
-      "text": "Minor revision manuscript for Simulation & Gaming: Navigating practitioner roles in generative AI-enhanced educational game design: A collective autoethnography."
     },
     {
       "date": "2027",
@@ -241,6 +241,20 @@ window.__cvSiteData = {
     }
   ],
   "publications": [
+    {
+      "year": "2026",
+      "title": "A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
+      "authors": "Moon, J.",
+      "venue": "Interactive Learning Environment (SSCI-indexed journal)",
+      "link": "",
+      "tags": [
+        "GenAI",
+        "Analytics",
+        "STEM"
+      ],
+      "note": "corresponding author",
+      "status": "Minor revision"
+    },
     {
       "year": "2026",
       "title": "How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge",
@@ -1020,6 +1034,12 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
+      "citation": "‡ Moon, J. (Minor revision, 2026). A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environment (SSCI-indexed journal).",
+      "link": ""
+    },
+    {
+      "year": "2026",
+      "category": "International",
       "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M. (Minor revision, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
       "link": ""
     },
@@ -1378,6 +1398,50 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
+      "title": "Embodied arts-integrated AI literacy: A nested mixed-methods preliminary study with K-12 educators",
+      "authors": "* Stephen, A., Moon, J., Arezoo, G.,",
+      "venue": "TechTrends",
+      "citation": "* Stephen, A., Moon, J., Arezoo, G., (Submitted). Embodied arts-integrated AI literacy: A nested mixed-methods preliminary study with K-12 educators. TechTrends.",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Revising to resubmit",
+      "year": "Pipeline",
+      "title": "Leveraging automated machine learning (AutoML) to predict and analyze student success factors in online learning environments (OLEs)",
+      "authors": "Amari, A. Y. Moon, J., Bagdy, L.",
+      "venue": "Internet and Higher Education",
+      "citation": "Amari, A. Y. Moon, J., Bagdy, L. (Revising to resubmit). Leveraging automated machine learning (AutoML) to predict and analyze student success factors in online learning environments (OLEs). Internet and Higher Education (SSCI-indexed).",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
+      "title": "Ethical argumentation structure through learner-chatbot interaction patterns in K-12 pre-service teachers' AI ethics problem-solving process",
+      "authors": "‡ Hong, S., Moon, J. Chae, J., & Cho, H.",
+      "venue": "Educational Technology Research and Development",
+      "citation": "‡ Hong, S., Moon, J. Chae, J., & Cho, H. (Submitted). Ethical argumentation structure through learner-chatbot interaction patterns in K-12 pre-service teachers' AI ethics problem-solving process. Educational Technology Research and Development (SSCI-indexed).",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
+      "title": "A systematic review of empirical research on AI in K-12 STEM Education through a sociotechnical lens",
+      "authors": "* Awoyemi, I., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T.",
+      "venue": "Educational Technology Research and Development",
+      "citation": "* Awoyemi, I., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T. (Submitted). A systematic review of empirical research on AI in K-12 STEM Education through a sociotechnical lens. Educational Technology Research and Development (SSCI-indexed).",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
       "title": "Simplicity first in adaptive educational games: A cross-game benchmark of multivariate Elo and knowledge-tracing baselines",
       "authors": "Moon, J.",
       "venue": "IEEE Transactions on Learning Technologies",
@@ -1486,12 +1550,12 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Submitted",
+      "status": "Under review",
       "year": "Pipeline",
       "title": "Design and development research of immersive virtual reality-supported safety training for construction engineering education",
       "authors": "* Awoyemi, I., Moon, J., & Song, S.",
       "venue": "Educational Technology Research and Development",
-      "citation": "* Awoyemi, I., Moon, J., & Song, S. (Submitted). Design and development research of immersive virtual reality-supported safety training for construction engineering education. Educational Technology Research and Development (SSCI-indexed).",
+      "citation": "* Awoyemi, I., Moon, J., & Song, S. (Under review). Design and development research of immersive virtual reality-supported safety training for construction engineering education. Educational Technology Research and Development (SSCI-indexed).",
       "link": ""
     },
     {
@@ -1508,23 +1572,23 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Under review",
+      "status": "Working paper",
       "year": "Pipeline",
-      "title": "Design affordance diagnostic framework for computational thinking assessment interactive virtual makerspaces: An exploratory study",
-      "authors": "‡ Moon, J., & Aldemir, T.",
-      "venue": "Interactive Learning Environments",
-      "citation": "‡ Moon, J., & Aldemir, T. (Under review). Design affordance diagnostic framework for computational thinking assessment interactive virtual makerspaces: An exploratory study. Interactive Learning Environments. (SSCI-indexed journal).",
+      "title": "‡ Moon, J., & Aldemir, T. (Under revision). Design affordance diagnostic framework for computational thinking assessment",
+      "authors": "‡ Moon, J., & Aldemir, T. (Under revision). Design affordance diagnostic framework for computational thinking assessment interactive virtual makerspaces: An exploratory study. Interactive Learning Environments. (SSCI-indexed journal).",
+      "venue": "",
+      "citation": "‡ Moon, J., & Aldemir, T. (Under revision). Design affordance diagnostic framework for computational thinking assessment interactive virtual makerspaces: An exploratory study. Interactive Learning Environments. (SSCI-indexed journal).",
       "link": ""
     },
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Under review",
+      "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "Semantic trajectory analysis of learner question in AI-based learning: Comparing RAG-based and generative AI",
       "authors": "Lee, H., Lim, J., & Moon, J.",
       "venue": "Journal of Educational Data Mining",
-      "citation": "Lee, H., Lim, J., & Moon, J. (Under review). Semantic trajectory analysis of learner question in AI-based learning: Comparing RAG-based and generative AI. Journal of Educational Data Mining.",
+      "citation": "Lee, H., Lim, J., & Moon, J. (Revising to resubmit). Semantic trajectory analysis of learner question in AI-based learning: Comparing RAG-based and generative AI. Journal of Educational Data Mining.",
       "link": ""
     },
     {
@@ -1580,17 +1644,6 @@ window.__cvSiteData = {
       "authors": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J.",
       "venue": "TechTrends",
       "citation": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J. (Under review). Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review. TechTrends. (ESCI-indexed journal).",
-      "link": ""
-    },
-    {
-      "bucket": "Submitted or Under Review",
-      "type": "Journal Manuscript",
-      "status": "Under review",
-      "year": "Pipeline",
-      "title": "A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
-      "authors": "‡ Moon, J.",
-      "venue": "Interactive Learning Environment",
-      "citation": "‡ Moon, J. (Under review). A CHAT-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environment (SSCI-indexed journal).",
       "link": ""
     },
     {
@@ -1697,21 +1750,32 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "In preparation",
       "year": "Pipeline",
-      "title": "The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning",
-      "authors": "Lim, J., Lee, H., & Moon, J.",
-      "venue": "Journal of Learning Analytics",
-      "citation": "Lim, J., Lee, H., & Moon, J. (In preparation). The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning. Journal of Learning Analytics. (ESCI-indexed)",
+      "title": "How Technology is Shaping K-12 Science Learning: A Scoping Review",
+      "authors": "You, H., Zhu, L., Moon, J., Aldemir, T., Kourkoulou, T., Lee, H., Song, D., Abu, S., Emerson, W., & Wang, S.",
+      "venue": "Journal of Science Education and Technology",
+      "citation": "You, H., Zhu, L., Moon, J., Aldemir, T., Kourkoulou, T., Lee, H., Song, D., Abu, S., Emerson, W., & Wang, S. (In preparation). How Technology is Shaping K-12 Science Learning: A Scoping Review. Journal of Science Education and Technology.",
       "link": ""
     },
     {
       "bucket": "In Preparation",
       "type": "Journal Manuscript",
-      "status": "Abstract accepted, In preparation",
+      "status": "In preparation",
       "year": "Pipeline",
-      "title": "Analysis of changes in ethical argumentation structure through learner-chatbot interaction patterns in K-12 pre-service teachers' AI ethics problem-solving process",
-      "authors": "‡ Hong, S., Moon, J. Chae, J., & Cho, H.",
-      "venue": "Educational Technology Research and Development",
-      "citation": "‡ Hong, S., Moon, J. Chae, J., & Cho, H. (abstract accepted, In preparation). Analysis of changes in ethical argumentation structure through learner-chatbot interaction patterns in K-12 pre-service teachers' AI ethics problem-solving process. Educational Technology Research and Development (SSCI-indexed).",
+      "title": "Technology Integration and Student Outcomes in K–12 Science Education: A Meta-Analytic Review",
+      "authors": "You, H., Park, S., Hong, K., Zhu, L., Moon, J., Kourkoulou, T., Aldemir, T., Abu, S., Lee, H., & Song, D.",
+      "venue": "International Journal of Science Education",
+      "citation": "You, H., Park, S., Hong, K., Zhu, L., Moon, J., Kourkoulou, T., Aldemir, T., Abu, S., Lee, H., & Song, D. (In preparation). Technology Integration and Student Outcomes in K–12 Science Education: A Meta-Analytic Review. International Journal of Science Education.",
+      "link": ""
+    },
+    {
+      "bucket": "In Preparation",
+      "type": "Journal Manuscript",
+      "status": "In preparation",
+      "year": "Pipeline",
+      "title": "The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning",
+      "authors": "Lim, J., Lee, H., & Moon, J.",
+      "venue": "Journal of Learning Analytics",
+      "citation": "Lim, J., Lee, H., & Moon, J. (In preparation). The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning. Journal of Learning Analytics. (ESCI-indexed)",
       "link": ""
     },
     {
@@ -1745,39 +1809,6 @@ window.__cvSiteData = {
       "authors": "* Abu, S., Awoyemi, I., Moon, J.",
       "venue": "",
       "citation": "* Abu, S., Awoyemi, I., Moon, J. (In preparation). Predictive validation of behavioral learning analytics: A machine learning approach.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "Leveraging automated machine learning (AutoML) to predict and analyze student success factors in online learning environments (OLEs)",
-      "authors": "Amari, A. Y. Moon, J., Bagdy, L.",
-      "venue": "Internet and Higher Education",
-      "citation": "Amari, A. Y. Moon, J., Bagdy, L. (In preparation). Leveraging automated machine learning (AutoML) to predict and analyze student success factors in online learning environments (OLEs). Internet and Higher Education (SSCI-indexed).",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "Embodied arts-integrated AI literacy: A nested mixed-methods preliminary study with K-12 educators",
-      "authors": "* Stephen, A., Moon, J., Arezoo, G.,",
-      "venue": "TechTrends",
-      "citation": "* Stephen, A., Moon, J., Arezoo, G., (In preparation). Embodied arts-integrated AI literacy: A nested mixed-methods preliminary study with K-12 educators. TechTrends.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "A systematic review of empirical research on AI in K-12 STEM Education through a sociotechnical lens",
-      "authors": "* Awoyemi, I., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T.",
-      "venue": "Educational Technology Research and Development",
-      "citation": "* Awoyemi, I., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T. (In preparation). A systematic review of empirical research on AI in K-12 STEM Education through a sociotechnical lens. Educational Technology Research and Development (SSCI-indexed).",
       "link": ""
     },
     {
@@ -1818,18 +1849,18 @@ window.__cvSiteData = {
       "type": "Conference Proposal",
       "status": "Revising to resubmit",
       "year": "Pipeline",
-      "title": "Micro-transitions in learner–chatbot ethical dialogue: Early uncertainty and the emergence of reflective reasoning (Submission No",
+      "title": "Micro-transitions in learner–chatbot ethical dialogue: Early uncertainty and the emergence of reflective reasoning",
       "authors": "‡ Hong, S., Moon, J., Chae, J., & Cho, H.",
-      "venue": "65)",
-      "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (Revising to resubmit). Micro-transitions in learner–chatbot ethical dialogue: Early uncertainty and the emergence of reflective reasoning (Submission No. 65).",
+      "venue": "",
+      "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (Revising to resubmit). Micro-transitions in learner–chatbot ethical dialogue: Early uncertainty and the emergence of reflective reasoning",
       "link": ""
     }
   ],
   "workingPaperSummary": {
-    "total": 41,
-    "submittedOrUnderReview": 29,
-    "inPreparation": 12,
-    "journalManuscripts": 35,
+    "total": 42,
+    "submittedOrUnderReview": 32,
+    "inPreparation": 10,
+    "journalManuscripts": 36,
     "bookChapters": 2,
     "conferenceProposals": 4
   },
