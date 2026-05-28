@@ -19,13 +19,13 @@ L "[autopush] start"
 $docx = Join-Path $Root "CV_202605_MOON.docx"
 $lockMarker = Join-Path $Root "~`$_202605_MOON.docx"
 
-# Word's exclusive-edit marker — if present, user is actively editing; skip.
+# Word's exclusive-edit marker — skip when user is actively editing.
 if (Test-Path -LiteralPath $lockMarker) {
   L "[autopush] Word lock marker present; skip"
   return
 }
 
-# Probe file accessibility — Word may be mid-write right now.
+# Probe file handle — Word may be mid-write right now.
 try {
   $fs = [IO.File]::Open($docx, 'Open', 'Read', 'None')
   $fs.Close()
@@ -36,22 +36,61 @@ try {
 
 & git fetch origin 2>&1 | Out-Null
 
-# If docx differs from HEAD, regenerate site-data so our commit carries both.
-$docxDirty = & git status --porcelain -- CV_202605_MOON.docx
-if ($docxDirty) {
-  L "[autopush] docx modified vs HEAD -> regenerating site-data"
-  & python scripts/generate_site_data.py 2>&1 | ForEach-Object { L "[gen] $_" }
-  if ($LASTEXITCODE -ne 0) {
-    L "[autopush] generate_site_data.py FAILED; abort"
-    return
-  }
+# --- Always regenerate site-data and sanity-check parser output. ----------
+# Rationale: docx mtime can lag actual edits (Word buffers saves) and the
+# parser can race on a half-flushed file. Regenerating every cycle and
+# verifying the publication count matches the docx's declared `(n = N)` is
+# cheap insurance against silently-dropped entries (e.g. [57] CHAT-anchored
+# was missed once on 2026-05-28 due to this exact race).
+L "[autopush] regenerating site-data"
+& python scripts/generate_site_data.py 2>&1 | ForEach-Object { L "[gen] $_" }
+if ($LASTEXITCODE -ne 0) {
+  L "[autopush] generate_site_data.py FAILED; abort"
+  return
 }
 
-# Stage anything dirty in our tracked set.
+# Sanity check: parsed publication count must equal the (n = N) declared in
+# the docx's "International and Peer-reviewed" header. If they disagree, the
+# parser dropped an entry — abort so we never push a corrupted site.
+$sanity = & python -c @"
+import json, re
+from pathlib import Path
+from docx import Document
+
+doc = Document('CV_202605_MOON.docx')
+paras = [p.text for p in doc.paragraphs if p.text.strip()]
+declared = None
+for p in paras:
+    m = re.match(r'International and Peer-reviewed\s*\(n\s*=\s*(\d+)\)', p)
+    if m:
+        declared = int(m.group(1))
+        break
+
+data = json.loads(Path('assets/site-data.generated.json').read_text(encoding='utf-8'))
+intl = sum(1 for r in data['completeJournalArticles'] if r['category'] == 'International')
+
+print(f'declared={declared} parsed_international={intl}')
+if declared is not None and intl != declared:
+    raise SystemExit(2)
+"@ 2>&1
+L "[sanity] $sanity"
+if ($LASTEXITCODE -ne 0) {
+  L "[autopush] SANITY CHECK FAILED -- parsed count != docx (n=N); not pushing"
+  # Revert generated files so next run starts clean
+  & git checkout -- assets/site-data.generated.json assets/site-data.js 2>&1 | Out-Null
+  return
+}
+
+# --- Anything to commit? --------------------------------------------------
+# Any of: docx changed, regenerated assets/site-data.* differ from HEAD.
 & git add CV_202605_MOON.docx assets/site-data.generated.json assets/site-data.js 2>&1 | Out-Null
 
 $staged = & git diff --cached --name-only
-if ($staged) {
+if (-not $staged) {
+  L "[autopush] no diff vs HEAD; nothing to commit"
+} else {
+  $stagedList = ($staged -join ', ')
+  L "[autopush] staged: $stagedList"
   $ts = Get-Date -Format 'yyyy-MM-dd HH:mm'
   $msg = "Update CV docx and regenerate site-data (autopush $ts)"
   & git commit -m $msg 2>&1 | ForEach-Object { L "[commit] $_" }
@@ -61,9 +100,9 @@ if ($staged) {
   }
 }
 
-# Reconcile with remote without touching docx in working tree.
-# `merge -s ours` records origin/main as a second parent but keeps OUR content
-# verbatim (we are authoritative; remote auto-regens are stale by construction).
+# --- Reconcile with remote without touching docx in working tree. ---------
+# `merge -s ours` records origin/main as a parent but keeps OUR content
+# verbatim (remote auto-regen commits are stale by construction).
 $behind = (& git rev-list "HEAD..origin/main" --count) -as [int]
 if ($behind -gt 0) {
   L "[autopush] $behind commit(s) behind origin/main; merging with -s ours"
@@ -75,7 +114,7 @@ if ($behind -gt 0) {
   }
 }
 
-# Nothing to push?
+# --- Push if ahead. -------------------------------------------------------
 $ahead = (& git rev-list "origin/main..HEAD" --count) -as [int]
 if ($ahead -le 0) {
   L "[autopush] nothing to push"
