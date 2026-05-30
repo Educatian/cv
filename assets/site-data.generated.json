@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-28T16:00:20.488600+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-05-30T16:00:02.932043+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "May 27, 2026",
@@ -161,7 +161,7 @@
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Minor revision manuscript for Interactive Learning Environments: A Cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education."
+      "text": "Minor revision manuscript for Interactive Learning Environments: A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education."
     },
     {
       "date": "2026",
@@ -243,7 +243,7 @@
   "publications": [
     {
       "year": "2026",
-      "title": "A Cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
+      "title": "A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
       "authors": "Moon, J.",
       "venue": "Interactive Learning Environments",
       "link": "",
@@ -300,14 +300,14 @@
       "title": "Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review",
       "authors": "Uddin, M., Luo, F., & Moon, J.",
       "venue": "Interactive Learning Environments",
-      "link": "",
+      "link": "https://doi.org/10.1080/10494820.2026.2679063",
       "tags": [
         "GenAI",
         "STEM",
         "Review"
       ],
       "note": "",
-      "status": "Accepted"
+      "status": ""
     },
     {
       "year": "2026",
@@ -1033,7 +1033,7 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Moon, J. (Minor revision, 2026). A Cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments.",
+      "citation": "‡ Moon, J. (Minor revision, 2026). A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments. [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
       "link": ""
     },
     {
@@ -1057,8 +1057,8 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "Uddin, M., Luo, F., & Moon, J. (Accepted, 2026). Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review. Interactive Learning Environments. [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
-      "link": ""
+      "citation": "Uddin, M., Luo, F., & Moon, J. (2026). Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2679063 [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
+      "link": "https://doi.org/10.1080/10494820.2026.2679063"
     },
     {
       "year": "2026",
