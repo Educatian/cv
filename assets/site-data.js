@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-06-01T16:00:03.706646+00:00",
+  "generatedAt": "2026-06-02T22:13:54.955295+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -39,7 +39,7 @@ window.__cvSiteData = {
   },
   "stats": [
     {
-      "value": "60",
+      "value": "62",
       "label": "Journal articles"
     },
     {
@@ -51,7 +51,7 @@ window.__cvSiteData = {
       "label": "Book chapters"
     },
     {
-      "value": "42",
+      "value": "40",
       "label": "Working papers"
     },
     {
@@ -161,17 +161,17 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
+      "text": "Accepted article in Ethics and Behavior: Human-centered generative AI in education: Ethical challenges and equity-driven solutions."
+    },
+    {
+      "date": "2026",
+      "type": "Publication",
+      "text": "Accepted article in Educational Psychology Review: Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning."
+    },
+    {
+      "date": "2026",
+      "type": "Publication",
       "text": "Minor revision manuscript for Interactive Learning Environments: A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education."
-    },
-    {
-      "date": "2026",
-      "type": "Publication",
-      "text": "Minor revision manuscript for ZDM – International Journal on Mathematics Education: How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge."
-    },
-    {
-      "date": "2026",
-      "type": "Publication",
-      "text": "Minor revision manuscript for Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
     },
     {
       "date": "2027",
@@ -241,6 +241,32 @@ window.__cvSiteData = {
     }
   ],
   "publications": [
+    {
+      "year": "2026",
+      "title": "Human-centered generative AI in education: Ethical challenges and equity-driven solutions",
+      "authors": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A.",
+      "venue": "Ethics and Behavior",
+      "link": "",
+      "tags": [
+        "GenAI",
+        "Ethics"
+      ],
+      "note": "",
+      "status": "Accepted"
+    },
+    {
+      "year": "2026",
+      "title": "Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning",
+      "authors": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P.",
+      "venue": "Educational Psychology Review",
+      "link": "",
+      "tags": [
+        "XR",
+        "Review"
+      ],
+      "note": "",
+      "status": "Accepted"
+    },
     {
       "year": "2026",
       "title": "A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
@@ -1033,6 +1059,18 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
+      "citation": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A. (Accepted, 2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior (SSCI-indexed).",
+      "link": ""
+    },
+    {
+      "year": "2026",
+      "category": "International",
+      "citation": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P. (Accepted, 2026). Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning. Educational Psychology Review (SSCI-indexed journal).",
+      "link": ""
+    },
+    {
+      "year": "2026",
+      "category": "International",
       "citation": "‡ Moon, J. (Minor revision, 2026). A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments. [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
       "link": ""
     },
@@ -1529,17 +1567,6 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "Under review",
       "year": "Pipeline",
-      "title": "Human-centered generative AI in education: Ethical challenges and equity-driven solutions",
-      "authors": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A.",
-      "venue": "Ethics and Behavior",
-      "citation": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A. (Under review). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior (SSCI-indexed).",
-      "link": ""
-    },
-    {
-      "bucket": "Submitted or Under Review",
-      "type": "Journal Manuscript",
-      "status": "Under review",
-      "year": "Pipeline",
       "title": "From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training",
       "authors": "* Awoyemi, I., & Moon, J., Abu, S., & Song, S.",
       "venue": "Interactive Learning Environments",
@@ -1665,17 +1692,6 @@ window.__cvSiteData = {
       "authors": "‡ Moon, J., Lee. D., Choi, G.W., & Ha, C.",
       "venue": "KEDI Journal of Educational Policy",
       "citation": "‡ Moon, J., Lee. D., Choi, G.W., & Ha, C. (Submitted). Predicting academic performance from self-regulated learning patterns: Machine learning analysis of Korean secondary students in online environments. KEDI Journal of Educational Policy (SSCI-indexed journal).",
-      "link": ""
-    },
-    {
-      "bucket": "Submitted or Under Review",
-      "type": "Journal Manuscript",
-      "status": "Under review",
-      "year": "Pipeline",
-      "title": "Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning",
-      "authors": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P.",
-      "venue": "Educational Psychology Review",
-      "citation": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P. (Under review). Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning. Educational Psychology Review (SSCI-indexed journal).",
       "link": ""
     },
     {
@@ -1856,10 +1872,10 @@ window.__cvSiteData = {
     }
   ],
   "workingPaperSummary": {
-    "total": 42,
-    "submittedOrUnderReview": 32,
+    "total": 40,
+    "submittedOrUnderReview": 30,
     "inPreparation": 10,
-    "journalManuscripts": 36,
+    "journalManuscripts": 34,
     "bookChapters": 2,
     "conferenceProposals": 4
   },
