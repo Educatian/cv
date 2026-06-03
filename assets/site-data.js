@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-06-02T22:14:09.217614+00:00",
+  "generatedAt": "2026-06-03T09:08:10.327370+00:00",
   "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -19,7 +19,7 @@ window.__cvSiteData = {
     "email": "jmoon19@ua.edu",
     "homepage": "https://jmoon.people.ua.edu",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
-    "labWebsite": "https://educatian.github.io/adie",
+    "labWebsite": "https://adielab.ua.edu",
     "cvDownloadPath": "CV_202605_MOON.docx",
     "cvDownloadFilename": "CV_202605_MOON.docx"
   },
@@ -27,7 +27,7 @@ window.__cvSiteData = {
     "email": "jmoon19@ua.edu",
     "homepage": "https://jmoon.people.ua.edu",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
-    "labWebsite": "https://educatian.github.io/adie",
+    "labWebsite": "https://adielab.ua.edu",
     "universityAddress": "Department of Educational Leadership, Policy, and Technology Studies Autherine Lucy Hall 315E The University of Alabama Tuscaloosa, Alabama"
   },
   "overview": {
