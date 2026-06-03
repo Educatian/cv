@@ -899,7 +899,7 @@ const contact = siteData.contact || {
   email: "jmoon19@ua.edu",
   homepage: "https://jmoon.people.ua.edu",
   researchgate: "https://www.researchgate.net/profile/Jewoong-Moon",
-  labWebsite: "https://adielab.ua.edu",
+  labWebsite: "https://educatian.github.io/adie",
   universityAddress:
     "Department of Educational Leadership, Policy, and Technology Studies Autherine Lucy Hall 315E The University of Alabama Tuscaloosa, Alabama",
 };
@@ -1845,15 +1845,17 @@ function renderProfile() {
       .join("");
   }
   if (heroActions) {
+    const labIcon =
+      '<svg class="button-lab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"></path><path d="M10 3v6.5L4.8 18.2A2 2 0 0 0 6.5 21h11a2 2 0 0 0 1.7-2.8L14 9.5V3"></path><path d="M7 14h10"></path></svg>';
     const actions = [
+      profile.labWebsite
+        ? `<a class="button button-lab" href="${escapeHtml(profile.labWebsite)}" target="_blank" rel="noreferrer">${labIcon}Visit the ADIE Lab</a>`
+        : "",
       profile.email
         ? `<a class="button button-primary" href="mailto:${escapeHtml(profile.email)}">Contact</a>`
         : "",
       profile.cvDownloadPath
         ? `<a class="button" href="${escapeHtml(profile.cvDownloadPath)}" download="${escapeHtml(profile.cvDownloadFilename || "Jewoong_Moon_CV.docx")}">Download Current CV</a>`
-        : "",
-      profile.labWebsite
-        ? `<a class="button" href="${escapeHtml(profile.labWebsite)}" target="_blank" rel="noreferrer">ADIE Lab</a>`
         : "",
     ].filter(Boolean);
 

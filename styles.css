@@ -393,6 +393,48 @@ a {
   background: var(--accent-dark);
 }
 
+/* ADIE Lab call-to-action: the headline button, made to draw the eye.
+   Scoped to .button.button-lab so it overrides the later .button base rule. */
+.button.button-lab {
+  gap: 0.5rem;
+  color: #ffffff;
+  border-color: transparent;
+  text-transform: uppercase;
+  font-weight: 800;
+  background: linear-gradient(120deg, var(--accent) 0%, var(--accent-dark) 55%, #c99700 100%);
+  box-shadow: 0 10px 24px rgba(158, 27, 50, 0.32);
+  animation: lab-pulse 2.6s ease-in-out infinite;
+}
+
+.button.button-lab:hover,
+.button.button-lab:focus-visible {
+  color: #ffffff;
+  transform: translateY(-2px);
+  border-color: transparent;
+  box-shadow: 0 16px 34px rgba(158, 27, 50, 0.45);
+  animation: none;
+}
+
+.button-lab-icon {
+  flex-shrink: 0;
+}
+
+@keyframes lab-pulse {
+  0%,
+  100% {
+    box-shadow: 0 10px 24px rgba(158, 27, 50, 0.32);
+  }
+  50% {
+    box-shadow: 0 12px 30px rgba(201, 151, 0, 0.42);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button-lab {
+    animation: none;
+  }
+}
+
 .hero-stats,
 .focus-chip-row,
 .compact-list,
@@ -4015,6 +4057,17 @@ body::before {
 
 :root[data-theme="dark"] .button-primary {
   color: #ffffff;
+}
+
+:root[data-theme="dark"] .button.button-lab {
+  border-color: transparent;
+  box-shadow: 0 12px 30px rgba(232, 73, 104, 0.4);
+}
+
+:root[data-theme="dark"] .button.button-lab:hover,
+:root[data-theme="dark"] .button.button-lab:focus-visible {
+  border-color: transparent;
+  box-shadow: 0 18px 38px rgba(232, 73, 104, 0.5);
 }
 
 :root[data-theme="dark"] .scholar-snapshot {
