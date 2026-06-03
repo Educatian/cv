@@ -1055,6 +1055,27 @@ const journalFrontProfiles = {
     theme: "theme-sand",
     coverImage: "https://ars.els-cdn.com/content/image/X1747938X.jpg",
   },
+  "Educational Psychology Review": {
+    publisher: "Springer Nature",
+    masthead: "Educational Psychology Review",
+    spotlight: "Integrative reviews in educational psychology",
+    theme: "theme-gold",
+    coverImage: "assets/journal-covers/educational-psychology-review.webp",
+  },
+  "Ethics & Behavior": {
+    publisher: "Taylor & Francis",
+    masthead: "Ethics & Behavior",
+    spotlight: "Moral conduct, responsibility, and research ethics",
+    theme: "theme-ink",
+    coverImage: "assets/journal-covers/ethics-and-behavior.jpg",
+  },
+  "Ethics and Behavior": {
+    publisher: "Taylor & Francis",
+    masthead: "Ethics & Behavior",
+    spotlight: "Moral conduct, responsibility, and research ethics",
+    theme: "theme-ink",
+    coverImage: "assets/journal-covers/ethics-and-behavior.jpg",
+  },
   "Teaching and Teacher Education": {
     publisher: "Elsevier",
     masthead: "Teaching and Teacher Education",
@@ -1292,9 +1313,18 @@ function findJournalFrontProfile(venue) {
   if (!venue) return null;
   if (journalFrontProfiles[venue]) return journalFrontProfiles[venue];
 
+  const baseVenue = venue.split(",")[0].trim();
+  if (baseVenue && baseVenue !== venue && journalFrontProfiles[baseVenue]) {
+    return journalFrontProfiles[baseVenue];
+  }
+
   const slug = slugifyVenue(venue);
+  const baseSlug = slugifyVenue(baseVenue);
   if (journalFrontProfileSlugIndex.has(slug)) {
     return journalFrontProfiles[journalFrontProfileSlugIndex.get(slug)];
+  }
+  if (baseSlug && journalFrontProfileSlugIndex.has(baseSlug)) {
+    return journalFrontProfiles[journalFrontProfileSlugIndex.get(baseSlug)];
   }
   // singular/plural tolerance: "Environment" <-> "Environments"
   if (journalFrontProfileSlugIndex.has(slug + "s")) {
