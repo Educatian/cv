@@ -13,9 +13,10 @@ from lxml import html
 
 
 ROOT = Path(__file__).resolve().parents[1]
+# CV source is auto-discovered: newest CV_<date>_MOON.docx in the repo root.
+CV_GLOB = "CV_*_MOON.docx"
+CV_DATE_RE = re.compile(r"CV_(\d{4,8})_MOON\.docx$", re.I)
 DEFAULT_CV_PATH = ROOT / "CV_202605_MOON.docx"
-FALLBACK_CV_PATH = ROOT / "assets" / "current-cv.docx"
-LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
 DEFAULT_OUTPUT_PATH = ROOT / "assets" / "publication-abstracts.json"
 OVERRIDES_PATH = ROOT / "assets" / "publication-abstract-overrides.json"
 
@@ -51,15 +52,25 @@ def clean_text(value: str) -> str:
     return " ".join(value.replace("\u200b", "").split()).strip()
 
 
+def find_latest_cv() -> Optional[Path]:
+    """Return the newest CV_<date>_MOON.docx in the repo root, or None."""
+    candidates = list(ROOT.glob(CV_GLOB))
+    if not candidates:
+        return None
+
+    def sort_key(path: Path):
+        match = CV_DATE_RE.search(path.name)
+        date_rank = int(match.group(1)) if match else -1
+        return (date_rank, path.stat().st_mtime)
+
+    return max(candidates, key=sort_key)
+
+
 def choose_cv_path(explicit_path: Optional[Path]) -> Path:
     if explicit_path:
         return explicit_path.resolve()
 
-    if DEFAULT_CV_PATH.exists():
-        return DEFAULT_CV_PATH
-    if FALLBACK_CV_PATH.exists():
-        return FALLBACK_CV_PATH
-    return LEGACY_CV_PATH
+    return find_latest_cv() or DEFAULT_CV_PATH
 
 
 def parse_cv_entries(cv_path: Path) -> List[Dict[str, str]]:

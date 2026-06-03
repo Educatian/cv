@@ -8,8 +8,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "CV_202605_MOON.docx"
-      - "assets/current-cv.docx"
+      - "CV_*_MOON.docx"
       - "scripts/generate_site_data.py"
   schedule:
     - cron: "17 13 * * 1" # weekly, Monday 13:17 UTC (off-peak minute)

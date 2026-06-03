@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-03T09:08:10.327370+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-06-03T09:18:05.371184+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "May 27, 2026",
@@ -17,17 +17,17 @@
     "department": "Department of Educational Leadership, Policy, and Technology Studies",
     "institution": "The University of Alabama",
     "email": "jmoon19@ua.edu",
-    "homepage": "https://jmoon.people.ua.edu",
+    "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
-    "labWebsite": "https://adielab.ua.edu",
+    "labWebsite": "https://educatian.github.io/adie",
     "cvDownloadPath": "CV_202605_MOON.docx",
     "cvDownloadFilename": "CV_202605_MOON.docx"
   },
   "contact": {
     "email": "jmoon19@ua.edu",
-    "homepage": "https://jmoon.people.ua.edu",
+    "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
-    "labWebsite": "https://adielab.ua.edu",
+    "labWebsite": "https://educatian.github.io/adie",
     "universityAddress": "Department of Educational Leadership, Policy, and Technology Studies Autherine Lucy Hall 315E The University of Alabama Tuscaloosa, Alabama"
   },
   "overview": {
@@ -251,7 +251,7 @@
         "GenAI",
         "Ethics"
       ],
-      "note": "",
+      "note": "mentored collaboration",
       "status": "Accepted"
     },
     {
@@ -318,7 +318,7 @@
         "GenAI",
         "Game-Based"
       ],
-      "note": "mentored collaboration",
+      "note": "corresponding author",
       "status": "Minor revision"
     },
     {
@@ -332,7 +332,7 @@
         "STEM",
         "Review"
       ],
-      "note": "",
+      "note": "mentored collaboration",
       "status": ""
     },
     {
@@ -1059,13 +1059,13 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A. (Accepted, 2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior (SSCI-indexed).",
+      "citation": "* Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A. (Accepted, 2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior [SSCI-indexed, IF = 1.9, IF5 = 2.1]",
       "link": ""
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P. (Accepted, 2026). Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning. Educational Psychology Review (SSCI-indexed journal).",
+      "citation": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P. (Accepted, 2026). Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning. Educational Psychology Review [SSCI-indexed, IF = 8.8, IF5 = 14.2]",
       "link": ""
     },
     {
@@ -1077,7 +1077,7 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M. (Minor revision, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
+      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M. (Minor revision, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education [SSCI-indexed, IF = 2.4, IF5 = 3.1]",
       "link": ""
     },
     {
@@ -1089,13 +1089,13 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Jeong, Y., Lee, Y., Byun, G., & Moon, J. (Minor revision, 2026). Navigating practitioner roles in generative AI-enhanced educational game design: A collective autoethnography. Simulation & Gaming [ESCI-indexed, IF = 1.8, IF5 = 2.7]",
+      "citation": "‡ Jeong, Y., Lee, Y., Byun, G., & Moon, J. (Minor revision, 2026). Navigating practitioner roles in generative AI-enhanced educational game design: A collective autoethnography. Simulation & Gaming [ESCI-indexed, IF = 1.8, IF5 = 2.7]",
       "link": ""
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "Uddin, M., Luo, F., & Moon, J. (2026). Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2679063 [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
+      "citation": "* Uddin, M., Luo, F., & Moon, J. (2026). Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2679063 [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
       "link": "https://doi.org/10.1080/10494820.2026.2679063"
     },
     {

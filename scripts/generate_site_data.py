@@ -11,9 +11,30 @@ from docx import Document
 
 
 ROOT = Path(__file__).resolve().parents[1]
+# The CV source is auto-discovered: the parser scans the repo root for the
+# newest CV_<date>_MOON.docx and parses that. Drop a newer dated file in the
+# root and it becomes canonical automatically; no path edits needed.
+CV_GLOB = "CV_*_MOON.docx"
+CV_DATE_RE = re.compile(r"CV_(\d{4,8})_MOON\.docx$", re.I)
 DEFAULT_CV_PATH = ROOT / "CV_202605_MOON.docx"
-FALLBACK_CV_PATH = ROOT / "assets" / "current-cv.docx"
-LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
+
+
+def find_latest_cv() -> Optional[Path]:
+    """Return the newest CV_<date>_MOON.docx in the repo root, or None.
+
+    Ranks by the numeric date in the filename first, then modification time as
+    a tie-breaker, so a freshly dropped CV is picked up without code changes.
+    """
+    candidates = list(ROOT.glob(CV_GLOB))
+    if not candidates:
+        return None
+
+    def sort_key(path: Path):
+        match = CV_DATE_RE.search(path.name)
+        date_rank = int(match.group(1)) if match else -1
+        return (date_rank, path.stat().st_mtime)
+
+    return max(candidates, key=sort_key)
 DEFAULT_JSON_PATH = ROOT / "assets" / "site-data.generated.json"
 DEFAULT_JS_PATH = ROOT / "assets" / "site-data.js"
 
@@ -1016,6 +1037,7 @@ def build_profile(
     contact: Dict[str, str],
     focus_areas: Sequence[str],
     appointments_education: Sequence[Dict[str, str]],
+    cv_filename: str = "CV_202605_MOON.docx",
 ) -> Dict[str, object]:
     name = paragraphs[1] if len(paragraphs) > 1 else "Dr. Jewoong Moon"
     cv_date = paragraphs[2] if len(paragraphs) > 2 else dt.date.today().isoformat()
@@ -1081,8 +1103,8 @@ def build_profile(
         "homepage": contact.get("homepage", ""),
         "researchgate": contact.get("researchgate", ""),
         "labWebsite": contact.get("labWebsite", ""),
-        "cvDownloadPath": "CV_202605_MOON.docx",
-        "cvDownloadFilename": "CV_202605_MOON.docx",
+        "cvDownloadPath": cv_filename,
+        "cvDownloadFilename": cv_filename,
     }
 
 
@@ -1220,11 +1242,7 @@ def choose_cv_path(explicit_path: Optional[Path]) -> Path:
     if explicit_path:
         return explicit_path.resolve()
 
-    if DEFAULT_CV_PATH.exists():
-        return DEFAULT_CV_PATH
-    if FALLBACK_CV_PATH.exists():
-        return FALLBACK_CV_PATH
-    return LEGACY_CV_PATH
+    return find_latest_cv() or DEFAULT_CV_PATH
 
 
 def build_site_data(cv_path: Path) -> Dict[str, object]:
@@ -1241,7 +1259,9 @@ def build_site_data(cv_path: Path) -> Dict[str, object]:
     talks = parse_talks(paragraphs)
     honors = parse_honors(paragraphs)
     service = parse_service(paragraphs)
-    profile = build_profile(paragraphs, contact, focus_areas, appointments_education)
+    profile = build_profile(
+        paragraphs, contact, focus_areas, appointments_education, cv_filename=cv_path.name
+    )
     overview = build_overview(profile, focus_areas)
     news = parse_news(publications_data["publications"], grants_data["grants"], honors, talks)
     initiatives = parse_initiatives(grants_data["grants"], publications_data["publications"])

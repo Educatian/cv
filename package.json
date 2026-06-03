@@ -1,7 +1,7 @@
 {
   "name": "jmoon-github-cv",
   "version": "1.0.0",
-  "description": "Static GitHub Pages-style academic CV website built from `CV_202604_MOON.docx`.",
+  "description": "Static GitHub Pages-style academic CV website built from the newest `CV_<date>_MOON.docx` in the repo root.",
   "main": "app.js",
   "scripts": {
     "site:data": "python scripts/generate_site_data.py",

@@ -1,16 +1,19 @@
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
 import subprocess
 import sys
 from pathlib import Path
+from typing import Optional
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CANONICAL_CV_PATH = ROOT / "CV_202605_MOON.docx"
-CURRENT_CV_PATH = ROOT / "assets" / "current-cv.docx"
-LEGACY_CV_PATH = ROOT / "assets" / "CV_202604_MOON.docx"
+# CV source is auto-discovered: newest CV_<date>_MOON.docx in the repo root.
+CV_GLOB = "CV_*_MOON.docx"
+CV_DATE_RE = re.compile(r"CV_(\d{4,8})_MOON\.docx$", re.I)
+DEFAULT_CV_PATH = ROOT / "CV_202605_MOON.docx"
 SITE_DATA_SCRIPT = ROOT / "scripts" / "generate_site_data.py"
 ABSTRACTS_SCRIPT = ROOT / "scripts" / "update_publication_abstracts.py"
 PLAYWRIGHT_SCRIPT = ROOT / "scripts" / "update_publication_abstracts_playwright.mjs"
@@ -18,29 +21,45 @@ ANALYTICS_SCRIPT = ROOT / "scripts" / "update_research_analytics.py"
 SCHOLAR_ANALYTICS_SCRIPT = ROOT / "scripts" / "update_research_analytics_scholar.mjs"
 
 
+def find_latest_cv() -> Optional[Path]:
+    """Return the newest CV_<date>_MOON.docx in the repo root, or None."""
+    candidates = list(ROOT.glob(CV_GLOB))
+    if not candidates:
+        return None
+
+    def sort_key(path: Path):
+        match = CV_DATE_RE.search(path.name)
+        date_rank = int(match.group(1)) if match else -1
+        return (date_rank, path.stat().st_mtime)
+
+    return max(candidates, key=sort_key)
+
+
 def resolve_source_cv(explicit_path: Path | None) -> Path:
     if explicit_path:
         return explicit_path.resolve()
 
-    if CANONICAL_CV_PATH.exists():
-        return CANONICAL_CV_PATH
-    if CURRENT_CV_PATH.exists():
-        return CURRENT_CV_PATH
-    if LEGACY_CV_PATH.exists():
-        return LEGACY_CV_PATH
-    raise FileNotFoundError("No CV file was found. Provide one with --cv.")
+    latest = find_latest_cv()
+    if latest:
+        return latest
+    raise FileNotFoundError(
+        "No CV file (CV_<date>_MOON.docx) was found in the repo root. Provide one with --cv."
+    )
 
 
 def sync_canonical_cv(source_path: Path) -> Path:
+    """Ensure the source CV lives in the repo root and return that path.
+
+    A CV supplied from outside the repo (via --cv) is copied in under its own
+    name so it joins the dated set the parser scans; an in-root CV is used as-is.
+    """
     source_path = source_path.resolve()
-    CANONICAL_CV_PATH.parent.mkdir(parents=True, exist_ok=True)
-    CURRENT_CV_PATH.parent.mkdir(parents=True, exist_ok=True)
+    if source_path.parent == ROOT:
+        return source_path
 
-    if source_path != CANONICAL_CV_PATH.resolve():
-        shutil.copy2(source_path, CANONICAL_CV_PATH)
-
-    shutil.copy2(CANONICAL_CV_PATH, CURRENT_CV_PATH)
-    return CANONICAL_CV_PATH
+    canonical = ROOT / source_path.name
+    shutil.copy2(source_path, canonical)
+    return canonical
 
 
 def run_step(command: list[str], label: str) -> None:
@@ -98,7 +117,6 @@ def main() -> None:
             run_step(["node", str(PLAYWRIGHT_SCRIPT)], "Running Playwright abstract recovery")
 
     print(f"[site-update] Canonical CV: {canonical_cv}")
-    print(f"[site-update] Compatibility copy: {CURRENT_CV_PATH}")
     print("[site-update] Done")
 
 
