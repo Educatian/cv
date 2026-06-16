@@ -374,6 +374,98 @@ function renderWorkTable(data) {
     .join("");
 }
 
+// Damped log-linear (exponential) citation forecast.
+// Citation accrual for an active researcher grows multiplicatively, so we fit
+// ln(citations) ~ year over the most recent complete years, then project the
+// growth rate forward with geometric damping (so it decelerates rather than
+// exploding). The latest calendar year is treated as PARTIAL — its YTD count is
+// annualized (scaled by the fraction of the year elapsed) and used as the
+// grounded central value for the current year. Returns null when there are too
+// few points to fit. `opts.now` is injectable for testing.
+function computeCitationForecast(annualCitations, opts = {}) {
+  const now = opts.now || new Date();
+  const horizon = opts.horizon ?? 3; // years projected beyond last complete year
+  const damping = opts.damping ?? 0.7; // geometric decay applied to the growth rate
+  const z = opts.z ?? 1.28; // ~80% interval on the log-residual scale
+  const recentWindow = opts.recentWindow ?? 5; // complete years used to fit the rate
+
+  const points = (annualCitations || [])
+    .filter((d) => d.year && d.citations >= 0)
+    .slice()
+    .sort((a, b) => a.year - b.year);
+  if (points.length < 4) {
+    return null;
+  }
+
+  const currentYear = now.getFullYear();
+  const last = points[points.length - 1];
+  let partial = null;
+  let complete = points;
+  if (last.year === currentYear) {
+    const start = new Date(currentYear, 0, 1);
+    const end = new Date(currentYear + 1, 0, 1);
+    const fraction = Math.min(0.99, Math.max(0.04, (now - start) / (end - start)));
+    partial = {
+      year: last.year,
+      actual: last.citations,
+      fraction,
+      annualized: Math.round(last.citations / fraction),
+    };
+    complete = points.slice(0, -1);
+  }
+
+  const positive = complete.filter((d) => d.citations > 0);
+  if (positive.length < 3) {
+    return null;
+  }
+
+  const fit = positive.slice(-recentWindow);
+  const baseYear = fit[0].year;
+  const xs = fit.map((d) => d.year - baseYear);
+  const ys = fit.map((d) => Math.log(d.citations));
+  const n = xs.length;
+  const meanX = xs.reduce((a, b) => a + b, 0) / n;
+  const meanY = ys.reduce((a, b) => a + b, 0) / n;
+  let sxx = 0;
+  let sxy = 0;
+  for (let i = 0; i < n; i += 1) {
+    sxx += (xs[i] - meanX) ** 2;
+    sxy += (xs[i] - meanX) * (ys[i] - meanY);
+  }
+  const slope = sxx ? sxy / sxx : 0;
+  const intercept = meanY - slope * meanX;
+  let sse = 0;
+  for (let i = 0; i < n; i += 1) {
+    const predicted = intercept + slope * xs[i];
+    sse += (ys[i] - predicted) ** 2;
+  }
+  const seLog = Math.sqrt(sse / Math.max(1, n - 2));
+  const growthRate = Math.exp(slope) - 1;
+
+  const anchor = complete[complete.length - 1];
+  const forecast = [];
+  let running = anchor.citations;
+  for (let k = 1; k <= horizon; k += 1) {
+    const rate = growthRate * Math.pow(damping, k - 1);
+    let central = running * (1 + rate);
+    const year = anchor.year + k;
+    if (partial && year === partial.year) {
+      central = partial.annualized; // grounded by observed YTD
+    }
+    running = central;
+    const halfWidth = z * seLog * Math.sqrt(k);
+    forecast.push({
+      year,
+      citations: Math.round(central),
+      lower: Math.round(central * Math.exp(-halfWidth)),
+      upper: Math.round(central * Math.exp(halfWidth)),
+      projected: true,
+    });
+  }
+
+  return { growthRate, seLog, anchor: { year: anchor.year, citations: anchor.citations }, partial, forecast };
+}
+
 function renderAnnualCitationsChart(data) {
   const root = document.getElementById("annual-citations-chart");
   if (!root || !window.d3) {
@@ -383,30 +475,46 @@ function renderAnnualCitationsChart(data) {
   analyticsClearNode(root);
   const width = Math.max(620, root.clientWidth || 620);
   const height = 300;
-  const margin = { top: 18, right: 18, bottom: 42, left: 52 };
+  const margin = { top: 28, right: 18, bottom: 42, left: 52 };
+
+  const actuals = data.annualCitations || [];
+  const forecast = computeCitationForecast(actuals);
+  const partialYear = forecast?.partial?.year ?? null;
+
+  // Forecast line/band run from the last complete actual (anchor) through the
+  // projected years so the dashed path connects continuously to the solid one.
+  const forecastPath = forecast
+    ? [{ year: forecast.anchor.year, citations: forecast.anchor.citations, lower: forecast.anchor.citations, upper: forecast.anchor.citations }, ...forecast.forecast]
+    : [];
 
   const svg = d3
     .select(root)
     .append("svg")
     .attr("viewBox", `0 0 ${width} ${height}`)
     .attr("role", "img")
-    .attr("aria-label", "Annual citation trend");
+    .attr("aria-label", "Annual citation trend with projection");
+
+  const allYears = [...actuals.map((d) => d.year), ...forecastPath.map((d) => d.year)];
+  const yMaxValue = Math.max(
+    d3.max(actuals, (d) => d.citations) || 0,
+    d3.max(forecastPath, (d) => d.upper || d.citations) || 0
+  );
 
   const x = d3
     .scaleLinear()
-    .domain(d3.extent(data.annualCitations, (d) => d.year))
+    .domain([Math.min(...allYears), Math.max(...allYears)])
     .range([margin.left, width - margin.right]);
 
   const y = d3
     .scaleLinear()
-    .domain([0, d3.max(data.annualCitations, (d) => d.citations) || 0])
+    .domain([0, yMaxValue])
     .nice()
     .range([height - margin.bottom, margin.top]);
 
   svg
     .append("g")
     .attr("transform", `translate(0,${height - margin.bottom})`)
-    .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(Math.min(10, data.annualCitations.length)))
+    .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(Math.min(10, allYears.length)))
     .call((g) => g.selectAll("text").attr("fill", "#6f6a64"))
     .call((g) => g.selectAll("line,path").attr("stroke", "#d5d0c7"));
 
@@ -428,33 +536,122 @@ function renderAnnualCitationsChart(data) {
     .attr("y1", (d) => y(d))
     .attr("y2", (d) => y(d));
 
+  // Projection uncertainty band (~80% interval) drawn behind the lines.
+  if (forecastPath.length > 1) {
+    const band = d3
+      .area()
+      .x((d) => x(d.year))
+      .y0((d) => y(d.lower))
+      .y1((d) => y(d.upper))
+      .curve(d3.curveMonotoneX);
+
+    svg
+      .append("path")
+      .datum(forecastPath)
+      .attr("fill", "#c69a53")
+      .attr("fill-opacity", 0.16)
+      .attr("d", band);
+  }
+
   const line = d3
     .line()
     .x((d) => x(d.year))
     .y((d) => y(d.citations))
     .curve(d3.curveMonotoneX);
 
+  // Actual citations (solid crimson).
   svg
     .append("path")
-    .datum(data.annualCitations)
+    .datum(actuals)
     .attr("fill", "none")
     .attr("stroke", "#8b1e2d")
     .attr("stroke-width", 3)
     .attr("d", line);
 
+  // Projected citations (dashed gold).
+  if (forecastPath.length > 1) {
+    svg
+      .append("path")
+      .datum(forecastPath)
+      .attr("fill", "none")
+      .attr("stroke", "#c69a53")
+      .attr("stroke-width", 2.5)
+      .attr("stroke-dasharray", "6 5")
+      .attr("d", line);
+  }
+
+  // Actual points; the partial current year gets a hollow dashed ring.
   svg
     .append("g")
     .selectAll("circle")
-    .data(data.annualCitations)
+    .data(actuals)
     .join("circle")
     .attr("cx", (d) => x(d.year))
     .attr("cy", (d) => y(d.citations))
-    .attr("r", 4.5)
-    .attr("fill", "#fff7f2")
+    .attr("r", (d) => (d.year === partialYear ? 5 : 4.5))
+    .attr("fill", (d) => (d.year === partialYear ? "#fffdf9" : "#fff7f2"))
     .attr("stroke", "#8b1e2d")
     .attr("stroke-width", 2)
+    .attr("stroke-dasharray", (d) => (d.year === partialYear ? "3 2" : null))
     .append("title")
-    .text((d) => `${d.year}: ${analyticsFormatNumber(d.citations)} citations | ${analyticsFormatNumber(d.works)} works`);
+    .text((d) =>
+      d.year === partialYear
+        ? `${d.year} year-to-date: ${analyticsFormatNumber(d.citations)} citations so far (partial year)`
+        : `${d.year}: ${analyticsFormatNumber(d.citations)} citations`
+    );
+
+  // Projected points (hollow gold) with the interval in the tooltip.
+  if (forecast) {
+    svg
+      .append("g")
+      .selectAll("circle")
+      .data(forecast.forecast)
+      .join("circle")
+      .attr("cx", (d) => x(d.year))
+      .attr("cy", (d) => y(d.citations))
+      .attr("r", 4)
+      .attr("fill", "#fffaf0")
+      .attr("stroke", "#c69a53")
+      .attr("stroke-width", 2)
+      .append("title")
+      .text(
+        (d) =>
+          `${d.year} projected: ~${analyticsFormatNumber(d.citations)} citations (≈80% range ${analyticsFormatNumber(
+            d.lower
+          )}–${analyticsFormatNumber(d.upper)})`
+      );
+  }
+
+  // Legend.
+  const legend = svg.append("g").attr("transform", `translate(${margin.left},14)`);
+  const legendItems = [
+    { label: "Actual", color: "#8b1e2d", dashed: false },
+  ];
+  if (forecast) {
+    const pct = Math.round((forecast.growthRate || 0) * 100);
+    legendItems.push({ label: `Projected (~${pct}%/yr, damped)`, color: "#c69a53", dashed: true });
+  }
+  let offset = 0;
+  legendItems.forEach((item) => {
+    const g = legend.append("g").attr("transform", `translate(${offset},0)`);
+    g.append("line")
+      .attr("x1", 0)
+      .attr("x2", 22)
+      .attr("y1", 0)
+      .attr("y2", 0)
+      .attr("stroke", item.color)
+      .attr("stroke-width", item.dashed ? 2.5 : 3)
+      .attr("stroke-dasharray", item.dashed ? "6 5" : null);
+    const text = g
+      .append("text")
+      .attr("x", 28)
+      .attr("y", 4)
+      .attr("fill", "#6f6a64")
+      .style("font-size", "11px")
+      .text(item.label);
+    offset += 28 + (item.label.length * 6.2) + 24;
+    return text;
+  });
 }
 
 function renderTopicCluster(data) {
