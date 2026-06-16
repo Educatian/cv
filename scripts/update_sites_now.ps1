@@ -5,10 +5,15 @@
   Reads the CANONICAL CV docx (the one the Desktop CV shortcut points to:
   ...\_projects\cv\CV_202605_MOON.docx) and refreshes both GitHub Pages sites.
 
-  Step 1  CV  (Educatian/cv): reuse the canonical cv_autopush.ps1 pipeline
+  Step 1  Research analytics: refresh assets/research-analytics{,-scholar}.json
+          from Google Scholar (Playwright scrape, best-effort) + OpenAlex
+          (author + works, merged). app.js fetches research-analytics.json to
+          render the live citation/metrics dashboard; cv_autopush (Step 2) then
+          commits the regenerated files alongside site-data.
+  Step 2  CV  (Educatian/cv): reuse the canonical cv_autopush.ps1 pipeline
           (Word-lock guard -> regenerate site-data from docx -> sanity check
-           -> commit -> merge -s ours -> push).
-  Step 2  Lab (Educatian/adie): refresh the bundled fallback cv-site-data.{json,js}
+           -> commit [incl. refreshed analytics] -> merge -s ours -> push).
+  Step 3  Lab (Educatian/adie): refresh the bundled fallback cv-site-data.{json,js}
           from CV's freshly generated json -> commit -> push. The live lab page
           already auto-syncs from CV's live data on load; this keeps the repo and
           the offline/file:// fallback current too.
@@ -27,8 +32,48 @@ Write-Host ""
 Write-Host "  Update CV + Lab websites from the canonical CV docx" -ForegroundColor White
 Write-Host "  $(Join-Path $cvRoot 'CV_202605_MOON.docx')" -ForegroundColor DarkGray
 
-# ---------------------------------------------------------------- Step 1: CV
-Section "Step 1/2  CV site  ->  https://educatian.github.io/cv/"
+# -------------------------------------------------- Step 1: Research analytics
+Section "Step 1/3  Research analytics  (OpenAlex + Google Scholar)"
+$scholarMjs = Join-Path $PSScriptRoot 'update_research_analytics_scholar.mjs'
+$openalexPy = Join-Path $PSScriptRoot 'update_research_analytics.py'
+
+# 1a. Google Scholar (Playwright). Best-effort: Google may serve a bot
+#     challenge or simply be slow. Run it in a background job with a hard
+#     180s timeout so a hung scrape never blocks the whole update; on
+#     failure/timeout we keep the previously-captured scholar JSON and still
+#     refresh OpenAlex below (OpenAlex is the canonical source; Scholar only
+#     enriches the summary/annual-trend numbers).
+if (Test-Path -LiteralPath $scholarMjs) {
+  Write-Host "  Google Scholar scrape (Playwright, up to 180s)..." -ForegroundColor DarkGray
+  $job = Start-Job -ScriptBlock {
+    param($root, $mjs)
+    Set-Location -LiteralPath $root
+    & node $mjs 2>&1
+  } -ArgumentList $cvRoot, $scholarMjs
+  if (Wait-Job $job -Timeout 180) {
+    Receive-Job $job | ForEach-Object { Write-Host "    $_" -ForegroundColor Gray }
+    Write-Host "  Scholar data refreshed." -ForegroundColor Green
+  } else {
+    Stop-Job $job 2>&1 | Out-Null
+    Write-Host "  Scholar scrape timed out (>180s); keeping previous Scholar data." -ForegroundColor Yellow
+  }
+  Remove-Job $job -Force 2>&1 | Out-Null
+} else {
+  Write-Host "  Scholar scraper not found ($scholarMjs); skipping." -ForegroundColor Yellow
+}
+
+# 1b. OpenAlex + merge -> assets/research-analytics.json (fetched by app.js).
+if (Test-Path -LiteralPath $openalexPy) {
+  Write-Host "  OpenAlex author + works refresh..." -ForegroundColor DarkGray
+  & py $openalexPy 2>&1 | ForEach-Object { Write-Host "    $_" -ForegroundColor Gray }
+  if ($LASTEXITCODE -eq 0) { Write-Host "  Research analytics refreshed." -ForegroundColor Green }
+  else { Write-Host "  OpenAlex refresh failed (network?); site keeps prior analytics." -ForegroundColor Red }
+} else {
+  Write-Host "  OpenAlex script not found ($openalexPy); skipping." -ForegroundColor Yellow
+}
+
+# ---------------------------------------------------------------- Step 2: CV
+Section "Step 2/3  CV site  ->  https://educatian.github.io/cv/"
 $cvAutopush = Join-Path $PSScriptRoot 'cv_autopush.ps1'
 if (Test-Path -LiteralPath $cvAutopush) {
   & $cvAutopush
@@ -41,8 +86,8 @@ if (Test-Path -LiteralPath $cvAutopush) {
   Write-Host "  cv_autopush.ps1 not found; cannot update CV." -ForegroundColor Red
 }
 
-# --------------------------------------------------------------- Step 2: Lab
-Section "Step 2/2  Lab site  ->  https://educatian.github.io/adie/"
+# --------------------------------------------------------------- Step 3: Lab
+Section "Step 3/3  Lab site  ->  https://educatian.github.io/adie/"
 $genJson = Join-Path $cvRoot 'assets\site-data.generated.json'
 if (-not (Test-Path -LiteralPath $genJson)) {
   Write-Host "  CV generated json not found ($genJson); skipping lab refresh." -ForegroundColor Yellow

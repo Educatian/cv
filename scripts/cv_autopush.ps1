@@ -95,8 +95,11 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 # --- Anything to commit? --------------------------------------------------
-# Any of: docx changed, regenerated assets/site-data.* differ from HEAD.
-& git add CV_202605_MOON.docx assets/site-data.generated.json assets/site-data.js 2>&1 | Out-Null
+# Any of: docx changed, regenerated assets/site-data.* differ from HEAD, or
+# the research-analytics JSON was refreshed by update_sites_now.ps1 (Step 1).
+# The analytics files only change when that scrape/refresh ran, so unattended
+# biweekly cycles stage nothing extra here.
+& git add CV_202605_MOON.docx assets/site-data.generated.json assets/site-data.js assets/research-analytics.json assets/research-analytics-scholar.json 2>&1 | Out-Null
 
 $staged = & git diff --cached --name-only
 if (-not $staged) {
@@ -105,7 +108,7 @@ if (-not $staged) {
   $stagedList = ($staged -join ', ')
   L "[autopush] staged: $stagedList"
   $ts = Get-Date -Format 'yyyy-MM-dd HH:mm'
-  $msg = "Update CV docx and regenerate site-data (autopush $ts)"
+  $msg = "Update CV docx, site-data, and research analytics (autopush $ts)"
   & git commit -m $msg 2>&1 | ForEach-Object { L "[commit] $_" }
   if ($LASTEXITCODE -ne 0) {
     L "[autopush] commit failed; abort"
