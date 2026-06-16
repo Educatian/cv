@@ -1118,6 +1118,10 @@ a {
 
 .readme-column {
   display: block;
+  /* Grid item: allow it to shrink below content min-content so the dashboard
+     (wide tables, multi-column analytics) never forces the column past the
+     viewport and clips on the right under .content-deck's overflow:hidden. */
+  min-width: 0;
 }
 
 .content-deck {
