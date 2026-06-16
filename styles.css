@@ -1161,6 +1161,10 @@ a {
 .content-section {
   padding: 1.6rem 1.7rem 1.8rem;
   border-top: 5px solid var(--accent);
+  /* Grid item of .content-panel: let it shrink to the deck width on narrow
+     screens instead of forcing the panel to its content min-content (which
+     overflowed and clipped on mobile). No effect when there is room. */
+  min-width: 0;
 }
 
 .auxiliary-section {
@@ -2645,6 +2649,9 @@ a {
   padding: 1rem 1.05rem;
   border: 1px solid var(--line);
   background: #fffdfa;
+  /* Allow dashboard panels (incl. Field Standing) to shrink so their inner
+     grids collapse to one column on mobile; wide tables scroll in their shell. */
+  min-width: 0;
 }
 
 .analytics-meta-panel {
