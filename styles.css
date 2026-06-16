@@ -2847,6 +2847,45 @@ a {
   font-size: 0.85rem;
 }
 
+.analytics-field-popname .analytics-standing-hint {
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+.analytics-standing-row {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.analytics-standing-bars {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.analytics-standing-bar {
+  display: grid;
+  grid-template-columns: 5.6rem 1fr 3.4rem;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.analytics-standing-tag {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.analytics-standing-num {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: right;
+}
+
+.analytics-standing-num.is-you {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .status-diamond,
 .status-gold,
 .status-hybrid,

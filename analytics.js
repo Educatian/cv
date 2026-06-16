@@ -240,19 +240,29 @@ function renderFieldBenchmark(data) {
     .map((pop) => {
       const rows = pop.metrics
         .map((metric) => {
-          const pctile = Math.max(0, Math.min(100, 100 - (metric.topPercent || 0)));
+          const me = Number(metric.me) || 0;
+          const peer = Number(metric.median) || 0;
+          const max = Math.max(me, peer, 1);
+          const youWidth = Math.max(2, (me / max) * 100);
+          const peerWidth = Math.max(2, (peer / max) * 100);
           return `
-            <article class="analytics-bar-card">
+            <article class="analytics-standing-row">
               <div class="analytics-bar-topline">
                 <span class="analytics-bar-title">${analyticsEscapeHtml(metric.label)}</span>
                 <span class="analytics-bar-value">Top ${analyticsFormatDecimal(metric.topPercent, 1)}%</span>
               </div>
-              <div class="analytics-bar-track">
-                <span class="analytics-bar-fill" style="width:${Math.max(4, pctile)}%"></span>
+              <div class="analytics-standing-bars">
+                <div class="analytics-standing-bar">
+                  <span class="analytics-standing-tag">You</span>
+                  <span class="analytics-bar-track"><span class="analytics-bar-fill" style="width:${youWidth}%"></span></span>
+                  <span class="analytics-standing-num is-you">${analyticsFormatNumber(me)}</span>
+                </div>
+                <div class="analytics-standing-bar">
+                  <span class="analytics-standing-tag">Typical peer</span>
+                  <span class="analytics-bar-track"><span class="analytics-bar-fill is-secondary" style="width:${peerWidth}%"></span></span>
+                  <span class="analytics-standing-num">${analyticsFormatNumber(peer)}</span>
+                </div>
               </div>
-              <div class="analytics-bar-meta">You <strong>${analyticsFormatNumber(
-                metric.me
-              )}</strong> &middot; typical peer ${analyticsFormatNumber(metric.median)} (median)</div>
             </article>
           `;
         })
@@ -265,6 +275,7 @@ function renderFieldBenchmark(data) {
             <span>${analyticsFormatNumber(pop.activeCount)} active researchers &middot; ≥${
         bench.activeMinWorks
       } works${pop.field ? ` &middot; ${analyticsEscapeHtml(pop.field)}` : ""}</span>
+            <span class="analytics-standing-hint">Each pair compares you with the median peer; longer bar = higher.</span>
           </div>
           ${rows}
         </div>
