@@ -556,7 +556,121 @@ def build_citation_work_records(
     )
 
 
-def build_payload(author: Dict[str, Any], works: List[Dict[str, Any]], scholar_payload: Dict[str, Any] | None) -> Dict[str, Any]:
+FIELD_BENCHMARK_TOPICS = 2
+FIELD_BENCHMARK_ACTIVE_MIN_WORKS = 10
+
+BENCHMARK_METRICS = [
+    {"key": "hIndex", "label": "h-index", "api": "summary_stats.h_index", "hi": 400},
+    {"key": "i10Index", "label": "i10-index", "api": "summary_stats.i10_index", "hi": 800},
+    {"key": "citedByCount", "label": "Total citations", "api": "cited_by_count", "hi": 500000},
+    {"key": "worksCount", "label": "Works", "api": "works_count", "hi": 5000},
+]
+
+
+def author_count(session: requests.Session, filt: str) -> int:
+    payload = openalex_get(
+        session, "https://api.openalex.org/authors", filter=filt, **{"per-page": 1}
+    )
+    return safe_int((payload.get("meta") or {}).get("count"))
+
+
+def median_via_count(
+    session: requests.Session, base_filter: str, api_field: str, total: int, lo: int = 0, hi: int = 1000
+) -> int | None:
+    """Exact median of a metric over a population, via OpenAlex count() binary search."""
+    if total <= 0:
+        return None
+    target = total / 2
+    while lo < hi:
+        mid = (lo + hi) // 2
+        below = author_count(session, f"{base_filter},{api_field}:<{mid}")
+        if below < target:
+            lo = mid + 1
+        else:
+            hi = mid
+    return lo
+
+
+def build_field_benchmark(session: requests.Session, author: Dict[str, Any]) -> Dict[str, Any] | None:
+    """Position the author against peers in the SAME OpenAlex topics.
+
+    Peers = authors who publish under the same topic and are "active"
+    (>= FIELD_BENCHMARK_ACTIVE_MIN_WORKS works), so single-paper authors do not
+    deflate the comparison. For each metric we report the author's value, the
+    typical peer (median), and an exact percentile (share of peers below the
+    author). OpenAlex-only on both sides so the comparison is apples-to-apples
+    (OpenAlex indexes fewer citations than Google Scholar).
+    """
+    stats = author.get("summary_stats") or {}
+    self_metrics = {
+        "hIndex": safe_int(stats.get("h_index")),
+        "i10Index": safe_int(stats.get("i10_index")),
+        "citedByCount": safe_int(author.get("cited_by_count")),
+        "worksCount": safe_int(author.get("works_count")),
+    }
+
+    topics = sorted(
+        author.get("topics", []), key=lambda t: -safe_int(t.get("count"))
+    )[:FIELD_BENCHMARK_TOPICS]
+    active = f"works_count:>{FIELD_BENCHMARK_ACTIVE_MIN_WORKS - 1}"
+
+    populations: List[Dict[str, Any]] = []
+    for topic in topics:
+        topic_id = clean_text(topic.get("id")).split("/")[-1]
+        if not topic_id:
+            continue
+        base = f"topics.id:{topic_id},{active}"
+        total = author_count(session, base)
+        if total <= 0:
+            continue
+
+        metrics: List[Dict[str, Any]] = []
+        for metric in BENCHMARK_METRICS:
+            mine = self_metrics[metric["key"]]
+            below = author_count(session, f"{base},{metric['api']}:<{mine}")
+            percentile = round(below / total * 100, 1)
+            median = median_via_count(session, base, metric["api"], total, 0, metric["hi"])
+            metrics.append(
+                {
+                    "key": metric["key"],
+                    "label": metric["label"],
+                    "me": mine,
+                    "median": median,
+                    "percentile": percentile,
+                    "topPercent": round(100 - percentile, 1),
+                }
+            )
+
+        subfield = topic.get("subfield") or {}
+        field = topic.get("field") or {}
+        populations.append(
+            {
+                "topicId": topic_id,
+                "topic": clean_text(topic.get("display_name")),
+                "subfield": clean_text(subfield.get("display_name")),
+                "field": clean_text(field.get("display_name")),
+                "activeCount": total,
+                "metrics": metrics,
+            }
+        )
+
+    if not populations:
+        return None
+
+    return {
+        "provider": "OpenAlex",
+        "activeMinWorks": FIELD_BENCHMARK_ACTIVE_MIN_WORKS,
+        "self": self_metrics,
+        "populations": populations,
+    }
+
+
+def build_payload(
+    author: Dict[str, Any],
+    works: List[Dict[str, Any]],
+    scholar_payload: Dict[str, Any] | None,
+    field_benchmark: Dict[str, Any] | None = None,
+) -> Dict[str, Any]:
     current_year = dt.date.today().year
     openalex_annual_series = build_annual_series(author)
     annual_series = [
@@ -613,6 +727,7 @@ def build_payload(author: Dict[str, Any], works: List[Dict[str, Any]], scholar_p
         "sourceDistribution": source_distribution,
         "coauthorNetwork": build_coauthor_network(works, OPENALEX_AUTHOR_ID),
         "topicCluster": build_topic_cluster(author, works),
+        "fieldBenchmark": field_benchmark,
     }
 
 
@@ -623,12 +738,19 @@ def main() -> None:
     args = parser.parse_args()
 
     session = requests.Session()
-    session.headers.update({"User-Agent": "jmoon-github-cv/1.0"})
+    session.headers.update({"User-Agent": "jmoon-github-cv/1.0 (mailto:jewoong.moon@gmail.com)"})
 
     author = fetch_author(session, OPENALEX_AUTHOR_ID)
     works = fetch_works(session, OPENALEX_AUTHOR_ID)
     scholar_payload = load_json(args.scholar_input)
-    payload = build_payload(author, works, scholar_payload)
+
+    try:
+        field_benchmark = build_field_benchmark(session, author)
+    except Exception as exc:  # benchmark is enrichment; never fail the whole refresh
+        print(f"Field benchmark skipped: {exc}")
+        field_benchmark = None
+
+    payload = build_payload(author, works, scholar_payload, field_benchmark)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -637,6 +759,9 @@ def main() -> None:
     print(f"Author: {payload['author']['name']}")
     print(f"Works analyzed: {len(payload['works'])}")
     print(f"Citation summary source: {payload['source']['summaryProvider']}")
+    if field_benchmark:
+        pops = ", ".join(f"{p['topic']} (n={p['activeCount']})" for p in field_benchmark["populations"])
+        print(f"Field benchmark: {pops}")
 
 
 if __name__ == "__main__":

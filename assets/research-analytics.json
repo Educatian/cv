@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T22:35:49.317253+00:00",
+  "generatedAt": "2026-06-16T22:53:01.568848+00:00",
   "source": {
     "provider": "Google Scholar + OpenAlex",
     "authorId": "https://openalex.org/A5079348611",
@@ -12,7 +12,7 @@
     "networkProvider": "OpenAlex",
     "topicProvider": "OpenAlex",
     "openAccessProvider": "OpenAlex",
-    "openalexGeneratedAt": "2026-06-16T22:35:49.317253+00:00",
+    "openalexGeneratedAt": "2026-06-16T22:53:01.568848+00:00",
     "scholarGeneratedAt": "2026-06-16T22:35:47.933Z"
   },
   "author": {
@@ -2942,5 +2942,99 @@
       "weight": 4.691,
       "type": "topic"
     }
-  ]
+  ],
+  "fieldBenchmark": {
+    "provider": "OpenAlex",
+    "activeMinWorks": 10,
+    "self": {
+      "hIndex": 19,
+      "i10Index": 29,
+      "citedByCount": 1499,
+      "worksCount": 80
+    },
+    "populations": [
+      {
+        "topicId": "T10731",
+        "topic": "Educational Games and Gamification",
+        "subfield": "Developmental and Educational Psychology",
+        "field": "Psychology",
+        "activeCount": 15116,
+        "metrics": [
+          {
+            "key": "hIndex",
+            "label": "h-index",
+            "me": 19,
+            "median": 6,
+            "percentile": 94.7,
+            "topPercent": 5.3
+          },
+          {
+            "key": "i10Index",
+            "label": "i10-index",
+            "me": 29,
+            "median": 4,
+            "percentile": 94.6,
+            "topPercent": 5.4
+          },
+          {
+            "key": "citedByCount",
+            "label": "Total citations",
+            "me": 1499,
+            "median": 113,
+            "percentile": 93.8,
+            "topPercent": 6.2
+          },
+          {
+            "key": "worksCount",
+            "label": "Works",
+            "me": 80,
+            "median": 21,
+            "percentile": 90.9,
+            "topPercent": 9.1
+          }
+        ]
+      },
+      {
+        "topicId": "T11122",
+        "topic": "Online Learning and Analytics",
+        "subfield": "Computer Science Applications",
+        "field": "Computer Science",
+        "activeCount": 16696,
+        "metrics": [
+          {
+            "key": "hIndex",
+            "label": "h-index",
+            "me": 19,
+            "median": 7,
+            "percentile": 93.1,
+            "topPercent": 6.9
+          },
+          {
+            "key": "i10Index",
+            "label": "i10-index",
+            "me": 29,
+            "median": 5,
+            "percentile": 92.9,
+            "topPercent": 7.1
+          },
+          {
+            "key": "citedByCount",
+            "label": "Total citations",
+            "me": 1499,
+            "median": 143,
+            "percentile": 92.1,
+            "topPercent": 7.9
+          },
+          {
+            "key": "worksCount",
+            "label": "Works",
+            "me": 80,
+            "median": 23,
+            "percentile": 88.9,
+            "topPercent": 11.1
+          }
+        ]
+      }
+    ]
+  }
 }

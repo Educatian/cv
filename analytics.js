@@ -216,6 +216,63 @@ function renderAnalyticsMetrics(data) {
     .join("");
 }
 
+function renderFieldBenchmark(data) {
+  const root = document.getElementById("analytics-field-benchmark");
+  const section = document.getElementById("analytics-field-section");
+  if (!root) {
+    return;
+  }
+
+  const bench = data.fieldBenchmark;
+  if (!bench || !Array.isArray(bench.populations) || !bench.populations.length) {
+    root.innerHTML = "";
+    if (section) {
+      section.hidden = true;
+    }
+    return;
+  }
+
+  if (section) {
+    section.hidden = false;
+  }
+
+  root.innerHTML = bench.populations
+    .map((pop) => {
+      const rows = pop.metrics
+        .map((metric) => {
+          const pctile = Math.max(0, Math.min(100, 100 - (metric.topPercent || 0)));
+          return `
+            <article class="analytics-bar-card">
+              <div class="analytics-bar-topline">
+                <span class="analytics-bar-title">${analyticsEscapeHtml(metric.label)}</span>
+                <span class="analytics-bar-value">Top ${analyticsFormatDecimal(metric.topPercent, 1)}%</span>
+              </div>
+              <div class="analytics-bar-track">
+                <span class="analytics-bar-fill" style="width:${Math.max(4, pctile)}%"></span>
+              </div>
+              <div class="analytics-bar-meta">You <strong>${analyticsFormatNumber(
+                metric.me
+              )}</strong> &middot; typical peer ${analyticsFormatNumber(metric.median)} (median)</div>
+            </article>
+          `;
+        })
+        .join("");
+
+      return `
+        <div class="analytics-field-pop">
+          <div class="analytics-field-popname">
+            <strong>${analyticsEscapeHtml(pop.topic)}</strong>
+            <span>${analyticsFormatNumber(pop.activeCount)} active researchers &middot; ≥${
+        bench.activeMinWorks
+      } works${pop.field ? ` &middot; ${analyticsEscapeHtml(pop.field)}` : ""}</span>
+          </div>
+          ${rows}
+        </div>
+      `;
+    })
+    .join("");
+}
+
 function renderAccessSummary(data) {
   const summaryRoot = document.getElementById("analytics-access-summary");
   const statusRoot = document.getElementById("analytics-status-list");
@@ -836,6 +893,7 @@ function renderCoauthorNetwork(data) {
 function renderAnalyticsDashboard(data) {
   renderAnalyticsMeta(data);
   renderAnalyticsMetrics(data);
+  renderFieldBenchmark(data);
   renderAccessSummary(data);
   renderTopWorks(data);
   renderSourceDistribution(data);

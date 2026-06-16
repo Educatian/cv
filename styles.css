@@ -2820,6 +2820,33 @@ a {
   background: linear-gradient(90deg, #6b7680, #b1bbc2);
 }
 
+.analytics-field-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.6rem;
+}
+
+.analytics-field-pop {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.analytics-field-popname {
+  display: grid;
+  gap: 0.15rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #ece7de;
+}
+
+.analytics-field-popname strong {
+  font-weight: 600;
+}
+
+.analytics-field-popname span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
 .status-diamond,
 .status-gold,
 .status-hybrid,
