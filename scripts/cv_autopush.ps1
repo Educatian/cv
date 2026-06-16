@@ -43,7 +43,9 @@ try {
 # cheap insurance against silently-dropped entries (e.g. [57] CHAT-anchored
 # was missed once on 2026-05-28 due to this exact race).
 L "[autopush] regenerating site-data"
-& python scripts/generate_site_data.py 2>&1 | ForEach-Object { L "[gen] $_" }
+# Use the `py` launcher (-> Python311 with python-docx), not bare `python`:
+# the hermes-agent venv now shadows `python` on PATH and lacks python-docx.
+& py scripts/generate_site_data.py 2>&1 | ForEach-Object { L "[gen] $_" }
 if ($LASTEXITCODE -ne 0) {
   L "[autopush] generate_site_data.py FAILED; abort"
   return
@@ -52,7 +54,7 @@ if ($LASTEXITCODE -ne 0) {
 # Sanity check: parsed publication count must equal the (n = N) declared in
 # the docx's "International and Peer-reviewed" header. If they disagree, the
 # parser dropped an entry — abort so we never push a corrupted site.
-$sanity = & python -c @"
+$sanity = & py -c @"
 import json, re, sys
 from pathlib import Path
 from docx import Document
