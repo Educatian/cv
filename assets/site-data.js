@@ -1,6 +1,6 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-06-03T16:00:03.892458+00:00",
-  "sourceCv": "C:\\Users\\jewoo\\Desktop\\cv\\CV_202605_MOON.docx",
+  "generatedAt": "2026-06-16T17:16:19.609482+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "May 27, 2026",
@@ -47,15 +47,15 @@ window.__cvSiteData = {
       "label": "Conference proceedings"
     },
     {
-      "value": "10",
+      "value": "9",
       "label": "Book chapters"
     },
     {
-      "value": "40",
+      "value": "39",
       "label": "Working papers"
     },
     {
-      "value": "70",
+      "value": "71",
       "label": "Presentations"
     },
     {
@@ -161,17 +161,17 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Accepted article in Ethics and Behavior: Human-centered generative AI in education: Ethical challenges and equity-driven solutions."
+      "text": "Minor revision manuscript for Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
     },
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Accepted article in Educational Psychology Review: Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning."
+      "text": "Accepted article in ZDM – International Journal on Mathematics Education: How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge."
     },
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Minor revision manuscript for Interactive Learning Environments: A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education."
+      "text": "Accepted article in Simulation & Gaming: How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography."
     },
     {
       "date": "2027",
@@ -243,15 +243,43 @@ window.__cvSiteData = {
   "publications": [
     {
       "year": "2026",
-      "title": "Human-centered generative AI in education: Ethical challenges and equity-driven solutions",
-      "authors": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A.",
-      "venue": "Ethics and Behavior",
+      "title": "Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers",
+      "authors": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M.",
+      "venue": "Cogent Education",
       "link": "",
       "tags": [
         "GenAI",
-        "Ethics"
+        "Teacher Ed"
       ],
-      "note": "mentored collaboration",
+      "note": "",
+      "status": "Minor revision"
+    },
+    {
+      "year": "2026",
+      "title": "How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge",
+      "authors": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M.",
+      "venue": "ZDM – International Journal on Mathematics Education",
+      "link": "",
+      "tags": [
+        "GenAI",
+        "Teacher Ed",
+        "STEM"
+      ],
+      "note": "",
+      "status": "Accepted"
+    },
+    {
+      "year": "2026",
+      "title": "How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography",
+      "authors": "Jeong, Y., Lee, Y., Byun, G., & Moon, J.",
+      "venue": "Simulation & Gaming",
+      "link": "https://doi.org/10.1177/10468781261464242",
+      "tags": [
+        "GenAI",
+        "Game-Based",
+        "Teacher Ed"
+      ],
+      "note": "corresponding author",
       "status": "Accepted"
     },
     {
@@ -272,54 +300,27 @@ window.__cvSiteData = {
       "title": "A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
       "authors": "Moon, J.",
       "venue": "Interactive Learning Environments",
-      "link": "",
+      "link": "https://doi.org/10.1080/10494820.2026.2690104",
       "tags": [
         "GenAI",
         "Analytics",
         "STEM"
       ],
       "note": "corresponding author",
-      "status": "Minor revision"
+      "status": ""
     },
     {
       "year": "2026",
-      "title": "How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge",
-      "authors": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M.",
-      "venue": "ZDM – International Journal on Mathematics Education",
-      "link": "",
+      "title": "Human-centered generative AI in education: Ethical challenges and equity-driven solutions",
+      "authors": "Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A.",
+      "venue": "Ethics and Behavior",
+      "link": "http://dx.doi.org/10.1080/10508422.2026.2685014",
       "tags": [
         "GenAI",
-        "Teacher Ed",
-        "STEM"
+        "Ethics"
       ],
-      "note": "",
-      "status": "Minor revision"
-    },
-    {
-      "year": "2026",
-      "title": "Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers",
-      "authors": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M.",
-      "venue": "Cogent Education",
-      "link": "",
-      "tags": [
-        "GenAI",
-        "Teacher Ed"
-      ],
-      "note": "",
-      "status": "Minor revision"
-    },
-    {
-      "year": "2026",
-      "title": "Navigating practitioner roles in generative AI-enhanced educational game design: A collective autoethnography",
-      "authors": "Jeong, Y., Lee, Y., Byun, G., & Moon, J.",
-      "venue": "Simulation & Gaming",
-      "link": "",
-      "tags": [
-        "GenAI",
-        "Game-Based"
-      ],
-      "note": "corresponding author",
-      "status": "Minor revision"
+      "note": "mentored collaboration",
+      "status": ""
     },
     {
       "year": "2026",
@@ -1059,8 +1060,20 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A. (Accepted, 2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior [SSCI-indexed, IF = 1.9, IF5 = 2.1]",
+      "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Minor revision, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
       "link": ""
+    },
+    {
+      "year": "2026",
+      "category": "International",
+      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M. (Accepted, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education [SSCI-indexed, IF = 2.4, IF5 = 3.1]",
+      "link": ""
+    },
+    {
+      "year": "2026",
+      "category": "International",
+      "citation": "‡ Jeong, Y., Lee, Y., Byun, G., & Moon, J. (Accepted, 2026). How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography. Simulation & Gaming. https://doi.org/10.1177/10468781261464242 [ESCI-indexed, IF = 1.8, IF5 = 2.7]",
+      "link": "https://doi.org/10.1177/10468781261464242"
     },
     {
       "year": "2026",
@@ -1071,26 +1084,14 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Moon, J. (Minor revision, 2026). A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments. [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
-      "link": ""
+      "citation": "‡ Moon, J. (2026). A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2690104 [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
+      "link": "https://doi.org/10.1080/10494820.2026.2690104"
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M. (Minor revision, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education [SSCI-indexed, IF = 2.4, IF5 = 3.1]",
-      "link": ""
-    },
-    {
-      "year": "2026",
-      "category": "International",
-      "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Minor revision, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
-      "link": ""
-    },
-    {
-      "year": "2026",
-      "category": "International",
-      "citation": "‡ Jeong, Y., Lee, Y., Byun, G., & Moon, J. (Minor revision, 2026). Navigating practitioner roles in generative AI-enhanced educational game design: A collective autoethnography. Simulation & Gaming [ESCI-indexed, IF = 1.8, IF5 = 2.7]",
-      "link": ""
+      "citation": "* Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A. (2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior. http://dx.doi.org/10.1080/10508422.2026.2685014 [SSCI-indexed, IF = 1.9, IF5 = 2.1]",
+      "link": "http://dx.doi.org/10.1080/10508422.2026.2685014"
     },
     {
       "year": "2026",
@@ -1435,6 +1436,17 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
+      "title": "Learning to orchestrate with generative-AI student agents: Process analytics of pre-service teacher discourse",
+      "authors": "‡ Moon, J., Hong, S., & Hwang, J.",
+      "venue": "Journal of Computing in Higher Education",
+      "citation": "‡ Moon, J., Hong, S., & Hwang, J. (Submitted). Learning to orchestrate with generative-AI student agents: Process analytics of pre-service teacher discourse. Journal of Computing in Higher Education (SSCI-indexed)",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
       "title": "Embodied arts-integrated AI literacy: A nested mixed-methods preliminary study with K-12 educators",
       "authors": "* Stephen, A., Moon, J., Arezoo, G.,",
       "venue": "TechTrends",
@@ -1554,12 +1566,12 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Submitted",
+      "status": "Under review",
       "year": "Pipeline",
       "title": "Computational modeling of ethical reasoning regulation: Discovering latent mechanisms through model inspection",
       "authors": "‡ Moon, J., Hong, S., Chae, J., Cho, H., & Lee, Y. J.",
       "venue": "International Journal of Educational Technology in Higher Education",
-      "citation": "‡ Moon, J., Hong, S., Chae, J., Cho, H., & Lee, Y. J. (Submitted). Computational modeling of ethical reasoning regulation: Discovering latent mechanisms through model inspection. International Journal of Educational Technology in Higher Education (SSCI-indexed).",
+      "citation": "‡ Moon, J., Hong, S., Chae, J., Cho, H., & Lee, Y. J. (Under review). Computational modeling of ethical reasoning regulation: Discovering latent mechanisms through model inspection. International Journal of Educational Technology in Higher Education (SSCI-indexed).",
       "link": ""
     },
     {
@@ -1598,23 +1610,23 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Working paper",
+      "status": "Under review",
       "year": "Pipeline",
-      "title": "‡ Moon, J., Aldemir, T., & Byun, G. (Under revision). Design affordance diagnostic framework for computational thinking ",
-      "authors": "‡ Moon, J., Aldemir, T., & Byun, G. (Under revision). Design affordance diagnostic framework for computational thinking assessment interactive virtual makerspaces: An exploratory study. Interactive Learning Environments. (SSCI-indexed journal).",
-      "venue": "",
-      "citation": "‡ Moon, J., Aldemir, T., & Byun, G. (Under revision). Design affordance diagnostic framework for computational thinking assessment interactive virtual makerspaces: An exploratory study. Interactive Learning Environments. (SSCI-indexed journal).",
+      "title": "Design affordance diagnostic framework for computational thinking assessment interactive virtual makerspaces: An exploratory study",
+      "authors": "‡ Moon, J., Aldemir, T., & Byun, G.",
+      "venue": "Interactive Learning Environments",
+      "citation": "‡ Moon, J., Aldemir, T., & Byun, G. (Under review). Design affordance diagnostic framework for computational thinking assessment interactive virtual makerspaces: An exploratory study. Interactive Learning Environments. (SSCI-indexed journal).",
       "link": ""
     },
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Revising to resubmit",
+      "status": "Submitted",
       "year": "Pipeline",
       "title": "Semantic trajectory analysis of learner question in AI-based learning: Comparing RAG-based and generative AI",
       "authors": "Lee, H., Lim, J., & Moon, J.",
       "venue": "Journal of Educational Data Mining",
-      "citation": "Lee, H., Lim, J., & Moon, J. (Revising to resubmit). Semantic trajectory analysis of learner question in AI-based learning: Comparing RAG-based and generative AI. Journal of Educational Data Mining.",
+      "citation": "Lee, H., Lim, J., & Moon, J. (Submitted). Semantic trajectory analysis of learner question in AI-based learning: Comparing RAG-based and generative AI. Journal of Educational Data Mining.",
       "link": ""
     },
     {
@@ -1798,17 +1810,6 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "In preparation",
       "year": "Pipeline",
-      "title": "Learning to orchestrate with generative-AI student agents: Process analytics of pre-service teacher discourse",
-      "authors": "‡ Moon, J., & Hong, S.",
-      "venue": "Journal of Computing in Higher Education",
-      "citation": "‡ Moon, J., & Hong, S. (In preparation). Learning to orchestrate with generative-AI student agents: Process analytics of pre-service teacher discourse. Journal of Computing in Higher Education (SSCI-indexed)",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
       "title": "Modeling behavioral dynamics and cognitive states in virtual reality safety training: A learning analytics approach",
       "authors": "* Abu, S., Awoyemi, I., Moon, J.",
       "venue": "",
@@ -1824,17 +1825,6 @@ window.__cvSiteData = {
       "authors": "* Abu, S., Awoyemi, I., Moon, J.",
       "venue": "",
       "citation": "* Abu, S., Awoyemi, I., Moon, J. (In preparation). Predictive validation of behavioral learning analytics: A machine learning approach.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Conference Proposal",
-      "status": "Revising to resubmit",
-      "year": "Pipeline",
-      "title": "Enhancing the resolution of instructional design evaluation: Reliability and validity analysis of a multi-agent system applying Gagné’s nine events of instruction",
-      "authors": "Seo, J., Moon, J., Hwang, J., Eom, T., & Hong, S.",
-      "venue": "",
-      "citation": "Seo, J., Moon, J., Hwang, J., Eom, T., & Hong, S. (Revising to resubmit). Enhancing the resolution of instructional design evaluation: Reliability and validity analysis of a multi-agent system applying Gagné’s nine events of instruction.",
       "link": ""
     },
     {
@@ -1872,12 +1862,12 @@ window.__cvSiteData = {
     }
   ],
   "workingPaperSummary": {
-    "total": 40,
-    "submittedOrUnderReview": 30,
-    "inPreparation": 10,
+    "total": 39,
+    "submittedOrUnderReview": 31,
+    "inPreparation": 8,
     "journalManuscripts": 34,
     "bookChapters": 2,
-    "conferenceProposals": 4
+    "conferenceProposals": 3
   },
   "grants": {
     "funded": [
@@ -2118,6 +2108,10 @@ window.__cvSiteData = {
   "serviceReviewCopy": "Review service spans 23 journals across educational technology, learning sciences, and immersive learning, alongside grant review for National Science Foundation and Swiss National Sciences Foundation.",
   "talks": [
     {
+      "title": "Enhancing the resolution of instructional design evaluation: Reliability and validity analysis of a multi-agent system applying Gagné’s nine events of instruction",
+      "meta": "ICER 2026, Seoul, South Korea."
+    },
+    {
       "title": "Teachers Designing AI: A Mentored Model of Situated Learning in the National AI Challenge",
       "meta": "Presented at the 2026 International Conference on Learning Sciences and Educational Innovation (ICOLSEI). Seoul, South Korea."
     },
@@ -2144,10 +2138,6 @@ window.__cvSiteData = {
     {
       "title": "Embodied arts-Integrated AI literacy: A nested mixed-methods preliminary study with K-12 educators",
       "meta": "Poster Session, AERA 2026, Los Angeles, United States."
-    },
-    {
-      "title": "(Upcoming 2026, April)",
-      "meta": "Modeling behavioral dynamics and cognitive states in VR safety training: A learning analytics approach. Poster Session, AERA 2026, Los Angeles, United States."
     }
   ]
 };
