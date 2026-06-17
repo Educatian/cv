@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T22:35:47.933Z",
+  "generatedAt": "2026-06-17T12:21:55.955Z",
   "profileUrl": "https://scholar.google.com/citations?user=b-epW38AAAAJ&hl=en&oi=ao",
   "author": {
     "name": "Jewoong Moon",
@@ -14,8 +14,8 @@
     ]
   },
   "summary": {
-    "totalCitations": 2841,
-    "sinceYearCitations": 2772,
+    "totalCitations": 2843,
+    "sinceYearCitations": 2774,
     "hIndex": 24,
     "sinceYearHIndex": 24,
     "i10Index": 45,
@@ -53,7 +53,7 @@
     },
     {
       "year": 2026,
-      "citations": 647
+      "citations": 649
     }
   ],
   "publicAccess": {
@@ -67,7 +67,7 @@
       "authors": "K Banihashem, N Taghizadeh, O Noroozi, J Moon, H Drachsler",
       "venue": "International Journal of Educational Technology in Higher Education",
       "rawVenue": "International Journal of Educational Technology in Higher Education, 2024",
-      "citations": 376,
+      "citations": 377,
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:_xSYboBqXhAC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6356331636822416999"
@@ -338,6 +338,17 @@
     },
     {
       "id": "scholar-26",
+      "title": "Multimodal Data Fusion to Track Students' Distress during Educational Gameplay.",
+      "authors": "J Moon, F Ke, Z Sokolikj, I Dahlstrom-Hakki",
+      "venue": "Journal of Learning Analytics 9 (3), 75-87",
+      "rawVenue": "Journal of Learning Analytics 9 (3), 75-87, 2022",
+      "citations": 20,
+      "year": 2022,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:ns9cj8rnVeAC",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9653261600944735367"
+    },
+    {
+      "id": "scholar-27",
       "title": "Generative AI-enhanced virtual reality simulation for pre-service teacher education: A mixed-methods analysis of usability and instructional utility for course integration",
       "authors": "S Hong, J Moon, T Eom, ID Awoyemi, H Juno",
       "venue": "Education Sciences",
@@ -348,7 +359,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3631122350901003460"
     },
     {
-      "id": "scholar-27",
+      "id": "scholar-28",
       "title": "A scoping review of game-based learning on mathematics teacher education",
       "authors": "J Moon, S Yeo, Q Si, AS Ljeluola",
       "venue": "International Journal of Mathematical Education in Science and Technology",
@@ -359,7 +370,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13105662047661056284"
     },
     {
-      "id": "scholar-28",
+      "id": "scholar-29",
       "title": "Designing and deploying a virtual social sandbox for autistic children",
       "authors": "F Ke, J Moon, Z Sokolikj",
       "venue": "Disability and Rehabilitation: Assistive Technology",
@@ -368,17 +379,6 @@
       "year": 2022,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:NaGl4SEjCO4C",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4568573419983448723"
-    },
-    {
-      "id": "scholar-29",
-      "title": "Multimodal Data Fusion to Track Students' Distress during Educational Gameplay.",
-      "authors": "J Moon, F Ke, Z Sokolikj, I Dahlstrom-Hakki",
-      "venue": "Journal of Learning Analytics 9 (3), 75-87",
-      "rawVenue": "Journal of Learning Analytics 9 (3), 75-87, 2022",
-      "citations": 19,
-      "year": 2022,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:ns9cj8rnVeAC",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9653261600944735367"
     },
     {
       "id": "scholar-30",

@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-06-16T22:35:50.454986+00:00",
+  "generatedAt": "2026-06-17T12:22:18.960330+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -432,7 +432,7 @@ window.__cvSiteData = {
       "year": "2025",
       "title": "Socio-material interactions: A multi-case study on AI chatbot integration in asynchronous online learning",
       "authors": "Moon, J., Jung, Y., Bae, H., Lee, U., & Kim, K.",
-      "venue": "Innovation in Education and Teaching International",
+      "venue": "Innovations in Education and Teaching International",
       "link": "http://dx.doi.org/10.1080/14703297.2025.2534189",
       "tags": [
         "GenAI",
@@ -1066,37 +1066,37 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M. (Accepted, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education [SSCI-indexed, IF = 2.4, IF5 = 3.1]",
+      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M. (Accepted, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
       "link": ""
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Jeong, Y., Lee, Y., Byun, G., & Moon, J. (Accepted, 2026). How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography. Simulation & Gaming. https://doi.org/10.1177/10468781261464242 [ESCI-indexed, IF = 1.8, IF5 = 2.7]",
+      "citation": "‡ Jeong, Y., Lee, Y., Byun, G., & Moon, J. (Accepted, 2026). How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography. Simulation & Gaming. https://doi.org/10.1177/10468781261464242 [ESCI-indexed, IF = 2.2, IF5 = 3.2]",
       "link": "https://doi.org/10.1177/10468781261464242"
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P. (Accepted, 2026). Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning. Educational Psychology Review [SSCI-indexed, IF = 8.8, IF5 = 14.2]",
+      "citation": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P. (Accepted, 2026). Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning. Educational Psychology Review [SSCI-indexed, IF = 11.9, IF5 = 16.4]",
       "link": ""
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Moon, J. (2026). A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2690104 [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
+      "citation": "‡ Moon, J. (2026). A cultural history activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2690104 [SSCI-indexed, IF =6.7, IF5 = 7.1]",
       "link": "https://doi.org/10.1080/10494820.2026.2690104"
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A. (2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior. http://dx.doi.org/10.1080/10508422.2026.2685014 [SSCI-indexed, IF = 1.9, IF5 = 2.1]",
+      "citation": "* Abu, S., Uddin, M., Moon, J. Awoyemi, I., Mintah, R., & Ghooreian, A. (2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior. http://dx.doi.org/10.1080/10508422.2026.2685014 [SSCI-indexed, IF = 2.3, IF5 = 2.5]",
       "link": "http://dx.doi.org/10.1080/10508422.2026.2685014"
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Uddin, M., Luo, F., & Moon, J. (2026). Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2679063 [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
+      "citation": "* Uddin, M., Luo, F., & Moon, J. (2026). Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2679063 [SSCI-indexed, IF =6.7, IF5 = 7.1]",
       "link": "https://doi.org/10.1080/10494820.2026.2679063"
     },
     {
@@ -1114,67 +1114,67 @@ window.__cvSiteData = {
     {
       "year": "2025",
       "category": "International",
-      "citation": "Moon, J., Jung, Y., Kim, S., Bae, Y., & Schneider, B. (2025). Fostering innovation at the intersection of maker education and extended reality (XR). Computers and Education: X Reality. https://doi.org/10.1016/j.cexr.2025.100124 [ESCI-indexed, Q1]",
+      "citation": "Moon, J., Jung, Y., Kim, S., Bae, Y., & Schneider, B. (2025). Fostering innovation at the intersection of maker education and extended reality (XR). Computers and Education: X Reality. https://doi.org/10.1016/j.cexr.2025.100124 [ESCI-indexed, IF =5.9, IF5 = 5.8]",
       "link": "https://doi.org/10.1016/j.cexr.2025.100124"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "Hong, S., Eom, T., & Moon, J. (2025). Virtual reality simulation to foster authentic learning in pre-service teacher education: A systematic literature review. Educational Research Review https://doi.org/10.1016/j.edurev.2025.100743 [SSCI-indexed; IF = 10.6, IF5 = 14.9]",
+      "citation": "Hong, S., Eom, T., & Moon, J. (2025). Virtual reality simulation to foster authentic learning in pre-service teacher education: A systematic literature review. Educational Research Review https://doi.org/10.1016/j.edurev.2025.100743 [SSCI-indexed; IF = 10.3, IF5 = 16.7]",
       "link": "https://doi.org/10.1016/j.edurev.2025.100743"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "Aldemir, T., Kilinc, S., Bicer, A., Moon, J., Kwok, M. (2025). Exploring emergent AI-TPACK competencies in a two-week AI literacy module for preservice teachers. Teaching and Teacher Education https://doi.org/10.1016/j.tate.2025.105231 [SSCI-indexed; IF = 3.9, IF5 = 4.9]",
+      "citation": "Aldemir, T., Kilinc, S., Bicer, A., Moon, J., Kwok, M. (2025). Exploring emergent AI-TPACK competencies in a two-week AI literacy module for preservice teachers. Teaching and Teacher Education https://doi.org/10.1016/j.tate.2025.105231 [SSCI-indexed; IF = 4.3, IF5 = 5.5]",
       "link": "https://doi.org/10.1016/j.tate.2025.105231"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "*Marchiori, R., Song, S., Moon, J., Awoyemi, I., Ghooreian, A., & Ramenzapour. E., (2025). A systematic review of technology-enhanced learning approaches to foster construction engineering and management competencies. Computer Applications in Engineering Education https://doi.org/10.1002/cae.70074 [SCIE-indexed; IF = 2.2, IF5 = 2.6]",
+      "citation": "*Marchiori, R., Song, S., Moon, J., Awoyemi, I., Ghooreian, A., & Ramenzapour. E., (2025). A systematic review of technology-enhanced learning approaches to foster construction engineering and management competencies. Computer Applications in Engineering Education https://doi.org/10.1002/cae.70074 [SCIE-indexed; IF = 2.7, IF5 = 3.0]",
       "link": "https://doi.org/10.1002/cae.70074"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "*‡ Hong, S., Moon, J., Eom, T., Awoyemi, I., & Hwang, J. (2025). Generative AI-enhanced teacher simulation: A mixed-methods analysis of usability and instructional utility for course integration. Education Sciences https://doi.org/10.3390/educsci15080997 [ESCI-indexed; IF = 2.6, IF5 = 2.7]",
+      "citation": "*‡ Hong, S., Moon, J., Eom, T., Awoyemi, I., & Hwang, J. (2025). Generative AI-enhanced teacher simulation: A mixed-methods analysis of usability and instructional utility for course integration. Education Sciences https://doi.org/10.3390/educsci15080997 [ESCI-indexed; IF = 3.5, IF5 = 3.3]",
       "link": "https://doi.org/10.3390/educsci15080997"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "‡ Moon, J., Jung, Y., Bae, H., Lee, U., & Kim, K. (2025). Socio-material interactions: A multi-case study on AI chatbot integration in asynchronous online learning. Innovation in Education and Teaching International http://dx.doi.org/10.1080/14703297.2025.2534189 [SSCI-indexed; IF = 4.9, IF5 = 3.5]",
+      "citation": "‡ Moon, J., Jung, Y., Bae, H., Lee, U., & Kim, K. (2025). Socio-material interactions: A multi-case study on AI chatbot integration in asynchronous online learning. Innovations in Education and Teaching International http://dx.doi.org/10.1080/14703297.2025.2534189 [SSCI-indexed; IF = 6.2, IF5 = 4.2]",
       "link": "http://dx.doi.org/10.1080/14703297.2025.2534189"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "Aldemir, T., Moon, J., Bicer, A., Byun, G., Carlos Manrique, P., & Vivek, S. (2025). How Non-CS preservice teachers conceptualize and engage with computational thinking through 3D game design: Insights from an extended reality (XR)-enhanced maker experience. Computers & Education: X Reality https://doi.org/10.1016/j.cexr.2025.100099 [ESCI-indexed]",
+      "citation": "Aldemir, T., Moon, J., Bicer, A., Byun, G., Carlos Manrique, P., & Vivek, S. (2025). How Non-CS preservice teachers conceptualize and engage with computational thinking through 3D game design: Insights from an extended reality (XR)-enhanced maker experience. Computers & Education: X Reality https://doi.org/10.1016/j.cexr.2025.100099 [ESCI-indexed, IF =5.9, IF5 = 5.8]",
       "link": "https://doi.org/10.1016/j.cexr.2025.100099"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "‡ Lim, J., Lee, U., Koh, J., Jung, Y., Jung, H., Lee, Y., Byun, G., Jang, Y., Lee, S., & Moon, J. (2025). Development and implementation of a generative artificial intelligence-enhanced simulation to enhance problem-solving skills for pre-service teachers. Computers & Education https://doi.org/10.1016/j.compedu.2025.105306 [SSCI-, SCIE-indexed; IF = 10.5, IF5 = 13.0]",
+      "citation": "‡ Lim, J., Lee, U., Koh, J., Jung, Y., Jung, H., Lee, Y., Byun, G., Jang, Y., Lee, S., & Moon, J. (2025). Development and implementation of a generative artificial intelligence-enhanced simulation to enhance problem-solving skills for pre-service teachers. Computers & Education https://doi.org/10.1016/j.compedu.2025.105306 [SSCI-, SCIE-indexed; IF = 13.2, IF5 = 14.6]",
       "link": "https://doi.org/10.1016/j.compedu.2025.105306"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "Park, Y., Moon, J., & Na, H. (2025). Elementary STEM teachers' open educational resources and TPACK in a professional learning network: A case study. Online Learning Journal. 29(1), 192-215. https://doi.org/10.24059/olj.v29i1.4102 [ESCI-indexed; IF = 2.3, IF5 = 3.7]",
+      "citation": "Park, Y., Moon, J., & Na, H. (2025). Elementary STEM teachers' open educational resources and TPACK in a professional learning network: A case study. Online Learning Journal. 29(1), 192-215. https://doi.org/10.24059/olj.v29i1.4102 [ESCI-indexed; IF = 3.1, IF5 = 3.2]",
       "link": "https://doi.org/10.24059/olj.v29i1.4102"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "Marchiori, R., Song, S., & Moon, J. (2025). Developing heat stress training assessments: A training-driven methodology approach to enhance safety in the construction industry. Journal of Safety Research. 92, 262-271 https://doi.org/10.1016/j.jsr.2024.11.027 [SSCI-indexed; IF = 4.4, IF5 = 4.7]",
+      "citation": "Marchiori, R., Song, S., & Moon, J. (2025). Developing heat stress training assessments: A training-driven methodology approach to enhance safety in the construction industry. Journal of Safety Research. 92, 262-271 https://doi.org/10.1016/j.jsr.2024.11.027 [SSCI-indexed; IF = 4.3, IF5 = 4.8]",
       "link": "https://doi.org/10.1016/j.jsr.2024.11.027"
     },
     {
       "year": "2024",
       "category": "International",
-      "citation": "‡ Moon, J., Ke, F., & Sokolikj, Z. (2024). Game-based performance tasks for assessing representational flexibility of autistic adolescents in a virtual world. Technology, Knowledge, and Learning https://doi.org/10.1007/s10758-024-09806-6 [ESCI-indexed, IF = 3.5, IF5 = 4.2]",
+      "citation": "‡ Moon, J., Ke, F., & Sokolikj, Z. (2024). Game-based performance tasks for assessing representational flexibility of autistic adolescents in a virtual world. Technology, Knowledge, and Learning https://doi.org/10.1007/s10758-024-09806-6 [ESCI-indexed, IF = 4.2, IF5 = 4.7]",
       "link": "https://doi.org/10.1007/s10758-024-09806-6"
     },
     {
@@ -1192,19 +1192,19 @@ window.__cvSiteData = {
     {
       "year": "2024",
       "category": "International",
-      "citation": "‡ Moon, J., Lee, U., Koh, J., Jeong, Y., Byun, G., Lee, Y., & Lim, J. (2024). Generative artificial intelligence in educational game design: Nuanced challenges, design implications, and future research. Technology, Knowledge, and Learning https://doi.org/10.1007/s10758-024-09756-z [ESCI-indexed, IF = 3.5, IF5 = 4.2]",
+      "citation": "‡ Moon, J., Lee, U., Koh, J., Jeong, Y., Byun, G., Lee, Y., & Lim, J. (2024). Generative artificial intelligence in educational game design: Nuanced challenges, design implications, and future research. Technology, Knowledge, and Learning https://doi.org/10.1007/s10758-024-09756-z [ESCI-indexed, IF = 4.2, IF5 = 4.7]",
       "link": "https://doi.org/10.1007/s10758-024-09756-z"
     },
     {
       "year": "2024",
       "category": "International",
-      "citation": "‡ Moon, J., McNeill, L., Edmonds, C., Banihashem, K., & Noroozi, O. (2024). Using learning analytics to explore peer learning patterns in asynchronous gamified environments. International Journal of Educational Technology in Higher Education https://doi.org/10.1186/s41239-024-00476-z [SSCI-indexed, IF = 16.7, IF5 = 15.5]",
+      "citation": "‡ Moon, J., McNeill, L., Edmonds, C., Banihashem, K., & Noroozi, O. (2024). Using learning analytics to explore peer learning patterns in asynchronous gamified environments. International Journal of Educational Technology in Higher Education https://doi.org/10.1186/s41239-024-00476-z [SSCI-indexed, IF = 38.7, IF5 = 24.5]",
       "link": "https://doi.org/10.1186/s41239-024-00476-z"
     },
     {
       "year": "2024",
       "category": "International",
-      "citation": "‡ Moon, J., Yeo, S., Banihashem, K., & Noroozi, O. (2024). Using multimodal learning analytics as a formative assessment tool: Exploring collaborative dynamics in mathematics teacher education. Journal of Computer Assisted Learning https://doi.org/10.1111/jcal.13028 [SSCI-indexed, IF = 4.6, IF5 = 5.8]",
+      "citation": "‡ Moon, J., Yeo, S., Banihashem, K., & Noroozi, O. (2024). Using multimodal learning analytics as a formative assessment tool: Exploring collaborative dynamics in mathematics teacher education. Journal of Computer Assisted Learning https://doi.org/10.1111/jcal.13028 [SSCI-indexed, IF = 5.7, IF5 = 6.8]",
       "link": "https://doi.org/10.1111/jcal.13028"
     },
     {
@@ -1222,7 +1222,7 @@ window.__cvSiteData = {
     {
       "year": "2024",
       "category": "International",
-      "citation": "Choi, G. W., Lim, J., Kim, S., Moon, J., & Jung, Y. (2024). A case study of South Korean elementary school teachers’ emergence remote teaching. Knowledge Management & e-learning: International Journal. 16(2). 259-285. https://doi.org/10.34105/j.kmel.2024.16.013 [ESCI-indexed, IF = 2.8, IF5 = 2.7]",
+      "citation": "Choi, G. W., Lim, J., Kim, S., Moon, J., & Jung, Y. (2024). A case study of South Korean elementary school teachers’ emergence remote teaching. Knowledge Management & e-learning: International Journal. 16(2). 259-285. https://doi.org/10.34105/j.kmel.2024.16.013 [ESCI-indexed, IF = 2.5, IF5 = 2.6]",
       "link": "https://doi.org/10.34105/j.kmel.2024.16.013"
     },
     {
@@ -1234,7 +1234,7 @@ window.__cvSiteData = {
     {
       "year": "2024",
       "category": "International",
-      "citation": "Choi, G. W., Lee, D., Kim, S. H, & Moon, J. (2024). Utilizing generative artificial intelligence for instructional design: Exploring strengths, weakness, opportunities, and threats. TechTrends https://doi.org/10.1007/s11528-024-00967-w [ESCI-indexed, IF = 3.8, IF5 = 3.7]",
+      "citation": "Choi, G. W., Lee, D., Kim, S. H, & Moon, J. (2024). Utilizing generative artificial intelligence for instructional design: Exploring strengths, weakness, opportunities, and threats. TechTrends https://doi.org/10.1007/s11528-024-00967-w [ESCI-indexed, IF = 5.2, IF5 = 4.6]",
       "link": "https://doi.org/10.1007/s11528-024-00967-w"
     },
     {
@@ -1252,7 +1252,7 @@ window.__cvSiteData = {
     {
       "year": "2024",
       "category": "International",
-      "citation": "Banihashem, K., Kerman, N. T., Noroozi, O., Moon, J., & Drachsler, H. (2024). Peer-generated or AI-generated feedback? An empirical study in the context of essay writing. International Journal of Educational Technology in Higher Education, 21, 23. https://doi.org/10.1186/s41239-024-00455-4 [SSCI-indexed, IF = 16.7, IF5 = 15.5]",
+      "citation": "Banihashem, K., Kerman, N. T., Noroozi, O., Moon, J., & Drachsler, H. (2024). Peer-generated or AI-generated feedback? An empirical study in the context of essay writing. International Journal of Educational Technology in Higher Education, 21, 23. https://doi.org/10.1186/s41239-024-00455-4 [SSCI-indexed, IF = 38.7, IF5 = 24.5]",
       "link": "https://doi.org/10.1186/s41239-024-00455-4"
     },
     {
@@ -1264,103 +1264,103 @@ window.__cvSiteData = {
     {
       "year": "2024",
       "category": "International",
-      "citation": "Dai, C., Ke, F., Pan, Y., Moon, J., & Liu, Z. (2024). Effects of artificial intelligence-powered virtual agents on learning outcomes in simulation-based learning: A meta-analysis. Educational Psychology Review, 36, 31. https://doi.org/10.1007/s10648-024-09855-4 [SSCI-indexed, IF = 8.8, IF5 = 14.2]",
+      "citation": "Dai, C., Ke, F., Pan, Y., Moon, J., & Liu, Z. (2024). Effects of artificial intelligence-powered virtual agents on learning outcomes in simulation-based learning: A meta-analysis. Educational Psychology Review, 36, 31. https://doi.org/10.1007/s10648-024-09855-4 [SSCI-indexed, IF = 11.9, IF5 = 16.4]",
       "link": "https://doi.org/10.1007/s10648-024-09855-4"
     },
     {
       "year": "2024",
       "category": "International",
-      "citation": "‡ Moon, J. (2024). Learning experience design of a verbal prompt in virtual reality-based training for children with autism. Research in Learning Technology, 32. https://dx.doi.org/10.25304/rlt.v32.3129 [ESCI-indexed, IF = 1.2, IF5 = 2.1]",
+      "citation": "‡ Moon, J. (2024). Learning experience design of a verbal prompt in virtual reality-based training for children with autism. Research in Learning Technology, 32. https://dx.doi.org/10.25304/rlt.v32.3129 [ESCI-indexed, IF = 2.1, IF5 = 2.4]",
       "link": "https://dx.doi.org/10.25304/rlt.v32.3129"
     },
     {
       "year": "2023",
       "category": "International",
-      "citation": "Glaser, N., Schmidt, M., Thull, C., Tennant, A., Moon, J., & Ousley, C. (2023). Learner experience design and unpacking sociocultural, technological, and pedagogical design considerations of spherical video-based virtual reality systems for autistic learners: A systematic literature review. Journal of Autism and Developmental Disorders https://doi.org/10.1007/s10803-023-06168-3 [SSCI-indexed, IF = 2.8, IF5 = 4.3]",
+      "citation": "Glaser, N., Schmidt, M., Thull, C., Tennant, A., Moon, J., & Ousley, C. (2023). Learner experience design and unpacking sociocultural, technological, and pedagogical design considerations of spherical video-based virtual reality systems for autistic learners: A systematic literature review. Journal of Autism and Developmental Disorders https://doi.org/10.1007/s10803-023-06168-3 [SSCI-indexed, IF = 2.6, IF5 = 4.2]",
       "link": "https://doi.org/10.1007/s10803-023-06168-3"
     },
     {
       "year": "2023",
       "category": "International",
-      "citation": "* Lee, U., Jung, H., Jeon, Y., Soh, Y., Hwang, W., Moon, J., Kim, H. (2023). Few-shot is enough: Exploring ChatGPT prompt engineering method for automatic question generation in English education. Education and Information Technologies https://doi.org/10.1007/s10639-023-12249-8 [SSCI-indexed, IF = 5.4, IF5 = 5.7]",
+      "citation": "* Lee, U., Jung, H., Jeon, Y., Soh, Y., Hwang, W., Moon, J., Kim, H. (2023). Few-shot is enough: Exploring ChatGPT prompt engineering method for automatic question generation in English education. Education and Information Technologies https://doi.org/10.1007/s10639-023-12249-8 [SSCI-indexed, IF = 7.2, IF5 = 7.3]",
       "link": "https://doi.org/10.1007/s10639-023-12249-8"
     },
     {
       "year": "2023",
       "category": "International",
-      "citation": "‡ Moon, J., Choi, G. W., & Seo, J. (2023). Revisiting multimedia learning design principles in virtual reality-based learning environments for autistic individuals. Virtual Reality, 27, 3101-3113. https://doi.org/10.1007/s10055-023-00856-2 [SCIE-indexed, IF = 5.0, IF5 = 6.6] ﻿﻿",
+      "citation": "‡ Moon, J., Choi, G. W., & Seo, J. (2023). Revisiting multimedia learning design principles in virtual reality-based learning environments for autistic individuals. Virtual Reality, 27, 3101-3113. https://doi.org/10.1007/s10055-023-00856-2 [SCIE-indexed, IF = 5.4, IF5 = 6.7] ﻿﻿",
       "link": "https://doi.org/10.1007/s10055-023-00856-2"
     },
     {
       "year": "2023",
       "category": "International",
-      "citation": "‡ Moon, J., & Ke, F. (2023). Effects of adaptive prompts in virtual reality-based social skills training for children with autism. Journal of Autism and Developmental Disorders, https://doi.org/10.1007/s10803-023-06021-7 [SSCI-indexed, IF = 2.8, IF5 = 4.3]",
+      "citation": "‡ Moon, J., & Ke, F. (2023). Effects of adaptive prompts in virtual reality-based social skills training for children with autism. Journal of Autism and Developmental Disorders, https://doi.org/10.1007/s10803-023-06021-7 [SSCI-indexed, IF = 2.6, IF5 = 4.2]",
       "link": "https://doi.org/10.1007/s10803-023-06021-7"
     },
     {
       "year": "2023",
       "category": "International",
-      "citation": "Liu, Z., & Moon, J. (2023). A framework for applying sequential data analytics to design personalized digital game-based learning for computing education. Journal of Educational Technology & Society, 26(2), 181-197. https://doi.org/10.30191/ETS.202304_26(2).0013 [SSCI-indexed, IF = 6.0, IF5 = 6.3]",
+      "citation": "Liu, Z., & Moon, J. (2023). A framework for applying sequential data analytics to design personalized digital game-based learning for computing education. Journal of Educational Technology & Society, 26(2), 181-197. https://doi.org/10.30191/ETS.202304_26(2).0013 [SSCI-indexed, IF = 7.1, IF5 = 7.5]",
       "link": "https://doi.org/10.30191/ETS.202304_26(2).0013"
     },
     {
       "year": "2023",
       "category": "International",
-      "citation": "‡ Moon, J., Lee, D., Choi, G.W., Seo, J., Do, J., & Lim, T. (2023). Learning analytics in seamless learning environments: A systematic review. Interactive Learning Environments. https://doi.org/10.1080/10494820.2023.2170422 [SSCI-indexed, IF = 5.3, IF5 = 6.2]",
+      "citation": "‡ Moon, J., Lee, D., Choi, G.W., Seo, J., Do, J., & Lim, T. (2023). Learning analytics in seamless learning environments: A systematic review. Interactive Learning Environments. https://doi.org/10.1080/10494820.2023.2170422 [SSCI-indexed, IF =6.7, IF5 = 7.1]",
       "link": "https://doi.org/10.1080/10494820.2023.2170422"
     },
     {
       "year": "2022",
       "category": "International",
-      "citation": "Ke, F., Moon, J., & Sokolikj, Z. (2022). Designing and deploying a virtual social sandbox for children with autism. Disability and Rehabilitation: Assistive Technology, 19(4), 1178-1209. https://doi.org/10.1080/17483107.2022.2156630 [SSCI-indexed, IF = 2.2, IF5 = 2.7]",
+      "citation": "Ke, F., Moon, J., & Sokolikj, Z. (2022). Designing and deploying a virtual social sandbox for children with autism. Disability and Rehabilitation: Assistive Technology, 19(4), 1178-1209. https://doi.org/10.1080/17483107.2022.2156630 [SSCI-indexed, IF = 2.1, IF5 = 3.3]",
       "link": "https://doi.org/10.1080/17483107.2022.2156630"
     },
     {
       "year": "2022",
       "category": "International",
-      "citation": "* Yu, J., Ma, W., Moon, J., & Denham, A. (2022). Developing a stealth assessment system using a continuous conjunctive model. Journal of Learning Analytics, 9(3), 11-31. https://doi.org/10.18608/jla.2022.7639 [ESCI-indexed, IF = 3.6, IF5 = 4.8]",
+      "citation": "* Yu, J., Ma, W., Moon, J., & Denham, A. (2022). Developing a stealth assessment system using a continuous conjunctive model. Journal of Learning Analytics, 9(3), 11-31. https://doi.org/10.18608/jla.2022.7639 [ESCI-indexed, IF = 3.4, IF5 = 3.9]",
       "link": "https://doi.org/10.18608/jla.2022.7639"
     },
     {
       "year": "2022",
       "category": "International",
-      "citation": "‡ Moon, J., Ke, F., Sokolikj, Z., & Dahlstrom-Hakki, I. (2022). Multimodal data fusion to track students’ distress during educational gameplay. Journal of Learning Analytics, 9(3), 75-87. https://doi.org/10.18608/jla.2022.7631 [ESCI-indexed, IF = 3.6, IF5 = 4.8]",
+      "citation": "‡ Moon, J., Ke, F., Sokolikj, Z., & Dahlstrom-Hakki, I. (2022). Multimodal data fusion to track students’ distress during educational gameplay. Journal of Learning Analytics, 9(3), 75-87. https://doi.org/10.18608/jla.2022.7631 [ESCI-indexed, IF = 3.4, IF5 = 3.9]",
       "link": "https://doi.org/10.18608/jla.2022.7631"
     },
     {
       "year": "2022",
       "category": "International",
-      "citation": "Seo, J., Moon, J., Choi, G.W., & Do, J. (2022). A scoping review of three computational approaches to ethnographic research in digital learning environments. TechTrends. 66, 102–111. https://doi.org/10.1007/s11528-021-00689-3 [ESCI-indexed, IF = 3.8, IF5 = 3.7]",
+      "citation": "Seo, J., Moon, J., Choi, G.W., & Do, J. (2022). A scoping review of three computational approaches to ethnographic research in digital learning environments. TechTrends. 66, 102–111. https://doi.org/10.1007/s11528-021-00689-3 [ESCI-indexed, IF = 5.2, IF5 = 4.6]",
       "link": "https://doi.org/10.1007/s11528-021-00689-3"
     },
     {
       "year": "2022",
       "category": "International",
-      "citation": "Ke, F., Moon, J., & Sokolikj, Z. (2022). Virtual reality-based social skills training for children with autism spectrum disorder. Journal of Special Education Technology, 37(1), 49-62. https://doi.org/10.1177/0162643420945603 [SSCI-indexed, IF = 1.5, IF5 = 2.3]",
+      "citation": "Ke, F., Moon, J., & Sokolikj, Z. (2022). Virtual reality-based social skills training for children with autism spectrum disorder. Journal of Special Education Technology, 37(1), 49-62. https://doi.org/10.1177/0162643420945603 [SSCI-indexed, IF = 2.7, IF5 = 2.8]",
       "link": "https://doi.org/10.1177/0162643420945603"
     },
     {
       "year": "2022",
       "category": "International",
-      "citation": "‡ Moon, J., Lee, S., & Xu, X. (2022). Exploring pre-service teachers’ technology-integration belief and scientific inquiry in a teacher-development course. International Journal of Technology and Design Education, 32, 1777–1798. https://doi.org/10.1007/s10798-021-09672-8 [SCIE- and SSCI-indexed, IF = 2.7, IF5 = 2.8]",
+      "citation": "‡ Moon, J., Lee, S., & Xu, X. (2022). Exploring pre-service teachers’ technology-integration belief and scientific inquiry in a teacher-development course. International Journal of Technology and Design Education, 32, 1777–1798. https://doi.org/10.1007/s10798-021-09672-8 [SCIE- and SSCI-indexed, IF = 2.9, IF5 = 3.3]",
       "link": "https://doi.org/10.1007/s10798-021-09672-8"
     },
     {
       "year": "2021",
       "category": "International",
-      "citation": "‡ Moon, J., & Park, Y. (2021). A scoping review on open educational resources to support interactions of learners with disabilities. The International Review of Research in Open and Distributed Learning https://doi.org/10.19173/irrodl.v22i1.5110 [SSCI-indexed, IF = 1.9, IF5 = 2.8",
+      "citation": "‡ Moon, J., & Park, Y. (2021). A scoping review on open educational resources to support interactions of learners with disabilities. The International Review of Research in Open and Distributed Learning https://doi.org/10.19173/irrodl.v22i1.5110 [SSCI-indexed, IF = 4.5, IF5 = 3.7]",
       "link": "https://doi.org/10.19173/irrodl.v22i1.5110"
     },
     {
       "year": "2021",
       "category": "International",
-      "citation": "Tlili, A., Chang, M., Moon, J., Liu, Z., Burgos, D., Chen, N. S., & Kinshuk (2021). A systematic literature review of empirical studies on learning analytics in educational games. International Journal of Interactive Multimedia and Artificial Intelligence, 7(2). http://dx.doi.org/10.9781/ijimai.2021.03.003 [SCIE-indexed, IF = 2.4, IF5 = 2.2]",
+      "citation": "Tlili, A., Chang, M., Moon, J., Liu, Z., Burgos, D., Chen, N. S., & Kinshuk (2021). A systematic literature review of empirical studies on learning analytics in educational games. International Journal of Interactive Multimedia and Artificial Intelligence, 7(2). http://dx.doi.org/10.9781/ijimai.2021.03.003 [SCIE-indexed, IF = 2.9, IF5 = 2.2]",
       "link": "http://dx.doi.org/10.9781/ijimai.2021.03.003"
     },
     {
       "year": "2020",
       "category": "International",
-      "citation": "‡ Moon, J., Ke, F., & Sokolikj, Z. (2020). Automatic assessment of cognitive and emotional states in virtual reality-based flexibility training for adolescents with autism. British Journal of Educational Technology, 51(5), 1766-1784. https://dx.doi.org/10.1111/bjet.13005 [SSCI-indexed, IF = 8.1, IF5 = 8.1]",
+      "citation": "‡ Moon, J., Ke, F., & Sokolikj, Z. (2020). Automatic assessment of cognitive and emotional states in virtual reality-based flexibility training for adolescents with autism. British Journal of Educational Technology, 51(5), 1766-1784. https://dx.doi.org/10.1111/bjet.13005 [SSCI-indexed, IF = 13.0, IF5 = 11.1]",
       "link": "https://dx.doi.org/10.1111/bjet.13005"
     },
     {
@@ -1372,25 +1372,25 @@ window.__cvSiteData = {
     {
       "year": "2020",
       "category": "International",
-      "citation": "‡ Moon, J., & Ryu, J. (2020). The effects of social and cognitive cues on learning comprehension, eye-gaze pattern, and cognitive load in video instruction. Journal of Computing in Higher Education, 33, 39–63. https://doi.org/10.1007/s12528-020-09255-x [SSCI-indexed, IF = 4.9, IF5 = 5.2]",
+      "citation": "‡ Moon, J., & Ryu, J. (2020). The effects of social and cognitive cues on learning comprehension, eye-gaze pattern, and cognitive load in video instruction. Journal of Computing in Higher Education, 33, 39–63. https://doi.org/10.1007/s12528-020-09255-x [SSCI-indexed, IF = 4.3, IF5 = 5.8]",
       "link": "https://doi.org/10.1007/s12528-020-09255-x"
     },
     {
       "year": "2020",
       "category": "International",
-      "citation": "‡ Moon, J., & Ke, F. (2020). Exploring the relationships among middle school students’ peer interactions, task efficiency, and learning engagement in game-based learning. Simulation & Gaming, 51(3), 310-335. https://doi.org/10.1177/1046878120907940 [ESCI-indexed, IF = 1.8, IF5 = 2.7]",
+      "citation": "‡ Moon, J., & Ke, F. (2020). Exploring the relationships among middle school students’ peer interactions, task efficiency, and learning engagement in game-based learning. Simulation & Gaming, 51(3), 310-335. https://doi.org/10.1177/1046878120907940 [ESCI-indexed, IF = 2.2, IF5 = 3.2]",
       "link": "https://doi.org/10.1177/1046878120907940"
     },
     {
       "year": "2020",
       "category": "International",
-      "citation": "Moon, J., Do, J., Lee, D., & Choi, G. (2020). A conceptual framework for teaching computational thinking in personalized OERs. Smart Learning Environments, 7(6). https://doi.org/10.1186/s40561-019-0108-z [ESCI-indexed; IF = 12.1, IF5 = 10.1]",
+      "citation": "Moon, J., Do, J., Lee, D., & Choi, G. (2020). A conceptual framework for teaching computational thinking in personalized OERs. Smart Learning Environments, 7(6). https://doi.org/10.1186/s40561-019-0108-z [SSCI-indexed; IF = 17.9, IF5 = 14.5]",
       "link": "https://doi.org/10.1186/s40561-019-0108-z"
     },
     {
       "year": "2019",
       "category": "International",
-      "citation": "‡ Moon, J., & Ke, F. (2019). In-game actions to promote game-based math learning engagement. Journal of Educational Computing Research, 58(4), 863-885. https://doi.org/10.1177/0735633119878611 [SSCI-indexed, IF = 4.9, IF5 = 6.0]",
+      "citation": "‡ Moon, J., & Ke, F. (2019). In-game actions to promote game-based math learning engagement. Journal of Educational Computing Research, 58(4), 863-885. https://doi.org/10.1177/0735633119878611 [SSCI-indexed, IF = 8.5, IF5 = 8.1]",
       "link": "https://doi.org/10.1177/0735633119878611"
     },
     {
@@ -1402,13 +1402,13 @@ window.__cvSiteData = {
     {
       "year": "2018",
       "category": "International",
-      "citation": "Ke, F., & Moon, J. (2018). Virtual collaborative gaming as social skills training for high‐functioning autistic children. British Journal of Educational Technology, 49(4), 728-741. https://doi.org/10.1111/bjet.12626 [SSCI-indexed, IF = 8.1, IF5 = 8.1]",
+      "citation": "Ke, F., & Moon, J. (2018). Virtual collaborative gaming as social skills training for high‐functioning autistic children. British Journal of Educational Technology, 49(4), 728-741. https://doi.org/10.1111/bjet.12626 [SSCI-indexed, IF = 13.0, IF5 = 11.1]",
       "link": "https://doi.org/10.1111/bjet.12626"
     },
     {
       "year": "2018",
       "category": "International",
-      "citation": "‡ Moon, J. (2018). Reviews of social embodiment for design of non-player characters in virtual reality-based social skill training for autistic children. Multimodal Technologies and Interaction, 2(3), 53-62. https://doi.org/10.3390/mti2030053 [ESCI-indexed, IF = 2.4, IF5= 2.7]",
+      "citation": "‡ Moon, J. (2018). Reviews of social embodiment for design of non-player characters in virtual reality-based social skill training for autistic children. Multimodal Technologies and Interaction, 2(3), 53-62. https://doi.org/10.3390/mti2030053 [ESCI-indexed, IF = 3.3, IF5= 3.4]",
       "link": "https://doi.org/10.3390/mti2030053"
     },
     {
@@ -1669,8 +1669,8 @@ window.__cvSiteData = {
       "year": "Pipeline",
       "title": "Overcoming pre-service teachers’ AI anxiety through collaborative online discussions on generative AI: Linguistic insights in cognitive and emotional trajectories",
       "authors": "* Hur, J., Moon, J., Abu, S., Bae, H., Choi, G. W., & Park, J.",
-      "venue": "Interactive Learning Environments",
-      "citation": "* Hur, J., Moon, J., Abu, S., Bae, H., Choi, G. W., & Park, J. (Submitted). Overcoming pre-service teachers’ AI anxiety through collaborative online discussions on generative AI: Linguistic insights in cognitive and emotional trajectories. Interactive Learning Environments. (SSCI-indexed journal).",
+      "venue": "Education and Information Technologies",
+      "citation": "* Hur, J., Moon, J., Abu, S., Bae, H., Choi, G. W., & Park, J. (Submitted). Overcoming pre-service teachers’ AI anxiety through collaborative online discussions on generative AI: Linguistic insights in cognitive and emotional trajectories. Education and Information Technologies. (SSCI-indexed journal).",
       "link": ""
     },
     {
