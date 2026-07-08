@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T16:00:03.345266+00:00",
+  "generatedAt": "2026-07-08T08:15:54.156475+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -51,7 +51,7 @@
       "label": "Book chapters"
     },
     {
-      "value": "39",
+      "value": "40",
       "label": "Working papers"
     },
     {
@@ -171,7 +171,7 @@
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Accepted article in Simulation & Gaming: How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography."
+      "text": "Journal article in Simulation & Gaming: How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography."
     },
     {
       "date": "2027",
@@ -280,20 +280,20 @@
         "Teacher Ed"
       ],
       "note": "corresponding author",
-      "status": "Accepted"
+      "status": ""
     },
     {
       "year": "2026",
       "title": "Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning",
       "authors": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P.",
       "venue": "Educational Psychology Review",
-      "link": "",
+      "link": "https://doi.org/10.1007/s10648-026-10186-9",
       "tags": [
         "XR",
         "Review"
       ],
       "note": "",
-      "status": "Accepted"
+      "status": ""
     },
     {
       "year": "2026",
@@ -1072,14 +1072,14 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Jeong, Y., Lee, Y., Byun, G., & Moon, J. (Accepted, 2026). How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography. Simulation & Gaming. https://doi.org/10.1177/10468781261464242 [ESCI-indexed, IF = 2.2, IF5 = 3.2]",
+      "citation": "‡ Jeong, Y., Lee, Y., Byun, G., & Moon, J. (2026). How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography. Simulation & Gaming. https://doi.org/10.1177/10468781261464242 [ESCI-indexed, IF = 2.2, IF5 = 3.2]",
       "link": "https://doi.org/10.1177/10468781261464242"
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P. (Accepted, 2026). Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning. Educational Psychology Review [SSCI-indexed, IF = 11.9, IF5 = 16.4]",
-      "link": ""
+      "citation": "Lee, Y. J., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P. (2026). Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning. Educational Psychology Review. https://doi.org/10.1007/s10648-026-10186-9 [SSCI-indexed, IF = 11.9, IF5 = 16.4]",
+      "link": "https://doi.org/10.1007/s10648-026-10186-9"
     },
     {
       "year": "2026",
@@ -1431,6 +1431,17 @@
     }
   ],
   "workingPapers": [
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
+      "title": "Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation",
+      "authors": "Lim, J., Moon, J., & Chen, Y.",
+      "venue": "Journal of Research in Childhood Education",
+      "citation": "Lim, J., Moon, J., & Chen, Y. (Submitted). Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation. Journal of Research in Childhood Education.",
+      "link": ""
+    },
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
@@ -1862,10 +1873,10 @@
     }
   ],
   "workingPaperSummary": {
-    "total": 39,
-    "submittedOrUnderReview": 31,
+    "total": 40,
+    "submittedOrUnderReview": 32,
     "inPreparation": 8,
-    "journalManuscripts": 34,
+    "journalManuscripts": 35,
     "bookChapters": 2,
     "conferenceProposals": 3
   },
