@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-07-08T08:15:54.156475+00:00",
+  "generatedAt": "2026-07-08T15:39:14.818076+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -39,7 +39,7 @@ window.__cvSiteData = {
   },
   "stats": [
     {
-      "value": "62",
+      "value": "63",
       "label": "Journal articles"
     },
     {
@@ -51,7 +51,7 @@ window.__cvSiteData = {
       "label": "Book chapters"
     },
     {
-      "value": "40",
+      "value": "39",
       "label": "Working papers"
     },
     {
@@ -161,17 +161,17 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
+      "text": "Minor revision manuscript for Interactive Learning Environments: From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training."
+    },
+    {
+      "date": "2026",
+      "type": "Publication",
       "text": "Minor revision manuscript for Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
     },
     {
       "date": "2026",
       "type": "Publication",
       "text": "Accepted article in ZDM – International Journal on Mathematics Education: How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge."
-    },
-    {
-      "date": "2026",
-      "type": "Publication",
-      "text": "Journal article in Simulation & Gaming: How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography."
     },
     {
       "date": "2027",
@@ -241,6 +241,18 @@ window.__cvSiteData = {
     }
   ],
   "publications": [
+    {
+      "year": "2026",
+      "title": "From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training",
+      "authors": "Awoyemi, I., & Moon, J., Abu, S., & Song, S.",
+      "venue": "Interactive Learning Environments",
+      "link": "",
+      "tags": [
+        "XR"
+      ],
+      "note": "mentored collaboration",
+      "status": "Minor revision"
+    },
     {
       "year": "2026",
       "title": "Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers",
@@ -1060,6 +1072,12 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
+      "citation": "* Awoyemi, I., & Moon, J., Abu, S., & Song, S. (Minor revision, 2026). From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training. Interactive Learning Environments [SSCI-indexed, IF =6.7, IF5 = 7.1]",
+      "link": ""
+    },
+    {
+      "year": "2026",
+      "category": "International",
       "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Minor revision, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
       "link": ""
     },
@@ -1590,17 +1608,6 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "Under review",
       "year": "Pipeline",
-      "title": "From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training",
-      "authors": "* Awoyemi, I., & Moon, J., Abu, S., & Song, S.",
-      "venue": "Interactive Learning Environments",
-      "citation": "* Awoyemi, I., & Moon, J., Abu, S., & Song, S. (Under review). From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training. Interactive Learning Environments (SSCI-indexed).",
-      "link": ""
-    },
-    {
-      "bucket": "Submitted or Under Review",
-      "type": "Journal Manuscript",
-      "status": "Under review",
-      "year": "Pipeline",
       "title": "Design and development research of immersive virtual reality-supported safety training for construction engineering education",
       "authors": "* Awoyemi, I., Moon, J., & Song, S.",
       "venue": "Educational Technology Research and Development",
@@ -1873,10 +1880,10 @@ window.__cvSiteData = {
     }
   ],
   "workingPaperSummary": {
-    "total": 40,
-    "submittedOrUnderReview": 32,
+    "total": 39,
+    "submittedOrUnderReview": 31,
     "inPreparation": 8,
-    "journalManuscripts": 35,
+    "journalManuscripts": 34,
     "bookChapters": 2,
     "conferenceProposals": 3
   },

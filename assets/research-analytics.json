@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T08:15:53.160772+00:00",
+  "generatedAt": "2026-07-08T15:39:13.632611+00:00",
   "source": {
     "provider": "Google Scholar + OpenAlex",
     "authorId": "https://openalex.org/A5079348611",
@@ -12,8 +12,8 @@
     "networkProvider": "OpenAlex",
     "topicProvider": "OpenAlex",
     "openAccessProvider": "OpenAlex",
-    "openalexGeneratedAt": "2026-07-08T08:15:53.160772+00:00",
-    "scholarGeneratedAt": "2026-07-08T08:15:28.337Z"
+    "openalexGeneratedAt": "2026-07-08T15:39:13.632611+00:00",
+    "scholarGeneratedAt": "2026-07-08T15:38:52.634Z"
   },
   "author": {
     "name": "Jewoong Moon",
@@ -116,10 +116,10 @@
     }
   ],
   "openAccess": {
-    "totalWorks": 82,
-    "openAccessWorks": 34,
+    "totalWorks": 83,
+    "openAccessWorks": 35,
     "closedWorks": 48,
-    "openAccessRate": 41.5,
+    "openAccessRate": 42.2,
     "repositoryFulltextWorks": 19,
     "statusBreakdown": [
       {
@@ -139,12 +139,12 @@
         "count": 5
       },
       {
-        "status": "bronze",
+        "status": "hybrid",
         "count": 3
       },
       {
-        "status": "hybrid",
-        "count": 2
+        "status": "bronze",
+        "count": 3
       }
     ]
   },
@@ -2197,6 +2197,12 @@
         "type": "Journal"
       },
       {
+        "name": "Educational Psychology Review",
+        "count": 2,
+        "citations": 68,
+        "type": "Journal"
+      },
+      {
         "name": "Online Learning",
         "count": 2,
         "citations": 66,
@@ -2205,7 +2211,7 @@
       {
         "name": "TechTrends",
         "count": 2,
-        "citations": 63,
+        "citations": 64,
         "type": "Journal"
       },
       {
@@ -2213,18 +2219,12 @@
         "count": 2,
         "citations": 58,
         "type": "Journal"
-      },
-      {
-        "name": "Simulation & Gaming",
-        "count": 2,
-        "citations": 36,
-        "type": "Journal"
       }
     ],
     "typeBreakdown": [
       {
         "type": "Journal",
-        "count": 54
+        "count": 55
       },
       {
         "type": "Book",
@@ -2258,8 +2258,8 @@
         "id": "__self__",
         "label": "Jewoong Moon",
         "group": "self",
-        "works": 82,
-        "citations": 1554,
+        "works": 83,
+        "citations": 1557,
         "institution": "The University of Alabama"
       },
       {
@@ -2267,7 +2267,7 @@
         "label": "Daeyeoul Lee",
         "group": "coauthor",
         "works": 5,
-        "citations": 132,
+        "citations": 133,
         "institution": "New York University",
         "orcid": "https://orcid.org/0000-0003-1111-9691",
         "authorId": "https://openalex.org/A5026352838"
@@ -2287,7 +2287,7 @@
         "label": "Gi Woong Choi",
         "group": "coauthor",
         "works": 9,
-        "citations": 203,
+        "citations": 205,
         "institution": "University of Cincinnati",
         "orcid": "https://orcid.org/0000-0002-9631-3727",
         "authorId": "https://openalex.org/A5007605558"
@@ -2297,7 +2297,7 @@
         "label": "Gyuri Byun",
         "group": "coauthor",
         "works": 11,
-        "citations": 74,
+        "citations": 75,
         "institution": "Seoul National University",
         "orcid": "https://orcid.org/0009-0008-6044-4750",
         "authorId": "https://openalex.org/A5093917325"
@@ -2357,7 +2357,7 @@
         "label": "Jieun Lim",
         "group": "coauthor",
         "works": 3,
-        "citations": 49,
+        "citations": 50,
         "institution": "Daegu National University of Education",
         "orcid": "https://orcid.org/0000-0002-8985-1957",
         "authorId": "https://openalex.org/A5068625256"
@@ -2367,7 +2367,7 @@
         "label": "JooYoung Seo",
         "group": "coauthor",
         "works": 4,
-        "citations": 30,
+        "citations": 31,
         "institution": "University of Illinois Urbana-Champaign",
         "orcid": "https://orcid.org/0000-0002-4064-6012",
         "authorId": "https://openalex.org/A5101467241"
@@ -2377,7 +2377,7 @@
         "label": "Junbo Koh",
         "group": "coauthor",
         "works": 4,
-        "citations": 58,
+        "citations": 59,
         "institution": "Seoul National University",
         "orcid": "https://orcid.org/0009-0004-3463-0091",
         "authorId": "https://openalex.org/A5025565903"
@@ -2437,7 +2437,7 @@
         "label": "Unggi Lee",
         "group": "coauthor",
         "works": 9,
-        "citations": 258,
+        "citations": 259,
         "institution": "Syneos Health (South Korea)",
         "orcid": "https://orcid.org/0000-0002-0883-4128",
         "authorId": "https://openalex.org/A5066209480"
@@ -2447,7 +2447,7 @@
         "label": "Yeil Jeong",
         "group": "coauthor",
         "works": 7,
-        "citations": 67,
+        "citations": 68,
         "institution": "Indiana University Bloomington",
         "orcid": "https://orcid.org/0009-0003-4524-7197",
         "authorId": "https://openalex.org/A5112070639"
@@ -2457,7 +2457,7 @@
         "label": "Yunseo Lee",
         "group": "coauthor",
         "works": 9,
-        "citations": 73,
+        "citations": 74,
         "institution": "Wisconsin Department of Public Instruction",
         "orcid": "https://orcid.org/0009-0005-8651-5690",
         "authorId": "https://openalex.org/A5032863223"
