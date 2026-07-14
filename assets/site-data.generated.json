@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T16:00:03.524679+00:00",
+  "generatedAt": "2026-07-14T10:14:13.429190+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -51,7 +51,7 @@
       "label": "Book chapters"
     },
     {
-      "value": "39",
+      "value": "40",
       "label": "Working papers"
     },
     {
@@ -171,7 +171,7 @@
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Accepted article in ZDM – International Journal on Mathematics Education: How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge."
+      "text": "In Press article in ZDM – International Journal on Mathematics Education: How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge."
     },
     {
       "date": "2027",
@@ -269,7 +269,7 @@
     {
       "year": "2026",
       "title": "How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge",
-      "authors": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M.",
+      "authors": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, K., & Sanders, M.",
       "venue": "ZDM – International Journal on Mathematics Education",
       "link": "",
       "tags": [
@@ -278,7 +278,7 @@
         "STEM"
       ],
       "note": "",
-      "status": "Accepted"
+      "status": "In Press"
     },
     {
       "year": "2026",
@@ -1084,7 +1084,7 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, & Sanders, M. (Accepted, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
+      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, K., & Sanders, M. (In Press, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
       "link": ""
     },
     {
@@ -1449,6 +1449,17 @@
     }
   ],
   "workingPapers": [
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
+      "title": "A guiding framework for K-12 teachers in creating AI-powered learning technologies through vibe coding",
+      "authors": "Song, Y., Choi, S., Kim, J.,",
+      "venue": "Journal of Research on Technology in Education",
+      "citation": "Song, Y., Choi, S., Kim, J., (Submitted). A guiding framework for K-12 teachers in creating AI-powered learning technologies through vibe coding. Journal of Research on Technology in Education.",
+      "link": ""
+    },
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
@@ -1880,10 +1891,10 @@
     }
   ],
   "workingPaperSummary": {
-    "total": 39,
-    "submittedOrUnderReview": 31,
+    "total": 40,
+    "submittedOrUnderReview": 32,
     "inPreparation": 8,
-    "journalManuscripts": 34,
+    "journalManuscripts": 35,
     "bookChapters": 2,
     "conferenceProposals": 3
   },
