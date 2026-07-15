@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T10:13:51.058Z",
+  "generatedAt": "2026-07-15T19:47:32.549Z",
   "profileUrl": "https://scholar.google.com/citations?user=b-epW38AAAAJ&hl=en&oi=ao",
   "author": {
     "name": "Jewoong Moon",
@@ -14,8 +14,8 @@
     ]
   },
   "summary": {
-    "totalCitations": 2997,
-    "sinceYearCitations": 2928,
+    "totalCitations": 3002,
+    "sinceYearCitations": 2933,
     "hIndex": 26,
     "sinceYearHIndex": 26,
     "i10Index": 44,
@@ -49,11 +49,11 @@
     },
     {
       "year": 2025,
-      "citations": 1128
+      "citations": 1127
     },
     {
       "year": 2026,
-      "citations": 804
+      "citations": 809
     }
   ],
   "publicAccess": {
@@ -67,7 +67,7 @@
       "authors": "K Banihashem, N Taghizadeh, O Noroozi, J Moon, H Drachsler",
       "venue": "International Journal of Educational Technology in Higher Education",
       "rawVenue": "International Journal of Educational Technology in Higher Education, 2024",
-      "citations": 405,
+      "citations": 406,
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:_xSYboBqXhAC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6356331636822416999"
@@ -254,7 +254,7 @@
       "authors": "J Lim, U Lee, J Koh, Y Jeong, Y Lee, G Byun, H Jung, Y Jang, S Lee, ...",
       "venue": "Computers & Education",
       "rawVenue": "Computers & Education, 2025",
-      "citations": 43,
+      "citations": 44,
       "year": 2025,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:B3FOqHPlNUQC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10095469030290260562"
@@ -353,7 +353,7 @@
       "authors": "Z Liu, J Moon",
       "venue": "Journal of Educational Technology & Society",
       "rawVenue": "Journal of Educational Technology & Society, 2023",
-      "citations": 23,
+      "citations": 24,
       "year": 2023,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:vV6vV6tmYwMC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2432273527933186284"
@@ -437,6 +437,17 @@
     },
     {
       "id": "scholar-35",
+      "title": "Revisiting multimedia learning design principles in virtual reality-based learning environments for autistic individuals",
+      "authors": "J Moon, GW Choi, JY Seo",
+      "venue": "Virtual Reality",
+      "rawVenue": "Virtual Reality, 2023",
+      "citations": 16,
+      "year": 2023,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:3s1wT3WcHBgC",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14194964446522954220"
+    },
+    {
+      "id": "scholar-36",
       "title": "Echo-teddy: Preliminary design and development of large language model-based social robot for autistic students",
       "authors": "U Lee, H Kim, J Eom, H Jeong, S Lee, G Byun, Y Lee, M Kang, G Kim, ...",
       "venue": "International Conference on Intelligent Tutoring Systems, 287-301",
@@ -445,17 +456,6 @@
       "year": 2025,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:4fKUyHm3Qg0C",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9149209330067449538"
-    },
-    {
-      "id": "scholar-36",
-      "title": "Revisiting multimedia learning design principles in virtual reality-based learning environments for autistic individuals",
-      "authors": "J Moon, GW Choi, JY Seo",
-      "venue": "Virtual Reality",
-      "rawVenue": "Virtual Reality, 2023",
-      "citations": 15,
-      "year": 2023,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:3s1wT3WcHBgC",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14194964446522954220"
     },
     {
       "id": "scholar-37",
@@ -525,6 +525,17 @@
     },
     {
       "id": "scholar-43",
+      "title": "Modeling undergraduate students’ learning dynamics between self-regulated learning patterns and community of inquiry",
+      "authors": "C Na, D Lee, J Moon, Y Shin",
+      "venue": "Education and Information Technologies",
+      "rawVenue": "Education and Information Technologies, 2024",
+      "citations": 12,
+      "year": 2024,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:rO6llkc54NcC",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12403755985978284104"
+    },
+    {
+      "id": "scholar-44",
       "title": "Learning experience design and unpacking sociocultural, technological, and pedagogical design considerations of spherical video-based virtual reality systems for autistic …",
       "authors": "N Glaser, C Thull, M Schmidt, A Tennant, J Moon, C Ousley",
       "venue": "Journal of Autism and Developmental Disorders 54 (12), 4719-4739",
@@ -535,29 +546,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17324893423017206568"
     },
     {
-      "id": "scholar-44",
-      "title": "Modeling undergraduate students’ learning dynamics between self-regulated learning patterns and community of inquiry",
-      "authors": "C Na, D Lee, J Moon, Y Shin",
-      "venue": "Education and Information Technologies",
-      "rawVenue": "Education and Information Technologies, 2024",
-      "citations": 11,
-      "year": 2024,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:rO6llkc54NcC",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12403755985978284104"
-    },
-    {
       "id": "scholar-45",
-      "title": "Virtual reality simulation to foster authentic learning in pre-service teacher education: A systematic literature review",
-      "authors": "S Hong, T Eom, J Moon",
-      "venue": "Educational Research Review",
-      "rawVenue": "Educational Research Review, 2025",
-      "citations": 9,
-      "year": 2025,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:eflP2zaiRacC",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5003689248833892215"
-    },
-    {
-      "id": "scholar-46",
       "title": "Developing heat stress training assessments: A training-driven methodology approach to enhance safety in the construction industry",
       "authors": "R Marchiori, S Song, J Moon",
       "venue": "Journal of Safety Research 92, 262-271",
@@ -568,7 +557,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15233051851565137067"
     },
     {
-      "id": "scholar-47",
+      "id": "scholar-46",
       "title": "Using deep learning to track representational flexibility development of children with autism in a virtual world",
       "authors": "Z Sokolikj, F Ke, S Chakraborty, J Moon",
       "venue": "2023 11th International Conference on Information and Education Technology …",
@@ -579,7 +568,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1018933629440278320"
     },
     {
-      "id": "scholar-48",
+      "id": "scholar-47",
       "title": "A scoping review of three computational approaches to ethnographic research in digital learning environments",
       "authors": "JY Seo, J Moon, GW Choi, J Do",
       "venue": "TechTrends 66 (1), 102-111",
@@ -588,6 +577,17 @@
       "year": 2022,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:GnPB-g6toBAC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5657580699247496271"
+    },
+    {
+      "id": "scholar-48",
+      "title": "Virtual reality simulation to foster authentic learning in pre-service teacher education: A systematic literature review",
+      "authors": "S Hong, T Eom, J Moon",
+      "venue": "Educational Research Review",
+      "rawVenue": "Educational Research Review, 2025",
+      "citations": 8,
+      "year": 2025,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:eflP2zaiRacC",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5003689248833892215"
     },
     {
       "id": "scholar-49",
@@ -789,6 +789,17 @@
     },
     {
       "id": "scholar-67",
+      "title": "Leveraging learning analytics to enhance immersive teacher simulations: Challenges and opportunities",
+      "authors": "S Hong, J Moon, T Eom, J Hwang, J Seo",
+      "venue": "arXiv preprint arXiv:2601.08954",
+      "rawVenue": "arXiv preprint arXiv:2601.08954, 2026",
+      "citations": 2,
+      "year": 2026,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:kRWSkSYxWN8C",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7398703809547068838"
+    },
+    {
+      "id": "scholar-68",
       "title": "Game-based performance tasks for assessing representational fexibility of autistic adolescents in a virtual world",
       "authors": "J Moon, F Ke, Z Sokolikj",
       "venue": "Technology, Knowledge, and Learning",
@@ -799,7 +810,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9473483798691863742"
     },
     {
-      "id": "scholar-68",
+      "id": "scholar-69",
       "title": "Investigating children’s problem-solving patterns in digital game-based learning for computational thinking development",
       "authors": "Z Liu, J Moon",
       "venue": "Proceedings of the 15th International Conference of the Learning Sciences …",
@@ -810,7 +821,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4695862491088293797"
     },
     {
-      "id": "scholar-69",
+      "id": "scholar-70",
       "title": "Exploring potential effectiveness of Jaccard index to measure treatment integrity in virtual reality-based social training program for children with high-functioning autism",
       "authors": "J Moon, F Ke",
       "venue": "the 11th International Conference on Educational Data Mining, pp. 486-487",
@@ -821,7 +832,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7907316877728807779"
     },
     {
-      "id": "scholar-70",
+      "id": "scholar-71",
       "title": "Examining virtual reality based learning design for children with autism via seasonal index analysis",
       "authors": "F Ke, J Moon",
       "venue": "International Conference of the Learning Sciences, pp. 973-976",
@@ -832,7 +843,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6187494383722023201"
     },
     {
-      "id": "scholar-71",
+      "id": "scholar-72",
       "title": "Categorization of Embodied User Interface in Immersive Virtual Environment",
       "authors": "J Moon, F Ke",
       "venue": "2016 IEEE 16th International Conference on Advanced Learning Technologies …",
@@ -843,7 +854,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7493934119396418189"
     },
     {
-      "id": "scholar-72",
+      "id": "scholar-73",
       "title": "Classification of Cognitive Domains and Natural User Interface in Immersive Virtual Environments",
       "authors": "J Moon",
       "venue": "Society for Information Technology & Teacher Education International …",
@@ -854,7 +865,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1821631230451451971"
     },
     {
-      "id": "scholar-73",
+      "id": "scholar-74",
       "title": "The effect of visual cueing and narration speed on the comprehension scores with types of task and overall cognitive load",
       "authors": "J Moon, J Ryu",
       "venue": "",
@@ -865,7 +876,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10712443052889217803"
     },
     {
-      "id": "scholar-74",
+      "id": "scholar-75",
       "title": "Supporting K-12 Teachers in the Presidential AI Challenge: A Case Study of a Faculty-Mentored Workshop for AI Tool Creation",
       "authors": "Y Song, R Wong, J Kim, J Moon, E Patton, V Phan, J McCullum, J Day",
       "venue": "International Conference on Artificial Intelligence in Education, 103-111",
@@ -874,17 +885,6 @@
       "year": 2026,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:HE397vMXCloC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1115799011859440880"
-    },
-    {
-      "id": "scholar-75",
-      "title": "Leveraging learning analytics to enhance immersive teacher simulations: Challenges and opportunities",
-      "authors": "S Hong, J Moon, T Eom, J Hwang, J Seo",
-      "venue": "arXiv preprint arXiv:2601.08954",
-      "rawVenue": "arXiv preprint arXiv:2601.08954, 2026",
-      "citations": 1,
-      "year": 2026,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:kRWSkSYxWN8C",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7398703809547068838"
     },
     {
       "id": "scholar-76",
