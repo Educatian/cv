@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-07-15T19:47:55.739124+00:00",
+  "generatedAt": "2026-07-21T05:16:04.581154+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -1452,12 +1452,23 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
+      "status": "Under review",
+      "year": "Pipeline",
+      "title": "The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning",
+      "authors": "Lim, J., Lee, H., & Moon, J.",
+      "venue": "Metacognition and Learning",
+      "citation": "Lim, J., Lee, H., & Moon, J. (Under review). The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning. Metacognition and Learning. (SSCI-indexed)",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
       "title": "A guiding framework for K-12 teachers in creating AI-powered learning technologies through vibe coding",
       "authors": "Song, Y., Choi, S., Kim, J.,",
-      "venue": "Journal of Research on Technology in Education",
-      "citation": "Song, Y., Choi, S., Kim, J., (Submitted). A guiding framework for K-12 teachers in creating AI-powered learning technologies through vibe coding. Journal of Research on Technology in Education.",
+      "venue": "Journal of Computing in Higher Education",
+      "citation": "Song, Y., Choi, S., Kim, J., (Submitted). A guiding framework for K-12 teachers in creating AI-powered learning technologies through vibe coding. Journal of Computing in Higher Education.",
       "link": ""
     },
     {
@@ -1467,8 +1478,8 @@ window.__cvSiteData = {
       "year": "Pipeline",
       "title": "Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation",
       "authors": "Lim, J., Moon, J., & Chen, Y.",
-      "venue": "Journal of Research in Childhood Education",
-      "citation": "Lim, J., Moon, J., & Chen, Y. (Submitted). Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation. Journal of Research in Childhood Education.",
+      "venue": "Journal of Research on Technology in Education",
+      "citation": "Lim, J., Moon, J., & Chen, Y. (Submitted). Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation. Journal of Research on Technology in Education.",
       "link": ""
     },
     {
@@ -1828,17 +1839,6 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "In preparation",
       "year": "Pipeline",
-      "title": "The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning",
-      "authors": "Lim, J., Lee, H., & Moon, J.",
-      "venue": "Journal of Learning Analytics",
-      "citation": "Lim, J., Lee, H., & Moon, J. (In preparation). The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning. Journal of Learning Analytics. (ESCI-indexed)",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
       "title": "Modeling behavioral dynamics and cognitive states in virtual reality safety training: A learning analytics approach",
       "authors": "* Abu, S., Awoyemi, I., Moon, J.",
       "venue": "",
@@ -1892,8 +1892,8 @@ window.__cvSiteData = {
   ],
   "workingPaperSummary": {
     "total": 40,
-    "submittedOrUnderReview": 32,
-    "inPreparation": 8,
+    "submittedOrUnderReview": 33,
+    "inPreparation": 7,
     "journalManuscripts": 35,
     "bookChapters": 2,
     "conferenceProposals": 3
