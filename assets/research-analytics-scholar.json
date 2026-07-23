@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T00:30:01.681Z",
+  "generatedAt": "2026-07-23T11:56:00.604Z",
   "profileUrl": "https://scholar.google.com/citations?user=b-epW38AAAAJ&hl=en&oi=ao",
   "author": {
     "name": "Jewoong Moon",
@@ -14,8 +14,8 @@
     ]
   },
   "summary": {
-    "totalCitations": 3037,
-    "sinceYearCitations": 2969,
+    "totalCitations": 3039,
+    "sinceYearCitations": 2971,
     "hIndex": 26,
     "sinceYearHIndex": 26,
     "i10Index": 44,
@@ -45,15 +45,15 @@
     },
     {
       "year": 2024,
-      "citations": 500
+      "citations": 498
     },
     {
       "year": 2025,
-      "citations": 1147
+      "citations": 1128
     },
     {
       "year": 2026,
-      "citations": 821
+      "citations": 843
     }
   ],
   "publicAccess": {
@@ -122,7 +122,7 @@
       "authors": "CP Dai, F Ke, Y Pan, J Moon, Z Liu",
       "venue": "Educational Psychology Review 36 (1), 1-37",
       "rawVenue": "Educational Psychology Review 36 (1), 1-37, 2024",
-      "citations": 126,
+      "citations": 127,
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:bFI3QPDXJZMC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11115914245467298036"
@@ -404,6 +404,17 @@
     },
     {
       "id": "scholar-32",
+      "title": "I see you: Teacher analytics with GPT-4 vision-powered observational assessment",
+      "authors": "U Lee, Y Jeong, J Koh, G Byun, Y Lee, H Lee, S Eun, J Moon, C Lim, ...",
+      "venue": "Smart Learning Environments",
+      "rawVenue": "Smart Learning Environments, 2024",
+      "citations": 18,
+      "year": 2024,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:P5F9QuxV20EC",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15942009038661219397"
+    },
+    {
+      "id": "scholar-33",
       "title": "Transforming mathematics education with AI: Innovations, implementations, and insights",
       "authors": "S Yeo, J Moon, DJ Kim",
       "venue": "Mathematical Education 63 (2), 386-392",
@@ -412,17 +423,6 @@
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:p2g8aNsByqUC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14420603685464320164"
-    },
-    {
-      "id": "scholar-33",
-      "title": "I see you: Teacher analytics with GPT-4 vision-powered observational assessment",
-      "authors": "U Lee, Y Jeong, J Koh, G Byun, Y Lee, H Lee, S Eun, J Moon, C Lim, ...",
-      "venue": "Smart Learning Environments",
-      "rawVenue": "Smart Learning Environments, 2024",
-      "citations": 17,
-      "year": 2024,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:P5F9QuxV20EC",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15942009038661219397"
     },
     {
       "id": "scholar-34",

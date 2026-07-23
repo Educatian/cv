@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T00:30:25.072944+00:00",
+  "generatedAt": "2026-07-23T11:56:20.880197+00:00",
   "source": {
     "provider": "Google Scholar + OpenAlex",
     "authorId": "https://openalex.org/A5079348611",
@@ -12,8 +12,8 @@
     "networkProvider": "OpenAlex",
     "topicProvider": "OpenAlex",
     "openAccessProvider": "OpenAlex",
-    "openalexGeneratedAt": "2026-07-23T00:30:25.072944+00:00",
-    "scholarGeneratedAt": "2026-07-23T00:30:01.681Z"
+    "openalexGeneratedAt": "2026-07-23T11:56:20.880197+00:00",
+    "scholarGeneratedAt": "2026-07-23T11:56:00.604Z"
   },
   "author": {
     "name": "Jewoong Moon",
@@ -32,8 +32,8 @@
     "profileUrl": "https://scholar.google.com/citations?user=b-epW38AAAAJ&hl=en&oi=ao",
     "worksCount": 110,
     "summary": {
-      "totalCitations": 3037,
-      "sinceYearCitations": 2969,
+      "totalCitations": 3039,
+      "sinceYearCitations": 2971,
       "hIndex": 26,
       "sinceYearHIndex": 26,
       "i10Index": 44,
@@ -46,22 +46,22 @@
     }
   },
   "summary": {
-    "totalCitations": 3037,
+    "totalCitations": 3039,
     "worksCount": 110,
     "hIndex": 26,
     "i10Index": 44,
-    "twoYearMeanCitedness": 14.71,
-    "citationsPerWork": 27.61,
+    "twoYearMeanCitedness": 14.81,
+    "citationsPerWork": 27.63,
     "meanCitationsPerWorkYear": 7.55,
-    "recent3YearCitations": 2468,
+    "recent3YearCitations": 2469,
     "previous3YearCitations": 468,
-    "recent5YearCitations": 2840,
+    "recent5YearCitations": 2841,
     "previous5YearCitations": 143,
-    "threeYearGrowthRate": 427.4,
-    "fiveYearGrowthRate": 1886.0,
+    "threeYearGrowthRate": 427.6,
+    "fiveYearGrowthRate": 1886.7,
     "latestCitationYear": 2026,
     "sinceLabel": "Since 2021",
-    "sinceYearCitations": 2969,
+    "sinceYearCitations": 2971,
     "sinceYearHIndex": 26,
     "sinceYearI10Index": 44
   },
@@ -98,19 +98,19 @@
     },
     {
       "year": 2024,
-      "citations": 500,
+      "citations": 498,
       "works": 0,
       "oaWorks": 0
     },
     {
       "year": 2025,
-      "citations": 1147,
+      "citations": 1128,
       "works": 0,
       "oaWorks": 0
     },
     {
       "year": 2026,
-      "citations": 821,
+      "citations": 843,
       "works": 0,
       "oaWorks": 0
     }
@@ -238,8 +238,8 @@
       "id": "https://openalex.org/W4392356798",
       "title": "Effects of artificial intelligence-powered virtual agents on learning outcomes in computer-based simulations: A meta-analysis",
       "year": 2024,
-      "citations": 126,
-      "citationsPerYear": 42.0,
+      "citations": 127,
+      "citationsPerYear": 42.33,
       "source": "Educational Psychology Review",
       "sourceType": "Journal",
       "url": "https://hub.hku.hk/handle/10722/348509",
@@ -410,8 +410,8 @@
       "id": "https://openalex.org/W4392356798",
       "title": "Effects of artificial intelligence-powered virtual agents on learning outcomes in computer-based simulations: A meta-analysis",
       "year": 2024,
-      "citations": 126,
-      "citationsPerYear": 42.0,
+      "citations": 127,
+      "citationsPerYear": 42.33,
       "source": "Educational Psychology Review",
       "sourceType": "Journal",
       "url": "https://hub.hku.hk/handle/10722/348509",
@@ -849,7 +849,24 @@
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9455639377039628083"
     },
     {
-      "id": "scholar-32",
+      "id": "https://openalex.org/W4403476510",
+      "title": "I see you: Teacher analytics with GPT-4 vision-powered observational assessment",
+      "year": 2024,
+      "citations": 18,
+      "citationsPerYear": 6.0,
+      "source": "Smart Learning Environments",
+      "sourceType": "Journal",
+      "url": "https://doi.org/10.1186/s40561-024-00335-4",
+      "isOpenAccess": true,
+      "oaStatus": "gold",
+      "hasFulltext": true,
+      "citationSource": "Google Scholar",
+      "authors": "U Lee, Y Jeong, J Koh, G Byun, Y Lee, H Lee, S Eun, J Moon, C Lim, ...",
+      "scholarRecordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:P5F9QuxV20EC",
+      "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15942009038661219397"
+    },
+    {
+      "id": "scholar-33",
       "title": "Transforming mathematics education with AI: Innovations, implementations, and insights",
       "year": 2024,
       "citations": 18,
@@ -864,23 +881,6 @@
       "authors": "S Yeo, J Moon, DJ Kim",
       "scholarRecordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:p2g8aNsByqUC",
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14420603685464320164"
-    },
-    {
-      "id": "https://openalex.org/W4403476510",
-      "title": "I see you: Teacher analytics with GPT-4 vision-powered observational assessment",
-      "year": 2024,
-      "citations": 17,
-      "citationsPerYear": 5.67,
-      "source": "Smart Learning Environments",
-      "sourceType": "Journal",
-      "url": "https://doi.org/10.1186/s40561-024-00335-4",
-      "isOpenAccess": true,
-      "oaStatus": "gold",
-      "hasFulltext": true,
-      "citationSource": "Google Scholar",
-      "authors": "U Lee, Y Jeong, J Koh, G Byun, Y Lee, H Lee, S Eun, J Moon, C Lim, ...",
-      "scholarRecordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:P5F9QuxV20EC",
-      "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15942009038661219397"
     },
     {
       "id": "https://openalex.org/W4399339110",
@@ -2945,7 +2945,7 @@
       "id": "intelligent-tutoring-systems-and-adaptive-learning",
       "label": "Intelligent Tutoring Systems and Adaptive Learning",
       "count": 10,
-      "weight": 8.607,
+      "weight": 8.606,
       "type": "topic"
     },
     {
@@ -2983,7 +2983,7 @@
     "self": {
       "hIndex": 20,
       "i10Index": 31,
-      "citedByCount": 1592,
+      "citedByCount": 1596,
       "worksCount": 84
     },
     "populations": [
@@ -2992,7 +2992,7 @@
         "topic": "Educational Games and Gamification",
         "subfield": "Developmental and Educational Psychology",
         "field": "Psychology",
-        "activeCount": 15286,
+        "activeCount": 15294,
         "metrics": [
           {
             "key": "hIndex",
@@ -3013,7 +3013,7 @@
           {
             "key": "citedByCount",
             "label": "Total citations",
-            "me": 1592,
+            "me": 1596,
             "median": 113,
             "percentile": 94.2,
             "topPercent": 5.8
@@ -3033,7 +3033,7 @@
         "topic": "Online Learning and Analytics",
         "subfield": "Computer Science Applications",
         "field": "Computer Science",
-        "activeCount": 16902,
+        "activeCount": 16911,
         "metrics": [
           {
             "key": "hIndex",
@@ -3054,7 +3054,7 @@
           {
             "key": "citedByCount",
             "label": "Total citations",
-            "me": 1592,
+            "me": 1596,
             "median": 143,
             "percentile": 92.5,
             "topPercent": 7.5
