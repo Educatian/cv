@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T05:16:04.581154+00:00",
+  "generatedAt": "2026-07-23T00:30:26.850077+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -161,12 +161,12 @@
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Minor revision manuscript for Interactive Learning Environments: From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training."
+      "text": "Minor revision manuscript for Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
     },
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Minor revision manuscript for Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
+      "text": "In Press article in Interactive Learning Environments: From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training."
     },
     {
       "date": "2026",
@@ -243,18 +243,6 @@
   "publications": [
     {
       "year": "2026",
-      "title": "From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training",
-      "authors": "Awoyemi, I., & Moon, J., Abu, S., & Song, S.",
-      "venue": "Interactive Learning Environments",
-      "link": "",
-      "tags": [
-        "XR"
-      ],
-      "note": "mentored collaboration",
-      "status": "Minor revision"
-    },
-    {
-      "year": "2026",
       "title": "Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers",
       "authors": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M.",
       "venue": "Cogent Education",
@@ -265,6 +253,18 @@
       ],
       "note": "",
       "status": "Minor revision"
+    },
+    {
+      "year": "2026",
+      "title": "From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training",
+      "authors": "Awoyemi, I., & Moon, J., Abu, S., & Song, S.",
+      "venue": "Interactive Learning Environments",
+      "link": "",
+      "tags": [
+        "XR"
+      ],
+      "note": "mentored collaboration",
+      "status": "In Press"
     },
     {
       "year": "2026",
@@ -1072,13 +1072,13 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Awoyemi, I., & Moon, J., Abu, S., & Song, S. (Minor revision, 2026). From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training. Interactive Learning Environments [SSCI-indexed, IF =6.7, IF5 = 7.1]",
+      "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Minor revision, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
       "link": ""
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Minor revision, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
+      "citation": "* Awoyemi, I., & Moon, J., Abu, S., & Song, S. (In Press, 2026). From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training. Interactive Learning Environments [SSCI-indexed, IF =6.7, IF5 = 7.1]",
       "link": ""
     },
     {
