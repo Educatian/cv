@@ -4,16 +4,16 @@
   "description": "Static GitHub Pages-style academic CV website built from the newest `CV_<date>_MOON.docx` in the repo root.",
   "main": "app.js",
   "scripts": {
-    "site:data": "python scripts/generate_site_data.py",
+    "site:data": "py scripts/generate_site_data.py",
     "analytics:scholar": "node scripts/update_research_analytics_scholar.mjs",
-    "analytics:update": "node scripts/update_research_analytics_scholar.mjs && python scripts/update_research_analytics.py",
-    "site:update": "python scripts/update_site_from_cv.py",
-    "site:update:playwright": "python scripts/update_site_from_cv.py --with-playwright",
+    "analytics:update": "node scripts/update_research_analytics_scholar.mjs && py scripts/update_research_analytics.py",
+    "site:update": "py scripts/update_site_from_cv.py",
+    "site:update:playwright": "py scripts/update_site_from_cv.py --with-playwright",
     "update:biweekly": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/cv_biweekly_update.ps1",
     "update:biweekly:register": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/register_biweekly_update.ps1",
-    "abstracts:base": "python scripts/update_publication_abstracts.py",
+    "abstracts:base": "py scripts/update_publication_abstracts.py",
     "abstracts:playwright": "node scripts/update_publication_abstracts_playwright.mjs",
-    "abstracts:update": "python scripts/update_publication_abstracts.py && node scripts/update_publication_abstracts_playwright.mjs",
+    "abstracts:update": "py scripts/update_publication_abstracts.py && node scripts/update_publication_abstracts_playwright.mjs",
     "audit:dark": "node scripts/dark_contrast_audit.mjs"
   },
   "repository": {

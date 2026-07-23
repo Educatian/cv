@@ -1,4 +1,10 @@
 {
+  "10.1080/10494820.2026.2690104": {
+    "source": "tandfonline_frontpage_override",
+    "resolvedUrl": "https://www.tandfonline.com/doi/full/10.1080/10494820.2026.2690104",
+    "thumbnailUrl": "https://covers.tandf.co.uk/og/NILE.png",
+    "abstract": "Small discussion-based classes generate rich digital traces but lack analytic tools integrating behavior and discourse without large-sample statistics or full network reconstruction. We present a CHAT-anchored analytics pipeline coupling three facets (i.e. temporal participation, discourse quality, concept sophistication) mapped to Cultural-Historical Activity Theory elements, reporting uncertainty via effect sizes with bootstrap confidence intervals. Deployed in a five-week AI literacy course (n = 25; 438 posts), DTW-based k-medoids clustering identifies two stable participation archetypes, validated with bootstrap silhouette analysis. Discourse quality shows modest lexical polish gains, but reasoning depth stagnates; overall concept sophistication declines (Δz = –1.24). Reserved Observers retain behavior-episteme mismatches, signaling Subject-Community tension. An Isolation-Forest detector flags Week 2 volatility two weeks before participation decline, robustly reproduced across contamination settings 0.05–0.25. Convergent validity between automated DQI and human-coded ICAP levels confirmed substantive alignment. Results demonstrate theory-aware, effect-size-centered workflows deliver interpretable insights and early warnings in single classes without network reconstruction overhead, demonstrating feasibility for small-cohort learning analytics through a proof-of-concept implementation."
+  },
   "10.1016/j.edurev.2025.100743": {
     "source": "science_direct_frontpage_override",
     "resolvedUrl": "https://www.sciencedirect.com/science/article/abs/pii/S1747938X25000806",
