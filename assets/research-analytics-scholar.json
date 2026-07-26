@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T11:56:00.604Z",
+  "generatedAt": "2026-07-26T02:52:14.317Z",
   "profileUrl": "https://scholar.google.com/citations?user=b-epW38AAAAJ&hl=en&oi=ao",
   "author": {
     "name": "Jewoong Moon",
@@ -14,8 +14,8 @@
     ]
   },
   "summary": {
-    "totalCitations": 3039,
-    "sinceYearCitations": 2971,
+    "totalCitations": 3042,
+    "sinceYearCitations": 2973,
     "hIndex": 26,
     "sinceYearHIndex": 26,
     "i10Index": 44,
@@ -45,15 +45,15 @@
     },
     {
       "year": 2024,
-      "citations": 498
+      "citations": 499
     },
     {
       "year": 2025,
-      "citations": 1128
+      "citations": 1125
     },
     {
       "year": 2026,
-      "citations": 843
+      "citations": 847
     }
   ],
   "publicAccess": {
@@ -78,7 +78,7 @@
       "authors": "U Lee, H Jung, Y Jeon, Y Sohn, W Hwang, J Moon, H Kim",
       "venue": "Education and Information Technologies",
       "rawVenue": "Education and Information Technologies, 2023",
-      "citations": 370,
+      "citations": 371,
       "year": 2023,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:zA6iFVUQeVQC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1500691400541738847"
@@ -89,7 +89,7 @@
       "authors": "F Ke, J Moon, Z Sokolikj",
       "venue": "Journal of Special Education Technology 37 (1), 49-62",
       "rawVenue": "Journal of Special Education Technology 37 (1), 49-62, 2022",
-      "citations": 257,
+      "citations": 259,
       "year": 2022,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:IWHjjKOFINEC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7521409407125934973"
@@ -100,7 +100,7 @@
       "authors": "H Bae, J Hur, J Park, GW Choi, J Moon",
       "venue": "Online Learning Journal",
       "rawVenue": "Online Learning Journal, 2024",
-      "citations": 142,
+      "citations": 143,
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:OU6Ihb5iCvQC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11045912294933901278"
@@ -122,7 +122,7 @@
       "authors": "CP Dai, F Ke, Y Pan, J Moon, Z Liu",
       "venue": "Educational Psychology Review 36 (1), 1-37",
       "rawVenue": "Educational Psychology Review 36 (1), 1-37, 2024",
-      "citations": 127,
+      "citations": 126,
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:bFI3QPDXJZMC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11115914245467298036"
@@ -217,17 +217,6 @@
     },
     {
       "id": "scholar-15",
-      "title": "Using multimodal learning analytics as a formative assessment tool: Exploring collaborative dynamics in mathematics teacher education",
-      "authors": "J Moon, S Yeo, K Banihashem, O Noroozi",
-      "venue": "Journal of Computer Assisted Learning",
-      "rawVenue": "Journal of Computer Assisted Learning, 2024",
-      "citations": 55,
-      "year": 2024,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:CHSYGLWDkRkC",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11395474235301923670"
-    },
-    {
-      "id": "scholar-16",
       "title": "Using learning analytics to explore peer learning patterns in asynchronous gamified environments",
       "authors": "J Moon, JL McNeill, C Edmonds, K Banihashem, O Noroozi",
       "venue": "International Journal of Educational Technology in Higher Education",
@@ -238,12 +227,23 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15593222529279821625"
     },
     {
+      "id": "scholar-16",
+      "title": "Using multimodal learning analytics as a formative assessment tool: Exploring collaborative dynamics in mathematics teacher education",
+      "authors": "J Moon, S Yeo, K Banihashem, O Noroozi",
+      "venue": "Journal of Computer Assisted Learning",
+      "rawVenue": "Journal of Computer Assisted Learning, 2024",
+      "citations": 54,
+      "year": 2024,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:CHSYGLWDkRkC",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11395474235301923670"
+    },
+    {
       "id": "scholar-17",
       "title": "Learning analytics in seamless learning environments: A systematic review",
       "authors": "J Moon, D Lee, GW Choi, J Do, J Seo, T Lim",
       "venue": "Interactive Learning Environments",
       "rawVenue": "Interactive Learning Environments, 2023",
-      "citations": 47,
+      "citations": 46,
       "year": 2023,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:J_g5lzvAfSwC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4238864409891075750"
@@ -309,7 +309,7 @@
       "authors": "S Hong, J Moon, T Eom, ID Awoyemi, H Juno",
       "venue": "Education Sciences",
       "rawVenue": "Education Sciences, 2025",
-      "citations": 31,
+      "citations": 32,
       "year": 2025,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:LPZeul_q3PIC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3631122350901003460"
@@ -734,6 +734,17 @@
     },
     {
       "id": "scholar-62",
+      "title": "Socio-material interactions: A multi-case study on AI chatbot integration in asynchronous online learning",
+      "authors": "J Moon, Y Jung, H Bae, U Lee, K Kim",
+      "venue": "Innovations in Education and Teaching International",
+      "rawVenue": "Innovations in Education and Teaching International, 2025",
+      "citations": 4,
+      "year": 2025,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:5Ul4iDaHHb8C",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9958819653772567041"
+    },
+    {
+      "id": "scholar-63",
       "title": "Crafting An Approach to Cultivate Engineering Competencies for Undergraduate Students in Construction Engineering with Minecraft",
       "authors": "RS Marchiori, S Song, J Moon, S Khorshid",
       "venue": "2023 ASEE Annual Conference & Exposition",
@@ -744,7 +755,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5986825088124802205"
     },
     {
-      "id": "scholar-63",
+      "id": "scholar-64",
       "title": "Understanding Epistemic Networks in Virtual Reality-based Collaborative Gameplay for Social-Skills Training With Children With Autism",
       "authors": "J Moon, F Ke",
       "venue": "the International Conference of the Learning Sciences (ISLS)",
@@ -753,17 +764,6 @@
       "year": 2020,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:7PzlFSSx8tAC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11708279092833924604"
-    },
-    {
-      "id": "scholar-64",
-      "title": "Socio-material interactions: A multi-case study on AI chatbot integration in asynchronous online learning",
-      "authors": "J Moon, Y Jung, H Bae, U Lee, K Kim",
-      "venue": "Innovations in Education and Teaching International",
-      "rawVenue": "Innovations in Education and Teaching International, 2025",
-      "citations": 3,
-      "year": 2025,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:5Ul4iDaHHb8C",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9958819653772567041"
     },
     {
       "id": "scholar-65",
