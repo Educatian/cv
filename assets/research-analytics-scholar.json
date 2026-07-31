@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T02:52:14.317Z",
+  "generatedAt": "2026-07-29T16:00:12.674Z",
   "profileUrl": "https://scholar.google.com/citations?user=b-epW38AAAAJ&hl=en&oi=ao",
   "author": {
     "name": "Jewoong Moon",
@@ -14,8 +14,8 @@
     ]
   },
   "summary": {
-    "totalCitations": 3042,
-    "sinceYearCitations": 2973,
+    "totalCitations": 3048,
+    "sinceYearCitations": 2976,
     "hIndex": 26,
     "sinceYearHIndex": 26,
     "i10Index": 44,
@@ -29,31 +29,31 @@
     },
     {
       "year": 2020,
-      "citations": 38
+      "citations": 39
     },
     {
       "year": 2021,
-      "citations": 96
+      "citations": 99
     },
     {
       "year": 2022,
-      "citations": 152
+      "citations": 148
     },
     {
       "year": 2023,
-      "citations": 220
+      "citations": 221
     },
     {
       "year": 2024,
-      "citations": 499
+      "citations": 500
     },
     {
       "year": 2025,
-      "citations": 1125
+      "citations": 1129
     },
     {
       "year": 2026,
-      "citations": 847
+      "citations": 845
     }
   ],
   "publicAccess": {
@@ -78,7 +78,7 @@
       "authors": "U Lee, H Jung, Y Jeon, Y Sohn, W Hwang, J Moon, H Kim",
       "venue": "Education and Information Technologies",
       "rawVenue": "Education and Information Technologies, 2023",
-      "citations": 371,
+      "citations": 370,
       "year": 2023,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:zA6iFVUQeVQC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1500691400541738847"
@@ -89,7 +89,7 @@
       "authors": "F Ke, J Moon, Z Sokolikj",
       "venue": "Journal of Special Education Technology 37 (1), 49-62",
       "rawVenue": "Journal of Special Education Technology 37 (1), 49-62, 2022",
-      "citations": 259,
+      "citations": 261,
       "year": 2022,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:IWHjjKOFINEC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7521409407125934973"
@@ -122,7 +122,7 @@
       "authors": "CP Dai, F Ke, Y Pan, J Moon, Z Liu",
       "venue": "Educational Psychology Review 36 (1), 1-37",
       "rawVenue": "Educational Psychology Review 36 (1), 1-37, 2024",
-      "citations": 126,
+      "citations": 127,
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:bFI3QPDXJZMC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11115914245467298036"
@@ -133,7 +133,7 @@
       "authors": "F Ke, J Moon",
       "venue": "British Journal of Educational Technology 49 (4), 728-741",
       "rawVenue": "British Journal of Educational Technology 49 (4), 728-741, 2018",
-      "citations": 107,
+      "citations": 108,
       "year": 2018,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:Y0pCki6q_DkC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7231735131864209662"
@@ -151,11 +151,11 @@
     },
     {
       "id": "scholar-9",
-      "title": "Integrating adaptivity in educational games",
-      "authors": "Z Liu, J Moon, B Kim, CP Dai",
+      "title": "Integrating adaptivity in educational games: A combined bibliometric analysis and meta-analysis review",
+      "authors": "Z Liu, M Jewoong, K Byungjoo, D Chih-Pu",
       "venue": "Educational technology research and development 68 (4), 1931-1959",
       "rawVenue": "Educational technology research and development 68 (4), 1931-1959, 2020",
-      "citations": 95,
+      "citations": 96,
       "year": 2020,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:QIV2ME_5wuYC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8655336452873703898"
@@ -166,7 +166,7 @@
       "authors": "J Moon, J Do, D Lee, GW Choi",
       "venue": "Smart Learning Environments",
       "rawVenue": "Smart Learning Environments, 2020",
-      "citations": 79,
+      "citations": 78,
       "year": 2020,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:qxL8FJ1GzNcC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8690488637492091185"
@@ -298,7 +298,7 @@
       "authors": "J Moon, U Lee, J Koh, Y Jeong, G Byun, Y Lee, J Lim",
       "venue": "Technology, Knowledge, and Learning",
       "rawVenue": "Technology, Knowledge, and Learning, 2024",
-      "citations": 35,
+      "citations": 36,
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:UxriW0iASnsC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3013828630491839338"
@@ -309,7 +309,7 @@
       "authors": "S Hong, J Moon, T Eom, ID Awoyemi, H Juno",
       "venue": "Education Sciences",
       "rawVenue": "Education Sciences, 2025",
-      "citations": 32,
+      "citations": 33,
       "year": 2025,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:LPZeul_q3PIC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3631122350901003460"
@@ -353,7 +353,7 @@
       "authors": "Z Liu, J Moon",
       "venue": "Journal of Educational Technology & Society",
       "rawVenue": "Journal of Educational Technology & Society, 2023",
-      "citations": 24,
+      "citations": 23,
       "year": 2023,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:vV6vV6tmYwMC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2432273527933186284"
@@ -470,6 +470,17 @@
     },
     {
       "id": "scholar-38",
+      "title": "Reviews of social embodiment for design of non-player characters in virtual reality-based social skill training for autistic children",
+      "authors": "J Moon",
+      "venue": "Multimodal Technologies and Interaction 2 (3), 53",
+      "rawVenue": "Multimodal Technologies and Interaction 2 (3), 53, 2018",
+      "citations": 15,
+      "year": 2018,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:W7OEmFMy1HYC",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10261969687190428763"
+    },
+    {
+      "id": "scholar-39",
       "title": "How to align large language models for teaching English? Designing and developing LLM based-chatbot for teaching English conversation in EFL, findings and limitations",
       "authors": "J Park, J Bae, U Lee, T Ahn, S Lee, D Kim, A Choi, Y Jeong, J Moon, ...",
       "venue": "arXiv preprint arXiv:2409.04987",
@@ -480,7 +491,7 @@
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8914877774050816147"
     },
     {
-      "id": "scholar-39",
+      "id": "scholar-40",
       "title": "Learning experience design of verbal prompts in virtual reality-based training for autistic children",
       "authors": "J Moon",
       "venue": "Research in Learning Technology 32",
@@ -489,17 +500,6 @@
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:cFHS6HbyZ2cC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11680839686389383546"
-    },
-    {
-      "id": "scholar-40",
-      "title": "Reviews of social embodiment for design of non-player characters in virtual reality-based social skill training for autistic children",
-      "authors": "J Moon",
-      "venue": "Multimodal Technologies and Interaction 2 (3), 53",
-      "rawVenue": "Multimodal Technologies and Interaction 2 (3), 53, 2018",
-      "citations": 14,
-      "year": 2018,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:W7OEmFMy1HYC",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10261969687190428763"
     },
     {
       "id": "scholar-41",
@@ -683,7 +683,7 @@
       "authors": "G Byun, J Moon, C Sun",
       "venue": "Immersive Learning Research-Practitioner, 32-35",
       "rawVenue": "Immersive Learning Research-Practitioner, 32-35, 2024",
-      "citations": 5,
+      "citations": 6,
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:KxtntwgDAa4C",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16695280395907389357"
