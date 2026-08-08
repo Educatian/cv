@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T04:08:31.139937+00:00",
+  "generatedAt": "2026-08-08T05:19:05.862496+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -59,7 +59,7 @@
       "label": "Presentations"
     },
     {
-      "value": "$586K+",
+      "value": "$587K+",
       "label": "Funded awards"
     }
   ],
@@ -2003,10 +2003,14 @@
     ]
   },
   "grantPortfolio": {
-    "fundedTotal": 586149,
+    "fundedTotal": 586649,
     "pendingTotal": 35000,
     "fundedCount": 13,
-    "pendingCount": 2
+    "pendingCount": 2,
+    "sourceReportedFundedTotal": 586149,
+    "sourceReportedPendingTotal": 35000,
+    "fundedDiscrepancy": 500,
+    "pendingDiscrepancy": 0
   },
   "teaching": {
     "teachingPortfolio": [

@@ -639,11 +639,28 @@ def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
             }
         )
 
+    reported_funded_total = int(extract_first_money(funded_header) or 0)
+    reported_pending_total = int(extract_first_money(pending_header) or 0)
+    itemized_funded_total = int(sum(item["amountValue"] or 0 for item in buckets["funded"]))
+    itemized_pending_total = int(sum(item["amountValue"] or 0 for item in buckets["pending"]))
+
+    # Itemized records are the durable source of truth for the website. A CV
+    # section header can lag after an individual award is edited; retaining the
+    # reported totals and discrepancy makes that drift visible to the update
+    # pipeline without publishing a stale aggregate.
     grant_portfolio = {
-        "fundedTotal": int(extract_first_money(funded_header) or sum(item["amountValue"] or 0 for item in buckets["funded"])),
-        "pendingTotal": int(extract_first_money(pending_header) or sum(item["amountValue"] or 0 for item in buckets["pending"])),
+        "fundedTotal": itemized_funded_total or reported_funded_total,
+        "pendingTotal": itemized_pending_total or reported_pending_total,
         "fundedCount": len(buckets["funded"]),
         "pendingCount": len(buckets["pending"]),
+        "sourceReportedFundedTotal": reported_funded_total,
+        "sourceReportedPendingTotal": reported_pending_total,
+        "fundedDiscrepancy": itemized_funded_total - reported_funded_total
+        if itemized_funded_total and reported_funded_total
+        else 0,
+        "pendingDiscrepancy": itemized_pending_total - reported_pending_total
+        if itemized_pending_total and reported_pending_total
+        else 0,
     }
 
     return {
@@ -1322,6 +1339,19 @@ def main() -> None:
 
     site_data = build_site_data(cv_path)
     write_outputs(site_data, args.json_output, args.js_output)
+
+    portfolio = site_data["grantPortfolio"]
+    for label in ("Funded", "Pending"):
+        key = label.lower()
+        discrepancy = int(portfolio.get(f"{key}Discrepancy", 0) or 0)
+        if discrepancy:
+            reported = int(portfolio.get(f"sourceReported{label}Total", 0) or 0)
+            itemized = int(portfolio.get(f"{key}Total", 0) or 0)
+            print(
+                f"WARNING: {label} grant header total (${reported:,}) differs from "
+                f"the itemized sum (${itemized:,}) by ${abs(discrepancy):,}. "
+                "The website uses the itemized sum."
+            )
 
     print(f"Generated site data from {cv_path}")
     print(f"JSON output: {args.json_output}")

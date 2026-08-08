@@ -27,8 +27,10 @@
       content="Assistant Professor of Instructional Technology at The University of Alabama. Research in generative AI, extended reality, game-based learning, and learning analytics."
     />
     <meta property="og:url" content="https://educatian.github.io/cv/" />
-    <meta property="og:image" content="https://educatian.github.io/cv/assets/headshot.jpg" />
-    <meta property="og:image:alt" content="Portrait of Dr. Jewoong Moon" />
+    <meta property="og:image" content="https://educatian.github.io/cv/assets/og-social.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dr. Jewoong Moon research profile: AI, XR, analytics, and learning experience design" />
     <meta property="profile:first_name" content="Jewoong" />
     <meta property="profile:last_name" content="Moon" />
 
@@ -38,7 +40,7 @@
       name="twitter:description"
       content="Research portfolio: generative AI, XR, game-based learning, learning analytics."
     />
-    <meta name="twitter:image" content="https://educatian.github.io/cv/assets/headshot.jpg" />
+    <meta name="twitter:image" content="https://educatian.github.io/cv/assets/og-social.png" />
 
     <script type="application/ld+json">
       {
@@ -158,16 +160,29 @@
           <span class="repo-separator">|</span>
           <span class="repo-name">Research Profile</span>
         </div>
-        <nav class="site-nav" aria-label="Primary">
-          <button type="button" class="nav-tab is-active" data-panel-target="overview">Overview</button>
-          <button type="button" class="nav-tab" data-panel-target="news">News</button>
-          <button type="button" class="nav-tab" data-panel-target="projects">Projects</button>
-          <button type="button" class="nav-tab" data-panel-target="publications">Publications</button>
-          <button type="button" class="nav-tab" data-panel-target="analytics">Analytics</button>
-          <button type="button" class="nav-tab" data-panel-target="grants">Grants</button>
-          <button type="button" class="nav-tab" data-panel-target="teaching">Teaching</button>
-          <button type="button" class="nav-tab" data-panel-target="service">Service</button>
+        <nav class="site-nav" aria-label="Profile sections" role="tablist">
+          <button type="button" class="nav-tab is-active" data-panel-target="overview" role="tab">Overview</button>
+          <button type="button" class="nav-tab" data-panel-target="news" role="tab">News</button>
+          <button type="button" class="nav-tab" data-panel-target="projects" role="tab">Projects</button>
+          <button type="button" class="nav-tab" data-panel-target="publications" role="tab">Publications</button>
+          <button type="button" class="nav-tab" data-panel-target="analytics" role="tab">Analytics</button>
+          <button type="button" class="nav-tab" data-panel-target="grants" role="tab">Grants</button>
+          <button type="button" class="nav-tab" data-panel-target="teaching" role="tab">Teaching</button>
+          <button type="button" class="nav-tab" data-panel-target="service" role="tab">Service</button>
         </nav>
+        <label class="mobile-nav-control" for="mobile-section-nav">
+          <span>Profile section</span>
+          <select id="mobile-section-nav" aria-label="Choose a profile section">
+            <option value="overview">Overview</option>
+            <option value="news">News</option>
+            <option value="projects">Projects</option>
+            <option value="publications">Publications</option>
+            <option value="analytics">Analytics</option>
+            <option value="grants">Grants</option>
+            <option value="teaching">Teaching</option>
+            <option value="service">Service</option>
+          </select>
+        </label>
       </header>
 
       <main>
@@ -203,6 +218,9 @@
                 class="hero-portrait"
                 src="assets/headshot.jpg"
                 alt="Portrait of Dr. Jewoong Moon"
+                width="1024"
+                height="1024"
+                decoding="async"
               />
             </div>
             <div class="hero-panel-copy">
@@ -302,6 +320,9 @@
                       src="assets/institution-logos/ua-capstone-a-crimson.svg"
                       alt="The University of Alabama logo"
                       loading="lazy"
+                      width="190"
+                      height="48"
+                      decoding="async"
                     />
                   </div>
                   <div class="credential-copy">
@@ -318,6 +339,9 @@
                       src="assets/institution-logos/fsu-wordmark-gold.svg"
                       alt="Florida State University logo"
                       loading="lazy"
+                      width="190"
+                      height="48"
+                      decoding="async"
                     />
                   </div>
                   <div class="credential-copy">
@@ -335,6 +359,9 @@
                       src="assets/institution-logos/chonnam-national-university.png"
                       alt="Chonnam National University logo"
                       loading="lazy"
+                      width="190"
+                      height="38"
+                      decoding="async"
                     />
                   </div>
                   <div class="credential-copy">
@@ -351,6 +378,9 @@
                       src="assets/institution-logos/chonnam-national-university.png"
                       alt="Chonnam National University logo"
                       loading="lazy"
+                      width="190"
+                      height="38"
+                      decoding="async"
                     />
                   </div>
                   <div class="credential-copy">
@@ -466,6 +496,7 @@
                     </label>
                     <div class="filter-bar" id="publication-filters"></div>
                   </div>
+                  <p class="publication-results-status" id="publication-results-status" aria-live="polite"></p>
                   <ol class="publication-list" id="publication-list"></ol>
                   <div class="publication-pagination" id="publication-pagination" aria-label="Publication pages"></div>
                   <section class="working-paper-block" aria-labelledby="working-paper-heading">
@@ -497,10 +528,9 @@
                     <span class="section-label">Funding</span>
                     <h2>Funded work and proposal pipeline</h2>
                   </div>
-                  <p class="section-note">
-                    The CV reports $107,459 in funded awards, with active proposal
-                    development around AI, immersive learning, STEM education, and
-                    archival retrieval.
+                  <p class="section-note" id="grant-summary">
+                    Funding totals and proposal activity are generated from the
+                    current CV data.
                   </p>
                   <div class="grant-dashboard">
                     <div class="grant-metrics" id="grant-metrics"></div>
@@ -514,10 +544,7 @@
                           </p>
                         </div>
                         <div class="grant-stack" id="grant-stack"></div>
-                        <div class="grant-legend">
-                          <span><i class="legend-swatch funded"></i> Funded</span>
-                          <span><i class="legend-swatch pending"></i> Pending</span>
-                        </div>
+                        <div class="grant-concentration" id="grant-concentration"></div>
                       </div>
                       <div class="grant-pipeline-panel">
                         <div class="pipeline-column">
@@ -769,6 +796,9 @@
           <p>
             Academic research portfolio for AI, XR, analytics, and learning
             experience design.
+          </p>
+          <p class="footer-data-status" id="footer-data-status">
+            CV-derived profile data.
           </p>
         </div>
       </footer>

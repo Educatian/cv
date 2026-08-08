@@ -5,7 +5,7 @@ const stats = siteData.stats || [
   { value: "21", label: "Conference proceedings" },
   { value: "8", label: "Book chapters" },
   { value: "70", label: "Presentations" },
-  { value: "$107K+", label: "Funded awards" },
+  { value: "$586K+", label: "Funded awards" },
 ];
 
 const focusAreas = siteData.focusAreas || [
@@ -64,10 +64,10 @@ const honors = siteData.honors || [
 ];
 
 const grantPortfolio = siteData.grantPortfolio || {
-  fundedTotal: 107459,
-  pendingTotal: 638536,
-  fundedCount: 12,
-  pendingCount: 4,
+  fundedTotal: 586649,
+  pendingTotal: 35000,
+  fundedCount: 13,
+  pendingCount: 2,
 };
 
 const news = siteData.news || [
@@ -1018,6 +1018,13 @@ let publicationLookupCache = null;
 let abstractLibraryPromise = null;
 
 const journalFrontProfiles = {
+  "AI & Society": {
+    publisher: "Springer Nature",
+    masthead: "AI & Society",
+    spotlight: "Knowledge, culture, and communication",
+    theme: "theme-ink",
+    coverImage: "assets/journal-covers/ai-and-society.webp",
+  },
   "AI & Ethics": {
     publisher: "Springer Nature",
     masthead: "AI & Ethics",
@@ -1507,6 +1514,9 @@ function renderJournalFrontThumb(item) {
         src="${front.coverImage}"
         alt="${front.masthead} journal cover"
         loading="lazy"
+        width="320"
+        height="420"
+        decoding="async"
       />
     `;
   }
@@ -1559,6 +1569,9 @@ async function hydratePublicationThumbnailNode(node) {
       src="${escapeHtml(thumbnailUrl)}"
       alt="${escapeHtml(alt)}"
       loading="lazy"
+      width="320"
+      height="420"
+      decoding="async"
     />
   `;
 }
@@ -1597,6 +1610,9 @@ function renderServiceThumb(item) {
           src="${profile.image}"
           alt="${escapeHtml(profile.alt || `${item.title} thumbnail`)}"
           loading="lazy"
+          width="320"
+          height="180"
+          decoding="async"
         />
       </div>
       <div class="service-thumb-topline">
@@ -1910,7 +1926,7 @@ function renderAppointmentsEducation() {
       (item) => `
         <li class="credential-item">
           <div class="credential-logo credential-logo-${escapeHtml(item.logoTheme || "ua")}">
-            <img src="${escapeHtml(item.logo || "")}" alt="${escapeHtml(item.logoAlt || item.institution || "Institution logo")}" loading="lazy" />
+            <img src="${escapeHtml(item.logo || "")}" alt="${escapeHtml(item.logoAlt || item.institution || "Institution logo")}" loading="lazy" width="190" height="48" decoding="async" />
           </div>
           <div class="credential-copy">
             <span class="timeline-year">${escapeHtml(item.year || "")}</span>
@@ -2123,7 +2139,7 @@ function renderAffiliations() {
             rel="noreferrer"
           >
             <div class="affiliation-logo-shell">
-              <img class="affiliation-logo" src="${item.logo}" alt="${item.alt}" loading="lazy" />
+              <img class="affiliation-logo" src="${item.logo}" alt="${item.alt}" loading="lazy" width="160" height="80" decoding="async" />
             </div>
             <div class="affiliation-copy">
               <span class="affiliation-acronym">${item.acronym}</span>
@@ -2244,8 +2260,10 @@ function renderFilters() {
       (tag) => `
         <button class="filter-button ${
           tag === activeFilter ? "is-active" : ""
-        }" type="button" data-filter="${tag}">
-          ${tag}
+        }" type="button" data-filter="${escapeHtml(tag)}" aria-pressed="${
+          tag === activeFilter
+        }">
+          ${escapeHtml(tag)}
         </button>
       `
     )
@@ -2308,6 +2326,7 @@ function getVisiblePublicationRecords() {
 
 function renderPublications() {
   const list = document.getElementById("publication-list");
+  const status = document.getElementById("publication-results-status");
   if (!list) {
     return;
   }
@@ -2332,6 +2351,9 @@ function renderPublications() {
         No publications match the current search and filter.
       </li>
     `;
+    if (status) {
+      status.textContent = "No publications match the current search and filter.";
+    }
     renderPublicationPagination(totalPages);
     document.dispatchEvent(new CustomEvent("panel:content-updated"));
     return;
@@ -2388,6 +2410,13 @@ function renderPublications() {
     )
     .join("");
 
+  if (status) {
+    const endIndex = Math.min(startIndex + pagedItems.length, visibleItems.length);
+    status.textContent = `Showing ${startIndex + 1}–${endIndex} of ${
+      visibleItems.length
+    } matching publications.`;
+  }
+
   renderPublicationPagination(totalPages);
   hydratePublicationAbstracts();
   hydratePublicationThumbnails(list);
@@ -2413,6 +2442,8 @@ function renderPublicationPagination(totalPages) {
         type="button"
         class="page-number ${page === currentPublicationPage ? "is-active" : ""}"
         data-publication-page="${page}"
+        aria-label="Publication page ${page}"
+        ${page === currentPublicationPage ? 'aria-current="page"' : ""}
       >
         ${page}
       </button>
@@ -2423,6 +2454,9 @@ function renderPublicationPagination(totalPages) {
     button.addEventListener("click", () => {
       currentPublicationPage = Number(button.dataset.publicationPage);
       renderPublications();
+      document
+        .querySelector('#publication-pagination [aria-current="page"]')
+        ?.focus();
     });
   });
 }
@@ -2494,6 +2528,8 @@ function renderCompletePublicationPagination(totalPages) {
         type="button"
         class="page-number ${page === currentCompletePublicationPage ? "is-active" : ""}"
         data-complete-publication-page="${page}"
+        aria-label="Complete publication page ${page}"
+        ${page === currentCompletePublicationPage ? 'aria-current="page"' : ""}
       >
         ${page}
       </button>
@@ -2508,6 +2544,9 @@ function renderCompletePublicationPagination(totalPages) {
           button.dataset.completePublicationPage
         );
         renderCompletePublications();
+        document
+          .querySelector('#complete-publication-pagination [aria-current="page"]')
+          ?.focus();
       });
     });
 }
@@ -2546,10 +2585,10 @@ function renderWorkingPaperSummary() {
 
 function renderWorkingPaperFilters() {
   document.querySelectorAll("[data-working-filter]").forEach((button) => {
-    button.classList.toggle(
-      "is-active",
-      button.dataset.workingFilter === activeWorkingPaperFilter
-    );
+    const isActive =
+      button.dataset.workingFilter === activeWorkingPaperFilter;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
 
     button.onclick = () => {
       activeWorkingPaperFilter = button.dataset.workingFilter || "All";
@@ -2621,6 +2660,8 @@ function renderWorkingPaperPagination(totalPages) {
         type="button"
         class="page-number ${page === currentWorkingPaperPage ? "is-active" : ""}"
         data-working-paper-page="${page}"
+        aria-label="Working paper page ${page}"
+        ${page === currentWorkingPaperPage ? 'aria-current="page"' : ""}
       >
         ${page}
       </button>
@@ -2631,6 +2672,9 @@ function renderWorkingPaperPagination(totalPages) {
     button.addEventListener("click", () => {
       currentWorkingPaperPage = Number(button.dataset.workingPaperPage);
       renderWorkingPapers();
+      document
+        .querySelector('#working-paper-pagination [aria-current="page"]')
+        ?.focus();
     });
   });
 }
@@ -2641,9 +2685,9 @@ function renderGrantList(targetId, items) {
     .map(
       (item) => `
         <li>
-          <strong>${item.title}</strong>
-          <span>${item.meta}</span>
-          <span>${item.amount}</span>
+          <strong>${escapeHtml(item.title)}</strong>
+          <span>${escapeHtml(item.meta)}</span>
+          <span>${escapeHtml(item.amount)}</span>
         </li>
       `
     )
@@ -2662,42 +2706,103 @@ function formatCurrencyShort(value) {
   return `$${value}`;
 }
 
+function formatCurrencyExact(value) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(Number(value || 0));
+}
+
+function getCurrentGrantPortfolio() {
+  return siteData.grantPortfolio || grantPortfolio;
+}
+
 function renderGrantDashboard() {
-  const totalPortfolio =
-    grantPortfolio.fundedTotal + grantPortfolio.pendingTotal;
-  const fundedShare = (grantPortfolio.fundedTotal / totalPortfolio) * 100;
-  const pendingShare = (grantPortfolio.pendingTotal / totalPortfolio) * 100;
+  const portfolio = getCurrentGrantPortfolio();
+  const totalPortfolio = portfolio.fundedTotal + portfolio.pendingTotal;
+  const fundedShare = totalPortfolio
+    ? (portfolio.fundedTotal / totalPortfolio) * 100
+    : 0;
+  const pendingShare = totalPortfolio
+    ? (portfolio.pendingTotal / totalPortfolio) * 100
+    : 0;
+  const fundedAmounts = grants.funded.filter(
+    (item) => typeof item.amountValue === "number"
+  );
+  const largestFunded = fundedAmounts.reduce(
+    (largest, item) =>
+      !largest || item.amountValue > largest.amountValue ? item : largest,
+    null
+  );
+  const concentrationShare =
+    largestFunded && portfolio.fundedTotal
+      ? (largestFunded.amountValue / portfolio.fundedTotal) * 100
+      : 0;
+
+  const summary = document.getElementById("grant-summary");
+  if (summary) {
+    summary.textContent = `The current CV records ${formatCurrencyExact(
+      portfolio.fundedTotal
+    )} across ${portfolio.fundedCount} funded awards and ${formatCurrencyExact(
+      portfolio.pendingTotal
+    )} across ${portfolio.pendingCount} active proposals.`;
+  }
 
   const metrics = document.getElementById("grant-metrics");
   metrics.innerHTML = `
     <div class="grant-metric-card">
       <span class="grant-metric-label">Awarded Total</span>
-      <strong>${formatCurrencyShort(grantPortfolio.fundedTotal)}</strong>
-      <span class="grant-metric-sub">${grantPortfolio.fundedCount} funded awards in CV</span>
+      <strong>${formatCurrencyExact(portfolio.fundedTotal)}</strong>
+      <span class="grant-metric-sub">${portfolio.fundedCount} funded awards in the current CV</span>
     </div>
     <div class="grant-metric-card">
       <span class="grant-metric-label">Pending Total</span>
-      <strong>${formatCurrencyShort(grantPortfolio.pendingTotal)}</strong>
-      <span class="grant-metric-sub">${grantPortfolio.pendingCount} active proposals</span>
+      <strong>${formatCurrencyExact(portfolio.pendingTotal)}</strong>
+      <span class="grant-metric-sub">${portfolio.pendingCount} active proposals</span>
     </div>
     <div class="grant-metric-card">
       <span class="grant-metric-label">Portfolio Total</span>
-      <strong>${formatCurrencyShort(totalPortfolio)}</strong>
+      <strong>${formatCurrencyExact(totalPortfolio)}</strong>
       <span class="grant-metric-sub">Awarded and pending combined</span>
     </div>
   `;
 
   const stack = document.getElementById("grant-stack");
   stack.innerHTML = `
-    <div class="grant-stack-bar" aria-label="Funding totals comparison">
-      <span class="grant-stack-segment funded" style="width: ${fundedShare}%"></span>
-      <span class="grant-stack-segment pending" style="width: ${pendingShare}%"></span>
+    <div class="grant-compare-row" role="img" aria-label="Funded awards: ${formatCurrencyExact(
+      portfolio.fundedTotal
+    )}, ${fundedShare.toFixed(1)} percent of the combined portfolio">
+      <div class="grant-compare-label">
+        <strong>Funded</strong>
+        <span>${formatCurrencyExact(portfolio.fundedTotal)} · ${fundedShare.toFixed(1)}%</span>
+      </div>
+      <div class="grant-stack-bar" aria-hidden="true">
+        <span class="grant-stack-segment funded" style="width: ${fundedShare}%"></span>
+      </div>
     </div>
-    <div class="grant-stack-notes">
-      <span>Funded share: ${fundedShare.toFixed(1)}%</span>
-      <span>Pending share: ${pendingShare.toFixed(1)}%</span>
+    <div class="grant-compare-row" role="img" aria-label="Pending proposals: ${formatCurrencyExact(
+      portfolio.pendingTotal
+    )}, ${pendingShare.toFixed(1)} percent of the combined portfolio">
+      <div class="grant-compare-label">
+        <strong>Pending</strong>
+        <span>${formatCurrencyExact(portfolio.pendingTotal)} · ${pendingShare.toFixed(1)}%</span>
+      </div>
+      <div class="grant-stack-bar" aria-hidden="true">
+        <span class="grant-stack-segment pending" style="width: ${pendingShare}%"></span>
+      </div>
     </div>
   `;
+
+  const concentration = document.getElementById("grant-concentration");
+  if (concentration && largestFunded) {
+    concentration.innerHTML = `
+      <strong>Concentration context</strong>
+      <span>${escapeHtml(largestFunded.title)} represents ${concentrationShare.toFixed(
+        1
+      )}% of funded dollars (${formatCurrencyExact(largestFunded.amountValue)}).</span>
+    `;
+  }
 
   renderGrantBars("funded-bars", grants.funded, "funded");
   renderGrantBars("pending-bars", grants.pending, "pending");
@@ -2720,15 +2825,25 @@ function renderGrantBars(targetId, items, status) {
       return `
         <article class="grant-bar-card">
           <div class="grant-bar-topline">
-            <span class="grant-bar-title">${item.title}</span>
-            <span class="grant-bar-amount">${item.amount}</span>
+            <span class="grant-bar-title">${escapeHtml(item.title)}</span>
+            <span class="grant-bar-amount">${escapeHtml(
+              typeof item.amountValue === "number"
+                ? formatCurrencyExact(item.amountValue)
+                : "Amount not disclosed"
+            )}</span>
           </div>
-          <div class="grant-bar-track">
+          <div class="grant-bar-track" role="img" aria-label="${escapeHtml(
+            item.title
+          )}: ${escapeHtml(
+            typeof item.amountValue === "number"
+              ? formatCurrencyExact(item.amountValue)
+              : "amount not disclosed"
+          )}">
             <span class="grant-bar-fill ${status} ${
               typeof item.amountValue === "number" ? "" : "is-unknown"
-            }" style="width: ${width}%"></span>
+            }" style="width: ${width}%" aria-hidden="true"></span>
           </div>
-          <p class="grant-bar-meta">${item.meta}</p>
+          <p class="grant-bar-meta">${escapeHtml(item.meta)}</p>
         </article>
       `;
     })
@@ -2814,10 +2929,28 @@ function enablePanelNavigation() {
   const deck = document.getElementById("content-deck");
   const panels = Array.from(document.querySelectorAll(".content-panel"));
   const tabs = Array.from(document.querySelectorAll("[data-panel-target]"));
+  const mobileSelect = document.getElementById("mobile-section-nav");
 
   if (!deck || !panels.length || !tabs.length) {
     return;
   }
+
+  const validPanelNames = new Set(
+    panels.map((panel) => panel.dataset.panel)
+  );
+
+  panels.forEach((panel) => {
+    const panelName = panel.dataset.panel;
+    panel.id = `panel-${panelName}`;
+    panel.setAttribute("role", "tabpanel");
+    panel.setAttribute("aria-labelledby", `tab-${panelName}`);
+  });
+
+  tabs.forEach((tab) => {
+    const panelName = tab.dataset.panelTarget;
+    tab.id = `tab-${panelName}`;
+    tab.setAttribute("aria-controls", `panel-${panelName}`);
+  });
 
   function syncDeckHeight() {
     const activePanel = deck.querySelector(".content-panel.is-active");
@@ -2828,20 +2961,45 @@ function enablePanelNavigation() {
     deck.style.height = `${activePanel.offsetHeight}px`;
   }
 
-  function activatePanel(panelName) {
+  function activatePanel(panelName, options = {}) {
+    const { historyMode = "none", focusTab = false } = options;
     const targetPanel =
       panels.find((panel) => panel.dataset.panel === panelName) || panels[0];
+    const activePanelName = targetPanel.dataset.panel;
 
     panels.forEach((panel) => {
-      panel.classList.toggle("is-active", panel === targetPanel);
+      const isActive = panel === targetPanel;
+      panel.classList.toggle("is-active", isActive);
+      panel.hidden = !isActive;
     });
 
     tabs.forEach((tab) => {
-      tab.classList.toggle(
-        "is-active",
-        tab.dataset.panelTarget === targetPanel.dataset.panel
-      );
+      const isActive = tab.dataset.panelTarget === activePanelName;
+      tab.classList.toggle("is-active", isActive);
+      tab.setAttribute("aria-selected", String(isActive));
+      tab.tabIndex = isActive ? 0 : -1;
     });
+
+    if (mobileSelect) {
+      mobileSelect.value = activePanelName;
+    }
+
+    if (historyMode !== "none") {
+      const nextUrl = new URL(window.location.href);
+      nextUrl.hash = activePanelName;
+      window.history[historyMode === "replace" ? "replaceState" : "pushState"](
+        { panel: activePanelName },
+        "",
+        nextUrl
+      );
+    }
+
+    const activeTab = tabs.find(
+      (tab) => tab.dataset.panelTarget === activePanelName
+    );
+    if (focusTab && activeTab) {
+      activeTab.focus();
+    }
 
     targetPanel.querySelectorAll(".reveal").forEach((node) => {
       node.classList.add("is-visible");
@@ -2850,7 +3008,7 @@ function enablePanelNavigation() {
     requestAnimationFrame(syncDeckHeight);
     document.dispatchEvent(
       new CustomEvent("panel:activated", {
-        detail: { panel: targetPanel.dataset.panel },
+        detail: { panel: activePanelName },
       })
     );
   }
@@ -2872,20 +3030,90 @@ function enablePanelNavigation() {
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
-      activatePanel(tab.dataset.panelTarget);
+      activatePanel(tab.dataset.panelTarget, { historyMode: "push" });
       scrollToActivePanel();
+    });
+
+    tab.addEventListener("keydown", (event) => {
+      const currentIndex = tabs.indexOf(tab);
+      let nextIndex = null;
+
+      if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+        nextIndex = (currentIndex + 1) % tabs.length;
+      } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+        nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+      } else if (event.key === "Home") {
+        nextIndex = 0;
+      } else if (event.key === "End") {
+        nextIndex = tabs.length - 1;
+      }
+
+      if (nextIndex !== null) {
+        event.preventDefault();
+        activatePanel(tabs[nextIndex].dataset.panelTarget, {
+          historyMode: "push",
+          focusTab: true,
+        });
+      }
     });
   });
 
-  const hashTarget = window.location.hash.replace("#", "");
-  const validHash = panels.some((panel) => panel.dataset.panel === hashTarget);
+  if (mobileSelect) {
+    mobileSelect.addEventListener("change", () => {
+      activatePanel(mobileSelect.value, { historyMode: "push" });
+      scrollToActivePanel();
+    });
+  }
 
-  activatePanel(validHash ? hashTarget : "overview");
-  if (validHash && hashTarget !== "overview") {
+  const panelFromLocation = () => {
+    const hashTarget = decodeURIComponent(
+      window.location.hash.replace("#", "")
+    );
+    return validPanelNames.has(hashTarget) ? hashTarget : "overview";
+  };
+
+  const initialPanel = panelFromLocation();
+
+  activatePanel(initialPanel);
+  if (initialPanel !== "overview") {
     requestAnimationFrame(scrollToActivePanel);
   }
+  window.addEventListener("popstate", () => activatePanel(panelFromLocation()));
+  window.addEventListener("hashchange", () =>
+    activatePanel(panelFromLocation())
+  );
   window.addEventListener("resize", syncDeckHeight);
   document.addEventListener("panel:content-updated", syncDeckHeight);
+}
+
+function renderDataStatus() {
+  const root = document.getElementById("footer-data-status");
+  if (!root) return;
+
+  const generatedAt = new Date(siteData.generatedAt || "");
+  if (Number.isNaN(generatedAt.getTime())) {
+    root.textContent = "CV-derived profile data.";
+    return;
+  }
+
+  const readable = new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(generatedAt);
+
+  root.innerHTML = `CV data refreshed <time datetime="${escapeHtml(
+    generatedAt.toISOString()
+  )}">${escapeHtml(readable)}</time>. The ADIE Lab site reads the same generated record.`;
+}
+
+function compactMobileProfileRail() {
+  if (!window.matchMedia("(max-width: 760px)").matches) return;
+  document
+    .querySelectorAll(".profile-rail details[open]")
+    .forEach((details) => details.removeAttribute("open"));
 }
 
 window.__cvSite = {
@@ -2930,6 +3158,8 @@ if (document.getElementById("content-deck")) {
   renderServiceCards("leadership-list", leadershipRoles);
   renderServiceReview();
   renderTalks();
+  renderDataStatus();
+  compactMobileProfileRail();
   enableRevealMotion();
   enablePanelNavigation();
   enableThemeToggle();

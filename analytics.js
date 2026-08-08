@@ -758,6 +758,7 @@ function renderTopicCluster(data) {
 
   nodes
     .append("circle")
+    .attr("class", (d) => `analytics-topic-bubble analytics-topic-bubble-${d.data.type}`)
     .attr("r", (d) => d.r)
     .attr("fill", (d) => color(d.data.type))
     .attr("fill-opacity", 0.85);
@@ -770,8 +771,8 @@ function renderTopicCluster(data) {
     .append("text")
     .attr("text-anchor", "middle")
     .attr("fill", "#fffaf5")
-    .style("font-size", (d) => `${Math.max(10, Math.min(16, d.r / 2.8))}px`)
-    .style("font-weight", 600)
+    .style("font-size", (d) => `${Math.max(11, Math.min(16, d.r / 2.8))}px`)
+    .style("font-weight", 700)
     .selectAll("tspan")
     .data((d) => {
       const words = d.data.label.split(/\s+/);
