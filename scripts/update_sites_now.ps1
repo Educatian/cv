@@ -33,9 +33,41 @@ $adieRoot    = Join-Path $projectsDir 'adie'                         # ...\_proj
 
 function Section($t) { Write-Host ""; Write-Host "==== $t ====" -ForegroundColor Cyan }
 
+function Stop-Update([string]$message) {
+  Write-Host ""
+  Write-Host "  UPDATE STOPPED" -ForegroundColor Red
+  Write-Host "  $message" -ForegroundColor Red
+  Write-Host "  No stale CV data was copied to the Lab site." -ForegroundColor Yellow
+  Write-Host ""
+  Read-Host "  Press Enter to close"
+  exit 1
+}
+
 Write-Host ""
 Write-Host "  Update CV + Lab websites from the canonical CV docx" -ForegroundColor White
-Write-Host "  $(Join-Path $cvRoot 'CV_202605_MOON.docx')" -ForegroundColor DarkGray
+$docx = Join-Path $cvRoot 'CV_202605_MOON.docx'
+$lockMarker = Join-Path $cvRoot "~`$_202605_MOON.docx"
+Write-Host "  $docx" -ForegroundColor DarkGray
+
+# Fail fast before the slow analytics/abstract steps. Previously, running the
+# shortcut while Word was open let cv_autopush skip the CV refresh, after which
+# Step 4 copied the old generated JSON to the Lab repo and the runner still said
+# "Done." The second file-handle check also catches Word mid-save even when its
+# temporary lock marker is late or missing.
+if (-not (Test-Path -LiteralPath $docx)) {
+  Stop-Update "Canonical CV not found: $docx"
+}
+if (Test-Path -LiteralPath $lockMarker) {
+  Stop-Update "The CV is open in Microsoft Word. Save and close Word, then run this updater again."
+}
+$docxProbe = $null
+try {
+  $docxProbe = [IO.File]::Open($docx, 'Open', 'Read', 'None')
+  $docxProbe.Close()
+} catch {
+  if ($docxProbe) { $docxProbe.Dispose() }
+  Stop-Update "The CV file is still being written or locked. Save and close Word, then run this updater again."
+}
 
 # -------------------------------------------------- Step 1: Research analytics
 Section "Step 1/4  Research analytics  (OpenAlex + Google Scholar)"
@@ -122,23 +154,32 @@ if (Test-Path -LiteralPath $absPy) {
 Section "Step 3/4  CV site  ->  https://educatian.github.io/cv/"
 $cvAutopush = Join-Path $PSScriptRoot 'cv_autopush.ps1'
 if (Test-Path -LiteralPath $cvAutopush) {
-  & $cvAutopush
   $log = Join-Path $cvRoot ("logs\cv-autopush-" + (Get-Date -Format 'yyyyMM') + ".log")
+  $logLinesBefore = if (Test-Path -LiteralPath $log) { @(Get-Content -LiteralPath $log).Count } else { 0 }
+  & $cvAutopush
+  $newLogLines = @()
   if (Test-Path -LiteralPath $log) {
+    $newLogLines = @(Get-Content -LiteralPath $log | Select-Object -Skip $logLinesBefore)
     Write-Host "  --- recent CV pipeline log ---" -ForegroundColor DarkGray
-    Get-Content -LiteralPath $log -Tail 12 | ForEach-Object { Write-Host "    $_" -ForegroundColor Gray }
+    $newLogLines | Select-Object -Last 12 | ForEach-Object { Write-Host "    $_" -ForegroundColor Gray }
+  }
+  $cvSucceeded = @($newLogLines | Where-Object {
+    $_ -match '\[autopush\] SUCCESS \(' -or $_ -match '\[autopush\] nothing to push$'
+  }).Count -gt 0
+  if (-not $cvSucceeded) {
+    Stop-Update "The CV pipeline did not complete successfully. Review the log above, fix the reported issue, and run the updater again."
   }
 } else {
-  Write-Host "  cv_autopush.ps1 not found; cannot update CV." -ForegroundColor Red
+  Stop-Update "CV pipeline script not found: $cvAutopush"
 }
 
 # --------------------------------------------------------------- Step 4: Lab
 Section "Step 4/4  Lab site  ->  https://educatian.github.io/adie/"
 $genJson = Join-Path $cvRoot 'assets\site-data.generated.json'
 if (-not (Test-Path -LiteralPath $genJson)) {
-  Write-Host "  CV generated json not found ($genJson); skipping lab refresh." -ForegroundColor Yellow
+  Stop-Update "CV generated data not found: $genJson"
 } elseif (-not (Test-Path -LiteralPath $adieRoot)) {
-  Write-Host "  adie repo not found at $adieRoot; skipping." -ForegroundColor Yellow
+  Stop-Update "Lab repository not found: $adieRoot"
 } else {
   $json   = [IO.File]::ReadAllText($genJson, [Text.Encoding]::UTF8)
   $dstJson = Join-Path $adieRoot 'assets\data\cv-site-data.json'
@@ -150,19 +191,34 @@ if (-not (Test-Path -LiteralPath $genJson)) {
   [IO.File]::WriteAllText($dstJs, $js, (New-Object Text.UTF8Encoding($true)))
 
   Set-Location -LiteralPath $adieRoot
-  & git fetch origin 2>&1 | Out-Null
+  & git fetch origin 2>&1 | ForEach-Object { Write-Host "    $_" -ForegroundColor Gray }
+  if ($LASTEXITCODE -ne 0) {
+    Stop-Update "Could not fetch the Lab repository. Check the network or GitHub credentials, then run the updater again."
+  }
   & git add assets/data/cv-site-data.json assets/data/cv-site-data.js 2>&1 | Out-Null
+  if ($LASTEXITCODE -ne 0) {
+    Stop-Update "Could not stage the refreshed Lab fallback data."
+  }
   $staged = & git diff --cached --name-only
   if (-not $staged) {
     Write-Host "  Lab fallback already current; nothing to push." -ForegroundColor Green
   } else {
     $ts = Get-Date -Format 'yyyy-MM-dd HH:mm'
-    & git commit -m "Refresh bundled CV data fallback ($ts)" 2>&1 | Out-Null
+    & git commit -m "Refresh bundled CV data fallback ($ts)" 2>&1 | ForEach-Object { Write-Host "    $_" -ForegroundColor Gray }
+    if ($LASTEXITCODE -ne 0) {
+      Stop-Update "Could not commit the refreshed Lab fallback data."
+    }
     $behind = (& git rev-list "HEAD..origin/main" --count) -as [int]
-    if ($behind -gt 0) { & git merge -s ours origin/main --no-edit 2>&1 | Out-Null }
+    if ($behind -gt 0) {
+      & git merge -s ours origin/main --no-edit 2>&1 | ForEach-Object { Write-Host "    $_" -ForegroundColor Gray }
+      if ($LASTEXITCODE -ne 0) {
+        & git merge --abort 2>&1 | Out-Null
+        Stop-Update "Could not reconcile the Lab repository with origin/main."
+      }
+    }
     & git push 2>&1 | ForEach-Object { Write-Host "    $_" -ForegroundColor Gray }
     if ($LASTEXITCODE -eq 0) { Write-Host "  Lab repo pushed." -ForegroundColor Green }
-    else { Write-Host "  Lab push failed (check network/credentials)." -ForegroundColor Red }
+    else { Stop-Update "Lab push failed. Check the network or GitHub credentials, then run the updater again." }
   }
 }
 
