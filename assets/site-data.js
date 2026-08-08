@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-08-06T16:00:04.988423+00:00",
+  "generatedAt": "2026-08-08T04:08:31.139937+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -39,7 +39,7 @@ window.__cvSiteData = {
   },
   "stats": [
     {
-      "value": "63",
+      "value": "64",
       "label": "Journal articles"
     },
     {
@@ -51,7 +51,7 @@ window.__cvSiteData = {
       "label": "Book chapters"
     },
     {
-      "value": "40",
+      "value": "39",
       "label": "Working papers"
     },
     {
@@ -59,7 +59,7 @@ window.__cvSiteData = {
       "label": "Presentations"
     },
     {
-      "value": "$107K+",
+      "value": "$586K+",
       "label": "Funded awards"
     }
   ],
@@ -161,17 +161,22 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
+      "text": "Accepted article in AI & Society: Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy."
+    },
+    {
+      "date": "2026",
+      "type": "Publication",
       "text": "Minor revision manuscript for Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
     },
     {
       "date": "2026",
       "type": "Publication",
-      "text": "In Press article in Interactive Learning Environments: From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training."
+      "text": "Journal article in Interactive Learning Environments: From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training."
     },
     {
       "date": "2026",
-      "type": "Publication",
-      "text": "In Press article in ZDM – International Journal on Mathematics Education: How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge."
+      "type": "Grant",
+      "text": "Funded project: Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning ($478,690)."
     },
     {
       "date": "2027",
@@ -180,16 +185,21 @@ window.__cvSiteData = {
     },
     {
       "date": "2026",
-      "type": "Grant",
-      "text": "Funded project: The Alabama Generative Engineering Textbook (AL-GET): AI-enhanced Personalized Learning for STEM Education ($15,000)."
-    },
-    {
-      "date": "2026",
       "type": "Award",
       "text": "Nellie Rose McCrory Faculty Excellence Award – Research Division (2026), College of Education, The University of Alabama"
     }
   ],
   "initiatives": [
+    {
+      "name": "Immersive Remembrance",
+      "badge": "Funded",
+      "summary": "Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning",
+      "tags": [
+        "$478,690",
+        "Lead PI",
+        "Institute of Museum and Library Services – IMLS"
+      ]
+    },
     {
       "name": "University of Alabama",
       "badge": "Funded",
@@ -210,16 +220,6 @@ window.__cvSiteData = {
       ]
     },
     {
-      "name": "Large Language Model-based Cyber Sentinel Co-Pilot",
-      "badge": "Funded",
-      "summary": "Large Language Model-based Cyber Sentinel Co-Pilot: Professional Development for Alabama Secondary Teacher Training",
-      "tags": [
-        "$30,000",
-        "Lead PI",
-        "COE RisingTide Grant, The University of Alabama"
-      ]
-    },
-    {
       "name": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration",
       "badge": "Pending",
       "summary": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
@@ -230,17 +230,30 @@ window.__cvSiteData = {
       ]
     },
     {
-      "name": "Shift the Lens",
+      "name": "Collaborative Research",
       "badge": "Pending",
-      "summary": "Shift the Lens: Uncovering Students' Assets in Written Math Work via Multimodal AI",
+      "summary": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
       "tags": [
-        "$50,000",
-        "Lead PI",
-        "Advanced Innovative Math Solutions Collaboratory, PENDING"
+        "Key Personnel / External Evaluator",
+        "January 2027 - December 2029"
       ]
     }
   ],
   "publications": [
+    {
+      "year": "2026",
+      "title": "Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy",
+      "authors": "Hong, S., Moon, J., Cho, H., & Lim, C.",
+      "venue": "AI & Society",
+      "link": "",
+      "tags": [
+        "GenAI",
+        "Higher Ed",
+        "Ethics"
+      ],
+      "note": "mentored collaboration",
+      "status": "Accepted"
+    },
     {
       "year": "2026",
       "title": "Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers",
@@ -264,14 +277,14 @@ window.__cvSiteData = {
         "XR"
       ],
       "note": "mentored collaboration",
-      "status": "In Press"
+      "status": ""
     },
     {
       "year": "2026",
       "title": "How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge",
       "authors": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, K., & Sanders, M.",
       "venue": "ZDM – International Journal on Mathematics Education",
-      "link": "",
+      "link": "https://doi.org/10.1007/s11858-026-01816-1",
       "tags": [
         "GenAI",
         "Teacher Ed",
@@ -291,7 +304,7 @@ window.__cvSiteData = {
         "Game-Based",
         "Teacher Ed"
       ],
-      "note": "corresponding author",
+      "note": "mentored collaboration",
       "status": ""
     },
     {
@@ -1072,25 +1085,31 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
+      "citation": "* Hong, S., Moon, J., Cho, H., & Lim, C. (Accepted, 2026). Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy. AI & Society. [ESCI-indexed, IF = 6.1, IF5 = 2.1]",
+      "link": ""
+    },
+    {
+      "year": "2026",
+      "category": "International",
       "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Minor revision, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
       "link": ""
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Awoyemi, I., & Moon, J., Abu, S., & Song, S. (In Press, 2026). From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training. Interactive Learning Environments https://doi.org/10.1080/10494820.2026.2709674 [SSCI-indexed, IF =6.7, IF5 = 7.1]",
+      "citation": "* Awoyemi, I., & Moon, J., Abu, S., & Song, S. (2026). From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training. Interactive Learning Environments https://doi.org/10.1080/10494820.2026.2709674 [SSCI-indexed, IF =6.7, IF5 = 7.1]",
       "link": "https://doi.org/10.1080/10494820.2026.2709674"
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, K., & Sanders, M. (In Press, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
-      "link": ""
+      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, K., & Sanders, M. (In Press, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education. https://doi.org/10.1007/s11858-026-01816-1 [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
+      "link": "https://doi.org/10.1007/s11858-026-01816-1"
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Jeong, Y., Lee, Y., Byun, G., & Moon, J. (2026). How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography. Simulation & Gaming. https://doi.org/10.1177/10468781261464242 [ESCI-indexed, IF = 2.2, IF5 = 3.2]",
+      "citation": "* Jeong, Y., Lee, Y., Byun, G., & Moon, J. (2026). How teacher-practitioners shape generative AI implementation in educational simulation design: A collective autoethnography. Simulation & Gaming. https://doi.org/10.1177/10468781261464242 [ESCI-indexed, IF = 2.2, IF5 = 3.2]",
       "link": "https://doi.org/10.1177/10468781261464242"
     },
     {
@@ -1694,17 +1713,6 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Under review",
-      "year": "Pipeline",
-      "title": "Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy",
-      "authors": "* Hong, S., Moon, J., Cho, H., & Lim, C.",
-      "venue": "AI & Society",
-      "citation": "* Hong, S., Moon, J., Cho, H., & Lim, C. (Under review). Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy. AI & Society. (ESCI-indexed journal).",
-      "link": ""
-    },
-    {
-      "bucket": "Submitted or Under Review",
-      "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
       "title": "Overcoming pre-service teachers’ AI anxiety through collaborative online discussions on generative AI: Linguistic insights in cognitive and emotional trajectories",
@@ -1891,15 +1899,21 @@ window.__cvSiteData = {
     }
   ],
   "workingPaperSummary": {
-    "total": 40,
-    "submittedOrUnderReview": 33,
+    "total": 39,
+    "submittedOrUnderReview": 32,
     "inPreparation": 7,
-    "journalManuscripts": 35,
+    "journalManuscripts": 34,
     "bookChapters": 2,
     "conferenceProposals": 3
   },
   "grants": {
     "funded": [
+      {
+        "title": "Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning",
+        "meta": "Lead PI | Institute of Museum and Library Services – IMLS | September 2026 - August 2029",
+        "amount": "$478,690",
+        "amountValue": 478690.0
+      },
       {
         "title": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
         "meta": "June 2027-August 2027",
@@ -1981,36 +1995,18 @@ window.__cvSiteData = {
         "amountValue": 35000.0
       },
       {
-        "title": "Shift the Lens: Uncovering Students' Assets in Written Math Work via Multimodal AI",
-        "meta": "Lead PI | Advanced Innovative Math Solutions Collaboratory, PENDING | August 2026 - August 2027",
-        "amount": "$50,000",
-        "amountValue": 50000.0
-      },
-      {
         "title": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
         "meta": "Key Personnel / External Evaluator | January 2027 - December 2029",
         "amount": "pending",
         "amountValue": null
-      },
-      {
-        "title": "Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning",
-        "meta": "Lead PI | Institute of Museum and Library Services - IMLS, PENDING | September 2026 - August 2029",
-        "amount": "$478,690",
-        "amountValue": 478690.0
-      },
-      {
-        "title": "Shift the Lens: Uncovering Students' Assets in Written Math Work via Multimodal AI",
-        "meta": "Lead PI | Advanced Innovative Math Solutions Collaboratory, PENDING | June 2026 - May 2027",
-        "amount": "$50,000",
-        "amountValue": 50000.0
       }
     ]
   },
   "grantPortfolio": {
-    "fundedTotal": 107459,
-    "pendingTotal": 613690,
-    "fundedCount": 12,
-    "pendingCount": 5
+    "fundedTotal": 586149,
+    "pendingTotal": 35000,
+    "fundedCount": 13,
+    "pendingCount": 2
   },
   "teaching": {
     "teachingPortfolio": [
@@ -2153,19 +2149,19 @@ window.__cvSiteData = {
       "meta": "Proposal submitted to the International Conference on Learning Sciences and Educational Innovation (ICOLSEI), Seoul, South Korea"
     },
     {
-      "title": "ReviewLens: An AI-mediated simulation for learning scholarly peer review through epistemic immersion",
-      "meta": "iLEAD Stream, iLRN 2026, Athens, Greece"
-    },
-    {
-      "title": "DataSandbox: Designing hands-on, manipulative simulations for statistical sensemaking",
-      "meta": "iLEAD Stream, iLRN 2026, Athens, Greece."
-    },
-    {
       "title": "Cognitive diagnostic modeling from open educational game data: A cross-domain analysis in science learning",
       "meta": "Poster Session, AERA 2026, Los Angeles, United States."
     },
     {
       "title": "Embodied arts-Integrated AI literacy: A nested mixed-methods preliminary study with K-12 educators",
+      "meta": "Poster Session, AERA 2026, Los Angeles, United States."
+    },
+    {
+      "title": "(Upcoming 2026, April)",
+      "meta": "Modeling behavioral dynamics and cognitive states in VR safety training: A learning analytics approach. Poster Session, AERA 2026, Los Angeles, United States."
+    },
+    {
+      "title": "Feedback‐driven strategic shifts in immersive virtual reality training: A multi-phase behavioral-mining study",
       "meta": "Poster Session, AERA 2026, Los Angeles, United States."
     }
   ]
