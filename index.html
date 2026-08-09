@@ -103,6 +103,8 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="assets/site-data.js"></script>
     <script defer src="assets/projects-data.js"></script>
+    <script defer src="assets/featured-projects.js"></script>
+    <script defer src="assets/featured-rotation.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
     <script defer src="app.js"></script>
     <script defer src="analytics.js"></script>
@@ -461,15 +463,20 @@
                 <section id="projects" class="content-section reveal">
                   <div class="section-heading">
                     <span class="section-label">Projects</span>
-                    <h2>Development work and open guides</h2>
+                    <h2>Selected projects</h2>
                   </div>
                   <p class="section-note">
-                    Curated software prototypes, research analytics
-                    pipelines, and open instructional guides from the
-                    <a href="https://github.com/Educatian" target="_blank" rel="noreferrer">Educatian GitHub organization</a>.
-                    Each card links to its source repository and, where
-                    available, a live build on GitHub Pages.
+                    Image-led case studies rotate through current design
+                    research, prototypes, and instructional tools. Pause the
+                    sequence or choose the next project at any time.
                   </p>
+                  <div data-featured-projects data-image-base="assets/project-images/" aria-label="Rotating selected projects"></div>
+                  <div class="project-archive-heading">
+                    <span class="section-label">Project archive</span>
+                    <h3>Development work and open guides</h3>
+                    <p class="section-note">Browse the full collection, including source repositories and live builds from the Educatian GitHub organization.</p>
+                    <a class="project-link project-link-live" href="https://github.com/Educatian" target="_blank" rel="noreferrer">View all on GitHub</a>
+                  </div>
                   <div class="project-deck" id="project-deck"></div>
                 </section>
               </div>
