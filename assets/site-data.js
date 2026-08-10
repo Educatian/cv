@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-08-08T16:00:04.643323+00:00",
+  "generatedAt": "2026-08-10T00:38:49.028966+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -59,7 +59,7 @@ window.__cvSiteData = {
       "label": "Presentations"
     },
     {
-      "value": "$587K+",
+      "value": "$584K+",
       "label": "Funded awards"
     }
   ],
@@ -176,7 +176,7 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Grant",
-      "text": "Funded project: Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning ($478,690)."
+      "text": "Funded project: Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning ($476,421)."
     },
     {
       "date": "2027",
@@ -195,7 +195,7 @@ window.__cvSiteData = {
       "badge": "Funded",
       "summary": "Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning",
       "tags": [
-        "$478,690",
+        "$476,421",
         "Lead PI",
         "Institute of Museum and Library Services – IMLS"
       ]
@@ -232,7 +232,7 @@ window.__cvSiteData = {
     {
       "name": "Collaborative Research",
       "badge": "Pending",
-      "summary": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
+      "summary": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences. PENDING",
       "tags": [
         "Key Personnel / External Evaluator",
         "January 2027 - December 2029"
@@ -291,7 +291,7 @@ window.__cvSiteData = {
         "STEM"
       ],
       "note": "",
-      "status": "In Press"
+      "status": ""
     },
     {
       "year": "2026",
@@ -1103,7 +1103,7 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, K., & Sanders, M. (In Press, 2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education. https://doi.org/10.1007/s11858-026-01816-1 [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
+      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, K., & Sanders, M. (2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education. https://doi.org/10.1007/s11858-026-01816-1 [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
       "link": "https://doi.org/10.1007/s11858-026-01816-1"
     },
     {
@@ -1911,8 +1911,8 @@ window.__cvSiteData = {
       {
         "title": "Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning",
         "meta": "Lead PI | Institute of Museum and Library Services – IMLS | September 2026 - August 2029",
-        "amount": "$478,690",
-        "amountValue": 478690.0
+        "amount": "$476,421",
+        "amountValue": 476421.0
       },
       {
         "title": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
@@ -1995,21 +1995,27 @@ window.__cvSiteData = {
         "amountValue": 35000.0
       },
       {
-        "title": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
+        "title": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences. PENDING",
         "meta": "Key Personnel / External Evaluator | January 2027 - December 2029",
         "amount": "pending",
         "amountValue": null
+      },
+      {
+        "title": "A Biofeedback-Based Virtual Reality Implementation to Teach Metered Dose Inhaler Technique Education for Pediatric Asthma Patients: A Development and Feasibility Study. National Institutes of Health (NIH)",
+        "meta": "Lead PI | total requested submitted July 10, 2026, PENDING | April 2027 - March 2029",
+        "amount": "$399,946",
+        "amountValue": 399946.0
       }
     ]
   },
   "grantPortfolio": {
-    "fundedTotal": 586649,
-    "pendingTotal": 35000,
+    "fundedTotal": 584380,
+    "pendingTotal": 434946,
     "fundedCount": 13,
-    "pendingCount": 2,
-    "sourceReportedFundedTotal": 586149,
-    "sourceReportedPendingTotal": 35000,
-    "fundedDiscrepancy": 500,
+    "pendingCount": 3,
+    "sourceReportedFundedTotal": 584380,
+    "sourceReportedPendingTotal": 434946,
+    "fundedDiscrepancy": 0,
     "pendingDiscrepancy": 0
   },
   "teaching": {
