@@ -585,8 +585,9 @@ def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
 
     funded_header = next((line for line in lines if line.startswith("Funded")), "")
     pending_header = next((line for line in lines if line.startswith("Submitted/Pending")), "")
+    withdrawn_header = next((line for line in lines if line.startswith("Withdrawn")), "")
 
-    buckets = {"funded": [], "pending": []}
+    buckets = {"funded": [], "pending": [], "withdrawn": []}
     active_bucket: Optional[str] = None
 
     for line in lines:
@@ -595,6 +596,9 @@ def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
             continue
         if line.startswith("Submitted/Pending"):
             active_bucket = "pending"
+            continue
+        if line.startswith("Withdrawn"):
+            active_bucket = "withdrawn"
             continue
         if line.startswith("Unfunded"):
             active_bucket = None
@@ -617,6 +621,12 @@ def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
             flags=re.I,
         )
         cleaned_tail = re.sub(r"\$[\d,]+(?:\.\d+)?", "", cleaned_tail)
+        cleaned_tail = re.sub(r"\bproposed total amount\b", "", cleaned_tail, flags=re.I)
+        if active_bucket == "withdrawn":
+            cleaned_tail = re.sub(r",\s*WITHDRAWN\b\s*$", "", cleaned_tail, flags=re.I)
+            cleaned_tail = re.sub(r"\bWITHDRAWN\b", "withdrawn", cleaned_tail, flags=re.I)
+        else:
+            cleaned_tail = re.sub(r"\b(?:PENDING|NOT FUNDED)\b", "", cleaned_tail, flags=re.I)
         parts = [clean_text(part.strip(" .")) for part in cleaned_tail.split(",") if clean_text(part.strip(" ."))]
 
         title = parts[0] if parts else clean_text(after_dates)
@@ -641,8 +651,10 @@ def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
 
     reported_funded_total = int(extract_first_money(funded_header) or 0)
     reported_pending_total = int(extract_first_money(pending_header) or 0)
+    reported_withdrawn_total = int(extract_first_money(withdrawn_header) or 0)
     itemized_funded_total = int(sum(item["amountValue"] or 0 for item in buckets["funded"]))
     itemized_pending_total = int(sum(item["amountValue"] or 0 for item in buckets["pending"]))
+    itemized_withdrawn_total = int(sum(item["amountValue"] or 0 for item in buckets["withdrawn"]))
 
     # Itemized records are the durable source of truth for the website. A CV
     # section header can lag after an individual award is edited; retaining the
@@ -655,11 +667,17 @@ def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
         "pendingCount": len(buckets["pending"]),
         "sourceReportedFundedTotal": reported_funded_total,
         "sourceReportedPendingTotal": reported_pending_total,
+        "withdrawnTotal": itemized_withdrawn_total or reported_withdrawn_total,
+        "withdrawnCount": len(buckets["withdrawn"]),
+        "sourceReportedWithdrawnTotal": reported_withdrawn_total,
         "fundedDiscrepancy": itemized_funded_total - reported_funded_total
         if itemized_funded_total and reported_funded_total
         else 0,
         "pendingDiscrepancy": itemized_pending_total - reported_pending_total
         if itemized_pending_total and reported_pending_total
+        else 0,
+        "withdrawnDiscrepancy": itemized_withdrawn_total - reported_withdrawn_total
+        if itemized_withdrawn_total and reported_withdrawn_total
         else 0,
     }
 
@@ -1029,9 +1047,11 @@ def join_readable(items: Sequence[str], conjunction: str = "and") -> str:
 
 def parse_stats(paragraphs: Sequence[str], grant_portfolio: Dict[str, int]) -> List[Dict[str, str]]:
     journal_count = extract_count(paragraphs[find_section_index(paragraphs, HEADERS["journal_articles"])])
-    conference_count = extract_count(
-        paragraphs[find_section_index(paragraphs, HEADERS["conference_proceedings"])]
+    conference_heading = next(
+        (text for text in paragraphs if text.startswith(HEADERS["conference_proceedings"])),
+        None,
     )
+    conference_count = extract_count(conference_heading) if conference_heading else 0
     book_count = extract_count(paragraphs[find_section_index(paragraphs, HEADERS["book_chapters"])])
     presentation_count = extract_count(paragraphs[find_section_index(paragraphs, HEADERS["presentations"])])
     working_paper_count = extract_count(paragraphs[find_section_index(paragraphs, HEADERS["working_papers"])])

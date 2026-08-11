@@ -50,7 +50,7 @@
         "givenName": "Jewoong",
         "familyName": "Moon",
         "honorificPrefix": "Dr.",
-        "jobTitle": "Assistant Professor of Instructional Technology",
+        "jobTitle": ["Assistant Professor of Instructional Technology", "Director, AdDIE Lab"],
         "image": "https://educatian.github.io/cv/assets/headshot.jpg",
         "url": "https://educatian.github.io/cv/",
         "email": "mailto:jmoon19@ua.edu",
@@ -100,13 +100,13 @@
         } catch (e) {}
       })();
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260809-portfolio2" />
+    <link rel="stylesheet" href="styles.css?v=20260809-addie-logo" />
     <script defer src="assets/site-data.js"></script>
     <script defer src="assets/projects-data.js?v=20260809-portfolio2"></script>
     <script defer src="assets/featured-projects.js?v=20260809-portfolio2"></script>
     <script defer src="assets/featured-rotation.js?v=20260809-portfolio2"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-    <script defer src="app.js?v=20260809-portfolio2"></script>
+    <script defer src="app.js?v=20260809-addie-logo"></script>
     <script defer src="analytics.js"></script>
   </head>
   <body>
@@ -262,7 +262,7 @@
         <section class="main-grid">
           <aside class="profile-rail">
             <div class="rail-block profile-intro reveal">
-              <p class="role-line" id="profile-role-line">Assistant Professor</p>
+              <p class="role-line" id="profile-role-line">Assistant Professor · Director, AdDIE Lab</p>
               <div id="profile-affiliation-lines">
                 <p class="affiliation-line">
                   Department of Educational Leadership, Policy, and Technology
@@ -316,6 +316,23 @@
               </summary>
               <div class="rail-collapsible-body">
                 <ol class="credential-list" id="appointment-list">
+                <li class="credential-item credential-item-addie">
+                  <a class="credential-logo credential-logo-addie" href="https://educatian.github.io/adie/" target="_blank" rel="noreferrer" aria-label="Visit the AdDIE Lab website">
+                    <img
+                      src="assets/lab-logos/addie-symbol.svg"
+                      alt="AdDIE Lab Immersive Frame logo"
+                      loading="lazy"
+                      width="64"
+                      height="64"
+                      decoding="async"
+                    />
+                  </a>
+                  <div class="credential-copy">
+                    <span class="timeline-year">Current</span>
+                    <span class="credential-title">Director, AdDIE Lab</span>
+                    <span class="timeline-detail">Adaptive Design of Immersive E-Learning Lab</span>
+                  </div>
+                </li>
                 <li class="credential-item">
                   <div class="credential-logo credential-logo-ua">
                     <img
@@ -580,6 +597,10 @@
                       <h3>Selected Submitted and Pending</h3>
                       <ul class="stack-list" id="pending-list"></ul>
                     </div>
+                  </div>
+                  <div class="grant-withdrawn-list">
+                    <h3>Withdrawn</h3>
+                    <ul class="stack-list" id="withdrawn-list"></ul>
                   </div>
                 </section>
               </div>

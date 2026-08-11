@@ -64,10 +64,12 @@ const honors = siteData.honors || [
 ];
 
 const grantPortfolio = siteData.grantPortfolio || {
-  fundedTotal: 586649,
-  pendingTotal: 35000,
-  fundedCount: 13,
-  pendingCount: 2,
+  fundedTotal: 607683,
+  pendingTotal: 434946,
+  fundedCount: 14,
+  pendingCount: 3,
+  withdrawnTotal: 0,
+  withdrawnCount: 0,
 };
 
 const news = siteData.news || [
@@ -690,6 +692,14 @@ const grants = siteData.grants || {
   funded: [
     {
       title:
+        "Developing a Generative AI-Integrated Intelligent Simulation to Strengthen Teachers' Competencies in Responding to Students with Emotional and Behavioral Crises",
+      meta:
+        "Co-PI (overseas / UA) | National Research Foundation of Korea (NRF) 2026 Joint Research Support Program (International Type) | Jun 2026 - May 2029 | Total award approximately $162,600; UA overseas allocation approximately $23,300 (14.33%; converted at ₩1,475.63 per US$1)",
+      amount: "$23,300",
+      amountValue: 23300,
+    },
+    {
+      title:
         "The Alabama Generative Engineering Textbook (AL-GET): AI-enhanced Personalized Learning for STEM Education",
       meta: "Lead PI | Office of Sponsored Program, The University of Alabama | Jan 2026 - Dec 2026",
       amount: "$15,000",
@@ -733,8 +743,8 @@ const grants = siteData.grants || {
     {
       title: "Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning",
       meta: "Lead PI | Institute of Museum and Library Services | Sep 2026 - Aug 2029",
-      amount: "$478,690",
-      amountValue: 478690,
+      amount: "$476,421",
+      amountValue: 476421,
     },
     {
       title:
@@ -758,6 +768,7 @@ const grants = siteData.grants || {
       amountValue: null,
     },
   ],
+  withdrawn: [],
 };
 
 const workingPapers = siteData.workingPapers || [];
@@ -974,6 +985,16 @@ const appointmentsEducation = siteData.appointmentsEducation || [
     logoTheme: "cnu",
   },
 ];
+
+const labDirectorship = {
+  year: "Current",
+  title: "Director, AdDIE Lab",
+  detail: "Adaptive Design of Immersive E-Learning Lab",
+  institution: "The University of Alabama",
+  logo: "assets/lab-logos/addie-symbol.svg",
+  logoAlt: "AdDIE Lab Immersive Frame logo",
+  logoTheme: "addie",
+};
 
 const teaching = siteData.teaching || {
   teachingPortfolio: [
@@ -1853,7 +1874,7 @@ function renderProfile() {
     heroPanelTitle.textContent = profile.heroPanelTitle;
   }
   if (profileRoleLine) {
-    profileRoleLine.textContent = profile.roleLine;
+    profileRoleLine.textContent = `${profile.roleLine} · Director, AdDIE Lab`;
   }
   if (profileAffiliationLines) {
     profileAffiliationLines.innerHTML = (profile.affiliationLines || [])
@@ -1862,10 +1883,10 @@ function renderProfile() {
   }
   if (heroActions) {
     const labIcon =
-      '<svg class="button-lab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"></path><path d="M10 3v6.5L4.8 18.2A2 2 0 0 0 6.5 21h11a2 2 0 0 0 1.7-2.8L14 9.5V3"></path><path d="M7 14h10"></path></svg>';
+      '<img class="button-lab-icon" src="assets/lab-logos/addie-symbol.svg" width="22" height="22" alt="" aria-hidden="true">';
     const actions = [
       profile.labWebsite
-        ? `<a class="button button-lab" href="${escapeHtml(profile.labWebsite)}" target="_blank" rel="noreferrer">${labIcon}Visit the ADIE Lab</a>`
+        ? `<a class="button button-lab" href="${escapeHtml(profile.labWebsite)}" target="_blank" rel="noreferrer">${labIcon}AdDIE Lab · Director</a>`
         : "",
       profile.email
         ? `<a class="button button-primary" href="mailto:${escapeHtml(profile.email)}">Contact</a>`
@@ -1921,7 +1942,7 @@ function renderAppointmentsEducation() {
     return;
   }
 
-  list.innerHTML = appointmentsEducation
+  list.innerHTML = [labDirectorship, ...appointmentsEducation]
     .map(
       (item) => `
         <li class="credential-item">
@@ -2742,11 +2763,16 @@ function renderGrantDashboard() {
 
   const summary = document.getElementById("grant-summary");
   if (summary) {
+    const withdrawnNote = portfolio.withdrawnCount
+      ? ` It also records ${portfolio.withdrawnCount} withdrawn proposal${
+          portfolio.withdrawnCount === 1 ? "" : "s"
+        }.`
+      : "";
     summary.textContent = `The current CV records ${formatCurrencyExact(
       portfolio.fundedTotal
     )} across ${portfolio.fundedCount} funded awards and ${formatCurrencyExact(
       portfolio.pendingTotal
-    )} across ${portfolio.pendingCount} active proposals.`;
+    )} across ${portfolio.pendingCount} active proposals.${withdrawnNote}`;
   }
 
   const metrics = document.getElementById("grant-metrics");
@@ -3151,6 +3177,7 @@ if (document.getElementById("content-deck")) {
   renderWorkingPapers();
   renderGrantList("funded-list", grants.funded);
   renderGrantList("pending-list", grants.pending);
+  renderGrantList("withdrawn-list", grants.withdrawn || []);
   renderGrantDashboard();
   renderTeachingSection();
   renderMentoringMetrics();
