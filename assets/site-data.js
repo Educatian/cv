@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-08-11T17:58:31.280200+00:00",
+  "generatedAt": "2026-08-11T18:08:08.384333+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -230,12 +230,13 @@ window.__cvSiteData = {
       ]
     },
     {
-      "name": "Collaborative Research",
+      "name": "CyberAI Innovation",
       "badge": "Pending",
-      "summary": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
+      "summary": "CyberAI Innovation: Teaching AI as Target and Defender through a Full-Stack Immersive AI Ecosystem",
       "tags": [
-        "Key Personnel / External Evaluator",
-        "January 2027 - December 2029"
+        "$497,460",
+        "Lead PI",
+        "National Science Foundation (NSF), Proposal 26-0572, submission deadline April 3, 2026, submitted to sponsor March 10, 2026, SUBMITTED TO SPONSOR"
       ]
     }
   ],
@@ -2002,6 +2003,12 @@ window.__cvSiteData = {
         "amountValue": 35000.0
       },
       {
+        "title": "CyberAI Innovation: Teaching AI as Target and Defender through a Full-Stack Immersive AI Ecosystem",
+        "meta": "Lead PI | National Science Foundation (NSF), Proposal 26-0572, submission deadline April 3, 2026, submitted to sponsor March 10, 2026, SUBMITTED TO SPONSOR | October 2026 - September 2029",
+        "amount": "$497,460",
+        "amountValue": 497460.0
+      },
+      {
         "title": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
         "meta": "Key Personnel / External Evaluator | January 2027 - December 2029",
         "amount": "pending",
@@ -2025,11 +2032,11 @@ window.__cvSiteData = {
   },
   "grantPortfolio": {
     "fundedTotal": 607683,
-    "pendingTotal": 434946,
+    "pendingTotal": 932406,
     "fundedCount": 14,
-    "pendingCount": 3,
+    "pendingCount": 4,
     "sourceReportedFundedTotal": 607683,
-    "sourceReportedPendingTotal": 434946,
+    "sourceReportedPendingTotal": 932406,
     "withdrawnTotal": 598139,
     "withdrawnCount": 1,
     "sourceReportedWithdrawnTotal": 598139,
