@@ -2700,15 +2700,111 @@ function renderWorkingPaperPagination(totalPages) {
   });
 }
 
+const grantFunderMarks = {
+  imls: {
+    name: "Institute of Museum and Library Services",
+    src: "assets/funder-logos/imls.png",
+    shape: "is-wide",
+  },
+  nrf: {
+    name: "National Research Foundation of Korea",
+    src: "assets/funder-logos/nrf-korea.jpg",
+    shape: "is-wide",
+  },
+  ua: {
+    name: "The University of Alabama",
+    src: "assets/funder-logos/ua.svg",
+    shape: "is-symbol",
+  },
+  ache: {
+    name: "Alabama Commission on Higher Education",
+    src: "assets/funder-logos/ache.png",
+    shape: "is-symbol",
+  },
+  sec: {
+    name: "Southeastern Conference",
+    src: "assets/funder-logos/sec.png",
+    shape: "is-symbol",
+  },
+  aera: {
+    name: "American Educational Research Association",
+    src: "assets/funder-logos/aera.png",
+    shape: "is-wide",
+  },
+  aims: {
+    name: "Advancing Innovative Math Solutions Collaboratory",
+    src: "assets/funder-logos/aims.png",
+    shape: "is-wide",
+  },
+  nsf: {
+    name: "National Science Foundation",
+    src: "assets/funder-logos/nsf.png",
+    shape: "is-symbol",
+  },
+  nih: {
+    name: "National Institutes of Health",
+    src: "assets/funder-logos/nih.png",
+    shape: "is-symbol",
+  },
+};
+
+function getGrantFunderMark(item) {
+  const searchable = `${item.title || ""} ${item.meta || ""}`.toLowerCase();
+
+  if (searchable.includes("museum and library services") || searchable.includes("imls")) {
+    return grantFunderMarks.imls;
+  }
+  if (searchable.includes("national research foundation of korea") || searchable.includes("(nrf)")) {
+    return grantFunderMarks.nrf;
+  }
+  if (searchable.includes("aera-nsf")) return grantFunderMarks.aera;
+  if (searchable.includes("innovative math solutions") || searchable.includes("aims collaboratory")) {
+    return grantFunderMarks.aims;
+  }
+  if (searchable.includes("national institutes of health") || searchable.includes("(nih)")) {
+    return grantFunderMarks.nih;
+  }
+  if (
+    searchable.includes("national science foundation") ||
+    searchable.includes("nsf ritel") ||
+    searchable.includes("camel-cn")
+  ) {
+    return grantFunderMarks.nsf;
+  }
+  if (searchable.includes("alabama commission on higher education")) {
+    return grantFunderMarks.ache;
+  }
+  if (searchable.includes("sec faculty travel")) return grantFunderMarks.sec;
+  return grantFunderMarks.ua;
+}
+
+function renderGrantFunderMark(item) {
+  const funder = getGrantFunderMark(item);
+  return `
+    <span class="grant-funder-mark ${funder.shape}" title="${escapeHtml(
+      funder.name
+    )}">
+      <img src="${escapeHtml(funder.src)}" alt="${escapeHtml(
+        `${funder.name} logo`
+      )}" loading="lazy" decoding="async" />
+    </span>
+  `;
+}
+
 function renderGrantList(targetId, items) {
   const list = document.getElementById(targetId);
+  const withdrawnSection = list.closest(".grant-withdrawn-list");
+  if (withdrawnSection) withdrawnSection.hidden = items.length === 0;
   list.innerHTML = items
     .map(
       (item) => `
-        <li>
-          <strong>${escapeHtml(item.title)}</strong>
-          <span>${escapeHtml(item.meta)}</span>
-          <span>${escapeHtml(item.amount)}</span>
+        <li class="grant-list-item">
+          ${renderGrantFunderMark(item)}
+          <span class="grant-list-copy">
+            <strong>${escapeHtml(item.title)}</strong>
+            <span>${escapeHtml(item.meta)}</span>
+            <span class="grant-list-amount">${escapeHtml(item.amount)}</span>
+          </span>
         </li>
       `
     )
@@ -2850,13 +2946,21 @@ function renderGrantBars(targetId, items, status) {
 
       return `
         <article class="grant-bar-card">
-          <div class="grant-bar-topline">
-            <span class="grant-bar-title">${escapeHtml(item.title)}</span>
-            <span class="grant-bar-amount">${escapeHtml(
-              typeof item.amountValue === "number"
-                ? formatCurrencyExact(item.amountValue)
-                : "Amount not disclosed"
-            )}</span>
+          <div class="grant-bar-heading">
+            ${renderGrantFunderMark(item)}
+            <div class="grant-bar-copy">
+              <div class="grant-bar-topline">
+                <span class="grant-bar-title">${escapeHtml(item.title)}</span>
+                <span class="grant-bar-amount">${escapeHtml(
+                  typeof item.amountValue === "number"
+                    ? formatCurrencyExact(item.amountValue)
+                    : "Amount not disclosed"
+                )}</span>
+              </div>
+              <p class="grant-bar-funder">${escapeHtml(
+                getGrantFunderMark(item).name
+              )}</p>
+            </div>
           </div>
           <div class="grant-bar-track" role="img" aria-label="${escapeHtml(
             item.title
