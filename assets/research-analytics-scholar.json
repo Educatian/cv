@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T00:31:30.157Z",
+  "generatedAt": "2026-08-12T16:00:20.751Z",
   "profileUrl": "https://scholar.google.com/citations?user=b-epW38AAAAJ&hl=en&oi=ao",
   "author": {
     "name": "Jewoong Moon",
@@ -14,8 +14,8 @@
     ]
   },
   "summary": {
-    "totalCitations": 3065,
-    "sinceYearCitations": 2995,
+    "totalCitations": 3073,
+    "sinceYearCitations": 3003,
     "hIndex": 26,
     "sinceYearHIndex": 26,
     "i10Index": 45,
@@ -53,7 +53,7 @@
     },
     {
       "year": 2026,
-      "citations": 917
+      "citations": 924
     }
   ],
   "publicAccess": {
@@ -100,7 +100,7 @@
       "authors": "H Bae, J Hur, J Park, GW Choi, J Moon",
       "venue": "Online Learning Journal",
       "rawVenue": "Online Learning Journal, 2024",
-      "citations": 145,
+      "citations": 148,
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:OU6Ihb5iCvQC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11045912294933901278"
@@ -166,7 +166,7 @@
       "authors": "J Moon, J Do, D Lee, GW Choi",
       "venue": "Smart Learning Environments",
       "rawVenue": "Smart Learning Environments, 2020",
-      "citations": 78,
+      "citations": 79,
       "year": 2020,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:qxL8FJ1GzNcC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8690488637492091185"
@@ -232,7 +232,7 @@
       "authors": "J Moon, S Yeo, K Banihashem, O Noroozi",
       "venue": "Journal of Computer Assisted Learning",
       "rawVenue": "Journal of Computer Assisted Learning, 2024",
-      "citations": 55,
+      "citations": 56,
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:CHSYGLWDkRkC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11395474235301923670"
@@ -283,6 +283,17 @@
     },
     {
       "id": "scholar-21",
+      "title": "Effects of adaptive prompts in virtual reality-based social skills training for children with autism",
+      "authors": "J Moon, F Ke",
+      "venue": "Journal of Autism and Developmental Disorders",
+      "rawVenue": "Journal of Autism and Developmental Disorders, 2023",
+      "citations": 39,
+      "year": 2023,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:ldfaerwXgEUC",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15713590701176330738"
+    },
+    {
+      "id": "scholar-22",
       "title": "Generative artificial intelligence in educational game design: Nuanced challenges, design Implications, and future research",
       "authors": "J Moon, U Lee, J Koh, Y Jeong, G Byun, Y Lee, J Lim",
       "venue": "Technology, Knowledge, and Learning",
@@ -291,17 +302,6 @@
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:UxriW0iASnsC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3013828630491839338"
-    },
-    {
-      "id": "scholar-22",
-      "title": "Effects of adaptive prompts in virtual reality-based social skills training for children with autism",
-      "authors": "J Moon, F Ke",
-      "venue": "Journal of Autism and Developmental Disorders",
-      "rawVenue": "Journal of Autism and Developmental Disorders, 2023",
-      "citations": 37,
-      "year": 2023,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:ldfaerwXgEUC",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15713590701176330738"
     },
     {
       "id": "scholar-23",
@@ -404,6 +404,17 @@
     },
     {
       "id": "scholar-32",
+      "title": "Designing and deploying a virtual social sandbox for autistic children",
+      "authors": "F Ke, J Moon, Z Sokolikj",
+      "venue": "Disability and Rehabilitation: Assistive Technology",
+      "rawVenue": "Disability and Rehabilitation: Assistive Technology, 2022",
+      "citations": 19,
+      "year": 2022,
+      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:NaGl4SEjCO4C",
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4568573419983448723"
+    },
+    {
+      "id": "scholar-33",
       "title": "Transforming mathematics education with AI: Innovations, implementations, and insights",
       "authors": "S Yeo, J Moon, DJ Kim",
       "venue": "Journal of Korean Mathematics Education 63 (2), 386-392",
@@ -412,17 +423,6 @@
       "year": 2024,
       "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:p2g8aNsByqUC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14420603685464320164"
-    },
-    {
-      "id": "scholar-33",
-      "title": "Designing and deploying a virtual social sandbox for autistic children",
-      "authors": "F Ke, J Moon, Z Sokolikj",
-      "venue": "Disability and Rehabilitation: Assistive Technology",
-      "rawVenue": "Disability and Rehabilitation: Assistive Technology, 2022",
-      "citations": 18,
-      "year": 2022,
-      "recordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:NaGl4SEjCO4C",
-      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4568573419983448723"
     },
     {
       "id": "scholar-34",
