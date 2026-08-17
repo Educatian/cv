@@ -270,22 +270,18 @@
   "10.1007/s10639-024-12527-z": {
     "title": "Modeling undergraduate students’ learning dynamics between self-regulated learning patterns and community of inquiry",
     "citation": "* Na, C., Lee, D., Moon, J., & Shin, Y. (2024). Modeling undergraduate students’ learning dynamics between self-regulated learning patterns and community of inquiry. Education and Information Technologies https://doi.org/10.1007/s10639-024-12527-z [SSCI-indexed, IF = 5.4, IF5 = 5.7]",
-    "abstract": "In online STEM courses, self-regulated learning (SRL) serves a critical role in academic success because students are required to monitor and regulate their learning processes. Yet, relatively little research has investigated which and to what extent do SRL strategies contribute to students’ online learning experiences. In this paper, with a lens of the Community of Inquiry (CoI) framework (Garrison et al., 2001), we investigated which students' SRL strategy use predicts three elements of the perceptions of CoI: teaching, social, and cognitive presences. Our sample included 278 undergraduate STEM&nbsp;students who enrolled in a self-paced online course teaching the introductory level of calculus. A Multiple Indicator-Multiple Cause (MIMIC) analysis was employed to investigate the SRL predictors that affect three elements of CoI. Prior to MIMIC analyses, we confirmed the dimensionalities of the SRL and the perceptions of CoI, respectively, through a series of confirmatory factor analyses (CFAs). The MIMIC analysis revealed that environmental structuring and help-seeking affected teaching presence. Social presence was predicted by goal setting and self-evaluation through peers, whereas environmental structuring, time management, and self-evaluation through peers predicted cognitive presence. The findings of this study provide new empirical evidence on the different roles of SRL in promoting three elements of the perceptions of CoI. Academic and practical implications of the findings of the study were discussed.",
-    "source": "playwright",
+    "abstract": "",
+    "source": "unavailable",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/article/10.1007/s10639-024-12527-z",
-    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10639-024-12527-z/MediaObjects/10639_2024_12527_Fig1_HTML.png",
-    "thumbnailSource": "playwright"
+    "resolvedUrl": "https://link.springer.com/10.1007/s10639-024-12527-z"
   },
   "10.1007/s10648-024-09855-4": {
     "title": "Effects of artificial intelligence-powered virtual agents on learning outcomes in simulation-based learning: A meta-analysis",
     "citation": "Dai, C., Ke, F., Pan, Y., Moon, J., & Liu, Z. (2024). Effects of artificial intelligence-powered virtual agents on learning outcomes in simulation-based learning: A meta-analysis. Educational Psychology Review, 36, 31. https://doi.org/10.1007/s10648-024-09855-4 [SSCI-indexed, IF = 11.9, IF5 = 16.4]",
-    "abstract": "Computer-based simulations for learning offer affordances for advanced capabilities and expansive possibilities for knowledge construction and skills application. Virtual agents, when powered by artificial intelligence (AI), can be used to scaffold personalized and adaptive learning processes. However, a synthesis or a systematic evaluation of the learning effectiveness of AI-powered virtual agents in computer-based simulations for learning is still lacking. Therefore, this meta-analysis is aimed at evaluating the effects of AI-powered virtual agents in computer-based simulations for learning. The analysis of 49 effect sizes derived from 22 empirical studies suggested a medium positive overall effect, $$\\overline{g }=0.43$$ g ¯ = 0.43 , SE = 0.08, 95% C.I. [0.27, 0.59], favoring the use of AI-powered virtual agents over the non-AI-powered virtual agent condition in computer-based simulations for learning. Further, moderator analyses revealed that intervention length, AI technologies, and the representation of AI-powered virtual agents significantly explain the heterogeneity of the overall effects. Conversely, other moderators, including education level, domain, the role of AI-powered virtual agents, the modality of AI-powered virtual agents, and learning environment, appeared to be universally effective among the studies of AI-powered virtual agents in computer-based simulations for learning. Overall, this meta-analysis provides systematic and existing evidence supporting the adoption of AI-powered virtual agents in computer-based simulations for learning. The findings also inform about evidence-based design decisions on the moderators analyzed.",
-    "source": "playwright",
+    "abstract": "",
+    "source": "unavailable",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/article/10.1007/s10648-024-09855-4",
-    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10648-024-09855-4/MediaObjects/10648_2024_9855_Fig1_HTML.png",
-    "thumbnailSource": "playwright"
+    "resolvedUrl": "https://link.springer.com/10.1007/s10648-024-09855-4"
   },
   "10.25304/rlt.v32.3129": {
     "title": "Learning experience design of verbal prompts in virtual reality-based training for autistic children",
@@ -298,32 +294,26 @@
   "10.1007/s10803-023-06168-3": {
     "title": "Learner experience design and unpacking sociocultural, technological, and pedagogical design considerations of spherical video-based virtual reality systems for autistic learners: A systematic literature review",
     "citation": "Glaser, N., Schmidt, M., Thull, C., Tennant, A., Moon, J., & Ousley, C. (2023). Learner experience design and unpacking sociocultural, technological, and pedagogical design considerations of spherical video-based virtual reality systems for autistic learners: A systematic literature review. Journal of Autism and Developmental Disorders https://doi.org/10.1007/s10803-023-06168-3 [SSCI-indexed, IF = 2.6, IF5 = 4.2]",
-    "abstract": "This systematic literature review discusses the use of spherical video-based virtual reality (SVVR) as a training and therapy intervention for autistic individuals. The authors emphasize the need for an evidence-based framework with guidelines and design considerations to help developers and educators tailor SVVR to the diverse needs of autistic learners. The paper highlights the unique benefits of SVVR, such as being relatively easier to develop compared to other VR technologies and high compatibility with various devices, making it more affordable for educational settings. The authors also discuss the importance of the STP (Sociotechnical-Pedagogical) framework for evaluating and designing social aspects of SVVR interventions for autistic individuals.",
-    "source": "playwright",
+    "abstract": "",
+    "source": "unavailable",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/article/10.1007/s10803-023-06168-3",
-    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10803-023-06168-3/MediaObjects/10803_2023_6168_Fig1_HTML.png",
-    "thumbnailSource": "playwright"
+    "resolvedUrl": "https://link.springer.com/10.1007/s10803-023-06168-3"
   },
   "10.1007/s10639-023-12249-8": {
     "title": "Few-shot is enough: Exploring ChatGPT prompt engineering method for automatic question generation in English education",
     "citation": "* Lee, U., Jung, H., Jeon, Y., Soh, Y., Hwang, W., Moon, J., Kim, H. (2023). Few-shot is enough: Exploring ChatGPT prompt engineering method for automatic question generation in English education. Education and Information Technologies https://doi.org/10.1007/s10639-023-12249-8 [SSCI-indexed, IF = 7.2, IF5 = 7.3]",
-    "abstract": "Through design and development research (DDR), we aimed to create a validated automatic question generation (AQG) system using large language models (LLMs) like ChatGPT, enhanced by prompting engineering techniques. While AQG has become increasingly integral to online learning for its efficiency in generating questions, issues such as inconsistent question quality and the absence of transparent and validated evaluation methods persist. Our research focused on creating a prompt engineering protocol tailored for AQG. This protocol underwent several iterations of refinement and validation to improve its performance. By gathering validation scores and qualitative feedback on the produced questions and the system’s framework, we examined the effectiveness of the system. The study findings indicate that our combined use of LLMs and prompt engineering in AQG produces questions with statistically significant validity. Our research further illuminates academic and design considerations for AQG design in English education: (a) certain question types might not be optimal for generation via ChatGPT, (b) ChatGPT sheds light on the potential for collaborative AI-teacher efforts in question generation, especially within English education.",
-    "source": "playwright",
+    "abstract": "",
+    "source": "unavailable",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/article/10.1007/s10639-023-12249-8",
-    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10639-023-12249-8/MediaObjects/10639_2023_12249_Fig1_HTML.png",
-    "thumbnailSource": "playwright"
+    "resolvedUrl": "https://link.springer.com/10.1007/s10639-023-12249-8"
   },
   "10.1007/s10055-023-00856-2": {
     "title": "Revisiting multimedia learning design principles in virtual reality-based learning environments for autistic individuals",
     "citation": "‡ Moon, J., Choi, G. W., & Seo, J. (2023). Revisiting multimedia learning design principles in virtual reality-based learning environments for autistic individuals. Virtual Reality, 27, 3101-3113. https://doi.org/10.1007/s10055-023-00856-2 [SCIE-indexed, IF = 5.4, IF5 = 6.7] ﻿﻿",
-    "abstract": "Virtual reality (VR) offers promising opportunities for supporting autistic learners in developing social and cognitive skills. However, designing VR-based learning environments optimized for these learners requires a nuanced understanding that addresses their unique needs. This review article reconsiders the key theories of multimedia learning, including cognitive load theory and cognitive theory of multimedia learning, with the aim of illuminating how these theories can inform the development of effective VR-based learning environments for autistic learners. We propose four design goals for a VR-based learning environment optimized for autistic learners: (1) minimizing learners’ extraneous load via attention guiding, (2) managing intrinsic cognitive load in problem-solving, (3) fostering germane processing through multiple representations, and (4) assessing cognitive load and implementing adaptive learning support design. In this exploration, we bring to demonstrate prevalent design challenges of existing VR-based learning environments for autistic individuals and offer prospective research trajectories for their enhancement. By incorporating a strengths-based approach, accommodating the diverse sensory needs, and recognizing the cognitive differences among autistic individuals, we aspire to advance a more inclusive VR design practice. This review presents crucial insights and direction for researchers and designers aiming to create effective, accessible, and inclusive VR-based learning environments for autistic learners and beyond.",
-    "source": "playwright",
+    "abstract": "",
+    "source": "unavailable",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/article/10.1007/s10055-023-00856-2",
-    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10055-023-00856-2/MediaObjects/10055_2023_856_Fig1_HTML.png",
-    "thumbnailSource": "playwright"
+    "resolvedUrl": "https://link.springer.com/10.1007/s10055-023-00856-2"
   },
   "10.1007/s10803-023-06021-7": {
     "title": "Effects of adaptive prompts in virtual reality-based social skills training for children with autism",

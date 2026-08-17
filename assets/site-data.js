@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-08-16T16:00:03.926628+00:00",
+  "generatedAt": "2026-08-17T01:52:46.598926+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -166,7 +166,7 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Minor revision manuscript for Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
+      "text": "Accepted article in Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
     },
     {
       "date": "2026",
@@ -266,7 +266,7 @@ window.__cvSiteData = {
         "Teacher Ed"
       ],
       "note": "",
-      "status": "Minor revision"
+      "status": "Accepted"
     },
     {
       "year": "2026",
@@ -1093,7 +1093,7 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Minor revision, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
+      "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Accepted, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
       "link": ""
     },
     {
