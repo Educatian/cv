@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T01:52:46.598926+00:00",
+  "generatedAt": "2026-08-18T16:00:03.810471+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -166,7 +166,7 @@
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Accepted article in Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
+      "text": "Journal article in Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
     },
     {
       "date": "2026",
@@ -260,13 +260,13 @@
       "title": "Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers",
       "authors": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M.",
       "venue": "Cogent Education",
-      "link": "",
+      "link": "https://doi.org/10.1080/2331186X.2026.2721038",
       "tags": [
         "GenAI",
         "Teacher Ed"
       ],
       "note": "",
-      "status": "Accepted"
+      "status": ""
     },
     {
       "year": "2026",
@@ -1093,8 +1093,8 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (Accepted, 2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
-      "link": ""
+      "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education https://doi.org/10.1080/2331186X.2026.2721038 [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
+      "link": "https://doi.org/10.1080/2331186X.2026.2721038"
     },
     {
       "year": "2026",
