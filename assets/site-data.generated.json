@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-20T16:00:06.523279+00:00",
-  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
+  "generatedAt": "2026-08-22T16:00:05.865251+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202608_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "August 9, 2026",
@@ -20,8 +20,8 @@
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx",
-    "cvDownloadFilename": "CV_202605_MOON.docx"
+    "cvDownloadPath": "CV_202608_MOON.docx",
+    "cvDownloadFilename": "CV_202608_MOON.docx"
   },
   "contact": {
     "email": "jmoon19@ua.edu",
@@ -2059,7 +2059,7 @@
   },
   "mentoringMetrics": [
     {
-      "value": "5",
+      "value": "6",
       "label": "doctoral chairs or co-chairs"
     },
     {
@@ -2067,7 +2067,7 @@
       "label": "doctoral committee appointments"
     },
     {
-      "value": "7",
+      "value": "11",
       "label": "current course advisees"
     },
     {
