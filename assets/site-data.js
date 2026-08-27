@@ -1,6 +1,6 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-08-27T23:35:46.182736+00:00",
-  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202608_MOON.docx",
+  "generatedAt": "2026-08-27T23:36:03.433008+00:00",
+  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "August 9, 2026",
@@ -20,8 +20,8 @@ window.__cvSiteData = {
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202608_MOON.docx",
-    "cvDownloadFilename": "CV_202608_MOON.docx"
+    "cvDownloadPath": "CV_202605_MOON.docx",
+    "cvDownloadFilename": "CV_202605_MOON.docx"
   },
   "contact": {
     "email": "jmoon19@ua.edu",
@@ -220,23 +220,21 @@ window.__cvSiteData = {
       ]
     },
     {
-      "name": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration",
+      "name": "OpenPolicy v0.1",
       "badge": "Pending",
-      "summary": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
+      "summary": "OpenPolicy v0.1: A Reproducible Public-Evidence Release for School AI Policy. RAAIS Foundation Grant",
       "tags": [
-        "$35,000",
-        "Lead PI",
-        "AERA-NSF Research Grant Program"
+        "Submitted August 2026"
       ]
     },
     {
-      "name": "CyberAI Innovation",
+      "name": "OpenPolicy Receipts",
       "badge": "Pending",
-      "summary": "CyberAI Innovation: Teaching AI as Target and Defender through a Full-Stack Immersive AI Ecosystem",
+      "summary": "OpenPolicy Receipts: Open Receipts and Safety Tests for Accountable Public-Interest AI Agents. Sentient Foundation Open Source AGI Grant Program",
       "tags": [
-        "$497,460",
-        "Lead PI",
-        "National Science Foundation (NSF), Proposal 26-0572, submission deadline April 3, 2026, submitted to sponsor March 10, 2026"
+        "$50,000",
+        "Grant Track. Amount requested:",
+        "Submitted August 2026"
       ]
     }
   ],
@@ -1997,6 +1995,18 @@ window.__cvSiteData = {
     ],
     "pending": [
       {
+        "title": "OpenPolicy v0.1: A Reproducible Public-Evidence Release for School AI Policy. RAAIS Foundation Grant",
+        "meta": "Submitted August 2026",
+        "amount": "pending",
+        "amountValue": null
+      },
+      {
+        "title": "OpenPolicy Receipts: Open Receipts and Safety Tests for Accountable Public-Interest AI Agents. Sentient Foundation Open Source AGI Grant Program",
+        "meta": "Grant Track. Amount requested: | Submitted August 2026",
+        "amount": "$50,000",
+        "amountValue": 50000.0
+      },
+      {
         "title": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
         "meta": "Lead PI | AERA-NSF Research Grant Program | September 2026 - August 2028",
         "amount": "$35,000",
@@ -2025,11 +2035,11 @@ window.__cvSiteData = {
   },
   "grantPortfolio": {
     "fundedTotal": 607683,
-    "pendingTotal": 932406,
+    "pendingTotal": 982406,
     "fundedCount": 14,
-    "pendingCount": 4,
+    "pendingCount": 6,
     "sourceReportedFundedTotal": 607683,
-    "sourceReportedPendingTotal": 932406,
+    "sourceReportedPendingTotal": 982406,
     "withdrawnTotal": 0,
     "withdrawnCount": 0,
     "sourceReportedWithdrawnTotal": 0,
