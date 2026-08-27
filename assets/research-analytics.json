@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T21:20:40.201724+00:00",
+  "generatedAt": "2026-08-26T16:00:43.382398+00:00",
   "source": {
     "provider": "Google Scholar + OpenAlex",
     "authorId": "https://openalex.org/A5079348611",
@@ -12,8 +12,8 @@
     "networkProvider": "OpenAlex",
     "topicProvider": "OpenAlex",
     "openAccessProvider": "OpenAlex",
-    "openalexGeneratedAt": "2026-08-23T21:20:40.201724+00:00",
-    "scholarGeneratedAt": "2026-08-23T21:20:18.237Z"
+    "openalexGeneratedAt": "2026-08-26T16:00:43.382398+00:00",
+    "scholarGeneratedAt": "2026-08-26T16:00:19.816Z"
   },
   "author": {
     "name": "Jewoong Moon",
@@ -32,8 +32,8 @@
     "profileUrl": "https://scholar.google.com/citations?user=b-epW38AAAAJ&hl=en&oi=ao",
     "worksCount": 112,
     "summary": {
-      "totalCitations": 3164,
-      "sinceYearCitations": 3094,
+      "totalCitations": 3176,
+      "sinceYearCitations": 3106,
       "hIndex": 26,
       "sinceYearHIndex": 26,
       "i10Index": 45,
@@ -46,22 +46,22 @@
     }
   },
   "summary": {
-    "totalCitations": 3164,
+    "totalCitations": 3176,
     "worksCount": 112,
     "hIndex": 26,
     "i10Index": 45,
-    "twoYearMeanCitedness": 15.02,
-    "citationsPerWork": 28.25,
-    "meanCitationsPerWorkYear": 7.84,
-    "recent3YearCitations": 2598,
-    "previous3YearCitations": 459,
-    "recent5YearCitations": 2959,
+    "twoYearMeanCitedness": 15.24,
+    "citationsPerWork": 28.36,
+    "meanCitationsPerWorkYear": 7.88,
+    "recent3YearCitations": 2606,
+    "previous3YearCitations": 460,
+    "recent5YearCitations": 2968,
     "previous5YearCitations": 143,
-    "threeYearGrowthRate": 466.0,
-    "fiveYearGrowthRate": 1969.2,
+    "threeYearGrowthRate": 466.5,
+    "fiveYearGrowthRate": 1975.5,
     "latestCitationYear": 2026,
     "sinceLabel": "Since 2021",
-    "sinceYearCitations": 3094,
+    "sinceYearCitations": 3106,
     "sinceYearHIndex": 26,
     "sinceYearI10Index": 45
   },
@@ -92,7 +92,7 @@
     },
     {
       "year": 2023,
-      "citations": 210,
+      "citations": 211,
       "works": 0,
       "oaWorks": 0
     },
@@ -104,13 +104,13 @@
     },
     {
       "year": 2025,
-      "citations": 1110,
+      "citations": 1112,
       "works": 0,
       "oaWorks": 0
     },
     {
       "year": 2026,
-      "citations": 1007,
+      "citations": 1013,
       "works": 0,
       "oaWorks": 0
     }
@@ -153,8 +153,8 @@
       "id": "https://openalex.org/W4394710139",
       "title": "Feedback sources in essay writing: Peer-generated or AI-generated feedback",
       "year": 2024,
-      "citations": 437,
-      "citationsPerYear": 145.67,
+      "citations": 439,
+      "citationsPerYear": 146.33,
       "source": "International Journal of Educational Technology in Higher Education",
       "sourceType": "Journal",
       "url": "https://doi.org/10.1186/s41239-024-00455-4",
@@ -187,8 +187,8 @@
       "id": "https://openalex.org/W3088459349",
       "title": "Virtual reality–based social skills training for children with autism spectrum disorder",
       "year": 2022,
-      "citations": 259,
-      "citationsPerYear": 51.8,
+      "citations": 260,
+      "citationsPerYear": 52.0,
       "source": "Journal of Special Education Technology",
       "sourceType": "Journal",
       "url": "https://doi.org/10.1177/0162643420945603",
@@ -204,8 +204,8 @@
       "id": "https://openalex.org/W4402118358",
       "title": "Pre-service teachers' dual perspectives on generative AI: Benefits, challenges, and integrating into teaching and learning",
       "year": 2024,
-      "citations": 164,
-      "citationsPerYear": 54.67,
+      "citations": 165,
+      "citationsPerYear": 55.0,
       "source": "Online Learning",
       "sourceType": "Journal",
       "url": "https://doi.org/10.24059/olj.v28i3.4543",
@@ -238,8 +238,8 @@
       "id": "https://openalex.org/W4392356798",
       "title": "Effects of artificial intelligence-powered virtual agents on learning outcomes in computer-based simulations: A meta-analysis",
       "year": 2024,
-      "citations": 134,
-      "citationsPerYear": 44.67,
+      "citations": 137,
+      "citationsPerYear": 45.67,
       "source": "Educational Psychology Review",
       "sourceType": "Journal",
       "url": "https://hub.hku.hk/handle/10722/348509",
@@ -272,8 +272,8 @@
       "id": "https://openalex.org/W3020063080",
       "title": "The effects of social and cognitive cues on learning comprehension, eye-gaze pattern, and cognitive load in video instruction",
       "year": 2020,
-      "citations": 102,
-      "citationsPerYear": 14.57,
+      "citations": 103,
+      "citationsPerYear": 14.71,
       "source": "Journal of Computing in Higher Education",
       "sourceType": "Journal",
       "url": "https://doi.org/10.1007/s12528-020-09255-x",
@@ -325,8 +325,8 @@
       "id": "https://openalex.org/W4394710139",
       "title": "Feedback sources in essay writing: Peer-generated or AI-generated feedback",
       "year": 2024,
-      "citations": 437,
-      "citationsPerYear": 145.67,
+      "citations": 439,
+      "citationsPerYear": 146.33,
       "source": "International Journal of Educational Technology in Higher Education",
       "sourceType": "Journal",
       "url": "https://doi.org/10.1186/s41239-024-00455-4",
@@ -359,8 +359,8 @@
       "id": "https://openalex.org/W3088459349",
       "title": "Virtual reality–based social skills training for children with autism spectrum disorder",
       "year": 2022,
-      "citations": 259,
-      "citationsPerYear": 51.8,
+      "citations": 260,
+      "citationsPerYear": 52.0,
       "source": "Journal of Special Education Technology",
       "sourceType": "Journal",
       "url": "https://doi.org/10.1177/0162643420945603",
@@ -376,8 +376,8 @@
       "id": "https://openalex.org/W4402118358",
       "title": "Pre-service teachers' dual perspectives on generative AI: Benefits, challenges, and integrating into teaching and learning",
       "year": 2024,
-      "citations": 164,
-      "citationsPerYear": 54.67,
+      "citations": 165,
+      "citationsPerYear": 55.0,
       "source": "Online Learning",
       "sourceType": "Journal",
       "url": "https://doi.org/10.24059/olj.v28i3.4543",
@@ -410,8 +410,8 @@
       "id": "https://openalex.org/W4392356798",
       "title": "Effects of artificial intelligence-powered virtual agents on learning outcomes in computer-based simulations: A meta-analysis",
       "year": 2024,
-      "citations": 134,
-      "citationsPerYear": 44.67,
+      "citations": 137,
+      "citationsPerYear": 45.67,
       "source": "Educational Psychology Review",
       "sourceType": "Journal",
       "url": "https://hub.hku.hk/handle/10722/348509",
@@ -444,8 +444,8 @@
       "id": "https://openalex.org/W3020063080",
       "title": "The effects of social and cognitive cues on learning comprehension, eye-gaze pattern, and cognitive load in video instruction",
       "year": 2020,
-      "citations": 102,
-      "citationsPerYear": 14.57,
+      "citations": 103,
+      "citationsPerYear": 14.71,
       "source": "Journal of Computing in Higher Education",
       "sourceType": "Journal",
       "url": "https://doi.org/10.1007/s12528-020-09255-x",
@@ -509,6 +509,23 @@
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3254293965910775811"
     },
     {
+      "id": "https://openalex.org/W3011069239",
+      "title": "Exploring the relationships among middle school students’ peer Interactions, task efficiency, and learning engagement in game-based learning",
+      "year": 2020,
+      "citations": 65,
+      "citationsPerYear": 9.29,
+      "source": "Simulation & Gaming",
+      "sourceType": "Journal",
+      "url": "https://doi.org/10.1177/1046878120907940",
+      "isOpenAccess": false,
+      "oaStatus": "closed",
+      "hasFulltext": false,
+      "citationSource": "Google Scholar",
+      "authors": "J Moon, F Ke",
+      "scholarRecordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:M3ejUd6NZC8C",
+      "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9233811869026435140"
+    },
+    {
       "id": "https://openalex.org/W2942590790",
       "title": "Exploring the treatment integrity of virtual reality-based social skills training for children with high-functioning autism",
       "year": 2019,
@@ -543,23 +560,6 @@
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8115626127340357472"
     },
     {
-      "id": "https://openalex.org/W3011069239",
-      "title": "Exploring the relationships among middle school students’ peer Interactions, task efficiency, and learning engagement in game-based learning",
-      "year": 2020,
-      "citations": 64,
-      "citationsPerYear": 9.14,
-      "source": "Simulation & Gaming",
-      "sourceType": "Journal",
-      "url": "https://doi.org/10.1177/1046878120907940",
-      "isOpenAccess": false,
-      "oaStatus": "closed",
-      "hasFulltext": false,
-      "citationSource": "Google Scholar",
-      "authors": "J Moon, F Ke",
-      "scholarRecordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:M3ejUd6NZC8C",
-      "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9233811869026435140"
-    },
-    {
       "id": "https://openalex.org/W4400519869",
       "title": "Using learning analytics to explore peer learning patterns in asynchronous gamified environments",
       "year": 2024,
@@ -580,8 +580,8 @@
       "id": "scholar-16",
       "title": "Using multimodal learning analytics as a formative assessment tool: Exploring collaborative dynamics in mathematics teacher education",
       "year": 2024,
-      "citations": 60,
-      "citationsPerYear": 20.0,
+      "citations": 61,
+      "citationsPerYear": 20.33,
       "source": "Journal of Computer Assisted Learning",
       "sourceType": "Other",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&citation_for_view=b-epW38AAAAJ:CHSYGLWDkRkC",
@@ -801,8 +801,8 @@
       "id": "https://openalex.org/W4403476510",
       "title": "I see you: Teacher analytics with GPT-4 vision-powered observational assessment",
       "year": 2024,
-      "citations": 22,
-      "citationsPerYear": 7.33,
+      "citations": 23,
+      "citationsPerYear": 7.67,
       "source": "Smart Learning Environments",
       "sourceType": "Journal",
       "url": "https://doi.org/10.1186/s40561-024-00335-4",
@@ -1563,6 +1563,23 @@
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10712443052889217803"
     },
     {
+      "id": "https://openalex.org/W7137279862",
+      "title": "An ethical framework for conversational AI in higher education: toward an evidence-based ethical governance",
+      "year": 2026,
+      "citations": 1,
+      "citationsPerYear": 1.0,
+      "source": "AI and Ethics",
+      "sourceType": "Journal",
+      "url": "https://doi.org/10.1007/s43681-026-01056-9",
+      "isOpenAccess": false,
+      "oaStatus": "closed",
+      "hasFulltext": false,
+      "citationSource": "Google Scholar",
+      "authors": "MM Uddin, J Moon, S Abu",
+      "scholarRecordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:1qzjygNMrQYC",
+      "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3124817389341085929"
+    },
+    {
       "id": "scholar-75",
       "title": "Human-centered generative AI in education: Ethical challenges and equity-driven solutions",
       "year": 2026,
@@ -1597,7 +1614,7 @@
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1115799011859440880"
     },
     {
-      "id": "scholar-76",
+      "id": "scholar-77",
       "title": "Fostering innovation at the intersection of maker education and extended reality (XR)",
       "year": 2025,
       "citations": 1,
@@ -1631,7 +1648,7 @@
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7947727295165870514"
     },
     {
-      "id": "scholar-80",
+      "id": "scholar-81",
       "title": "Effects of a metaverse-based learning activity on elementary students’ enjoyment and information retention",
       "year": 2024,
       "citations": 1,
@@ -1699,7 +1716,7 @@
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2877962308859297673"
     },
     {
-      "id": "scholar-82",
+      "id": "scholar-83",
       "title": "Multimodal Data Fusion to Track Representational Flexibility of Adolescents With Autism Spectrum Disorder During Virtual Reality-Based Training",
       "year": 2022,
       "citations": 1,
@@ -1750,7 +1767,7 @@
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3398905896905254527"
     },
     {
-      "id": "scholar-85",
+      "id": "scholar-86",
       "title": "Exploring learning-facilitating game actions via sequential analysis",
       "year": 2018,
       "citations": 1,
@@ -1767,7 +1784,7 @@
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10858800004525452486"
     },
     {
-      "id": "scholar-86",
+      "id": "scholar-87",
       "title": "The effect of peer interaction on task efficiency and learning engagement in digital game-based learning",
       "year": 2017,
       "citations": 1,
@@ -1784,7 +1801,7 @@
       "scholarCitedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15078520704015583490"
     },
     {
-      "id": "scholar-92",
+      "id": "scholar-93",
       "title": "A Guiding Framework for K-12 Teachers in Creating AI-powered Learning Technologies through Vibe Coding",
       "year": 2026,
       "citations": 0,
@@ -1815,23 +1832,6 @@
       "citationSource": "Google Scholar",
       "authors": "J Moon",
       "scholarRecordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:XiVPGOgt02cC",
-      "scholarCitedByUrl": ""
-    },
-    {
-      "id": "https://openalex.org/W7137279862",
-      "title": "An ethical framework for conversational AI in higher education: toward an evidence-based ethical governance",
-      "year": 2026,
-      "citations": 0,
-      "citationsPerYear": 0.0,
-      "source": "AI and Ethics",
-      "sourceType": "Journal",
-      "url": "https://doi.org/10.1007/s43681-026-01056-9",
-      "isOpenAccess": false,
-      "oaStatus": "closed",
-      "hasFulltext": false,
-      "citationSource": "Google Scholar",
-      "authors": "MM Uddin, J Moon, S Abu",
-      "scholarRecordUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b-epW38AAAAJ&cstart=20&pagesize=80&citation_for_view=b-epW38AAAAJ:1qzjygNMrQYC",
       "scholarCitedByUrl": ""
     },
     {
@@ -1954,7 +1954,7 @@
       "scholarCitedByUrl": ""
     },
     {
-      "id": "scholar-94",
+      "id": "scholar-95",
       "title": "Validity of eye-tracking measures in immersive virtual reality: Using frameworks from cognitive theories of learning",
       "year": 2026,
       "citations": 0,
@@ -2249,7 +2249,7 @@
       {
         "name": "International Journal of Educational Technology in Higher Education",
         "count": 2,
-        "citations": 287,
+        "citations": 289,
         "type": "Journal"
       },
       {
@@ -2279,7 +2279,7 @@
       {
         "name": "TechTrends",
         "count": 2,
-        "citations": 72,
+        "citations": 73,
         "type": "Journal"
       },
       {
@@ -2327,7 +2327,7 @@
         "label": "Jewoong Moon",
         "group": "self",
         "works": 87,
-        "citations": 1687,
+        "citations": 1692,
         "institution": "The University of Alabama"
       },
       {
@@ -2335,7 +2335,7 @@
         "label": "Ali Biçer",
         "group": "coauthor",
         "works": 4,
-        "citations": 23,
+        "citations": 24,
         "institution": "Texas A&M University",
         "orcid": "https://orcid.org/0000-0002-2147-5393",
         "authorId": "https://openalex.org/A5062671496"
@@ -2345,7 +2345,7 @@
         "label": "Daeyeoul Lee",
         "group": "coauthor",
         "works": 5,
-        "citations": 147,
+        "citations": 148,
         "institution": "New York University",
         "orcid": "https://orcid.org/0000-0003-1111-9691",
         "authorId": "https://openalex.org/A5026352838"
@@ -2355,7 +2355,7 @@
         "label": "Fengfeng Ke",
         "group": "coauthor",
         "works": 21,
-        "citations": 563,
+        "citations": 564,
         "institution": "University of Maryland, College Park",
         "orcid": "https://orcid.org/0000-0003-4203-1203",
         "authorId": "https://openalex.org/A5034097062"
@@ -2365,7 +2365,7 @@
         "label": "Gi Woong Choi",
         "group": "coauthor",
         "works": 9,
-        "citations": 236,
+        "citations": 237,
         "institution": "University of Cincinnati",
         "orcid": "https://orcid.org/0000-0002-9631-3727",
         "authorId": "https://openalex.org/A5007605558"
@@ -2455,7 +2455,7 @@
         "label": "Laura McNeill",
         "group": "coauthor",
         "works": 4,
-        "citations": 34,
+        "citations": 35,
         "institution": "University of Alabama",
         "orcid": "",
         "authorId": "https://openalex.org/A5092193402"
@@ -2465,7 +2465,7 @@
         "label": "Omid Noroozi",
         "group": "coauthor",
         "works": 4,
-        "citations": 287,
+        "citations": 289,
         "institution": "Wageningen University & Research",
         "orcid": "https://orcid.org/0000-0002-0622-289X",
         "authorId": "https://openalex.org/A5071892501"
@@ -2475,7 +2475,7 @@
         "label": "Seyyed Kazem Banihashem",
         "group": "coauthor",
         "works": 4,
-        "citations": 287,
+        "citations": 289,
         "institution": "Open University of the Netherlands",
         "orcid": "https://orcid.org/0000-0002-9978-3783",
         "authorId": "https://openalex.org/A5047691220"
@@ -2495,7 +2495,7 @@
         "label": "Tugce Aldemir",
         "group": "coauthor",
         "works": 4,
-        "citations": 23,
+        "citations": 24,
         "institution": "Texas A&M University",
         "orcid": "https://orcid.org/0000-0001-5532-7770",
         "authorId": "https://openalex.org/A5065786559"
@@ -2505,7 +2505,7 @@
         "label": "Unggi Lee",
         "group": "coauthor",
         "works": 10,
-        "citations": 286,
+        "citations": 287,
         "institution": "Korea University",
         "orcid": "https://orcid.org/0000-0002-0883-4128",
         "authorId": "https://openalex.org/A5066209480"
@@ -2545,7 +2545,7 @@
         "label": "Zlatko Sokolikj",
         "group": "coauthor",
         "works": 9,
-        "citations": 273,
+        "citations": 274,
         "institution": "Florida State University",
         "orcid": "",
         "authorId": "https://openalex.org/A5038256668"
@@ -2866,14 +2866,14 @@
       "id": "online-learning-and-analytics",
       "label": "Online Learning and Analytics",
       "count": 55,
-      "weight": 52.813,
+      "weight": 52.812,
       "type": "topic"
     },
     {
       "id": "educational-games-and-gamification",
       "label": "Educational Games and Gamification",
       "count": 53,
-      "weight": 51.249,
+      "weight": 51.244,
       "type": "topic"
     },
     {
@@ -2901,7 +2901,7 @@
       "id": "teaching-and-learning-programming",
       "label": "Teaching and Learning Programming",
       "count": 29,
-      "weight": 26.878,
+      "weight": 26.876,
       "type": "topic"
     },
     {
@@ -2950,7 +2950,7 @@
       "id": "intelligent-tutoring-systems-and-adaptive-learning",
       "label": "Intelligent Tutoring Systems and Adaptive Learning",
       "count": 12,
-      "weight": 8.924,
+      "weight": 8.914,
       "type": "topic"
     },
     {
@@ -3002,7 +3002,7 @@
     "self": {
       "hIndex": 20,
       "i10Index": 31,
-      "citedByCount": 1680,
+      "citedByCount": 1692,
       "worksCount": 87
     },
     "populations": [
@@ -3011,15 +3011,15 @@
         "topic": "Online Learning and Analytics",
         "subfield": "Computer Science Applications",
         "field": "Computer Science",
-        "activeCount": 17146,
+        "activeCount": 17137,
         "metrics": [
           {
             "key": "hIndex",
             "label": "h-index",
             "me": 20,
             "median": 7,
-            "percentile": 93.9,
-            "topPercent": 6.1
+            "percentile": 93.8,
+            "topPercent": 6.2
           },
           {
             "key": "i10Index",
@@ -3032,18 +3032,18 @@
           {
             "key": "citedByCount",
             "label": "Total citations",
-            "me": 1680,
-            "median": 142,
-            "percentile": 93.0,
-            "topPercent": 7.0
+            "me": 1692,
+            "median": 143,
+            "percentile": 93.1,
+            "topPercent": 6.9
           },
           {
             "key": "worksCount",
             "label": "Works",
             "me": 87,
             "median": 23,
-            "percentile": 90.4,
-            "topPercent": 9.6
+            "percentile": 90.5,
+            "topPercent": 9.5
           }
         ]
       },
@@ -3052,7 +3052,7 @@
         "topic": "Educational Games and Gamification",
         "subfield": "Developmental and Educational Psychology",
         "field": "Psychology",
-        "activeCount": 15507,
+        "activeCount": 15542,
         "metrics": [
           {
             "key": "hIndex",
@@ -3073,10 +3073,10 @@
           {
             "key": "citedByCount",
             "label": "Total citations",
-            "me": 1680,
+            "me": 1692,
             "median": 112,
-            "percentile": 94.5,
-            "topPercent": 5.5
+            "percentile": 94.6,
+            "topPercent": 5.4
           },
           {
             "key": "worksCount",
