@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-30T16:00:04.956282+00:00",
-  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202608_MOON.docx",
+  "generatedAt": "2026-08-31T19:30:07.541567+00:00",
+  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "August 9, 2026",
@@ -20,8 +20,8 @@
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202608_MOON.docx",
-    "cvDownloadFilename": "CV_202608_MOON.docx"
+    "cvDownloadPath": "CV_202605_MOON.docx",
+    "cvDownloadFilename": "CV_202605_MOON.docx"
   },
   "contact": {
     "email": "jmoon19@ua.edu",
@@ -220,23 +220,23 @@
       ]
     },
     {
-      "name": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration",
+      "name": "From Theme to Transfer",
       "badge": "Pending",
-      "summary": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
+      "summary": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
       "tags": [
-        "$35,000",
-        "Lead PI",
-        "AERA-NSF Research Grant Program"
+        "$23,362",
+        "PI",
+        "Total requested €20, 000 (approximately ), Game in Lab 2026 International Call for Projects, Asmodee"
       ]
     },
     {
-      "name": "CyberAI Innovation",
+      "name": "Beyond the Security Divide",
       "badge": "Pending",
-      "summary": "CyberAI Innovation: Teaching AI as Target and Defender through a Full-Stack Immersive AI Ecosystem",
+      "summary": "Beyond the Security Divide: Building a Community-Guided Cybersecurity Education System for Broad and Meaningful Access",
       "tags": [
-        "$497,460",
+        "$75,000",
         "Lead PI",
-        "National Science Foundation (NSF), Proposal 26-0572, submission deadline April 3, 2026, submitted to sponsor March 10, 2026"
+        "Total requested Spencer Foundation Vision Grant"
       ]
     }
   ],
@@ -1997,6 +1997,36 @@
     ],
     "pending": [
       {
+        "title": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
+        "meta": "PI | Total requested €20, 000 (approximately ), Game in Lab 2026 International Call for Projects, Asmodee | May 2027 - April 2029",
+        "amount": "$23,362",
+        "amountValue": 23362.0
+      },
+      {
+        "title": "Beyond the Security Divide: Building a Community-Guided Cybersecurity Education System for Broad and Meaningful Access",
+        "meta": "Lead PI | Total requested Spencer Foundation Vision Grant | February 2027 - July 2028",
+        "amount": "$75,000",
+        "amountValue": 75000.0
+      },
+      {
+        "title": "Who Bears the Work of School AI Governance? Policy-Assigned Responsibility",
+        "meta": "PI | Employer Support, and Unequal District Capacity, Total requested Russell Sage Foundation, Sheldon Danziger Pipeline Grants Competition | August 2027 - July 2028",
+        "amount": "$50,000",
+        "amountValue": 50000.0
+      },
+      {
+        "title": "OpenPolicy v0.1: A Reproducible Public-Evidence Release for School AI Policy",
+        "meta": "RAAIS Foundation Grant | Submitted August 2026; proposed three-month project",
+        "amount": "pending",
+        "amountValue": null
+      },
+      {
+        "title": "OpenPolicy Receipts: Open Receipts and Safety Tests for Accountable Public-Interest AI Agents",
+        "meta": "Total requested Sentient Foundation Open Source AGI Grant Program, Grant Track | Submitted August 2026; proposed four-month project",
+        "amount": "$50,000",
+        "amountValue": 50000.0
+      },
+      {
         "title": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
         "meta": "Lead PI | AERA-NSF Research Grant Program | September 2026 - August 2028",
         "amount": "$35,000",
@@ -2025,11 +2055,11 @@
   },
   "grantPortfolio": {
     "fundedTotal": 607683,
-    "pendingTotal": 932406,
+    "pendingTotal": 1130768,
     "fundedCount": 14,
-    "pendingCount": 4,
+    "pendingCount": 9,
     "sourceReportedFundedTotal": 607683,
-    "sourceReportedPendingTotal": 932406,
+    "sourceReportedPendingTotal": 1130768,
     "withdrawnTotal": 0,
     "withdrawnCount": 0,
     "sourceReportedWithdrawnTotal": 0,
