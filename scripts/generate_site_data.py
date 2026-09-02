@@ -50,7 +50,7 @@ HEADERS = {
     "journal_articles": "SELECTED JOURNAL ARTICLES",
     "editorial_book": "EDITORIAL BOOK",
     "book_chapters": "SELECTED BOOK CHAPTERS",
-    "conference_proceedings": "REFEREED CONFERENCE PROFEEDINGS",
+    "conference_proceedings": "REFEREED CONFERENCE PROCEEDINGS",
     "presentations": "CONFERENCE PRESENTATIONS",
     "working_papers": "WORKING PAPERS",
     "service": "SERVICE ACTIVITIES",
@@ -780,6 +780,53 @@ def parse_publications(paragraphs: Sequence[str]) -> Dict[str, object]:
     }
 
 
+def parse_book_chapters(paragraphs: Sequence[str]) -> List[Dict[str, object]]:
+    lines = section_between(
+        paragraphs,
+        HEADERS["book_chapters"],
+        HEADERS["conference_proceedings"],
+    )
+    chapters: List[Dict[str, object]] = []
+
+    for citation in split_numbered_entries(lines):
+        year_match = re.search(r"\([^)]*\d{4}[^)]*\)\.\s*", citation)
+        after_year = citation[year_match.end() :] if year_match else citation
+        title, _, chapter_context = after_year.partition(". ")
+        chapter_context = clean_text(
+            re.split(r"https?://|10\.\d{4,9}/", chapter_context, maxsplit=1)[0].strip(" .")
+        )
+        book_match = re.search(
+            r"\(Eds?\.\),\s*(.+?)\.\s*(Springer|Routledge|EdtechBooks|EdTechBooks)(?:[,.]|$)",
+            chapter_context,
+            re.I,
+        )
+        book_title = clean_text(book_match.group(1)) if book_match else ""
+        publisher = clean_text(book_match.group(2)) if book_match else ""
+        doi = extract_doi(citation)
+        link = extract_url(citation) or (f"https://doi.org/{doi}" if doi else "")
+        venue = " · ".join(part for part in (book_title, publisher) if part) or chapter_context
+
+        chapters.append(
+            {
+                "year": extract_year(citation),
+                "title": clean_text(title),
+                "authors": parse_authors_from_citation(citation),
+                "venue": venue,
+                "bookTitle": book_title,
+                "publisher": publisher,
+                "link": link,
+                "doi": doi,
+                "tags": derive_publication_tags(title, venue, "International"),
+                "note": derive_publication_note(citation),
+                "status": parse_publication_status(citation) or "Published",
+                "type": "Book Chapter",
+                "citation": clean_text(citation),
+            }
+        )
+
+    return chapters
+
+
 def parse_status_from_working_paper(citation: str) -> str:
     match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|abstract accepted[^)]*)\)", citation, re.I)
     return clean_text(match.group(1)) if match else "Working paper"
@@ -1292,6 +1339,7 @@ def build_site_data(cv_path: Path) -> Dict[str, object]:
     mentoring_metrics = parse_mentoring_metrics(paragraphs)
     grants_data = parse_grants(paragraphs)
     publications_data = parse_publications(paragraphs)
+    book_chapters = parse_book_chapters(paragraphs)
     working_papers_data = parse_working_papers(paragraphs)
     talks = parse_talks(paragraphs)
     honors = parse_honors(paragraphs)
@@ -1319,6 +1367,7 @@ def build_site_data(cv_path: Path) -> Dict[str, object]:
         "initiatives": initiatives,
         "publications": publications_data["publications"],
         "completeJournalArticles": publications_data["completeJournalArticles"],
+        "bookChapters": book_chapters,
         "workingPapers": working_papers_data["workingPapers"],
         "workingPaperSummary": working_papers_data["workingPaperSummary"],
         "grants": grants_data["grants"],

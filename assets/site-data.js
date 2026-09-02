@@ -1,6 +1,6 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-09-02T03:29:55.777716+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-09-02T03:42:19.922492+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "August 9, 2026",
@@ -43,7 +43,7 @@ window.__cvSiteData = {
       "label": "Journal articles"
     },
     {
-      "value": "0",
+      "value": "21",
       "label": "Conference proceedings"
     },
     {
@@ -1485,6 +1485,173 @@ window.__cvSiteData = {
       "category": "Korean",
       "citation": "Ryu, J., Jung, H., & Moon, J. (2013). Needs analysis of distance education students for using e-textbooks on smart pads. The Journal of the Korea Content, 13(10), 594-603. http://doi.org/10.5392/JKCA.2013.13.10.594",
       "link": "http://doi.org/10.5392/JKCA.2013.13.10.594"
+    }
+  ],
+  "bookChapters": [
+    {
+      "year": "2027",
+      "title": "Leveraging analytics to enhance immersive teacher simulations: Challenges and opportunities",
+      "authors": "Hong, S., Moon, J., Hwang, J., Eom, T., & Seo, G.",
+      "venue": "Innovations in immersive learning for teacher education: International perspectives · Springer",
+      "bookTitle": "Innovations in immersive learning for teacher education: International perspectives",
+      "publisher": "Springer",
+      "link": "",
+      "doi": "",
+      "tags": [
+        "XR",
+        "Analytics",
+        "Teacher Ed"
+      ],
+      "note": "",
+      "status": "In Press",
+      "type": "Book Chapter",
+      "citation": "Hong, S., Moon, J., Hwang, J., Eom, T., & Seo, G. (In Press, 2027). Leveraging analytics to enhance immersive teacher simulations: Challenges and opportunities. In D. Tafazoli, E. Southgate, & E. Shaw (Eds.), Innovations in immersive learning for teacher education: International perspectives. Springer."
+    },
+    {
+      "year": "2027",
+      "title": "Designing for ethical deliberation and reasoning: AI-mediated dilemma spaces and exploratory learning",
+      "authors": "Moon, J., Lee, Y., Hong, S., Cho, M., Uddin, M., & Rho, J.",
+      "venue": "Metaverse, generative AI, and brain–computer interfaces: Shaping the future of the digital landscape · Routledge",
+      "bookTitle": "Metaverse, generative AI, and brain–computer interfaces: Shaping the future of the digital landscape",
+      "publisher": "Routledge",
+      "link": "",
+      "doi": "",
+      "tags": [
+        "GenAI",
+        "XR",
+        "Ethics"
+      ],
+      "note": "corresponding author",
+      "status": "In Press",
+      "type": "Book Chapter",
+      "citation": "‡ Moon, J., Lee, Y., Hong, S., Cho, M., Uddin, M., & Rho, J. (In Press, 2027). Designing for ethical deliberation and reasoning: AI-mediated dilemma spaces and exploratory learning. In A. Darejeh & S. Sepasgozar (Eds.), Metaverse, generative AI, and brain–computer interfaces: Shaping the future of the digital landscape. Routledge."
+    },
+    {
+      "year": "2026",
+      "title": "Game-based learning for social change",
+      "authors": "Abu, S., Ghooreian, A., Ogunniran, M., Awoyemi, I., & Moon, J.",
+      "venue": "Handbook of theory and research in digital media and education · Springer",
+      "bookTitle": "Handbook of theory and research in digital media and education",
+      "publisher": "Springer",
+      "link": "https://doi.org/10.1007/978-3-032-04596-6_29-1",
+      "doi": "10.1007/978-3-032-04596-6_29-1",
+      "tags": [
+        "Game-Based"
+      ],
+      "note": "corresponding author",
+      "status": "Published",
+      "type": "Book Chapter",
+      "citation": "*‡ Abu, S., Ghooreian, A., Ogunniran, M., Awoyemi, I., & Moon, J. (2026). Game-based learning for social change. In P. P. Trifonas & P. P. Trifonas (Eds.), Handbook of theory and research in digital media and education. Springer. https://doi.org/10.1007/978-3-032-04596-6_29-1"
+    },
+    {
+      "year": "2026",
+      "title": "Immersive and engaging design for teacher simulation: Theoretical foundations and innovative approaches",
+      "authors": "Hong, S., Moon, J., Eom, T., Hwang, J., Lim, J., & Park, S.",
+      "venue": "Handbook of theory and research in digital media and education · Springer",
+      "bookTitle": "Handbook of theory and research in digital media and education",
+      "publisher": "Springer",
+      "link": "https://doi.org/10.1007/978-3-032-04596-6_22-1",
+      "doi": "10.1007/978-3-032-04596-6_22-1",
+      "tags": [
+        "XR",
+        "Teacher Ed"
+      ],
+      "note": "mentored collaboration",
+      "status": "Published",
+      "type": "Book Chapter",
+      "citation": "* Hong, S., Moon, J., Eom, T., Hwang, J., Lim, J., & Park, S. (2026). Immersive and engaging design for teacher simulation: Theoretical foundations and innovative approaches. In P. P. Trifonas & P. P. Trifonas (Eds.), Handbook of theory and research in digital media and education. Springer. https://doi.org/10.1007/978-3-032-04596-6_22-1"
+    },
+    {
+      "year": "2026",
+      "title": "Open educational resources (OERs) and online professional learning networks (PLNs) in STEM education",
+      "authors": "Park, Y., Moon, J., & Na, H.",
+      "venue": "Designing online continuing professional development for STEM teacher education (pp. 194–204) · Routledge",
+      "bookTitle": "Designing online continuing professional development for STEM teacher education (pp. 194–204)",
+      "publisher": "Routledge",
+      "link": "",
+      "doi": "",
+      "tags": [
+        "Teacher Ed",
+        "STEM"
+      ],
+      "note": "",
+      "status": "Published",
+      "type": "Book Chapter",
+      "citation": "Park, Y., Moon, J., & Na, H. (2026). Open educational resources (OERs) and online professional learning networks (PLNs) in STEM education. In H. An (Ed.), Designing online continuing professional development for STEM teacher education (pp. 194–204). Routledge."
+    },
+    {
+      "year": "2021",
+      "title": "Designing Dynamic Learning Supports for Game and Simulation-Based Learning in STEM Education, Aprea C",
+      "authors": "Kim, B. J., Ke, F., Moon, J., and West, L.",
+      "venue": "and Ifenthaler, D.(eds.) in Game-based Learning Across the Disciplines. Advances in Game-Based Learning, Springer, Cham",
+      "bookTitle": "",
+      "publisher": "",
+      "link": "https://doi.org/10.1007/978-3-030-75142-5_8",
+      "doi": "10.1007/978-3-030-75142-5_8",
+      "tags": [
+        "Game-Based",
+        "STEM"
+      ],
+      "note": "",
+      "status": "Published",
+      "type": "Book Chapter",
+      "citation": "Kim, B. J., Ke, F., Moon, J., and West, L. (2021). Designing Dynamic Learning Supports for Game and Simulation-Based Learning in STEM Education, Aprea C. and Ifenthaler, D.(eds.) in Game-based Learning Across the Disciplines. Advances in Game-Based Learning, Springer, Cham. https://doi.org/10.1007/978-3-030-75142-5_8"
+    },
+    {
+      "year": "2020",
+      "title": "Open Educational Resources in Korea",
+      "authors": "Choi, G., Moon, J., Do, J., & Lee, D.",
+      "venue": "Huang, R., Liu, D., Tlili, A., Gao, Y., & Koper, R. (eds.) Open Education Resources in “Belt and Road” Countries, Lecture Note Series in Educational Technology. Springer, Singapore",
+      "bookTitle": "",
+      "publisher": "",
+      "link": "https://doi.org/10.1007/978-981-15-3040-1_5",
+      "doi": "10.1007/978-981-15-3040-1_5",
+      "tags": [
+        "International"
+      ],
+      "note": "",
+      "status": "Published",
+      "type": "Book Chapter",
+      "citation": "Choi, G., Moon, J., Do, J., & Lee, D. (2020). Open Educational Resources in Korea. Huang, R., Liu, D., Tlili, A., Gao, Y., & Koper, R. (eds.) Open Education Resources in “Belt and Road” Countries, Lecture Note Series in Educational Technology. Springer, Singapore. https://doi.org/10.1007/978-981-15-3040-1_5"
+    },
+    {
+      "year": "2019",
+      "title": "Rich Representations for Analyzing Learning Trajectories: Systematic Review on Sequential-Data Analytics in Game-based Learning Research",
+      "authors": "Moon, J. & Liu, Z.",
+      "venue": "Tlili, A., & Maiga (eds.) Data Analytics Approaches in Educational Games and Gamification Systems, Smart Computing, and Intelligence, Springer, Singapore",
+      "bookTitle": "",
+      "publisher": "",
+      "link": "http://doi.org/10.1007/978-981-32-9335-9_2",
+      "doi": "10.1007/978-981-32-9335-9_2",
+      "tags": [
+        "Analytics",
+        "Game-Based",
+        "STEM",
+        "Review"
+      ],
+      "note": "",
+      "status": "Published",
+      "type": "Book Chapter",
+      "citation": "Moon, J. & Liu, Z. (2019). Rich Representations for Analyzing Learning Trajectories: Systematic Review on Sequential-Data Analytics in Game-based Learning Research. Tlili, A., & Maiga (eds.) Data Analytics Approaches in Educational Games and Gamification Systems, Smart Computing, and Intelligence, Springer, Singapore. http://doi.org/10.1007/978-981-32-9335-9_2"
+    },
+    {
+      "year": "2019",
+      "title": "Educational Games and Gamification: From Foundations to Applications of Data Analytics",
+      "authors": "Kang, J., Moon, J., & Diederich, M.",
+      "venue": "Tlili, A., & Maiga (eds.) Data Analytics Approaches in Educational Games and Gamification Systems, Smart Computing, and Intelligence, Springer, Singapore",
+      "bookTitle": "",
+      "publisher": "",
+      "link": "http://doi.org/10.1007/978-981-32-9335-9_1",
+      "doi": "10.1007/978-981-32-9335-9_1",
+      "tags": [
+        "Analytics",
+        "Game-Based",
+        "STEM"
+      ],
+      "note": "",
+      "status": "Published",
+      "type": "Book Chapter",
+      "citation": "Kang, J., Moon, J., & Diederich, M. (2019). Educational Games and Gamification: From Foundations to Applications of Data Analytics. Tlili, A., & Maiga (eds.) Data Analytics Approaches in Educational Games and Gamification Systems, Smart Computing, and Intelligence, Springer, Singapore. http://doi.org/10.1007/978-981-32-9335-9_1."
     }
   ],
   "workingPapers": [

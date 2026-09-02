@@ -772,6 +772,7 @@ const grants = siteData.grants || {
 };
 
 const workingPapers = siteData.workingPapers || [];
+const bookChapters = siteData.bookChapters || [];
 const workingPaperSummary = siteData.workingPaperSummary || {
   total: workingPapers.length,
   submittedOrUnderReview: workingPapers.filter(
@@ -1055,6 +1056,8 @@ const completePublicationsPerPage = 10;
 let activeWorkingPaperFilter = "All";
 let currentWorkingPaperPage = 1;
 const workingPapersPerPage = 8;
+let bookChaptersExpanded = false;
+const bookChapterCollapsedLimit = 4;
 const abstractCache = new Map();
 const abstractRecordCache = new Map();
 let publicationRecordsCache = null;
@@ -2672,6 +2675,52 @@ function renderWorkingPaperFilters() {
   });
 }
 
+function renderBookChapters() {
+  const list = document.getElementById("book-chapter-list");
+  if (!list) {
+    return;
+  }
+
+  if (!bookChapters.length) {
+    list.innerHTML = `<li class="publication-empty">No book chapters are available in the current CV data.</li>`;
+    return;
+  }
+
+  const visibleItems = bookChaptersExpanded
+    ? bookChapters
+    : bookChapters.slice(0, bookChapterCollapsedLimit);
+  const hasOverflow = bookChapters.length > bookChapterCollapsedLimit;
+
+  list.innerHTML = `${visibleItems
+    .map(
+      (item, index) => `
+        <li class="working-paper-item">
+          <span class="working-paper-index">${index + 1}</span>
+          <div class="working-paper-body">
+            <div class="working-paper-meta">
+              <span class="publication-year">${escapeHtml(item.year || "")}</span>
+              <span class="working-paper-status">${escapeHtml(item.status || "Published")}</span>
+              <span class="complete-publication-category">Book Chapter</span>
+            </div>
+            <h4 class="working-paper-title">${escapeHtml(item.title || "Book chapter")}</h4>
+            ${item.authors ? `<p class="publication-authors">${highlightSelfAuthor(escapeHtml(item.authors))}</p>` : ""}
+            ${item.venue ? `<p class="publication-venue">${escapeHtml(item.venue)}</p>` : ""}
+            <p class="working-paper-citation">${highlightSelfAuthor(escapeHtml(item.citation || ""))}</p>
+            ${item.link ? `<a class="publication-link" href="${escapeHtml(item.link)}" target="_blank" rel="noreferrer">DOI record</a>` : ""}
+          </div>
+        </li>
+      `
+    )
+    .join("")}
+    ${hasOverflow ? `<li class="publication-empty"><button class="publication-toggle" id="book-chapter-toggle" type="button" aria-expanded="${bookChaptersExpanded}">${bookChaptersExpanded ? "Show fewer" : `Show all (${bookChapters.length})`}</button></li>` : ""}`;
+
+  document.getElementById("book-chapter-toggle")?.addEventListener("click", () => {
+    bookChaptersExpanded = !bookChaptersExpanded;
+    renderBookChapters();
+  });
+  document.dispatchEvent(new CustomEvent("panel:content-updated"));
+}
+
 function renderWorkingPapers() {
   const list = document.getElementById("working-paper-list");
   if (!list) {
@@ -3362,6 +3411,7 @@ if (document.getElementById("content-deck")) {
   renderCompletePublications();
   renderWorkingPaperSummary();
   renderWorkingPaperFilters();
+  renderBookChapters();
   renderWorkingPapers();
   renderGrantList("funded-list", grants.funded);
   renderGrantList("pending-list", grants.pending);
