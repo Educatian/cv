@@ -806,6 +806,15 @@ const editorialRoles = siteData.editorialRoles || [
     theme: "charcoal",
   },
   {
+    badge: "BJET",
+    label: "Journal",
+    role: "ECR Editorial Board",
+    title: "British Journal of Educational Technology",
+    years: "2026-present",
+    theme: "crimson",
+    url: "https://bera-journals.onlinelibrary.wiley.com/hub/journal/14678535/editorialboard.html",
+  },
+  {
     badge: "AILE",
     label: "Journal",
     role: "Editorial Board",
@@ -1292,6 +1301,12 @@ const serviceThumbProfiles = {
   "International Journal of Computer-Supported Collaborative Learning": {
     image: "assets/service-thumbs/ijcscl-cover-official.webp",
     alt: "Official International Journal of Computer-Supported Collaborative Learning cover",
+    surface: "cover",
+    fit: "cover",
+  },
+  "British Journal of Educational Technology": {
+    image: "assets/service-thumbs/bjet-cover-official.jpg",
+    alt: "Official British Journal of Educational Technology cover",
     surface: "cover",
     fit: "cover",
   },
@@ -3136,13 +3151,17 @@ function renderServiceCards(targetId, items) {
   const list = document.getElementById(targetId);
   list.innerHTML = items
     .map(
-      (item) => `
+      (item) => {
+        const title = item.url
+          ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
+          : escapeHtml(item.title);
+        return `
         <li>
           <article class="service-card">
             ${renderServiceThumb(item)}
             <div class="service-card-body">
               <p class="service-role">${item.role}</p>
-              <h4 class="service-title">${item.title}</h4>
+              <h4 class="service-title">${title}</h4>
               <p class="service-meta-line">
                 <span class="service-meta-pill">${item.label}</span>
                 <span class="service-years">${item.years}</span>
@@ -3150,7 +3169,8 @@ function renderServiceCards(targetId, items) {
             </div>
           </article>
         </li>
-      `
+      `;
+      }
     )
     .join("");
 }

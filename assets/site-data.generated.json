@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T05:56:31.740968+00:00",
+  "generatedAt": "2026-09-02T11:15:16.329291+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -2295,6 +2295,15 @@
       "title": "International Journal of Computer-Supported Collaborative Learning",
       "years": "2026-present",
       "theme": "crimson"
+    },
+    {
+      "badge": "BJET",
+      "label": "Journal",
+      "role": "ECR Editorial Board",
+      "title": "British Journal of Educational Technology",
+      "years": "2026-present",
+      "theme": "crimson",
+      "url": "https://bera-journals.onlinelibrary.wiley.com/hub/journal/14678535/editorialboard.html"
     },
     {
       "badge": "AILE",

@@ -177,6 +177,7 @@ SERVICE_THEME_BY_LABEL = {
 SPECIAL_SERVICE_BADGES = {
     "Behaviour & Information Technology": "BIT",
     "International Journal of Computer-Supported Collaborative Learning": "ijCSCL",
+    "British Journal of Educational Technology": "BJET",
     "Artificial Intelligence in Language Education": "AILE",
     "Journal of Applied Instructional Design": "JAID",
     "Computers and Education: X Reality": "CEXR",
@@ -193,10 +194,15 @@ SPECIAL_SERVICE_BADGES = {
 FEATURED_EDITORIAL_TITLES = {
     "Behaviour & Information Technology",
     "International Journal of Computer-Supported Collaborative Learning",
+    "British Journal of Educational Technology",
     "Artificial Intelligence in Language Education",
     "Journal of Applied Instructional Design",
     "Computers and Education: X Reality",
     "Computers & Education: X Reality",
+}
+
+SERVICE_URLS = {
+    "British Journal of Educational Technology": "https://bera-journals.onlinelibrary.wiley.com/hub/journal/14678535/editorialboard.html",
 }
 
 FEATURED_LEADERSHIP_ROLES = {
@@ -976,7 +982,7 @@ def parse_service(paragraphs: Sequence[str]) -> Dict[str, object]:
 
     editorial_roles: List[Dict[str, str]] = []
     for raw in lines:
-        if not raw.startswith(("Associate Editor", "Editorial Board", "Journal Special Issue Editor")):
+        if not raw.startswith(("Associate Editor", "Editorial Board", "ECR Editorial Board", "Journal Special Issue Editor")):
             continue
         years_match = re.search(r"\((\d{4}[^()]*)\)\s*$", raw)
         if not years_match and "Computers and Education: X Reality" not in raw:
@@ -990,16 +996,17 @@ def parse_service(paragraphs: Sequence[str]) -> Dict[str, object]:
         if title not in FEATURED_EDITORIAL_TITLES:
             continue
         label = "Special Issue" if "Special Issue" in role_part else "Journal"
-        editorial_roles.append(
-            {
-                "badge": abbreviate_name(title),
-                "label": label,
-                "role": clean_text(role_part),
-                "title": title,
-                "years": years or ("2024-present" if "Computers and Education: X Reality" in title else ""),
-                "theme": SERVICE_THEME_BY_LABEL.get(label, "stone"),
-            }
-        )
+        item = {
+            "badge": abbreviate_name(title),
+            "label": label,
+            "role": clean_text(role_part),
+            "title": title,
+            "years": years or ("2024-present" if "Computers and Education: X Reality" in title else ""),
+            "theme": SERVICE_THEME_BY_LABEL.get(label, "stone"),
+        }
+        if title in SERVICE_URLS:
+            item["url"] = SERVICE_URLS[title]
+        editorial_roles.append(item)
 
     leadership_roles: List[Dict[str, str]] = []
     for raw in lines:
