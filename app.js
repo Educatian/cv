@@ -1280,26 +1280,27 @@ const journalFrontProfiles = {
 
 const serviceThumbProfiles = {
   "Behaviour & Information Technology": {
-    image: "assets/service-thumbs/bit-cover.svg",
-    alt: "Behaviour & Information Technology thumbnail",
+    image: "assets/service-thumbs/bit-cover-official.png",
+    alt: "Official Behaviour & Information Technology journal cover",
     surface: "cover",
     fit: "cover",
+    position: "left center",
   },
   "International Journal of Computer-Supported Collaborative Learning": {
-    image: "assets/service-thumbs/ijcscl-cover.svg",
-    alt: "International Journal of Computer-Supported Collaborative Learning thumbnail",
+    image: "assets/service-thumbs/ijcscl-cover-official.webp",
+    alt: "Official International Journal of Computer-Supported Collaborative Learning cover",
     surface: "cover",
     fit: "cover",
   },
   "Artificial Intelligence in Language Education": {
-    image: "assets/service-thumbs/aile-cover.svg",
-    alt: "Artificial Intelligence in Language Education thumbnail",
+    image: "assets/service-thumbs/aile-cover-official.png",
+    alt: "Official Artificial Intelligence in Language Education cover",
     surface: "cover",
     fit: "cover",
   },
   "Journal of Applied Instructional Design": {
-    image: "assets/service-thumbs/jaid-cover.svg",
-    alt: "Journal of Applied Instructional Design thumbnail",
+    image: "assets/service-thumbs/jaid-cover-official.png",
+    alt: "Official Journal of Applied Instructional Design cover",
     surface: "cover",
     fit: "cover",
   },
@@ -1653,6 +1654,7 @@ function renderServiceThumb(item) {
           class="service-thumb-image ${profile.fit === "contain" ? "is-contain" : ""}"
           src="${profile.image}"
           alt="${escapeHtml(profile.alt || `${item.title} thumbnail`)}"
+          style="object-position: ${escapeHtml(profile.position || "center center")};"
           loading="lazy"
           width="320"
           height="180"

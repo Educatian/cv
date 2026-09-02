@@ -1,6 +1,6 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-09-02T02:37:08.602720+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-09-02T03:08:49.242063+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "August 9, 2026",
@@ -161,7 +161,7 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Accepted article in Interactive Learning Environments: Design affordance diagnostic framework for computational thinking assessment in interactive virtual makerspaces: An exploratory study."
+      "text": "Journal article in Interactive Learning Environments: Design Affordance Diagnostic Framework: Screening Construct-Irrelevant Variance in Computational Thinking Assessment."
     },
     {
       "date": "2026",
@@ -243,7 +243,7 @@ window.__cvSiteData = {
   "publications": [
     {
       "year": "2026",
-      "title": "Design affordance diagnostic framework for computational thinking assessment in interactive virtual makerspaces: An exploratory study",
+      "title": "Design Affordance Diagnostic Framework: Screening Construct-Irrelevant Variance in Computational Thinking Assessment",
       "authors": "Moon, J., Aldemir, T., & Byun, G.",
       "venue": "Interactive Learning Environments",
       "link": "",
@@ -251,7 +251,7 @@ window.__cvSiteData = {
         "Analytics"
       ],
       "note": "corresponding author",
-      "status": "Accepted"
+      "status": ""
     },
     {
       "year": "2026",
@@ -1099,7 +1099,7 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Moon, J., Aldemir, T., & Byun, G. (Accepted, 2026). Design affordance diagnostic framework for computational thinking assessment in interactive virtual makerspaces: An exploratory study. Interactive Learning Environments. [SSCI-indexed, IF =6.7, IF5 = 7.1]",
+      "citation": "‡ Moon, J., Aldemir, T., & Byun, G. (2026). Design Affordance Diagnostic Framework: Screening Construct-Irrelevant Variance in Computational Thinking Assessment. Interactive Learning Environments. [SSCI-indexed, IF =6.7, IF5 = 7.1]",
       "link": ""
     },
     {
