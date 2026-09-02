@@ -1,6 +1,6 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-09-01T16:00:10.004368+00:00",
-  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202608_MOON.docx",
+  "generatedAt": "2026-09-02T02:35:43.668954+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "August 9, 2026",
@@ -20,8 +20,8 @@ window.__cvSiteData = {
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202608_MOON.docx",
-    "cvDownloadFilename": "CV_202608_MOON.docx"
+    "cvDownloadPath": "CV_202605_MOON.docx",
+    "cvDownloadFilename": "CV_202605_MOON.docx"
   },
   "contact": {
     "email": "jmoon19@ua.edu",
@@ -39,7 +39,7 @@ window.__cvSiteData = {
   },
   "stats": [
     {
-      "value": "64",
+      "value": "65",
       "label": "Journal articles"
     },
     {
@@ -51,7 +51,7 @@ window.__cvSiteData = {
       "label": "Book chapters"
     },
     {
-      "value": "39",
+      "value": "38",
       "label": "Working papers"
     },
     {
@@ -161,17 +161,17 @@ window.__cvSiteData = {
     {
       "date": "2026",
       "type": "Publication",
+      "text": "Accepted article in Interactive Learning Environments: Design affordance diagnostic framework for computational thinking assessment in interactive virtual makerspaces: An exploratory study."
+    },
+    {
+      "date": "2026",
+      "type": "Publication",
       "text": "Accepted article in AI & Society: Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy."
     },
     {
       "date": "2026",
       "type": "Publication",
       "text": "Journal article in Cogent Education: Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers."
-    },
-    {
-      "date": "2026",
-      "type": "Publication",
-      "text": "Journal article in Interactive Learning Environments: From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training."
     },
     {
       "date": "2026",
@@ -220,27 +220,39 @@ window.__cvSiteData = {
       ]
     },
     {
-      "name": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration",
+      "name": "From Theme to Transfer",
       "badge": "Pending",
-      "summary": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
+      "summary": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
       "tags": [
-        "$35,000",
-        "Lead PI",
-        "AERA-NSF Research Grant Program"
+        "$23,362",
+        "PI",
+        "Total requested €20, 000 (approximately ), Game in Lab 2026 International Call for Projects, Asmodee"
       ]
     },
     {
-      "name": "CyberAI Innovation",
+      "name": "Beyond the Security Divide",
       "badge": "Pending",
-      "summary": "CyberAI Innovation: Teaching AI as Target and Defender through a Full-Stack Immersive AI Ecosystem",
+      "summary": "Beyond the Security Divide: Building a Community-Guided Cybersecurity Education System for Broad and Meaningful Access",
       "tags": [
-        "$497,460",
+        "$75,000",
         "Lead PI",
-        "National Science Foundation (NSF), Proposal 26-0572, submission deadline April 3, 2026, submitted to sponsor March 10, 2026"
+        "Total requested Spencer Foundation Vision Grant"
       ]
     }
   ],
   "publications": [
+    {
+      "year": "2026",
+      "title": "Design affordance diagnostic framework for computational thinking assessment in interactive virtual makerspaces: An exploratory study",
+      "authors": "Moon, J., Aldemir, T., & Byun, G.",
+      "venue": "Interactive Learning Environments",
+      "link": "",
+      "tags": [
+        "Analytics"
+      ],
+      "note": "corresponding author",
+      "status": "Accepted"
+    },
     {
       "year": "2026",
       "title": "Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy",
@@ -1087,6 +1099,12 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
+      "citation": "‡ Moon, J., Aldemir, T., & Byun, G. (Accepted, 2026). Design affordance diagnostic framework for computational thinking assessment in interactive virtual makerspaces: An exploratory study. Interactive Learning Environments. [SSCI-indexed, IF =6.7, IF5 = 7.1]",
+      "link": ""
+    },
+    {
+      "year": "2026",
+      "category": "International",
       "citation": "* Hong, S., Moon, J., Cho, H., & Lim, C. (Accepted, 2026). Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy. AI & Society. [ESCI-indexed, IF = 6.1, IF5 = 2.1]",
       "link": ""
     },
@@ -1671,17 +1689,6 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Under review",
-      "year": "Pipeline",
-      "title": "Design affordance diagnostic framework for computational thinking assessment in interactive virtual makerspaces: An exploratory study",
-      "authors": "‡ Moon, J., Aldemir, T., & Byun, G.",
-      "venue": "Interactive Learning Environments",
-      "citation": "‡ Moon, J., Aldemir, T., & Byun, G. (Under review). Design affordance diagnostic framework for computational thinking assessment in interactive virtual makerspaces: An exploratory study. Interactive Learning Environments. (SSCI-indexed journal).",
-      "link": ""
-    },
-    {
-      "bucket": "Submitted or Under Review",
-      "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
       "title": "Semantic trajectory analysis of learner questions in AI-based learning: Comparing RAG-based and generative AI",
@@ -1901,10 +1908,10 @@ window.__cvSiteData = {
     }
   ],
   "workingPaperSummary": {
-    "total": 39,
-    "submittedOrUnderReview": 32,
+    "total": 38,
+    "submittedOrUnderReview": 31,
     "inPreparation": 7,
-    "journalManuscripts": 34,
+    "journalManuscripts": 33,
     "bookChapters": 2,
     "conferenceProposals": 3
   },
@@ -1997,6 +2004,36 @@ window.__cvSiteData = {
     ],
     "pending": [
       {
+        "title": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
+        "meta": "PI | Total requested €20, 000 (approximately ), Game in Lab 2026 International Call for Projects, Asmodee | May 2027 - April 2029",
+        "amount": "$23,362",
+        "amountValue": 23362.0
+      },
+      {
+        "title": "Beyond the Security Divide: Building a Community-Guided Cybersecurity Education System for Broad and Meaningful Access",
+        "meta": "Lead PI | Total requested Spencer Foundation Vision Grant | February 2027 - July 2028",
+        "amount": "$75,000",
+        "amountValue": 75000.0
+      },
+      {
+        "title": "Who Bears the Work of School AI Governance? Policy-Assigned Responsibility",
+        "meta": "PI | Employer Support, and Unequal District Capacity, Total requested Russell Sage Foundation, Sheldon Danziger Pipeline Grants Competition | August 2027 - July 2028",
+        "amount": "$50,000",
+        "amountValue": 50000.0
+      },
+      {
+        "title": "OpenPolicy v0.1: A Reproducible Public-Evidence Release for School AI Policy",
+        "meta": "RAAIS Foundation Grant | Submitted August 2026; proposed three-month project",
+        "amount": "pending",
+        "amountValue": null
+      },
+      {
+        "title": "OpenPolicy Receipts: Open Receipts and Safety Tests for Accountable Public-Interest AI Agents",
+        "meta": "Total requested Sentient Foundation Open Source AGI Grant Program, Grant Track | Submitted August 2026; proposed four-month project",
+        "amount": "$50,000",
+        "amountValue": 50000.0
+      },
+      {
         "title": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
         "meta": "Lead PI | AERA-NSF Research Grant Program | September 2026 - August 2028",
         "amount": "$35,000",
@@ -2025,11 +2062,11 @@ window.__cvSiteData = {
   },
   "grantPortfolio": {
     "fundedTotal": 607683,
-    "pendingTotal": 932406,
+    "pendingTotal": 1130768,
     "fundedCount": 14,
-    "pendingCount": 4,
+    "pendingCount": 9,
     "sourceReportedFundedTotal": 607683,
-    "sourceReportedPendingTotal": 932406,
+    "sourceReportedPendingTotal": 1130768,
     "withdrawnTotal": 0,
     "withdrawnCount": 0,
     "sourceReportedWithdrawnTotal": 0,
