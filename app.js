@@ -1019,6 +1019,29 @@ const teaching = siteData.teaching || {
     "Earlier teaching at Florida State University included graduate instruction in multimedia development and instructional systems research writing.",
 };
 
+const teachingCourseFocus = {
+  "AIL 689":
+    "A field-based practicum focused on applying instructional technology knowledge through supervised professional work.",
+  "AIL 690":
+    "A graduate seminar examining current research, theories, and professional issues in instructional technology.",
+  "AIL 699":
+    "Faculty-supervised doctoral dissertation research, including study design, analysis, and scholarly writing.",
+  "AIL 605":
+    "Design and development of interactive multimedia experiences for teaching, learning, and training.",
+  "AIL 606":
+    "Software tools, systems, and development practices used to create technology-supported learning experiences.",
+  "INTE 534":
+    "Current issues, emerging technologies, and research trends shaping instructional technology practice.",
+  "INTE 535":
+    "Selection, implementation, and evaluation of assistive technologies that support accessible learning.",
+  "CAT 100":
+    "An introduction to computer concepts, digital literacy, and practical productivity applications.",
+  "CAT 200":
+    "Educational uses of computers and digital tools for classroom teaching and student learning.",
+  "CAT 250":
+    "Curriculum planning, instructional design, and teaching strategies for computer education.",
+};
+
 const serviceReviewCopy =
   siteData.serviceReviewCopy ||
   "Review service includes journals such as Computers & Education, British Journal of Educational Technology, IEEE Transactions on Learning Technologies, Journal of Learning Analytics, and Virtual Reality, alongside grant review for the National Science Foundation and the Swiss National Science Foundation.";
@@ -1982,7 +2005,34 @@ function renderTeachingSection() {
 
   if (recentTeachingList) {
     recentTeachingList.innerHTML = (teaching.teachingPortfolio || [])
-      .map((item) => `<li>${escapeHtml(item)}</li>`)
+      .map((item, index) => {
+        const match = item.match(/^([A-Z]{2,5})\s*(\d{3,4})\s+(.+)$/);
+        const code = match ? `${match[1]} ${match[2]}` : "Course";
+        const title = match ? match[3] : item;
+        const focus =
+          teachingCourseFocus[code] ||
+          `Coursework focused on ${title.replace(/[.!?]+$/, "").toLowerCase()}.`;
+        const tooltipId = `course-tooltip-${index}`;
+
+        return `
+          <li class="course-tooltip-item">
+            <span
+              class="course-tooltip-trigger"
+              tabindex="0"
+              aria-describedby="${tooltipId}"
+              aria-label="Course information for ${escapeHtml(code)} ${escapeHtml(title)}"
+            >
+              <span class="course-code">${escapeHtml(code)}</span>
+              <span class="course-name">${escapeHtml(title)}</span>
+              <span class="course-info-icon" aria-hidden="true">i</span>
+            </span>
+            <span class="course-tooltip" id="${tooltipId}" role="tooltip">
+              <strong>${escapeHtml(code)} · Course focus</strong>
+              <span>${escapeHtml(focus)}</span>
+            </span>
+          </li>
+        `;
+      })
       .join("");
   }
 
