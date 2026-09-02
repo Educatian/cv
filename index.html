@@ -101,13 +101,13 @@
       })();
     </script>
     <link rel="stylesheet" href="styles.css?v=20260809-addie-logo" />
-    <link rel="stylesheet" href="grant-logos.css?v=20260812" />
+    <link rel="stylesheet" href="grant-logos.css?v=20260901-grant-layout2" />
     <script defer src="assets/site-data.js?v=20260901-publication-refresh"></script>
     <script defer src="assets/projects-data.js?v=20260809-portfolio2"></script>
     <script defer src="assets/featured-projects.js?v=20260809-portfolio2"></script>
     <script defer src="assets/featured-rotation.js?v=20260809-portfolio2"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-    <script defer src="app.js?v=20260812-grant-logos"></script>
+    <script defer src="app.js?v=20260901-grant-layout2"></script>
     <script defer src="analytics.js"></script>
   </head>
   <body>
@@ -574,35 +574,48 @@
                       <div class="grant-pipeline-panel">
                         <div class="pipeline-column">
                           <div class="grant-panel-head">
-                            <h3>Funded Awards</h3>
-                            <p>Selected awards scaled within the funded portfolio.</p>
+                            <h3>Highlighted Funded Awards</h3>
+                            <p>Four current awards scaled within the funded portfolio.</p>
                           </div>
                           <div class="grant-bar-list" id="funded-bars"></div>
                         </div>
                         <div class="pipeline-column">
                           <div class="grant-panel-head">
-                            <h3>Proposal Pipeline</h3>
-                            <p>Pending proposals and larger near-term submissions.</p>
+                            <h3>Active Proposal Pipeline</h3>
+                            <p>Four current proposals scaled within the pipeline.</p>
                           </div>
                           <div class="grant-bar-list" id="pending-bars"></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="split-columns">
-                    <div>
-                      <h3>Selected Funded Awards</h3>
-                      <ul class="stack-list" id="funded-list"></ul>
+                  <section class="grant-all-records">
+                    <button
+                      class="grant-all-records-toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="grant-all-records-body"
+                    >
+                      <span>View complete funding record</span>
+                      <span class="grant-all-records-count" id="grant-record-count"></span>
+                    </button>
+                    <div class="grant-all-records-body" id="grant-all-records-body" hidden>
+                      <div class="split-columns">
+                        <div>
+                          <h3>Funded Awards</h3>
+                          <ul class="stack-list" id="funded-list"></ul>
+                        </div>
+                        <div>
+                          <h3>Submitted and Pending</h3>
+                          <ul class="stack-list" id="pending-list"></ul>
+                        </div>
+                      </div>
+                      <div class="grant-withdrawn-list">
+                        <h3>Withdrawn</h3>
+                        <ul class="stack-list" id="withdrawn-list"></ul>
+                      </div>
                     </div>
-                    <div>
-                      <h3>Selected Submitted and Pending</h3>
-                      <ul class="stack-list" id="pending-list"></ul>
-                    </div>
-                  </div>
-                  <div class="grant-withdrawn-list">
-                    <h3>Withdrawn</h3>
-                    <ul class="stack-list" id="withdrawn-list"></ul>
-                  </div>
+                  </section>
                 </section>
               </div>
 

@@ -2926,8 +2926,40 @@ function renderGrantDashboard() {
     `;
   }
 
-  renderGrantBars("funded-bars", grants.funded, "funded");
-  renderGrantBars("pending-bars", grants.pending, "pending");
+  const highlightedFunded = grants.funded.slice(0, 4);
+  const highlightedPending = grants.pending.slice(0, 4);
+  renderGrantBars("funded-bars", highlightedFunded, "funded");
+  renderGrantBars("pending-bars", highlightedPending, "pending");
+
+  const recordCount = document.getElementById("grant-record-count");
+  if (recordCount) {
+    recordCount.textContent = `${grants.funded.length} funded · ${grants.pending.length} pending`;
+  }
+
+  const allRecords = document.querySelector(".grant-all-records");
+  const allRecordsToggle = allRecords?.querySelector(".grant-all-records-toggle");
+  const allRecordsBody = allRecords?.querySelector(".grant-all-records-body");
+  if (
+    allRecords &&
+    allRecordsToggle &&
+    allRecordsBody &&
+    !allRecords.dataset.toggleBound
+  ) {
+    const syncExpandedState = () => {
+      const expanded = !allRecordsBody.hidden;
+      allRecords.classList.toggle("is-open", expanded);
+      allRecordsToggle.setAttribute("aria-expanded", String(expanded));
+      document.dispatchEvent(new CustomEvent("panel:content-updated"));
+    };
+
+    allRecordsToggle.addEventListener("click", () => {
+      allRecordsBody.hidden = !allRecordsBody.hidden;
+      syncExpandedState();
+    });
+
+    allRecords.dataset.toggleBound = "true";
+    syncExpandedState();
+  }
 }
 
 function renderGrantBars(targetId, items, status) {

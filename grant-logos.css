@@ -64,11 +64,133 @@
   min-width: 0;
 }
 
+/* Keep the portfolio readable at laptop widths: the snapshot spans the page,
+   followed by two genuinely usable pipeline columns. */
+.grant-visual-grid {
+  grid-template-columns: 1fr;
+}
+
+.grant-compare-panel {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.78fr) minmax(0, 1.22fr);
+  gap: 0.9rem 1.5rem;
+  align-items: start;
+}
+
+.grant-compare-panel .grant-panel-head {
+  grid-row: 1 / span 2;
+}
+
+.grant-compare-panel .grant-stack,
+.grant-compare-panel .grant-concentration {
+  margin-top: 0;
+}
+
+.grant-pipeline-panel {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.pipeline-column,
+.grant-bar-card,
+.grant-bar-heading,
+.grant-bar-copy,
+.grant-bar-topline,
+.grant-bar-title {
+  min-width: 0;
+}
+
+.grant-bar-card {
+  padding: 0.85rem;
+}
+
+.grant-bar-topline {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.35rem 0.75rem;
+  align-items: start;
+}
+
+.grant-bar-title {
+  overflow-wrap: anywhere;
+}
+
+.grant-bar-amount {
+  max-width: 100%;
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.grant-bar-meta {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 .grant-bar-funder {
   margin: 0.3rem 0 0;
   color: var(--muted);
   font-size: 0.78rem;
   line-height: 1.35;
+}
+
+.grant-all-records {
+  margin-top: 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface-strong);
+}
+
+.grant-all-records-toggle {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 1rem 1.1rem;
+  padding-right: 3rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.grant-all-records-toggle::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 1.1rem;
+  transform: translateY(-50%);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 1.2rem;
+}
+
+.grant-all-records.is-open .grant-all-records-toggle::after {
+  content: "−";
+}
+
+.grant-all-records-count {
+  float: right;
+  margin-left: 1rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.grant-all-records.is-open .grant-all-records-toggle {
+  border-bottom: 1px solid var(--line);
+}
+
+.grant-all-records-body > .split-columns,
+.grant-all-records-body > .grant-withdrawn-list {
+  margin: 0;
+  padding: 1.1rem;
+}
+
+.grant-all-records-body > .grant-withdrawn-list {
+  padding-top: 0;
 }
 
 :root[data-theme="dark"] .grant-funder-mark {
@@ -93,5 +215,38 @@
   .grant-bar-topline {
     display: grid;
     gap: 0.3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .grant-bar-amount {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .grant-all-records-toggle {
+    padding-right: 2.75rem;
+  }
+
+  .grant-all-records-count {
+    display: block;
+    float: none;
+    margin: 0.35rem 0 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .grant-compare-panel {
+    display: block;
+  }
+
+  .grant-compare-panel .grant-stack,
+  .grant-compare-panel .grant-concentration {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .grant-pipeline-panel {
+    grid-template-columns: 1fr;
   }
 }
