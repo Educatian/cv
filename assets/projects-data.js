@@ -121,7 +121,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/thecrimsonthread",
       "live": "https://thecrimsonthread.vercel.app",
-      "thumb": "assets/img/projects/thecrimsonthread.png"
+      "thumb": "assets/project-images/thecrimsonthread.png"
     },
     {
       "name": "ThinkMethod",
@@ -135,7 +135,10 @@ window.__cvProjects = {
         "agent"
       ],
       "repo": "https://github.com/Educatian/ThinkMethod",
-      "live": ""
+      "live": "",
+      "thumb": "assets/project-images/thinkmethod-thumbnail-20260908.png",
+      "imageAlt": "ThinkMethod research design advisor with methodology choices and a research wizard.",
+      "thumbnailCaption": "Research design advisor · prototype interface"
     },
     {
       "name": "bamatext",
@@ -149,7 +152,10 @@ window.__cvProjects = {
         "Socratic AI tutor"
       ],
       "repo": "https://github.com/Educatian/bamatext",
-      "live": ""
+      "live": "",
+      "thumb": "assets/project-images/bamatext-thumbnail-20260908.png",
+      "imageAlt": "BamaText adaptive physics textbook landing screen and learning features.",
+      "thumbnailCaption": "Adaptive textbook · prototype interface"
     },
     {
       "name": "BamaTide",
@@ -164,7 +170,10 @@ window.__cvProjects = {
         "Gemini tutor"
       ],
       "repo": "https://github.com/Educatian/BamaTide",
-      "live": ""
+      "live": "",
+      "thumb": "assets/project-images/bamatide-thumbnail-20260908.png",
+      "imageAlt": "BamaTide educational game design microcredential pilot landing screen.",
+      "thumbnailCaption": "Microcredential pilot · demo interface"
     },
     {
       "name": "ethobot3.2",
@@ -179,7 +188,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/ethobot3.2",
       "live": "https://ethobot-cloudflare.jewoong-moon.workers.dev/project-overview",
-      "thumb": "assets/img/projects/ethobot32.webp"
+      "thumb": "assets/project-images/ethobot32.webp"
     },
     {
       "name": "TINA1.01",
@@ -194,7 +203,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/TINA1.01",
       "live": "https://tina-adie1.netlify.app",
-      "thumb": "assets/img/projects/tina.png"
+      "thumb": "assets/project-images/tina.png"
     },
     {
       "name": "sail",
@@ -210,7 +219,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/sail",
       "live": "https://sail-dia.pages.dev",
-      "thumb": "assets/img/projects/sail.png",
+      "thumb": "assets/project-images/sail.png",
       "screenshots": [
         {
           "label": "Home",
@@ -251,7 +260,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/virtual-makerspace",
       "live": "https://virtual-makerspace.pages.dev",
-      "thumb": "assets/img/projects/virtual-makerspace.png"
+      "thumb": "assets/project-images/virtual-makerspace.png"
     },
     {
       "name": "chalk-and-chance",
@@ -267,7 +276,7 @@ window.__cvProjects = {
       ],
       "repo": "",
       "live": "https://chalk-and-chance.pages.dev/",
-      "thumb": "assets/img/projects/chalk-and-chance.png"
+      "thumb": "assets/project-images/chalk-and-chance.png"
     },
     {
       "name": "discourse-lens",
@@ -282,7 +291,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/discourse-lens",
       "live": "https://educatian.github.io/discourse-lens/",
-      "thumb": "assets/img/projects/discourse-lens.png"
+      "thumb": "assets/project-images/discourse-lens.png"
     },
     {
       "name": "learning-theories-timeline",
@@ -297,7 +306,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/learning-theories-timeline",
       "live": "https://educatian.github.io/learning-theories-timeline/",
-      "thumb": "assets/img/projects/learning-theories-timeline.png"
+      "thumb": "assets/project-images/learning-theories-timeline.png"
     },
     {
       "name": "counseling-graph-cscl",
@@ -312,7 +321,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/counseling-graph-cscl",
       "live": "https://educatian.github.io/counseling-graph-cscl/",
-      "thumb": "assets/img/projects/counseling-graph-cscl.png"
+      "thumb": "assets/project-images/counseling-graph-cscl.png"
     },
     {
       "name": "videoanalysis",
@@ -326,7 +335,10 @@ window.__cvProjects = {
         "MMLA"
       ],
       "repo": "https://github.com/Educatian/videoanalysis",
-      "live": ""
+      "live": "",
+      "thumb": "assets/project-images/videoanalysis-thumbnail-20260908.png",
+      "imageAlt": "Public README overview of the Classroom Engagement Analysis System research toolkit.",
+      "thumbnailCaption": "Project documentation · research toolkit"
     },
     {
       "name": "ethicsedullm",
@@ -339,7 +351,10 @@ window.__cvProjects = {
         "AI ethics"
       ],
       "repo": "https://github.com/Educatian/ethicsedullm",
-      "live": ""
+      "live": "",
+      "thumb": "assets/project-images/ethicsedullm-thumbnail-20260908.png",
+      "imageAlt": "Public README outlining the AI Ethics Education LLM development project.",
+      "thumbnailCaption": "Project documentation · model development"
     },
     {
       "name": "cybersentinel",
@@ -354,7 +369,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/cybersentinel",
       "live": "https://educatian.github.io/cybersentinel/",
-      "thumb": "assets/img/projects/cybersentinel.png"
+      "thumb": "assets/project-images/cybersentinel.png"
     },
     {
       "name": "research-assistant-ai-workflow-en",
@@ -369,7 +384,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/research-assistant-ai-workflow-en",
       "live": "https://educatian.github.io/research-assistant-ai-workflow-en/",
-      "thumb": "assets/img/projects/research-assistant-ai-workflow-en.png"
+      "thumb": "assets/project-images/research-assistant-ai-workflow-en.png"
     },
     {
       "name": "educatian.github.io",
@@ -384,7 +399,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/educatian.github.io",
       "live": "https://educatian.github.io/",
-      "thumb": "assets/img/projects/educatian-hub.png"
+      "thumb": "assets/project-images/educatian-hub.png"
     },
     {
       "name": "aiedobservatory",
@@ -399,7 +414,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/aiedobservatory",
       "live": "https://aiedobservatory-five.vercel.app",
-      "thumb": "assets/img/projects/aiedobservatory.png"
+      "thumb": "assets/project-images/aiedobservatory.png"
     },
     {
       "name": "fieldexplorer1.0",
@@ -414,7 +429,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/fieldexplorer1.0",
       "live": "https://fieldexplorer10.vercel.app",
-      "thumb": "assets/img/projects/fieldexplorer.png"
+      "thumb": "assets/project-images/fieldexplorer.png"
     },
     {
       "name": "code-defense-lab-mvp",
@@ -429,7 +444,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/code-defense-lab-mvp",
       "live": "https://educatian.github.io/code-defense-lab-mvp/",
-      "thumb": "assets/img/projects/code-defense-lab.png"
+      "thumb": "assets/project-images/code-defense-lab.png"
     },
     {
       "name": "peerpilot-mvp",
@@ -444,7 +459,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/peerpilot-mvp",
       "live": "https://educatian.github.io/peerpilot-mvp/",
-      "thumb": "assets/img/projects/peerpilot.png"
+      "thumb": "assets/project-images/peerpilot.png"
     },
     {
       "name": "datasandbox-toolkit",
@@ -459,7 +474,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/datasandbox3.1",
       "live": "https://datasandbox-toolkit.pages.dev",
-      "thumb": "assets/img/projects/datasandbox-toolkit.png"
+      "thumb": "assets/project-images/datasandbox-toolkit.png"
     },
     {
       "name": "TeachPlay",
@@ -474,7 +489,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/TeachPlay",
       "live": "https://teachplay.dev/",
-      "thumb": "assets/img/projects/teachplay.webp"
+      "thumb": "assets/project-images/teachplay.webp"
     },
     {
       "name": "counselcue",
@@ -489,7 +504,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/counselcue",
       "live": "https://educatian.github.io/counselcue/",
-      "thumb": "assets/img/projects/counselcue.webp"
+      "thumb": "assets/project-images/counselcue.webp"
     },
     {
       "name": "korean-classroom-ai-teacher-training-sim",
@@ -504,7 +519,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/korean-classroom-ai-teacher-training-sim",
       "live": "",
-      "thumb": "assets/img/projects/korean-vr-teacher-sim.webp"
+      "thumb": "assets/project-images/korean-vr-teacher-sim.webp"
     },
     {
       "name": "vr-safety-training",
@@ -519,7 +534,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/vr-safety-training",
       "live": "",
-      "thumb": "assets/img/projects/vr-safety-training.webp"
+      "thumb": "assets/project-images/vr-safety-training.webp"
     },
     {
       "name": "GeckoGripLabUnity",
@@ -534,7 +549,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/GeckoGripLabUnity",
       "live": "",
-      "thumb": "assets/img/projects/geckogrip.webp"
+      "thumb": "assets/project-images/geckogrip.webp"
     },
     {
       "name": "PineMorphLabUnity",
@@ -549,7 +564,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/PineMorphLabUnity",
       "live": "",
-      "thumb": "assets/img/projects/pinemorph.webp"
+      "thumb": "assets/project-images/pinemorph.webp"
     },
     {
       "name": "ConcussionVRPrototypeUnity",
@@ -564,7 +579,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/ConcussionVRPrototypeUnity",
       "live": "",
-      "thumb": "assets/img/projects/concussion-vr.webp"
+      "thumb": "assets/project-images/concussion-vr.webp"
     },
     {
       "name": "nrf-sel-stage",
@@ -578,7 +593,10 @@ window.__cvProjects = {
         "facial action units"
       ],
       "repo": "https://github.com/Educatian/nrf-sel-stage",
-      "live": "https://educatian.github.io/nrf-sel-stage/"
+      "live": "https://educatian.github.io/nrf-sel-stage/",
+      "thumb": "assets/project-images/nrf-sel-stage-thumbnail-20260908.png",
+      "imageAlt": "NRF SEL Stage running in Godot, showing the affect avatar and facial action controls.",
+      "thumbnailCaption": "Local prototype · avatar test scene"
     },
     {
       "name": "korea-compnlp-handson",
@@ -593,7 +611,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/korea-compnlp-handson",
       "live": "",
-      "thumb": "assets/img/projects/korea-compnlp.webp"
+      "thumb": "assets/project-images/korea-compnlp.webp"
     },
     {
       "name": "cipherfell",
@@ -608,7 +626,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/cipherfell",
       "live": "https://cipherfell.pages.dev",
-      "thumb": "assets/img/projects/cipherfell.webp"
+      "thumb": "assets/project-images/cipherfell.webp"
     },
     {
       "name": "algopolis",
@@ -623,7 +641,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/algopolis",
       "live": "https://ancient-pebble-944.higgsfield.gg/",
-      "thumb": "assets/img/projects/algopolis.webp"
+      "thumb": "assets/project-images/algopolis.webp"
     },
     {
       "name": "kels-curator-bot",
@@ -638,7 +656,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/kels-curator-bot",
       "live": "https://educatian.github.io/kels-curator-bot/",
-      "thumb": "assets/img/projects/kels-curator.webp"
+      "thumb": "assets/project-images/kels-curator.webp"
     },
     {
       "name": "spaceinvaders",
@@ -653,7 +671,7 @@ window.__cvProjects = {
       ],
       "repo": "https://github.com/Educatian/spaceinvaders",
       "live": "https://educatian.github.io/spaceinvaders/",
-      "thumb": "assets/img/projects/spaceinvaders.webp"
+      "thumb": "assets/project-images/spaceinvaders.webp"
     },
     {
       "name": "codex_collaboratione-learn",
@@ -667,7 +685,10 @@ window.__cvProjects = {
         "instructional design workflow"
       ],
       "repo": "https://github.com/Educatian/codex_collaboratione-learn",
-      "live": ""
+      "live": "",
+      "thumb": "assets/project-images/codex-elearn-thumbnail-20260908.png",
+      "imageAlt": "Cover of the Codex Collaboration Tutorial for interactive e-learning authoring.",
+      "thumbnailCaption": "Interactive e-learning · workflow guide"
     },
     {
       "name": "CRAFT-",
@@ -681,7 +702,10 @@ window.__cvProjects = {
         "AI workflow"
       ],
       "repo": "https://github.com/Educatian/CRAFT-",
-      "live": ""
+      "live": "",
+      "thumb": "assets/project-images/craft-thumbnail-20260908.png",
+      "imageAlt": "CRAFT SCORM quiz starter running in browser-only mode, showing its first question.",
+      "thumbnailCaption": "SCORM framework · working quiz example"
     },
     {
       "name": "civilform",
@@ -695,7 +719,10 @@ window.__cvProjects = {
         "Gemini Vision"
       ],
       "repo": "https://github.com/Educatian/civilform",
-      "live": ""
+      "live": "",
+      "thumb": "assets/project-images/civilform-thumbnail-20260908.png",
+      "imageAlt": "CivilForm prototype showing Revit evaluation choices and the design upload workflow.",
+      "thumbnailCaption": "Revit assessment · prototype interface"
     },
     {
       "name": "CoReg_Companion",
@@ -709,7 +736,10 @@ window.__cvProjects = {
         "adaptive scaffolding"
       ],
       "repo": "https://github.com/Educatian/CoReg_Companion",
-      "live": ""
+      "live": "",
+      "thumb": "assets/project-images/coreg-companion-thumbnail-20260908.png",
+      "imageAlt": "CoREG Companion demo dashboard showing the learning coach and navigation for courses, goals, and feedback.",
+      "thumbnailCaption": "Learning companion · demo interface"
     }
   ]
 };

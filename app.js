@@ -2293,9 +2293,13 @@ function renderProjects() {
           const repo = p.repo
             ? `<a class="project-link project-link-repo" href="${escapeHtml(p.repo)}" target="_blank" rel="noreferrer">Source &rarr;</a>`
             : "";
+          const thumbnail = p.portfolioImage || p.thumb;
+          const preview = thumbnail
+            ? `<figure class="archive-project-preview"><a class="current-project-image" href="${escapeHtml(p.live || p.repo)}" target="_blank" rel="noopener noreferrer"><img src="${escapeHtml(thumbnail)}" width="1600" height="1000" alt="${escapeHtml(p.imageAlt || ("Project image from " + (p.title || p.name)))}" loading="lazy" decoding="async"></a>${p.thumbnailCaption ? `<figcaption>${escapeHtml(p.thumbnailCaption)}</figcaption>` : ""}</figure>`
+            : "";
           return `
             <article class="project-card">
-              ${p.portfolioImage ? `<a class="current-project-image" href="${escapeHtml(p.live)}" target="_blank" rel="noopener noreferrer"><img src="${escapeHtml(p.portfolioImage)}" width="1600" height="1000" alt="${escapeHtml(p.imageAlt)}" loading="lazy"></a>` : ""}
+              ${preview}
               <header class="project-head">
                 <h4 class="project-title">${escapeHtml(p.title || p.name)}</h4>
                 ${lang}

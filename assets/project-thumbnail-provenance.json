@@ -1,0 +1,105 @@
+{
+  "captured": "2026-09-08",
+  "thumbnails": [
+    {
+      "project": "ThinkMethod",
+      "file": "thinkmethod-thumbnail-20260908.png",
+      "sourceRepository": "https://github.com/Educatian/ThinkMethod",
+      "sourceRevision": "ed5ee6c1d880bbf149cb77af7db6cc1ba533bc25",
+      "captured": "2026-09-08",
+      "caption": "Research design advisor · prototype interface",
+      "notes": "Original app rendered locally with an inert loopback backend configuration. No remote session logging or AI call.",
+      "sha256": "0648b8fc5e1691bcb96ff8e7007d074742ccf4ceaae4e94d0be18c2459c69f25"
+    },
+    {
+      "project": "bamatext",
+      "file": "bamatext-thumbnail-20260908.png",
+      "sourceRepository": "https://github.com/Educatian/bamatext",
+      "sourceRevision": "e16cce933730e5fa341b35421cef1a404e50d022",
+      "captured": "2026-09-08",
+      "caption": "Adaptive textbook · prototype interface",
+      "notes": "Unmodified application interface, captured from a local preview.",
+      "sha256": "bf17da9379a85073d8f1e69e9af2380de6ee85ff7d2c8bf00a22427b5e13f49e"
+    },
+    {
+      "project": "BamaTide",
+      "file": "bamatide-thumbnail-20260908.png",
+      "sourceRepository": "https://github.com/Educatian/BamaTide",
+      "sourceRevision": "967b88e0267e317651421268f2288a549a77f7eb",
+      "captured": "2026-09-08",
+      "caption": "Microcredential pilot · demo interface",
+      "notes": "Original app rendered locally; added the missing index.tsx module entry to the preview HTML. Built-in demonstration content; no AI call.",
+      "sha256": "ce7c7a35b68d21f0d56a1a9f0a6f6a5a77de8a9e9c2988ebe1355f3270056685"
+    },
+    {
+      "project": "videoanalysis",
+      "file": "videoanalysis-thumbnail-20260908.png",
+      "sourceRepository": "https://github.com/Educatian/videoanalysis",
+      "sourceRevision": "42abd50a252ec99abe8d85b153419bd81b734239",
+      "captured": "2026-09-08",
+      "caption": "Project documentation · research toolkit",
+      "notes": "Screenshot of the public repository README; documentation, not an inference result or working chat interface.",
+      "sha256": "d943bfd7327be2458b2026198c6d01b8b3f0207526f35dc61f37ae31a9b6286f"
+    },
+    {
+      "project": "ethicsedullm",
+      "file": "ethicsedullm-thumbnail-20260908.png",
+      "sourceRepository": "https://github.com/Educatian/ethicsedullm",
+      "sourceRevision": "e321bea0c1628771a0c16c4568a953cf271ff5b0",
+      "captured": "2026-09-08",
+      "caption": "Project documentation · model development",
+      "notes": "Screenshot of the public repository README; documentation, not an inference result or working chat interface.",
+      "sha256": "7a22db14a548b2646f32591407b44dfec0f0400ab5ac0d2b5a1afe0d85dae484"
+    },
+    {
+      "project": "nrf-sel-stage",
+      "file": "nrf-sel-stage-thumbnail-20260908.png",
+      "sourceRepository": "https://github.com/Educatian/nrf-sel-stage",
+      "sourceRevision": null,
+      "captured": "2026-09-08",
+      "caption": "Local prototype · avatar test scene",
+      "notes": "Actual local Godot web build, default avatar test scene. No participant records.",
+      "sha256": "af1ea7bcc57a51800b3dc050cbe61050ab096d42eb5ef6ac5441bc57167af54e"
+    },
+    {
+      "project": "codex_collaboratione-learn",
+      "file": "codex-elearn-thumbnail-20260908.png",
+      "sourceRepository": "https://github.com/Educatian/codex_collaboratione-learn",
+      "sourceRevision": "3135356b6ef5983b953712dae4ce8b5487c7670b",
+      "captured": "2026-09-08",
+      "caption": "Interactive e-learning · workflow guide",
+      "notes": "Unmodified application interface, captured from a local preview.",
+      "sha256": "9fbe8529a2b1bd20a2d29a8da6c6ef406b020d2e89f0391f1f4d62f2d8428e8a"
+    },
+    {
+      "project": "CRAFT-",
+      "file": "craft-thumbnail-20260908.png",
+      "sourceRepository": "https://github.com/Educatian/CRAFT-",
+      "sourceRevision": "15992b58ea25ccf62a18aca3529fb705a1cd8753",
+      "captured": "2026-09-08",
+      "caption": "SCORM framework · working quiz example",
+      "notes": "Unmodified application interface, captured from a local preview.",
+      "sha256": "6667270e765331001dd3a39eebe701dab8e8e9df653acf5d9a875e3ac1d0fa99"
+    },
+    {
+      "project": "civilform",
+      "file": "civilform-thumbnail-20260908.png",
+      "sourceRepository": "https://github.com/Educatian/civilform",
+      "sourceRevision": "2d381b6f560786a928abdf5e8b8d4e6feaffb4ae",
+      "captured": "2026-09-08",
+      "caption": "Revit assessment · prototype interface",
+      "notes": "Unmodified application interface, captured from a local preview.",
+      "sha256": "72147d572e3f6c94cf606f8e1d4cf59b4bfdb6177836d481089d5f4200f6a13c"
+    },
+    {
+      "project": "CoReg_Companion",
+      "file": "coreg-companion-thumbnail-20260908.png",
+      "sourceRepository": "https://github.com/Educatian/CoReg_Companion",
+      "sourceRevision": "36eb72fad78ee7d124a23213dc8c148132d6df66",
+      "captured": "2026-09-08",
+      "caption": "Learning companion · demo interface",
+      "notes": "Original built-in mock login and initial dashboard; no learner records or AI response generated.",
+      "sha256": "735d672c1d0bbbfd929c027a45a680b9f604736f878e0a632cce8a6f4071891a"
+    }
+  ]
+}
