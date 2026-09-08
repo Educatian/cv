@@ -44,6 +44,9 @@
     let timer = null;
 
     host.innerHTML = `
+      <nav class="fp-current-index" aria-label="Current research projects">
+        ${projects.filter(p => p.current).map(p => `<button type="button" data-fp-select="${escapeHtml(p.id)}">${escapeHtml(p.shortTitle || p.title)}</button>`).join("")}
+      </nav>
       <div class="fp-render" data-fp-render></div>
       <div class="fp-controls" aria-label="Featured project rotation controls">
         <button type="button" data-fp-previous>Previous project</button>
@@ -61,6 +64,16 @@
     const dialog = host.querySelector("[data-fp-dialog]");
     const dialogContent = host.querySelector("[data-fp-dialog-content]");
 
+    host.querySelectorAll("[data-fp-select]").forEach(button => {
+      button.addEventListener("click", () => {
+        index = projects.findIndex(p => p.id === button.dataset.fpSelect);
+        paused = true;
+        toggle.textContent = "Start rotation";
+        stopTimer();
+        render();
+      });
+    });
+
     function ordered() {
       return projects.map((_, offset) => projects[(index + offset) % projects.length]);
     }
@@ -70,11 +83,20 @@
       if (!project) return;
       dialogContent.innerHTML = `
         <button class="fp-dialog-close" type="button" data-fp-close>Close</button>
-        <img src="${imageUrl(project, base)}" width="960" height="600" alt="${escapeHtml(project.imageAlt)}">
+        <div class="fp-case-media">
+          <a href="${imageUrl(project, base)}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size ${escapeHtml(project.title)} screenshot">
+            <img src="${imageUrl(project, base)}" width="1600" height="1000" alt="${escapeHtml(project.imageAlt)}">
+          </a>
+          ${project.imageCaption ? `<p class="fp-caption">${escapeHtml(project.imageCaption)}</p>` : ""}
+        ${(project.gallery || []).length ? `<div class="fp-gallery" aria-label="More project screenshots">${project.gallery.map(shot => `<figure>
+          <a href="${imageUrl(shot, base)}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size ${escapeHtml(shot.label)} screenshot"><img src="${imageUrl(shot, base)}" width="1600" height="1000" alt="${escapeHtml(shot.alt)}" loading="lazy"></a>
+          <figcaption>${escapeHtml(shot.caption)}</figcaption></figure>`).join("")}</div>` : ""}
+        </div>
         <div class="fp-dialog-copy">
           <p class="fp-kicker">${escapeHtml(project.status)}</p>
           <h2 id="fp-dialog-title">${escapeHtml(project.title)}</h2>
           <p class="fp-dialog-summary">${escapeHtml(project.summary)}</p>
+          ${(project.details || []).map(detail => `<p class="fp-detail">${escapeHtml(detail)}</p>`).join("")}
           <dl class="fp-meta fp-dialog-meta">
             <div><dt>Audience / problem</dt><dd>${escapeHtml(project.audience)}</dd></div>
             <div><dt>My role</dt><dd>${escapeHtml(project.role)}</dd></div>
@@ -85,7 +107,8 @@
             ${project.live ? `<a class="fp-action fp-action-primary" href="${escapeHtml(project.live)}" target="_blank" rel="noopener noreferrer">Open live project</a>` : ""}
             ${project.repo ? `<a class="fp-action fp-action-secondary" href="${escapeHtml(project.repo)}" target="_blank" rel="noopener noreferrer">View source</a>` : ""}
           </div>
-        </div>`;
+        </div>
+`;
       dialogContent.querySelector("[data-fp-close]").addEventListener("click", () => dialog.close());
       dialog.showModal();
     }
@@ -96,7 +119,7 @@
       const supports = items.slice(1, 3);
       renderRoot.innerHTML = `
         <div class="fp-stage">
-          <a class="fp-lead-media" href="${escapeHtml(lead.live || lead.repo)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(lead.title)}">
+          <a class="fp-lead-media${lead.current ? " fp-actual-media" : ""}" href="${escapeHtml(lead.live || lead.repo)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(lead.title)}">
             <img src="${imageUrl(lead, base)}" width="960" height="600" alt="${escapeHtml(lead.imageAlt)}">
           </a>
           <div class="fp-lead-copy">
@@ -109,7 +132,7 @@
         </div>
         <div class="fp-support-grid">
           ${supports.map((project) => `<article class="fp-support-card">
-            <a class="fp-support-media" href="${escapeHtml(project.live || project.repo)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(project.title)}">
+            <a class="fp-support-media${project.current ? " fp-actual-media" : ""}" href="${escapeHtml(project.live || project.repo)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(project.title)}">
               <img src="${imageUrl(project, base)}" width="640" height="400" alt="${escapeHtml(project.imageAlt)}" loading="lazy">
             </a>
             <div class="fp-support-copy">
@@ -120,6 +143,7 @@
             </div>
           </article>`).join("")}
         </div>`;
+      host.querySelectorAll("[data-fp-select]").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.fpSelect === lead.id)));
       position.textContent = `${index + 1} of ${projects.length}`;
       renderRoot.querySelectorAll("[data-fp-case]").forEach((button) => {
         button.addEventListener("click", () => openCase(button.dataset.fpCase));

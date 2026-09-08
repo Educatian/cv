@@ -1,0 +1,79 @@
+{
+  "updated": "2026-09-08",
+  "note": "Actual application and engine captures. No generated promotional art is presented as gameplay.",
+  "projects": [
+    {
+      "id": "ethobot-vr",
+      "title": "ETHOBOT VR",
+      "image": "ethobot-vr-20260908.png",
+      "imageAlt": "Actual ETHOBOT VR gameplay: meeting a harbor resident beside the waterfront in Harbor Echo.",
+      "imageCaption": "Actual gameplay · Harbor Echo · English development build",
+      "live": "https://ethobot3d.pages.dev/",
+      "gallery": [
+        {
+          "image": "ethobot-vr-interior-20260908.png",
+          "label": "Inside Tide Cafe",
+          "alt": "Actual Harbor Echo gameplay inside Tide Cafe, with the player and residents in a furnished interior.",
+          "caption": "Actual browser gameplay · Tide Cafe interior"
+        }
+      ]
+    },
+    {
+      "id": "campus-digital-twin",
+      "title": "Common Ground: Campus Digital Twin",
+      "image": "campus-map-20260908.png",
+      "imageAlt": "Actual Common Ground gameplay showing the University of Alabama Quad, mapped paths, campus landmarks, and four investigation sites.",
+      "imageCaption": "Actual gameplay · UA Quad overview · OpenStreetMap-based geometry",
+      "live": "https://ethobot-common-ground.pages.dev/quest",
+      "gallery": [
+        {
+          "image": "campus-explore-20260908.png",
+          "label": "Explore with Big Al",
+          "alt": "Actual Common Ground gameplay showing Big Al and a visitor beside Oliver-Barnard Hall.",
+          "caption": "Actual gameplay · Big Al’s Campus Quest"
+        }
+      ]
+    },
+    {
+      "id": "design-tension",
+      "title": "Design Tension Studio",
+      "image": "design-tension-map-20260908.png",
+      "imageAlt": "Actual English Design Tension Studio sample workspace with an interactive issue map and teacher, student, IT systems, and administrator perspectives.",
+      "imageCaption": "Actual English interface · Public sample data",
+      "live": "https://swarm-id-en.pages.dev/",
+      "gallery": []
+    },
+    {
+      "id": "reboot-seoul-2050",
+      "title": "Reboot Seoul 2050",
+      "image": "reboot-school-20260908.png",
+      "imageAlt": "Actual English Reboot Seoul 2050 gameplay showing a robot investigator in the three-dimensional Faceless School episode.",
+      "imageCaption": "Actual gameplay · The Faceless School · English interface",
+      "live": "https://reboot2050.pages.dev/",
+      "gallery": [
+        {
+          "image": "reboot-classroom-20260908.png",
+          "label": "Investigate the classroom",
+          "alt": "Actual Reboot Seoul 2050 gameplay at the classroom evidence station, with a robot investigator and student characters.",
+          "caption": "Actual gameplay · Classroom investigation · Bilingual environmental signs"
+        }
+      ]
+    },
+    {
+      "id": "forma",
+      "title": "FORMA: Learning Design Atelier",
+      "image": "forma-studio-20260908.webp",
+      "imageAlt": "Actual FORMA engine scene showing the Prototype Studio, work areas, evidence boards, and the player among virtual colleagues.",
+      "imageCaption": "Actual engine capture · Prototype Studio",
+      "live": "https://forma-play.pages.dev/index.html",
+      "gallery": [
+        {
+          "image": "forma-calibration-20260908.webp",
+          "label": "Evidence and calibration",
+          "alt": "Actual FORMA engine scene in the calibration studio with virtual colleagues and work areas.",
+          "caption": "Actual engine capture · Case 6 studio"
+        }
+      ]
+    }
+  ]
+}

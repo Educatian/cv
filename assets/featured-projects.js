@@ -1,5 +1,143 @@
 window.__featuredProjects = [
-  {
+{
+  "id": "ethobot-vr",
+  "title": "ETHOBOT VR",
+  "shortTitle": "ETHOBOT VR",
+  "image": "ethobot-vr-20260908.png",
+  "imageAlt": "Actual ETHOBOT VR gameplay: meeting a harbor resident beside the waterfront in Harbor Echo.",
+  "audience": "Learners exploring AI ethics through situated decision making",
+  "role": "Research and immersive learning design",
+  "status": "Playable development edition",
+  "researchArea": "AI ethics · Immersive learning · Evidence-centered design",
+  "outcome": "Connects exploration, stakeholder dialogue, source inspection, and justified revision.",
+  "summary": "An immersive AI ethics game where learners investigate dilemmas, hear different perspectives, and revise decisions with evidence. Three playable episodes connect situated inquiry with a record of the learner’s reasoning.",
+  "details": [
+    "In Harbor Echo, learners explore a coastal town, meet its residents, and trace apparently independent robot claims back to their sources. The investigation makes evidence quality and accountability part of the action.",
+    "Built in Unity with browser and Windows development editions alongside the VR project. Current browser play uses desktop controls; headset validation and empirical evaluation remain next steps."
+  ],
+  "live": "https://ethobot3d.pages.dev/",
+  "repo": "",
+  "imageCaption": "Actual gameplay · Harbor Echo · English development build",
+  "gallery": [
+    {
+      "image": "ethobot-vr-interior-20260908.png",
+      "label": "Inside Tide Cafe",
+      "alt": "Actual Harbor Echo gameplay inside Tide Cafe, with the player and residents in a furnished interior.",
+      "caption": "Actual browser gameplay · Tide Cafe interior"
+    }
+  ],
+  "current": true
+},
+{
+  "id": "campus-digital-twin",
+  "title": "Common Ground: Campus Digital Twin",
+  "shortTitle": "Campus Digital Twin",
+  "image": "campus-map-20260908.png",
+  "imageAlt": "Actual Common Ground gameplay showing the University of Alabama Quad, mapped paths, campus landmarks, and four investigation sites.",
+  "audience": "University learners investigating spatial decisions and AI services",
+  "role": "Research, game design, and interactive prototype development",
+  "status": "Playable spatial-learning prototype",
+  "researchArea": "Spatial learning · Digital twins · Situated AI ethics",
+  "outcome": "Turns campus exploration into a cycle of finding clues, testing strategies, and explaining a choice.",
+  "summary": "A campus digital-twin research project with a playable 3D prototype of the University of Alabama Quad. Big Al’s Campus Quest invites learners to explore buildings, compare route strategies, and reason about how design choices affect different visitors.",
+  "details": [
+    "The public prototype combines OpenStreetMap geometry, recognizable campus landmarks, character exploration, four investigation sites, and replayable choices. Learners collect clues, compare strategies, and record their reasons.",
+    "Campus architecture is approximate. Visitor scenarios, access conditions, and outcomes are simulated for learning; the prototype is not an official campus navigation service."
+  ],
+  "live": "https://ethobot-common-ground.pages.dev/quest",
+  "repo": "",
+  "imageCaption": "Actual gameplay · UA Quad overview · OpenStreetMap-based geometry",
+  "gallery": [
+    {
+      "image": "campus-explore-20260908.png",
+      "label": "Explore with Big Al",
+      "alt": "Actual Common Ground gameplay showing Big Al and a visitor beside Oliver-Barnard Hall.",
+      "caption": "Actual gameplay · Big Al’s Campus Quest"
+    }
+  ],
+  "current": true
+},
+{
+  "id": "design-tension",
+  "title": "Design Tension Studio",
+  "shortTitle": "Design Tension Studio",
+  "image": "design-tension-map-20260908.png",
+  "imageAlt": "Actual English Design Tension Studio sample workspace with an interactive issue map and teacher, student, IT systems, and administrator perspectives.",
+  "audience": "Instructional designers, educators, and graduate students",
+  "role": "Research and learning experience design",
+  "status": "Live bilingual design studio",
+  "researchArea": "Instructional design · Perspective taking · Reflective practice",
+  "outcome": "Makes competing priorities visible through issue maps, stakeholder lenses, and evidence-based reflection.",
+  "summary": "An interactive studio for examining the competing values, constraints, and stakeholder priorities behind a learning design. Learners explore a case, compare teacher, student, IT, and administrator perspectives, then explain and revise their thinking.",
+  "details": [
+    "The current experience guides learners from a home workspace to an issue map and a reflection. A map-focused view, list companion, contextual guidance, and reflection coach support exploration without hiding the underlying design tensions.",
+    "English and Korean editions share the same learning workflow. The public sample workspace uses demonstration data and resets on reload; screenshots show the sample, not student research records."
+  ],
+  "live": "https://swarm-id-en.pages.dev/",
+  "repo": "https://github.com/Educatian/Swarm_ID",
+  "imageCaption": "Actual English interface · Public sample data",
+  "gallery": [],
+  "current": true
+},
+{
+  "id": "reboot-seoul-2050",
+  "title": "Reboot Seoul 2050",
+  "shortTitle": "Reboot Seoul 2050",
+  "image": "reboot-school-20260908.png",
+  "imageAlt": "Actual English Reboot Seoul 2050 gameplay showing a robot investigator in the three-dimensional Faceless School episode.",
+  "audience": "Pre-service teachers and learners studying AI ethics and computational thinking",
+  "role": "Research and educational game development",
+  "status": "Playable research game",
+  "researchArea": "AI ethics · Computational thinking · Game-based assessment",
+  "outcome": "Connects narrative choices, spatial investigation, and code debugging with inspectable learning evidence.",
+  "summary": "A story-driven learning game set in a future Seoul shaped by AI. Learners investigate neighborhood and school dilemmas, examine stakeholder perspectives, debug solutions, and explore the consequences of their choices.",
+  "details": [
+    "The 3D episodes combine movement, clue inspection, carrying and placing evidence, dialogue, and branching decisions. The Faceless School asks learners to reconstruct how earlier choices shaped a school in 2050.",
+    "An evidence-centered design framework connects selected interactions to research questions about ethical reasoning and computational thinking. Recorded actions provide evidence for analysis, not a validated automatic mastery score."
+  ],
+  "live": "https://reboot2050.pages.dev/",
+  "repo": "",
+  "imageCaption": "Actual gameplay · The Faceless School · English interface",
+  "gallery": [
+    {
+      "image": "reboot-classroom-20260908.png",
+      "label": "Investigate the classroom",
+      "alt": "Actual Reboot Seoul 2050 gameplay at the classroom evidence station, with a robot investigator and student characters.",
+      "caption": "Actual gameplay · Classroom investigation · Bilingual environmental signs"
+    }
+  ],
+  "current": true
+},
+{
+  "id": "forma",
+  "title": "FORMA: Learning Design Atelier",
+  "shortTitle": "FORMA",
+  "image": "forma-studio-20260908.webp",
+  "imageAlt": "Actual FORMA engine scene showing the Prototype Studio, work areas, evidence boards, and the player among virtual colleagues.",
+  "audience": "Instructional design students and emerging learning designers",
+  "role": "Research, learning design, and simulation development",
+  "status": "Playable development edition",
+  "researchArea": "Instructional design · Professional simulation · Evidence-based practice",
+  "outcome": "Lets learners rehearse design decisions through cases, colleague dialogue, evidence review, and portfolio work.",
+  "summary": "A 3D learning-design studio where learners step into the role of an instructional designer. Six cases connect workplace exploration, conversations with virtual colleagues, evidence review, and iterative design decisions.",
+  "details": [
+    "The current development edition includes distinct studio spaces, a cast of virtual colleagues, design-review tasks, and a portfolio progression system. Learners inspect evidence and justify choices as they work through each case.",
+    "Built with Godot and Blender, with a public browser edition. The scenes shown are actual engine captures; learning outcomes have not yet been established."
+  ],
+  "live": "https://forma-play.pages.dev/index.html",
+  "repo": "",
+  "imageCaption": "Actual engine capture · Prototype Studio",
+  "gallery": [
+    {
+      "image": "forma-calibration-20260908.webp",
+      "label": "Evidence and calibration",
+      "alt": "Actual FORMA engine scene in the calibration studio with virtual colleagues and work areas.",
+      "caption": "Actual engine capture · Case 6 studio"
+    }
+  ],
+  "current": true
+},
+{
     id: "tina",
     title: "TINA — Teacher Identity Navigation Assistant",
     image: "tina.png",
@@ -124,19 +262,5 @@ window.__featuredProjects = [
     summary: "An independent policy-surveillance workspace that makes guidance on AI use, assessment, privacy, and implementation easier to compare.",
     live: "https://aiedobservatory-five.vercel.app",
     repo: "https://github.com/Educatian/aiedobservatory"
-  },
-  {
-    id: "design-tension",
-    title: "Design Tension Studio",
-    image: "swarm-id.png",
-    imageAlt: "Design Tension Studio interface mapping instructional-design tensions as a connected network.",
-    audience: "Instructional designers and graduate students",
-    role: "Principal investigator and lead designer",
-    status: "Live design studio",
-    researchArea: "Instructional design · AI reasoning",
-    outcome: "Maps design tensions across policy, platform, evidence, and scale.",
-    summary: "A responsive studio that makes human judgment, institutional friction, and AI reasoning visible in one design network.",
-    live: "https://swarmid.vercel.app",
-    repo: "https://github.com/Educatian/Swarm_ID"
   }
 ];

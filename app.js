@@ -2295,6 +2295,7 @@ function renderProjects() {
             : "";
           return `
             <article class="project-card">
+              ${p.portfolioImage ? `<a class="current-project-image" href="${escapeHtml(p.live)}" target="_blank" rel="noopener noreferrer"><img src="${escapeHtml(p.portfolioImage)}" width="1600" height="1000" alt="${escapeHtml(p.imageAlt)}" loading="lazy"></a>` : ""}
               <header class="project-head">
                 <h4 class="project-title">${escapeHtml(p.title || p.name)}</h4>
                 ${lang}
