@@ -1,6 +1,6 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-09-07T18:14:57.661071+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-09-11T18:11:53.046299+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "August 9, 2026",
@@ -47,7 +47,7 @@ window.__cvSiteData = {
       "label": "Conference proceedings"
     },
     {
-      "value": "9",
+      "value": "10",
       "label": "Book chapters"
     },
     {
@@ -220,6 +220,16 @@ window.__cvSiteData = {
       ]
     },
     {
+      "name": "TRACE-Reg",
+      "badge": "Pending",
+      "summary": "TRACE-Reg: A Privacy-by-Design",
+      "tags": [
+        "$100,000",
+        "Lead PI",
+        "Agency-Preserving Emotion-Regulation Agent for Adult Learners. Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget"
+      ]
+    },
+    {
       "name": "From Theme to Transfer",
       "badge": "Pending",
       "summary": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
@@ -227,16 +237,6 @@ window.__cvSiteData = {
         "$23,362",
         "PI",
         "Total requested €20, 000 (approximately ), Game in Lab 2026 International Call for Projects, Asmodee"
-      ]
-    },
-    {
-      "name": "Beyond the Security Divide",
-      "badge": "Pending",
-      "summary": "Beyond the Security Divide: Building a Community-Guided Cybersecurity Education System for Broad and Meaningful Access",
-      "tags": [
-        "$75,000",
-        "Lead PI",
-        "Total requested Spencer Foundation Vision Grant"
       ]
     }
   ],
@@ -2171,6 +2171,12 @@ window.__cvSiteData = {
     ],
     "pending": [
       {
+        "title": "TRACE-Reg: A Privacy-by-Design",
+        "meta": "Lead PI | Agency-Preserving Emotion-Regulation Agent for Adult Learners. Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget | September 2026",
+        "amount": "$100,000",
+        "amountValue": 100000.0
+      },
+      {
         "title": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
         "meta": "PI | Total requested €20, 000 (approximately ), Game in Lab 2026 International Call for Projects, Asmodee | May 2027 - April 2029",
         "amount": "$23,362",
@@ -2229,11 +2235,11 @@ window.__cvSiteData = {
   },
   "grantPortfolio": {
     "fundedTotal": 607683,
-    "pendingTotal": 1130768,
+    "pendingTotal": 1230768,
     "fundedCount": 14,
-    "pendingCount": 9,
+    "pendingCount": 10,
     "sourceReportedFundedTotal": 607683,
-    "sourceReportedPendingTotal": 1130768,
+    "sourceReportedPendingTotal": 1230768,
     "withdrawnTotal": 0,
     "withdrawnCount": 0,
     "sourceReportedWithdrawnTotal": 0,
