@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T18:11:53.046299+00:00",
+  "generatedAt": "2026-09-23T05:38:28.938210+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -220,6 +220,16 @@
       ]
     },
     {
+      "name": "Risk-Adaptive Human Oversight for Agentic AI Learning",
+      "badge": "Pending",
+      "summary": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency. Charles Koch Foundation",
+      "tags": [
+        "$110,669",
+        "Lead PI",
+        "Requested amount"
+      ]
+    },
+    {
       "name": "TRACE-Reg",
       "badge": "Pending",
       "summary": "TRACE-Reg: A Privacy-by-Design",
@@ -227,16 +237,6 @@
         "$100,000",
         "Lead PI",
         "Agency-Preserving Emotion-Regulation Agent for Adult Learners. Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget"
-      ]
-    },
-    {
-      "name": "From Theme to Transfer",
-      "badge": "Pending",
-      "summary": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
-      "tags": [
-        "$23,362",
-        "PI",
-        "Total requested €20, 000 (approximately ), Game in Lab 2026 International Call for Projects, Asmodee"
       ]
     }
   ],
@@ -246,7 +246,7 @@
       "title": "Design affordance diagnostic framework: Screening construct-irrelevant variance in computational thinking assessment",
       "authors": "Moon, J., Aldemir, T., & Byun, G.",
       "venue": "Interactive Learning Environments",
-      "link": "",
+      "link": "https://doi.org/10.1080/10494820.2026.2730634",
       "tags": [
         "Analytics"
       ],
@@ -1099,8 +1099,8 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Moon, J., Aldemir, T., & Byun, G. (2026). Design affordance diagnostic framework: Screening construct-irrelevant variance in computational thinking assessment. Interactive Learning Environments. [SSCI-indexed, IF =6.7, IF5 = 7.1]",
-      "link": ""
+      "citation": "‡ Moon, J., Aldemir, T., & Byun, G. (2026). Design affordance diagnostic framework: Screening construct-irrelevant variance in computational thinking assessment. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2730634 [SSCI-indexed, IF =6.7, IF5 = 7.1]",
+      "link": "https://doi.org/10.1080/10494820.2026.2730634"
     },
     {
       "year": "2026",
@@ -2171,6 +2171,12 @@
     ],
     "pending": [
       {
+        "title": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency. Charles Koch Foundation",
+        "meta": "Lead PI | Requested amount | January 2027 - December 2027",
+        "amount": "$110,669",
+        "amountValue": 110669.0
+      },
+      {
         "title": "TRACE-Reg: A Privacy-by-Design",
         "meta": "Lead PI | Agency-Preserving Emotion-Regulation Agent for Adult Learners. Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget | September 2026",
         "amount": "$100,000",
@@ -2235,11 +2241,11 @@
   },
   "grantPortfolio": {
     "fundedTotal": 607683,
-    "pendingTotal": 1230768,
+    "pendingTotal": 1341437,
     "fundedCount": 14,
-    "pendingCount": 10,
+    "pendingCount": 11,
     "sourceReportedFundedTotal": 607683,
-    "sourceReportedPendingTotal": 1230768,
+    "sourceReportedPendingTotal": 1341437,
     "withdrawnTotal": 0,
     "withdrawnCount": 0,
     "sourceReportedWithdrawnTotal": 0,
