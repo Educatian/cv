@@ -1,7 +1,14 @@
 {
+  "10.1080/10494820.2026.2730634": {
+    "title": "Design affordance diagnostic framework: Screening construct-irrelevant variance in computational thinking assessment",
+    "citation": "‡ Moon, J., Aldemir, T., & Byun, G. (2026). Design affordance diagnostic framework: Screening construct-irrelevant variance in computational thinking assessment. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2730634 [SSCI-indexed, IF =6.7, IF5 = 7.1]",
+    "abstract": "Interactive virtual makerspaces generate process data, but platform affordances can complicate their interpretation as evidence of computational thinking (CT). This exploratory study presents the Design Affordance Diagnostic Framework (DADF), which evaluates indicators through five gates: variance, reliability, association with outcomes, robustness to non-independence and multiple-testing control. Artifacts from two cohorts of pre-service teachers completing a Roblox game design activity were examined. Using LLM-coded CT outcomes, network density showed a positive unadjusted association in 2024 but was not statistically significant when pooled (r =.16, n = 55). Reflection depth showed a positive pooled association (r =.36, n = 55) and remained provisional because of coding reliability limitations. In 2025, logic density showed a positive unadjusted association (r =.40, n = 25) and was retained as provisional; code volume was not statistically significant (r = −.18, n = 25). Available revised-analysis records do not establish cluster-robust or multiplicity-adjusted inference, so full passage through all gates is not established. DADF provides a procedure for identifying indicators that require further validation across cohorts, instruments and platforms.",
+    "source": "openalex",
+    "category": "International"
+  },
   "10.1080/2331186X.2026.2721038": {
-    "title": "Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers",
-    "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (2026). Challenges, solutions, and PD needs for integrating AI: Insights from a two-week AI literacy module with preservice teachers. Cogent Education https://doi.org/10.1080/2331186X.2026.2721038 [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
+    "title": "Challenges, safeguards, and professional learning needs for AI integration: insights from a two-week AI literacy module with preservice teachers",
+    "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (2026). Challenges, safeguards, and professional learning needs for AI integration: insights from a two-week AI literacy module with preservice teachers. Cogent Education https://doi.org/10.1080/2331186X.2026.2721038 [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
     "abstract": "Preservice teachers (PSTs) often have limited preparation for integrating artificial intelligence (AI) in pedagogically meaningful and ethically responsible ways, while teacher education programs face practical constraints in providing sustained, practice-based AI preparation. This exploratory single-case study examined how 29 PSTs participating in a two-week, ethics-embedded AI literacy module within a required technology integration course anticipated and/or experienced challenges, proposed and/or enacted safeguards, and identified professional learning supports for responsible AI integration. Using a qualitatively driven mixed-methods design, data were drawn from reflections, structured AI tool evaluations, group lesson plans, and a post-module questionnaire. Findings showed that PSTs’ challenges clustered around ethical, pedagogical, and technical issues. Across artifacts, PSTs most readily translated concerns into visible, teacher-led safeguards related to data protection, verification of AI outputs, bounded use, teacher mediation, and attribution or critique, but were less consistent in operationalizing safeguards related to bias, fairness, and AI’s instructional authority. PSTs also identified ongoing needs for professional learning related to ethical use, technical fluency and prompting, foundational AI understanding, and curriculum-aligned integration. The findings offer design-relevant insight into how AI-related concerns surfaced in PSTs’ evaluative and instructional design work, including which safeguards were more readily operationalized and which required more support.",
     "source": "openalex",
     "category": "International"
@@ -277,18 +284,22 @@
   "10.1007/s10639-024-12527-z": {
     "title": "Modeling undergraduate students’ learning dynamics between self-regulated learning patterns and community of inquiry",
     "citation": "* Na, C., Lee, D., Moon, J., & Shin, Y. (2024). Modeling undergraduate students’ learning dynamics between self-regulated learning patterns and community of inquiry. Education and Information Technologies https://doi.org/10.1007/s10639-024-12527-z [SSCI-indexed, IF = 5.4, IF5 = 5.7]",
-    "abstract": "",
-    "source": "unavailable",
+    "abstract": "In online STEM courses, self-regulated learning (SRL) serves a critical role in academic success because students are required to monitor and regulate their learning processes. Yet, relatively little research has investigated which and to what extent do SRL strategies contribute to students’ online learning experiences. In this paper, with a lens of the Community of Inquiry (CoI) framework (Garrison et al., 2001), we investigated which students' SRL strategy use predicts three elements of the perceptions of CoI: teaching, social, and cognitive presences. Our sample included 278 undergraduate STEM&nbsp;students who enrolled in a self-paced online course teaching the introductory level of calculus. A Multiple Indicator-Multiple Cause (MIMIC) analysis was employed to investigate the SRL predictors that affect three elements of CoI. Prior to MIMIC analyses, we confirmed the dimensionalities of the SRL and the perceptions of CoI, respectively, through a series of confirmatory factor analyses (CFAs). The MIMIC analysis revealed that environmental structuring and help-seeking affected teaching presence. Social presence was predicted by goal setting and self-evaluation through peers, whereas environmental structuring, time management, and self-evaluation through peers predicted cognitive presence. The findings of this study provide new empirical evidence on the different roles of SRL in promoting three elements of the perceptions of CoI. Academic and practical implications of the findings of the study were discussed.",
+    "source": "playwright",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/10.1007/s10639-024-12527-z"
+    "resolvedUrl": "https://link.springer.com/article/10.1007/s10639-024-12527-z",
+    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10639-024-12527-z/MediaObjects/10639_2024_12527_Fig1_HTML.png",
+    "thumbnailSource": "playwright"
   },
   "10.1007/s10648-024-09855-4": {
     "title": "Effects of artificial intelligence-powered virtual agents on learning outcomes in simulation-based learning: A meta-analysis",
     "citation": "Dai, C., Ke, F., Pan, Y., Moon, J., & Liu, Z. (2024). Effects of artificial intelligence-powered virtual agents on learning outcomes in simulation-based learning: A meta-analysis. Educational Psychology Review, 36, 31. https://doi.org/10.1007/s10648-024-09855-4 [SSCI-indexed, IF = 11.9, IF5 = 16.4]",
-    "abstract": "",
-    "source": "unavailable",
+    "abstract": "Computer-based simulations for learning offer affordances for advanced capabilities and expansive possibilities for knowledge construction and skills application. Virtual agents, when powered by artificial intelligence (AI), can be used to scaffold personalized and adaptive learning processes. However, a synthesis or a systematic evaluation of the learning effectiveness of AI-powered virtual agents in computer-based simulations for learning is still lacking. Therefore, this meta-analysis is aimed at evaluating the effects of AI-powered virtual agents in computer-based simulations for learning. The analysis of 49 effect sizes derived from 22 empirical studies suggested a medium positive overall effect, $$\\overline{g }=0.43$$ g ¯ = 0.43 , SE = 0.08, 95% C.I. [0.27, 0.59], favoring the use of AI-powered virtual agents over the non-AI-powered virtual agent condition in computer-based simulations for learning. Further, moderator analyses revealed that intervention length, AI technologies, and the representation of AI-powered virtual agents significantly explain the heterogeneity of the overall effects. Conversely, other moderators, including education level, domain, the role of AI-powered virtual agents, the modality of AI-powered virtual agents, and learning environment, appeared to be universally effective among the studies of AI-powered virtual agents in computer-based simulations for learning. Overall, this meta-analysis provides systematic and existing evidence supporting the adoption of AI-powered virtual agents in computer-based simulations for learning. The findings also inform about evidence-based design decisions on the moderators analyzed.",
+    "source": "playwright",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/10.1007/s10648-024-09855-4"
+    "resolvedUrl": "https://link.springer.com/article/10.1007/s10648-024-09855-4",
+    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10648-024-09855-4/MediaObjects/10648_2024_9855_Fig1_HTML.png",
+    "thumbnailSource": "playwright"
   },
   "10.25304/rlt.v32.3129": {
     "title": "Learning experience design of verbal prompts in virtual reality-based training for autistic children",
@@ -301,34 +312,42 @@
   "10.1007/s10803-023-06168-3": {
     "title": "Learner experience design and unpacking sociocultural, technological, and pedagogical design considerations of spherical video-based virtual reality systems for autistic learners: A systematic literature review",
     "citation": "Glaser, N., Schmidt, M., Thull, C., Tennant, A., Moon, J., & Ousley, C. (2023). Learner experience design and unpacking sociocultural, technological, and pedagogical design considerations of spherical video-based virtual reality systems for autistic learners: A systematic literature review. Journal of Autism and Developmental Disorders https://doi.org/10.1007/s10803-023-06168-3 [SSCI-indexed, IF = 2.6, IF5 = 4.2]",
-    "abstract": "",
-    "source": "unavailable",
+    "abstract": "This systematic literature review discusses the use of spherical video-based virtual reality (SVVR) as a training and therapy intervention for autistic individuals. The authors emphasize the need for an evidence-based framework with guidelines and design considerations to help developers and educators tailor SVVR to the diverse needs of autistic learners. The paper highlights the unique benefits of SVVR, such as being relatively easier to develop compared to other VR technologies and high compatibility with various devices, making it more affordable for educational settings. The authors also discuss the importance of the STP (Sociotechnical-Pedagogical) framework for evaluating and designing social aspects of SVVR interventions for autistic individuals.",
+    "source": "playwright",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/10.1007/s10803-023-06168-3"
+    "resolvedUrl": "https://link.springer.com/article/10.1007/s10803-023-06168-3",
+    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10803-023-06168-3/MediaObjects/10803_2023_6168_Fig1_HTML.png",
+    "thumbnailSource": "playwright"
   },
   "10.1007/s10639-023-12249-8": {
     "title": "Few-shot is enough: Exploring ChatGPT prompt engineering method for automatic question generation in English education",
     "citation": "* Lee, U., Jung, H., Jeon, Y., Soh, Y., Hwang, W., Moon, J., Kim, H. (2023). Few-shot is enough: Exploring ChatGPT prompt engineering method for automatic question generation in English education. Education and Information Technologies https://doi.org/10.1007/s10639-023-12249-8 [SSCI-indexed, IF = 7.2, IF5 = 7.3]",
-    "abstract": "",
-    "source": "unavailable",
+    "abstract": "Through design and development research (DDR), we aimed to create a validated automatic question generation (AQG) system using large language models (LLMs) like ChatGPT, enhanced by prompting engineering techniques. While AQG has become increasingly integral to online learning for its efficiency in generating questions, issues such as inconsistent question quality and the absence of transparent and validated evaluation methods persist. Our research focused on creating a prompt engineering protocol tailored for AQG. This protocol underwent several iterations of refinement and validation to improve its performance. By gathering validation scores and qualitative feedback on the produced questions and the system’s framework, we examined the effectiveness of the system. The study findings indicate that our combined use of LLMs and prompt engineering in AQG produces questions with statistically significant validity. Our research further illuminates academic and design considerations for AQG design in English education: (a) certain question types might not be optimal for generation via ChatGPT, (b) ChatGPT sheds light on the potential for collaborative AI-teacher efforts in question generation, especially within English education.",
+    "source": "playwright",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/10.1007/s10639-023-12249-8"
+    "resolvedUrl": "https://link.springer.com/article/10.1007/s10639-023-12249-8",
+    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10639-023-12249-8/MediaObjects/10639_2023_12249_Fig1_HTML.png",
+    "thumbnailSource": "playwright"
   },
   "10.1007/s10055-023-00856-2": {
     "title": "Revisiting multimedia learning design principles in virtual reality-based learning environments for autistic individuals",
     "citation": "‡ Moon, J., Choi, G. W., & Seo, J. (2023). Revisiting multimedia learning design principles in virtual reality-based learning environments for autistic individuals. Virtual Reality, 27, 3101-3113. https://doi.org/10.1007/s10055-023-00856-2 [SCIE-indexed, IF = 5.4, IF5 = 6.7] ﻿﻿",
-    "abstract": "",
-    "source": "unavailable",
+    "abstract": "Virtual reality (VR) offers promising opportunities for supporting autistic learners in developing social and cognitive skills. However, designing VR-based learning environments optimized for these learners requires a nuanced understanding that addresses their unique needs. This review article reconsiders the key theories of multimedia learning, including cognitive load theory and cognitive theory of multimedia learning, with the aim of illuminating how these theories can inform the development of effective VR-based learning environments for autistic learners. We propose four design goals for a VR-based learning environment optimized for autistic learners: (1) minimizing learners’ extraneous load via attention guiding, (2) managing intrinsic cognitive load in problem-solving, (3) fostering germane processing through multiple representations, and (4) assessing cognitive load and implementing adaptive learning support design. In this exploration, we bring to demonstrate prevalent design challenges of existing VR-based learning environments for autistic individuals and offer prospective research trajectories for their enhancement. By incorporating a strengths-based approach, accommodating the diverse sensory needs, and recognizing the cognitive differences among autistic individuals, we aspire to advance a more inclusive VR design practice. This review presents crucial insights and direction for researchers and designers aiming to create effective, accessible, and inclusive VR-based learning environments for autistic learners and beyond.",
+    "source": "playwright",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/10.1007/s10055-023-00856-2"
+    "resolvedUrl": "https://link.springer.com/article/10.1007/s10055-023-00856-2",
+    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10055-023-00856-2/MediaObjects/10055_2023_856_Fig1_HTML.png",
+    "thumbnailSource": "playwright"
   },
   "10.1007/s10803-023-06021-7": {
     "title": "Effects of adaptive prompts in virtual reality-based social skills training for children with autism",
     "citation": "‡ Moon, J., & Ke, F. (2023). Effects of adaptive prompts in virtual reality-based social skills training for children with autism. Journal of Autism and Developmental Disorders, https://doi.org/10.1007/s10803-023-06021-7 [SSCI-indexed, IF = 2.6, IF5 = 4.2]",
-    "abstract": "",
-    "source": "unavailable",
+    "abstract": "The purpose of this single-case experimental design (SCED) study is to investigate how adaptive prompts in virtual reality (VR)-based social skills training affect the social skills performance of autistic children. Adaptive prompts are driven by autistic children’s emotional states. To integrate adaptive prompts in VR-based training, we conducted speech data mining and endorsed micro-adaptivity design. We recruited four autistic children (12–13&nbsp;years) for the SCED study. We carried out alternating treatments design to evaluate the impacts of adaptive and non-adaptive prompting conditions throughout a series of VR-based social skills training sessions. Using mixed-method data collection and analyses, we found that adaptive prompts can foster autistic children’s desirable social skills performance in VR-based training. Based on the study findings, we also describe design implications and limitations for future research.",
+    "source": "playwright",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/10.1007/s10803-023-06021-7"
+    "resolvedUrl": "https://link.springer.com/article/10.1007/s10803-023-06021-7",
+    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10803-023-06021-7/MediaObjects/10803_2023_6021_Fig1_HTML.png",
+    "thumbnailSource": "playwright"
   },
   "10.30191/ETS.202304_26(2).0013": {
     "title": "A framework for applying sequential data analytics to design personalized digital game-based learning for computing education",
@@ -373,10 +392,12 @@
   "10.1007/s11528-021-00689-3": {
     "title": "A scoping review of three computational approaches to ethnographic research in digital learning environments",
     "citation": "Seo, J., Moon, J., Choi, G.W., & Do, J. (2022). A scoping review of three computational approaches to ethnographic research in digital learning environments. TechTrends. 66, 102–111. https://doi.org/10.1007/s11528-021-00689-3 [ESCI-indexed, IF = 5.2, IF5 = 4.6]",
-    "abstract": "",
-    "source": "unavailable",
+    "abstract": "The purpose of this paper is to explore three computational approaches to ethnographic research within digital learning environments: virtual ethnography; quantitative ethnography; and computational ethnography. Recently, researchers have become more interested in computational ethnographic approaches due to their alignment with the massive datasets currently available in digital archives. Although these approaches have attracted growing attention in recent years, their methodological characteristics (e.g., goals, procedures, and techniques) have yet to be fully explored. In this scoping review, we explore existing and the three emerging computational methods for ethnographic research, along with their applications within digital learning environments. We first conduct a scoping review by sampling and synthesizing 86 articles using bibliometric and thematic analyses. This review is then used to reveal the similarities and differences among the three computationally-enabled ethnographic approaches and engage in a concomitant discussion of digital learning designs. In addition, this study explores implications of this type of research for learning design. This research contributes to a better understanding of the characteristics and applications of computational approaches across various digital learning environments.",
+    "source": "playwright",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/10.1007/s11528-021-00689-3"
+    "resolvedUrl": "https://link.springer.com/article/10.1007/s11528-021-00689-3",
+    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs11528-021-00689-3/MediaObjects/11528_2021_689_Fig1_HTML.png",
+    "thumbnailSource": "playwright"
   },
   "10.1177/0162643420945603": {
     "title": "Virtual reality-based social skills training for children with autism spectrum disorder",
@@ -388,10 +409,12 @@
   "10.1007/s10798-021-09672-8": {
     "title": "Exploring pre-service teachers’ technology-integration belief and scientific inquiry in a teacher-development course",
     "citation": "‡ Moon, J., Lee, S., & Xu, X. (2022). Exploring pre-service teachers’ technology-integration belief and scientific inquiry in a teacher-development course. International Journal of Technology and Design Education, 32, 1777–1798. https://doi.org/10.1007/s10798-021-09672-8 [SCIE- and SSCI-indexed, IF = 2.9, IF5 = 3.3]",
-    "abstract": "",
-    "source": "unavailable",
+    "abstract": "We implemented design practices for a total of 85 pre-service teachers in a teacher-development course. This mixed-method study explored how design practices promoted pre-service teachers’ technology-integration belief and the awareness of scientific-inquiry. In teacher-development courses, the goal of design practices is to enhance pre-service teachers’ awareness and capabilities of design practices and their educational applications. A recent integration between design practices and scientific inquiry in teacher-development courses aims to foster pre-service teachers’ contextual understandings of technology integration in STEM education. Despite the potential impact of design practices on scientific inquiry in teacher training, a challenge remains. Existing studies appear limited to capture in-situ data on how pre-service teachers’ technology-integration belief emerges via design practices. Also, few empirical studies explored how design practices can foster pre-service teachers’ scientific inquiry experiences. Hence, the present study used both text mining and qualitative thematic analysis to uncover how pre-service teachers’ technology-integration beliefs and scientific-inquiry experiences emerged throughout design practices. The result of this study suggests that pre-service teachers enhanced technology-integration beliefs and the awareness of scientific-inquiry via design practices. This study has several implications on design practices in teacher training, as well as the viability of text mining as an alternative assessment to measure design learning experiences.",
+    "source": "playwright",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/10.1007/s10798-021-09672-8"
+    "resolvedUrl": "https://link.springer.com/article/10.1007/s10798-021-09672-8",
+    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10798-021-09672-8/MediaObjects/10798_2021_9672_Fig1_HTML.png",
+    "thumbnailSource": "playwright"
   },
   "10.19173/irrodl.v22i1.5110": {
     "title": "A scoping review on open educational resources to support interactions of learners with disabilities",
@@ -418,18 +441,22 @@
   "10.1007/s11423-020-09791-4": {
     "title": "Integrating adaptivity to educational games: A combination of bibliometric and meta-analytic review",
     "citation": "Liu, Z., Moon, J., Kim, B., & Dai, C. (2020). Integrating adaptivity to educational games: A combination of bibliometric and meta-analytic review. Educational Technology Research and Development. 68, 1931-1959. https://doi.org/10.1007/s11423-020-09791-4 [SSCI-indexed, IF = 4.2, IF5 = 5.3]",
-    "abstract": "",
-    "source": "unavailable",
+    "abstract": "In this synthesis, we systematically review research on educational games with adaptivity. Although an adaptive gaming experience provides personalization to learning, the complexity of design makes it difficult to evaluate its effectiveness. In this systematic review, we adopt three analytic approaches: (1) bibliometric analysis, (2) qualitative thematic analysis, and (3) meta-analysis. We identified 62 relevant publications and used bibliometric analysis to visualize the hidden conceptual structure among the articles. We then used thematic analysis to investigate the emerging themes in the research and inform the coding for meta-analysis. Twelve articles that used experimental designs were further screened to model the effect of adding adaptivity to educational games. We found that an adaptive learning condition does not produce a substantial overall effect compared to a non-adaptive condition (g = .11, p = .26). Furthermore, moderator analysis reveals that the design variability of adaptivity does not contribute as much to heterogeneity as hypothesized. However, the effect size is positive when the target outcome focuses on learning (g = .39, p &lt; .001) and engagement (g = .41, p = .13). The effect size is negative when the target outcome focuses on game performance (g = −&nbsp;.27, p = .04). In addition, we find evidence for a potential publication bias based on the distribution of effect sizes.",
+    "source": "playwright",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/10.1007/s11423-020-09791-4"
+    "resolvedUrl": "https://link.springer.com/article/10.1007/s11423-020-09791-4",
+    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs11423-020-09791-4/MediaObjects/11423_2020_9791_Fig1_HTML.png",
+    "thumbnailSource": "playwright"
   },
   "10.1007/s12528-020-09255-x": {
     "title": "The effects of social and cognitive cues on learning comprehension, eye-gaze pattern, and cognitive load in video instruction",
     "citation": "‡ Moon, J., & Ryu, J. (2020). The effects of social and cognitive cues on learning comprehension, eye-gaze pattern, and cognitive load in video instruction. Journal of Computing in Higher Education, 33, 39–63. https://doi.org/10.1007/s12528-020-09255-x [SSCI-indexed, IF = 4.3, IF5 = 5.8]",
-    "abstract": "",
-    "source": "unavailable",
+    "abstract": "Students experience challenges when understanding visual information in multimedia learning. Specifically, immersive multimedia&nbsp;environments, such as virtual reality increase the likelihood that students undergo distractions in which information seeking during system-paced instruction occurred. Although previous studies have reviewed various cue designs to yield students’ higher attention, skepticism still exists regarding which ways cue designs can support their learning comprehension in video instruction. For this study, we sampled a total of 64 undergraduates in a university. Using video instruction performed by an animated pedagogical agent (APA), this study examined the effect of social (i.e., an APA’s conversational gestures) and cognitive (i.e., visual cue) cues on students’ learning comprehension and eye-gaze data within types of visual information (text and pictorial). Also, this study investigated how both cues promoted students’ cognitive load overall. Specific to text information processing, the results of the study confirmed that the negative prime effect of social cues undermined students’ learning comprehension and increased their cognitive load, whereas cognitive cues appeared to be supportive in video instruction. Also, this study found that students’ different visual-attention patterns appeared in pictorial information processing. In terms of pictorial information processing, the study finding implies that whereas social cues caused visual distractions and lowered learning comprehension, cognitive cues as visual cues helped learners to integrate pictorial information via visuospatial clues. Conclusively, we reported several design implications derived from the study findings.",
+    "source": "playwright",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/10.1007/s12528-020-09255-x"
+    "resolvedUrl": "https://link.springer.com/article/10.1007/s12528-020-09255-x",
+    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs12528-020-09255-x/MediaObjects/12528_2020_9255_Fig1_HTML.png",
+    "thumbnailSource": "playwright"
   },
   "10.1177/1046878120907940": {
     "title": "Exploring the relationships among middle school students’ peer interactions, task efficiency, and learning engagement in game-based learning",

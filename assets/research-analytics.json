@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T05:32:12.529533+00:00",
+  "generatedAt": "2026-09-23T16:00:57.758673+00:00",
   "source": {
     "provider": "Google Scholar + OpenAlex",
     "authorId": "https://openalex.org/A5079348611",
@@ -12,8 +12,8 @@
     "networkProvider": "OpenAlex",
     "topicProvider": "OpenAlex",
     "openAccessProvider": "OpenAlex",
-    "openalexGeneratedAt": "2026-09-23T05:32:12.529533+00:00",
-    "scholarGeneratedAt": "2026-09-23T05:31:52.331Z"
+    "openalexGeneratedAt": "2026-09-23T16:00:57.758673+00:00",
+    "scholarGeneratedAt": "2026-09-23T16:00:35.198Z"
   },
   "author": {
     "name": "Jewoong Moon",
@@ -38,19 +38,19 @@
     "publicAccess": {}
   },
   "summary": {
-    "totalCitations": 1779,
+    "totalCitations": 1780,
     "worksCount": 88,
     "hIndex": 21,
     "i10Index": 31,
-    "twoYearMeanCitedness": 16.39,
-    "citationsPerWork": 20.22,
+    "twoYearMeanCitedness": 16.41,
+    "citationsPerWork": 20.23,
     "meanCitationsPerWorkYear": 0.0,
-    "recent3YearCitations": 754,
+    "recent3YearCitations": 755,
     "previous3YearCitations": 389,
-    "recent5YearCitations": 1080,
+    "recent5YearCitations": 1081,
     "previous5YearCitations": 699,
-    "threeYearGrowthRate": 93.8,
-    "fiveYearGrowthRate": 54.5,
+    "threeYearGrowthRate": 94.1,
+    "fiveYearGrowthRate": 54.6,
     "latestCitationYear": 2026,
     "sinceLabel": "",
     "sinceYearCitations": 0,
@@ -144,7 +144,7 @@
     },
     {
       "year": 2025,
-      "citations": 99,
+      "citations": 100,
       "works": 13,
       "oaWorks": 7
     },
@@ -213,7 +213,7 @@
       {
         "name": "International Journal of Educational Technology in Higher Education",
         "count": 2,
-        "citations": 307,
+        "citations": 308,
         "type": "Journal"
       },
       {
@@ -237,13 +237,13 @@
       {
         "name": "Educational Psychology Review",
         "count": 2,
-        "citations": 83,
+        "citations": 84,
         "type": "Journal"
       },
       {
         "name": "TechTrends",
         "count": 2,
-        "citations": 78,
+        "citations": 79,
         "type": "Journal"
       },
       {
@@ -291,7 +291,7 @@
         "label": "Jewoong Moon",
         "group": "self",
         "works": 88,
-        "citations": 1780,
+        "citations": 1784,
         "institution": "The University of Alabama"
       },
       {
@@ -309,7 +309,7 @@
         "label": "Daeyeoul Lee",
         "group": "coauthor",
         "works": 5,
-        "citations": 154,
+        "citations": 155,
         "institution": "New York University",
         "orcid": "https://orcid.org/0000-0003-1111-9691",
         "authorId": "https://openalex.org/A5026352838"
@@ -319,7 +319,7 @@
         "label": "Fengfeng Ke",
         "group": "coauthor",
         "works": 21,
-        "citations": 580,
+        "citations": 581,
         "institution": "University of Maryland, College Park",
         "orcid": "https://orcid.org/0000-0003-4203-1203",
         "authorId": "https://openalex.org/A5034097062"
@@ -329,7 +329,7 @@
         "label": "Gi Woong Choi",
         "group": "coauthor",
         "works": 9,
-        "citations": 256,
+        "citations": 257,
         "institution": "University of Cincinnati",
         "orcid": "https://orcid.org/0000-0002-9631-3727",
         "authorId": "https://openalex.org/A5007605558"
@@ -339,7 +339,7 @@
         "label": "Gyuri Byun",
         "group": "coauthor",
         "works": 12,
-        "citations": 97,
+        "citations": 98,
         "institution": "Seoul National University",
         "orcid": "https://orcid.org/0009-0008-6044-4750",
         "authorId": "https://openalex.org/A5093917325"
@@ -409,7 +409,7 @@
         "label": "Junbo Koh",
         "group": "coauthor",
         "works": 4,
-        "citations": 77,
+        "citations": 78,
         "institution": "Seoul National University",
         "orcid": "https://orcid.org/0009-0004-3463-0091",
         "authorId": "https://openalex.org/A5025565903"
@@ -429,7 +429,7 @@
         "label": "Omid Noroozi",
         "group": "coauthor",
         "works": 4,
-        "citations": 307,
+        "citations": 308,
         "institution": "Wageningen University & Research",
         "orcid": "https://orcid.org/0000-0002-0622-289X",
         "authorId": "https://openalex.org/A5071892501"
@@ -439,7 +439,7 @@
         "label": "Seyyed Kazem Banihashem",
         "group": "coauthor",
         "works": 4,
-        "citations": 307,
+        "citations": 308,
         "institution": "Open University of the Netherlands",
         "orcid": "https://orcid.org/0000-0002-9978-3783",
         "authorId": "https://openalex.org/A5047691220"
@@ -469,7 +469,7 @@
         "label": "Unggi Lee",
         "group": "coauthor",
         "works": 10,
-        "citations": 302,
+        "citations": 303,
         "institution": "Korea University",
         "orcid": "https://orcid.org/0000-0002-0883-4128",
         "authorId": "https://openalex.org/A5066209480"
@@ -479,7 +479,7 @@
         "label": "Yeil Jeong",
         "group": "coauthor",
         "works": 7,
-        "citations": 88,
+        "citations": 89,
         "institution": "Indiana University Bloomington",
         "orcid": "https://orcid.org/0009-0003-4524-7197",
         "authorId": "https://openalex.org/A5112070639"
@@ -489,7 +489,7 @@
         "label": "Yunseo Lee",
         "group": "coauthor",
         "works": 8,
-        "citations": 91,
+        "citations": 92,
         "institution": "Wisconsin Department of Public Instruction",
         "orcid": "https://orcid.org/0009-0005-8651-5690",
         "authorId": "https://openalex.org/A5032863223"
@@ -499,7 +499,7 @@
         "label": "Zhichun Liu",
         "group": "coauthor",
         "works": 4,
-        "citations": 179,
+        "citations": 180,
         "institution": "University of Hong Kong",
         "orcid": "https://orcid.org/0000-0002-6402-9174",
         "authorId": "https://openalex.org/A5101615116"
@@ -914,7 +914,7 @@
       "id": "intelligent-tutoring-systems-and-adaptive-learning",
       "label": "Intelligent Tutoring Systems and Adaptive Learning",
       "count": 12,
-      "weight": 8.903,
+      "weight": 8.902,
       "type": "topic"
     },
     {
@@ -966,7 +966,7 @@
     "self": {
       "hIndex": 21,
       "i10Index": 31,
-      "citedByCount": 1779,
+      "citedByCount": 1780,
       "worksCount": 88
     },
     "populations": [
@@ -975,7 +975,7 @@
         "topic": "Educational Games and Gamification",
         "subfield": "Developmental and Educational Psychology",
         "field": "Psychology",
-        "activeCount": 15591,
+        "activeCount": 15595,
         "metrics": [
           {
             "key": "hIndex",
@@ -996,7 +996,7 @@
           {
             "key": "citedByCount",
             "label": "Total citations",
-            "me": 1779,
+            "me": 1780,
             "median": 111,
             "percentile": 94.8,
             "topPercent": 5.2
@@ -1016,7 +1016,7 @@
         "topic": "Online Learning and Analytics",
         "subfield": "Computer Science Applications",
         "field": "Computer Science",
-        "activeCount": 17209,
+        "activeCount": 17217,
         "metrics": [
           {
             "key": "hIndex",
@@ -1037,7 +1037,7 @@
           {
             "key": "citedByCount",
             "label": "Total citations",
-            "me": 1779,
+            "me": 1780,
             "median": 144,
             "percentile": 93.4,
             "topPercent": 6.6
