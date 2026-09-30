@@ -228,6 +228,20 @@ async function main() {
     const payload = await extractScholarProfile(page);
     payload.worksCount = payload.works.length;
 
+    // Google sometimes serves a bot check or an empty shell instead of the profile.
+    // Never overwrite the last good snapshot with an empty scrape.
+    const looksBlocked =
+      !payload.author.name ||
+      payload.summary.totalCitations <= 0 ||
+      payload.annualCitations.length === 0 ||
+      payload.worksCount === 0;
+    if (looksBlocked) {
+      throw new Error(
+        `Scholar returned an empty or blocked page (name="${payload.author.name}", citations=${payload.summary.totalCitations}, ` +
+          `years=${payload.annualCitations.length}, works=${payload.worksCount}); keeping the previous ${path.basename(OUTPUT_PATH)}.`
+      );
+    }
+
     await fs.writeFile(OUTPUT_PATH, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 
     console.log(`Wrote ${OUTPUT_PATH}`);

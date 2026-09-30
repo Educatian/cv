@@ -743,6 +743,13 @@ def main() -> None:
     author = fetch_author(session, OPENALEX_AUTHOR_ID)
     works = fetch_works(session, OPENALEX_AUTHOR_ID)
     scholar_payload = load_json(args.scholar_input)
+    if scholar_payload and (
+        safe_int((scholar_payload.get("summary") or {}).get("totalCitations")) <= 0
+        or not scholar_payload.get("works")
+    ):
+        # An empty scrape (bot check) would blank the works list and trend; fall back to OpenAlex instead.
+        print("Scholar snapshot is empty; ignoring it for this refresh.")
+        scholar_payload = None
 
     try:
         field_benchmark = build_field_benchmark(session, author)
