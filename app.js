@@ -2870,6 +2870,18 @@ const grantFunderMarks = {
 };
 
 function getGrantFunderMark(item) {
+  // Structured records from generate_site_data.py carry the funder directly.
+  if (item.funderKey && grantFunderMarks[item.funderKey]) return grantFunderMarks[item.funderKey];
+  if (item.funder && !item.funderKey) {
+    const initials = item.funder
+      .replace(/\(.*?\)/g, "")
+      .split(/[\s·]+/)
+      .filter((word) => /^[A-Z]/.test(word) && !/^(The|of|and|for)$/i.test(word))
+      .slice(0, 2)
+      .map((word) => word[0])
+      .join("");
+    return { name: item.funder, text: initials || item.funder.slice(0, 2), shape: "is-text" };
+  }
   const searchable = `${item.title || ""} ${item.meta || ""}`.toLowerCase();
 
   if (searchable.includes("museum and library services") || searchable.includes("imls")) {
@@ -2901,6 +2913,11 @@ function getGrantFunderMark(item) {
 
 function renderGrantFunderMark(item) {
   const funder = getGrantFunderMark(item);
+  if (funder.text) {
+    return `<span class="grant-funder-mark is-text" title="${escapeHtml(funder.name)}" aria-label="${escapeHtml(
+      funder.name
+    )}">${escapeHtml(funder.text)}</span>`;
+  }
   return `
     <span class="grant-funder-mark ${funder.shape}" title="${escapeHtml(
       funder.name
@@ -2924,6 +2941,14 @@ function renderGrantList(targetId, items) {
           <span class="grant-list-copy">
             <strong>${escapeHtml(item.title)}</strong>
             <span>${escapeHtml(item.meta)}</span>
+            ${
+              item.collaborators && item.collaborators.length
+                ? `<span class="grant-list-team">With ${escapeHtml(
+                    item.collaborators.map((member) => `${member.name}${member.role ? ` (${member.role})` : ""}`).join(", ")
+                  )}</span>`
+                : ""
+            }
+            ${item.amountDetail ? `<span class="grant-list-team">${escapeHtml(item.amountDetail)}</span>` : ""}
             <span class="grant-list-amount">${escapeHtml(item.amount)}</span>
           </span>
         </li>

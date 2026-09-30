@@ -586,6 +586,163 @@ def parse_mentoring_metrics(paragraphs: Sequence[str]) -> List[Dict[str, str]]:
     ]
 
 
+# ---------------------------------------------------------------- grants
+# Where the sponsor/funding clause begins in a CV grant line. Titles can contain
+# commas ("Privacy-by-Design, Agency-Preserving ..."), so the title ends at the
+# first sponsor or amount cue rather than at the first comma.
+GRANT_SPONSOR_START = re.compile(
+    r"Institute of Museum|National Research Foundation of Korea|Office for Sponsored Programs|COE RisingTide|"
+    r"Alabama Commission on Higher Education|Instructional Tide Teaching Grant|OSP CREATE|College of Education, The University|"
+    r"The University of Alabama|The Collaborative Arts Research Initiative|Charles Koch Foundation|Sony Research Award|"
+    r"Total (?:award|requested|budget)|Requested amount|Game in Lab|Spencer Foundation|Russell Sage|RAAIS Foundation|"
+    r"Sentient Foundation|AERA-NSF|National Science Foundation|National Institutes of Health|Advanced Innovative Math|"
+    r"Unity Humanity|Department of Energy|ORED Internal|OAR Foundation|Sub-award|proposed total amount|[$\u20ac][\d,]|"
+    r"\bPENDING\b|\bNOT FUNDED\b"
+)
+
+# (pattern, canonical funder name, logo key used by the sites)
+GRANT_FUNDERS = [
+    (r"Institute of Museum and Library Services|\bIMLS\b", "Institute of Museum and Library Services (IMLS)", "imls"),
+    (r"National Research Foundation of Korea", "National Research Foundation of Korea (NRF)", "nrf"),
+    (r"AERA-NSF", "AERA\u2013NSF Research Grants Program", "aera"),
+    (r"National Science Foundation|CAMEL-CN", "National Science Foundation (NSF)", "nsf"),
+    (r"National Institutes of Health", "National Institutes of Health (NIH)", "nih"),
+    (r"Alabama Commission on Higher Education", "Alabama Commission on Higher Education", "ache"),
+    (r"SEC Faculty Travel", "Southeastern Conference (SEC)", "sec"),
+    (r"Advanced Innovative Math", "Advancing Innovative Math Solutions Collaboratory", "aims"),
+    (r"Charles Koch Foundation", "Charles Koch Foundation", ""),
+    (r"Sony", "Sony Corporation", ""),
+    (r"Asmodee|Game in Lab", "Asmodee \u00b7 Game in Lab", ""),
+    (r"Spencer Foundation", "Spencer Foundation", ""),
+    (r"Russell Sage", "Russell Sage Foundation", ""),
+    (r"RAAIS", "RAAIS Foundation", ""),
+    (r"Sentient Foundation", "Sentient Foundation", ""),
+    (r"Unity Humanity", "Unity Humanity Grant", ""),
+    (r"Department of Energy", "U.S. Department of Energy", ""),
+    (r"OAR Foundation", "Organization for Autism Research (OAR)", ""),
+    (
+        r"University of Alabama|\bCOE\b|College of Education|\bOSP\b|RisingTide|Instructional Tide|\bISSR\b|"
+        r"Collaborative Arts Research Initiative|\bORED\b",
+        "The University of Alabama",
+        "ua",
+    ),
+]
+
+GRANT_MONEY_ANY = re.compile(r"[$\u20ac][\d,]+(?:\.\d+)?")
+
+
+def split_grant_team(prefix: str) -> List[Dict[str, str]]:
+    team: List[Dict[str, str]] = []
+    cursor = 0
+    for match in re.finditer(r"\(([^)]*)\)", prefix):
+        name = clean_text(re.sub(r"^[\s,.&]+|^and\s+|[\s,&]+$", "", prefix[cursor : match.start()]))
+        name = re.sub(r"^(?:&|and)\s+", "", name).strip(" ,")
+        if name:
+            team.append({"name": name, "role": clean_text(match.group(1))})
+        cursor = match.end()
+    leftover = clean_text(prefix[cursor:]).strip(" .,&")
+    if leftover and not team:
+        team.append({"name": leftover, "role": ""})
+    return team
+
+
+def parse_grant_entry(line: str, bucket: str) -> Dict[str, object]:
+    text = clean_text(line)
+    dates_match = re.search(r"\(([^)]*(?:\d{4}|Submitted)[^)]*)\)", text)
+    period_raw = clean_text(dates_match.group(1)) if dates_match else ""
+    prefix = text[: dates_match.start()] if dates_match else ""
+    after_dates = text[dates_match.end() :].lstrip(". ").strip() if dates_match else text
+
+    team = split_grant_team(prefix) if prefix else []
+    if not team and not dates_match:
+        # Lines without a date block ("Liu, J. (Lead PI), ... Title. Sponsor ...").
+        head = re.match(r"^((?:[^()]+\([^)]*\)[,&\s]*)+)", text)
+        if head:
+            team = split_grant_team(head.group(1))
+            after_dates = text[head.end() :].lstrip(". ").strip()
+    moon = next((member for member in team if member["name"].startswith("Moon")), None)
+    role = moon["role"] if moon and moon["role"] else ("Awardee" if bucket == "funded" else "")
+    collaborators = [member for member in team if not member["name"].startswith("Moon")]
+
+    sponsor_start = GRANT_SPONSOR_START.search(after_dates)
+    title_raw = after_dates[: sponsor_start.start()] if sponsor_start else after_dates
+    title = clean_text(title_raw).rstrip(" ,.;")
+    tail = after_dates[sponsor_start.start() :] if sponsor_start else ""
+
+    notes: List[str] = []
+    team_award = re.search(r"\(team award\)", tail, flags=re.I)
+    if team_award:
+        notes.append("Team award")
+        tail = tail.replace(team_award.group(0), "")
+    # Keep "Month D, YYYY" together before splitting on commas.
+    protected = re.sub(r"\b([A-Z][a-z]+ \d{1,2}), (\d{4})", r"\1 \2", tail)
+    segments = [clean_text(part).strip(" .,;") for part in re.split(r"[,;]\s+|\.\s+(?=[A-Z])", protected)]
+    money_parts: List[str] = []
+    sponsor_parts: List[str] = []
+    for segment in segments:
+        if not segment or re.fullmatch(r"(?:PENDING|NOT FUNDED|Pending|WITHDRAWN)\.?", segment, flags=re.I):
+            continue
+        segment = re.sub(r",?\s*\b(?:PENDING|NOT FUNDED)\b\.?$", "", segment).strip(" ,.")
+        if GRANT_MONEY_ANY.search(segment):
+            money_parts.append(segment)
+        elif re.search(r"submitted|submission|deadline|Proposal \d", segment, flags=re.I):
+            notes.append(sentence_case(re.sub(r"\b([A-Z][a-z]+ \d{1,2}) (\d{4})\b", r"\1, \2", segment)))
+        elif segment:
+            sponsor_parts.append(segment)
+    sponsor = ", ".join(dict.fromkeys(sponsor_parts))
+
+    if period_raw.lower().startswith("submitted"):
+        notes.insert(0, period_raw)
+        period = ""
+    else:
+        period = period_raw.replace("\u2013", "-").replace(" - ", " \u2013 ").replace("-", " \u2013 ") if period_raw else ""
+        period = re.sub(r"\s+\u2013\s+", " \u2013 ", period)
+    years = [int(year) for year in re.findall(r"(?:19|20)\d{2}", period)]
+
+    amount_value = extract_last_money(after_dates)
+    amount = format_currency(amount_value) if amount_value is not None else "pending"
+    amount_detail = ""
+    joined_money = " \u00b7 ".join(money_parts)
+    if len(money_parts) > 1 or re.search(r"\u20ac|allocation|Sub-award|stipend", joined_money, flags=re.I):
+        amount_detail = joined_money.replace("Total Fellowship amount (summer stipend)", "Summer stipend")
+    if bucket == "pending":
+        amount_label = "Requested"
+    elif re.search(r"allocation", joined_money, flags=re.I):
+        amount_label = "UA allocation"
+    elif re.search(r"Sub-award", joined_money, flags=re.I):
+        amount_label = "Sub-award"
+    else:
+        amount_label = "Award"
+
+    search_space = f"{title} {sponsor} {after_dates}"
+    funder_name, funder_key = "", ""
+    for pattern, name, key in GRANT_FUNDERS:
+        if re.search(pattern, search_space):
+            funder_name, funder_key = name, key
+            break
+
+    meta_parts = [part for part in (role if role != "Awardee" else "", sponsor or funder_name, period or (notes[0] if notes else "")) if part]
+    return {
+        "title": title,
+        "meta": " | ".join(meta_parts),
+        "amount": amount,
+        "amountValue": amount_value,
+        "status": bucket,
+        "role": role,
+        "team": team,
+        "collaborators": collaborators,
+        "funder": funder_name,
+        "funderKey": funder_key,
+        "sponsor": sponsor,
+        "period": period,
+        "startYear": min(years) if years else None,
+        "endYear": max(years) if years else None,
+        "amountLabel": amount_label,
+        "amountDetail": amount_detail,
+        "notes": notes,
+    }
+
+
 def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
     lines = section_between(paragraphs, HEADERS["grants"], HEADERS["journal_articles"])
 
@@ -612,48 +769,7 @@ def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
         if not active_bucket:
             continue
 
-        role_match = re.search(r"\(([^)]*(?:Lead PI|PI|External Evaluator|Key Personnel)[^)]*)\)", line)
-        dates_match = re.search(r"\(([^)]*\d{4}[^)]*)\)", line)
-        dates = clean_text(dates_match.group(1)) if dates_match else ""
-
-        after_dates = line[dates_match.end() :].lstrip(". ").strip() if dates_match else line
-        amount_value = extract_last_money(after_dates)
-        amount = format_currency(amount_value) if amount_value is not None else "pending"
-
-        cleaned_tail = re.sub(
-            r"(?:Total award|Sub-award|Total Fellowship amount \(summer stipend\)|PENDING|NOT FUNDED)\s*\$[\d,]+(?:\.\d+)?",
-            "",
-            after_dates,
-            flags=re.I,
-        )
-        cleaned_tail = re.sub(r"\$[\d,]+(?:\.\d+)?", "", cleaned_tail)
-        cleaned_tail = re.sub(r"\bproposed total amount\b", "", cleaned_tail, flags=re.I)
-        if active_bucket == "withdrawn":
-            cleaned_tail = re.sub(r",\s*WITHDRAWN\b\s*$", "", cleaned_tail, flags=re.I)
-            cleaned_tail = re.sub(r"\bWITHDRAWN\b", "withdrawn", cleaned_tail, flags=re.I)
-        else:
-            cleaned_tail = re.sub(r"\b(?:PENDING|NOT FUNDED)\b", "", cleaned_tail, flags=re.I)
-        parts = [clean_text(part.strip(" .")) for part in cleaned_tail.split(",") if clean_text(part.strip(" ."))]
-
-        title = parts[0] if parts else clean_text(after_dates)
-        sponsor = ", ".join(parts[1:]) if len(parts) > 1 else ""
-
-        meta_parts = []
-        if role_match:
-            meta_parts.append(clean_text(role_match.group(1)))
-        if sponsor:
-            meta_parts.append(sponsor)
-        if dates:
-            meta_parts.append(dates.replace("–", "-"))
-
-        buckets[active_bucket].append(
-            {
-                "title": title,
-                "meta": " | ".join(meta_parts),
-                "amount": amount,
-                "amountValue": amount_value,
-            }
-        )
+        buckets[active_bucket].append(parse_grant_entry(line, active_bucket))
 
     reported_funded_total = int(extract_first_money(funded_header) or 0)
     reported_pending_total = int(extract_first_money(pending_header) or 0)

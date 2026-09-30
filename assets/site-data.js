@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-09-29T16:00:03.757162+00:00",
+  "generatedAt": "2026-09-30T03:40:50.439895+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -207,7 +207,7 @@ window.__cvSiteData = {
       "tags": [
         "$23,300",
         "Co-PI, overseas / UA",
-        "National Research Foundation of Korea (NRF) 2026 Joint Research Support Program (International Type), Total award approximately ; UA overseas allocation approximately"
+        "National Research Foundation of Korea (NRF) 2026 Joint Research Support Program (International Type)"
       ]
     },
     {
@@ -216,27 +216,28 @@ window.__cvSiteData = {
       "summary": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
       "tags": [
         "$5,700",
-        "June 2027-August 2027"
+        "The University of Alabama",
+        "June 2027 – August 2027"
       ]
     },
     {
       "name": "Risk-Adaptive Human Oversight for Agentic AI Learning",
       "badge": "Pending",
-      "summary": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency. Charles Koch Foundation",
+      "summary": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency",
       "tags": [
         "$110,669",
         "Lead PI",
-        "Requested amount"
+        "Charles Koch Foundation"
       ]
     },
     {
       "name": "TRACE-Reg",
       "badge": "Pending",
-      "summary": "TRACE-Reg: A Privacy-by-Design",
+      "summary": "TRACE-Reg: A Privacy-by-Design, Agency-Preserving Emotion-Regulation Agent for Adult Learners",
       "tags": [
         "$100,000",
         "Lead PI",
-        "Agency-Preserving Emotion-Regulation Agent for Adult Learners. Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget"
+        "Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation"
       ]
     }
   ],
@@ -2086,155 +2087,734 @@ window.__cvSiteData = {
     "funded": [
       {
         "title": "Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning",
-        "meta": "Lead PI | Institute of Museum and Library Services – IMLS | September 2026 - August 2029",
+        "meta": "Lead PI | Institute of Museum and Library Services – IMLS | September 2026 – August 2029",
         "amount": "$476,424",
-        "amountValue": 476424.0
+        "amountValue": 476424.0,
+        "status": "funded",
+        "role": "Lead PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Lead PI"
+          },
+          {
+            "name": "Kim, J.",
+            "role": "PI"
+          },
+          {
+            "name": "Hu, F.",
+            "role": "PI"
+          }
+        ],
+        "collaborators": [
+          {
+            "name": "Kim, J.",
+            "role": "PI"
+          },
+          {
+            "name": "Hu, F.",
+            "role": "PI"
+          }
+        ],
+        "funder": "Institute of Museum and Library Services (IMLS)",
+        "funderKey": "imls",
+        "sponsor": "Institute of Museum and Library Services – IMLS",
+        "period": "September 2026 – August 2029",
+        "startYear": 2026,
+        "endYear": 2029,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       },
       {
         "title": "Developing a Generative AI-Integrated Intelligent Simulation to Strengthen Teachers' Competencies in Responding to Students with Emotional and Behavioral Crises",
-        "meta": "Co-PI, overseas / UA | National Research Foundation of Korea (NRF) 2026 Joint Research Support Program (International Type), Total award approximately ; UA overseas allocation approximately | June 2026 - May 2029",
+        "meta": "Co-PI, overseas / UA | National Research Foundation of Korea (NRF) 2026 Joint Research Support Program (International Type) | June 2026 – May 2029",
         "amount": "$23,300",
-        "amountValue": 23300.0
+        "amountValue": 23300.0,
+        "status": "funded",
+        "role": "Co-PI, overseas / UA",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Co-PI, overseas / UA"
+          }
+        ],
+        "collaborators": [],
+        "funder": "National Research Foundation of Korea (NRF)",
+        "funderKey": "nrf",
+        "sponsor": "National Research Foundation of Korea (NRF) 2026 Joint Research Support Program (International Type)",
+        "period": "June 2026 – May 2029",
+        "startYear": 2026,
+        "endYear": 2029,
+        "amountLabel": "UA allocation",
+        "amountDetail": "Total award approximately $162,600 · UA overseas allocation approximately $23,300",
+        "notes": []
       },
       {
         "title": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
-        "meta": "June 2027-August 2027",
+        "meta": "The University of Alabama | June 2027 – August 2027",
         "amount": "$5,700",
-        "amountValue": 5700.0
+        "amountValue": 5700.0,
+        "status": "funded",
+        "role": "Awardee",
+        "team": [
+          {
+            "name": "Moon, J",
+            "role": ""
+          }
+        ],
+        "collaborators": [],
+        "funder": "The University of Alabama",
+        "funderKey": "ua",
+        "sponsor": "",
+        "period": "June 2027 – August 2027",
+        "startYear": 2027,
+        "endYear": 2027,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       },
       {
         "title": "The Alabama Generative Engineering Textbook (AL-GET): AI-enhanced Personalized Learning for STEM Education",
-        "meta": "Lead PI | Office for Sponsored Programs, The University of Alabama | January 2026 - December 2026",
+        "meta": "Lead PI | Office for Sponsored Programs, The University of Alabama | January 2026 – December 2026",
         "amount": "$15,000",
-        "amountValue": 15000.0
+        "amountValue": 15000.0,
+        "status": "funded",
+        "role": "Lead PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Lead PI"
+          }
+        ],
+        "collaborators": [],
+        "funder": "The University of Alabama",
+        "funderKey": "ua",
+        "sponsor": "Office for Sponsored Programs, The University of Alabama",
+        "period": "January 2026 – December 2026",
+        "startYear": 2026,
+        "endYear": 2026,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       },
       {
         "title": "Large Language Model-based Cyber Sentinel Co-Pilot: Professional Development for Alabama Secondary Teacher Training",
-        "meta": "Lead PI | COE RisingTide Grant, The University of Alabama | January 2026 - May 2027",
+        "meta": "Lead PI | COE RisingTide Grant, The University of Alabama | January 2026 – May 2027",
         "amount": "$30,000",
-        "amountValue": 30000.0
+        "amountValue": 30000.0,
+        "status": "funded",
+        "role": "Lead PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Lead PI"
+          },
+          {
+            "name": "Luo, F.",
+            "role": "PI"
+          },
+          {
+            "name": "Hardin, J.",
+            "role": "PI"
+          }
+        ],
+        "collaborators": [
+          {
+            "name": "Luo, F.",
+            "role": "PI"
+          },
+          {
+            "name": "Hardin, J.",
+            "role": "PI"
+          }
+        ],
+        "funder": "The University of Alabama",
+        "funderKey": "ua",
+        "sponsor": "COE RisingTide Grant, The University of Alabama",
+        "period": "January 2026 – May 2027",
+        "startYear": 2026,
+        "endYear": 2027,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       },
       {
         "title": "TeachPlay: AI-Enhanced Educational Gamelet Design",
-        "meta": "Alabama Commission on Higher Education | August 2025 - July 2026",
+        "meta": "Alabama Commission on Higher Education | August 2025 – July 2026",
         "amount": "$5,000",
-        "amountValue": 5000.0
+        "amountValue": 5000.0,
+        "status": "funded",
+        "role": "Awardee",
+        "team": [
+          {
+            "name": "Moon, J",
+            "role": ""
+          }
+        ],
+        "collaborators": [],
+        "funder": "Alabama Commission on Higher Education",
+        "funderKey": "ache",
+        "sponsor": "Alabama Commission on Higher Education",
+        "period": "August 2025 – July 2026",
+        "startYear": 2025,
+        "endYear": 2026,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       },
       {
-        "title": "RemixEd: Designing AI- and XR-Enhanced Instructional Modules for Inclusive",
-        "meta": "Doctoral-Level Online Learning, Instructional Tide Teaching Grant | September 2025 - Dec 2025",
+        "title": "RemixEd: Designing AI- and XR-Enhanced Instructional Modules for Inclusive, Doctoral-Level Online Learning",
+        "meta": "Instructional Tide Teaching Grant | September 2025 – Dec 2025",
         "amount": "$1,500",
-        "amountValue": 1500.0
+        "amountValue": 1500.0,
+        "status": "funded",
+        "role": "Awardee",
+        "team": [
+          {
+            "name": "Moon, J",
+            "role": ""
+          }
+        ],
+        "collaborators": [],
+        "funder": "The University of Alabama",
+        "funderKey": "ua",
+        "sponsor": "Instructional Tide Teaching Grant",
+        "period": "September 2025 – Dec 2025",
+        "startYear": 2025,
+        "endYear": 2025,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       },
       {
         "title": "SEC Faculty Travel Grant",
-        "meta": "September 2025",
+        "meta": "Southeastern Conference (SEC) | September 2025",
         "amount": "$1,574",
-        "amountValue": 1574.0
+        "amountValue": 1574.0,
+        "status": "funded",
+        "role": "Awardee",
+        "team": [
+          {
+            "name": "Moon, J",
+            "role": ""
+          }
+        ],
+        "collaborators": [],
+        "funder": "Southeastern Conference (SEC)",
+        "funderKey": "sec",
+        "sponsor": "",
+        "period": "September 2025",
+        "startYear": 2025,
+        "endYear": 2025,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       },
       {
         "title": "The Institute for Social Science Research (ISSR) THRIVE Fellowship",
-        "meta": "The University of Alabama, (team award) | September 2025 - August 2026",
+        "meta": "The University of Alabama | September 2025 – August 2026",
         "amount": "$15,000",
-        "amountValue": 15000.0
+        "amountValue": 15000.0,
+        "status": "funded",
+        "role": "Awardee",
+        "team": [
+          {
+            "name": "Moon, J",
+            "role": ""
+          }
+        ],
+        "collaborators": [],
+        "funder": "The University of Alabama",
+        "funderKey": "ua",
+        "sponsor": "The University of Alabama",
+        "period": "September 2025 – August 2026",
+        "startYear": 2025,
+        "endYear": 2026,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": [
+          "Team award"
+        ]
       },
       {
-        "title": "Enhancing Teacher Problem-Solving and Classroom Management Skills through an Open-Access AI-Powered 3D Simulation Platform. OSP CREATE Program",
-        "meta": "Lead PI | The University of Alabama | Jan 2025 - Dec 2025",
+        "title": "Enhancing Teacher Problem-Solving and Classroom Management Skills through an Open-Access AI-Powered 3D Simulation Platform",
+        "meta": "Lead PI | OSP CREATE Program, The University of Alabama | Jan 2025 – Dec 2025",
         "amount": "$4,000",
-        "amountValue": 4000.0
+        "amountValue": 4000.0,
+        "status": "funded",
+        "role": "Lead PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Lead PI"
+          }
+        ],
+        "collaborators": [],
+        "funder": "The University of Alabama",
+        "funderKey": "ua",
+        "sponsor": "OSP CREATE Program, The University of Alabama",
+        "period": "Jan 2025 – Dec 2025",
+        "startYear": 2025,
+        "endYear": 2025,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       },
       {
-        "title": "The Grant Writing Fellows Program. College of Education",
-        "meta": "The University of Alabama | September 2024 - August 2025",
+        "title": "The Grant Writing Fellows Program",
+        "meta": "College of Education, The University of Alabama | September 2024 – August 2025",
         "amount": "$6,225",
-        "amountValue": 6225.0
+        "amountValue": 6225.0,
+        "status": "funded",
+        "role": "Awardee",
+        "team": [
+          {
+            "name": "Moon, J",
+            "role": ""
+          }
+        ],
+        "collaborators": [],
+        "funder": "The University of Alabama",
+        "funderKey": "ua",
+        "sponsor": "College of Education, The University of Alabama",
+        "period": "September 2024 – August 2025",
+        "startYear": 2024,
+        "endYear": 2025,
+        "amountLabel": "Award",
+        "amountDetail": "Summer stipend $6,225",
+        "notes": []
       },
       {
         "title": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
-        "meta": "June 2025-August 2025",
+        "meta": "The University of Alabama | June 2025 – August 2025",
         "amount": "$5,460",
-        "amountValue": 5460.0
+        "amountValue": 5460.0,
+        "status": "funded",
+        "role": "Awardee",
+        "team": [
+          {
+            "name": "Moon, J",
+            "role": ""
+          }
+        ],
+        "collaborators": [],
+        "funder": "The University of Alabama",
+        "funderKey": "ua",
+        "sponsor": "",
+        "period": "June 2025 – August 2025",
+        "startYear": 2025,
+        "endYear": 2025,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       },
       {
         "title": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
-        "meta": "June 2024-August 2024",
+        "meta": "The University of Alabama | June 2024 – August 2024",
         "amount": "$3,500",
-        "amountValue": 3500.0
+        "amountValue": 3500.0,
+        "status": "funded",
+        "role": "Awardee",
+        "team": [
+          {
+            "name": "Moon, J",
+            "role": ""
+          }
+        ],
+        "collaborators": [],
+        "funder": "The University of Alabama",
+        "funderKey": "ua",
+        "sponsor": "",
+        "period": "June 2024 – August 2024",
+        "startYear": 2024,
+        "endYear": 2024,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       },
       {
-        "title": "Examining Preservice Teachers' Digital Literacy Development and Learning Engagement via Art Integrated Technology-Enhanced Learning. The Collaborative Arts Research Initiative",
-        "meta": "Lead PI | Jan 2022 - Dec 2024",
+        "title": "Examining Preservice Teachers' Digital Literacy Development and Learning Engagement via Art Integrated Technology-Enhanced Learning",
+        "meta": "Lead PI | The Collaborative Arts Research Initiative | Jan 2022 – Dec 2024",
         "amount": "$15,000",
-        "amountValue": 15000.0
+        "amountValue": 15000.0,
+        "status": "funded",
+        "role": "Lead PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Lead PI"
+          },
+          {
+            "name": "Bannerman, J.",
+            "role": "PI"
+          },
+          {
+            "name": "O’Harra, K.",
+            "role": "PI"
+          },
+          {
+            "name": "Schoger, K.",
+            "role": "PI"
+          },
+          {
+            "name": "Donoban C.",
+            "role": "PI"
+          },
+          {
+            "name": "Coleman, J.",
+            "role": "PI"
+          }
+        ],
+        "collaborators": [
+          {
+            "name": "Bannerman, J.",
+            "role": "PI"
+          },
+          {
+            "name": "O’Harra, K.",
+            "role": "PI"
+          },
+          {
+            "name": "Schoger, K.",
+            "role": "PI"
+          },
+          {
+            "name": "Donoban C.",
+            "role": "PI"
+          },
+          {
+            "name": "Coleman, J.",
+            "role": "PI"
+          }
+        ],
+        "funder": "The University of Alabama",
+        "funderKey": "ua",
+        "sponsor": "The Collaborative Arts Research Initiative",
+        "period": "Jan 2022 – Dec 2024",
+        "startYear": 2022,
+        "endYear": 2024,
+        "amountLabel": "Award",
+        "amountDetail": "",
+        "notes": []
       }
     ],
     "pending": [
       {
-        "title": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency. Charles Koch Foundation",
-        "meta": "Lead PI | Requested amount | January 2027 - December 2027",
+        "title": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency",
+        "meta": "Lead PI | Charles Koch Foundation | January 2027 – December 2027",
         "amount": "$110,669",
-        "amountValue": 110669.0
+        "amountValue": 110669.0,
+        "status": "pending",
+        "role": "Lead PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Lead PI"
+          }
+        ],
+        "collaborators": [],
+        "funder": "Charles Koch Foundation",
+        "funderKey": "",
+        "sponsor": "Charles Koch Foundation",
+        "period": "January 2027 – December 2027",
+        "startYear": 2027,
+        "endYear": 2027,
+        "amountLabel": "Requested",
+        "amountDetail": "",
+        "notes": []
       },
       {
-        "title": "TRACE-Reg: A Privacy-by-Design",
-        "meta": "Lead PI | Agency-Preserving Emotion-Regulation Agent for Adult Learners. Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget | September 2026",
+        "title": "TRACE-Reg: A Privacy-by-Design, Agency-Preserving Emotion-Regulation Agent for Adult Learners",
+        "meta": "Lead PI | Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation | September 2026",
         "amount": "$100,000",
-        "amountValue": 100000.0
+        "amountValue": 100000.0,
+        "status": "pending",
+        "role": "Lead PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Lead PI"
+          }
+        ],
+        "collaborators": [],
+        "funder": "Sony Corporation",
+        "funderKey": "",
+        "sponsor": "Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation",
+        "period": "September 2026",
+        "startYear": 2026,
+        "endYear": 2026,
+        "amountLabel": "Requested",
+        "amountDetail": "",
+        "notes": []
       },
       {
         "title": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
-        "meta": "PI | Total requested €20, 000 (approximately ), Game in Lab 2026 International Call for Projects, Asmodee | May 2027 - April 2029",
+        "meta": "PI | Game in Lab 2026 International Call for Projects, Asmodee | May 2027 – April 2029",
         "amount": "$23,362",
-        "amountValue": 23362.0
+        "amountValue": 23362.0,
+        "status": "pending",
+        "role": "PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "PI"
+          }
+        ],
+        "collaborators": [],
+        "funder": "Asmodee · Game in Lab",
+        "funderKey": "",
+        "sponsor": "Game in Lab 2026 International Call for Projects, Asmodee",
+        "period": "May 2027 – April 2029",
+        "startYear": 2027,
+        "endYear": 2029,
+        "amountLabel": "Requested",
+        "amountDetail": "Total requested €20,000 (approximately $23,362)",
+        "notes": []
       },
       {
         "title": "Beyond the Security Divide: Building a Community-Guided Cybersecurity Education System for Broad and Meaningful Access",
-        "meta": "Lead PI | Total requested Spencer Foundation Vision Grant | February 2027 - July 2028",
+        "meta": "Lead PI | Spencer Foundation Vision Grant | February 2027 – July 2028",
         "amount": "$75,000",
-        "amountValue": 75000.0
+        "amountValue": 75000.0,
+        "status": "pending",
+        "role": "Lead PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Lead PI"
+          }
+        ],
+        "collaborators": [],
+        "funder": "Spencer Foundation",
+        "funderKey": "",
+        "sponsor": "Spencer Foundation Vision Grant",
+        "period": "February 2027 – July 2028",
+        "startYear": 2027,
+        "endYear": 2028,
+        "amountLabel": "Requested",
+        "amountDetail": "",
+        "notes": []
       },
       {
-        "title": "Who Bears the Work of School AI Governance? Policy-Assigned Responsibility",
-        "meta": "PI | Employer Support, and Unequal District Capacity, Total requested Russell Sage Foundation, Sheldon Danziger Pipeline Grants Competition | August 2027 - July 2028",
+        "title": "Who Bears the Work of School AI Governance? Policy-Assigned Responsibility, Employer Support, and Unequal District Capacity",
+        "meta": "PI | Russell Sage Foundation, Sheldon Danziger Pipeline Grants Competition | August 2027 – July 2028",
         "amount": "$50,000",
-        "amountValue": 50000.0
+        "amountValue": 50000.0,
+        "status": "pending",
+        "role": "PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "PI"
+          }
+        ],
+        "collaborators": [],
+        "funder": "Russell Sage Foundation",
+        "funderKey": "",
+        "sponsor": "Russell Sage Foundation, Sheldon Danziger Pipeline Grants Competition",
+        "period": "August 2027 – July 2028",
+        "startYear": 2027,
+        "endYear": 2028,
+        "amountLabel": "Requested",
+        "amountDetail": "",
+        "notes": []
       },
       {
         "title": "OpenPolicy v0.1: A Reproducible Public-Evidence Release for School AI Policy",
-        "meta": "RAAIS Foundation Grant | Submitted August 2026; proposed three-month project",
+        "meta": "Project Lead/Applicant | RAAIS Foundation Grant | Submitted August 2026; proposed three-month project",
         "amount": "pending",
-        "amountValue": null
+        "amountValue": null,
+        "status": "pending",
+        "role": "Project Lead/Applicant",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Project Lead/Applicant"
+          }
+        ],
+        "collaborators": [],
+        "funder": "RAAIS Foundation",
+        "funderKey": "",
+        "sponsor": "RAAIS Foundation Grant",
+        "period": "",
+        "startYear": null,
+        "endYear": null,
+        "amountLabel": "Requested",
+        "amountDetail": "",
+        "notes": [
+          "Submitted August 2026; proposed three-month project"
+        ]
       },
       {
         "title": "OpenPolicy Receipts: Open Receipts and Safety Tests for Accountable Public-Interest AI Agents",
-        "meta": "Total requested Sentient Foundation Open Source AGI Grant Program, Grant Track | Submitted August 2026; proposed four-month project",
+        "meta": "Project Lead/Applicant | Sentient Foundation Open Source AGI Grant Program, Grant Track | Submitted August 2026; proposed four-month project",
         "amount": "$50,000",
-        "amountValue": 50000.0
+        "amountValue": 50000.0,
+        "status": "pending",
+        "role": "Project Lead/Applicant",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Project Lead/Applicant"
+          }
+        ],
+        "collaborators": [],
+        "funder": "Sentient Foundation",
+        "funderKey": "",
+        "sponsor": "Sentient Foundation Open Source AGI Grant Program, Grant Track",
+        "period": "",
+        "startYear": null,
+        "endYear": null,
+        "amountLabel": "Requested",
+        "amountDetail": "",
+        "notes": [
+          "Submitted August 2026; proposed four-month project"
+        ]
       },
       {
         "title": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
-        "meta": "Lead PI | AERA-NSF Research Grant Program | September 2026 - August 2028",
+        "meta": "Lead PI | AERA-NSF Research Grant Program | September 2026 – August 2028",
         "amount": "$35,000",
-        "amountValue": 35000.0
+        "amountValue": 35000.0,
+        "status": "pending",
+        "role": "Lead PI",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Lead PI"
+          }
+        ],
+        "collaborators": [],
+        "funder": "AERA–NSF Research Grants Program",
+        "funderKey": "aera",
+        "sponsor": "AERA-NSF Research Grant Program",
+        "period": "September 2026 – August 2028",
+        "startYear": 2026,
+        "endYear": 2028,
+        "amountLabel": "Requested",
+        "amountDetail": "",
+        "notes": []
       },
       {
         "title": "CyberAI Innovation: Teaching AI as Target and Defender through a Full-Stack Immersive AI Ecosystem",
-        "meta": "Lead PI | National Science Foundation (NSF), Proposal 26-0572, submission deadline April 3, 2026, submitted to sponsor March 10, 2026 | October 2026 - September 2029",
+        "meta": "PI | National Science Foundation (NSF) | October 2026 – September 2029",
         "amount": "$497,460",
-        "amountValue": 497460.0
+        "amountValue": 497460.0,
+        "status": "pending",
+        "role": "PI",
+        "team": [
+          {
+            "name": "Hu, F.",
+            "role": "Lead PI"
+          },
+          {
+            "name": "Moon, J.",
+            "role": "PI"
+          },
+          {
+            "name": "Shen, X.",
+            "role": "PI"
+          }
+        ],
+        "collaborators": [
+          {
+            "name": "Hu, F.",
+            "role": "Lead PI"
+          },
+          {
+            "name": "Shen, X.",
+            "role": "PI"
+          }
+        ],
+        "funder": "National Science Foundation (NSF)",
+        "funderKey": "nsf",
+        "sponsor": "National Science Foundation (NSF)",
+        "period": "October 2026 – September 2029",
+        "startYear": 2026,
+        "endYear": 2029,
+        "amountLabel": "Requested",
+        "amountDetail": "",
+        "notes": [
+          "Proposal 26-0572",
+          "Submission deadline April 3, 2026",
+          "Submitted to sponsor March 10, 2026"
+        ]
       },
       {
         "title": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
-        "meta": "Key Personnel / External Evaluator | January 2027 - December 2029",
+        "meta": "Key Personnel / External Evaluator | National Science Foundation (NSF) | January 2027 – December 2029",
         "amount": "pending",
-        "amountValue": null
+        "amountValue": null,
+        "status": "pending",
+        "role": "Key Personnel / External Evaluator",
+        "team": [
+          {
+            "name": "Moon, J.",
+            "role": "Key Personnel / External Evaluator"
+          }
+        ],
+        "collaborators": [],
+        "funder": "National Science Foundation (NSF)",
+        "funderKey": "nsf",
+        "sponsor": "",
+        "period": "January 2027 – December 2029",
+        "startYear": 2027,
+        "endYear": 2029,
+        "amountLabel": "Requested",
+        "amountDetail": "",
+        "notes": []
       },
       {
-        "title": "A Biofeedback-Based Virtual Reality Implementation to Teach Metered Dose Inhaler Technique Education for Pediatric Asthma Patients: A Development and Feasibility Study. National Institutes of Health (NIH)",
-        "meta": "Lead PI | total requested submitted July 10, 2026 | April 2027 - March 2029",
+        "title": "A Biofeedback-Based Virtual Reality Implementation to Teach Metered Dose Inhaler Technique Education for Pediatric Asthma Patients: A Development and Feasibility Study",
+        "meta": "PI | National Institutes of Health (NIH) | April 2027 – March 2029",
         "amount": "$399,946",
-        "amountValue": 399946.0
+        "amountValue": 399946.0,
+        "status": "pending",
+        "role": "PI",
+        "team": [
+          {
+            "name": "Sumengen, A.",
+            "role": "Lead PI"
+          },
+          {
+            "name": "Chen, K.",
+            "role": "PI"
+          },
+          {
+            "name": "Moon, J.",
+            "role": "PI"
+          },
+          {
+            "name": "McCoy, T.",
+            "role": "PI"
+          }
+        ],
+        "collaborators": [
+          {
+            "name": "Sumengen, A.",
+            "role": "Lead PI"
+          },
+          {
+            "name": "Chen, K.",
+            "role": "PI"
+          },
+          {
+            "name": "McCoy, T.",
+            "role": "PI"
+          }
+        ],
+        "funder": "National Institutes of Health (NIH)",
+        "funderKey": "nih",
+        "sponsor": "National Institutes of Health (NIH)",
+        "period": "April 2027 – March 2029",
+        "startYear": 2027,
+        "endYear": 2029,
+        "amountLabel": "Requested",
+        "amountDetail": "",
+        "notes": [
+          "Submitted July 10, 2026"
+        ]
       }
     ],
     "withdrawn": []

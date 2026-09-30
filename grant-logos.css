@@ -250,3 +250,18 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Funders without a logo file: show initials instead of defaulting to UA. */
+.grant-funder-mark.is-text {
+  display: inline-grid;
+  place-items: center;
+  color: var(--accent, #9e1b32);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.grant-list-team {
+  font-size: 0.86em;
+  opacity: 0.85;
+}
