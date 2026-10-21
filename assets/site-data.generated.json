@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-21T16:00:06.127838+00:00",
-  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
+  "generatedAt": "2026-10-21T21:02:46.422285+00:00",
+  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "August 9, 2026",
@@ -335,20 +335,6 @@
     },
     {
       "year": "2026",
-      "title": "A cultural-historical activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
-      "authors": "Moon, J.",
-      "venue": "Interactive Learning Environments",
-      "link": "https://doi.org/10.1080/10494820.2026.2690104",
-      "tags": [
-        "GenAI",
-        "Analytics",
-        "STEM"
-      ],
-      "note": "corresponding author",
-      "status": ""
-    },
-    {
-      "year": "2026",
       "title": "Human-centered generative AI in education: Ethical challenges and equity-driven solutions",
       "authors": "Abu, S., Uddin, M., Moon, J., Awoyemi, I., Baah-Mintah, R., & Ghooreian, A.",
       "venue": "Ethics and Behavior",
@@ -385,18 +371,6 @@
         "Ethics"
       ],
       "note": "mentored collaboration",
-      "status": ""
-    },
-    {
-      "year": "2026",
-      "title": "Decoding immersive learning states: A reproducible microgenetic pipeline for behavioral data in virtual reality safety training",
-      "authors": "Moon, J., Awoyemi, I., Abu, S., Marchiori, S., & Song, S.",
-      "venue": "Behaviormetrika",
-      "link": "https://doi.org/10.1007/s41237-025-00286-1",
-      "tags": [
-        "XR"
-      ],
-      "note": "corresponding author",
       "status": ""
     },
     {
@@ -1141,12 +1115,6 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "‡ Moon, J. (2026). A cultural-historical activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2690104 [SSCI-indexed, IF =6.7, IF5 = 7.1]",
-      "link": "https://doi.org/10.1080/10494820.2026.2690104"
-    },
-    {
-      "year": "2026",
-      "category": "International",
       "citation": "* Abu, S., Uddin, M., Moon, J., Awoyemi, I., Baah-Mintah, R., & Ghooreian, A. (2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior. http://dx.doi.org/10.1080/10508422.2026.2685014 [SSCI-indexed, IF = 2.3, IF5 = 2.5]",
       "link": "http://dx.doi.org/10.1080/10508422.2026.2685014"
     },
@@ -1161,12 +1129,6 @@
       "category": "International",
       "citation": "* Uddin, M., Moon, J., & Abu, S. (2026). An ethical framework for conversational AI in higher education: Toward an evidence-based ethical governance. AI & Ethics. https://doi.org/10.1007/s43681-026-01056-9",
       "link": "https://doi.org/10.1007/s43681-026-01056-9"
-    },
-    {
-      "year": "2026",
-      "category": "International",
-      "citation": "‡ * Moon, J., Awoyemi, I., Abu, S., Marchiori, S., & Song, S. (2026). Decoding immersive learning states: A reproducible microgenetic pipeline for behavioral data in virtual reality safety training. Behaviormetrika. https://doi.org/10.1007/s41237-025-00286-1 [SCOPUS-indexed]",
-      "link": "https://doi.org/10.1007/s41237-025-00286-1"
     },
     {
       "year": "2026",
