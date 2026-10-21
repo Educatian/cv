@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-10-21T21:02:46.422285+00:00",
+  "generatedAt": "2026-10-21T21:08:45.555431+00:00",
   "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -39,7 +39,7 @@ window.__cvSiteData = {
   },
   "stats": [
     {
-      "value": "65",
+      "value": "63",
       "label": "Journal articles"
     },
     {
