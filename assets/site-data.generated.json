@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T21:08:45.555431+00:00",
+  "generatedAt": "2026-10-23T16:23:40.071306+00:00",
   "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -39,7 +39,7 @@
   },
   "stats": [
     {
-      "value": "63",
+      "value": "62",
       "label": "Journal articles"
     },
     {
@@ -51,7 +51,7 @@
       "label": "Book chapters"
     },
     {
-      "value": "38",
+      "value": "39",
       "label": "Working papers"
     },
     {
@@ -166,12 +166,12 @@
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Accepted article in AI & Society: Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy."
+      "text": "Journal article in Cogent Education: Challenges, safeguards, and professional learning needs for AI integration: insights from a two-week AI literacy module with preservice teachers."
     },
     {
       "date": "2026",
       "type": "Publication",
-      "text": "Journal article in Cogent Education: Challenges, safeguards, and professional learning needs for AI integration: insights from a two-week AI literacy module with preservice teachers."
+      "text": "Journal article in Interactive Learning Environments: From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training."
     },
     {
       "date": "2026",
@@ -252,20 +252,6 @@
       ],
       "note": "corresponding author",
       "status": ""
-    },
-    {
-      "year": "2026",
-      "title": "Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy",
-      "authors": "Hong, S., Moon, J., Cho, H., & Lim, C.",
-      "venue": "AI & Society",
-      "link": "",
-      "tags": [
-        "GenAI",
-        "Higher Ed",
-        "Ethics"
-      ],
-      "note": "mentored collaboration",
-      "status": "Accepted"
     },
     {
       "year": "2026",
@@ -1079,12 +1065,6 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Hong, S., Moon, J., Cho, H., & Lim, C. (Accepted, 2026). Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy. AI & Society. [ESCI-indexed, IF = 6.1, IF5 = 2.1]",
-      "link": ""
-    },
-    {
-      "year": "2026",
-      "category": "International",
       "citation": "Aldemir, T., Bicer, Al., Kilinc, S., Moon, J., & Kwok, M. (2026). Challenges, safeguards, and professional learning needs for AI integration: insights from a two-week AI literacy module with preservice teachers. Cogent Education https://doi.org/10.1080/2331186X.2026.2721038 [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
       "link": "https://doi.org/10.1080/2331186X.2026.2721038"
     },
@@ -1622,6 +1602,17 @@
       "type": "Journal Manuscript",
       "status": "Under review",
       "year": "Pipeline",
+      "title": "Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy",
+      "authors": "* Hong, S., Moon, J., Cho, H., & Lim, C.",
+      "venue": "AI & Society",
+      "citation": "* Hong, S., Moon, J., Cho, H., & Lim, C. (Under review). Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy. AI & Society. (ESCI-indexed, IF = 6.1, IF5 = 2.1)",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Under review",
+      "year": "Pipeline",
       "title": "The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning",
       "authors": "Lim, J., Lee, H., & Moon, J.",
       "venue": "Metacognition and Learning",
@@ -2037,10 +2028,10 @@
     }
   ],
   "workingPaperSummary": {
-    "total": 38,
-    "submittedOrUnderReview": 31,
+    "total": 39,
+    "submittedOrUnderReview": 32,
     "inPreparation": 7,
-    "journalManuscripts": 33,
+    "journalManuscripts": 34,
     "bookChapters": 2,
     "conferenceProposals": 3
   },
