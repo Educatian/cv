@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T16:01:04.038378+00:00",
+  "generatedAt": "2026-10-21T16:01:06.444370+00:00",
   "source": {
     "provider": "Google Scholar + OpenAlex",
     "authorId": "https://openalex.org/A5079348611",
@@ -12,8 +12,8 @@
     "networkProvider": "OpenAlex",
     "topicProvider": "OpenAlex",
     "openAccessProvider": "OpenAlex",
-    "openalexGeneratedAt": "2026-10-07T16:01:04.038378+00:00",
-    "scholarGeneratedAt": "2026-10-07T16:00:34.548Z"
+    "openalexGeneratedAt": "2026-10-21T16:01:06.444370+00:00",
+    "scholarGeneratedAt": "2026-10-21T16:00:43.763Z"
   },
   "author": {
     "name": "Jewoong Moon",
@@ -38,19 +38,19 @@
     "publicAccess": {}
   },
   "summary": {
-    "totalCitations": 1815,
-    "worksCount": 95,
-    "hIndex": 21,
+    "totalCitations": 1831,
+    "worksCount": 92,
+    "hIndex": 22,
     "i10Index": 32,
-    "twoYearMeanCitedness": 14.79,
-    "citationsPerWork": 19.11,
+    "twoYearMeanCitedness": 16.12,
+    "citationsPerWork": 19.9,
     "meanCitationsPerWorkYear": 0.0,
-    "recent3YearCitations": 784,
-    "previous3YearCitations": 391,
-    "recent5YearCitations": 1112,
-    "previous5YearCitations": 703,
-    "threeYearGrowthRate": 100.5,
-    "fiveYearGrowthRate": 58.2,
+    "recent3YearCitations": 806,
+    "previous3YearCitations": 390,
+    "recent5YearCitations": 1133,
+    "previous5YearCitations": 698,
+    "threeYearGrowthRate": 106.7,
+    "fiveYearGrowthRate": 62.3,
     "latestCitationYear": 2026,
     "sinceLabel": "",
     "sinceYearCitations": 0,
@@ -102,7 +102,7 @@
     },
     {
       "year": 2018,
-      "citations": 83,
+      "citations": 84,
       "works": 3,
       "oaWorks": 2
     },
@@ -114,7 +114,7 @@
     },
     {
       "year": 2020,
-      "citations": 469,
+      "citations": 463,
       "works": 12,
       "oaWorks": 1
     },
@@ -126,7 +126,7 @@
     },
     {
       "year": 2022,
-      "citations": 44,
+      "citations": 43,
       "works": 5,
       "oaWorks": 2
     },
@@ -138,15 +138,15 @@
     },
     {
       "year": 2024,
-      "citations": 670,
-      "works": 22,
-      "oaWorks": 16
+      "citations": 687,
+      "works": 21,
+      "oaWorks": 15
     },
     {
       "year": 2025,
-      "citations": 109,
-      "works": 13,
-      "oaWorks": 7
+      "citations": 114,
+      "works": 11,
+      "oaWorks": 6
     },
     {
       "year": 2026,
@@ -156,15 +156,15 @@
     }
   ],
   "openAccess": {
-    "totalWorks": 95,
-    "openAccessWorks": 37,
-    "closedWorks": 58,
-    "openAccessRate": 38.9,
-    "repositoryFulltextWorks": 19,
+    "totalWorks": 92,
+    "openAccessWorks": 35,
+    "closedWorks": 57,
+    "openAccessRate": 38.0,
+    "repositoryFulltextWorks": 18,
     "statusBreakdown": [
       {
         "status": "closed",
-        "count": 58
+        "count": 57
       },
       {
         "status": "diamond",
@@ -172,7 +172,7 @@
       },
       {
         "status": "gold",
-        "count": 9
+        "count": 8
       },
       {
         "status": "hybrid",
@@ -180,7 +180,7 @@
       },
       {
         "status": "green",
-        "count": 5
+        "count": 4
       },
       {
         "status": "bronze",
@@ -195,7 +195,7 @@
       {
         "name": "Interactive Learning Environments",
         "count": 6,
-        "citations": 71,
+        "citations": 70,
         "type": "Journal"
       },
       {
@@ -207,7 +207,7 @@
       {
         "name": "Lecture notes in computer science",
         "count": 4,
-        "citations": 8,
+        "citations": 7,
         "type": "Book"
       },
       {
@@ -217,39 +217,39 @@
         "type": "Other"
       },
       {
-        "name": "arXiv (Cornell University)",
-        "count": 3,
-        "citations": 3,
-        "type": "Repository"
-      },
-      {
         "name": "International Journal of Educational Technology in Higher Education",
         "count": 2,
-        "citations": 314,
+        "citations": 318,
         "type": "Journal"
       },
       {
         "name": "Education and Information Technologies",
         "count": 2,
-        "citations": 221,
+        "citations": 225,
         "type": "Journal"
       },
       {
         "name": "British Journal of Educational Technology",
         "count": 2,
-        "citations": 121,
+        "citations": 122,
         "type": "Journal"
       },
       {
         "name": "Online Learning",
         "count": 2,
-        "citations": 99,
+        "citations": 100,
         "type": "Journal"
       },
       {
         "name": "Educational Psychology Review",
         "count": 2,
-        "citations": 87,
+        "citations": 89,
+        "type": "Journal"
+      },
+      {
+        "name": "TechTrends",
+        "count": 2,
+        "citations": 83,
         "type": "Journal"
       }
     ],
@@ -268,11 +268,11 @@
       },
       {
         "type": "Other",
-        "count": 5
+        "count": 4
       },
       {
         "type": "Repository",
-        "count": 5
+        "count": 3
       },
       {
         "type": "Article",
@@ -286,8 +286,8 @@
         "id": "__self__",
         "label": "Jewoong Moon",
         "group": "self",
-        "works": 95,
-        "citations": 1817,
+        "works": 92,
+        "citations": 1832,
         "institution": "The University of Alabama"
       },
       {
@@ -295,17 +295,27 @@
         "label": "Ali Biçer",
         "group": "coauthor",
         "works": 4,
-        "citations": 30,
+        "citations": 34,
         "institution": "Texas A&M University",
         "orcid": "https://orcid.org/0000-0002-2147-5393",
         "authorId": "https://openalex.org/A5062671496"
+      },
+      {
+        "id": "Arezoo Ghooreian",
+        "label": "Arezoo Ghooreian",
+        "group": "coauthor",
+        "works": 3,
+        "citations": 5,
+        "institution": "University of Alabama",
+        "orcid": "https://orcid.org/0009-0005-8805-7726",
+        "authorId": "https://openalex.org/A5114461691"
       },
       {
         "id": "Daeyeoul Lee",
         "label": "Daeyeoul Lee",
         "group": "coauthor",
         "works": 5,
-        "citations": 158,
+        "citations": 163,
         "institution": "New York University",
         "orcid": "https://orcid.org/0000-0003-1111-9691",
         "authorId": "https://openalex.org/A5026352838"
@@ -315,7 +325,7 @@
         "label": "Fengfeng Ke",
         "group": "coauthor",
         "works": 21,
-        "citations": 589,
+        "citations": 581,
         "institution": "University of Maryland, College Park",
         "orcid": "https://orcid.org/0000-0003-4203-1203",
         "authorId": "https://openalex.org/A5034097062"
@@ -325,7 +335,7 @@
         "label": "Gi Woong Choi",
         "group": "coauthor",
         "works": 9,
-        "citations": 264,
+        "citations": 267,
         "institution": "University of Cincinnati",
         "orcid": "https://orcid.org/0000-0002-9631-3727",
         "authorId": "https://openalex.org/A5007605558"
@@ -334,17 +344,27 @@
         "id": "Gyuri Byun",
         "label": "Gyuri Byun",
         "group": "coauthor",
-        "works": 12,
-        "citations": 102,
+        "works": 10,
+        "citations": 106,
         "institution": "Seoul National University",
         "orcid": "https://orcid.org/0009-0008-6044-4750",
         "authorId": "https://openalex.org/A5093917325"
       },
       {
+        "id": "Haesol Bae",
+        "label": "Haesol Bae",
+        "group": "coauthor",
+        "works": 3,
+        "citations": 103,
+        "institution": "University at Albany, State University of New York",
+        "orcid": "https://orcid.org/0000-0002-7876-2991",
+        "authorId": "https://openalex.org/A5028583473"
+      },
+      {
         "id": "Hyeoncheol Kim",
         "label": "Hyeoncheol Kim",
         "group": "coauthor",
-        "works": 7,
+        "works": 5,
         "citations": 242,
         "institution": "Korea University",
         "orcid": "https://orcid.org/0000-0003-0555-8591",
@@ -355,7 +375,7 @@
         "label": "Idowu David Awoyemi",
         "group": "coauthor",
         "works": 5,
-        "citations": 23,
+        "citations": 24,
         "institution": "University of Alabama",
         "orcid": "https://orcid.org/0009-0001-3112-7712",
         "authorId": "https://openalex.org/A5092193382"
@@ -365,7 +385,7 @@
         "label": "Jaewoo Do",
         "group": "coauthor",
         "works": 6,
-        "citations": 87,
+        "citations": 86,
         "institution": "Korean Educational Development Institute",
         "orcid": "https://orcid.org/0000-0003-1797-1682",
         "authorId": "https://openalex.org/A5045775079"
@@ -375,7 +395,7 @@
         "label": "Jieun Lim",
         "group": "coauthor",
         "works": 4,
-        "citations": 66,
+        "citations": 69,
         "institution": "Daegu National University of Education",
         "orcid": "https://orcid.org/0000-0002-8985-1957",
         "authorId": "https://openalex.org/A5068625256"
@@ -385,7 +405,7 @@
         "label": "JooYoung Seo",
         "group": "coauthor",
         "works": 4,
-        "citations": 37,
+        "citations": 36,
         "institution": "University of Illinois Urbana-Champaign",
         "orcid": "https://orcid.org/0000-0002-4064-6012",
         "authorId": "https://openalex.org/A5101467241"
@@ -394,58 +414,28 @@
         "id": "Junbo Koh",
         "label": "Junbo Koh",
         "group": "coauthor",
-        "works": 4,
-        "citations": 81,
+        "works": 3,
+        "citations": 84,
         "institution": "Seoul National University",
         "orcid": "https://orcid.org/0009-0004-3463-0091",
         "authorId": "https://openalex.org/A5025565903"
       },
       {
-        "id": "Laura McNeill",
-        "label": "Laura McNeill",
+        "id": "Raissa Seichi Marchiori",
+        "label": "Raissa Seichi Marchiori",
         "group": "coauthor",
-        "works": 4,
-        "citations": 40,
-        "institution": "University of Alabama",
-        "orcid": "https://orcid.org/0000-0001-5865-7628",
-        "authorId": "https://openalex.org/A5029357979"
-      },
-      {
-        "id": "Omid Noroozi",
-        "label": "Omid Noroozi",
-        "group": "coauthor",
-        "works": 4,
-        "citations": 314,
-        "institution": "Wageningen University & Research",
-        "orcid": "https://orcid.org/0000-0002-0622-289X",
-        "authorId": "https://openalex.org/A5071892501"
-      },
-      {
-        "id": "Raissa Marchiori",
-        "label": "Raissa Marchiori",
-        "group": "coauthor",
-        "works": 4,
-        "citations": 6,
+        "works": 5,
+        "citations": 15,
         "institution": "Florida Gulf Coast University",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-1561-4625",
         "authorId": "https://openalex.org/A5092193383"
-      },
-      {
-        "id": "Seyyed Kazem Banihashem",
-        "label": "Seyyed Kazem Banihashem",
-        "group": "coauthor",
-        "works": 4,
-        "citations": 314,
-        "institution": "Open University of the Netherlands",
-        "orcid": "https://orcid.org/0000-0002-9978-3783",
-        "authorId": "https://openalex.org/A5047691220"
       },
       {
         "id": "Siyuan Song",
         "label": "Siyuan Song",
         "group": "coauthor",
         "works": 6,
-        "citations": 13,
+        "citations": 15,
         "institution": "Arizona State University",
         "orcid": "https://orcid.org/0000-0002-6444-3914",
         "authorId": "https://openalex.org/A5032190715"
@@ -465,7 +455,7 @@
         "label": "Tugce Aldemir",
         "group": "coauthor",
         "works": 5,
-        "citations": 30,
+        "citations": 34,
         "institution": "Texas A&M University",
         "orcid": "https://orcid.org/0000-0001-5532-7770",
         "authorId": "https://openalex.org/A5065786559"
@@ -474,8 +464,8 @@
         "id": "Unggi Lee",
         "label": "Unggi Lee",
         "group": "coauthor",
-        "works": 10,
-        "citations": 307,
+        "works": 8,
+        "citations": 311,
         "institution": "Korea University",
         "orcid": "https://orcid.org/0000-0002-0883-4128",
         "authorId": "https://openalex.org/A5066209480"
@@ -484,8 +474,8 @@
         "id": "Yeil Jeong",
         "label": "Yeil Jeong",
         "group": "coauthor",
-        "works": 7,
-        "citations": 92,
+        "works": 6,
+        "citations": 95,
         "institution": "Indiana University Bloomington",
         "orcid": "https://orcid.org/0009-0003-4524-7197",
         "authorId": "https://openalex.org/A5112070639"
@@ -494,18 +484,28 @@
         "id": "Yunseo Lee",
         "label": "Yunseo Lee",
         "group": "coauthor",
-        "works": 8,
-        "citations": 95,
+        "works": 6,
+        "citations": 97,
         "institution": "University of Wisconsin–Madison",
         "orcid": "https://orcid.org/0009-0005-8651-5690",
         "authorId": "https://openalex.org/A5032863223"
+      },
+      {
+        "id": "Zhichun Liu",
+        "label": "Zhichun Liu",
+        "group": "coauthor",
+        "works": 4,
+        "citations": 186,
+        "institution": "University of Hong Kong",
+        "orcid": "https://orcid.org/0000-0002-6402-9174",
+        "authorId": "https://openalex.org/A5101615116"
       },
       {
         "id": "Zlatko Sokolikj",
         "label": "Zlatko Sokolikj",
         "group": "coauthor",
         "works": 9,
-        "citations": 282,
+        "citations": 273,
         "institution": "Florida State University",
         "orcid": "",
         "authorId": "https://openalex.org/A5038256668"
@@ -519,11 +519,6 @@
       },
       {
         "source": "Gyuri Byun",
-        "target": "__self__",
-        "weight": 12
-      },
-      {
-        "source": "Unggi Lee",
         "target": "__self__",
         "weight": 10
       },
@@ -543,38 +538,13 @@
         "weight": 9
       },
       {
+        "source": "Unggi Lee",
+        "target": "__self__",
+        "weight": 8
+      },
+      {
         "source": "Gyuri Byun",
         "target": "Yunseo Lee",
-        "weight": 8
-      },
-      {
-        "source": "Yunseo Lee",
-        "target": "__self__",
-        "weight": 8
-      },
-      {
-        "source": "Yeil Jeong",
-        "target": "__self__",
-        "weight": 7
-      },
-      {
-        "source": "Gyuri Byun",
-        "target": "Unggi Lee",
-        "weight": 6
-      },
-      {
-        "source": "Gyuri Byun",
-        "target": "Yeil Jeong",
-        "weight": 6
-      },
-      {
-        "source": "Hyeoncheol Kim",
-        "target": "Unggi Lee",
-        "weight": 6
-      },
-      {
-        "source": "Hyeoncheol Kim",
-        "target": "__self__",
         "weight": 6
       },
       {
@@ -588,13 +558,13 @@
         "weight": 6
       },
       {
-        "source": "Unggi Lee",
-        "target": "Yunseo Lee",
+        "source": "Yeil Jeong",
+        "target": "__self__",
         "weight": 6
       },
       {
-        "source": "Yeil Jeong",
-        "target": "Yunseo Lee",
+        "source": "Yunseo Lee",
+        "target": "__self__",
         "weight": 6
       },
       {
@@ -603,7 +573,22 @@
         "weight": 5
       },
       {
+        "source": "Gyuri Byun",
+        "target": "Yeil Jeong",
+        "weight": 5
+      },
+      {
         "source": "Idowu David Awoyemi",
+        "target": "__self__",
+        "weight": 5
+      },
+      {
+        "source": "Raissa Seichi Marchiori",
+        "target": "Siyuan Song",
+        "weight": 5
+      },
+      {
+        "source": "Raissa Seichi Marchiori",
         "target": "__self__",
         "weight": 5
       },
@@ -613,8 +598,8 @@
         "weight": 5
       },
       {
-        "source": "Unggi Lee",
-        "target": "Yeil Jeong",
+        "source": "Yeil Jeong",
+        "target": "Yunseo Lee",
         "weight": 5
       },
       {
@@ -639,17 +624,17 @@
       },
       {
         "source": "Gyuri Byun",
-        "target": "Hyeoncheol Kim",
-        "weight": 4
-      },
-      {
-        "source": "Gyuri Byun",
-        "target": "Junbo Koh",
+        "target": "Unggi Lee",
         "weight": 4
       },
       {
         "source": "Hyeoncheol Kim",
-        "target": "Yunseo Lee",
+        "target": "Unggi Lee",
+        "weight": 4
+      },
+      {
+        "source": "Hyeoncheol Kim",
+        "target": "__self__",
         "weight": 4
       },
       {
@@ -663,59 +648,29 @@
         "weight": 4
       },
       {
-        "source": "Junbo Koh",
-        "target": "Unggi Lee",
+        "source": "Stephen Abu",
+        "target": "__self__",
         "weight": 4
       },
       {
-        "source": "Junbo Koh",
+        "source": "Unggi Lee",
         "target": "Yeil Jeong",
         "weight": 4
       },
       {
-        "source": "Junbo Koh",
+        "source": "Unggi Lee",
         "target": "Yunseo Lee",
         "weight": 4
       },
       {
-        "source": "Junbo Koh",
+        "source": "Zhichun Liu",
         "target": "__self__",
         "weight": 4
       },
       {
-        "source": "Laura McNeill",
+        "source": "Arezoo Ghooreian",
         "target": "__self__",
-        "weight": 4
-      },
-      {
-        "source": "Omid Noroozi",
-        "target": "Seyyed Kazem Banihashem",
-        "weight": 4
-      },
-      {
-        "source": "Omid Noroozi",
-        "target": "__self__",
-        "weight": 4
-      },
-      {
-        "source": "Raissa Marchiori",
-        "target": "Siyuan Song",
-        "weight": 4
-      },
-      {
-        "source": "Raissa Marchiori",
-        "target": "__self__",
-        "weight": 4
-      },
-      {
-        "source": "Seyyed Kazem Banihashem",
-        "target": "__self__",
-        "weight": 4
-      },
-      {
-        "source": "Stephen Abu",
-        "target": "__self__",
-        "weight": 4
+        "weight": 3
       },
       {
         "source": "Daeyeoul Lee",
@@ -728,8 +683,13 @@
         "weight": 3
       },
       {
-        "source": "Hyeoncheol Kim",
-        "target": "Yeil Jeong",
+        "source": "Gyuri Byun",
+        "target": "Junbo Koh",
+        "weight": 3
+      },
+      {
+        "source": "Haesol Bae",
+        "target": "__self__",
         "weight": 3
       },
       {
@@ -738,14 +698,34 @@
         "weight": 3
       },
       {
-        "source": "Laura McNeill",
-        "target": "Omid Noroozi",
+        "source": "Junbo Koh",
+        "target": "Unggi Lee",
         "weight": 3
       },
       {
-        "source": "Laura McNeill",
-        "target": "Seyyed Kazem Banihashem",
+        "source": "Junbo Koh",
+        "target": "Yeil Jeong",
         "weight": 3
+      },
+      {
+        "source": "Junbo Koh",
+        "target": "Yunseo Lee",
+        "weight": 3
+      },
+      {
+        "source": "Junbo Koh",
+        "target": "__self__",
+        "weight": 3
+      },
+      {
+        "source": "Gi Woong Choi",
+        "target": "Haesol Bae",
+        "weight": 2
+      },
+      {
+        "source": "Gyuri Byun",
+        "target": "Hyeoncheol Kim",
+        "weight": 2
       },
       {
         "source": "Gyuri Byun",
@@ -759,12 +739,17 @@
       },
       {
         "source": "Hyeoncheol Kim",
-        "target": "Junbo Koh",
+        "target": "Yeil Jeong",
+        "weight": 2
+      },
+      {
+        "source": "Hyeoncheol Kim",
+        "target": "Yunseo Lee",
         "weight": 2
       },
       {
         "source": "Idowu David Awoyemi",
-        "target": "Raissa Marchiori",
+        "target": "Raissa Seichi Marchiori",
         "weight": 2
       },
       {
@@ -813,8 +798,33 @@
         "weight": 1
       },
       {
+        "source": "Arezoo Ghooreian",
+        "target": "Gyuri Byun",
+        "weight": 1
+      },
+      {
+        "source": "Arezoo Ghooreian",
+        "target": "Raissa Seichi Marchiori",
+        "weight": 1
+      },
+      {
+        "source": "Arezoo Ghooreian",
+        "target": "Siyuan Song",
+        "weight": 1
+      },
+      {
+        "source": "Arezoo Ghooreian",
+        "target": "Stephen Abu",
+        "weight": 1
+      },
+      {
         "source": "Daeyeoul Lee",
         "target": "JooYoung Seo",
+        "weight": 1
+      },
+      {
+        "source": "Fengfeng Ke",
+        "target": "Zhichun Liu",
         "weight": 1
       },
       {
@@ -823,7 +833,17 @@
         "weight": 1
       },
       {
-        "source": "Raissa Marchiori",
+        "source": "Haesol Bae",
+        "target": "Unggi Lee",
+        "weight": 1
+      },
+      {
+        "source": "Hyeoncheol Kim",
+        "target": "Junbo Koh",
+        "weight": 1
+      },
+      {
+        "source": "Raissa Seichi Marchiori",
         "target": "Stephen Abu",
         "weight": 1
       },
@@ -838,22 +858,15 @@
     {
       "id": "intelligent-tutoring-systems-and-adaptive-learning",
       "label": "Intelligent Tutoring Systems and Adaptive Learning",
-      "count": 63,
-      "weight": 38.864,
-      "type": "topic"
-    },
-    {
-      "id": "online-learning-and-analytics",
-      "label": "Online Learning and Analytics",
-      "count": 53,
-      "weight": 35.937,
+      "count": 61,
+      "weight": 37.653,
       "type": "topic"
     },
     {
       "id": "virtual-reality-applications-and-impacts",
       "label": "Virtual Reality Applications and Impacts",
       "count": 51,
-      "weight": 34.234,
+      "weight": 34.123,
       "type": "topic"
     },
     {
@@ -864,24 +877,31 @@
       "type": "topic"
     },
     {
+      "id": "online-learning-and-analytics",
+      "label": "Online Learning and Analytics",
+      "count": 49,
+      "weight": 32.488,
+      "type": "topic"
+    },
+    {
       "id": "artificial-intelligence-in-education",
       "label": "Artificial Intelligence in Education",
-      "count": 47,
-      "weight": 34.774,
+      "count": 45,
+      "weight": 33.266,
       "type": "topic"
     },
     {
       "id": "autism-spectrum-disorder",
       "label": "autism spectrum disorder",
-      "count": 19,
-      "weight": 15.851,
+      "count": 18,
+      "weight": 15.203,
       "type": "keyword"
     },
     {
       "id": "autism-spectrum-disorder-research",
       "label": "Autism Spectrum Disorder Research",
-      "count": 19,
-      "weight": 8.796,
+      "count": 18,
+      "weight": 8.795,
       "type": "topic"
     },
     {
@@ -901,29 +921,29 @@
     {
       "id": "teacher-professional-development",
       "label": "teacher professional development",
-      "count": 12,
-      "weight": 8.434,
+      "count": 11,
+      "weight": 8.066,
       "type": "keyword"
     },
     {
       "id": "social-robot-interaction-and-hri",
       "label": "Social Robot Interaction and HRI",
-      "count": 11,
-      "weight": 2.274,
-      "type": "topic"
-    },
-    {
-      "id": "generative-ai",
-      "label": "generative AI",
       "count": 10,
-      "weight": 8.861,
-      "type": "keyword"
+      "weight": 1.276,
+      "type": "topic"
     },
     {
       "id": "pre-service-teachers",
       "label": "pre-service teachers",
       "count": 9,
       "weight": 8.323,
+      "type": "keyword"
+    },
+    {
+      "id": "generative-ai",
+      "label": "generative AI",
+      "count": 9,
+      "weight": 8.072,
       "type": "keyword"
     },
     {
@@ -948,13 +968,6 @@
       "type": "topic"
     },
     {
-      "id": "innovative-teaching-and-learning-methods",
-      "label": "Innovative Teaching and Learning Methods",
-      "count": 8,
-      "weight": 0.432,
-      "type": "topic"
-    },
-    {
       "id": "teacher-education-and-leadership-studies",
       "label": "Teacher Education and Leadership Studies",
       "count": 8,
@@ -974,16 +987,23 @@
       "count": 7,
       "weight": 5.813,
       "type": "keyword"
+    },
+    {
+      "id": "children-with-autism",
+      "label": "children with autism",
+      "count": 7,
+      "weight": 5.797,
+      "type": "keyword"
     }
   ],
   "fieldBenchmark": {
     "provider": "OpenAlex",
     "activeMinWorks": 10,
     "self": {
-      "hIndex": 21,
+      "hIndex": 22,
       "i10Index": 32,
-      "citedByCount": 1815,
-      "worksCount": 95
+      "citedByCount": 1831,
+      "worksCount": 92
     },
     "populations": [
       {
@@ -991,80 +1011,80 @@
         "topic": "Intelligent Tutoring Systems and Adaptive Learning",
         "subfield": "Artificial Intelligence",
         "field": "Computer Science",
-        "activeCount": 9951,
+        "activeCount": 11045,
         "metrics": [
           {
             "key": "hIndex",
             "label": "h-index",
-            "me": 21,
-            "median": 7,
-            "percentile": 92.7,
-            "topPercent": 7.3
-          },
-          {
-            "key": "i10Index",
-            "label": "i10-index",
-            "me": 32,
-            "median": 5,
-            "percentile": 92.1,
-            "topPercent": 7.9
-          },
-          {
-            "key": "citedByCount",
-            "label": "Total citations",
-            "me": 1815,
-            "median": 143,
-            "percentile": 92.3,
-            "topPercent": 7.7
-          },
-          {
-            "key": "worksCount",
-            "label": "Works",
-            "me": 95,
-            "median": 23,
-            "percentile": 89.8,
-            "topPercent": 10.2
-          }
-        ]
-      },
-      {
-        "topicId": "T11122",
-        "topic": "Online Learning and Analytics",
-        "subfield": "Computer Science Applications",
-        "field": "Computer Science",
-        "activeCount": 12304,
-        "metrics": [
-          {
-            "key": "hIndex",
-            "label": "h-index",
-            "me": 21,
+            "me": 22,
             "median": 6,
-            "percentile": 95.1,
-            "topPercent": 4.9
+            "percentile": 94.2,
+            "topPercent": 5.8
           },
           {
             "key": "i10Index",
             "label": "i10-index",
             "me": 32,
             "median": 4,
-            "percentile": 94.5,
-            "topPercent": 5.5
+            "percentile": 92.9,
+            "topPercent": 7.1
           },
           {
             "key": "citedByCount",
             "label": "Total citations",
-            "me": 1815,
-            "median": 114,
-            "percentile": 94.4,
-            "topPercent": 5.6
+            "me": 1831,
+            "median": 123,
+            "percentile": 93.1,
+            "topPercent": 6.9
           },
           {
             "key": "worksCount",
             "label": "Works",
-            "me": 95,
+            "me": 92,
             "median": 22,
-            "percentile": 92.0,
-            "topPercent": 8.0
+            "percentile": 89.6,
+            "topPercent": 10.4
+          }
+        ]
+      },
+      {
+        "topicId": "T10648",
+        "topic": "Virtual Reality Applications and Impacts",
+        "subfield": "Human-Computer Interaction",
+        "field": "Computer Science",
+        "activeCount": 21427,
+        "metrics": [
+          {
+            "key": "hIndex",
+            "label": "h-index",
+            "me": 22,
+            "median": 6,
+            "percentile": 95.2,
+            "topPercent": 4.8
+          },
+          {
+            "key": "i10Index",
+            "label": "i10-index",
+            "me": 32,
+            "median": 5,
+            "percentile": 94.0,
+            "topPercent": 6.0
+          },
+          {
+            "key": "citedByCount",
+            "label": "Total citations",
+            "me": 1831,
+            "median": 128,
+            "percentile": 94.2,
+            "topPercent": 5.8
+          },
+          {
+            "key": "worksCount",
+            "label": "Works",
+            "me": 92,
+            "median": 21,
+            "percentile": 91.6,
+            "topPercent": 8.4
           }
         ]
       }

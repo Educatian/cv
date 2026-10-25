@@ -152,8 +152,7 @@
     "citation": "Park, Y., Moon, J., & Na, H. (2025). Elementary STEM teachers' open educational resources and TPACK in a professional learning network: A case study. Online Learning Journal. 29(1), 192-215. https://doi.org/10.24059/olj.v29i1.4102 [ESCI-indexed; IF = 3.1, IF5 = 3.2]",
     "abstract": "There has been growing attention on investigating elementary STEM teachers' Professional Learning Networks (PLNs). However, what types of Open Educational Resources (OER) and Technological, Pedagogical, and Content Knowledge (TPACK) elementary STEM teachers share in their PLNs are still under-examined. This case study aims to explore elementary STEM teachers' use of OER, types of TPACK, and their relationships. Using qualitative content analysis, we analyzed qualitative messages extracted from a Facebook community for elementary STEM teachers. The results showed that tools and tips were the most commonly shared among the various OER types, and technology-related knowledge (i.e., TK and TPK) emerged dominant within the PLN. Also, we discuss the implications of elementary STEM teachers' discourses on OER and TPACK in a PLN.",
     "source": "openalex",
-    "category": "International",
-    "resolvedUrl": "https://olj.onlinelearningconsortium.org/index.php/olj/article/view/4102"
+    "category": "International"
   },
   "10.1016/j.jsr.2024.11.027": {
     "title": "Developing heat stress training assessments: A training-driven methodology approach to enhance safety in the construction industry",
@@ -186,8 +185,7 @@
     "citation": "Bae, H., Hur, J., Park, J., Choi, G. W., & Moon, J. (2024). Pre-service teachers' dual perspectives on generative AI: Benefits, challenges, and integrating into teaching and learning. Online Learning https://doi.org/10.24059/olj.v28i3.4543 [ESCI-indexed; IF = 2.3, IF5 = 3.7]",
     "abstract": "This study examined pre-service teachers' perspectives on integrating generative AI (GenAI) tools into their own learning and teaching practices. Discussion posts from asynchronous online courses on ChatGPT were analyzed using the Diffusion of Innovations framework to explore familiarity, willingness to apply ChatGPT to instruction, potential benefits, challenges, and concerns about using GenAI in teaching and learning. The course discussions significantly increased pre-service teachers' awareness and foundational knowledge while reducing anxiety towards AI technologies. However, despite exposure to ChatGPT, only a few confirmed intentions to adopt AI tools in their teaching practices, potentially reflecting lingering uncertainties evidenced by emotional responses, such as worry and concern. Professional development in AI literacy can address these uncertainties and enhance GenAI familiarity. The study offers insights into responsible GenAI adoption in education and how higher education can leverage ChatGPT to enhance pre-service teacher learning.",
     "source": "openalex",
-    "category": "International",
-    "resolvedUrl": "https://olj.onlinelearningconsortium.org/index.php/olj/article/view/4543"
+    "category": "International"
   },
   "10.1007/s10758-024-09756-z": {
     "title": "Generative artificial intelligence in educational game design: Nuanced challenges, design implications, and future research",
@@ -306,8 +304,7 @@
     "citation": "‡ Moon, J. (2024). Learning experience design of verbal prompts in virtual reality-based training for autistic children. Research in Learning Technology, 32. https://dx.doi.org/10.25304/rlt.v32.3129 [ESCI-indexed, IF = 2.1, IF5 = 2.4]",
     "abstract": "This study aimed to explore the design and development of verbal prompts in virtual reality (VR)-based social skills training for autistic children. Autism indicates a category with neurodiversity that influences individuals’ capability to engage in social and cognitive tasks. This complex neurodevelopmental condition manifests in a wide array of patterns, featuring unique experiences of each individual. This study explored both advantages and challenges encountered when autistic children interact with verbal prompts in multi-user, desktop VR-based social skills training. Our explanatory case study involved VR-based learning experiences of four autistic children. We used a qualitative thematic analysis to analyse the study participants’ interaction patterns with verbal prompts in the VR-based training. Our research can contribute to both theoretical knowledge and practical design guidelines for the creation of verbal prompts in desktop VR-based training programmes tailored for autistic children.",
     "source": "openalex",
-    "category": "International",
-    "resolvedUrl": "https://journal.alt.ac.uk/index.php/rlt/article/view/3129"
+    "category": "International"
   },
   "10.1007/s10803-023-06168-3": {
     "title": "Learner experience design and unpacking sociocultural, technological, and pedagogical design considerations of spherical video-based virtual reality systems for autistic learners: A systematic literature review",
@@ -378,26 +375,22 @@
     "citation": "* Yu, J., Ma, W., Moon, J., & Denham, A. (2022). Developing a stealth assessment system using a continuous conjunctive model. Journal of Learning Analytics, 9(3), 11-31. https://doi.org/10.18608/jla.2022.7639 [ESCI-indexed, IF = 3.4, IF5 = 3.9]",
     "abstract": "Integrating learning analytics in digital game-based learning has gained popularity in recent decades. The interactive nature of educational games creates an ideal environment for learning analytics data collection. However, past research has limited success in producing accessible and effective assessments using game learning analytics. In this study, a mathematics educational game called The Nomads was designed and developed to train learners’ adaptive expertise in rational number arithmetic. Players’ game log data were captured and fitted to a cognitive diagnostic model (CDM) — CCM (continuous conjunctive model). CCM lends itself well to the complex and dynamic nature of game learning analytics. Unlike traditional CDMs, CCM generates parameters at an attribute level and offers more parsimonious diagnoses using continuous variables. The findings suggest that learners’ attribute mastery improved during the gameplay and that learners benefit from using the scaffolds for three of the attributes instructed by the game. This study presents the application of a powerful new tool for game learning analytics. Future studies can benefit from more generalized analytics models and more specified learning attributes and game tasks.",
     "source": "openalex",
-    "category": "International",
-    "resolvedUrl": "https://learning-analytics.info/index.php/JLA/article/view/7639"
+    "category": "International"
   },
   "10.18608/jla.2022.7631": {
     "title": "Multimodal data fusion to track students’ distress during educational gameplay",
     "citation": "‡ Moon, J., Ke, F., Sokolikj, Z., & Dahlstrom-Hakki, I. (2022). Multimodal data fusion to track students’ distress during educational gameplay. Journal of Learning Analytics, 9(3), 75-87. https://doi.org/10.18608/jla.2022.7631 [ESCI-indexed, IF = 3.4, IF5 = 3.9]",
     "abstract": "Using multimodal data fusion techniques, we built and tested prediction models to track middle-school student distress states during educational gameplay. We collected and analyzed 1,145 data instances, sampled from a total of 31 middle-school students’ audio- and video-recorded gameplay sessions. We conducted data wrangling with student gameplay data from multiple data sources, such as individual facial expression recordings and gameplay logs. Using supervised machine learning, we built and tested candidate classifiers that yielded an estimated probability of distress states. We then conducted confidence-based data fusion that averaged the estimated probability scores from the unimodal classifiers with a single data source. The results of this study suggest that the classifier with multimodal data fusion improves the performance of tracking distress states during educational gameplay, compared to the performance of unimodal classifiers. The study finding suggests the feasibility of multimodal data fusion in developing game-based learning analytics. Also, this study proposes the benefits of optimizing several methodological means for multimodal data fusion in educational game research.",
     "source": "openalex",
-    "category": "International",
-    "resolvedUrl": "https://learning-analytics.info/index.php/JLA/article/view/7631"
+    "category": "International"
   },
   "10.1007/s11528-021-00689-3": {
     "title": "A scoping review of three computational approaches to ethnographic research in digital learning environments",
     "citation": "Seo, J., Moon, J., Choi, G.W., & Do, J. (2022). A scoping review of three computational approaches to ethnographic research in digital learning environments. TechTrends. 66, 102–111. https://doi.org/10.1007/s11528-021-00689-3 [ESCI-indexed, IF = 5.2, IF5 = 4.6]",
-    "abstract": "The purpose of this paper is to explore three computational approaches to ethnographic research within digital learning environments: virtual ethnography; quantitative ethnography; and computational ethnography. Recently, researchers have become more interested in computational ethnographic approaches due to their alignment with the massive datasets currently available in digital archives. Although these approaches have attracted growing attention in recent years, their methodological characteristics (e.g., goals, procedures, and techniques) have yet to be fully explored. In this scoping review, we explore existing and the three emerging computational methods for ethnographic research, along with their applications within digital learning environments. We first conduct a scoping review by sampling and synthesizing 86 articles using bibliometric and thematic analyses. This review is then used to reveal the similarities and differences among the three computationally-enabled ethnographic approaches and engage in a concomitant discussion of digital learning designs. In addition, this study explores implications of this type of research for learning design. This research contributes to a better understanding of the characteristics and applications of computational approaches across various digital learning environments.",
-    "source": "playwright",
+    "abstract": "",
+    "source": "unavailable",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/article/10.1007/s11528-021-00689-3",
-    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs11528-021-00689-3/MediaObjects/11528_2021_689_Fig1_HTML.png",
-    "thumbnailSource": "playwright"
+    "resolvedUrl": "https://link.springer.com/10.1007/s11528-021-00689-3"
   },
   "10.1177/0162643420945603": {
     "title": "Virtual reality-based social skills training for children with autism spectrum disorder",
@@ -409,20 +402,17 @@
   "10.1007/s10798-021-09672-8": {
     "title": "Exploring pre-service teachers’ technology-integration belief and scientific inquiry in a teacher-development course",
     "citation": "‡ Moon, J., Lee, S., & Xu, X. (2022). Exploring pre-service teachers’ technology-integration belief and scientific inquiry in a teacher-development course. International Journal of Technology and Design Education, 32, 1777–1798. https://doi.org/10.1007/s10798-021-09672-8 [SCIE- and SSCI-indexed, IF = 2.9, IF5 = 3.3]",
-    "abstract": "We implemented design practices for a total of 85 pre-service teachers in a teacher-development course. This mixed-method study explored how design practices promoted pre-service teachers’ technology-integration belief and the awareness of scientific-inquiry. In teacher-development courses, the goal of design practices is to enhance pre-service teachers’ awareness and capabilities of design practices and their educational applications. A recent integration between design practices and scientific inquiry in teacher-development courses aims to foster pre-service teachers’ contextual understandings of technology integration in STEM education. Despite the potential impact of design practices on scientific inquiry in teacher training, a challenge remains. Existing studies appear limited to capture in-situ data on how pre-service teachers’ technology-integration belief emerges via design practices. Also, few empirical studies explored how design practices can foster pre-service teachers’ scientific inquiry experiences. Hence, the present study used both text mining and qualitative thematic analysis to uncover how pre-service teachers’ technology-integration beliefs and scientific-inquiry experiences emerged throughout design practices. The result of this study suggests that pre-service teachers enhanced technology-integration beliefs and the awareness of scientific-inquiry via design practices. This study has several implications on design practices in teacher training, as well as the viability of text mining as an alternative assessment to measure design learning experiences.",
-    "source": "playwright",
+    "abstract": "",
+    "source": "unavailable",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/article/10.1007/s10798-021-09672-8",
-    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs10798-021-09672-8/MediaObjects/10798_2021_9672_Fig1_HTML.png",
-    "thumbnailSource": "playwright"
+    "resolvedUrl": "https://link.springer.com/10.1007/s10798-021-09672-8"
   },
   "10.19173/irrodl.v22i1.5110": {
     "title": "A scoping review on open educational resources to support interactions of learners with disabilities",
     "citation": "‡ Moon, J., & Park, Y. (2021). A scoping review on open educational resources to support interactions of learners with disabilities. The International Review of Research in Open and Distributed Learning https://doi.org/10.19173/irrodl.v22i1.5110 [SSCI-indexed, IF = 4.5, IF5 = 3.7]",
     "abstract": "This scoping review explored the trends in open educational resources (OER) that support the interactions of learners with disabilities and the challenges of supporting these interactions in such environments. Emerging OER and open educational practices allow learners to interact with digital learning resources in self-regulated learning. Since OER assume learners’ self-regulation, research has explored how to promote learner interactions to facilitate better engagement and motivation. Emerging research on OER-enabled pedagogy corroborate this trend. However, despite increasing interest in OER and open educational practices, few studies have demonstrated how OER support various types of interactions for learners with disabilities. Learners with disabilities are likely to experience challenges in interacting with OER due to their modality constraints. A comprehensive literature synthesis is essential to investigate the needs of learners with disabilities in their interactions in OER. In this study, we reviewed and synthesized existing research on how OER and open educational practices support the interactions of learners with disabilities across different OER platforms. Our findings suggest both research and design implications for future OER designs suited for learners with disabilities.",
     "source": "openalex",
-    "category": "International",
-    "resolvedUrl": "https://www.irrodl.org/index.php/irrodl/article/view/5110"
+    "category": "International"
   },
   "10.9781/ijimai.2021.03.003": {
     "title": "A systematic literature review of empirical studies on learning analytics in educational games",
@@ -441,22 +431,18 @@
   "10.1007/s11423-020-09791-4": {
     "title": "Integrating adaptivity to educational games: A combination of bibliometric and meta-analytic review",
     "citation": "Liu, Z., Moon, J., Kim, B., & Dai, C. (2020). Integrating adaptivity to educational games: A combination of bibliometric and meta-analytic review. Educational Technology Research and Development. 68, 1931-1959. https://doi.org/10.1007/s11423-020-09791-4 [SSCI-indexed, IF = 4.2, IF5 = 5.3]",
-    "abstract": "In this synthesis, we systematically review research on educational games with adaptivity. Although an adaptive gaming experience provides personalization to learning, the complexity of design makes it difficult to evaluate its effectiveness. In this systematic review, we adopt three analytic approaches: (1) bibliometric analysis, (2) qualitative thematic analysis, and (3) meta-analysis. We identified 62 relevant publications and used bibliometric analysis to visualize the hidden conceptual structure among the articles. We then used thematic analysis to investigate the emerging themes in the research and inform the coding for meta-analysis. Twelve articles that used experimental designs were further screened to model the effect of adding adaptivity to educational games. We found that an adaptive learning condition does not produce a substantial overall effect compared to a non-adaptive condition (g = .11, p = .26). Furthermore, moderator analysis reveals that the design variability of adaptivity does not contribute as much to heterogeneity as hypothesized. However, the effect size is positive when the target outcome focuses on learning (g = .39, p &lt; .001) and engagement (g = .41, p = .13). The effect size is negative when the target outcome focuses on game performance (g = −&nbsp;.27, p = .04). In addition, we find evidence for a potential publication bias based on the distribution of effect sizes.",
-    "source": "playwright",
+    "abstract": "",
+    "source": "unavailable",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/article/10.1007/s11423-020-09791-4",
-    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs11423-020-09791-4/MediaObjects/11423_2020_9791_Fig1_HTML.png",
-    "thumbnailSource": "playwright"
+    "resolvedUrl": "https://link.springer.com/10.1007/s11423-020-09791-4"
   },
   "10.1007/s12528-020-09255-x": {
     "title": "The effects of social and cognitive cues on learning comprehension, eye-gaze pattern, and cognitive load in video instruction",
     "citation": "‡ Moon, J., & Ryu, J. (2020). The effects of social and cognitive cues on learning comprehension, eye-gaze pattern, and cognitive load in video instruction. Journal of Computing in Higher Education, 33, 39–63. https://doi.org/10.1007/s12528-020-09255-x [SSCI-indexed, IF = 4.3, IF5 = 5.8]",
-    "abstract": "Students experience challenges when understanding visual information in multimedia learning. Specifically, immersive multimedia&nbsp;environments, such as virtual reality increase the likelihood that students undergo distractions in which information seeking during system-paced instruction occurred. Although previous studies have reviewed various cue designs to yield students’ higher attention, skepticism still exists regarding which ways cue designs can support their learning comprehension in video instruction. For this study, we sampled a total of 64 undergraduates in a university. Using video instruction performed by an animated pedagogical agent (APA), this study examined the effect of social (i.e., an APA’s conversational gestures) and cognitive (i.e., visual cue) cues on students’ learning comprehension and eye-gaze data within types of visual information (text and pictorial). Also, this study investigated how both cues promoted students’ cognitive load overall. Specific to text information processing, the results of the study confirmed that the negative prime effect of social cues undermined students’ learning comprehension and increased their cognitive load, whereas cognitive cues appeared to be supportive in video instruction. Also, this study found that students’ different visual-attention patterns appeared in pictorial information processing. In terms of pictorial information processing, the study finding implies that whereas social cues caused visual distractions and lowered learning comprehension, cognitive cues as visual cues helped learners to integrate pictorial information via visuospatial clues. Conclusively, we reported several design implications derived from the study findings.",
-    "source": "playwright",
+    "abstract": "",
+    "source": "unavailable",
     "category": "International",
-    "resolvedUrl": "https://link.springer.com/article/10.1007/s12528-020-09255-x",
-    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs12528-020-09255-x/MediaObjects/12528_2020_9255_Fig1_HTML.png",
-    "thumbnailSource": "playwright"
+    "resolvedUrl": "https://link.springer.com/10.1007/s12528-020-09255-x"
   },
   "10.1177/1046878120907940": {
     "title": "Exploring the relationships among middle school students’ peer interactions, task efficiency, and learning engagement in game-based learning",
@@ -506,6 +492,7 @@
     "citation": "Ryu, J., Jung, H., & Moon, J. (2013). Needs analysis of distance education students for using e-textbooks on smart pads. The Journal of the Korea Content, 13(10), 594-603. http://doi.org/10.5392/JKCA.2013.13.10.594",
     "abstract": "이 연구는 원격대학 학습자의 연령 및 성별에 따라서 스마트패드용 전자교재 사용에 대한 인식의 차이를 분석한 것이다. 원격대학의 성인학습자들은 다양한 연령대를 포함하고 있기 때문에 연령에 의한 변수를 고려해서 전자교재를 설계하는 것이 바람직하다. 이 연구에서는 원격대학 재학생을 대상으로 스마트패드를 사용한 전자교재 개발에 대하여 초점집단 면담을 실시했다. 또한 스마트패드 사용경험이 있는 재학생 762명을 대상으로 전자교재의 사용의도 및 이용실태에 대한 내용을 분석했다. 이 중에서 남학생=343명(45%), 여학생=419명(55%)이었다. 또한 연령대는 20대=150명(19.7%), 30대=271명(35.6%), 40대=224명(29.4%), 50대 이상=117명(15.4%)이었다. 우선 학습자의 실제적인 요구를 파악하기 위하여 초점집단면담을 실시했으며, 전자교재를 설계할 때는 전자교재의 휴대성과 가독성이 가장 중요하다는 사실을 확인할 수 있었다. 스마트패드에 대한 이용실태를 보면, 20대와 30대에서 여가목적으로 스마트패드를 사용하는 경우가 유의미하게 높게 나타났다. 그러나 학습을 위한 용도로 사용한 것에 대해서는 연령이나 성별에 의한 차이가 없었다. 전자책 읽기를 위해서 스마트패드를 사용하는 실태를 조사했는데, 주로 20대와 30대의 이용시간이 유의미하게 높게 나타났다. In this study, we analyzed the needs of open university students for e-textbooks by conducting focus group interviews (FGIs) and surveys in order to develop an e-textbook that is suited to their needs. The FGIs revealed that readability and portability of e-textbooks were the most important features for students. The surveys showed that of the 276 respondents who participated in the study, only a small number owned smartpads; however, a sizeable number of students intended on purchasing the device in the future. In addition, students' smartpad utilization, time spent reading e-books, and time allotted for studying as opposed to leisure and commercial use of social network services on the smartpad were examined. Students attached importance to the portability, weight, and price of the e-textbook; moreover, they considered the device's ability to support interaction in a variety of ways and rich multimedia resources to be an advantage. Finally, students also felt that e-textbooks should be less expensive than print textbooks; however, they were willing to pay a higher price, depending on the quality of the content.",
     "source": "openalex",
-    "category": "Korean"
+    "category": "Korean",
+    "resolvedUrl": "https://koreascience.or.kr/article/JAKO201333363223465.page"
   }
 }
