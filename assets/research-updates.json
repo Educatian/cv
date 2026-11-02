@@ -1,0 +1,70 @@
+{
+  "updatedAt": "2026-11-02",
+  "news": [
+    {
+      "date": "2026-11-02",
+      "type": "Submission",
+      "text": "Submitted to Computers and Education: Artificial Intelligence with Joy Y. Lee: Evaluating generative AI tutors across learners’ cognitive profiles through post hoc log analysis."
+    },
+    {
+      "date": "2026-11-02",
+      "type": "Conference proposal",
+      "text": "Submitted to the Online Learning Innovation Summit 2027: RemixEd: Intentional teaching with AI-assisted interactive learning design."
+    },
+    {
+      "date": "2026-11-01",
+      "type": "Abstract submission",
+      "text": "Abstract submitted to the Journal of Educational Administration special issue on AI disruption: Leading through technological uncertainty: How U.S. school districts configure AI governance."
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Submission",
+      "text": "Submitted to Educational Technology & Society: Beyond participation: A two-layer analysis of ethical grounds and discourse strategies in educational ethics chatbot dialogue."
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Revised submission",
+      "text": "Revised manuscript submitted to the Journal of Educational Computing Research: Interpreting game-based programming logs across levels of analysis."
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Accepted",
+      "text": "GAIDE: A guiding framework for K-12 teachers in creating AI-powered learning technologies through vibe coding accepted by the Journal of Research on Technology in Education; now in production."
+    },
+    {
+      "date": "2026-10-21",
+      "type": "Submission",
+      "text": "Submitted to the Journal of Computer Assisted Learning: Crafting digital narratives for learning: A systematic review of scenario-based learning design in virtual reality."
+    },
+    {
+      "date": "2026-10-10",
+      "type": "Chapter submission",
+      "text": "Learning analytics in CALL research: Possibilities and limitations submitted to The Palgrave Encyclopedia of Computer-Assisted Language Learning."
+    },
+    {
+      "date": "2026-10-06",
+      "type": "Chapter submission",
+      "text": "From conversational to agentic AI: The human-AI research mentoring cycle submitted with Mohammad Mohi Uddin for The Science and Practice of Mentorship: Models and Emerging Paradigms in Artificial Intelligence; revision in progress."
+    },
+    {
+      "date": "2026-09-28",
+      "type": "Submission",
+      "text": "Submitted to the Journal of Research in Science Teaching: Technology use in K-12 science education, 2014–2024: A scoping review."
+    },
+    {
+      "date": "2026-09-16",
+      "type": "Submission",
+      "text": "Submitted to the Journal of Computing in Higher Education: Designing for trust in black-box AI: The effects of a RAG-based AI tutor chatbot on AI trust, learning engagement, and academic achievement in higher education."
+    },
+    {
+      "date": "2026-09-16",
+      "type": "Chapter accepted",
+      "text": "Beyond behavioral traces: Modeling epistemic reasoning structures through multimodal serious games analytics in immersive virtual reality accepted for Serious Games Analytics in the Age of AI."
+    },
+    {
+      "date": "2026-09-15",
+      "type": "Published",
+      "text": "Design affordance diagnostic framework: Screening construct-irrelevant variance in computational thinking assessment published online in Interactive Learning Environments. DOI: 10.1080/10494820.2026.2730634."
+    }
+  ]
+}

@@ -834,12 +834,12 @@ def parse_book_chapters(paragraphs: Sequence[str]) -> List[Dict[str, object]]:
 
 
 def parse_status_from_working_paper(citation: str) -> str:
-    match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|abstract accepted[^)]*)\)", citation, re.I)
+    match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|Abstract submitted|abstract accepted[^)]*)\)", citation, re.I)
     return clean_text(match.group(1)) if match else "Working paper"
 
 
 def parse_authors_from_working_paper(citation: str) -> str:
-    status_match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|abstract accepted[^)]*)\)", citation, re.I)
+    status_match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|Abstract submitted|abstract accepted[^)]*)\)", citation, re.I)
     if not status_match:
         return parse_authors_from_citation(citation)
     return clean_text(citation[: status_match.start()])
@@ -851,7 +851,7 @@ def clean_working_paper_remainder(text: str) -> str:
 
 
 def parse_title_from_working_paper(citation: str) -> str:
-    status_match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|abstract accepted[^)]*)\)\.\s*", citation, re.I)
+    status_match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|Abstract submitted|abstract accepted[^)]*)\)\.\s*", citation, re.I)
     if not status_match:
         return parse_title_from_citation(citation)
     after_status = clean_working_paper_remainder(citation[status_match.end() :])
@@ -860,7 +860,7 @@ def parse_title_from_working_paper(citation: str) -> str:
 
 
 def parse_working_paper_venue(citation: str) -> str:
-    status_match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|abstract accepted[^)]*)\)\.\s*", citation, re.I)
+    status_match = re.search(r"\((Submitted|Under review|In preparation|Revising to resubmit|Abstract submitted|abstract accepted[^)]*)\)\.\s*", citation, re.I)
     if not status_match:
         return ""
     after_status = clean_working_paper_remainder(citation[status_match.end() :])
@@ -884,6 +884,14 @@ def parse_working_papers(paragraphs: Sequence[str]) -> Dict[str, object]:
             return
         citation = clean_text(" ".join(buffer))
         title = parse_title_from_working_paper(citation)
+        venue = parse_working_paper_venue(citation)
+        if paper_type == "Book Chapter":
+            chapter_match = re.search(r"\)\.\s*(.+)", citation)
+            if chapter_match:
+                chapter_title, separator, context = chapter_match.group(1).partition(". ")
+                if separator:
+                    title = clean_text(chapter_title)
+                    venue = clean_text(context.strip(" ."))
         status = parse_status_from_working_paper(citation)
         items.append(
             {
@@ -893,7 +901,7 @@ def parse_working_papers(paragraphs: Sequence[str]) -> Dict[str, object]:
                 "year": extract_year(citation) or "Pipeline",
                 "title": title,
                 "authors": parse_authors_from_working_paper(citation),
-                "venue": parse_working_paper_venue(citation),
+                "venue": venue,
                 "citation": citation,
                 "link": extract_url(citation),
             }
@@ -1356,6 +1364,16 @@ def build_site_data(cv_path: Path) -> Dict[str, object]:
     )
     overview = build_overview(profile, focus_areas)
     news = parse_news(publications_data["publications"], grants_data["grants"], honors, talks)
+    updates_path = ROOT / "assets" / "research-updates.json"
+    if updates_path.exists():
+        updates = json.loads(updates_path.read_text(encoding="utf-8"))
+        dated_news = updates.get("news", [])
+        if dated_news:
+            for item in dated_news:
+                dt.date.fromisoformat(item["date"])
+                if not all(isinstance(item.get(key), str) and item[key].strip() for key in ("type", "text")):
+                    raise ValueError("Each research update requires a date, type, and text.")
+            news = sorted(dated_news, key=lambda item: item["date"], reverse=True)
     initiatives = parse_initiatives(grants_data["grants"], publications_data["publications"])
     stats = parse_stats(paragraphs, grants_data["grantPortfolio"])
 

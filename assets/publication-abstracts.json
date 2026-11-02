@@ -43,15 +43,6 @@
     "category": "International",
     "resolvedUrl": "https://link.springer.com/10.1007/s10648-026-10186-9"
   },
-  "10.1080/10494820.2026.2690104": {
-    "title": "A cultural-historical activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education",
-    "citation": "‡ Moon, J. (2026). A cultural-historical activity theory-anchored learning analytics pipeline for early detection and social-epistemic integration in AI literacy education. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2690104 [SSCI-indexed, IF =6.7, IF5 = 7.1]",
-    "abstract": "Small discussion-based classes generate rich digital traces but lack analytic tools integrating behavior and discourse without large-sample statistics or full network reconstruction. We present a CHAT-anchored analytics pipeline coupling three facets (i.e. temporal participation, discourse quality, concept sophistication) mapped to Cultural-Historical Activity Theory elements, reporting uncertainty via effect sizes with bootstrap confidence intervals. Deployed in a five-week AI literacy course (n = 25; 438 posts), DTW-based k-medoids clustering identifies two stable participation archetypes, validated with bootstrap silhouette analysis. Discourse quality shows modest lexical polish gains, but reasoning depth stagnates; overall concept sophistication declines (Δz = –1.24). Reserved Observers retain behavior-episteme mismatches, signaling Subject-Community tension. An Isolation-Forest detector flags Week 2 volatility two weeks before participation decline, robustly reproduced across contamination settings 0.05–0.25. Convergent validity between automated DQI and human-coded ICAP levels confirmed substantive alignment. Results demonstrate theory-aware, effect-size-centered workflows deliver interpretable insights and early warnings in single classes without network reconstruction overhead, demonstrating feasibility for small-cohort learning analytics through a proof-of-concept implementation.",
-    "source": "tandfonline_frontpage_override",
-    "category": "International",
-    "resolvedUrl": "https://www.tandfonline.com/doi/full/10.1080/10494820.2026.2690104",
-    "thumbnailUrl": "https://covers.tandf.co.uk/og/NILE.png"
-  },
   "10.1080/10508422.2026.2685014": {
     "title": "Human-centered generative AI in education: Ethical challenges and equity-driven solutions",
     "citation": "* Abu, S., Uddin, M., Moon, J., Awoyemi, I., Baah-Mintah, R., & Ghooreian, A. (2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior. http://dx.doi.org/10.1080/10508422.2026.2685014 [SSCI-indexed, IF = 2.3, IF5 = 2.5]",
@@ -74,16 +65,6 @@
     "category": "International",
     "resolvedUrl": "https://link.springer.com/article/10.1007/s43681-026-01056-9",
     "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs43681-026-01056-9/MediaObjects/43681_2026_1056_Fig1_HTML.png",
-    "thumbnailSource": "playwright"
-  },
-  "10.1007/s41237-025-00286-1": {
-    "title": "Decoding immersive learning states: A reproducible microgenetic pipeline for behavioral data in virtual reality safety training",
-    "citation": "‡ * Moon, J., Awoyemi, I., Abu, S., Marchiori, S., & Song, S. (2026). Decoding immersive learning states: A reproducible microgenetic pipeline for behavioral data in virtual reality safety training. Behaviormetrika. https://doi.org/10.1007/s41237-025-00286-1 [SCOPUS-indexed]",
-    "abstract": "This study presents a reproducible microgenetic analytics pipeline for decoding fine-grained learning states in virtual reality (VR)–based safety training. Using high-frequency behavioral telemetry from 24 undergraduate civil engineering students in an 18-minute VR heat-stress scenario, we infer latent learner states at 15-second intervals by combining sliding-window segmentation, expert-coded behavioral taxonomies, a Bayesian Cognitive Diagnostic Model (CDM), and KL-regularized feature selection. Learning was modeled as transitions among four microgenetic states—Novice, Developing, Competent, and Expert—grounded in an expert-validated Q-matrix. Across 502 windows, learners spent most of their time in advanced phases (Competent = 35.7%, Expert = 26.9%), yet substantial individual heterogeneity emerged, with some participants remaining novice-persistent and others expert-dominant. Markov chain analysis revealed highly stable learning phases with minimal cross-state transitions, suggesting that effective VR safety performance reflects sustained engagement within coherent microgenetic states rather than frequent oscillation. Under leave-one-subject-out validation, our diagnostic model achieved robust generalization (accuracy = 0.857, macro-F1 = 0.789), with novice-like help-seeking frequency, expert-like proactive behaviors, and temporal efficiency emerging as the most predictive indicators. These findings highlight the limitations of aggregate, post-hoc performance metrics, demonstrate the feasibility of interpretable, probabilistic state estimation in small-N, big-T VR datasets, and point to concrete opportunities for adaptive scaffolding and archetype-informed instructional design in immersive safety training.",
-    "source": "playwright",
-    "category": "International",
-    "resolvedUrl": "https://link.springer.com/article/10.1007/s41237-025-00286-1",
-    "thumbnailUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1007%2Fs41237-025-00286-1/MediaObjects/41237_2025_286_Fig1_HTML.png",
     "thumbnailSource": "playwright"
   },
   "10.1016/j.cexr.2025.100124": {

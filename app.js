@@ -163,19 +163,6 @@ const publications = siteData.publications || [
     imageAlt: "Figure preview from the AI & Ethics article",
   },
   {
-    year: "2026",
-    title:
-      "Decoding immersive learning states: A reproducible microgenetic pipeline for behavioral data in virtual reality safety training",
-    authors: "Moon, J., Awoyemi, I., Abu, S., Marchiori, R., & Song, S.",
-    venue: "Behaviormetrika",
-    link: "https://doi.org/10.1007/s41237-025-00286-1",
-    tags: ["XR", "Analytics", "Safety"],
-    note: "corresponding author",
-    image:
-      "https://static-content.springer.com/image/art%3A10.1007%2Fs41237-025-00286-1/MediaObjects/41237_2025_286_Fig1_HTML.png",
-    imageAlt: "Figure preview from the Behaviormetrika article",
-  },
-  {
     year: "2025",
     title:
       "Fostering innovation at the intersection of maker education and extended reality (XR)",
@@ -307,13 +294,6 @@ const completeJournalArticles = siteData.completeJournalArticles || [
     citation:
       "* Uddin, M., Moon, J.& Abu, S. (2026). An ethical framework for conversational AI in higher education: Toward an evidence-based ethical governance. AI & Ethics. https://doi.org/10.1007/s43681-026-01056-9",
     link: "https://doi.org/10.1007/s43681-026-01056-9",
-  },
-  {
-    year: "2026",
-    category: "International",
-    citation:
-      "‡ * Moon, J., Awoyemi, I., Abu, S., Marchiori, S., & Song, S. (2026). Decoding immersive learning states: A reproducible microgenetic pipeline for behavioral data in virtual reality safety training. Behaviormetrika. https://doi.org/10.1007/s41237-025-00286-1 [SCOPUS-indexed]",
-    link: "https://doi.org/10.1007/s41237-025-00286-1",
   },
   {
     year: "2025",
