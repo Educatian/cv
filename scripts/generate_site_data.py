@@ -11,15 +11,15 @@ from typing import Dict, List, Optional, Sequence
 from docx import Document
 
 
-ROOT = Path(__file__).resolve().parents[1]
-# The CV source is auto-discovered: the parser scans the repo root for the
-# newest CV_<date>_MOON.docx and parses that. Drop a newer dated file in the
-# root and it becomes canonical automatically; no path edits needed.
-CV_GLOB = "CV_*_MOON.docx"
-CV_DATE_RE = re.compile(r"CV_(\d{4,8})_MOON\.docx$", re.I)
-DEFAULT_CV_PATH = ROOT / "CV_202605_MOON.docx"
-
-
+ROOT = Path(__file__).resolve().parents[1]
+# The CV source is auto-discovered: the parser scans the repo root for the
+# newest CV_<date>_MOON.docx and parses that. Drop a newer dated file in the
+# root and it becomes canonical automatically; no path edits needed.
+CV_GLOB = "CV_*_MOON.docx"
+CV_DATE_RE = re.compile(r"CV_(\d{4,8})_MOON\.docx$", re.I)
+DEFAULT_CV_PATH = ROOT / "CV_202605_MOON.docx"
+
+
 def find_latest_cv() -> Optional[Path]:
     """Return the newest CV_<date>_MOON.docx in the repo root, or None.
 
@@ -1375,13 +1375,13 @@ def parse_initiatives(
     return cards[:5]
 
 
-def choose_cv_path(explicit_path: Optional[Path]) -> Path:
-    if explicit_path:
-        return explicit_path.resolve()
-
-    return find_latest_cv() or DEFAULT_CV_PATH
-
-
+def choose_cv_path(explicit_path: Optional[Path]) -> Path:
+    if explicit_path:
+        return explicit_path.resolve()
+
+    return find_latest_cv() or DEFAULT_CV_PATH
+
+
 def build_site_data(cv_path: Path) -> Dict[str, object]:
     paragraphs = load_paragraphs(cv_path)
     contact = parse_contact(paragraphs)
