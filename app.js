@@ -1054,6 +1054,13 @@ let publicationLookupCache = null;
 let abstractLibraryPromise = null;
 
 const journalFrontProfiles = {
+  "Journal of Research on Technology in Education": {
+    publisher: "Taylor & Francis / ISTE",
+    masthead: "Journal of Research on Technology in Education",
+    spotlight: "Technology-enhanced teaching and learning",
+    theme: "theme-cobalt",
+    coverImage: "assets/journal-covers/jrte-official.jpg",
+  },
   "AI & Society": {
     publisher: "Springer Nature",
     masthead: "AI & Society",
