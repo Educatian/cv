@@ -23,6 +23,7 @@
           ${course.url ? `<a class="teaching-course-link" href="${html(course.url)}" target="_blank" rel="noopener noreferrer">Explore ${html(course.code)} <span aria-hidden="true">↗</span></a>` : ""}
         </div></details>
         ${course.url ? `<a class="teaching-course-link design-primary-link" href="${html(course.url)}" target="_blank" rel="noopener noreferrer">Open course website <span aria-hidden="true">↗</span></a>` : ""}
+        ${course.access ? `<p class="design-access-note">Course access: <strong>${html(course.access)}</strong></p>` : ""}
       </div>
     </article>`;
   root.innerHTML = `

@@ -17,6 +17,18 @@ window.__cvTeachingDesign = {
   ],
   openCourses: [
     {
+      code: "OpenStory",
+      title: "OpenStory Studio: Professional Instructional Design and Development",
+      status: "Open courseware",
+      year: "2026",
+      image: "assets/teaching/openstory.jpg",
+      imageAlt: "OpenStory Studio course artwork showing a branching path toward learning resources and media",
+      summary: "A self-paced English studio for designing, building, and publishing interactive learning experiences with OpenStory.",
+      topics: ["Instructional design", "Interactive authoring", "Accessible learning"],
+      detail: "Includes 16 foundations modules, narrated screen tutorials, an integrated scenario-design case, and four portfolio milestones. Learners move from a design brief and storyboard to an accessible interactive prototype and a SCORM 1.2 release candidate for Moodle.",
+      access: "To be announced"
+    },
+    {
       code: "DALE",
       title: "Designing Adaptive Learning Environments",
       subtitle: "Interaction, Personalization, and Analytics",

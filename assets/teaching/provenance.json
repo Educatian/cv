@@ -22,6 +22,11 @@
     {
       "file": "ai-formative-assessment.svg",
       "description": "Original identity illustration for a planned course; no live course implied."
+    },
+    {
+      "file": "openstory.jpg",
+      "description": "Existing owner OpenStory Studio course artwork, copied unchanged. Public course access is to be announced.",
+      "sha256": "916aa9e1a08e1bc76b042006967766c5e85518d1997ddefb3d1a5f4f98569d85"
     }
   ]
 }
