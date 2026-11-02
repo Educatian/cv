@@ -1,0 +1,27 @@
+{
+  "updated": "2026-11-02",
+  "assets": [
+    {
+      "file": "dale.jpg",
+      "source": "https://dale.teachplay.dev/",
+      "description": "Existing owner course artwork, copied unchanged from the canonical DALE project."
+    },
+    {
+      "file": "sbl.jpg",
+      "source": "https://sbl.teachplay.dev/",
+      "description": "Existing owner course artwork, copied unchanged from the canonical SBL project."
+    },
+    {
+      "file": "ail-691.svg",
+      "description": "Original course identity illustration; not an application screenshot."
+    },
+    {
+      "file": "ail-692.svg",
+      "description": "Original course identity illustration; not an application screenshot."
+    },
+    {
+      "file": "ai-formative-assessment.svg",
+      "description": "Original identity illustration for a planned course; no live course implied."
+    }
+  ]
+}

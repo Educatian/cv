@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-02T21:16:02.248258+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-11-02T21:54:12.839873+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "November 2, 2026",
@@ -20,8 +20,8 @@
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx",
-    "cvDownloadFilename": "CV_202605_MOON.docx"
+    "cvDownloadPath": "CV_202605_MOON.docx?v=791793c64700",
+    "cvDownloadFilename": "CV_20261102_MOON.docx"
   },
   "contact": {
     "email": "jmoon19@ua.edu",
@@ -51,7 +51,7 @@
       "label": "Book chapters"
     },
     {
-      "value": "43",
+      "value": "42",
       "label": "Working papers"
     },
     {
@@ -232,7 +232,7 @@
       "tags": [
         "$476,424",
         "Lead PI",
-        "Institute of Museum and Library Services – IMLS"
+        "Total award $476,424, Institute of Museum and Library Services – IMLS"
       ]
     },
     {
@@ -242,7 +242,7 @@
       "tags": [
         "$23,300",
         "Co-PI, overseas / UA",
-        "National Research Foundation of Korea (NRF) 2026 Joint Research Support Program (International Type), Total award approximately ; UA overseas allocation approximately"
+        "National Research Foundation of Korea (NRF) 2026 Joint Research Support Program (International Type), Total award approximately $162,600; UA overseas allocation approximately $23,300"
       ]
     },
     {
@@ -251,27 +251,28 @@
       "summary": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
       "tags": [
         "$5,700",
+        "$5,700",
         "June 2027-August 2027"
       ]
     },
     {
       "name": "Risk-Adaptive Human Oversight for Agentic AI Learning",
       "badge": "Pending",
-      "summary": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency. Charles Koch Foundation",
+      "summary": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency",
       "tags": [
         "$110,669",
         "Lead PI",
-        "Requested amount"
+        "Charles Koch Foundation, Requested amount $110,669"
       ]
     },
     {
       "name": "TRACE-Reg",
       "badge": "Pending",
-      "summary": "TRACE-Reg: A Privacy-by-Design",
+      "summary": "TRACE-Reg: A Privacy-by-Design, Agency-Preserving Emotion-Regulation Agent for Adult Learners",
       "tags": [
         "$100,000",
         "Lead PI",
-        "Agency-Preserving Emotion-Regulation Agent for Adult Learners. Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget"
+        "Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget $100,000"
       ]
     }
   ],
@@ -518,7 +519,7 @@
       "year": "2025",
       "title": "Elementary STEM teachers' open educational resources and TPACK in a professional learning network: A case study",
       "authors": "Park, Y., Moon, J., & Na, H.",
-      "venue": "Online Learning Journal. 29(1), 192-215",
+      "venue": "Online Learning Journal",
       "link": "https://doi.org/10.24059/olj.v29i1.4102",
       "tags": [
         "Teacher Ed",
@@ -652,7 +653,7 @@
       "year": "2024",
       "title": "A case study of South Korean elementary school teachers’ emergence remote teaching",
       "authors": "Choi, G. W., Lim, J., Kim, S., Moon, J., & Jung, Y.",
-      "venue": "Knowledge Management & e-learning: International Journal. 16(2). 259-285",
+      "venue": "Knowledge Management & e-learning: International Journal",
       "link": "https://doi.org/10.34105/j.kmel.2024.16.013",
       "tags": [
         "Teacher Ed"
@@ -705,7 +706,7 @@
       "year": "2024",
       "title": "Applying multimodal data fusion to track autistic adolescents’ representational flexibility development during virtual reality-based training",
       "authors": "Moon, J., Ke, F., Sokolikj, Z., & Chakraborty, S.",
-      "venue": "Computers & Education: X Reality, 4, 100063",
+      "venue": "Computers & Education: X Reality",
       "link": "https://doi.org/10.1016/j.cexr.2024.100063",
       "tags": [
         "XR",
@@ -719,7 +720,7 @@
       "year": "2024",
       "title": "Feedback sources in essay writing: peer-generated or AI-generated feedback?",
       "authors": "Banihashem, K., Kerman, N. T., Noroozi, O., Moon, J., & Drachsler, H.",
-      "venue": "International Journal of Educational Technology in Higher Education, 21, 23",
+      "venue": "International Journal of Educational Technology in Higher Education",
       "link": "https://doi.org/10.1186/s41239-024-00455-4",
       "tags": [
         "Higher Ed"
@@ -743,7 +744,7 @@
       "year": "2024",
       "title": "Effects of artificial intelligence-powered virtual agents on learning outcomes in simulation-based learning: A meta-analysis",
       "authors": "Dai, C., Ke, F., Pan, Y., Moon, J., & Liu, Z.",
-      "venue": "Educational Psychology Review, 36, 31",
+      "venue": "Educational Psychology Review",
       "link": "https://doi.org/10.1007/s10648-024-09855-4",
       "tags": [
         "GenAI",
@@ -756,7 +757,7 @@
       "year": "2024",
       "title": "Learning experience design of verbal prompts in virtual reality-based training for autistic children",
       "authors": "Moon, J.",
-      "venue": "Research in Learning Technology, 32",
+      "venue": "Research in Learning Technology",
       "link": "https://dx.doi.org/10.25304/rlt.v32.3129",
       "tags": [
         "XR",
@@ -797,7 +798,7 @@
       "year": "2023",
       "title": "Revisiting multimedia learning design principles in virtual reality-based learning environments for autistic individuals",
       "authors": "Moon, J., Choi, G. W., & Seo, J.",
-      "venue": "Virtual Reality, 27, 3101-3113",
+      "venue": "Virtual Reality",
       "link": "https://doi.org/10.1007/s10055-023-00856-2",
       "tags": [
         "XR",
@@ -823,7 +824,7 @@
       "year": "2023",
       "title": "A framework for applying sequential data analytics to design personalized digital game-based learning for computing education",
       "authors": "Liu, Z., & Moon, J.",
-      "venue": "Journal of Educational Technology & Society, 26(2), 181-197",
+      "venue": "Journal of Educational Technology & Society",
       "link": "https://doi.org/10.30191/ETS.202304_26(2).0013",
       "tags": [
         "Analytics",
@@ -850,7 +851,7 @@
       "year": "2022",
       "title": "Designing and deploying a virtual social sandbox for children with autism",
       "authors": "Ke, F., Moon, J., & Sokolikj, Z.",
-      "venue": "Disability and Rehabilitation: Assistive Technology, 19(4), 1178-1209",
+      "venue": "Disability and Rehabilitation: Assistive Technology",
       "link": "https://doi.org/10.1080/17483107.2022.2156630",
       "tags": [
         "Autism"
@@ -862,7 +863,7 @@
       "year": "2022",
       "title": "Developing a stealth assessment system using a continuous conjunctive model",
       "authors": "Yu, J., Ma, W., Moon, J., & Denham, A.",
-      "venue": "Journal of Learning Analytics, 9(3), 11-31",
+      "venue": "Journal of Learning Analytics",
       "link": "https://doi.org/10.18608/jla.2022.7639",
       "tags": [
         "Analytics",
@@ -875,7 +876,7 @@
       "year": "2022",
       "title": "Multimodal data fusion to track students’ distress during educational gameplay",
       "authors": "Moon, J., Ke, F., Sokolikj, Z., & Dahlstrom-Hakki, I.",
-      "venue": "Journal of Learning Analytics, 9(3), 75-87",
+      "venue": "Journal of Learning Analytics",
       "link": "https://doi.org/10.18608/jla.2022.7631",
       "tags": [
         "Analytics",
@@ -888,7 +889,7 @@
       "year": "2022",
       "title": "A scoping review of three computational approaches to ethnographic research in digital learning environments",
       "authors": "Seo, J., Moon, J., Choi, G.W., & Do, J.",
-      "venue": "TechTrends. 66, 102–111",
+      "venue": "TechTrends",
       "link": "https://doi.org/10.1007/s11528-021-00689-3",
       "tags": [
         "Review"
@@ -900,7 +901,7 @@
       "year": "2022",
       "title": "Virtual reality-based social skills training for children with autism spectrum disorder",
       "authors": "Ke, F., Moon, J., & Sokolikj, Z.",
-      "venue": "Journal of Special Education Technology, 37(1), 49-62",
+      "venue": "Journal of Special Education Technology",
       "link": "https://doi.org/10.1177/0162643420945603",
       "tags": [
         "XR",
@@ -913,7 +914,7 @@
       "year": "2022",
       "title": "Exploring pre-service teachers’ technology-integration belief and scientific inquiry in a teacher-development course",
       "authors": "Moon, J., Lee, S., & Xu, X.",
-      "venue": "International Journal of Technology and Design Education, 32, 1777–1798",
+      "venue": "International Journal of Technology and Design Education",
       "link": "https://doi.org/10.1007/s10798-021-09672-8",
       "tags": [
         "Teacher Ed"
@@ -937,7 +938,7 @@
       "year": "2021",
       "title": "A systematic literature review of empirical studies on learning analytics in educational games",
       "authors": "Tlili, A., Chang, M., Moon, J., Liu, Z., Burgos, D., Chen, N. S., & Kinshuk",
-      "venue": "International Journal of Interactive Multimedia and Artificial Intelligence, 7(2)",
+      "venue": "International Journal of Interactive Multimedia and Artificial Intelligence",
       "link": "http://dx.doi.org/10.9781/ijimai.2021.03.003",
       "tags": [
         "GenAI",
@@ -953,7 +954,7 @@
       "year": "2020",
       "title": "Automatic assessment of cognitive and emotional states in virtual reality-based flexibility training for adolescents with autism",
       "authors": "Moon, J., Ke, F., & Sokolikj, Z.",
-      "venue": "British Journal of Educational Technology, 51(5), 1766-1784",
+      "venue": "British Journal of Educational Technology",
       "link": "https://dx.doi.org/10.1111/bjet.13005",
       "tags": [
         "XR",
@@ -966,7 +967,7 @@
       "year": "2020",
       "title": "Integrating adaptivity to educational games: A combination of bibliometric and meta-analytic review",
       "authors": "Liu, Z., Moon, J., Kim, B., & Dai, C.",
-      "venue": "Educational Technology Research and Development. 68, 1931-1959",
+      "venue": "Educational Technology Research and Development",
       "link": "https://doi.org/10.1007/s11423-020-09791-4",
       "tags": [
         "Game-Based",
@@ -979,7 +980,7 @@
       "year": "2020",
       "title": "The effects of social and cognitive cues on learning comprehension, eye-gaze pattern, and cognitive load in video instruction",
       "authors": "Moon, J., & Ryu, J.",
-      "venue": "Journal of Computing in Higher Education, 33, 39–63",
+      "venue": "Journal of Computing in Higher Education",
       "link": "https://doi.org/10.1007/s12528-020-09255-x",
       "tags": [
         "Higher Ed"
@@ -991,7 +992,7 @@
       "year": "2020",
       "title": "Exploring the relationships among middle school students’ peer interactions, task efficiency, and learning engagement in game-based learning",
       "authors": "Moon, J., & Ke, F.",
-      "venue": "Simulation & Gaming, 51(3), 310-335",
+      "venue": "Simulation & Gaming",
       "link": "https://doi.org/10.1177/1046878120907940",
       "tags": [
         "Game-Based"
@@ -1003,7 +1004,7 @@
       "year": "2020",
       "title": "A conceptual framework for teaching computational thinking in personalized OERs",
       "authors": "Moon, J., Do, J., Lee, D., & Choi, G.",
-      "venue": "Smart Learning Environments, 7(6)",
+      "venue": "Smart Learning Environments",
       "link": "https://doi.org/10.1186/s40561-019-0108-z",
       "tags": [
         "International"
@@ -1015,7 +1016,7 @@
       "year": "2019",
       "title": "In-game actions to promote game-based math learning engagement",
       "authors": "Moon, J., & Ke, F.",
-      "venue": "Journal of Educational Computing Research, 58(4), 863-885",
+      "venue": "Journal of Educational Computing Research",
       "link": "https://doi.org/10.1177/0735633119878611",
       "tags": [
         "Game-Based"
@@ -1027,7 +1028,7 @@
       "year": "2019",
       "title": "Exploring the treatment integrity of virtual reality-based social skills training for children with high-functioning autism",
       "authors": "Moon, J., & Ke, F.",
-      "venue": "Interactive Learning Environments, 29(6), 939-953",
+      "venue": "Interactive Learning Environments",
       "link": "http://dx.doi.org/10.1080/10494820.2019.1613665",
       "tags": [
         "XR",
@@ -1040,7 +1041,7 @@
       "year": "2018",
       "title": "Virtual collaborative gaming as social skills training for high‐functioning autistic children",
       "authors": "Ke, F., & Moon, J.",
-      "venue": "British Journal of Educational Technology, 49(4), 728-741",
+      "venue": "British Journal of Educational Technology",
       "link": "https://doi.org/10.1111/bjet.12626",
       "tags": [
         "Game-Based",
@@ -1053,7 +1054,7 @@
       "year": "2018",
       "title": "Reviews of social embodiment for design of non-player characters in virtual reality-based social skill training for autistic children",
       "authors": "Moon, J.",
-      "venue": "Multimodal Technologies and Interaction, 2(3), 53-62",
+      "venue": "Multimodal Technologies and Interaction",
       "link": "https://doi.org/10.3390/mti2030053",
       "tags": [
         "XR",
@@ -1068,7 +1069,7 @@
       "year": "2020",
       "title": "Exploring synchronous online course cases on secondary schools via semantic network analysis",
       "authors": "Do, J., Kim. S., & Moon, J.",
-      "venue": "Journal of Qualitative Inquiry. 6(3), 637-681",
+      "venue": "Journal of Qualitative Inquiry",
       "link": "http://www.riss.kr/link?id=A107079753",
       "tags": [
         "Korean"
@@ -1080,7 +1081,7 @@
       "year": "2013",
       "title": "The effects of line length and information seeking in e-book for learning on eye-fixation time, cognitive load, and comprehension",
       "authors": "Ryu, J., & Moon, J.",
-      "venue": "The Korea Educational Review, 19(3), 293-313",
+      "venue": "The Korea Educational Review",
       "link": "http://uci.or.kr/G704-001273.2013.19.3.007",
       "tags": [
         "Review",
@@ -1093,7 +1094,7 @@
       "year": "2013",
       "title": "Needs analysis of distance education students for using e-textbooks on smart pads",
       "authors": "Ryu, J., Jung, H., & Moon, J.",
-      "venue": "The Journal of the Korea Content, 13(10), 594-603",
+      "venue": "The Journal of the Korea Content",
       "link": "http://doi.org/10.5392/JKCA.2013.13.10.594",
       "tags": [
         "Korean"
@@ -1677,6 +1678,7 @@
       "year": "Pipeline",
       "title": "Evaluating generative AI tutors across learners’ cognitive profiles through post hoc log analysis",
       "authors": "Moon, J., & Lee, J. Y.",
+      "note": "",
       "venue": "Computers and Education: Artificial Intelligence",
       "citation": "Moon, J., & Lee, J. Y. (Submitted). Evaluating generative AI tutors across learners’ cognitive profiles through post hoc log analysis. Computers and Education: Artificial Intelligence.",
       "link": ""
@@ -1688,6 +1690,7 @@
       "year": "Pipeline",
       "title": "Leading through technological uncertainty: How U.S. school districts configure AI governance",
       "authors": "Kim, J., Moon, J., & Yang, M.",
+      "note": "",
       "venue": "Journal of Educational Administration",
       "citation": "Kim, J., Moon, J., & Yang, M. (Abstract submitted). Leading through technological uncertainty: How U.S. school districts configure AI governance. Journal of Educational Administration.",
       "link": ""
@@ -1698,7 +1701,8 @@
       "status": "Submitted",
       "year": "Pipeline",
       "title": "Beyond participation: A two-layer analysis of ethical grounds and discourse strategies in educational ethics chatbot dialogue",
-      "authors": "‡ Moon, J., Hong, S., Cho, H., Chae, J., & Lee, J. Y.",
+      "authors": "Moon, J., Hong, S., Cho, H., Chae, J., & Lee, J. Y.",
+      "note": "corresponding author",
       "venue": "Educational Technology & Society",
       "citation": "‡ Moon, J., Hong, S., Cho, H., Chae, J., & Lee, J. Y. (Submitted). Beyond participation: A two-layer analysis of ethical grounds and discourse strategies in educational ethics chatbot dialogue. Educational Technology & Society.",
       "link": ""
@@ -1709,7 +1713,8 @@
       "status": "Under review",
       "year": "Pipeline",
       "title": "Interpreting game-based programming logs across levels of analysis",
-      "authors": "‡ Moon, J., Lee, Y., & Na, H.",
+      "authors": "Moon, J., Lee, Y., & Na, H.",
+      "note": "corresponding author",
       "venue": "Journal of Educational Computing Research",
       "citation": "‡ Moon, J., Lee, Y., & Na, H. (Under review). Interpreting game-based programming logs across levels of analysis. Journal of Educational Computing Research.",
       "link": ""
@@ -1721,6 +1726,7 @@
       "year": "Pipeline",
       "title": "Crafting digital narratives for learning: A systematic review of scenario-based learning design in virtual reality",
       "authors": "Lim, J., Moon, J., Kim, C., & Kang, M.",
+      "note": "",
       "venue": "Journal of Computer Assisted Learning",
       "citation": "Lim, J., Moon, J., Kim, C., & Kang, M. (Submitted). Crafting digital narratives for learning: A systematic review of scenario-based learning design in virtual reality. Journal of Computer Assisted Learning.",
       "link": ""
@@ -1731,7 +1737,8 @@
       "status": "Under review",
       "year": "Pipeline",
       "title": "Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy",
-      "authors": "* Hong, S., Moon, J., Cho, H., & Lim, C.",
+      "authors": "Hong, S., Moon, J., Cho, H., & Lim, C.",
+      "note": "mentored collaboration",
       "venue": "AI & Society",
       "citation": "* Hong, S., Moon, J., Cho, H., & Lim, C. (Under review). Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy. AI & Society.",
       "link": ""
@@ -1740,9 +1747,10 @@
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
       "status": "Submitted",
-      "year": "2014",
+      "year": "Pipeline",
       "title": "Technology use in K-12 science education, 2014–2024: A scoping review",
       "authors": "You, H., Zhu, L., Moon, J., Aldemir, T., Kourkoulou, T., Lee, H., Song, D., Abu, S., Emerson, W., & Wang, S.",
+      "note": "",
       "venue": "Journal of Research in Science Teaching",
       "citation": "You, H., Zhu, L., Moon, J., Aldemir, T., Kourkoulou, T., Lee, H., Song, D., Abu, S., Emerson, W., & Wang, S. (Submitted). Technology use in K-12 science education, 2014–2024: A scoping review. Journal of Research in Science Teaching.",
       "link": ""
@@ -1754,6 +1762,7 @@
       "year": "Pipeline",
       "title": "Designing for trust in black-box AI: The effects of a RAG-based AI tutor chatbot on AI trust, learning engagement, and academic achievement in higher education",
       "authors": "Lee, H., Moon, J., Lim, J., Lee, J., Pang, K. M., & Ihm, J.",
+      "note": "",
       "venue": "Journal of Computing in Higher Education",
       "citation": "Lee, H., Moon, J., Lim, J., Lee, J., Pang, K. M., & Ihm, J. (Submitted). Designing for trust in black-box AI: The effects of a RAG-based AI tutor chatbot on AI trust, learning engagement, and academic achievement in higher education. Journal of Computing in Higher Education.",
       "link": ""
@@ -1765,6 +1774,7 @@
       "year": "Pipeline",
       "title": "The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning",
       "authors": "Lim, J., Lee, H., & Moon, J.",
+      "note": "",
       "venue": "Metacognition and Learning",
       "citation": "Lim, J., Lee, H., & Moon, J. (Under review). The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning. Metacognition and Learning. (SSCI-indexed)",
       "link": ""
@@ -1776,6 +1786,7 @@
       "year": "Pipeline",
       "title": "Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation",
       "authors": "Lim, J., Moon, J., & Chen, Y.",
+      "note": "",
       "venue": "Journal of Research on Technology in Education",
       "citation": "Lim, J., Moon, J., & Chen, Y. (Submitted). Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation. Journal of Research on Technology in Education.",
       "link": ""
@@ -1786,7 +1797,8 @@
       "status": "Submitted",
       "year": "Pipeline",
       "title": "Learning to orchestrate with generative-AI student agents: Process analytics of pre-service teacher discourse",
-      "authors": "‡ Moon, J., Hong, S., & Hwang, J.",
+      "authors": "Moon, J., Hong, S., & Hwang, J.",
+      "note": "corresponding author",
       "venue": "Journal of Computing in Higher Education",
       "citation": "‡ Moon, J., Hong, S., & Hwang, J. (Submitted). Learning to orchestrate with generative-AI student agents: Process analytics of pre-service teacher discourse. Journal of Computing in Higher Education (SSCI-indexed)",
       "link": ""
@@ -1797,7 +1809,8 @@
       "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "Embodied arts-integrated AI literacy: A nested mixed-methods study with K-12 educators",
-      "authors": "* Abu, S., Moon, J., & Ghooreian, A.",
+      "authors": "Abu, S., Moon, J., & Ghooreian, A.",
+      "note": "mentored collaboration",
       "venue": "TechTrends",
       "citation": "* Abu, S., Moon, J., & Ghooreian, A. (Revising to resubmit). Embodied arts-integrated AI literacy: A nested mixed-methods study with K-12 educators. TechTrends.",
       "link": ""
@@ -1809,6 +1822,7 @@
       "year": "Pipeline",
       "title": "Leveraging automated machine learning (AutoML) to predict and analyze student success factors in online learning environments (OLEs)",
       "authors": "Amari, A. Y., Moon, J., & Bagdy, L.",
+      "note": "",
       "venue": "Internet and Higher Education",
       "citation": "Amari, A. Y., Moon, J., & Bagdy, L. (Revising to resubmit). Leveraging automated machine learning (AutoML) to predict and analyze student success factors in online learning environments (OLEs). Internet and Higher Education (SSCI-indexed).",
       "link": ""
@@ -1819,7 +1833,8 @@
       "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "Ethical argumentation structure through learner-chatbot interaction patterns in K-12 pre-service teachers' AI ethics problem-solving process: A structure-quality decoupling",
-      "authors": "‡ Hong, S., Moon, J., Chae, J., & Cho, H.",
+      "authors": "Hong, S., Moon, J., Chae, J., & Cho, H.",
+      "note": "corresponding author",
       "venue": "Educational Technology Research and Development",
       "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (Revising to resubmit). Ethical argumentation structure through learner-chatbot interaction patterns in K-12 pre-service teachers' AI ethics problem-solving process: A structure-quality decoupling. Educational Technology Research and Development.",
       "link": ""
@@ -1829,10 +1844,11 @@
       "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
-      "title": "A systematic review of empirical research on AI in K-12 STEM Education through a sociotechnical lens",
-      "authors": "* Awoyemi, I., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T.",
+      "title": "A systematic review of empirical research on AI in K-12 STEM education (2020–2025) through a sociotechnical lens",
+      "authors": "Awoyemi, I. D., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T.",
+      "note": "mentored collaboration",
       "venue": "Educational Technology Research and Development",
-      "citation": "* Awoyemi, I., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T. (Submitted). A systematic review of empirical research on AI in K-12 STEM Education through a sociotechnical lens. Educational Technology Research and Development (SSCI-indexed).",
+      "citation": "* Awoyemi, I. D., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T. (Submitted). A systematic review of empirical research on AI in K-12 STEM education (2020–2025) through a sociotechnical lens. Educational Technology Research and Development (SSCI-indexed).",
       "link": ""
     },
     {
@@ -1842,19 +1858,9 @@
       "year": "Pipeline",
       "title": "Simplicity first in adaptive educational games: A cross-game benchmark of multivariate Elo and knowledge-tracing baselines",
       "authors": "Moon, J.",
+      "note": "",
       "venue": "IEEE Transactions on Learning Technologies",
       "citation": "Moon, J. (Submitted). Simplicity first in adaptive educational games: A cross-game benchmark of multivariate Elo and knowledge-tracing baselines. IEEE Transactions on Learning Technologies.",
-      "link": ""
-    },
-    {
-      "bucket": "Submitted or Under Review",
-      "type": "Journal Manuscript",
-      "status": "Submitted",
-      "year": "2020",
-      "title": "A systematic review of empirical research on AI in K-12 STEM education (2020-2025) through a sociotechnical lens",
-      "authors": "Awoyemi, D., Moon, J., Aldemir, T., Ghooreian, A., & Vivek, S.",
-      "venue": "Educational Technology Research and Development",
-      "citation": "Awoyemi, D., Moon, J., Aldemir, T., Ghooreian, A., & Vivek, S. (Submitted). A systematic review of empirical research on AI in K-12 STEM education (2020-2025) through a sociotechnical lens. Educational Technology Research and Development.",
       "link": ""
     },
     {
@@ -1863,7 +1869,8 @@
       "status": "Under review",
       "year": "Pipeline",
       "title": "A Bayesian meta-analysis of virtual reality-based safety training in construction sector",
-      "authors": "*‡ Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R.",
+      "authors": "Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R.",
+      "note": "corresponding author",
       "venue": "Virtual Reality",
       "citation": "*‡ Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R. (Under review). A Bayesian meta-analysis of virtual reality-based safety training in construction sector. Virtual Reality.",
       "link": ""
@@ -1875,6 +1882,7 @@
       "year": "Pipeline",
       "title": "The hidden architecture of digital mathematics textbooks: A systematic review through activity theory",
       "authors": "Kim, S., Lee, G., Gwak, D., Kim, H. I., Choi, J., Moon, J., Kim, D., & Kim, H.-J.",
+      "note": "",
       "venue": "International Journal of Educational Research",
       "citation": "Kim, S., Lee, G., Gwak, D., Kim, H. I., Choi, J., Moon, J., Kim, D., & Kim, H.-J. (Submitted). The hidden architecture of digital mathematics textbooks: A systematic review through activity theory. International Journal of Educational Research",
       "link": ""
@@ -1886,8 +1894,9 @@
       "year": "Pipeline",
       "title": "Agent affordance: How generative AI agents guide dialogic approaches in 3D teacher simulations",
       "authors": "Moon, J., Lim, J., Lee, Y., Byun, G., Jeong, Y., & Lee, U.",
-      "venue": "Australian Journal of Educational Technology",
-      "citation": "Moon, J., Lim, J., Lee, Y., Byun, G., Jeong, Y., & Lee, U. (Submitted). Agent affordance: How generative AI agents guide dialogic approaches in 3D teacher simulations. Australian Journal of Educational Technology",
+      "note": "",
+      "venue": "Australasian Journal of Educational Technology",
+      "citation": "Moon, J., Lim, J., Lee, Y., Byun, G., Jeong, Y., & Lee, U. (Submitted). Agent affordance: How generative AI agents guide dialogic approaches in 3D teacher simulations. Australasian Journal of Educational Technology",
       "link": ""
     },
     {
@@ -1897,6 +1906,7 @@
       "year": "Pipeline",
       "title": "Semantic trajectory analysis of learner questions in AI-based learning: Comparing RAG-based and generative AI",
       "authors": "Lee, H., Lim, J., & Moon, J.",
+      "note": "",
       "venue": "Journal of Educational Data Mining",
       "citation": "Lee, H., Lim, J., & Moon, J. (Submitted). Semantic trajectory analysis of learner questions in AI-based learning: Comparing RAG-based and generative AI. Journal of Educational Data Mining.",
       "link": ""
@@ -1908,6 +1918,7 @@
       "year": "Pipeline",
       "title": "A systematic review of learning analytics for feedback support in K–12 settings",
       "authors": "Lim, J., Kim, C., & Moon, J.",
+      "note": "",
       "venue": "Educational Research Review",
       "citation": "Lim, J., Kim, C., & Moon, J. (Under review). A systematic review of learning analytics for feedback support in K–12 settings. Educational Research Review. (SSCI-indexed journal).",
       "link": ""
@@ -1918,7 +1929,8 @@
       "status": "Submitted",
       "year": "Pipeline",
       "title": "Overcoming pre-service teachers’ AI anxiety through collaborative online discussions on generative AI: Linguistic insights in cognitive and emotional trajectories",
-      "authors": "* Hur, J., Moon, J., Abu, S., Bae, H., Choi, G. W., & Park, J.",
+      "authors": "Hur, J., Moon, J., Abu, S., Bae, H., Choi, G. W., & Park, J.",
+      "note": "mentored collaboration",
       "venue": "Education and Information Technologies",
       "citation": "* Hur, J., Moon, J., Abu, S., Bae, H., Choi, G. W., & Park, J. (Submitted). Overcoming pre-service teachers’ AI anxiety through collaborative online discussions on generative AI: Linguistic insights in cognitive and emotional trajectories. Education and Information Technologies. (SSCI-indexed journal).",
       "link": ""
@@ -1929,7 +1941,8 @@
       "status": "Under review",
       "year": "Pipeline",
       "title": "Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review",
-      "authors": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J.",
+      "authors": "Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J.",
+      "note": "mentored collaboration",
       "venue": "TechTrends",
       "citation": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J. (Under review). Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review. TechTrends. (ESCI-indexed journal).",
       "link": ""
@@ -1941,6 +1954,7 @@
       "year": "Pipeline",
       "title": "How to align language model for teaching English? Developing large language model-based chatbot for English education in EFL, findings and limitations",
       "authors": "Park, J., Bae, J., Lee, U., Ahn, T., Lee, S., Kim, D., Choi, A., Moon, J., Jeong, Y., & Kim, H.",
+      "note": "",
       "venue": "International Journal of Educational Technology in Higher Education",
       "citation": "Park, J., Bae, J., Lee, U., Ahn, T., Lee, S., Kim, D., Choi, A., Moon, J., Jeong, Y., & Kim, H. (Revising to resubmit). How to align language model for teaching English? Developing large language model-based chatbot for English education in EFL, findings and limitations. International Journal of Educational Technology in Higher Education.",
       "link": ""
@@ -1951,7 +1965,8 @@
       "status": "Submitted",
       "year": "Pipeline",
       "title": "Predicting academic performance from self-regulated learning patterns: Machine learning analysis of Korean secondary students in online environments",
-      "authors": "‡ Moon, J., Lee, D., Choi, G. W., & Ha, C.",
+      "authors": "Moon, J., Lee, D., Choi, G. W., & Ha, C.",
+      "note": "corresponding author",
       "venue": "KEDI Journal of Educational Policy",
       "citation": "‡ Moon, J., Lee, D., Choi, G. W., & Ha, C. (Submitted). Predicting academic performance from self-regulated learning patterns: Machine learning analysis of Korean secondary students in online environments. KEDI Journal of Educational Policy (SSCI-indexed journal).",
       "link": ""
@@ -1962,7 +1977,8 @@
       "status": "Under review",
       "year": "Pipeline",
       "title": "Comparing virtual reality, video, and slide-based training methods for electric vehicle emergency response: A study with firefighters",
-      "authors": "* Liu, Z., Yin, Q., Xu, N., Moon, J., Liu, J., & Shi, Y.",
+      "authors": "Liu, Z., Yin, Q., Xu, N., Moon, J., Liu, J., & Shi, Y.",
+      "note": "mentored collaboration",
       "venue": "International Journal of Disaster Risk Reduction",
       "citation": "* Liu, Z., Yin, Q., Xu, N., Moon, J., Liu, J., & Shi, Y. (Under review). Comparing virtual reality, video, and slide-based training methods for electric vehicle emergency response: A study with firefighters. International Journal of Disaster Risk Reduction (SSCI-indexed journal).",
       "link": ""
@@ -1974,6 +1990,7 @@
       "year": "Pipeline",
       "title": "20 years of twice-exceptional students with ASD: The road so far and what is ahead",
       "authors": "Sun, C., & Moon, J.",
+      "note": "",
       "venue": "Journal for the Education of the Gifted",
       "citation": "Sun, C., & Moon, J. (Revising to resubmit). 20 years of twice-exceptional students with ASD: The road so far and what is ahead. Journal for the Education of the Gifted (ESCI-indexed journal).",
       "link": ""
@@ -1984,7 +2001,8 @@
       "status": "Under review",
       "year": "Pipeline",
       "title": "Exploratory versus structured interaction: Curiosity-related expression and information retention in two digital learning environments",
-      "authors": "‡ Ham, E., & Moon, J.",
+      "authors": "Ham, E., & Moon, J.",
+      "note": "corresponding author",
       "venue": "Behaviour & Information Technology",
       "citation": "‡ Ham, E., & Moon, J. (Under review). Exploratory versus structured interaction: Curiosity-related expression and information retention in two digital learning environments. Behaviour & Information Technology.",
       "link": ""
@@ -1996,6 +2014,7 @@
       "year": "Pipeline",
       "title": "From conversational to agentic AI: The human-AI research mentoring cycle",
       "authors": "Moon, J., & Uddin, M. M.",
+      "note": "",
       "venue": "In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press",
       "citation": "Moon, J., & Uddin, M. M. (Revising to resubmit). From conversational to agentic AI: The human-AI research mentoring cycle. In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press.",
       "link": ""
@@ -2007,6 +2026,7 @@
       "year": "Pipeline",
       "title": "Learning analytics in CALL research: Possibilities and limitations",
       "authors": "Wong, W. L., & Moon, J.",
+      "note": "",
       "venue": "The Palgrave encyclopedia of computer-assisted language learning. Palgrave Macmillan",
       "citation": "Wong, W. L., & Moon, J. (Submitted). Learning analytics in CALL research: Possibilities and limitations. The Palgrave encyclopedia of computer-assisted language learning. Palgrave Macmillan.",
       "link": ""
@@ -2017,18 +2037,20 @@
       "status": "Under review",
       "year": "Pipeline",
       "title": "AI-enhanced educational game design: From the content generation to testing",
-      "authors": "Moon, J., Awoyemi, I., Abu, S., Na, H., Lee, Y., & Choi. G. W.",
+      "authors": "Moon, J., Awoyemi, I., Abu, S., Na, H., Lee, Y., & Choi, G. W.",
+      "note": "",
       "venue": "Engineering Educational Games for a Sustainable Society: Play, Learn, and Transform, Springer",
-      "citation": "Moon, J., Awoyemi, I., Abu, S., Na, H., Lee, Y., & Choi. G. W. (Under review). AI-enhanced educational game design: From the content generation to testing. Engineering Educational Games for a Sustainable Society: Play, Learn, and Transform, Springer.",
+      "citation": "Moon, J., Awoyemi, I., Abu, S., Na, H., Lee, Y., & Choi, G. W. (Under review). AI-enhanced educational game design: From the content generation to testing. Engineering Educational Games for a Sustainable Society: Play, Learn, and Transform, Springer.",
       "link": ""
     },
     {
       "bucket": "Submitted or Under Review",
       "type": "Conference Proposal",
       "status": "Submitted",
-      "year": "2027",
+      "year": "Pipeline",
       "title": "RemixEd: Intentional teaching with AI-assisted interactive learning design",
       "authors": "Moon, J.",
+      "note": "",
       "venue": "Online Learning Innovation Summit 2027",
       "citation": "Moon, J. (Submitted). RemixEd: Intentional teaching with AI-assisted interactive learning design. Online Learning Innovation Summit 2027.",
       "link": ""
@@ -2039,9 +2061,10 @@
       "status": "In preparation",
       "year": "Pipeline",
       "title": "Operationalising CEFR in L2 English writing assessment: Divergence patterns between human teachers and large language model judges",
-      "authors": "‡ Wong, W. L., & Moon, J.",
+      "authors": "Wong, W. L., & Moon, J.",
+      "note": "",
       "venue": "Assessing Writing",
-      "citation": "‡ Wong, W. L., & Moon, J. (In preparation). Operationalising CEFR in L2 English writing assessment: Divergence patterns between human teachers and large language model judges. Assessing Writing.",
+      "citation": "Wong, W. L., & Moon, J. (In preparation). Operationalising CEFR in L2 English writing assessment: Divergence patterns between human teachers and large language model judges. Assessing Writing.",
       "link": ""
     },
     {
@@ -2051,6 +2074,7 @@
       "year": "Pipeline",
       "title": "When frontier LLMs disagree: Diametric scoring bias between Gemini and GPT-4o on CEFR writing in Malaysian upper primary ESL",
       "authors": "Wong, W. L., & Moon, J.",
+      "note": "",
       "venue": "",
       "citation": "Wong, W. L., & Moon, J. (Revising to resubmit). When frontier LLMs disagree: Diametric scoring bias between Gemini and GPT-4o on CEFR writing in Malaysian upper primary ESL.",
       "link": ""
@@ -2061,7 +2085,8 @@
       "status": "In preparation",
       "year": "Pipeline",
       "title": "Design and development research of immersive virtual reality-supported safety training for construction engineering education",
-      "authors": "* Awoyemi, I. D., Moon, J., & Song, S.",
+      "authors": "Awoyemi, I. D., Moon, J., & Song, S.",
+      "note": "mentored collaboration",
       "venue": "TechTrends",
       "citation": "* Awoyemi, I. D., Moon, J., & Song, S. (In preparation). Design and development research of immersive virtual reality-supported safety training for construction engineering education. TechTrends.",
       "link": ""
@@ -2072,7 +2097,8 @@
       "status": "In preparation",
       "year": "Pipeline",
       "title": "Judging value and credibility in feedback and dialogue with an embodied artificial intelligence agent in immersive safety training",
-      "authors": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
+      "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
+      "note": "mentored collaboration",
       "venue": "British Journal of Educational Technology",
       "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (In preparation). Judging value and credibility in feedback and dialogue with an embodied artificial intelligence agent in immersive safety training. British Journal of Educational Technology.",
       "link": ""
@@ -2084,6 +2110,7 @@
       "year": "Pipeline",
       "title": "Technology Integration and Student Outcomes in K–12 Science Education: A Meta-Analytic Review",
       "authors": "You, H., Park, S., Hong, K., Zhu, L., Moon, J., Kourkoulou, T., Aldemir, T., Abu, S., Lee, H., & Song, D.",
+      "note": "",
       "venue": "International Journal of Science Education",
       "citation": "You, H., Park, S., Hong, K., Zhu, L., Moon, J., Kourkoulou, T., Aldemir, T., Abu, S., Lee, H., & Song, D. (In preparation). Technology Integration and Student Outcomes in K–12 Science Education: A Meta-Analytic Review. International Journal of Science Education.",
       "link": ""
@@ -2094,7 +2121,8 @@
       "status": "In preparation",
       "year": "Pipeline",
       "title": "Modeling behavioral dynamics and cognitive states in virtual reality safety training: A learning analytics approach",
-      "authors": "* Abu, S., Awoyemi, I., Moon, J.",
+      "authors": "Abu, S., Awoyemi, I., Moon, J.",
+      "note": "mentored collaboration",
       "venue": "",
       "citation": "* Abu, S., Awoyemi, I., Moon, J. (In preparation). Modeling behavioral dynamics and cognitive states in virtual reality safety training: A learning analytics approach.",
       "link": ""
@@ -2105,7 +2133,8 @@
       "status": "In preparation",
       "year": "Pipeline",
       "title": "Predictive validation of behavioral learning analytics: A machine learning approach",
-      "authors": "* Abu, S., Awoyemi, I., Moon, J.",
+      "authors": "Abu, S., Awoyemi, I., Moon, J.",
+      "note": "mentored collaboration",
       "venue": "",
       "citation": "* Abu, S., Awoyemi, I., Moon, J. (In preparation). Predictive validation of behavioral learning analytics: A machine learning approach.",
       "link": ""
@@ -2117,6 +2146,7 @@
       "year": "Pipeline",
       "title": "Affective interventions and metacognitive transitions: Causal evidence from reverse-lag analysis in AI chatbot",
       "authors": "Cho, H., Hong, S., Chae, J., & Moon, J.",
+      "note": "",
       "venue": "",
       "citation": "Cho, H., Hong, S., Chae, J., & Moon, J. (Revising to resubmit). Affective interventions and metacognitive transitions: Causal evidence from reverse-lag analysis in AI chatbot.",
       "link": ""
@@ -2128,6 +2158,7 @@
       "year": "Pipeline",
       "title": "How to align large language models for teaching English? Designing and developing an LLM-based chatbot for teaching English conversation in EFL: Findings and limitations",
       "authors": "Park, J., Bae, J., Lee, U., Ahn, T., Lee, S., Kim, D., Choi, A., Jeong, Y., Moon, J., & Kim, H.",
+      "note": "",
       "venue": "",
       "citation": "Park, J., Bae, J., Lee, U., Ahn, T., Lee, S., Kim, D., Choi, A., Jeong, Y., Moon, J., & Kim, H. (Revising to resubmit). How to align large language models for teaching English? Designing and developing an LLM-based chatbot for teaching English conversation in EFL: Findings and limitations.",
       "link": ""
@@ -2138,17 +2169,18 @@
       "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "Micro-transitions in learner–chatbot ethical dialogue: Early uncertainty and the emergence of reflective reasoning",
-      "authors": "‡ Hong, S., Moon, J., Chae, J., & Cho, H.",
+      "authors": "Hong, S., Moon, J., Chae, J., & Cho, H.",
+      "note": "corresponding author",
       "venue": "",
       "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (Revising to resubmit). Micro-transitions in learner–chatbot ethical dialogue: Early uncertainty and the emergence of reflective reasoning",
       "link": ""
     }
   ],
   "workingPaperSummary": {
-    "total": 43,
-    "submittedOrUnderReview": 33,
+    "total": 42,
+    "submittedOrUnderReview": 32,
     "inPreparation": 10,
-    "journalManuscripts": 36,
+    "journalManuscripts": 35,
     "bookChapters": 3,
     "conferenceProposals": 4
   },
@@ -2156,141 +2188,141 @@
     "funded": [
       {
         "title": "Immersive Remembrance: AI-Driven Archival Retrieval for VR Learning",
-        "meta": "Lead PI | Institute of Museum and Library Services – IMLS | September 2026 - August 2029",
+        "meta": "Lead PI | Total award $476,424, Institute of Museum and Library Services – IMLS | September 2026 - August 2029",
         "amount": "$476,424",
         "amountValue": 476424.0
       },
       {
         "title": "Developing a Generative AI-Integrated Intelligent Simulation to Strengthen Teachers' Competencies in Responding to Students with Emotional and Behavioral Crises",
-        "meta": "Co-PI, overseas / UA | National Research Foundation of Korea (NRF) 2026 Joint Research Support Program (International Type), Total award approximately ; UA overseas allocation approximately | June 2026 - May 2029",
+        "meta": "Co-PI, overseas / UA | National Research Foundation of Korea (NRF) 2026 Joint Research Support Program (International Type), Total award approximately $162,600; UA overseas allocation approximately $23,300 | June 2026 - May 2029",
         "amount": "$23,300",
         "amountValue": 23300.0
       },
       {
         "title": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
-        "meta": "June 2027-August 2027",
+        "meta": "$5,700 | June 2027-August 2027",
         "amount": "$5,700",
         "amountValue": 5700.0
       },
       {
         "title": "The Alabama Generative Engineering Textbook (AL-GET): AI-enhanced Personalized Learning for STEM Education",
-        "meta": "Lead PI | Office for Sponsored Programs, The University of Alabama | January 2026 - December 2026",
+        "meta": "Lead PI | Office for Sponsored Programs, The University of Alabama, Total award $15,000 | January 2026 - December 2026",
         "amount": "$15,000",
         "amountValue": 15000.0
       },
       {
         "title": "Large Language Model-based Cyber Sentinel Co-Pilot: Professional Development for Alabama Secondary Teacher Training",
-        "meta": "Lead PI | COE RisingTide Grant, The University of Alabama | January 2026 - May 2027",
+        "meta": "Lead PI | COE RisingTide Grant, The University of Alabama, Total award $30,000 | January 2026 - May 2027",
         "amount": "$30,000",
         "amountValue": 30000.0
       },
       {
         "title": "TeachPlay: AI-Enhanced Educational Gamelet Design",
-        "meta": "Alabama Commission on Higher Education | August 2025 - July 2026",
+        "meta": "Alabama Commission on Higher Education, Total award $5,000 | August 2025 - July 2026",
         "amount": "$5,000",
         "amountValue": 5000.0
       },
       {
-        "title": "RemixEd: Designing AI- and XR-Enhanced Instructional Modules for Inclusive",
-        "meta": "Doctoral-Level Online Learning, Instructional Tide Teaching Grant | September 2025 - Dec 2025",
+        "title": "RemixEd: Designing AI- and XR-Enhanced Instructional Modules for Inclusive, Doctoral-Level Online Learning",
+        "meta": "Instructional Tide Teaching Grant, Total award $1,500 | September 2025 - Dec 2025",
         "amount": "$1,500",
         "amountValue": 1500.0
       },
       {
         "title": "SEC Faculty Travel Grant",
-        "meta": "September 2025",
+        "meta": "$1,574 | September 2025",
         "amount": "$1,574",
         "amountValue": 1574.0
       },
       {
         "title": "The Institute for Social Science Research (ISSR) THRIVE Fellowship",
-        "meta": "The University of Alabama, (team award) | September 2025 - August 2026",
+        "meta": "The University of Alabama, Total award $15,000 (team award) | September 2025 - August 2026",
         "amount": "$15,000",
         "amountValue": 15000.0
       },
       {
-        "title": "Enhancing Teacher Problem-Solving and Classroom Management Skills through an Open-Access AI-Powered 3D Simulation Platform. OSP CREATE Program",
-        "meta": "Lead PI | The University of Alabama | Jan 2025 - Dec 2025",
+        "title": "Enhancing Teacher Problem-Solving and Classroom Management Skills through an Open-Access AI-Powered 3D Simulation Platform",
+        "meta": "Lead PI | OSP CREATE Program, The University of Alabama, Total award $4,000 | Jan 2025 - Dec 2025",
         "amount": "$4,000",
         "amountValue": 4000.0
       },
       {
-        "title": "The Grant Writing Fellows Program. College of Education",
-        "meta": "The University of Alabama | September 2024 - August 2025",
+        "title": "The Grant Writing Fellows Program",
+        "meta": "College of Education, The University of Alabama, Total Fellowship amount (summer stipend) $6,225 | September 2024 - August 2025",
         "amount": "$6,225",
         "amountValue": 6225.0
       },
       {
         "title": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
-        "meta": "June 2025-August 2025",
+        "meta": "$5,460 | June 2025-August 2025",
         "amount": "$5,460",
         "amountValue": 5460.0
       },
       {
         "title": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
-        "meta": "June 2024-August 2024",
+        "meta": "$3,500 | June 2024-August 2024",
         "amount": "$3,500",
         "amountValue": 3500.0
       },
       {
-        "title": "Examining Preservice Teachers' Digital Literacy Development and Learning Engagement via Art Integrated Technology-Enhanced Learning. The Collaborative Arts Research Initiative",
-        "meta": "Lead PI | Jan 2022 - Dec 2024",
+        "title": "Examining Preservice Teachers' Digital Literacy Development and Learning Engagement via Art Integrated Technology-Enhanced Learning",
+        "meta": "Lead PI | The Collaborative Arts Research Initiative, Total award $15,000 | Jan 2022 - Dec 2024",
         "amount": "$15,000",
         "amountValue": 15000.0
       }
     ],
     "pending": [
       {
-        "title": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency. Charles Koch Foundation",
-        "meta": "Lead PI | Requested amount | January 2027 - December 2027",
+        "title": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency",
+        "meta": "Lead PI | Charles Koch Foundation, Requested amount $110,669 | January 2027 - December 2027",
         "amount": "$110,669",
         "amountValue": 110669.0
       },
       {
-        "title": "TRACE-Reg: A Privacy-by-Design",
-        "meta": "Lead PI | Agency-Preserving Emotion-Regulation Agent for Adult Learners. Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget | September 2026",
+        "title": "TRACE-Reg: A Privacy-by-Design, Agency-Preserving Emotion-Regulation Agent for Adult Learners",
+        "meta": "Lead PI | Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget $100,000 | September 2026",
         "amount": "$100,000",
         "amountValue": 100000.0
       },
       {
         "title": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
-        "meta": "PI | Total requested €20, 000 (approximately ), Game in Lab 2026 International Call for Projects, Asmodee | May 2027 - April 2029",
+        "meta": "PI | Total requested €20,000 (approximately $23,362), Game in Lab 2026 International Call for Projects, Asmodee | May 2027 - April 2029",
         "amount": "$23,362",
         "amountValue": 23362.0
       },
       {
         "title": "Beyond the Security Divide: Building a Community-Guided Cybersecurity Education System for Broad and Meaningful Access",
-        "meta": "Lead PI | Total requested Spencer Foundation Vision Grant | February 2027 - July 2028",
+        "meta": "Lead PI | Total requested $75,000, Spencer Foundation Vision Grant | February 2027 - July 2028",
         "amount": "$75,000",
         "amountValue": 75000.0
       },
       {
-        "title": "Who Bears the Work of School AI Governance? Policy-Assigned Responsibility",
-        "meta": "PI | Employer Support, and Unequal District Capacity, Total requested Russell Sage Foundation, Sheldon Danziger Pipeline Grants Competition | August 2027 - July 2028",
+        "title": "Who Bears the Work of School AI Governance? Policy-Assigned Responsibility, Employer Support, and Unequal District Capacity",
+        "meta": "PI | Total requested $50,000, Russell Sage Foundation, Sheldon Danziger Pipeline Grants Competition | August 2027 - July 2028",
         "amount": "$50,000",
         "amountValue": 50000.0
       },
       {
         "title": "OpenPolicy v0.1: A Reproducible Public-Evidence Release for School AI Policy",
-        "meta": "RAAIS Foundation Grant | Submitted August 2026; proposed three-month project",
+        "meta": "Project Lead/Applicant | RAAIS Foundation Grant | Submitted August 2026; proposed three-month project",
         "amount": "pending",
         "amountValue": null
       },
       {
         "title": "OpenPolicy Receipts: Open Receipts and Safety Tests for Accountable Public-Interest AI Agents",
-        "meta": "Total requested Sentient Foundation Open Source AGI Grant Program, Grant Track | Submitted August 2026; proposed four-month project",
+        "meta": "Project Lead/Applicant | Total requested $50,000, Sentient Foundation Open Source AGI Grant Program, Grant Track | Submitted August 2026; proposed four-month project",
         "amount": "$50,000",
         "amountValue": 50000.0
       },
       {
         "title": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
-        "meta": "Lead PI | AERA-NSF Research Grant Program | September 2026 - August 2028",
+        "meta": "Lead PI | Total award $35,000, AERA-NSF Research Grant Program | September 2026 - August 2028",
         "amount": "$35,000",
         "amountValue": 35000.0
       },
       {
         "title": "CyberAI Innovation: Teaching AI as Target and Defender through a Full-Stack Immersive AI Ecosystem",
-        "meta": "Lead PI | National Science Foundation (NSF), Proposal 26-0572, submission deadline April 3, 2026, submitted to sponsor March 10, 2026 | October 2026 - September 2029",
+        "meta": "PI | National Science Foundation (NSF), Proposal 26-0572, proposed total amount $497,460.00, submission deadline April 3, 2026, submitted to sponsor March 10, 2026 | October 2026 - September 2029",
         "amount": "$497,460",
         "amountValue": 497460.0
       },
@@ -2301,8 +2333,8 @@
         "amountValue": null
       },
       {
-        "title": "A Biofeedback-Based Virtual Reality Implementation to Teach Metered Dose Inhaler Technique Education for Pediatric Asthma Patients: A Development and Feasibility Study. National Institutes of Health (NIH)",
-        "meta": "Lead PI | total requested submitted July 10, 2026 | April 2027 - March 2029",
+        "title": "A Biofeedback-Based Virtual Reality Implementation to Teach Metered Dose Inhaler Technique Education for Pediatric Asthma Patients: A Development and Feasibility Study",
+        "meta": "PI | National Institutes of Health (NIH), total requested $399,946, submitted July 10, 2026 | April 2027 - March 2029",
         "amount": "$399,946",
         "amountValue": 399946.0
       }
@@ -2324,12 +2356,192 @@
     "withdrawnDiscrepancy": 0
   },
   "teaching": {
+    "courseHistory": [
+      {
+        "code": "AIL 689",
+        "title": "Practicum in Instructional Technology",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate – Doctoral",
+            "terms": "Spring 2025"
+          }
+        ]
+      },
+      {
+        "code": "AIL 690",
+        "title": "Seminar in Instructional Technology",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate - Doctoral",
+            "terms": "Fall 2024"
+          }
+        ]
+      },
+      {
+        "code": "AIL 699",
+        "title": "Dissertation Research",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate – Doctoral",
+            "terms": "Spring 2025"
+          }
+        ]
+      },
+      {
+        "code": "AIL 605",
+        "title": "Interactive Multimedia Processes",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate - Doctoral",
+            "terms": "Spring 2024-2025"
+          }
+        ]
+      },
+      {
+        "code": "AIL 606",
+        "title": "Software Technology",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate - Doctoral",
+            "terms": "Summer 2025-2026"
+          }
+        ]
+      },
+      {
+        "code": "CAT 531",
+        "title": "Computer-Based Instruction",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate - Master",
+            "terms": "Summer 2025-2026"
+          }
+        ]
+      },
+      {
+        "code": "INTE 534",
+        "title": "Issues and Trends of Instructional Technology",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate - Master",
+            "terms": "Fall 2021-2024"
+          }
+        ]
+      },
+      {
+        "code": "INTE 535",
+        "title": "Analysis, Implementation, and Evaluation of Assistive Technology",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate - Master",
+            "terms": "Spring 2022-2024"
+          }
+        ]
+      },
+      {
+        "code": "CAT 100",
+        "title": "Computer Concepts & Application",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Undergraduate",
+            "terms": "Summer 2022-2024, 2026"
+          }
+        ]
+      },
+      {
+        "code": "CAT 200",
+        "title": "Computer Education Application",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Undergraduate",
+            "terms": "Summer 2022-2025"
+          }
+        ]
+      },
+      {
+        "code": "CAT 250",
+        "title": "Computer Education & Curriculum Development",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Undergraduate",
+            "terms": "Summer 2022"
+          }
+        ]
+      },
+      {
+        "code": "EME 6507",
+        "title": "Development of Multimedia Instruction",
+        "institution": "Florida State University",
+        "appointments": [
+          {
+            "role": "Assistant Instructor",
+            "level": "Graduate Level",
+            "terms": "Spring 2020"
+          },
+          {
+            "role": "Teaching Assistant",
+            "level": "Graduate Level",
+            "terms": "Spring 2017-2018"
+          }
+        ]
+      },
+      {
+        "code": "EME 6665",
+        "title": "Synthesis, Analysis, and Argumentation in Instructional Systems Research",
+        "institution": "Florida State University",
+        "appointments": [
+          {
+            "role": "Teaching Assistant",
+            "level": "Graduate Level",
+            "terms": "Fall 2020"
+          }
+        ]
+      }
+    ],
+    "developedCourses": [
+      {
+        "code": "AIL 691",
+        "title": "AI, Learning, and Instructional Systems",
+        "institution": "The University of Alabama",
+        "level": "Graduate – Doctoral",
+        "terms": "2026"
+      },
+      {
+        "code": "AIL 692",
+        "title": "Introduction to Literature Synthesis in Instructional Technology Research",
+        "institution": "The University of Alabama",
+        "level": "Graduate – Doctoral",
+        "terms": "2026"
+      }
+    ],
     "teachingPortfolio": [
       "AIL 689 Practicum in Instructional Technology",
       "AIL 690 Seminar in Instructional Technology",
       "AIL 699 Dissertation Research",
       "AIL 605 Interactive Multimedia Processes",
       "AIL 606 Software Technology",
+      "CAT531 Computer-Based Instruction",
       "INTE534 Issues and Trends of Instructional Technology",
       "INTE535 Analysis, Implementation, and Evaluation of Assistive Technology",
       "CAT100 Computer Concepts & Application",
@@ -2353,7 +2565,7 @@
       "label": "doctoral committee appointments"
     },
     {
-      "value": "11",
+      "value": "7",
       "label": "current course advisees"
     },
     {

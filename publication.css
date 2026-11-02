@@ -1,0 +1,10 @@
+.publication-detail-grid > *,
+.publication-detail-sections > * {
+  min-width: 0;
+}
+.publication-detail-sections {
+  grid-template-columns: minmax(0, 1fr);
+}
+.publication-detail-card :is(p, a, h1) {
+  overflow-wrap: anywhere;
+}

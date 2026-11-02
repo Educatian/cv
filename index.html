@@ -103,12 +103,15 @@
     <link rel="stylesheet" href="styles.css?v=20260809-addie-logo" />
     <link rel="stylesheet" href="grant-logos.css?v=20260901-grant-layout2" />
     <link rel="stylesheet" href="teaching-tooltips.css?v=20260901" />
-    <script defer src="assets/site-data.js?v=20261102-research"></script>
+    <link rel="stylesheet" href="teaching.css?v=20261102" />
+    <script defer src="assets/site-data.js?v=ca646425ff51"></script>
     <script defer src="assets/projects-data.js?v=20260908-project-thumbnails"></script>
     <script defer src="assets/featured-projects.js?v=20260908-project-thumbnails"></script>
     <script defer src="assets/featured-rotation.js?v=20260908-project-thumbnails"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-    <script defer src="app.js?v=20261102-jrte-cover"></script>
+    <script defer src="app.js?v=20261102-consistency"></script>
+    <script defer src="assets/teaching-design.js?v=20261102"></script>
+    <script defer src="teaching.js?v=20261102"></script>
     <script defer src="analytics.js"></script>
     <link rel="stylesheet" href="assets/current-portfolio.css?v=20260908-thumbnails">
   </head>
@@ -760,40 +763,13 @@
                 <section id="teaching" class="content-section reveal">
                   <div class="section-heading">
                     <span class="section-label">Teaching and Mentoring</span>
-                    <h2>Doctoral instruction, course design, and advising</h2>
+                    <h2>Teaching and instructional design</h2>
                   </div>
-                  <div class="mini-metric-grid" id="mentoring-metrics"></div>
-                  <div class="split-columns teaching-columns">
-                    <div>
-                      <h3>Recent Teaching Portfolio</h3>
-                      <ul class="compact-list" id="recent-teaching-list">
-                        <li>AIL 689 Practicum in Instructional Technology</li>
-                        <li>AIL 690 Seminar in Instructional Technology</li>
-                        <li>AIL 699 Dissertation Research</li>
-                        <li>AIL 605 Interactive Multimedia Processes</li>
-                        <li>AIL 606 Software Technology</li>
-                        <li>INTE534 Issues and Trends of Instructional Technology</li>
-                        <li>INTE535 Analysis, Implementation, and Evaluation of Assistive Technology</li>
-                        <li>CAT100, CAT200, and CAT250 undergraduate computing courses</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h3>Course Development and Mentoring Scope</h3>
-                      <ul class="compact-list" id="course-development-list">
-                        <li>Developed AIL 691 AI, Learning, and Instructional Systems</li>
-                        <li>Developed AIL 692 Introduction to Literature Synthesis in Instructional Technology Research</li>
-                        <li>Redesigned doctoral and masters courses across instructional technology and assistive technology</li>
-                        <li>Chair or co-chair for five doctoral dissertations</li>
-                        <li>Committee member across nine doctoral dissertations and one masters thesis</li>
-                        <li>Advises and mentors doctoral, masters, and undergraduate researchers across education, nursing, and engineering</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <p class="section-note" id="earlier-teaching-note">
-                    Earlier teaching at Florida State University included graduate
-                    instruction in multimedia development and instructional systems
-                    research writing.
-                  </p>
+                  <div id="teaching-portfolio"></div>
+                  <section class="teaching-subsection" aria-labelledby="teaching-mentoring-title">
+                    <h3 id="teaching-mentoring-title">Mentoring</h3>
+                    <div class="mini-metric-grid" id="mentoring-metrics"></div>
+                  </section>
                 </section>
               </div>
 

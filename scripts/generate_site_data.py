@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import hashlib
 import re
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence
@@ -10,15 +11,15 @@ from typing import Dict, List, Optional, Sequence
 from docx import Document
 
 
-ROOT = Path(__file__).resolve().parents[1]
-# The CV source is auto-discovered: the parser scans the repo root for the
-# newest CV_<date>_MOON.docx and parses that. Drop a newer dated file in the
-# root and it becomes canonical automatically; no path edits needed.
-CV_GLOB = "CV_*_MOON.docx"
-CV_DATE_RE = re.compile(r"CV_(\d{4,8})_MOON\.docx$", re.I)
-DEFAULT_CV_PATH = ROOT / "CV_202605_MOON.docx"
-
-
+ROOT = Path(__file__).resolve().parents[1]
+# The CV source is auto-discovered: the parser scans the repo root for the
+# newest CV_<date>_MOON.docx and parses that. Drop a newer dated file in the
+# root and it becomes canonical automatically; no path edits needed.
+CV_GLOB = "CV_*_MOON.docx"
+CV_DATE_RE = re.compile(r"CV_(\d{4,8})_MOON\.docx$", re.I)
+DEFAULT_CV_PATH = ROOT / "CV_202605_MOON.docx"
+
+
 def find_latest_cv() -> Optional[Path]:
     """Return the newest CV_<date>_MOON.docx in the repo root, or None.
 
@@ -300,6 +301,11 @@ def extract_year(text: str) -> str:
     return match.group(0) if match else ""
 
 
+def extract_citation_year(citation: str) -> str:
+    date_field = re.search(r"\(([^)]*)\)\.\s", citation)
+    return extract_year(date_field.group(1)) if date_field else ""
+
+
 def extract_doi(text: str) -> str:
     match = DOI_PATTERN.search(text)
     return match.group(0).rstrip(").,;]") if match else ""
@@ -364,7 +370,7 @@ def parse_venue_from_citation(citation: str) -> str:
 
     venue_part = re.split(r"https?://|10\.\d{4,9}/", venue_part, maxsplit=1)[0]
     venue_part = re.sub(r"\[[^\]]+\]", "", venue_part)
-    venue_part = re.sub(r"[.,]\s*\d[\d()\-–,: ]*$", "", venue_part).strip(" .,;")
+    venue_part = re.sub(r"[.,]\s*\d[\d().\-–,: ]*$", "", venue_part.strip(" .,;")).strip(" .,;")
     venue_part = strip_journal_indexing_paren(venue_part)
     return clean_text(venue_part)
 
@@ -525,6 +531,43 @@ def extract_course_titles(text: str) -> List[str]:
     return list(dict.fromkeys(cleaned))
 
 
+
+def parse_teaching_history(lines: Sequence[str]) -> Dict[str, object]:
+    institution, role, mode = "", "", "taught"
+    groups: Dict[str, Dict[str, object]] = {}
+    developed: List[Dict[str, str]] = []
+    pending: List[str] = []
+
+    def flush() -> None:
+        text = " ".join(pending)
+        for match in re.finditer(r"([A-Z]{2,6})\s?(\d{3,4})\s+(.+?)\s*\(([^)]+)\)", text):
+            code, title = f"{match[1]} {match[2]}", clean_text(match[3])
+            level, _, terms = match[4].partition(",")
+            item = {"code": code, "title": title, "institution": institution, "level": clean_text(level), "terms": clean_text(terms)}
+            if mode == "developed":
+                developed.append(item)
+            elif mode == "taught":
+                key = f"{institution}:{code}"
+                record = groups.setdefault(key, {"code": code, "title": title, "institution": institution, "appointments": []})
+                record["appointments"].append({"role": role, "level": clean_text(level), "terms": clean_text(terms)})
+        pending.clear()
+
+    for line in lines:
+        if line in ("University of Alabama", "Florida State University", "Instructor", "Assistant Instructor", "Teaching Assistant", "Course Redesign", "Course Development"):
+            flush()
+            if line in ("University of Alabama", "Florida State University"):
+                institution = "The University of Alabama" if line == "University of Alabama" else line
+                mode = "taught"
+            elif line in ("Instructor", "Assistant Instructor", "Teaching Assistant"):
+                role, mode = line, "taught"
+            else:
+                mode = "developed" if line == "Course Development" else "redesigned"
+        else:
+            pending.append(line)
+    flush()
+    return {"courseHistory": list(groups.values()), "developedCourses": developed}
+
+
 def parse_teaching(paragraphs: Sequence[str]) -> Dict[str, object]:
     lines = section_between(paragraphs, HEADERS["teaching"], HEADERS["advising"])
     text = " ".join(lines)
@@ -559,6 +602,7 @@ def parse_teaching(paragraphs: Sequence[str]) -> Dict[str, object]:
             course_development.append(f"Redesigned {redesign_label}")
 
     return {
+        **parse_teaching_history(lines),
         "teachingPortfolio": recent_teaching_portfolio,
         "courseDevelopment": course_development,
         "earlierTeachingNote": earlier_note,
@@ -575,7 +619,7 @@ def parse_mentoring_metrics(paragraphs: Sequence[str]) -> List[Dict[str, str]]:
 
     chairs = len(re.findall(r"Doctoral Dissertation (?:Chair|Co-Chair)", dissertation_chunk))
     committees = len(re.findall(r"Doctoral Dissertation Committee(?: - External Member)?", dissertation_chunk))
-    current_advisees = len(re.findall(r"20\d{2}\s*-\s*(?:Present|Current|\d{4})", course_chunk))
+    current_advisees = len(re.findall(r"20\d{2}\s*-\s*(?:Present|Current)", course_chunk))
     research_mentees = len(re.findall(r"20\d{2}\s*-\s*(?:Present|Current|\d{4})", research_chunk))
 
     return [
@@ -612,7 +656,7 @@ def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
         if not active_bucket:
             continue
 
-        role_match = re.search(r"\(([^)]*(?:Lead PI|PI|External Evaluator|Key Personnel)[^)]*)\)", line)
+        role_match = re.search(r"Moon,\s*J\.\s*\(([^)]*(?:PI|External Evaluator|Key Personnel|Project Lead)[^)]*)\)", line)
         dates_match = re.search(r"\(([^)]*\d{4}[^)]*)\)", line)
         dates = clean_text(dates_match.group(1)) if dates_match else ""
 
@@ -620,23 +664,16 @@ def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
         amount_value = extract_last_money(after_dates)
         amount = format_currency(amount_value) if amount_value is not None else "pending"
 
-        cleaned_tail = re.sub(
-            r"(?:Total award|Sub-award|Total Fellowship amount \(summer stipend\)|PENDING|NOT FUNDED)\s*\$[\d,]+(?:\.\d+)?",
-            "",
-            after_dates,
-            flags=re.I,
+        # Commas inside project names are part of the title. Split only at
+        # the start of a funding amount or an identifiable sponsor/program.
+        boundary = re.search(
+            r"[,\.]\s+(?=(?:Total (?:award|requested|budget|Fellowship)|Sub-award|Requested amount|proposed total amount|\$|€|Institute of|National (?:Research Foundation|Science Foundation|Institutes)|Office for|COE RisingTide|Alabama Commission|Instructional Tide|The University of|OSP CREATE|College of Education|The Collaborative Arts|Charles Koch|Sony Research|Game in Lab|Spencer Foundation|Russell Sage|RAAIS Foundation|Sentient Foundation|AERA-NSF))",
+            after_dates, re.I,
         )
-        cleaned_tail = re.sub(r"\$[\d,]+(?:\.\d+)?", "", cleaned_tail)
-        cleaned_tail = re.sub(r"\bproposed total amount\b", "", cleaned_tail, flags=re.I)
-        if active_bucket == "withdrawn":
-            cleaned_tail = re.sub(r",\s*WITHDRAWN\b\s*$", "", cleaned_tail, flags=re.I)
-            cleaned_tail = re.sub(r"\bWITHDRAWN\b", "withdrawn", cleaned_tail, flags=re.I)
-        else:
-            cleaned_tail = re.sub(r"\b(?:PENDING|NOT FUNDED)\b", "", cleaned_tail, flags=re.I)
-        parts = [clean_text(part.strip(" .")) for part in cleaned_tail.split(",") if clean_text(part.strip(" ."))]
-
-        title = parts[0] if parts else clean_text(after_dates)
-        sponsor = ", ".join(parts[1:]) if len(parts) > 1 else ""
+        title = clean_text(after_dates[:boundary.start()].strip(" .,;")) if boundary else clean_text(after_dates)
+        sponsor = clean_text(after_dates[boundary.end():].strip(" .,;")) if boundary else ""
+        title = re.sub(r"\.?\s*PENDING\.?$", "", title, flags=re.I).rstrip(" .,")
+        sponsor = re.sub(r"[,\.]?\s*PENDING\.?$", "", sponsor, flags=re.I).rstrip(" .,")
 
         meta_parts = []
         if role_match:
@@ -898,9 +935,10 @@ def parse_working_papers(paragraphs: Sequence[str]) -> Dict[str, object]:
                 "bucket": bucket,
                 "type": paper_type,
                 "status": sentence_case(status),
-                "year": extract_year(citation) or "Pipeline",
+                "year": extract_citation_year(citation) or "Pipeline",
                 "title": title,
-                "authors": parse_authors_from_working_paper(citation),
+                "authors": parse_authors_from_working_paper(citation).lstrip("*‡ "),
+                "note": derive_publication_note(citation),
                 "venue": venue,
                 "citation": citation,
                 "link": extract_url(citation),
@@ -1337,13 +1375,13 @@ def parse_initiatives(
     return cards[:5]
 
 
-def choose_cv_path(explicit_path: Optional[Path]) -> Path:
-    if explicit_path:
-        return explicit_path.resolve()
-
-    return find_latest_cv() or DEFAULT_CV_PATH
-
-
+def choose_cv_path(explicit_path: Optional[Path]) -> Path:
+    if explicit_path:
+        return explicit_path.resolve()
+
+    return find_latest_cv() or DEFAULT_CV_PATH
+
+
 def build_site_data(cv_path: Path) -> Dict[str, object]:
     paragraphs = load_paragraphs(cv_path)
     contact = parse_contact(paragraphs)
@@ -1362,6 +1400,12 @@ def build_site_data(cv_path: Path) -> Dict[str, object]:
     profile = build_profile(
         paragraphs, contact, focus_areas, appointments_education, cv_filename=cv_path.name
     )
+    profile["cvDownloadPath"] = f"{cv_path.name}?v={hashlib.sha256(cv_path.read_bytes()).hexdigest()[:12]}"
+    try:
+        download_date = dt.datetime.strptime(profile["cvDate"], "%B %d, %Y")
+        profile["cvDownloadFilename"] = f"CV_{download_date:%Y%m%d}_MOON.docx"
+    except ValueError:
+        pass
     overview = build_overview(profile, focus_areas)
     news = parse_news(publications_data["publications"], grants_data["grants"], honors, talks)
     updates_path = ROOT / "assets" / "research-updates.json"
@@ -1418,6 +1462,16 @@ def write_outputs(site_data: Dict[str, object], json_path: Path, js_path: Path) 
         "window.__cvSiteData = " + json.dumps(site_data, indent=2, ensure_ascii=False) + ";\n",
         encoding="utf-8",
     )
+
+    # Keep list/detail pages on the same immutable data URL after every CV save.
+    if js_path.resolve() == DEFAULT_JS_PATH.resolve():
+        version = hashlib.sha256(js_path.read_bytes()).hexdigest()[:12]
+        for name in ("index.html", "publication.html"):
+            page = ROOT / name
+            html = page.read_text(encoding="utf-8")
+            updated = re.sub(r'(src="assets/site-data\.js)(?:\?[^"\s]*)?"', rf'\1?v={version}"', html)
+            if updated != html:
+                page.write_text(updated, encoding="utf-8")
 
 
 def main() -> None:

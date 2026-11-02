@@ -1,0 +1,72 @@
+.teaching-intro { margin: 0 0 2.5rem; }
+.teaching-intro > p { max-width: 70ch; color: var(--muted); font-size: 1.04rem; line-height: 1.75; }
+.teaching-totals { display: flex; flex-wrap: wrap; gap: .8rem 2rem; margin-top: 1.4rem; }
+.teaching-totals span { color: var(--muted); font-size: .85rem; }
+.teaching-totals strong { color: var(--ink); font-size: 1.5rem; margin-right: .3rem; }
+.teaching-subsection { margin: 2.7rem 0; }
+.teaching-subheading { display: flex; justify-content: space-between; align-items: end; gap: 1rem; border-bottom: 1px solid var(--line); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+.teaching-subheading h3 { font-family: var(--serif); font-size: clamp(1.5rem, 2.6vw, 2rem); margin: .4rem 0 0; }
+.teaching-subheading > p { max-width: 32ch; font-size: .85rem; color: var(--muted); line-height: 1.6; margin: 0; }
+.design-group-title { margin: 2rem 0 1rem; font-size: .93rem; letter-spacing: .01em; }
+.design-course-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.3rem; }
+.design-course { min-width: 0; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; background: var(--surface, transparent); }
+.design-course > img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-bottom: 1px solid var(--line); }
+.design-course-body { padding: 1.2rem; }
+.design-course-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; justify-content: space-between; font: .68rem var(--mono); letter-spacing: .03em; color: var(--accent); }
+.design-status { border: 1px solid var(--line); border-radius: 3px; padding: .24rem .4rem; color: var(--muted); font: .68rem var(--sans); letter-spacing: 0; }
+.design-status.is-planned { color: #805617; background: #f9edce; border-color: #e6d19d; }
+.design-course h4 { font: 600 1.2rem/1.4 var(--serif); margin: 1rem 0 .6rem; }
+.design-course p { color: var(--muted); font-size: .87rem; line-height: 1.7; margin: .6rem 0; }
+.design-course .design-course-subtitle { margin-top: -.25rem; font-style: italic; }
+.design-topics { display: flex; flex-wrap: wrap; gap: .35rem; list-style: none; padding: 0; margin: 1rem 0; }
+.design-topics li { font-size: .67rem; border: 1px solid var(--line); padding: .2rem .4rem; border-radius: 3px; color: var(--muted); }
+.design-course-details { margin-top: 1.1rem; border-top: 1px solid var(--line); }
+.design-course-details > summary { cursor: pointer; padding: .8rem 0 .1rem; color: var(--ink); font-size: .8rem; font-weight: 600; min-height: 44px; }
+.design-course-details[open] > summary { padding-bottom: .5rem; }
+.teaching-course-link { display: inline-flex; gap: .65rem; align-items: center; min-height: 44px; font-size: .8rem; color: var(--accent); text-decoration: underline; text-underline-offset: .2em; }
+.design-primary-link { margin-top: .5rem; }
+.design-course-grid[data-design-group="planned"] { grid-template-columns: minmax(0,1fr); }
+.design-course-planned { display: grid; grid-template-columns: .85fr 1.15fr; }
+.design-course-planned > img { height: 100%; border-bottom: 0; border-right: 1px solid var(--line); object-fit: cover; }
+.teaching-controls { display: grid; grid-template-columns: 1.25fr 1fr .75fr; gap: .8rem; }
+.teaching-controls label { display: grid; gap: .4rem; color: var(--muted); font-size: .75rem; font-weight: 600; min-width: 0; }
+.teaching-controls input, .teaching-controls select { min-width: 0; width: 100%; min-height: 44px; padding: .65rem .75rem; border: 1px solid var(--line); border-radius: 5px; background: var(--bg); color: var(--ink); font: .83rem var(--sans); }
+.teaching-list-actions { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .6rem; margin: 1rem 0; }
+.teaching-list-actions p { margin: 0; color: var(--muted); font-size: .8rem; }
+.teaching-list-actions > div { display: flex; flex-wrap: wrap; gap: .4rem; }
+.teaching-list-actions button { min-height: 44px; padding: .5rem .7rem; border: 1px solid var(--line); border-radius: 4px; background: transparent; color: var(--ink); font: .74rem var(--sans); cursor: pointer; }
+.teaching-list-actions button:disabled { opacity: .45; cursor: default; }
+.teaching-history-course { border-bottom: 1px solid var(--line); }
+.teaching-history-course:first-child { border-top: 1px solid var(--line); }
+.teaching-history-course > summary { display: grid; grid-template-columns: 5.6rem minmax(0,1fr) 1rem; align-items: center; gap: .8rem; padding: 1rem .4rem; cursor: pointer; list-style: none; }
+.teaching-history-course > summary::-webkit-details-marker { display: none; }
+.history-course-heading { display: grid; gap: .35rem; min-width: 0; }
+.history-course-heading > strong { font-size: .9rem; line-height: 1.5; font-weight: 600; }
+.history-course-heading > span { color: var(--muted); font-size: .72rem; line-height: 1.5; }
+.history-expand-icon { font-size: 1.3rem; color: var(--accent); transition: transform .15s; }
+.teaching-history-course[open] .history-expand-icon { transform: rotate(45deg); }
+.history-course-body { padding: 0 1rem 1.1rem 6.8rem; }
+.history-course-body > p { color: var(--muted); font-size: .85rem; line-height: 1.75; margin: .1rem 0 1rem; }
+.history-course-body dl { margin: 0; display: grid; gap: .8rem; }
+.history-course-body dl > div { display: grid; grid-template-columns: 8rem minmax(0,1fr); gap: .8rem; font-size: .78rem; line-height: 1.65; }
+.history-course-body dt { font-weight: 600; }
+.history-course-body dd { color: var(--muted); margin: 0; }
+.history-course-body dd span { display: block; }
+.teaching-empty { padding: 1.5rem; border: 1px dashed var(--line); color: var(--muted); font-size: .9rem; }
+.teaching-history-note { margin-top: 1.2rem; }
+#teaching-portfolio :is(button,input,select,summary,a):focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+:root[data-theme="dark"] .design-status.is-planned { color: #f2d79f; background: #3c3221; border-color: #73603c; }
+@media (max-width: 900px) { .teaching-controls { grid-template-columns: 1fr 1fr; } .teaching-search { grid-column: 1 / -1; } }
+@media (max-width: 650px) {
+  .design-course-grid { grid-template-columns: minmax(0,1fr); }
+  .design-course-planned { display: block; }
+  .design-course-planned > img { height: auto; border-right: 0; border-bottom: 1px solid var(--line); }
+  .teaching-subheading { display: block; }
+  .teaching-subheading > p { margin-top: .8rem; max-width: none; }
+  .teaching-history-course > summary { grid-template-columns: 4.8rem minmax(0,1fr) .8rem; gap: .5rem; padding: 1rem 0; }
+  .history-course-body { padding: 0 0 1.1rem; }
+  .history-course-body dl > div { grid-template-columns: 7.6rem minmax(0,1fr); gap: .5rem; }
+  .teaching-totals { gap: .7rem 1rem; }
+  .teaching-controls { grid-template-columns: minmax(0,1fr); }
+}
+@media (prefers-reduced-motion: reduce) { .history-expand-icon { transition: none; } }
