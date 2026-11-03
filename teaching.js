@@ -3,6 +3,13 @@
   const data = window.__cvSiteData?.teaching;
   const design = window.__cvTeachingDesign;
   if (!root || !data || !design) return;
+  const designScript = document.querySelector('script[src*="assets/teaching-design.js"]');
+  const mediaRevision = designScript ? new URL(designScript.src).searchParams.get('v') : '';
+  const imageUrl = image => {
+    const url = new URL(image, document.baseURI);
+    if (mediaRevision) url.searchParams.set('v', mediaRevision);
+    return url.href;
+  };
   const html = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const history = data.courseHistory || [];
   const openCourses = new Set();
@@ -11,7 +18,7 @@
   const university = (data.developedCourses || []).map(course => ({...course, ...design.universityCourses.find(item => item.code === course.code), status:"Developed", year:course.terms}));
   const card = (course, kind) => `
     <article class="design-course ${kind === "planned" ? "design-course-planned" : ""}">
-      <img src="${html(course.image)}" alt="${html(course.imageAlt)}" width="960" height="540" loading="lazy" decoding="async">
+      <img src="${html(imageUrl(course.image))}" alt="${html(course.imageAlt)}" width="960" height="540" loading="lazy" decoding="async">
       <div class="design-course-body">
         <div class="design-course-meta"><span>${html(course.code)}</span><span class="design-status ${kind === "planned" ? "is-planned" : ""}">${html(course.status)}${course.year ? ` · ${html(course.year)}` : ""}</span></div>
         <h4>${html(course.title)}</h4>

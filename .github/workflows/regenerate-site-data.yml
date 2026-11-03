@@ -11,6 +11,10 @@ on:
       - "CV_*_MOON.docx"
       - "scripts/generate_site_data.py"
       - "assets/research-updates.json"
+      - "assets/teaching-design.js"
+      - "assets/teaching/**"
+      - "scripts/export-teaching-design.mjs"
+      - "scripts/export-teaching-design.test.mjs"
   schedule:
     - cron: "17 13 * * 1" # weekly, Monday 13:17 UTC (off-peak minute)
   workflow_dispatch: {}
@@ -43,12 +47,17 @@ jobs:
       - name: Check CV data invariants
         run: python scripts/test_site_data.py
 
+      - name: Export shared course catalog and thumbnail versions
+        run: |
+          node --test scripts/export-teaching-design.test.mjs
+          node scripts/export-teaching-design.mjs
+
       - name: Commit regenerated data if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain assets/site-data.generated.json assets/site-data.js index.html publication.html)" ]; then
-            git add assets/site-data.generated.json assets/site-data.js index.html publication.html
+          if [ -n "$(git status --porcelain assets/site-data.generated.json assets/site-data.js assets/teaching-design.generated.json index.html publication.html)" ]; then
+            git add assets/site-data.generated.json assets/site-data.js assets/teaching-design.generated.json index.html publication.html
             git commit -m "Auto-regenerate CV site data from docx [skip ci]"
             git push
             echo "Site data updated and pushed."
