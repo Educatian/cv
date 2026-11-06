@@ -1,16 +1,16 @@
 window.__cvTeachingDesign = {
   universityCourses: [
     {
-      code: "AIL 691",
+      code: "AIL 692",
       image: "assets/teaching/ail-691.svg",
-      imageAlt: "AIL 691 course artwork showing connections between AI, learning, and instructional design",
+      imageAlt: "AIL 692 course artwork showing connections between AI, learning, and instructional design",
       summary: "A doctoral course connecting artificial intelligence, learning, and the design of instructional systems.",
       topics: ["Artificial intelligence", "Learning", "Instructional systems"]
     },
     {
-      code: "AIL 692",
+      code: "AIL 693",
       image: "assets/teaching/ail-692.svg",
-      imageAlt: "AIL 692 course artwork showing research papers connected into an evidence map",
+      imageAlt: "AIL 693 course artwork showing research papers connected into an evidence map",
       summary: "A doctoral course introducing literature synthesis in instructional technology research.",
       topics: ["Literature synthesis", "Research design", "Instructional technology"]
     }

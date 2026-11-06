@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "revision": "31503a23c15c230368db",
+  "revision": "400dbbaa88433c364061",
   "catalog": {
     "universityCourses": [
       {
-        "code": "AIL 691",
+        "code": "AIL 692",
         "image": "assets/teaching/ail-691.svg",
-        "imageAlt": "AIL 691 course artwork showing connections between AI, learning, and instructional design",
+        "imageAlt": "AIL 692 course artwork showing connections between AI, learning, and instructional design",
         "summary": "A doctoral course connecting artificial intelligence, learning, and the design of instructional systems.",
         "topics": [
           "Artificial intelligence",
@@ -15,9 +15,9 @@
         ]
       },
       {
-        "code": "AIL 692",
+        "code": "AIL 693",
         "image": "assets/teaching/ail-692.svg",
-        "imageAlt": "AIL 692 course artwork showing research papers connected into an evidence map",
+        "imageAlt": "AIL 693 course artwork showing research papers connected into an evidence map",
         "summary": "A doctoral course introducing literature synthesis in instructional technology research.",
         "topics": [
           "Literature synthesis",
@@ -122,15 +122,15 @@
   },
   "developedCourses": [
     {
-      "code": "AIL 691",
-      "title": "AI, Learning, and Instructional Systems",
+      "code": "AIL 692",
+      "title": "AI in Learning and Instructional Systems",
       "institution": "The University of Alabama",
       "level": "Graduate – Doctoral",
       "terms": "2026"
     },
     {
-      "code": "AIL 692",
-      "title": "Introduction to Literature Synthesis in Instructional Technology Research",
+      "code": "AIL 693",
+      "title": "Introduction to Literature Synthesis",
       "institution": "The University of Alabama",
       "level": "Graduate – Doctoral",
       "terms": "2026"

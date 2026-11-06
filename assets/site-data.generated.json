@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T17:00:03.721796+00:00",
+  "generatedAt": "2026-11-06T17:20:32.365470+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -20,7 +20,7 @@
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=791793c64700",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=a68c095820d5",
     "cvDownloadFilename": "CV_20261102_MOON.docx"
   },
   "contact": {
@@ -2521,15 +2521,15 @@
     ],
     "developedCourses": [
       {
-        "code": "AIL 691",
-        "title": "AI, Learning, and Instructional Systems",
+        "code": "AIL 692",
+        "title": "AI in Learning and Instructional Systems",
         "institution": "The University of Alabama",
         "level": "Graduate – Doctoral",
         "terms": "2026"
       },
       {
-        "code": "AIL 692",
-        "title": "Introduction to Literature Synthesis in Instructional Technology Research",
+        "code": "AIL 693",
+        "title": "Introduction to Literature Synthesis",
         "institution": "The University of Alabama",
         "level": "Graduate – Doctoral",
         "terms": "2026"
@@ -2549,8 +2549,8 @@
       "CAT250 Computer Education & Curriculum Development"
     ],
     "courseDevelopment": [
-      "Developed AIL 691 AI, Learning, and Instructional Systems",
-      "Developed AIL 692 Introduction to Literature Synthesis in Instructional Technology Research",
+      "Developed AIL 692 AI in Learning and Instructional Systems",
+      "Developed AIL 693 Introduction to Literature Synthesis",
       "Redesigned AIL 690 Seminar in Instructional Technology, AIL 605 Interactive Multimedia Process, AIL 606 Software Technology, INTE534 Issues and Trends of Instructional Technology, and INTE535 Analysis, Implementation, and Evaluation of Assistive Technology"
     ],
     "earlierTeachingNote": "Earlier teaching at Florida State University included EME6507 Development of Multimedia Instruction and EME6665 Synthesis, Analysis, and Argumentation in Instructional Systems Research."
