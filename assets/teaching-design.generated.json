@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "400dbbaa88433c364061",
+  "revision": "550de4cf1ee32ae09cd6",
   "catalog": {
     "universityCourses": [
       {
@@ -137,8 +137,8 @@
     }
   ],
   "imageVersions": {
-    "assets/teaching/ail-691.svg": "efe898ca6ba2a74a",
-    "assets/teaching/ail-692.svg": "759e11caf0b651a4",
+    "assets/teaching/ail-691.svg": "7110d0e085807c20",
+    "assets/teaching/ail-692.svg": "a9b608336e6c2ae9",
     "assets/teaching/openstory.jpg": "916aa9e1a08e1bc7",
     "assets/teaching/dale.jpg": "f16e798eaad3ea8d",
     "assets/teaching/sbl.jpg": "1610f87c6f5aa4c2",
