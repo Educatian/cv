@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "0d3b4a582fca9c856b34",
+  "revision": "31503a23c15c230368db",
   "catalog": {
     "universityCourses": [
       {
@@ -34,13 +34,13 @@
         "year": "2026",
         "image": "assets/teaching/openstory.jpg",
         "imageAlt": "OpenStory Studio course artwork showing a branching path toward learning resources and media",
-        "summary": "A self-paced English studio for designing, building, and publishing interactive learning experiences with OpenStory.",
+        "summary": "An applied studio for building accessible interactive learning, from visual design and branching scenarios to assessment and LMS publishing.",
         "topics": [
-          "Instructional design",
           "Interactive authoring",
-          "Accessible learning"
+          "Scenarios and assessment",
+          "LMS publishing"
         ],
-        "detail": "Includes 16 foundations modules, narrated screen tutorials, an integrated scenario-design case, and four portfolio milestones. Learners move from a design brief and storyboard to an accessible interactive prototype and a SCORM 1.2 release candidate for Moodle.",
+        "detail": "Includes 16 foundations modules, 67 video tutorials, 16 build-from-scratch workshops, and four portfolio milestones. Learners work with Canva-to-OpenStory assets, reusable masters and styles, question banks, drag-and-drop interactions, and SCORM delivery, supported by workbooks and editable projects.",
         "access": "To be announced"
       },
       {
@@ -57,7 +57,7 @@
           "Learner models",
           "Learning analytics"
         ],
-        "detail": "Learners design, build, and evaluate an adaptive learning prototype with an analytics plan. The course combines readings, videos, design activities, and a culminating project for graduate learners and practitioners.",
+        "detail": "Learners design and evaluate an adaptive learning prototype with an analytics plan. Annotated readings, narrated lessons, worked examples, and guided labs connect interaction data to learner models, adaptive feedback, and decisions a designer or teacher can act on.",
         "url": "https://dale.teachplay.dev/"
       },
       {
@@ -73,8 +73,24 @@
           "Immersive learning",
           "Design studio"
         ],
-        "detail": "Learners develop a simulation or immersive learning prototype, examine guidance and debriefing, and prepare a package for reuse. The course serves graduate learners and practitioners using free or open-source tools.",
+        "detail": "Lectures, worked examples, annotated readings, and design activities guide learners from a simulation scenario to an immersive prototype. The studio emphasizes scaffolding, feedback, debriefing, accessibility, and evaluation, culminating in a documented package for reuse.",
         "url": "https://sbl.teachplay.dev/"
+      },
+      {
+        "code": "ObsNet Studio",
+        "title": "ObsNet Studio: Behavioral and Document Network Analysis",
+        "status": "Open courseware",
+        "year": "2026",
+        "image": "assets/teaching/obsnet.jpg",
+        "imageAlt": "ObsNet Studio course artwork connecting source evidence, coded themes and conditions, and a network question",
+        "summary": "A hands-on research course connecting systematic observation, qualitative coding, and network analysis with ObsNet Studio.",
+        "topics": [
+          "Systematic observation",
+          "Qualitative coding",
+          "Network analysis"
+        ],
+        "detail": "Learners prepare observational or document data, develop a codebook, compare conditions, and interpret network results. Guided videos, tab-by-tab manuals, starter datasets, practice worksheets, and research-portfolio tasks support the workflow from data preparation to reproducible analysis and reporting.",
+        "url": "https://obsnet.teachplay.dev/"
       }
     ],
     "plannedCourses": [
@@ -126,6 +142,7 @@
     "assets/teaching/openstory.jpg": "916aa9e1a08e1bc7",
     "assets/teaching/dale.jpg": "f16e798eaad3ea8d",
     "assets/teaching/sbl.jpg": "1610f87c6f5aa4c2",
+    "assets/teaching/obsnet.jpg": "e48fb5f6f5515637",
     "assets/teaching/ai-formative-assessment.svg": "772ed69c92b636f9"
   }
 }

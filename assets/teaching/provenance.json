@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-05",
   "assets": [
     {
       "file": "dale.jpg",
@@ -27,6 +27,12 @@
       "file": "openstory.jpg",
       "description": "Existing owner OpenStory Studio course artwork, copied unchanged. Public course access is to be announced.",
       "sha256": "916aa9e1a08e1bc76b042006967766c5e85518d1997ddefb3d1a5f4f98569d85"
+    },
+    {
+      "file": "obsnet.jpg",
+      "source": "https://obsnet.teachplay.dev/",
+      "description": "Existing owner-authored ObsNet Studio course artwork, copied unchanged.",
+      "sha256": "e48fb5f6f5515637fc8773c2a8e99ba6f6437eb05ad1e1df1f48687c8d7bbd7d"
     }
   ]
 }

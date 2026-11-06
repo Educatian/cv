@@ -23,9 +23,9 @@ window.__cvTeachingDesign = {
       year: "2026",
       image: "assets/teaching/openstory.jpg",
       imageAlt: "OpenStory Studio course artwork showing a branching path toward learning resources and media",
-      summary: "A self-paced English studio for designing, building, and publishing interactive learning experiences with OpenStory.",
-      topics: ["Instructional design", "Interactive authoring", "Accessible learning"],
-      detail: "Includes 16 foundations modules, narrated screen tutorials, an integrated scenario-design case, and four portfolio milestones. Learners move from a design brief and storyboard to an accessible interactive prototype and a SCORM 1.2 release candidate for Moodle.",
+      summary: "An applied studio for building accessible interactive learning, from visual design and branching scenarios to assessment and LMS publishing.",
+      topics: ["Interactive authoring", "Scenarios and assessment", "LMS publishing"],
+      detail: "Includes 16 foundations modules, 67 video tutorials, 16 build-from-scratch workshops, and four portfolio milestones. Learners work with Canva-to-OpenStory assets, reusable masters and styles, question banks, drag-and-drop interactions, and SCORM delivery, supported by workbooks and editable projects.",
       access: "To be announced"
     },
     {
@@ -38,7 +38,7 @@ window.__cvTeachingDesign = {
       imageAlt: "DALE course artwork of a learner moving along colorful stepping stones and connected learning data",
       summary: "A 15-module course on designing adaptive learning experiences through interaction, personalization, and learning analytics.",
       topics: ["Adaptive learning", "Learner models", "Learning analytics"],
-      detail: "Learners design, build, and evaluate an adaptive learning prototype with an analytics plan. The course combines readings, videos, design activities, and a culminating project for graduate learners and practitioners.",
+      detail: "Learners design and evaluate an adaptive learning prototype with an analytics plan. Annotated readings, narrated lessons, worked examples, and guided labs connect interaction data to learner models, adaptive feedback, and decisions a designer or teacher can act on.",
       url: "https://dale.teachplay.dev/"
     },
     {
@@ -50,8 +50,20 @@ window.__cvTeachingDesign = {
       imageAlt: "SBL course artwork of a paper collage with an immersive learning studio and virtual reality headset",
       summary: "A 15-module course connecting the learning science of simulation with the design and evaluation of immersive experiences.",
       topics: ["Simulation", "Immersive learning", "Design studio"],
-      detail: "Learners develop a simulation or immersive learning prototype, examine guidance and debriefing, and prepare a package for reuse. The course serves graduate learners and practitioners using free or open-source tools.",
+      detail: "Lectures, worked examples, annotated readings, and design activities guide learners from a simulation scenario to an immersive prototype. The studio emphasizes scaffolding, feedback, debriefing, accessibility, and evaluation, culminating in a documented package for reuse.",
       url: "https://sbl.teachplay.dev/"
+    },
+    {
+      code: "ObsNet Studio",
+      title: "ObsNet Studio: Behavioral and Document Network Analysis",
+      status: "Open courseware",
+      year: "2026",
+      image: "assets/teaching/obsnet.jpg",
+      imageAlt: "ObsNet Studio course artwork connecting source evidence, coded themes and conditions, and a network question",
+      summary: "A hands-on research course connecting systematic observation, qualitative coding, and network analysis with ObsNet Studio.",
+      topics: ["Systematic observation", "Qualitative coding", "Network analysis"],
+      detail: "Learners prepare observational or document data, develop a codebook, compare conditions, and interpret network results. Guided videos, tab-by-tab manuals, starter datasets, practice worksheets, and research-portfolio tasks support the workflow from data preparation to reproducible analysis and reporting.",
+      url: "https://obsnet.teachplay.dev/"
     }
   ],
   plannedCourses: [
