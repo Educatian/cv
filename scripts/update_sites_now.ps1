@@ -78,18 +78,20 @@ $openalexPy = Join-Path $PSScriptRoot 'update_research_analytics.py'
 #     challenge or simply be slow. Run it in a background job with a hard
 #     180s timeout so a hung scrape never blocks the whole update; on
 #     failure/timeout we keep the previously-captured scholar JSON and still
-#     refresh OpenAlex below (OpenAlex is the canonical source; Scholar only
-#     enriches the summary/annual-trend numbers).
+#     refresh OpenAlex below. Validated Scholar captures supply citation metrics;
+#     OpenAlex supplies separate metadata and acts as an explicitly labeled fallback.
 if (Test-Path -LiteralPath $scholarMjs) {
   Write-Host "  Google Scholar scrape (Playwright, up to 180s)..." -ForegroundColor DarkGray
   $job = Start-Job -ScriptBlock {
     param($root, $mjs)
     Set-Location -LiteralPath $root
     & node $mjs 2>&1
+    if ($LASTEXITCODE -ne 0) { throw "Scholar capture failed; previous verified file retained." }
   } -ArgumentList $cvRoot, $scholarMjs
   if (Wait-Job $job -Timeout 180) {
-    Receive-Job $job | ForEach-Object { Write-Host "    $_" -ForegroundColor Gray }
-    Write-Host "  Scholar data refreshed." -ForegroundColor Green
+    Receive-Job $job -ErrorAction Continue | ForEach-Object { Write-Host "    $_" -ForegroundColor Gray }
+    if ($job.State -eq 'Completed') { Write-Host "  Scholar data refreshed." -ForegroundColor Green }
+    else { Write-Host "  Scholar capture failed; keeping previous verified data." -ForegroundColor Yellow }
   } else {
     Stop-Job $job 2>&1 | Out-Null
     Write-Host "  Scholar scrape timed out (>180s); keeping previous Scholar data." -ForegroundColor Yellow

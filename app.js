@@ -1131,7 +1131,7 @@ function renderScholarSnapshot() {
     return;
   }
 
-  fetch("assets/research-analytics.json")
+  fetch("assets/research-analytics.json", {cache: "no-cache"})
     .then((response) => {
       if (!response.ok) {
         throw new Error("Scholar metrics unavailable");
@@ -1142,21 +1142,26 @@ function renderScholarSnapshot() {
       const summary = data.summary || {};
       const source = data.source || {};
       const sinceLabel = summary.sinceLabel || "recent";
+      const provider = source.summaryProvider || "Citation snapshot";
+      const snapshot = root.closest('.scholar-snapshot');
+      const title = snapshot?.querySelector('.scholar-snapshot-head > span');
+      if (title) title.textContent = `${provider} Snapshot`;
+      if (snapshot) snapshot.setAttribute('aria-label', `${provider} impact snapshot`);
       const metrics = [
         {
           value: summary.totalCitations,
           label: "Citations",
-          note: `${sinceLabel}: ${summary.sinceYearCitations?.toLocaleString?.() || "n/a"}`,
+          note: summary.sinceYearCitations == null ? provider : `${sinceLabel}: ${summary.sinceYearCitations.toLocaleString()}`,
         },
         {
           value: summary.hIndex,
           label: "h-index",
-          note: `${sinceLabel}: ${summary.sinceYearHIndex ?? "n/a"}`,
+          note: summary.sinceYearHIndex == null ? provider : `${sinceLabel}: ${summary.sinceYearHIndex}`,
         },
         {
           value: summary.i10Index,
           label: "i10-index",
-          note: `${sinceLabel}: ${summary.sinceYearI10Index ?? "n/a"}`,
+          note: summary.sinceYearI10Index == null ? provider : `${sinceLabel}: ${summary.sinceYearI10Index}`,
         },
       ];
 

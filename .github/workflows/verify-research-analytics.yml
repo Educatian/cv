@@ -1,0 +1,35 @@
+name: Verify research analytics
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/*research_analytics*'
+      - 'scripts/scholar-validation*'
+      - 'assets/research-analytics*.json'
+      - 'analytics.js'
+      - 'app.js'
+      - '.github/workflows/verify-research-analytics.yml'
+  pull_request:
+    paths:
+      - 'scripts/*research_analytics*'
+      - 'scripts/scholar-validation*'
+      - 'assets/research-analytics*.json'
+      - 'analytics.js'
+      - 'app.js'
+permissions:
+  contents: read
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install requests
+      - run: node --test scripts/scholar-validation.test.mjs
+      - run: python scripts/test_research_analytics.py
+      - run: node --check analytics.js && node --check app.js

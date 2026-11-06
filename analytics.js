@@ -14,10 +14,12 @@ function analyticsEscapeHtml(value = "") {
 }
 
 function analyticsFormatNumber(value) {
+  if (value === null || value === undefined || !Number.isFinite(Number(value))) return "n/a";
   return new Intl.NumberFormat("en-US").format(Number(value) || 0);
 }
 
 function analyticsFormatDecimal(value, digits = 1) {
+  if (value === null || value === undefined || !Number.isFinite(Number(value))) return "n/a";
   return Number(value || 0).toFixed(digits);
 }
 
@@ -76,7 +78,7 @@ function analyticsClearNode(node) {
 
 async function loadResearchAnalytics() {
   if (!analyticsState.loadingPromise) {
-    analyticsState.loadingPromise = fetch("assets/research-analytics.json")
+    analyticsState.loadingPromise = fetch("assets/research-analytics.json", {cache: "no-cache"})
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load research analytics.");
@@ -86,6 +88,9 @@ async function loadResearchAnalytics() {
       .then((data) => {
         analyticsState.data = data;
         return data;
+      }).catch((error) => {
+        analyticsState.loadingPromise = null;
+        throw error;
       });
   }
 
@@ -99,6 +104,11 @@ function renderAnalyticsMeta(data) {
   if (!note || !linkRow) {
     return;
   }
+  const years = (data.annualCitations || []).map(item => item.year);
+  const annualNote = document.getElementById('annual-citations-chart')?.closest('.analytics-panel')?.querySelector('.analytics-panel-head p');
+  if (annualNote && years.length) annualNote.textContent = `${data.source.annualTrendProvider} annual citations, ${Math.min(...years)}–${Math.max(...years)}. The current year is year-to-date; dashed values are projections.`;
+  const worksNote = document.getElementById('analytics-top-works')?.closest('.analytics-panel')?.querySelector('.analytics-panel-head p');
+  if (worksNote) worksNote.textContent = `Most-cited publications using ${data.source.summaryProvider} cited-by counts, enriched with OpenAlex metadata where available.`;
 
   if (data.scholar?.available) {
     note.textContent = `Analytics snapshot as of ${analyticsFormatMonthYear(
@@ -175,7 +185,7 @@ function renderAnalyticsMetrics(data) {
     {
       label: "Citations / Work",
       value: analyticsFormatDecimal(summary.citationsPerWork, 2),
-      note: `${data.source.summaryProvider} citations across matched works`,
+      note: `${data.source.summaryProvider} citations / ${analyticsFormatNumber(summary.worksCount)} listed works`,
     },
     {
       label: "Citations / Work-Year",
@@ -192,7 +202,7 @@ function renderAnalyticsMetrics(data) {
     {
       label: "5-Year Growth",
       value: analyticsFormatGrowth(summary.fiveYearGrowthRate),
-      note: `${analyticsFormatNumber(summary.recent5YearCitations)} vs ${analyticsFormatNumber(
+      note: summary.fiveYearGrowthRate == null ? "Not enough annual history for two complete 5-year windows" : `${analyticsFormatNumber(summary.recent5YearCitations)} vs ${analyticsFormatNumber(
         summary.previous5YearCitations
       )} citations | ${data.source.annualTrendProvider}`,
     },

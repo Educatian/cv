@@ -79,6 +79,30 @@ def safe_int(value: Any) -> int:
         return 0
 
 
+def valid_scholar_payload(payload: Dict[str, Any] | None) -> bool:
+    """Reject a challenge/partial capture before selecting any Scholar sources."""
+    if not payload or not re.search(r"jewoong\s+moon", (payload.get("author") or {}).get("name", ""), re.I):
+        return False
+    summary = payload.get("summary") or {}
+    works = payload.get("works") or []
+    if not works or payload.get("worksCount") != len(works) or (payload.get("capture") or {}).get("complete") is not True:
+        return False
+    fields = ["totalCitations", "sinceYearCitations", "hIndex", "sinceYearHIndex", "i10Index", "sinceYearI10Index"]
+    if any(type(summary.get(key)) is not int or summary[key] < 0 for key in fields):
+        return False
+    if not summary["totalCitations"] or not summary["hIndex"] or not re.fullmatch(r"Since \d{4}", summary.get("sinceLabel", "")):
+        return False
+    if any(summary[recent] > summary[all_] for all_, recent in [("totalCitations", "sinceYearCitations"), ("hIndex", "sinceYearHIndex"), ("i10Index", "sinceYearI10Index")]):
+        return False
+    if any(not clean_text(work.get("title")) or type(work.get("citations")) is not int or work["citations"] < 0 for work in works):
+        return False
+    counts = sorted((work["citations"] for work in works), reverse=True)
+    if sum(count >= index + 1 for index, count in enumerate(counts)) != summary["hIndex"] or sum(count >= 10 for count in counts) != summary["i10Index"]:
+        return False
+    annual = payload.get("annualCitations") or []
+    return bool(annual) and all(type(row.get("year")) is int and row["year"] >= 1900 and type(row.get("citations")) is int and row["citations"] >= 0 for row in annual) and len({row["year"] for row in annual}) == len(annual)
+
+
 def slugify(value: str) -> str:
     return (
         value.lower()
@@ -412,7 +436,7 @@ def build_growth_metrics(
 ) -> Dict[str, Any]:
     scholar_summary = (scholar_payload or {}).get("summary") or {}
     total_works = len(work_records) or safe_int(author.get("works_count"))
-    total_citations = safe_int(scholar_summary.get("totalCitations")) or safe_int(author.get("cited_by_count"))
+    total_citations = safe_int(scholar_summary.get("totalCitations")) if scholar_payload else safe_int(author.get("cited_by_count"))
     current_year = max((item["year"] for item in annual_series), default=dt.date.today().year)
     yearly_citations = {item["year"]: item["citations"] for item in annual_series}
 
@@ -437,13 +461,13 @@ def build_growth_metrics(
         "previous3YearCitations": previous3,
         "recent5YearCitations": recent5,
         "previous5YearCitations": previous5,
-        "threeYearGrowthRate": growth_rate(previous3, recent3),
-        "fiveYearGrowthRate": growth_rate(previous5, recent5),
+        "threeYearGrowthRate": growth_rate(previous3, recent3) if all(y in yearly_citations for y in range(current_year - 5, current_year + 1)) else None,
+        "fiveYearGrowthRate": growth_rate(previous5, recent5) if all(y in yearly_citations for y in range(current_year - 9, current_year + 1)) else None,
         "latestCitationYear": current_year,
         "sinceLabel": clean_text(scholar_summary.get("sinceLabel")),
-        "sinceYearCitations": safe_int(scholar_summary.get("sinceYearCitations")),
-        "sinceYearHIndex": safe_int(scholar_summary.get("sinceYearHIndex")),
-        "sinceYearI10Index": safe_int(scholar_summary.get("sinceYearI10Index")),
+        "sinceYearCitations": safe_int(scholar_summary.get("sinceYearCitations")) if scholar_payload else None,
+        "sinceYearHIndex": safe_int(scholar_summary.get("sinceYearHIndex")) if scholar_payload else None,
+        "sinceYearI10Index": safe_int(scholar_summary.get("sinceYearI10Index")) if scholar_payload else None,
     }
 
 
@@ -671,6 +695,7 @@ def build_payload(
     scholar_payload: Dict[str, Any] | None,
     field_benchmark: Dict[str, Any] | None = None,
 ) -> Dict[str, Any]:
+    scholar_payload = scholar_payload if valid_scholar_payload(scholar_payload) else None
     current_year = dt.date.today().year
     openalex_annual_series = build_annual_series(author)
     annual_series = [

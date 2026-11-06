@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
+import { validateScholarProfile } from "./scholar-validation.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -9,8 +10,6 @@ const ROOT = path.resolve(__dirname, "..");
 const OUTPUT_PATH = path.join(ROOT, "assets", "research-analytics-scholar.json");
 
 const PROFILE_URL = "https://scholar.google.com/citations?user=b-epW38AAAAJ&hl=en&oi=ao";
-const USER_AGENT =
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36";
 
 function normalizeWhitespace(value = "") {
   return value.replace(/\s+/g, " ").trim();
@@ -35,17 +34,9 @@ function absoluteScholarUrl(href = "") {
 
 async function createBrowserContext(browser) {
   const context = await browser.newContext({
-    userAgent: USER_AGENT,
     viewport: { width: 1480, height: 1200 },
     locale: "en-US",
     timezoneId: "America/Chicago",
-  });
-
-  await context.addInitScript(() => {
-    Object.defineProperty(navigator, "webdriver", { get: () => undefined });
-    Object.defineProperty(navigator, "languages", { get: () => ["en-US", "en"] });
-    Object.defineProperty(navigator, "platform", { get: () => "Win32" });
-    window.chrome = { runtime: {} };
   });
 
   return context;
@@ -209,7 +200,7 @@ async function extractScholarProfile(page) {
 async function main() {
   const browser = await chromium.launch({
     headless: true,
-    args: ["--disable-blink-features=AutomationControlled"],
+    channel: "chrome",
   });
 
   const context = await createBrowserContext(browser);
@@ -227,8 +218,11 @@ async function main() {
 
     const payload = await extractScholarProfile(page);
     payload.worksCount = payload.works.length;
-
-    await fs.writeFile(OUTPUT_PATH, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+    payload.capture = { complete: await page.locator('#gsc_bpf_more').isDisabled().catch(() => false) };
+    validateScholarProfile(payload);
+    const temporaryPath = `${OUTPUT_PATH}.tmp`;
+    await fs.writeFile(temporaryPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+    await fs.rename(temporaryPath, OUTPUT_PATH);
 
     console.log(`Wrote ${OUTPUT_PATH}`);
     console.log(`Scholar works captured: ${payload.worksCount}`);
