@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-10T17:00:03.889888+00:00",
-  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
+  "generatedAt": "2026-11-11T19:12:06.878733+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Downloads\\office\\work\\aatc-cv-20261111\\cv-release\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
-    "cvDate": "November 2, 2026",
+    "cvDate": "November 11, 2026",
     "eyebrow": "Instructional Technology | College of Education",
     "heroTitleMeta": "Assistant Professor of Instructional Technology, The University of Alabama",
     "heroSummary": "Research at The University of Alabama focused on Digital Game-Based Learning, Inclusive and Immersive learning experience design (Extended Reality), Learning Analytics, and Educational Data Mining.",
@@ -20,8 +20,8 @@
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=a68c095820d5",
-    "cvDownloadFilename": "CV_20261102_MOON.docx"
+    "cvDownloadPath": "CV_202605_MOON.docx?v=85384dae216f",
+    "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
     "email": "jmoon19@ua.edu",
@@ -256,6 +256,16 @@
       ]
     },
     {
+      "name": "CER",
+      "badge": "Pending",
+      "summary": "CER: Investigating Transformative Pedagogies for Assured Agentic Twin Computing (AATC)",
+      "tags": [
+        "$1,000,000",
+        "Co-PI",
+        "National Science Foundation (NSF), Total requested $1,000,000"
+      ]
+    },
+    {
       "name": "Risk-Adaptive Human Oversight for Agentic AI Learning",
       "badge": "Pending",
       "summary": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency",
@@ -263,16 +273,6 @@
         "$110,669",
         "Lead PI",
         "Charles Koch Foundation, Requested amount $110,669"
-      ]
-    },
-    {
-      "name": "TRACE-Reg",
-      "badge": "Pending",
-      "summary": "TRACE-Reg: A Privacy-by-Design, Agency-Preserving Emotion-Regulation Agent for Adult Learners",
-      "tags": [
-        "$100,000",
-        "Lead PI",
-        "Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget $100,000"
       ]
     }
   ],
@@ -2273,6 +2273,12 @@
     ],
     "pending": [
       {
+        "title": "CER: Investigating Transformative Pedagogies for Assured Agentic Twin Computing (AATC)",
+        "meta": "Co-PI | National Science Foundation (NSF), Total requested $1,000,000 | August 2027 - July 2031",
+        "amount": "$1,000,000",
+        "amountValue": 1000000.0
+      },
+      {
         "title": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency",
         "meta": "Lead PI | Charles Koch Foundation, Requested amount $110,669 | January 2027 - December 2027",
         "amount": "$110,669",
@@ -2343,11 +2349,11 @@
   },
   "grantPortfolio": {
     "fundedTotal": 607683,
-    "pendingTotal": 1341437,
+    "pendingTotal": 2341437,
     "fundedCount": 14,
-    "pendingCount": 11,
+    "pendingCount": 12,
     "sourceReportedFundedTotal": 607683,
-    "sourceReportedPendingTotal": 1341437,
+    "sourceReportedPendingTotal": 2341437,
     "withdrawnTotal": 0,
     "withdrawnCount": 0,
     "sourceReportedWithdrawnTotal": 0,
