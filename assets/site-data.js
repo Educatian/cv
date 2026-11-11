@@ -1,6 +1,6 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-11-11T19:13:42.465468+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-11-11T19:16:22.311094+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Downloads\\office\\work\\aatc-cv-20261111\\cv-release\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "November 11, 2026",
@@ -20,7 +20,7 @@ window.__cvSiteData = {
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=85384dae216f",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=b406ca9219aa",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -2337,23 +2337,17 @@ window.__cvSiteData = {
         "meta": "Key Personnel / External Evaluator | January 2027 - December 2029",
         "amount": "pending",
         "amountValue": null
-      },
-      {
-        "title": "A Biofeedback-Based Virtual Reality Implementation to Teach Metered Dose Inhaler Technique Education for Pediatric Asthma Patients: A Development and Feasibility Study",
-        "meta": "PI | National Institutes of Health (NIH), total requested $399,946, submitted July 10, 2026 | April 2027 - March 2029",
-        "amount": "$399,946",
-        "amountValue": 399946.0
       }
     ],
     "withdrawn": []
   },
   "grantPortfolio": {
     "fundedTotal": 607683,
-    "pendingTotal": 2341437,
+    "pendingTotal": 1941491,
     "fundedCount": 14,
-    "pendingCount": 12,
+    "pendingCount": 11,
     "sourceReportedFundedTotal": 607683,
-    "sourceReportedPendingTotal": 2341437,
+    "sourceReportedPendingTotal": 1941491,
     "withdrawnTotal": 0,
     "withdrawnCount": 0,
     "sourceReportedWithdrawnTotal": 0,
