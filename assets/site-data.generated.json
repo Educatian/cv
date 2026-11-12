@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-11T19:16:57.937486+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-11-12T17:00:06.097126+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "November 11, 2026",
@@ -20,7 +20,7 @@
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=b406ca9219aa",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=df0d4ef06fd1",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -677,8 +677,8 @@
     },
     {
       "year": "2024",
-      "title": "Utilizing generative artificial intelligence for instructional design: Exploring strengths, weaknesses, opportunities, and threats",
-      "authors": "Choi, G. W., Lee, D., Kim, S. H, & Moon, J.",
+      "title": "Utilizing generative AI for instructional design: Exploring strengths, weaknesses, opportunities, and threats",
+      "authors": "Choi, G. W., Kim, S. H., Lee, D., & Moon, J.",
       "venue": "TechTrends",
       "link": "https://doi.org/10.1007/s11528-024-00967-w",
       "tags": [
@@ -1287,7 +1287,7 @@
     {
       "year": "2024",
       "category": "International",
-      "citation": "Choi, G. W., Lee, D., Kim, S. H, & Moon, J. (2024). Utilizing generative artificial intelligence for instructional design: Exploring strengths, weaknesses, opportunities, and threats. TechTrends https://doi.org/10.1007/s11528-024-00967-w [ESCI-indexed, IF = 5.2, IF5 = 4.6]",
+      "citation": "Choi, G. W., Kim, S. H., Lee, D., & Moon, J. (2024). Utilizing generative AI for instructional design: Exploring strengths, weaknesses, opportunities, and threats. TechTrends, 68(4), 832–844. https://doi.org/10.1007/s11528-024-00967-w [ESCI-indexed, IF = 5.2, IF5 = 4.6]",
       "link": "https://doi.org/10.1007/s11528-024-00967-w"
     },
     {
