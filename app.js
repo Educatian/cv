@@ -1907,6 +1907,56 @@ const grantFunderMarks = {
     src: "assets/funder-logos/nih.png",
     shape: "is-symbol",
   },
+  ies: {
+    name: "Institute of Education Sciences",
+    src: "assets/funder-logos/ies.png",
+    shape: "is-wide",
+  },
+  naed: {
+    name: "National Academy of Education",
+    src: "assets/funder-logos/naed.jpg",
+    shape: "is-symbol",
+  },
+  spencer: {
+    name: "Spencer Foundation",
+    src: "assets/funder-logos/spencer.png",
+    shape: "is-wide",
+  },
+  russellSage: {
+    name: "Russell Sage Foundation",
+    src: "assets/funder-logos/russell-sage.svg",
+    shape: "is-symbol",
+  },
+  charlesKoch: {
+    name: "Charles Koch Foundation",
+    src: "assets/funder-logos/charles-koch.svg",
+    shape: "is-symbol",
+  },
+  sony: {
+    name: "Sony",
+    src: "assets/funder-logos/sony.svg",
+    shape: "is-wide",
+  },
+  microsoft: {
+    name: "Microsoft Research",
+    src: "assets/funder-logos/microsoft.svg",
+    shape: "is-wide",
+  },
+  asmodee: {
+    name: "Asmodee",
+    src: "assets/funder-logos/asmodee.png",
+    shape: "is-wide",
+  },
+  raais: {
+    name: "The RAAIS Foundation",
+    src: "assets/funder-logos/raais.png",
+    shape: "is-symbol",
+  },
+  sentient: {
+    name: "Sentient Foundation",
+    src: "assets/funder-logos/sentient.svg",
+    shape: "is-wide",
+  },
 };
 
 function getGrantFunderMark(item) {
@@ -1919,9 +1969,19 @@ function getGrantFunderMark(item) {
     return grantFunderMarks.nrf;
   }
   if (searchable.includes("aera-nsf")) return grantFunderMarks.aera;
-  if (searchable.includes("innovative math solutions") || searchable.includes("aims collaboratory")) {
+  if (searchable.includes("innovative math solutions") || searchable.includes("aims collaboratory") || searchable.includes("aims edudata")) {
     return grantFunderMarks.aims;
   }
+  if (searchable.includes("institute of education sciences") || searchable.includes("(ies)")) return grantFunderMarks.ies;
+  if (searchable.includes("national academy of education") || searchable.includes("naed")) return grantFunderMarks.naed;
+  if (searchable.includes("spencer foundation")) return grantFunderMarks.spencer;
+  if (searchable.includes("russell sage")) return grantFunderMarks.russellSage;
+  if (searchable.includes("charles koch")) return grantFunderMarks.charlesKoch;
+  if (searchable.includes("sony corporation") || searchable.includes("sony research")) return grantFunderMarks.sony;
+  if (searchable.includes("microsoft")) return grantFunderMarks.microsoft;
+  if (searchable.includes("asmodee")) return grantFunderMarks.asmodee;
+  if (searchable.includes("raais")) return grantFunderMarks.raais;
+  if (searchable.includes("sentient foundation")) return grantFunderMarks.sentient;
   if (searchable.includes("national institutes of health") || searchable.includes("(nih)")) {
     return grantFunderMarks.nih;
   }
