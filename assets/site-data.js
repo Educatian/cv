@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-11-13T15:49:21.849234+00:00",
+  "generatedAt": "2026-11-14T17:00:04.788545+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
