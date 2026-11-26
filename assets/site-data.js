@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-11-26T01:34:56.471327+00:00",
+  "generatedAt": "2026-11-26T01:47:11.519708+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -20,7 +20,7 @@ window.__cvSiteData = {
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=d50b6dfce563",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=68dc894bee71",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -43,7 +43,7 @@ window.__cvSiteData = {
       "label": "Journal articles"
     },
     {
-      "value": "21",
+      "value": "22",
       "label": "Conference proceedings"
     },
     {
@@ -55,7 +55,7 @@ window.__cvSiteData = {
       "label": "Working papers"
     },
     {
-      "value": "71",
+      "value": "72",
       "label": "Presentations"
     },
     {
@@ -1676,6 +1676,18 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
+      "title": "Technology integration in K–12 science education: A meta-analysis of learning outcomes and instructional practices",
+      "authors": "You, H., Park, S., Kim, M., Aldemir, T., Moon, J., Kourkoulou, T., Zhu, L., Abu, S., Song, D., & Lee, H.",
+      "note": "",
+      "venue": "Journal of Science Education and Technology",
+      "citation": "You, H., Park, S., Kim, M., Aldemir, T., Moon, J., Kourkoulou, T., Zhu, L., Abu, S., Song, D., & Lee, H. (Submitted). Technology integration in K–12 science education: A meta-analysis of learning outcomes and instructional practices. Journal of Science Education and Technology.",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
       "title": "Students’ judgements of embodied agent feedback and dialogue in immersive safety training",
       "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
       "note": "mentored collaboration",
@@ -1808,11 +1820,11 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
-      "title": "Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation",
-      "authors": "Lim, J., Moon, J., & Chen, Y.",
+      "title": "Balancing play and learning: PreK-5 teachers’ conceptualizations and enactments of play-based teaching in mixed reality simulation",
+      "authors": "Lim, J., Moon, J., Ramberg, E., Lee, J., Chen, Y., & Anderson, E.",
       "note": "",
-      "venue": "Journal of Research on Technology in Education",
-      "citation": "Lim, J., Moon, J., & Chen, Y. (Submitted). Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation. Journal of Research on Technology in Education.",
+      "venue": "Education 3-13",
+      "citation": "Lim, J., Moon, J., Ramberg, E., Lee, J., Chen, Y., & Anderson, E. (Submitted). Balancing play and learning: PreK-5 teachers’ conceptualizations and enactments of play-based teaching in mixed reality simulation. Education 3-13.",
       "link": ""
     },
     {
@@ -2034,6 +2046,30 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Book Chapter",
+      "status": "Submitted",
+      "year": "Pipeline",
+      "title": "Analytics in immersive learning experience design: Introducing the MIRROR framework",
+      "authors": "Moon, J., Awoyemi, I. D., Abu, S., Olowolafe, S., & Sharma, V.",
+      "note": "corresponding author",
+      "venue": "In Educational media and technology yearbook (Research Corner). Springer",
+      "citation": "*‡ Moon, J., Awoyemi, I. D., Abu, S., Olowolafe, S., & Sharma, V. (Submitted). Analytics in immersive learning experience design: Introducing the MIRROR framework. In Educational media and technology yearbook (Research Corner). Springer.",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Book Chapter",
+      "status": "Abstract submitted",
+      "year": "Pipeline",
+      "title": "Designing for epistemic immersion in graduate academic writing: A design journey with AI-mediated feedback",
+      "authors": "Moon, J., Cho, M., & Wong, W. L.",
+      "note": "corresponding author",
+      "venue": "In Immersive education and artificial intelligence: Critical perspectives on learning, design, and innovation (iLEAD edited volume)",
+      "citation": "‡ Moon, J., Cho, M., & Wong, W. L. (Abstract submitted). Designing for epistemic immersion in graduate academic writing: A design journey with AI-mediated feedback. In Immersive education and artificial intelligence: Critical perspectives on learning, design, and innovation (iLEAD edited volume).",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Book Chapter",
       "status": "Under review",
       "year": "Pipeline",
       "title": "From conversational to agentic AI: The human-AI research mentoring cycle",
@@ -2077,42 +2113,6 @@ window.__cvSiteData = {
       "note": "",
       "venue": "Online Learning Innovation Summit 2027",
       "citation": "Moon, J. (Submitted). RemixEd: Intentional teaching with AI-assisted interactive learning design. Online Learning Innovation Summit 2027.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "Operationalising CEFR in L2 English writing assessment: Divergence patterns between human teachers and large language model judges",
-      "authors": "Wong, W. L., & Moon, J.",
-      "note": "",
-      "venue": "Assessing Writing",
-      "citation": "Wong, W. L., & Moon, J. (In preparation). Operationalising CEFR in L2 English writing assessment: Divergence patterns between human teachers and large language model judges. Assessing Writing.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "Revising to resubmit",
-      "year": "Pipeline",
-      "title": "When frontier LLMs disagree: Diametric scoring bias between Gemini and GPT-4o on CEFR writing in Malaysian upper primary ESL",
-      "authors": "Wong, W. L., & Moon, J.",
-      "note": "",
-      "venue": "",
-      "citation": "Wong, W. L., & Moon, J. (Revising to resubmit). When frontier LLMs disagree: Diametric scoring bias between Gemini and GPT-4o on CEFR writing in Malaysian upper primary ESL.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "Technology Integration and Student Outcomes in K–12 Science Education: A Meta-Analytic Review",
-      "authors": "You, H., Park, S., Hong, K., Zhu, L., Moon, J., Kourkoulou, T., Aldemir, T., Abu, S., Lee, H., & Song, D.",
-      "note": "",
-      "venue": "International Journal of Science Education",
-      "citation": "You, H., Park, S., Hong, K., Zhu, L., Moon, J., Kourkoulou, T., Aldemir, T., Abu, S., Lee, H., & Song, D. (In preparation). Technology Integration and Student Outcomes in K–12 Science Education: A Meta-Analytic Review. International Journal of Science Education.",
       "link": ""
     },
     {
@@ -2178,10 +2178,10 @@ window.__cvSiteData = {
   ],
   "workingPaperSummary": {
     "total": 42,
-    "submittedOrUnderReview": 34,
-    "inPreparation": 8,
-    "journalManuscripts": 35,
-    "bookChapters": 3,
+    "submittedOrUnderReview": 37,
+    "inPreparation": 5,
+    "journalManuscripts": 33,
+    "bookChapters": 5,
     "conferenceProposals": 4
   },
   "grants": {
@@ -2697,6 +2697,10 @@ window.__cvSiteData = {
   "serviceReviewCopy": "Review service spans 23 journals across educational technology, learning sciences, and immersive learning, alongside grant review for National Science Foundation and Swiss National Sciences Foundation.",
   "talks": [
     {
+      "title": "Technology use in K–12 science classrooms: A scoping review",
+      "meta": "Accepted for presentation at the 2027 NARST Annual International Conference, Boston, MA, United States."
+    },
+    {
       "title": "Enhancing the resolution of instructional design evaluation: Reliability and validity analysis of a multi-agent system applying Gagné’s nine events of instruction",
       "meta": "ICER 2026, Seoul, South Korea."
     },
@@ -2722,10 +2726,6 @@ window.__cvSiteData = {
     },
     {
       "title": "Modeling behavioral dynamics and cognitive states in VR safety training: A learning analytics approach",
-      "meta": "Poster Session, AERA 2026, Los Angeles, United States."
-    },
-    {
-      "title": "Feedback‐driven strategic shifts in immersive virtual reality training: A multi-phase behavioral-mining study",
       "meta": "Poster Session, AERA 2026, Los Angeles, United States."
     }
   ]
