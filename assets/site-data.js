@@ -1,6 +1,6 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-11-26T02:10:14.962940+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-11-26T02:28:30.846099+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "November 11, 2026",
@@ -20,7 +20,7 @@ window.__cvSiteData = {
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=6bdb763233f4",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=50730ff4cda6",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -1515,14 +1515,15 @@ window.__cvSiteData = {
     },
     {
       "year": "2027",
-      "title": "Leveraging analytics to enhance immersive teacher simulations: Challenges and opportunities",
-      "authors": "Hong, S., Moon, J., Hwang, J., Eom, T., & Seo, G.",
-      "venue": "Innovations in immersive learning for teacher education: International perspectives · Springer",
-      "bookTitle": "Innovations in immersive learning for teacher education: International perspectives",
-      "publisher": "Springer",
+      "title": "Multimodal analysis of preservice teachers’ interactions in a generative AI-enhanced immersive teacher simulation",
+      "authors": "Hong, S., Moon, J., Eom, T., Hwang, J., & Seo, J.",
+      "venue": "In D. Tafazoli, E. Southgate, & E. Shaw (Eds.), Innovations in immersive learning for teacher education: International perspectives. Springer Nature",
+      "bookTitle": "",
+      "publisher": "",
       "link": "",
       "doi": "",
       "tags": [
+        "GenAI",
         "XR",
         "Analytics",
         "Teacher Ed"
@@ -1530,7 +1531,7 @@ window.__cvSiteData = {
       "note": "",
       "status": "In Press",
       "type": "Book Chapter",
-      "citation": "Hong, S., Moon, J., Hwang, J., Eom, T., & Seo, G. (In Press, 2027). Leveraging analytics to enhance immersive teacher simulations: Challenges and opportunities. In D. Tafazoli, E. Southgate, & E. Shaw (Eds.), Innovations in immersive learning for teacher education: International perspectives. Springer."
+      "citation": "Hong, S., Moon, J., Eom, T., Hwang, J., & Seo, J. (In Press, 2027). Multimodal analysis of preservice teachers’ interactions in a generative AI-enhanced immersive teacher simulation. In D. Tafazoli, E. Southgate, & E. Shaw (Eds.), Innovations in immersive learning for teacher education: International perspectives. Springer Nature."
     },
     {
       "year": "2027",
