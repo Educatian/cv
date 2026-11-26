@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-11-24T17:00:03.458406+00:00",
+  "generatedAt": "2026-11-26T01:34:56.471327+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -20,7 +20,7 @@ window.__cvSiteData = {
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=be67ec7da6f9",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=d50b6dfce563",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -1676,6 +1676,30 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
+      "title": "Students’ judgements of embodied agent feedback and dialogue in immersive safety training",
+      "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
+      "note": "mentored collaboration",
+      "venue": "Journal of Computer Assisted Learning",
+      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (Submitted). Students’ judgements of embodied agent feedback and dialogue in immersive safety training. Journal of Computer Assisted Learning.",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
+      "title": "Designing feedback-supported immersive virtual reality for safety training",
+      "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
+      "note": "mentored collaboration",
+      "venue": "TechTrends",
+      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (Submitted). Designing feedback-supported immersive virtual reality for safety training. TechTrends.",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
       "title": "Evaluating generative AI tutors across learners’ cognitive profiles through post hoc log analysis",
       "authors": "Moon, J., & Lee, J. Y.",
       "note": "",
@@ -1806,13 +1830,13 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Revising to resubmit",
+      "status": "Under review",
       "year": "Pipeline",
       "title": "Embodied arts-integrated AI literacy: A nested mixed-methods study with K-12 educators",
       "authors": "Abu, S., Moon, J., & Ghooreian, A.",
       "note": "mentored collaboration",
       "venue": "TechTrends",
-      "citation": "* Abu, S., Moon, J., & Ghooreian, A. (Revising to resubmit). Embodied arts-integrated AI literacy: A nested mixed-methods study with K-12 educators. TechTrends.",
+      "citation": "* Abu, S., Moon, J., & Ghooreian, A. (Under review). Embodied arts-integrated AI literacy: A nested mixed-methods study with K-12 educators. TechTrends.",
       "link": ""
     },
     {
@@ -1830,13 +1854,13 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Revising to resubmit",
+      "status": "Under review",
       "year": "Pipeline",
-      "title": "Ethical argumentation structure through learner-chatbot interaction patterns in K-12 pre-service teachers' AI ethics problem-solving process: A structure-quality decoupling",
+      "title": "Ethical argumentation structure in pre-service teachers’ AI ethics problem-solving: Learner–chatbot interaction patterns",
       "authors": "Hong, S., Moon, J., Chae, J., & Cho, H.",
       "note": "corresponding author",
       "venue": "Educational Technology Research and Development",
-      "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (Revising to resubmit). Ethical argumentation structure through learner-chatbot interaction patterns in K-12 pre-service teachers' AI ethics problem-solving process: A structure-quality decoupling. Educational Technology Research and Development.",
+      "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (Under review). Ethical argumentation structure in pre-service teachers’ AI ethics problem-solving: Learner–chatbot interaction patterns. Educational Technology Research and Development.",
       "link": ""
     },
     {
@@ -1866,13 +1890,13 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Under review",
+      "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "A Bayesian meta-analysis of virtual reality-based safety training in construction sector",
       "authors": "Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R.",
       "note": "corresponding author",
       "venue": "Virtual Reality",
-      "citation": "*‡ Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R. (Under review). A Bayesian meta-analysis of virtual reality-based safety training in construction sector. Virtual Reality.",
+      "citation": "*‡ Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R. (Revising to resubmit). A Bayesian meta-analysis of virtual reality-based safety training in construction sector. Virtual Reality.",
       "link": ""
     },
     {
@@ -1938,13 +1962,13 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Under review",
+      "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review",
       "authors": "Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J.",
       "note": "mentored collaboration",
       "venue": "TechTrends",
-      "citation": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J. (Under review). Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review. TechTrends. (ESCI-indexed journal).",
+      "citation": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J. (Revising to resubmit). Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review. TechTrends. (ESCI-indexed journal).",
       "link": ""
     },
     {
@@ -1998,25 +2022,25 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Under review",
+      "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "Exploratory versus structured interaction: Curiosity-related expression and information retention in two digital learning environments",
       "authors": "Ham, E., & Moon, J.",
       "note": "corresponding author",
       "venue": "Behaviour & Information Technology",
-      "citation": "‡ Ham, E., & Moon, J. (Under review). Exploratory versus structured interaction: Curiosity-related expression and information retention in two digital learning environments. Behaviour & Information Technology.",
+      "citation": "‡ Ham, E., & Moon, J. (Revising to resubmit). Exploratory versus structured interaction: Curiosity-related expression and information retention in two digital learning environments. Behaviour & Information Technology.",
       "link": ""
     },
     {
       "bucket": "Submitted or Under Review",
       "type": "Book Chapter",
-      "status": "Revising to resubmit",
+      "status": "Under review",
       "year": "Pipeline",
       "title": "From conversational to agentic AI: The human-AI research mentoring cycle",
       "authors": "Moon, J., & Uddin, M. M.",
       "note": "",
       "venue": "In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press",
-      "citation": "Moon, J., & Uddin, M. M. (Revising to resubmit). From conversational to agentic AI: The human-AI research mentoring cycle. In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press.",
+      "citation": "Moon, J., & Uddin, M. M. (Under review). From conversational to agentic AI: The human-AI research mentoring cycle. In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press.",
       "link": ""
     },
     {
@@ -2077,30 +2101,6 @@ window.__cvSiteData = {
       "note": "",
       "venue": "",
       "citation": "Wong, W. L., & Moon, J. (Revising to resubmit). When frontier LLMs disagree: Diametric scoring bias between Gemini and GPT-4o on CEFR writing in Malaysian upper primary ESL.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "Design and development research of immersive virtual reality-supported safety training for construction engineering education",
-      "authors": "Awoyemi, I. D., Moon, J., & Song, S.",
-      "note": "mentored collaboration",
-      "venue": "TechTrends",
-      "citation": "* Awoyemi, I. D., Moon, J., & Song, S. (In preparation). Design and development research of immersive virtual reality-supported safety training for construction engineering education. TechTrends.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "Judging value and credibility in feedback and dialogue with an embodied artificial intelligence agent in immersive safety training",
-      "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
-      "note": "mentored collaboration",
-      "venue": "British Journal of Educational Technology",
-      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (In preparation). Judging value and credibility in feedback and dialogue with an embodied artificial intelligence agent in immersive safety training. British Journal of Educational Technology.",
       "link": ""
     },
     {
@@ -2178,8 +2178,8 @@ window.__cvSiteData = {
   ],
   "workingPaperSummary": {
     "total": 42,
-    "submittedOrUnderReview": 32,
-    "inPreparation": 10,
+    "submittedOrUnderReview": 34,
+    "inPreparation": 8,
     "journalManuscripts": 35,
     "bookChapters": 3,
     "conferenceProposals": 4
