@@ -1250,6 +1250,7 @@ a {
 .news-type,
 .publication-year,
 .publication-note,
+.publication-status,
 .tag-pill,
 .repo-badge,
 .filter-button,
@@ -5184,3 +5185,8 @@ body::before {
   }
 }
 
+
+/* APA in-press entries carry no year; hide the empty year badge. */
+.publication-year:empty {
+  display: none;
+}

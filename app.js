@@ -565,7 +565,7 @@ function extractVenueFromCitation(citation = "") {
 
 function parsePublicationStatus(citation = "") {
   const match = citation.match(
-    /\((Accepted|In Press|Minor revision|Major revision|Revise and resubmit|Under review|Submitted),\s*(?:19|20)\d{2}\)/i
+    /\((Accepted|In Press|Minor revision|Major revision|Revise and resubmit|Under review|Submitted)(?:,\s*(?:19|20)\d{2})?\)/i
   );
 
   if (!match) {
