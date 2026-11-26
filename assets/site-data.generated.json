@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-26T02:56:14.429366+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-11-26T03:22:38.365031+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "November 11, 2026",
@@ -20,7 +20,7 @@
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=a489b0f4ad94",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=f17080bb5ba8",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -326,7 +326,7 @@
     {
       "year": "2026",
       "title": "From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training",
-      "authors": "Awoyemi, I., Moon, J., Abu, S., & Song, S.",
+      "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
       "venue": "Interactive Learning Environments",
       "link": "https://doi.org/10.1080/10494820.2026.2709674",
       "tags": [
@@ -379,7 +379,7 @@
     {
       "year": "2026",
       "title": "Human-centered generative AI in education: Ethical challenges and equity-driven solutions",
-      "authors": "Abu, S., Uddin, M., Moon, J., Awoyemi, I., Baah-Mintah, R., & Ghooreian, A.",
+      "authors": "Abu, S., Uddin, M., Moon, J., Awoyemi, I. D., Baah-Mintah, R., & Ghooreian, A.",
       "venue": "Ethics and Behavior",
       "link": "https://doi.org/10.1080/10508422.2026.2685014",
       "tags": [
@@ -459,7 +459,7 @@
     {
       "year": "2025",
       "title": "A systematic review of technology-enhanced learning approaches to foster construction engineering and management competencies",
-      "authors": "Marchiori, R., Song, S., Moon, J., Awoyemi, I., Ghooreian, A., & Ramenzapour, E.",
+      "authors": "Marchiori, R., Song, S., Moon, J., Awoyemi, D., Ghooreian, A., & Ramenzapour, E.",
       "venue": "Computer Applications in Engineering Education",
       "link": "https://doi.org/10.1002/cae.70074",
       "tags": [
@@ -472,7 +472,7 @@
     {
       "year": "2025",
       "title": "Generative AI-enhanced virtual reality simulation for pre-service teacher education: A mixed-methods analysis of usability and instructional utility for course integration",
-      "authors": "Hong, S., Moon, J., Eom, T., Awoyemi, I., & Hwang, J.",
+      "authors": "Hong, S., Moon, J., Eom, T., Awoyemi, I. D., & Hwang, J.",
       "venue": "Education Sciences",
       "link": "https://doi.org/10.3390/educsci15080997",
       "tags": [
@@ -1134,7 +1134,7 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Awoyemi, I., Moon, J., Abu, S., & Song, S. (2026). From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2709674 [SSCI-indexed, IF = 6.7, IF5 = 7.1]",
+      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (2026). From experience to action: Sequential dynamics of experiential learning in immersive virtual reality-supported safety training. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2709674 [SSCI-indexed, IF = 6.7, IF5 = 7.1]",
       "link": "https://doi.org/10.1080/10494820.2026.2709674"
     },
     {
@@ -1158,7 +1158,7 @@
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Abu, S., Uddin, M., Moon, J., Awoyemi, I., Baah-Mintah, R., & Ghooreian, A. (2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior. https://doi.org/10.1080/10508422.2026.2685014 [SSCI-indexed, IF = 2.3, IF5 = 2.5]",
+      "citation": "* Abu, S., Uddin, M., Moon, J., Awoyemi, I. D., Baah-Mintah, R., & Ghooreian, A. (2026). Human-centered generative AI in education: Ethical challenges and equity-driven solutions. Ethics and Behavior. https://doi.org/10.1080/10508422.2026.2685014 [SSCI-indexed, IF = 2.3, IF5 = 2.5]",
       "link": "https://doi.org/10.1080/10508422.2026.2685014"
     },
     {
@@ -1194,13 +1194,13 @@
     {
       "year": "2025",
       "category": "International",
-      "citation": "* Marchiori, R., Song, S., Moon, J., Awoyemi, I., Ghooreian, A., & Ramenzapour, E. (2025). A systematic review of technology-enhanced learning approaches to foster construction engineering and management competencies. Computer Applications in Engineering Education. https://doi.org/10.1002/cae.70074 [SCIE-indexed, IF = 2.7, IF5 = 3.0]",
+      "citation": "* Marchiori, R., Song, S., Moon, J., Awoyemi, D., Ghooreian, A., & Ramenzapour, E. (2025). A systematic review of technology-enhanced learning approaches to foster construction engineering and management competencies. Computer Applications in Engineering Education. https://doi.org/10.1002/cae.70074 [SCIE-indexed, IF = 2.7, IF5 = 3.0]",
       "link": "https://doi.org/10.1002/cae.70074"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "*‡ Hong, S., Moon, J., Eom, T., Awoyemi, I., & Hwang, J. (2025). Generative AI-enhanced virtual reality simulation for pre-service teacher education: A mixed-methods analysis of usability and instructional utility for course integration. Education Sciences. https://doi.org/10.3390/educsci15080997 [ESCI-indexed, IF = 3.5, IF5 = 3.3]",
+      "citation": "*‡ Hong, S., Moon, J., Eom, T., Awoyemi, I. D., & Hwang, J. (2025). Generative AI-enhanced virtual reality simulation for pre-service teacher education: A mixed-methods analysis of usability and instructional utility for course integration. Education Sciences. https://doi.org/10.3390/educsci15080997 [ESCI-indexed, IF = 3.5, IF5 = 3.3]",
       "link": "https://doi.org/10.3390/educsci15080997"
     },
     {
@@ -1915,10 +1915,10 @@
       "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "A Bayesian meta-analysis of virtual reality-based safety training in construction sector",
-      "authors": "Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R.",
+      "authors": "Moon, J., Awoyemi, I. D., Abu, S., Kim, E., & Marchiori, R.",
       "note": "corresponding author",
       "venue": "Virtual Reality",
-      "citation": "*‡ Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R. (revising to resubmit). A Bayesian meta-analysis of virtual reality-based safety training in construction sector. Virtual Reality.",
+      "citation": "*‡ Moon, J., Awoyemi, I. D., Abu, S., Kim, E., & Marchiori, R. (revising to resubmit). A Bayesian meta-analysis of virtual reality-based safety training in construction sector. Virtual Reality.",
       "link": ""
     },
     {
@@ -1987,10 +1987,10 @@
       "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review",
-      "authors": "Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J.",
+      "authors": "Awoyemi, I. D., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J.",
       "note": "mentored collaboration",
       "venue": "TechTrends",
-      "citation": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J. (revising to resubmit). Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review. TechTrends. (ESCI-indexed journal).",
+      "citation": "* Awoyemi, I. D., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J. (revising to resubmit). Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review. TechTrends. (ESCI-indexed journal).",
       "link": ""
     },
     {
@@ -2107,10 +2107,10 @@
       "status": "Under review",
       "year": "Pipeline",
       "title": "AI-enhanced educational game design: From the content generation to testing",
-      "authors": "Moon, J., Awoyemi, I., Abu, S., Na, H., Lee, Y., & Choi, G. W.",
+      "authors": "Moon, J., Awoyemi, I. D., Abu, S., Na, H., Lee, Y., & Choi, G. W.",
       "note": "",
       "venue": "Engineering Educational Games for a Sustainable Society: Play, Learn, and Transform, Springer",
-      "citation": "Moon, J., Awoyemi, I., Abu, S., Na, H., Lee, Y., & Choi, G. W. (under review). AI-enhanced educational game design: From the content generation to testing. Engineering Educational Games for a Sustainable Society: Play, Learn, and Transform, Springer.",
+      "citation": "Moon, J., Awoyemi, I. D., Abu, S., Na, H., Lee, Y., & Choi, G. W. (under review). AI-enhanced educational game design: From the content generation to testing. Engineering Educational Games for a Sustainable Society: Play, Learn, and Transform, Springer.",
       "link": ""
     },
     {
@@ -2131,10 +2131,10 @@
       "status": "In preparation",
       "year": "Pipeline",
       "title": "Modeling behavioral dynamics and cognitive states in virtual reality safety training: A learning analytics approach",
-      "authors": "Abu, S., Awoyemi, I., & Moon, J.",
+      "authors": "Abu, S., Awoyemi, I. D., & Moon, J.",
       "note": "mentored collaboration",
       "venue": "",
-      "citation": "* Abu, S., Awoyemi, I., & Moon, J. (in preparation). Modeling behavioral dynamics and cognitive states in virtual reality safety training: A learning analytics approach.",
+      "citation": "* Abu, S., Awoyemi, I. D., & Moon, J. (in preparation). Modeling behavioral dynamics and cognitive states in virtual reality safety training: A learning analytics approach.",
       "link": ""
     },
     {
@@ -2143,10 +2143,10 @@
       "status": "In preparation",
       "year": "Pipeline",
       "title": "Predictive validation of behavioral learning analytics: A machine learning approach",
-      "authors": "Abu, S., Awoyemi, I., & Moon, J.",
+      "authors": "Abu, S., Awoyemi, I. D., & Moon, J.",
       "note": "mentored collaboration",
       "venue": "",
-      "citation": "* Abu, S., Awoyemi, I., & Moon, J. (in preparation). Predictive validation of behavioral learning analytics: A machine learning approach.",
+      "citation": "* Abu, S., Awoyemi, I. D., & Moon, J. (in preparation). Predictive validation of behavioral learning analytics: A machine learning approach.",
       "link": ""
     },
     {
@@ -2669,6 +2669,14 @@
     }
   ],
   "leadershipRoles": [
+    {
+      "badge": "UA",
+      "label": "University",
+      "role": "Program Coordinator",
+      "title": "PhD in Instructional Leadership (Instructional Technology)",
+      "years": "2026-present",
+      "theme": "crimson"
+    },
     {
       "badge": "ICCE",
       "label": "Conference",

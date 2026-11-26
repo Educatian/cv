@@ -173,6 +173,7 @@ SERVICE_THEME_BY_LABEL = {
     "Network": "charcoal",
     "SIG": "stone",
     "Conference": "crimson",
+    "University": "crimson",
 }
 
 SPECIAL_SERVICE_BADGES = {
@@ -190,6 +191,7 @@ SPECIAL_SERVICE_BADGES = {
     "AERA SIG Instructional Technology": "AERA",
     "ICCE Educational Gamification and Game-based Learning Section": "ICCE",
     "iLRN Practitioner Stream": "iLRN",
+    "PhD in Instructional Leadership (Instructional Technology)": "UA",
 }
 
 FEATURED_EDITORIAL_TITLES = {
@@ -207,6 +209,7 @@ SERVICE_URLS = {
 }
 
 FEATURED_LEADERSHIP_ROLES = {
+    ("Program Coordinator", "PhD in Instructional Leadership (Instructional Technology)"),
     ("Chair", "APSCE SIG Educational Games and Gamification"),
     ("Co-Chair", "Immersive Learning Research Network (iLRN)"),
     ("Communication Officer", "AERA SIG Instructional Technology"),
@@ -1060,7 +1063,20 @@ def parse_service(paragraphs: Sequence[str]) -> Dict[str, object]:
 
     leadership_roles: List[Dict[str, str]] = []
     for raw in lines:
-        if raw.startswith("Conference Program Co-Chair"):
+        if raw.startswith("Program Coordinator, PhD in Instructional Leadership"):
+            title = "PhD in Instructional Leadership (Instructional Technology)"
+            years_match = re.search(r"\((?:Fall |Spring |Summer )?(\d{4})[–-]present\)", raw, re.I)
+            leadership_roles.append(
+                {
+                    "badge": abbreviate_name(title),
+                    "label": "University",
+                    "role": "Program Coordinator",
+                    "title": title,
+                    "years": f"{years_match.group(1)}-present" if years_match else "",
+                    "theme": SERVICE_THEME_BY_LABEL["University"],
+                }
+            )
+        elif raw.startswith("Conference Program Co-Chair"):
             years_match = re.search(r"(\d{4}-\d{4}|\d{4}-present)$", raw, re.I)
             years = years_match.group(1) if years_match else ""
             role = "Program Co-Chair"
