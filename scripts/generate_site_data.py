@@ -296,6 +296,10 @@ def extract_last_money(text: str) -> Optional[float]:
     return float(matches[-1].replace(",", "")) if matches else None
 
 
+# APA date field: a year, or an APA status such as "(in press)".
+DATE_PAREN = r"\((?:[^)]*\d{4}[^)]*|in press|accepted|forthcoming)\)"
+
+
 def extract_year(text: str) -> str:
     match = re.search(r"(19|20)\d{2}", text)
     return match.group(0) if match else ""
@@ -317,7 +321,7 @@ def extract_url(text: str) -> str:
 
 
 def parse_title_from_citation(citation: str) -> str:
-    year_match = re.search(r"\([^)]*\d{4}[^)]*\)\.\s*", citation)
+    year_match = re.search(DATE_PAREN + r"\.\s*", citation)
     if not year_match:
         return citation[:120]
 
@@ -327,7 +331,7 @@ def parse_title_from_citation(citation: str) -> str:
 
 
 def parse_authors_from_citation(citation: str) -> str:
-    year_match = re.search(r"\([^)]*\d{4}[^)]*\)", citation)
+    year_match = re.search(DATE_PAREN, citation)
     if not year_match:
         return clean_text(citation)
     authors = citation[: year_match.start()]
@@ -356,7 +360,7 @@ def strip_journal_indexing_paren(venue: str) -> str:
 
 
 def parse_venue_from_citation(citation: str) -> str:
-    year_match = re.search(r"\([^)]*\d{4}[^)]*\)\.\s*", citation)
+    year_match = re.search(DATE_PAREN + r"\.\s*", citation)
     if not year_match:
         return ""
 
@@ -395,7 +399,7 @@ def derive_publication_note(citation: str) -> str:
 
 def parse_publication_status(citation: str) -> str:
     match = re.search(
-        r"\((Accepted|In Press|Minor revision|Major revision|Revise and resubmit|Under review|Submitted),\s*(?:19|20)\d{2}\)",
+        r"\((Accepted|In Press|Minor revision|Major revision|Revise and resubmit|Under review|Submitted)(?:,\s*(?:19|20)\d{2})?\)",
         citation,
         re.I,
     )
@@ -832,14 +836,14 @@ def parse_book_chapters(paragraphs: Sequence[str]) -> List[Dict[str, object]]:
     chapters: List[Dict[str, object]] = []
 
     for citation in split_numbered_entries(lines):
-        year_match = re.search(r"\([^)]*\d{4}[^)]*\)\.\s*", citation)
+        year_match = re.search(DATE_PAREN + r"\.\s*", citation)
         after_year = citation[year_match.end() :] if year_match else citation
         title, _, chapter_context = after_year.partition(". ")
         chapter_context = clean_text(
             re.split(r"https?://|10\.\d{4,9}/", chapter_context, maxsplit=1)[0].strip(" .")
         )
         book_match = re.search(
-            r"\(Eds?\.\),\s*(.+?)\.\s*(Springer|Routledge|EdtechBooks|EdTechBooks)(?:[,.]|$)",
+            r"\(Eds?\.\),\s*(.+?)\.\s*(Springer Nature|Springer|Routledge|Cambridge University Press|EdtechBooks|EdTechBooks)(?:[,.]|$)",
             chapter_context,
             re.I,
         )

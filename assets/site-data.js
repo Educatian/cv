@@ -1,5 +1,5 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-11-26T02:37:13.412705+00:00",
+  "generatedAt": "2026-11-26T02:53:27.013867+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
@@ -20,7 +20,7 @@ window.__cvSiteData = {
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=a1d326c0bc78",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=a489b0f4ad94",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -287,7 +287,7 @@ window.__cvSiteData = {
   ],
   "publications": [
     {
-      "year": "2026",
+      "year": "",
       "title": "GAIDE: A guiding framework for K-12 teachers in creating AI-powered learning technologies through vibe coding",
       "authors": "Song, Y., Choi, S., Kim, J., Kim, Y., Weisberg, L. R., & Moon, J.",
       "venue": "Journal of Research on Technology in Education",
@@ -296,7 +296,7 @@ window.__cvSiteData = {
         "Teacher Ed"
       ],
       "note": "",
-      "status": "In Press"
+      "status": "In press"
     },
     {
       "year": "2026",
@@ -1114,9 +1114,9 @@ window.__cvSiteData = {
   ],
   "completeJournalArticles": [
     {
-      "year": "2026",
+      "year": "",
       "category": "International",
-      "citation": "Song, Y., Choi, S., Kim, J., Kim, Y., Weisberg, L. R., & Moon, J. (In Press, 2026). GAIDE: A guiding framework for K-12 teachers in creating AI-powered learning technologies through vibe coding. Journal of Research on Technology in Education.",
+      "citation": "Song, Y., Choi, S., Kim, J., Kim, Y., Weisberg, L. R., & Moon, J. (in press). GAIDE: A guiding framework for K-12 teachers in creating AI-powered learning technologies through vibe coding. Journal of Research on Technology in Education. [SSCI-indexed, IF = 3.5, IF5 = 6.2]",
       "link": ""
     },
     {
@@ -1308,7 +1308,7 @@ window.__cvSiteData = {
     {
       "year": "2024",
       "category": "International",
-      "citation": "‡ Moon, J., Ke, F., Sokolikj, Z., & Chakraborty, S. (2024). Applying multimodal data fusion to track autistic adolescents’ representational flexibility development during virtual reality-based training. Computers & Education: X Reality, 4, 100063. https://doi.org/10.1016/j.cexr.2024.100063",
+      "citation": "‡ Moon, J., Ke, F., Sokolikj, Z., & Chakraborty, S. (2024). Applying multimodal data fusion to track autistic adolescents’ representational flexibility development during virtual reality-based training. Computers & Education: X Reality, 4, 100063. https://doi.org/10.1016/j.cexr.2024.100063 [ESCI-indexed, IF = 5.9, IF5 = 5.8]",
       "link": "https://doi.org/10.1016/j.cexr.2024.100063"
     },
     {
@@ -1494,7 +1494,7 @@ window.__cvSiteData = {
   ],
   "bookChapters": [
     {
-      "year": "2027",
+      "year": "",
       "title": "Beyond behavioral traces: Modeling epistemic reasoning structures through multimodal serious games analytics in immersive virtual reality",
       "authors": "Kim, T., & Moon, J.",
       "venue": "Serious games analytics in the age of AI · Springer",
@@ -1509,17 +1509,17 @@ window.__cvSiteData = {
         "STEM"
       ],
       "note": "",
-      "status": "Accepted",
+      "status": "In press",
       "type": "Book Chapter",
-      "citation": "Kim, T., & Moon, J. (Accepted, 2027). Beyond behavioral traces: Modeling epistemic reasoning structures through multimodal serious games analytics in immersive virtual reality. In C. S. Loh, Y. Sheng, & D. Ifenthaler (Eds.), Serious games analytics in the age of AI. Springer."
+      "citation": "Kim, T., & Moon, J. (in press). Beyond behavioral traces: Modeling epistemic reasoning structures through multimodal serious games analytics in immersive virtual reality. In C. S. Loh, Y. Sheng, & D. Ifenthaler (Eds.), Serious games analytics in the age of AI. Springer."
     },
     {
-      "year": "2027",
+      "year": "",
       "title": "Multimodal analysis of preservice teachers’ interactions in a generative AI-enhanced immersive teacher simulation",
       "authors": "Hong, S., Moon, J., Eom, T., Hwang, J., & Seo, J.",
-      "venue": "In D. Tafazoli, E. Southgate, & E. Shaw (Eds.), Innovations in immersive learning for teacher education: International perspectives. Springer Nature",
-      "bookTitle": "",
-      "publisher": "",
+      "venue": "Innovations in immersive learning for teacher education: International perspectives · Springer Nature",
+      "bookTitle": "Innovations in immersive learning for teacher education: International perspectives",
+      "publisher": "Springer Nature",
       "link": "",
       "doi": "",
       "tags": [
@@ -1529,12 +1529,12 @@ window.__cvSiteData = {
         "Teacher Ed"
       ],
       "note": "",
-      "status": "In Press",
+      "status": "In press",
       "type": "Book Chapter",
-      "citation": "Hong, S., Moon, J., Eom, T., Hwang, J., & Seo, J. (In Press, 2027). Multimodal analysis of preservice teachers’ interactions in a generative AI-enhanced immersive teacher simulation. In D. Tafazoli, E. Southgate, & E. Shaw (Eds.), Innovations in immersive learning for teacher education: International perspectives. Springer Nature."
+      "citation": "Hong, S., Moon, J., Eom, T., Hwang, J., & Seo, J. (in press). Multimodal analysis of preservice teachers’ interactions in a generative AI-enhanced immersive teacher simulation. In D. Tafazoli, E. Southgate, & E. Shaw (Eds.), Innovations in immersive learning for teacher education: International perspectives. Springer Nature."
     },
     {
-      "year": "2027",
+      "year": "",
       "title": "Designing for ethical deliberation and reasoning: AI-mediated dilemma spaces and exploratory learning",
       "authors": "Moon, J., Lee, Y., Hong, S., Cho, M., Uddin, M., & Rho, J.",
       "venue": "Metaverse, generative AI, and brain–computer interfaces: Shaping the future of the digital landscape · Routledge",
@@ -1548,9 +1548,9 @@ window.__cvSiteData = {
         "Ethics"
       ],
       "note": "corresponding author",
-      "status": "In Press",
+      "status": "In press",
       "type": "Book Chapter",
-      "citation": "‡ Moon, J., Lee, Y., Hong, S., Cho, M., Uddin, M., & Rho, J. (In Press, 2027). Designing for ethical deliberation and reasoning: AI-mediated dilemma spaces and exploratory learning. In A. Darejeh & S. Sepasgozar (Eds.), Metaverse, generative AI, and brain–computer interfaces: Shaping the future of the digital landscape. Routledge."
+      "citation": "‡ Moon, J., Lee, Y., Hong, S., Cho, M., Uddin, M., & Rho, J. (in press). Designing for ethical deliberation and reasoning: AI-mediated dilemma spaces and exploratory learning. In A. Darejeh & S. Sepasgozar (Eds.), Metaverse, generative AI, and brain–computer interfaces: Shaping the future of the digital landscape. Routledge."
     },
     {
       "year": "2026",
@@ -1690,7 +1690,7 @@ window.__cvSiteData = {
       "authors": "You, H., Park, S., Kim, M., Aldemir, T., Moon, J., Kourkoulou, T., Zhu, L., Abu, S., Song, D., & Lee, H.",
       "note": "",
       "venue": "Journal of Science Education and Technology",
-      "citation": "You, H., Park, S., Kim, M., Aldemir, T., Moon, J., Kourkoulou, T., Zhu, L., Abu, S., Song, D., & Lee, H. (Submitted). Technology integration in K–12 science education: A meta-analysis of learning outcomes and instructional practices. Journal of Science Education and Technology.",
+      "citation": "You, H., Park, S., Kim, M., Aldemir, T., Moon, J., Kourkoulou, T., Zhu, L., Abu, S., Song, D., & Lee, H. (submitted). Technology integration in K–12 science education: A meta-analysis of learning outcomes and instructional practices. Journal of Science Education and Technology.",
       "link": ""
     },
     {
@@ -1702,7 +1702,7 @@ window.__cvSiteData = {
       "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
       "note": "mentored collaboration",
       "venue": "Journal of Computer Assisted Learning",
-      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (Submitted). Students’ judgements of embodied agent feedback and dialogue in immersive safety training. Journal of Computer Assisted Learning.",
+      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (submitted). Students’ judgements of embodied agent feedback and dialogue in immersive safety training. Journal of Computer Assisted Learning.",
       "link": ""
     },
     {
@@ -1714,7 +1714,7 @@ window.__cvSiteData = {
       "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
       "note": "mentored collaboration",
       "venue": "TechTrends",
-      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (Submitted). Designing feedback-supported immersive virtual reality for safety training. TechTrends.",
+      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (submitted). Designing feedback-supported immersive virtual reality for safety training. TechTrends.",
       "link": ""
     },
     {
@@ -1726,7 +1726,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., & Lee, J. Y.",
       "note": "",
       "venue": "Computers and Education: Artificial Intelligence",
-      "citation": "Moon, J., & Lee, J. Y. (Submitted). Evaluating generative AI tutors across learners’ cognitive profiles through post hoc log analysis. Computers and Education: Artificial Intelligence.",
+      "citation": "Moon, J., & Lee, J. Y. (submitted). Evaluating generative AI tutors across learners’ cognitive profiles through post hoc log analysis. Computers and Education: Artificial Intelligence.",
       "link": ""
     },
     {
@@ -1738,7 +1738,7 @@ window.__cvSiteData = {
       "authors": "Kim, J., Moon, J., & Yang, M.",
       "note": "",
       "venue": "Journal of Educational Administration",
-      "citation": "Kim, J., Moon, J., & Yang, M. (Abstract submitted). Leading through technological uncertainty: How U.S. school districts configure AI governance. Journal of Educational Administration.",
+      "citation": "Kim, J., Moon, J., & Yang, M. (abstract submitted). Leading through technological uncertainty: How U.S. school districts configure AI governance. Journal of Educational Administration.",
       "link": ""
     },
     {
@@ -1750,7 +1750,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., Hong, S., Cho, H., Chae, J., & Lee, J. Y.",
       "note": "corresponding author",
       "venue": "Educational Technology & Society",
-      "citation": "‡ Moon, J., Hong, S., Cho, H., Chae, J., & Lee, J. Y. (Submitted). Beyond participation: A two-layer analysis of ethical grounds and discourse strategies in educational ethics chatbot dialogue. Educational Technology & Society.",
+      "citation": "‡ Moon, J., Hong, S., Cho, H., Chae, J., & Lee, J. Y. (submitted). Beyond participation: A two-layer analysis of ethical grounds and discourse strategies in educational ethics chatbot dialogue. Educational Technology & Society.",
       "link": ""
     },
     {
@@ -1762,7 +1762,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., Lee, Y., & Na, H.",
       "note": "corresponding author",
       "venue": "Journal of Educational Computing Research",
-      "citation": "‡ Moon, J., Lee, Y., & Na, H. (Under review). Interpreting game-based programming logs across levels of analysis. Journal of Educational Computing Research.",
+      "citation": "‡ Moon, J., Lee, Y., & Na, H. (under review). Interpreting game-based programming logs across levels of analysis. Journal of Educational Computing Research.",
       "link": ""
     },
     {
@@ -1774,7 +1774,7 @@ window.__cvSiteData = {
       "authors": "Lim, J., Moon, J., Kim, C., & Kang, M.",
       "note": "",
       "venue": "Journal of Computer Assisted Learning",
-      "citation": "Lim, J., Moon, J., Kim, C., & Kang, M. (Submitted). Crafting digital narratives for learning: A systematic review of scenario-based learning design in virtual reality. Journal of Computer Assisted Learning.",
+      "citation": "Lim, J., Moon, J., Kim, C., & Kang, M. (submitted). Crafting digital narratives for learning: A systematic review of scenario-based learning design in virtual reality. Journal of Computer Assisted Learning.",
       "link": ""
     },
     {
@@ -1786,7 +1786,7 @@ window.__cvSiteData = {
       "authors": "Hong, S., Moon, J., Cho, H., & Lim, C.",
       "note": "mentored collaboration",
       "venue": "AI & Society",
-      "citation": "* Hong, S., Moon, J., Cho, H., & Lim, C. (Under review). Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy. AI & Society.",
+      "citation": "* Hong, S., Moon, J., Cho, H., & Lim, C. (under review). Using a generative AI-enhanced chatbot to promote ethical reasoning in higher education: A dilemma-centered learning approach via ill-structured problem pedagogy. AI & Society.",
       "link": ""
     },
     {
@@ -1798,7 +1798,7 @@ window.__cvSiteData = {
       "authors": "You, H., Zhu, L., Moon, J., Aldemir, T., Kourkoulou, T., Lee, H., Song, D., Abu, S., Emerson, W., & Wang, S.",
       "note": "",
       "venue": "Journal of Research in Science Teaching",
-      "citation": "You, H., Zhu, L., Moon, J., Aldemir, T., Kourkoulou, T., Lee, H., Song, D., Abu, S., Emerson, W., & Wang, S. (Submitted). Technology use in K-12 science education, 2014–2024: A scoping review. Journal of Research in Science Teaching.",
+      "citation": "You, H., Zhu, L., Moon, J., Aldemir, T., Kourkoulou, T., Lee, H., Song, D., Abu, S., Emerson, W., & Wang, S. (submitted). Technology use in K-12 science education, 2014–2024: A scoping review. Journal of Research in Science Teaching.",
       "link": ""
     },
     {
@@ -1810,7 +1810,7 @@ window.__cvSiteData = {
       "authors": "Lee, H., Moon, J., Lim, J., Lee, J., Pang, K. M., & Ihm, J.",
       "note": "",
       "venue": "Journal of Computing in Higher Education",
-      "citation": "Lee, H., Moon, J., Lim, J., Lee, J., Pang, K. M., & Ihm, J. (Submitted). Designing for trust in black-box AI: The effects of a RAG-based AI tutor chatbot on AI trust, learning engagement, and academic achievement in higher education. Journal of Computing in Higher Education.",
+      "citation": "Lee, H., Moon, J., Lim, J., Lee, J., Pang, K. M., & Ihm, J. (submitted). Designing for trust in black-box AI: The effects of a RAG-based AI tutor chatbot on AI trust, learning engagement, and academic achievement in higher education. Journal of Computing in Higher Education.",
       "link": ""
     },
     {
@@ -1822,7 +1822,7 @@ window.__cvSiteData = {
       "authors": "Lim, J., Lee, H., & Moon, J.",
       "note": "",
       "venue": "Metacognition and Learning",
-      "citation": "Lim, J., Lee, H., & Moon, J. (Under review). The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning. Metacognition and Learning. (SSCI-indexed journal).",
+      "citation": "Lim, J., Lee, H., & Moon, J. (under review). The fluency trap: Comparing inquiry trajectories in generative and retrieval-augmented AI-supported learning. Metacognition and Learning. (SSCI-indexed journal).",
       "link": ""
     },
     {
@@ -1834,7 +1834,7 @@ window.__cvSiteData = {
       "authors": "Lim, J., Moon, J., Ramberg, E., Lee, J., Chen, Y., & Anderson, E.",
       "note": "",
       "venue": "Education 3-13",
-      "citation": "Lim, J., Moon, J., Ramberg, E., Lee, J., Chen, Y., & Anderson, E. (Submitted). Balancing play and learning: PreK-5 teachers’ conceptualizations and enactments of play-based teaching in mixed reality simulation. Education 3-13.",
+      "citation": "Lim, J., Moon, J., Ramberg, E., Lee, J., Chen, Y., & Anderson, E. (submitted). Balancing play and learning: PreK-5 teachers’ conceptualizations and enactments of play-based teaching in mixed reality simulation. Education 3-13.",
       "link": ""
     },
     {
@@ -1846,7 +1846,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., Hong, S., & Hwang, J.",
       "note": "corresponding author",
       "venue": "Journal of Computing in Higher Education",
-      "citation": "‡ Moon, J., Hong, S., & Hwang, J. (Submitted). Learning to orchestrate with generative-AI student agents: Process analytics of pre-service teacher discourse. Journal of Computing in Higher Education. (SSCI-indexed journal).",
+      "citation": "‡ Moon, J., Hong, S., & Hwang, J. (submitted). Learning to orchestrate with generative-AI student agents: Process analytics of pre-service teacher discourse. Journal of Computing in Higher Education. (SSCI-indexed journal).",
       "link": ""
     },
     {
@@ -1858,7 +1858,7 @@ window.__cvSiteData = {
       "authors": "Abu, S., Moon, J., & Ghooreian, A.",
       "note": "mentored collaboration",
       "venue": "TechTrends",
-      "citation": "* Abu, S., Moon, J., & Ghooreian, A. (Under review). Embodied arts-integrated AI literacy: A nested mixed-methods study with K-12 educators. TechTrends.",
+      "citation": "* Abu, S., Moon, J., & Ghooreian, A. (under review). Embodied arts-integrated AI literacy: A nested mixed-methods study with K-12 educators. TechTrends.",
       "link": ""
     },
     {
@@ -1870,7 +1870,7 @@ window.__cvSiteData = {
       "authors": "Amari, A. Y., Moon, J., & Bagdy, L.",
       "note": "",
       "venue": "Internet and Higher Education",
-      "citation": "Amari, A. Y., Moon, J., & Bagdy, L. (Revising to resubmit). Leveraging automated machine learning (AutoML) to predict and analyze student success factors in online learning environments (OLEs). Internet and Higher Education. (SSCI-indexed journal).",
+      "citation": "Amari, A. Y., Moon, J., & Bagdy, L. (revising to resubmit). Leveraging automated machine learning (AutoML) to predict and analyze student success factors in online learning environments (OLEs). Internet and Higher Education. (SSCI-indexed journal).",
       "link": ""
     },
     {
@@ -1882,7 +1882,7 @@ window.__cvSiteData = {
       "authors": "Hong, S., Moon, J., Chae, J., & Cho, H.",
       "note": "corresponding author",
       "venue": "Educational Technology Research and Development",
-      "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (Under review). Ethical argumentation structure in pre-service teachers’ AI ethics problem-solving: Learner–chatbot interaction patterns. Educational Technology Research and Development.",
+      "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (under review). Ethical argumentation structure in pre-service teachers’ AI ethics problem-solving: Learner–chatbot interaction patterns. Educational Technology Research and Development.",
       "link": ""
     },
     {
@@ -1894,7 +1894,7 @@ window.__cvSiteData = {
       "authors": "Awoyemi, I. D., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T.",
       "note": "mentored collaboration",
       "venue": "Educational Technology Research and Development",
-      "citation": "* Awoyemi, I. D., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T. (Submitted). A systematic review of empirical research on AI in K-12 STEM education (2020–2025) through a sociotechnical lens. Educational Technology Research and Development. (SSCI-indexed journal).",
+      "citation": "* Awoyemi, I. D., Moon, J., Sabanwar, V., Ghooreian, A., & Aldemir, T. (submitted). A systematic review of empirical research on AI in K-12 STEM education (2020–2025) through a sociotechnical lens. Educational Technology Research and Development. (SSCI-indexed journal).",
       "link": ""
     },
     {
@@ -1906,7 +1906,7 @@ window.__cvSiteData = {
       "authors": "Moon, J.",
       "note": "",
       "venue": "IEEE Transactions on Learning Technologies",
-      "citation": "Moon, J. (Submitted). Simplicity first in adaptive educational games: A cross-game benchmark of multivariate Elo and knowledge-tracing baselines. IEEE Transactions on Learning Technologies.",
+      "citation": "Moon, J. (submitted). Simplicity first in adaptive educational games: A cross-game benchmark of multivariate Elo and knowledge-tracing baselines. IEEE Transactions on Learning Technologies.",
       "link": ""
     },
     {
@@ -1918,7 +1918,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R.",
       "note": "corresponding author",
       "venue": "Virtual Reality",
-      "citation": "*‡ Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R. (Revising to resubmit). A Bayesian meta-analysis of virtual reality-based safety training in construction sector. Virtual Reality.",
+      "citation": "*‡ Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R. (revising to resubmit). A Bayesian meta-analysis of virtual reality-based safety training in construction sector. Virtual Reality.",
       "link": ""
     },
     {
@@ -1930,7 +1930,7 @@ window.__cvSiteData = {
       "authors": "Kim, S., Lee, G., Gwak, D., Kim, H. I., Choi, J., Moon, J., Kim, D., & Kim, H.-J.",
       "note": "",
       "venue": "International Journal of Educational Research",
-      "citation": "Kim, S., Lee, G., Gwak, D., Kim, H. I., Choi, J., Moon, J., Kim, D., & Kim, H.-J. (Submitted). The hidden architecture of digital mathematics textbooks: A systematic review through activity theory. International Journal of Educational Research.",
+      "citation": "Kim, S., Lee, G., Gwak, D., Kim, H. I., Choi, J., Moon, J., Kim, D., & Kim, H.-J. (submitted). The hidden architecture of digital mathematics textbooks: A systematic review through activity theory. International Journal of Educational Research.",
       "link": ""
     },
     {
@@ -1942,7 +1942,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., Lim, J., Lee, Y., Byun, G., Jeong, Y., & Lee, U.",
       "note": "",
       "venue": "Australasian Journal of Educational Technology",
-      "citation": "Moon, J., Lim, J., Lee, Y., Byun, G., Jeong, Y., & Lee, U. (Submitted). Agent affordance: How generative AI agents guide dialogic approaches in 3D teacher simulations. Australasian Journal of Educational Technology.",
+      "citation": "Moon, J., Lim, J., Lee, Y., Byun, G., Jeong, Y., & Lee, U. (submitted). Agent affordance: How generative AI agents guide dialogic approaches in 3D teacher simulations. Australasian Journal of Educational Technology.",
       "link": ""
     },
     {
@@ -1954,7 +1954,7 @@ window.__cvSiteData = {
       "authors": "Lee, H., Lim, J., & Moon, J.",
       "note": "",
       "venue": "Journal of Educational Data Mining",
-      "citation": "Lee, H., Lim, J., & Moon, J. (Submitted). Semantic trajectory analysis of learner questions in AI-based learning: Comparing RAG-based and generative AI. Journal of Educational Data Mining.",
+      "citation": "Lee, H., Lim, J., & Moon, J. (submitted). Semantic trajectory analysis of learner questions in AI-based learning: Comparing RAG-based and generative AI. Journal of Educational Data Mining.",
       "link": ""
     },
     {
@@ -1966,7 +1966,7 @@ window.__cvSiteData = {
       "authors": "Lim, J., Kim, C., & Moon, J.",
       "note": "",
       "venue": "Educational Research Review",
-      "citation": "Lim, J., Kim, C., & Moon, J. (Under review). A systematic review of learning analytics for feedback support in K–12 settings. Educational Research Review. (SSCI-indexed journal).",
+      "citation": "Lim, J., Kim, C., & Moon, J. (under review). A systematic review of learning analytics for feedback support in K–12 settings. Educational Research Review. (SSCI-indexed journal).",
       "link": ""
     },
     {
@@ -1978,7 +1978,7 @@ window.__cvSiteData = {
       "authors": "Hur, J., Moon, J., Abu, S., Bae, H., Choi, G. W., & Park, J.",
       "note": "mentored collaboration",
       "venue": "Education and Information Technologies",
-      "citation": "* Hur, J., Moon, J., Abu, S., Bae, H., Choi, G. W., & Park, J. (Submitted). Overcoming pre-service teachers’ AI anxiety through collaborative online discussions on generative AI: Linguistic insights in cognitive and emotional trajectories. Education and Information Technologies. (SSCI-indexed journal).",
+      "citation": "* Hur, J., Moon, J., Abu, S., Bae, H., Choi, G. W., & Park, J. (submitted). Overcoming pre-service teachers’ AI anxiety through collaborative online discussions on generative AI: Linguistic insights in cognitive and emotional trajectories. Education and Information Technologies. (SSCI-indexed journal).",
       "link": ""
     },
     {
@@ -1990,7 +1990,7 @@ window.__cvSiteData = {
       "authors": "Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J.",
       "note": "mentored collaboration",
       "venue": "TechTrends",
-      "citation": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J. (Revising to resubmit). Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review. TechTrends. (ESCI-indexed journal).",
+      "citation": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J. (revising to resubmit). Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review. TechTrends. (ESCI-indexed journal).",
       "link": ""
     },
     {
@@ -2002,7 +2002,7 @@ window.__cvSiteData = {
       "authors": "Park, J., Bae, J., Lee, U., Ahn, T., Lee, S., Kim, D., Choi, A., Moon, J., Jeong, Y., & Kim, H.",
       "note": "",
       "venue": "International Journal of Educational Technology in Higher Education",
-      "citation": "Park, J., Bae, J., Lee, U., Ahn, T., Lee, S., Kim, D., Choi, A., Moon, J., Jeong, Y., & Kim, H. (Revising to resubmit). How to align language model for teaching English? Developing large language model-based chatbot for English education in EFL, findings and limitations. International Journal of Educational Technology in Higher Education.",
+      "citation": "Park, J., Bae, J., Lee, U., Ahn, T., Lee, S., Kim, D., Choi, A., Moon, J., Jeong, Y., & Kim, H. (revising to resubmit). How to align language model for teaching English? Developing large language model-based chatbot for English education in EFL, findings and limitations. International Journal of Educational Technology in Higher Education.",
       "link": ""
     },
     {
@@ -2014,7 +2014,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., Lee, D., Choi, G. W., & Ha, C.",
       "note": "corresponding author",
       "venue": "KEDI Journal of Educational Policy",
-      "citation": "‡ Moon, J., Lee, D., Choi, G. W., & Ha, C. (Submitted). Predicting academic performance from self-regulated learning patterns: Machine learning analysis of Korean secondary students in online environments. KEDI Journal of Educational Policy. (SSCI-indexed journal).",
+      "citation": "‡ Moon, J., Lee, D., Choi, G. W., & Ha, C. (submitted). Predicting academic performance from self-regulated learning patterns: Machine learning analysis of Korean secondary students in online environments. KEDI Journal of Educational Policy. (SSCI-indexed journal).",
       "link": ""
     },
     {
@@ -2026,7 +2026,7 @@ window.__cvSiteData = {
       "authors": "Liu, Z., Yin, Q., Xu, N., Moon, J., Liu, J., & Shi, Y.",
       "note": "mentored collaboration",
       "venue": "International Journal of Disaster Risk Reduction",
-      "citation": "* Liu, Z., Yin, Q., Xu, N., Moon, J., Liu, J., & Shi, Y. (Under review). Comparing virtual reality, video, and slide-based training methods for electric vehicle emergency response: A study with firefighters. International Journal of Disaster Risk Reduction. (SSCI-indexed journal).",
+      "citation": "* Liu, Z., Yin, Q., Xu, N., Moon, J., Liu, J., & Shi, Y. (under review). Comparing virtual reality, video, and slide-based training methods for electric vehicle emergency response: A study with firefighters. International Journal of Disaster Risk Reduction. (SSCI-indexed journal).",
       "link": ""
     },
     {
@@ -2038,7 +2038,7 @@ window.__cvSiteData = {
       "authors": "Sun, C., & Moon, J.",
       "note": "",
       "venue": "Journal for the Education of the Gifted",
-      "citation": "Sun, C., & Moon, J. (Revising to resubmit). 20 years of twice-exceptional students with ASD: The road so far and what is ahead. Journal for the Education of the Gifted. (ESCI-indexed journal).",
+      "citation": "Sun, C., & Moon, J. (revising to resubmit). 20 years of twice-exceptional students with ASD: The road so far and what is ahead. Journal for the Education of the Gifted. (ESCI-indexed journal).",
       "link": ""
     },
     {
@@ -2050,7 +2050,7 @@ window.__cvSiteData = {
       "authors": "Ham, E., & Moon, J.",
       "note": "corresponding author",
       "venue": "Behaviour & Information Technology",
-      "citation": "‡ Ham, E., & Moon, J. (Revising to resubmit). Exploratory versus structured interaction: Curiosity-related expression and information retention in two digital learning environments. Behaviour & Information Technology.",
+      "citation": "‡ Ham, E., & Moon, J. (revising to resubmit). Exploratory versus structured interaction: Curiosity-related expression and information retention in two digital learning environments. Behaviour & Information Technology.",
       "link": ""
     },
     {
@@ -2062,7 +2062,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., Awoyemi, I. D., Abu, S., Olowolafe, S., & Sharma, V.",
       "note": "corresponding author",
       "venue": "In Educational media and technology yearbook (Research Corner). Springer",
-      "citation": "*‡ Moon, J., Awoyemi, I. D., Abu, S., Olowolafe, S., & Sharma, V. (Submitted). Analytics in immersive learning experience design: Introducing the MIRROR framework. In Educational media and technology yearbook (Research Corner). Springer.",
+      "citation": "*‡ Moon, J., Awoyemi, I. D., Abu, S., Olowolafe, S., & Sharma, V. (submitted). Analytics in immersive learning experience design: Introducing the MIRROR framework. In Educational media and technology yearbook (Research Corner). Springer.",
       "link": ""
     },
     {
@@ -2074,7 +2074,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., Cho, M., & Wong, W. L.",
       "note": "corresponding author",
       "venue": "In Immersive education and artificial intelligence: Critical perspectives on learning, design, and innovation (iLEAD edited volume)",
-      "citation": "‡ Moon, J., Cho, M., & Wong, W. L. (Abstract submitted). Designing for epistemic immersion in graduate academic writing: A design journey with AI-mediated feedback. In Immersive education and artificial intelligence: Critical perspectives on learning, design, and innovation (iLEAD edited volume).",
+      "citation": "‡ Moon, J., Cho, M., & Wong, W. L. (abstract submitted). Designing for epistemic immersion in graduate academic writing: A design journey with AI-mediated feedback. In Immersive education and artificial intelligence: Critical perspectives on learning, design, and innovation (iLEAD edited volume).",
       "link": ""
     },
     {
@@ -2086,7 +2086,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., & Uddin, M. M.",
       "note": "",
       "venue": "In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press",
-      "citation": "Moon, J., & Uddin, M. M. (Under review). From conversational to agentic AI: The human-AI research mentoring cycle. In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press.",
+      "citation": "Moon, J., & Uddin, M. M. (under review). From conversational to agentic AI: The human-AI research mentoring cycle. In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press.",
       "link": ""
     },
     {
@@ -2098,7 +2098,7 @@ window.__cvSiteData = {
       "authors": "Wong, W. L., & Moon, J.",
       "note": "",
       "venue": "The Palgrave encyclopedia of computer-assisted language learning. Palgrave Macmillan",
-      "citation": "Wong, W. L., & Moon, J. (Submitted). Learning analytics in CALL research: Possibilities and limitations. The Palgrave encyclopedia of computer-assisted language learning. Palgrave Macmillan.",
+      "citation": "Wong, W. L., & Moon, J. (submitted). Learning analytics in CALL research: Possibilities and limitations. The Palgrave encyclopedia of computer-assisted language learning. Palgrave Macmillan.",
       "link": ""
     },
     {
@@ -2110,7 +2110,7 @@ window.__cvSiteData = {
       "authors": "Moon, J., Awoyemi, I., Abu, S., Na, H., Lee, Y., & Choi, G. W.",
       "note": "",
       "venue": "Engineering Educational Games for a Sustainable Society: Play, Learn, and Transform, Springer",
-      "citation": "Moon, J., Awoyemi, I., Abu, S., Na, H., Lee, Y., & Choi, G. W. (Under review). AI-enhanced educational game design: From the content generation to testing. Engineering Educational Games for a Sustainable Society: Play, Learn, and Transform, Springer.",
+      "citation": "Moon, J., Awoyemi, I., Abu, S., Na, H., Lee, Y., & Choi, G. W. (under review). AI-enhanced educational game design: From the content generation to testing. Engineering Educational Games for a Sustainable Society: Play, Learn, and Transform, Springer.",
       "link": ""
     },
     {
@@ -2122,7 +2122,7 @@ window.__cvSiteData = {
       "authors": "Moon, J.",
       "note": "",
       "venue": "Online Learning Innovation Summit 2027",
-      "citation": "Moon, J. (Submitted). RemixEd: Intentional teaching with AI-assisted interactive learning design. Online Learning Innovation Summit 2027.",
+      "citation": "Moon, J. (submitted). RemixEd: Intentional teaching with AI-assisted interactive learning design. Online Learning Innovation Summit 2027.",
       "link": ""
     },
     {
@@ -2134,7 +2134,7 @@ window.__cvSiteData = {
       "authors": "Abu, S., Awoyemi, I., & Moon, J.",
       "note": "mentored collaboration",
       "venue": "",
-      "citation": "* Abu, S., Awoyemi, I., & Moon, J. (In preparation). Modeling behavioral dynamics and cognitive states in virtual reality safety training: A learning analytics approach.",
+      "citation": "* Abu, S., Awoyemi, I., & Moon, J. (in preparation). Modeling behavioral dynamics and cognitive states in virtual reality safety training: A learning analytics approach.",
       "link": ""
     },
     {
@@ -2146,7 +2146,7 @@ window.__cvSiteData = {
       "authors": "Abu, S., Awoyemi, I., & Moon, J.",
       "note": "mentored collaboration",
       "venue": "",
-      "citation": "* Abu, S., Awoyemi, I., & Moon, J. (In preparation). Predictive validation of behavioral learning analytics: A machine learning approach.",
+      "citation": "* Abu, S., Awoyemi, I., & Moon, J. (in preparation). Predictive validation of behavioral learning analytics: A machine learning approach.",
       "link": ""
     },
     {
@@ -2158,7 +2158,7 @@ window.__cvSiteData = {
       "authors": "Cho, H., Hong, S., Chae, J., & Moon, J.",
       "note": "",
       "venue": "",
-      "citation": "Cho, H., Hong, S., Chae, J., & Moon, J. (Revising to resubmit). Affective interventions and metacognitive transitions: Causal evidence from reverse-lag analysis in AI chatbot.",
+      "citation": "Cho, H., Hong, S., Chae, J., & Moon, J. (revising to resubmit). Affective interventions and metacognitive transitions: Causal evidence from reverse-lag analysis in AI chatbot.",
       "link": ""
     },
     {
@@ -2170,7 +2170,7 @@ window.__cvSiteData = {
       "authors": "Park, J., Bae, J., Lee, U., Ahn, T., Lee, S., Kim, D., Choi, A., Jeong, Y., Moon, J., & Kim, H.",
       "note": "",
       "venue": "",
-      "citation": "Park, J., Bae, J., Lee, U., Ahn, T., Lee, S., Kim, D., Choi, A., Jeong, Y., Moon, J., & Kim, H. (Revising to resubmit). How to align large language models for teaching English? Designing and developing an LLM-based chatbot for teaching English conversation in EFL: Findings and limitations.",
+      "citation": "Park, J., Bae, J., Lee, U., Ahn, T., Lee, S., Kim, D., Choi, A., Jeong, Y., Moon, J., & Kim, H. (revising to resubmit). How to align large language models for teaching English? Designing and developing an LLM-based chatbot for teaching English conversation in EFL: Findings and limitations.",
       "link": ""
     },
     {
@@ -2182,7 +2182,7 @@ window.__cvSiteData = {
       "authors": "Hong, S., Moon, J., Chae, J., & Cho, H.",
       "note": "corresponding author",
       "venue": "",
-      "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (Revising to resubmit). Micro-transitions in learner–chatbot ethical dialogue: Early uncertainty and the emergence of reflective reasoning.",
+      "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (revising to resubmit). Micro-transitions in learner–chatbot ethical dialogue: Early uncertainty and the emergence of reflective reasoning.",
       "link": ""
     }
   ],
@@ -2726,7 +2726,7 @@ window.__cvSiteData = {
     },
     {
       "title": "Teachers designing AI: A mentored model of situated learning in the National AI Challenge",
-      "meta": "Presented at the 2026 International Conference on Learning Sciences and Educational Innovation (ICOLSEI). Seoul, South Korea."
+      "meta": "Presented at the 2026 International Conference on Learning Sciences and Educational Innovation (ICOLSEI), Seoul, South Korea."
     },
     {
       "title": "FieldExplorer: A network-based visualization platform for supporting novice researchers’ academic decision-making",
