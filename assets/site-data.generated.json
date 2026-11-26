@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-26T01:47:11.519708+00:00",
+  "generatedAt": "2026-11-26T01:57:02.719119+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "November 11, 2026",
     "eyebrow": "Instructional Technology | College of Education",
-    "heroTitleMeta": "Assistant Professor of Instructional Technology, The University of Alabama",
+    "heroTitleMeta": "Program Coordinator of PhD in Instructional Leadership (Instructional Technology), The University of Alabama",
     "heroSummary": "Research at The University of Alabama focused on Digital Game-Based Learning, Inclusive and Immersive learning experience design (Extended Reality), Learning Analytics, and Educational Data Mining.",
     "heroPanelTitle": "A research agenda centered on teacher learning, immersive simulation, AI-enhanced pedagogy, and evidence-rich models of how learners act, adapt, and solve problems across digital settings.",
-    "roleLine": "Assistant Professor",
+    "roleLine": "Program Coordinator",
     "affiliationLines": [
       "Department of Educational Leadership, Policy, and Technology Studies",
       "The University of Alabama"
@@ -20,7 +20,7 @@
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=68dc894bee71",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=b9839c882167",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -110,6 +110,15 @@
     }
   ],
   "appointmentsEducation": [
+    {
+      "year": "2026-present",
+      "title": "Program Coordinator",
+      "detail": "PhD in Instructional Leadership (Instructional Technology), The University of Alabama",
+      "institution": "The University of Alabama",
+      "logo": "assets/institution-logos/ua-capstone-a-crimson.svg",
+      "logoAlt": "The University of Alabama logo",
+      "logoTheme": "ua"
+    },
     {
       "year": "2021-present",
       "title": "Assistant Professor",
@@ -256,23 +265,23 @@
       ]
     },
     {
-      "name": "Whose Ideas Get",
+      "name": "Adaptive Teaching in South Korea’s AI-Mediated Classrooms",
       "badge": "Pending",
-      "summary": "Whose Ideas Get Taken Up? Separating Opportunity to Speak from Teacher Responsiveness in Mathematics Classroom Discourse",
+      "summary": "Adaptive Teaching in South Korea’s AI-Mediated Classrooms: Testing Evidence-to-Action Training",
       "tags": [
-        "$49,997",
         "Lead PI",
-        "Total requested $49,997, AIMS EduData Phase II (EDSI Benchmark Data Collection), Digital Promise"
+        "Total requested KRW 24,112,000, Academy of Korean Studies (AKS), 2027 Korean Studies Grant (Academic Research)",
+        "February 2027 - January 2028"
       ]
     },
     {
-      "name": "Who Should Check",
+      "name": "Task-Valid Variation",
       "badge": "Pending",
-      "summary": "Who Should Check the AI? Allocating Scarce Expert Verification in AI-Assisted Online Course Production",
+      "summary": "Task-Valid Variation: Synthetic Multimodal Data for Reliable Recognition of Novice Actions, Amazon Research Awards, Synthetic Data Generation for Multimodal Perception (Fall 2026; AWS Promotional Credits requested separately)",
       "tags": [
-        "$75,000",
+        "$73,780",
         "Lead PI",
-        "Total requested $75,000 (research gift), Microsoft Research AI Economy Institute (AIEI) Open Call 4"
+        "Total requested $73,780"
       ]
     }
   ],
@@ -2273,6 +2282,24 @@
     ],
     "pending": [
       {
+        "title": "Adaptive Teaching in South Korea’s AI-Mediated Classrooms: Testing Evidence-to-Action Training",
+        "meta": "Lead PI | Total requested KRW 24,112,000, Academy of Korean Studies (AKS), 2027 Korean Studies Grant (Academic Research) | February 2027 - January 2028",
+        "amount": "pending",
+        "amountValue": null
+      },
+      {
+        "title": "Task-Valid Variation: Synthetic Multimodal Data for Reliable Recognition of Novice Actions, Amazon Research Awards, Synthetic Data Generation for Multimodal Perception (Fall 2026; AWS Promotional Credits requested separately)",
+        "meta": "Lead PI | Total requested $73,780 | August 2027 - July 2028",
+        "amount": "$73,780",
+        "amountValue": 73780.0
+      },
+      {
+        "title": "Virtual Makerspaces in Rural and Small Libraries: An Inter-Library Network for STEM Learning",
+        "meta": "PI, UA subaward | Institute of Museum and Library Services (IMLS), National Leadership Grants for Libraries (Planning), UA subaward approximately $35,000 | August 2027 - July 2029",
+        "amount": "$35,000",
+        "amountValue": 35000.0
+      },
+      {
         "title": "Whose Ideas Get Taken Up? Separating Opportunity to Speak from Teacher Responsiveness in Mathematics Classroom Discourse",
         "meta": "Lead PI | Total requested $49,997, AIMS EduData Phase II (EDSI Benchmark Data Collection), Digital Promise | February 2027 - January 2028",
         "amount": "$49,997",
@@ -2321,12 +2348,6 @@
         "amountValue": 110669.0
       },
       {
-        "title": "TRACE-Reg: A Privacy-by-Design, Agency-Preserving Emotion-Regulation Agent for Adult Learners",
-        "meta": "Lead PI | Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget $100,000 | September 2026",
-        "amount": "$100,000",
-        "amountValue": 100000.0
-      },
-      {
         "title": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
         "meta": "PI | Total requested €20,000 (approximately $23,362), Game in Lab 2026 International Call for Projects, Asmodee | May 2027 - April 2029",
         "amount": "$23,362",
@@ -2363,12 +2384,6 @@
         "amountValue": 35000.0
       },
       {
-        "title": "CyberAI Innovation: Teaching AI as Target and Defender through a Full-Stack Immersive AI Ecosystem",
-        "meta": "PI | National Science Foundation (NSF), Proposal 26-0572, proposed total amount $497,460.00, submission deadline April 3, 2026, submitted to sponsor March 10, 2026 | October 2026 - September 2029",
-        "amount": "$497,460",
-        "amountValue": 497460.0
-      },
-      {
         "title": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
         "meta": "Key Personnel / External Evaluator | January 2027 - December 2029",
         "amount": "pending",
@@ -2379,11 +2394,11 @@
   },
   "grantPortfolio": {
     "fundedTotal": 607683,
-    "pendingTotal": 2977744,
+    "pendingTotal": 2489064,
     "fundedCount": 14,
-    "pendingCount": 17,
+    "pendingCount": 18,
     "sourceReportedFundedTotal": 607683,
-    "sourceReportedPendingTotal": 2977744,
+    "sourceReportedPendingTotal": 2489064,
     "withdrawnTotal": 0,
     "withdrawnCount": 0,
     "sourceReportedWithdrawnTotal": 0,
@@ -2597,7 +2612,7 @@
       "label": "doctoral chairs or co-chairs"
     },
     {
-      "value": "10",
+      "value": "11",
       "label": "doctoral committee appointments"
     },
     {
