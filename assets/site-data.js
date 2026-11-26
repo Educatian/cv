@@ -1,9 +1,9 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-11-26T08:18:42.374045+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-11-26T08:42:32.094172+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
-    "cvDate": "November 11, 2026",
+    "cvDate": "November 26, 2026",
     "eyebrow": "Instructional Technology | College of Education",
     "heroTitleMeta": "Program Coordinator of PhD in Instructional Leadership (Instructional Technology), The University of Alabama",
     "heroSummary": "Research at The University of Alabama focused on Digital Game-Based Learning, Inclusive and Immersive learning experience design (Extended Reality), Learning Analytics, and Educational Data Mining.",
@@ -20,8 +20,8 @@ window.__cvSiteData = {
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=84a3be6fc010",
-    "cvDownloadFilename": "CV_20261111_MOON.docx"
+    "cvDownloadPath": "CV_202605_MOON.docx?v=ff2c74170642",
+    "cvDownloadFilename": "CV_20261126_MOON.docx"
   },
   "contact": {
     "email": "jmoon19@ua.edu",
@@ -80,15 +80,6 @@ window.__cvSiteData = {
       "alt": "AERA logo",
       "url": "https://www.aera.net/",
       "theme": "sand"
-    },
-    {
-      "acronym": "AECT",
-      "name": "Association for Education Communications and Technology",
-      "label": "Professional Association",
-      "logo": "assets/affiliation-logos/aect.png",
-      "alt": "AECT logo",
-      "url": "https://www.aect.org/",
-      "theme": "sky"
     },
     {
       "acronym": "ISLS",
@@ -159,12 +150,12 @@ window.__cvSiteData = {
   "honors": [
     "Nellie Rose McCrory Faculty Excellence Award – Research Division (2026), College of Education, The University of Alabama",
     "President’s Faculty Research Excellence Award (2026), The University of Alabama",
-    "Finalist (selected as one of 11 finalists from 159 applicants). William T. Grant Foundation Scholars Program (2026).",
+    "Finalist, William T. Grant Foundation Scholars Program (2026), selected as one of 11 finalists from 159 applicants",
     "Dean’s Merit Award in Research Excellence (2025), College of Education, The University of Alabama",
-    "Outstanding iLEAD Paper Award (2024). Immersive Learning Research Network Conference (iLRN) 2024",
-    "Outstanding Practitioner Paper Award (2023). Immersive Learning Research Network Conference (iLRN) 2023",
-    "Featured Emerging Scholar (2021). CIRCLS (The Center for Integrative Research in Computing and Learning Sciences)",
-    "Finalist (2016-2021), Instructional Systems and Learning Technologies Program Award, Florida State University"
+    "Outstanding iLEAD Paper Award (2024), Immersive Learning Research Network Conference (iLRN)",
+    "Outstanding Practitioner Paper Award (2023), Immersive Learning Research Network Conference (iLRN)",
+    "Featured Emerging Scholar (2021), CIRCLS (The Center for Integrative Research in Computing and Learning Sciences)",
+    "Finalist, Instructional Systems and Learning Technologies Program Award (2016–2021), Florida State University"
   ],
   "news": [
     {
@@ -261,7 +252,7 @@ window.__cvSiteData = {
       "tags": [
         "$5,700",
         "$5,700",
-        "June 2027 - August 2027"
+        "June 2026 - August 2026"
       ]
     },
     {
@@ -1128,7 +1119,7 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "Aldemir, T., Bicer, A., Kilinc, S., Moon, J., & Kwok, M. (2026). Challenges, safeguards, and professional learning needs for AI integration: Insights from a two-week AI literacy module with preservice teachers. Cogent Education. https://doi.org/10.1080/2331186X.2026.2721038 [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
+      "citation": "Aldemir, T., Bicer, A., Kilinc, S., Moon, J., & Kwok, M. (2026). Challenges, safeguards, and professional learning needs for AI integration: Insights from a two-week AI literacy module with preservice teachers. Cogent Education, 13(1), 2721038. https://doi.org/10.1080/2331186X.2026.2721038 [ESCI-indexed, IF = 2.0, IF5 = 2.1]",
       "link": "https://doi.org/10.1080/2331186X.2026.2721038"
     },
     {
@@ -1140,7 +1131,7 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo-Hernandez, K., & Sanders, M. (2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education. https://doi.org/10.1007/s11858-026-01816-1 [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
+      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo-Hernandez, K., & Sanders, M. (2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education, 58(5), 1027–1039. https://doi.org/10.1007/s11858-026-01816-1 [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
       "link": "https://doi.org/10.1007/s11858-026-01816-1"
     },
     {
@@ -1152,7 +1143,7 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "Lee, J. Y., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P. (2026). Validity of eye-tracking measures in immersive virtual reality: Using cognitive theories of learning. Educational Psychology Review. https://doi.org/10.1007/s10648-026-10186-9 [SSCI-indexed, IF = 11.9, IF5 = 16.4]",
+      "citation": "Lee, J. Y., Moon, J., Paas, F., Cho, M., Darejeh, A., Holmer, S., & Ayres, P. (2026). Validity of eye-tracking measures in immersive virtual reality: Using cognitive theories of learning. Educational Psychology Review, 38(1), 100. https://doi.org/10.1007/s10648-026-10186-9 [SSCI-indexed, IF = 11.9, IF5 = 16.4]",
       "link": "https://doi.org/10.1007/s10648-026-10186-9"
     },
     {
@@ -1164,61 +1155,61 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Uddin, M. M., Luo, F., & Moon, J. (2026). Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review. Interactive Learning Environments. https://doi.org/10.1080/10494820.2026.2679063 [SSCI-indexed, IF = 6.7, IF5 = 7.1]",
+      "citation": "* Uddin, M. M., Luo, F., & Moon, J. (2026). Artificial intelligence for engaging neurodiverse learners in K-12 education: A systematic review. Interactive Learning Environments, 34(9), 6891–6916. https://doi.org/10.1080/10494820.2026.2679063 [SSCI-indexed, IF = 6.7, IF5 = 7.1]",
       "link": "https://doi.org/10.1080/10494820.2026.2679063"
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "* Uddin, M. M., Moon, J., & Abu, S. (2026). An ethical framework for conversational AI in higher education: Toward an evidence-based ethical governance. AI & Ethics. https://doi.org/10.1007/s43681-026-01056-9",
+      "citation": "* Uddin, M. M., Moon, J., & Abu, S. (2026). An ethical framework for conversational AI in higher education: Toward an evidence-based ethical governance. AI & Ethics, 6(2), 202. https://doi.org/10.1007/s43681-026-01056-9",
       "link": "https://doi.org/10.1007/s43681-026-01056-9"
     },
     {
       "year": "2026",
       "category": "International",
-      "citation": "Moon, J., Jung, Y. J., Kim, S. H., Bae, Y., & Schneider, B. (2026). Fostering innovation at the intersection of maker education and extended reality (XR). Computers & Education: X Reality. https://doi.org/10.1016/j.cexr.2025.100124 [ESCI-indexed, IF = 5.9, IF5 = 5.8]",
+      "citation": "Moon, J., Jung, Y. J., Kim, S. H., Bae, Y., & Schneider, B. (2026). Fostering innovation at the intersection of maker education and extended reality (XR). Computers & Education: X Reality, 8, 100124. https://doi.org/10.1016/j.cexr.2025.100124 [ESCI-indexed, IF = 5.9, IF5 = 5.8]",
       "link": "https://doi.org/10.1016/j.cexr.2025.100124"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "Hong, S., Eom, T., & Moon, J. (2025). Virtual reality simulation to foster authentic learning in pre-service teacher education: A systematic literature review. Educational Research Review. https://doi.org/10.1016/j.edurev.2025.100743 [SSCI-indexed, IF = 10.3, IF5 = 16.7]",
+      "citation": "Hong, S., Eom, T., & Moon, J. (2025). Virtual reality simulation to foster authentic learning in pre-service teacher education: A systematic literature review. Educational Research Review, 49, 100743. https://doi.org/10.1016/j.edurev.2025.100743 [SSCI-indexed, IF = 10.3, IF5 = 16.7]",
       "link": "https://doi.org/10.1016/j.edurev.2025.100743"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "Aldemir, T., Kilinc, S., Bicer, A., Moon, J., & Kwok, M. (2025). Exploring emergent AI-TPACK competencies in a two-week AI literacy module for preservice teachers. Teaching and Teacher Education. https://doi.org/10.1016/j.tate.2025.105231 [SSCI-indexed, IF = 4.3, IF5 = 5.5]",
+      "citation": "Aldemir, T., Kilinc, S., Bicer, A., Moon, J., & Kwok, M. (2025). Exploring emergent AI-TPACK competencies in a two-week AI literacy module for preservice teachers. Teaching and Teacher Education, 168, 105231. https://doi.org/10.1016/j.tate.2025.105231 [SSCI-indexed, IF = 4.3, IF5 = 5.5]",
       "link": "https://doi.org/10.1016/j.tate.2025.105231"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "* Marchiori, R., Song, S., Moon, J., Awoyemi, D., Ghooreian, A., & Ramenzapour, E. (2025). A systematic review of technology-enhanced learning approaches to foster construction engineering and management competencies. Computer Applications in Engineering Education. https://doi.org/10.1002/cae.70074 [SCIE-indexed, IF = 2.7, IF5 = 3.0]",
+      "citation": "* Marchiori, R., Song, S., Moon, J., Awoyemi, D., Ghooreian, A., & Ramenzapour, E. (2025). A systematic review of technology-enhanced learning approaches to foster construction engineering and management competencies. Computer Applications in Engineering Education, 33(5). https://doi.org/10.1002/cae.70074 [SCIE-indexed, IF = 2.7, IF5 = 3.0]",
       "link": "https://doi.org/10.1002/cae.70074"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "*‡ Hong, S., Moon, J., Eom, T., Awoyemi, I. D., & Hwang, J. (2025). Generative AI-enhanced virtual reality simulation for pre-service teacher education: A mixed-methods analysis of usability and instructional utility for course integration. Education Sciences. https://doi.org/10.3390/educsci15080997 [ESCI-indexed, IF = 3.5, IF5 = 3.3]",
+      "citation": "*‡ Hong, S., Moon, J., Eom, T., Awoyemi, I. D., & Hwang, J. (2025). Generative AI-enhanced virtual reality simulation for pre-service teacher education: A mixed-methods analysis of usability and instructional utility for course integration. Education Sciences, 15(8), 997. https://doi.org/10.3390/educsci15080997 [ESCI-indexed, IF = 3.5, IF5 = 3.3]",
       "link": "https://doi.org/10.3390/educsci15080997"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "‡ Moon, J., Jung, Y., Bae, H., Lee, U., & Kim, K. (2025). Socio-material interactions: A multi-case study on AI chatbot integration in asynchronous online learning. Innovations in Education and Teaching International. https://doi.org/10.1080/14703297.2025.2534189 [SSCI-indexed, IF = 6.2, IF5 = 4.2]",
+      "citation": "‡ Moon, J., Jung, Y., Bae, H., Lee, U., & Kim, K. (2025). Socio-material interactions: A multi-case study on AI chatbot integration in asynchronous online learning. Innovations in Education and Teaching International, 62(5), 1614–1631. https://doi.org/10.1080/14703297.2025.2534189 [SSCI-indexed, IF = 6.2, IF5 = 4.2]",
       "link": "https://doi.org/10.1080/14703297.2025.2534189"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "Aldemir, T., Moon, J., Bicer, A., Byun, G., Perez, C. M., & Sabanwar, V. (2025). How Non-CS preservice teachers conceptualize and engage with computational thinking through 3D game design: Insights from an extended reality (XR)-enhanced maker experience. Computers & Education: X Reality. https://doi.org/10.1016/j.cexr.2025.100099 [ESCI-indexed, IF = 5.9, IF5 = 5.8]",
+      "citation": "Aldemir, T., Moon, J., Bicer, A., Byun, G., Perez, C. M., & Sabanwar, V. (2025). How Non-CS preservice teachers conceptualize and engage with computational thinking through 3D game design: Insights from an extended reality (XR)-enhanced maker experience. Computers & Education: X Reality, 6, 100099. https://doi.org/10.1016/j.cexr.2025.100099 [ESCI-indexed, IF = 5.9, IF5 = 5.8]",
       "link": "https://doi.org/10.1016/j.cexr.2025.100099"
     },
     {
       "year": "2025",
       "category": "International",
-      "citation": "‡ Lim, J., Lee, U., Koh, J., Jeong, Y., Lee, Y., Byun, G., Jung, H., Jang, Y., Lee, S., & Moon, J. (2025). Development and implementation of a generative artificial intelligence-enhanced simulation to enhance problem-solving skills for pre-service teachers. Computers & Education. https://doi.org/10.1016/j.compedu.2025.105306 [SSCI-, SCIE-indexed, IF = 13.2, IF5 = 14.6]",
+      "citation": "‡ Lim, J., Lee, U., Koh, J., Jeong, Y., Lee, Y., Byun, G., Jung, H., Jang, Y., Lee, S., & Moon, J. (2025). Development and implementation of a generative artificial intelligence-enhanced simulation to enhance problem-solving skills for pre-service teachers. Computers & Education, 232, 105306. https://doi.org/10.1016/j.compedu.2025.105306 [SSCI-, SCIE-indexed, IF = 13.2, IF5 = 14.6]",
       "link": "https://doi.org/10.1016/j.compedu.2025.105306"
     },
     {
@@ -1236,37 +1227,37 @@ window.__cvSiteData = {
     {
       "year": "2024",
       "category": "International",
-      "citation": "‡ Moon, J., Ke, F., & Sokolikj, Z. (2024). Game-based performance tasks for assessing representational flexibility of autistic adolescents in a virtual world. Technology, Knowledge, and Learning. https://doi.org/10.1007/s10758-024-09806-6 [ESCI-indexed, IF = 4.2, IF5 = 4.7]",
+      "citation": "‡ Moon, J., Ke, F., & Sokolikj, Z. (2024). Game-based performance tasks for assessing representational flexibility of autistic adolescents in a virtual world. Technology, Knowledge, and Learning, 30(1), 539–560. https://doi.org/10.1007/s10758-024-09806-6 [ESCI-indexed, IF = 4.2, IF5 = 4.7]",
       "link": "https://doi.org/10.1007/s10758-024-09806-6"
     },
     {
       "year": "2024",
       "category": "International",
-      "citation": "Lee, U., Jeong, Y., Koh, J., Byun, G., Lee, Y., Lee, H., Eun, S., Moon, J., Lim, C., & Kim, H. (2024). I see you: Teacher analytics with GPT-4 vision-powered observational assessment. Smart Learning Environments. https://doi.org/10.1186/s40561-024-00335-4 [ESCI-indexed, IF = 12.1, IF5 = 10.1]",
+      "citation": "Lee, U., Jeong, Y., Koh, J., Byun, G., Lee, Y., Lee, H., Eun, S., Moon, J., Lim, C., & Kim, H. (2024). I see you: Teacher analytics with GPT-4 vision-powered observational assessment. Smart Learning Environments, 11, 48. https://doi.org/10.1186/s40561-024-00335-4 [ESCI-indexed, IF = 12.1, IF5 = 10.1]",
       "link": "https://doi.org/10.1186/s40561-024-00335-4"
     },
     {
       "year": "2024",
       "category": "International",
-      "citation": "Bae, H., Hur, J., Park, J., Choi, G. W., & Moon, J. (2024). Pre-service teachers' dual perspectives on generative AI: Benefits, challenges, and integrating into teaching and learning. Online Learning. https://doi.org/10.24059/olj.v28i3.4543 [ESCI-indexed, IF = 2.3, IF5 = 3.7]",
+      "citation": "Bae, H., Hur, J., Park, J., Choi, G. W., & Moon, J. (2024). Pre-service teachers' dual perspectives on generative AI: Benefits, challenges, and integrating into teaching and learning. Online Learning, 28(3). https://doi.org/10.24059/olj.v28i3.4543 [ESCI-indexed, IF = 2.3, IF5 = 3.7]",
       "link": "https://doi.org/10.24059/olj.v28i3.4543"
     },
     {
       "year": "2024",
       "category": "International",
-      "citation": "‡ Moon, J., Lee, U., Koh, J., Jeong, Y., Lee, Y., Byun, G., & Lim, J. (2024). Generative artificial intelligence in educational game design: Nuanced challenges, design implications, and future research. Technology, Knowledge, and Learning. https://doi.org/10.1007/s10758-024-09756-z [ESCI-indexed, IF = 4.2, IF5 = 4.7]",
+      "citation": "‡ Moon, J., Lee, U., Koh, J., Jeong, Y., Lee, Y., Byun, G., & Lim, J. (2024). Generative artificial intelligence in educational game design: Nuanced challenges, design implications, and future research. Technology, Knowledge, and Learning, 30(1), 447–459. https://doi.org/10.1007/s10758-024-09756-z [ESCI-indexed, IF = 4.2, IF5 = 4.7]",
       "link": "https://doi.org/10.1007/s10758-024-09756-z"
     },
     {
       "year": "2024",
       "category": "International",
-      "citation": "‡ Moon, J., McNeill, L., Edmonds, C. T., Banihashem, S. K., & Noroozi, O. (2024). Using learning analytics to explore peer learning patterns in asynchronous gamified environments. International Journal of Educational Technology in Higher Education. https://doi.org/10.1186/s41239-024-00476-z [SSCI-indexed, IF = 38.7, IF5 = 24.5]",
+      "citation": "‡ Moon, J., McNeill, L., Edmonds, C. T., Banihashem, S. K., & Noroozi, O. (2024). Using learning analytics to explore peer learning patterns in asynchronous gamified environments. International Journal of Educational Technology in Higher Education, 21, 45. https://doi.org/10.1186/s41239-024-00476-z [SSCI-indexed, IF = 38.7, IF5 = 24.5]",
       "link": "https://doi.org/10.1186/s41239-024-00476-z"
     },
     {
       "year": "2024",
       "category": "International",
-      "citation": "‡ Moon, J., Yeo, S., Banihashem, S. K., & Noroozi, O. (2024). Using multimodal learning analytics as a formative assessment tool: Exploring collaborative dynamics in mathematics teacher education. Journal of Computer Assisted Learning. https://doi.org/10.1111/jcal.13028 [SSCI-indexed, IF = 5.7, IF5 = 6.8]",
+      "citation": "‡ Moon, J., Yeo, S., Banihashem, S. K., & Noroozi, O. (2024). Using multimodal learning analytics as a formative assessment tool: Exploring collaborative dynamics in mathematics teacher education. Journal of Computer Assisted Learning, 40(6), 2753–2771. https://doi.org/10.1111/jcal.13028 [SSCI-indexed, IF = 5.7, IF5 = 6.8]",
       "link": "https://doi.org/10.1111/jcal.13028"
     },
     {
@@ -1302,7 +1293,7 @@ window.__cvSiteData = {
     {
       "year": "2025",
       "category": "International",
-      "citation": "*‡ Moon, J., Yeo, S., Si, Q., & Ijeluola, A. S. (2025). A scoping review of game-based learning for mathematics teacher education. International Journal of Mathematical Education in Science and Technology. https://doi.org/10.1080/0020739X.2024.2337934 [ESCI-indexed, IF = 0.6, IF5 = 0.9]",
+      "citation": "*‡ Moon, J., Yeo, S., Si, Q., & Ijeluola, A. S. (2025). A scoping review of game-based learning for mathematics teacher education. International Journal of Mathematical Education in Science and Technology, 56(7), 1280–1308. https://doi.org/10.1080/0020739X.2024.2337934 [ESCI-indexed, IF = 0.6, IF5 = 0.9]",
       "link": "https://doi.org/10.1080/0020739X.2024.2337934"
     },
     {
@@ -1320,7 +1311,7 @@ window.__cvSiteData = {
     {
       "year": "2024",
       "category": "International",
-      "citation": "* Na, C., Lee, D., Moon, J., & Shin, Y. (2024). Modeling undergraduate students’ learning dynamics between self-regulated learning patterns and community of inquiry. Education and Information Technologies. https://doi.org/10.1007/s10639-024-12527-z [SSCI-indexed, IF = 5.4, IF5 = 5.7]",
+      "citation": "* Na, C., Lee, D., Moon, J., & Shin, Y. (2024). Modeling undergraduate students’ learning dynamics between self-regulated learning patterns and community of inquiry. Education and Information Technologies, 29(15), 19621–19648. https://doi.org/10.1007/s10639-024-12527-z [SSCI-indexed, IF = 5.4, IF5 = 5.7]",
       "link": "https://doi.org/10.1007/s10639-024-12527-z"
     },
     {
@@ -1338,13 +1329,13 @@ window.__cvSiteData = {
     {
       "year": "2023",
       "category": "International",
-      "citation": "Glaser, N., Schmidt, M., Thull, C., Tennant, A., Moon, J., & Ousley, C. (2023). Learner experience design and unpacking sociocultural, technological, and pedagogical design considerations of spherical video-based virtual reality systems for autistic learners: A systematic literature review. Journal of Autism and Developmental Disorders. https://doi.org/10.1007/s10803-023-06168-3 [SSCI-indexed, IF = 2.6, IF5 = 4.2]",
+      "citation": "Glaser, N., Schmidt, M., Thull, C., Tennant, A., Moon, J., & Ousley, C. (2023). Learner experience design and unpacking sociocultural, technological, and pedagogical design considerations of spherical video-based virtual reality systems for autistic learners: A systematic literature review. Journal of Autism and Developmental Disorders, 54(12), 4719–4739. https://doi.org/10.1007/s10803-023-06168-3 [SSCI-indexed, IF = 2.6, IF5 = 4.2]",
       "link": "https://doi.org/10.1007/s10803-023-06168-3"
     },
     {
       "year": "2023",
       "category": "International",
-      "citation": "* Lee, U., Jung, H., Jeon, Y., Sohn, Y., Hwang, W., Moon, J., & Kim, H. (2023). Few-shot is enough: Exploring ChatGPT prompt engineering method for automatic question generation in English education. Education and Information Technologies. https://doi.org/10.1007/s10639-023-12249-8 [SSCI-indexed, IF = 7.2, IF5 = 7.3]",
+      "citation": "* Lee, U., Jung, H., Jeon, Y., Sohn, Y., Hwang, W., Moon, J., & Kim, H. (2023). Few-shot is enough: Exploring ChatGPT prompt engineering method for automatic question generation in English education. Education and Information Technologies, 29(9), 11483–11515. https://doi.org/10.1007/s10639-023-12249-8 [SSCI-indexed, IF = 7.2, IF5 = 7.3]",
       "link": "https://doi.org/10.1007/s10639-023-12249-8"
     },
     {
@@ -1356,7 +1347,7 @@ window.__cvSiteData = {
     {
       "year": "2023",
       "category": "International",
-      "citation": "‡ Moon, J., & Ke, F. (2023). Effects of adaptive prompts in virtual reality-based social skills training for children with autism. Journal of Autism and Developmental Disorders. https://doi.org/10.1007/s10803-023-06021-7 [SSCI-indexed, IF = 2.6, IF5 = 4.2]",
+      "citation": "‡ Moon, J., & Ke, F. (2023). Effects of adaptive prompts in virtual reality-based social skills training for children with autism. Journal of Autism and Developmental Disorders, 54(8), 2826–2846. https://doi.org/10.1007/s10803-023-06021-7 [SSCI-indexed, IF = 2.6, IF5 = 4.2]",
       "link": "https://doi.org/10.1007/s10803-023-06021-7"
     },
     {
@@ -2210,7 +2201,7 @@ window.__cvSiteData = {
       },
       {
         "title": "University of Alabama COE Dean's Summer Doctoral Student Stipend Program",
-        "meta": "$5,700 | June 2027 - August 2027",
+        "meta": "$5,700 | June 2026 - August 2026",
         "amount": "$5,700",
         "amountValue": 5700.0
       },
@@ -2344,7 +2335,7 @@ window.__cvSiteData = {
       },
       {
         "title": "Risk-Adaptive Human Oversight for Agentic AI Learning: Testing Teacher Governance and Learner Agency",
-        "meta": "Lead PI | Charles Koch Foundation, Requested amount $110,669 | January 2027 - December 2027",
+        "meta": "Lead PI | Charles Koch Foundation, Total requested $110,669 | January 2027 - December 2027",
         "amount": "$110,669",
         "amountValue": 110669.0
       },
@@ -2380,7 +2371,7 @@ window.__cvSiteData = {
       },
       {
         "title": "Who Benefits from High School Computer Science? Heterogeneous Causal Effects of CS Coursework on STEM Major Declaration: A Bayesian Causal Forest Analysis of HSLS:09",
-        "meta": "Lead PI | Total award $35,000, AERA-NSF Research Grant Program | September 2026 - August 2028",
+        "meta": "Lead PI | Total requested $35,000, AERA-NSF Research Grant Program | September 2026 - August 2028",
         "amount": "$35,000",
         "amountValue": 35000.0
       },
@@ -2410,6 +2401,42 @@ window.__cvSiteData = {
   "teaching": {
     "courseHistory": [
       {
+        "code": "AIL 601",
+        "title": "Principles of Instructional Technology",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate – Doctoral",
+            "terms": "Fall 2025–2026"
+          }
+        ]
+      },
+      {
+        "code": "AIL 605",
+        "title": "Interactive Multimedia Processes",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate – Doctoral",
+            "terms": "Spring 2024–2026"
+          }
+        ]
+      },
+      {
+        "code": "AIL 606",
+        "title": "Software Technology",
+        "institution": "The University of Alabama",
+        "appointments": [
+          {
+            "role": "Instructor",
+            "level": "Graduate – Doctoral",
+            "terms": "Summer 2025–2026"
+          }
+        ]
+      },
+      {
         "code": "AIL 689",
         "title": "Practicum in Instructional Technology",
         "institution": "The University of Alabama",
@@ -2417,7 +2444,7 @@ window.__cvSiteData = {
           {
             "role": "Instructor",
             "level": "Graduate – Doctoral",
-            "terms": "Spring 2025"
+            "terms": "Spring 2025–2026"
           }
         ]
       },
@@ -2428,8 +2455,8 @@ window.__cvSiteData = {
         "appointments": [
           {
             "role": "Instructor",
-            "level": "Graduate - Doctoral",
-            "terms": "Fall 2024"
+            "level": "Graduate – Doctoral",
+            "terms": "Fall 2024–2025"
           }
         ]
       },
@@ -2441,31 +2468,7 @@ window.__cvSiteData = {
           {
             "role": "Instructor",
             "level": "Graduate – Doctoral",
-            "terms": "Spring 2025"
-          }
-        ]
-      },
-      {
-        "code": "AIL 605",
-        "title": "Interactive Multimedia Processes",
-        "institution": "The University of Alabama",
-        "appointments": [
-          {
-            "role": "Instructor",
-            "level": "Graduate - Doctoral",
-            "terms": "Spring 2024-2025"
-          }
-        ]
-      },
-      {
-        "code": "AIL 606",
-        "title": "Software Technology",
-        "institution": "The University of Alabama",
-        "appointments": [
-          {
-            "role": "Instructor",
-            "level": "Graduate - Doctoral",
-            "terms": "Summer 2025-2026"
+            "terms": "Spring 2025, Fall 2025"
           }
         ]
       },
@@ -2476,8 +2479,8 @@ window.__cvSiteData = {
         "appointments": [
           {
             "role": "Instructor",
-            "level": "Graduate - Master",
-            "terms": "Summer 2025-2026"
+            "level": "Graduate – Master",
+            "terms": "Summer 2025–2026"
           }
         ]
       },
@@ -2488,8 +2491,8 @@ window.__cvSiteData = {
         "appointments": [
           {
             "role": "Instructor",
-            "level": "Graduate - Master",
-            "terms": "Fall 2021-2024"
+            "level": "Graduate – Master",
+            "terms": "Fall 2021–2024"
           }
         ]
       },
@@ -2500,8 +2503,8 @@ window.__cvSiteData = {
         "appointments": [
           {
             "role": "Instructor",
-            "level": "Graduate - Master",
-            "terms": "Spring 2022-2024"
+            "level": "Graduate – Master",
+            "terms": "Spring 2022–2024"
           }
         ]
       },
@@ -2513,7 +2516,7 @@ window.__cvSiteData = {
           {
             "role": "Instructor",
             "level": "Undergraduate",
-            "terms": "Summer 2022-2024, 2026"
+            "terms": "Summer 2022–2026"
           }
         ]
       },
@@ -2525,7 +2528,7 @@ window.__cvSiteData = {
           {
             "role": "Instructor",
             "level": "Undergraduate",
-            "terms": "Summer 2022-2025"
+            "terms": "Summer 2022–2025"
           }
         ]
       },
@@ -2554,7 +2557,7 @@ window.__cvSiteData = {
           {
             "role": "Teaching Assistant",
             "level": "Graduate Level",
-            "terms": "Spring 2017-2018"
+            "terms": "Spring 2017–2018"
           }
         ]
       },
@@ -2588,24 +2591,25 @@ window.__cvSiteData = {
       }
     ],
     "teachingPortfolio": [
+      "AIL 601 Principles of Instructional Technology",
+      "AIL 605 Interactive Multimedia Processes",
+      "AIL 606 Software Technology",
       "AIL 689 Practicum in Instructional Technology",
       "AIL 690 Seminar in Instructional Technology",
       "AIL 699 Dissertation Research",
-      "AIL 605 Interactive Multimedia Processes",
-      "AIL 606 Software Technology",
-      "CAT531 Computer-Based Instruction",
-      "INTE534 Issues and Trends of Instructional Technology",
-      "INTE535 Analysis, Implementation, and Evaluation of Assistive Technology",
-      "CAT100 Computer Concepts & Application",
-      "CAT200 Computer Education Application",
-      "CAT250 Computer Education & Curriculum Development"
+      "CAT 531 Computer-Based Instruction",
+      "INTE 534 Issues and Trends of Instructional Technology",
+      "INTE 535 Analysis, Implementation, and Evaluation of Assistive Technology",
+      "CAT 100 Computer Concepts & Application",
+      "CAT 200 Computer Education Application",
+      "CAT 250 Computer Education & Curriculum Development"
     ],
     "courseDevelopment": [
       "Developed AIL 692 AI in Learning and Instructional Systems",
       "Developed AIL 693 Introduction to Literature Synthesis",
-      "Redesigned AIL 690 Seminar in Instructional Technology, AIL 605 Interactive Multimedia Process, AIL 606 Software Technology, INTE534 Issues and Trends of Instructional Technology, and INTE535 Analysis, Implementation, and Evaluation of Assistive Technology"
+      "Redesigned AIL 690 Seminar in Instructional Technology, AIL 605 Interactive Multimedia Processes, AIL 606 Software Technology, INTE 534 Issues and Trends of Instructional Technology, and INTE 535 Analysis, Implementation, and Evaluation of Assistive Technology"
     ],
-    "earlierTeachingNote": "Earlier teaching at Florida State University included EME6507 Development of Multimedia Instruction and EME6665 Synthesis, Analysis, and Argumentation in Instructional Systems Research."
+    "earlierTeachingNote": "Earlier teaching at Florida State University included EME 6507 Development of Multimedia Instruction and EME 6665 Synthesis, Analysis, and Argumentation in Instructional Systems Research."
   },
   "mentoringMetrics": [
     {
@@ -2718,7 +2722,7 @@ window.__cvSiteData = {
       "theme": "charcoal"
     }
   ],
-  "serviceReviewCopy": "Review service spans 23 journals across educational technology, learning sciences, and immersive learning, alongside grant review for National Science Foundation and Swiss National Sciences Foundation.",
+  "serviceReviewCopy": "Review service spans 27 journals across educational technology, learning sciences, and immersive learning, alongside grant review for National Science Foundation and Swiss National Science Foundation.",
   "talks": [
     {
       "title": "What works in technology-integrated K–12 science education? A meta-analysis of effects and moderators",

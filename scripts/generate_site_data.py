@@ -626,8 +626,8 @@ def parse_mentoring_metrics(paragraphs: Sequence[str]) -> List[Dict[str, str]]:
 
     chairs = len(re.findall(r"Doctoral Dissertation (?:Chair|Co-Chair)", dissertation_chunk))
     committees = len(re.findall(r"Doctoral Dissertation Committee(?: - External Member)?", dissertation_chunk))
-    current_advisees = len(re.findall(r"20\d{2}\s*-\s*(?:Present|Current)", course_chunk))
-    research_mentees = len(re.findall(r"20\d{2}\s*-\s*(?:Present|Current|\d{4})", research_chunk))
+    current_advisees = len(re.findall(r"20\d{2}\s*[-–]\s*(?:Present|Current)", course_chunk))
+    research_mentees = len(re.findall(r"20\d{2}\s*[-–]\s*(?:Present|Current|\d{4})", research_chunk))
 
     return [
         {"value": str(chairs), "label": "doctoral chairs or co-chairs"},
