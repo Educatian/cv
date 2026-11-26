@@ -1,14 +1,14 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-11-24T17:00:03.458406+00:00",
+  "generatedAt": "2026-11-26T01:57:02.719119+00:00",
   "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "November 11, 2026",
     "eyebrow": "Instructional Technology | College of Education",
-    "heroTitleMeta": "Assistant Professor of Instructional Technology, The University of Alabama",
+    "heroTitleMeta": "Program Coordinator of PhD in Instructional Leadership (Instructional Technology), The University of Alabama",
     "heroSummary": "Research at The University of Alabama focused on Digital Game-Based Learning, Inclusive and Immersive learning experience design (Extended Reality), Learning Analytics, and Educational Data Mining.",
     "heroPanelTitle": "A research agenda centered on teacher learning, immersive simulation, AI-enhanced pedagogy, and evidence-rich models of how learners act, adapt, and solve problems across digital settings.",
-    "roleLine": "Assistant Professor",
+    "roleLine": "Program Coordinator",
     "affiliationLines": [
       "Department of Educational Leadership, Policy, and Technology Studies",
       "The University of Alabama"
@@ -20,7 +20,7 @@ window.__cvSiteData = {
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=be67ec7da6f9",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=b9839c882167",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -43,7 +43,7 @@ window.__cvSiteData = {
       "label": "Journal articles"
     },
     {
-      "value": "21",
+      "value": "22",
       "label": "Conference proceedings"
     },
     {
@@ -55,7 +55,7 @@ window.__cvSiteData = {
       "label": "Working papers"
     },
     {
-      "value": "71",
+      "value": "72",
       "label": "Presentations"
     },
     {
@@ -110,6 +110,15 @@ window.__cvSiteData = {
     }
   ],
   "appointmentsEducation": [
+    {
+      "year": "2026-present",
+      "title": "Program Coordinator",
+      "detail": "PhD in Instructional Leadership (Instructional Technology), The University of Alabama",
+      "institution": "The University of Alabama",
+      "logo": "assets/institution-logos/ua-capstone-a-crimson.svg",
+      "logoAlt": "The University of Alabama logo",
+      "logoTheme": "ua"
+    },
     {
       "year": "2021-present",
       "title": "Assistant Professor",
@@ -256,23 +265,23 @@ window.__cvSiteData = {
       ]
     },
     {
-      "name": "Whose Ideas Get",
+      "name": "Adaptive Teaching in South Korea’s AI-Mediated Classrooms",
       "badge": "Pending",
-      "summary": "Whose Ideas Get Taken Up? Separating Opportunity to Speak from Teacher Responsiveness in Mathematics Classroom Discourse",
+      "summary": "Adaptive Teaching in South Korea’s AI-Mediated Classrooms: Testing Evidence-to-Action Training",
       "tags": [
-        "$49,997",
         "Lead PI",
-        "Total requested $49,997, AIMS EduData Phase II (EDSI Benchmark Data Collection), Digital Promise"
+        "Total requested KRW 24,112,000, Academy of Korean Studies (AKS), 2027 Korean Studies Grant (Academic Research)",
+        "February 2027 - January 2028"
       ]
     },
     {
-      "name": "Who Should Check",
+      "name": "Task-Valid Variation",
       "badge": "Pending",
-      "summary": "Who Should Check the AI? Allocating Scarce Expert Verification in AI-Assisted Online Course Production",
+      "summary": "Task-Valid Variation: Synthetic Multimodal Data for Reliable Recognition of Novice Actions, Amazon Research Awards, Synthetic Data Generation for Multimodal Perception (Fall 2026; AWS Promotional Credits requested separately)",
       "tags": [
-        "$75,000",
+        "$73,780",
         "Lead PI",
-        "Total requested $75,000 (research gift), Microsoft Research AI Economy Institute (AIEI) Open Call 4"
+        "Total requested $73,780"
       ]
     }
   ],
@@ -1676,6 +1685,42 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
+      "title": "Technology integration in K–12 science education: A meta-analysis of learning outcomes and instructional practices",
+      "authors": "You, H., Park, S., Kim, M., Aldemir, T., Moon, J., Kourkoulou, T., Zhu, L., Abu, S., Song, D., & Lee, H.",
+      "note": "",
+      "venue": "Journal of Science Education and Technology",
+      "citation": "You, H., Park, S., Kim, M., Aldemir, T., Moon, J., Kourkoulou, T., Zhu, L., Abu, S., Song, D., & Lee, H. (Submitted). Technology integration in K–12 science education: A meta-analysis of learning outcomes and instructional practices. Journal of Science Education and Technology.",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
+      "title": "Students’ judgements of embodied agent feedback and dialogue in immersive safety training",
+      "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
+      "note": "mentored collaboration",
+      "venue": "Journal of Computer Assisted Learning",
+      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (Submitted). Students’ judgements of embodied agent feedback and dialogue in immersive safety training. Journal of Computer Assisted Learning.",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
+      "title": "Designing feedback-supported immersive virtual reality for safety training",
+      "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
+      "note": "mentored collaboration",
+      "venue": "TechTrends",
+      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (Submitted). Designing feedback-supported immersive virtual reality for safety training. TechTrends.",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Journal Manuscript",
+      "status": "Submitted",
+      "year": "Pipeline",
       "title": "Evaluating generative AI tutors across learners’ cognitive profiles through post hoc log analysis",
       "authors": "Moon, J., & Lee, J. Y.",
       "note": "",
@@ -1784,11 +1829,11 @@ window.__cvSiteData = {
       "type": "Journal Manuscript",
       "status": "Submitted",
       "year": "Pipeline",
-      "title": "Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation",
-      "authors": "Lim, J., Moon, J., & Chen, Y.",
+      "title": "Balancing play and learning: PreK-5 teachers’ conceptualizations and enactments of play-based teaching in mixed reality simulation",
+      "authors": "Lim, J., Moon, J., Ramberg, E., Lee, J., Chen, Y., & Anderson, E.",
       "note": "",
-      "venue": "Journal of Research on Technology in Education",
-      "citation": "Lim, J., Moon, J., & Chen, Y. (Submitted). Teacher engagement in play-based teaching: An interaction analysis in mixed-reality simulation. Journal of Research on Technology in Education.",
+      "venue": "Education 3-13",
+      "citation": "Lim, J., Moon, J., Ramberg, E., Lee, J., Chen, Y., & Anderson, E. (Submitted). Balancing play and learning: PreK-5 teachers’ conceptualizations and enactments of play-based teaching in mixed reality simulation. Education 3-13.",
       "link": ""
     },
     {
@@ -1806,13 +1851,13 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Revising to resubmit",
+      "status": "Under review",
       "year": "Pipeline",
       "title": "Embodied arts-integrated AI literacy: A nested mixed-methods study with K-12 educators",
       "authors": "Abu, S., Moon, J., & Ghooreian, A.",
       "note": "mentored collaboration",
       "venue": "TechTrends",
-      "citation": "* Abu, S., Moon, J., & Ghooreian, A. (Revising to resubmit). Embodied arts-integrated AI literacy: A nested mixed-methods study with K-12 educators. TechTrends.",
+      "citation": "* Abu, S., Moon, J., & Ghooreian, A. (Under review). Embodied arts-integrated AI literacy: A nested mixed-methods study with K-12 educators. TechTrends.",
       "link": ""
     },
     {
@@ -1830,13 +1875,13 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Revising to resubmit",
+      "status": "Under review",
       "year": "Pipeline",
-      "title": "Ethical argumentation structure through learner-chatbot interaction patterns in K-12 pre-service teachers' AI ethics problem-solving process: A structure-quality decoupling",
+      "title": "Ethical argumentation structure in pre-service teachers’ AI ethics problem-solving: Learner–chatbot interaction patterns",
       "authors": "Hong, S., Moon, J., Chae, J., & Cho, H.",
       "note": "corresponding author",
       "venue": "Educational Technology Research and Development",
-      "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (Revising to resubmit). Ethical argumentation structure through learner-chatbot interaction patterns in K-12 pre-service teachers' AI ethics problem-solving process: A structure-quality decoupling. Educational Technology Research and Development.",
+      "citation": "‡ Hong, S., Moon, J., Chae, J., & Cho, H. (Under review). Ethical argumentation structure in pre-service teachers’ AI ethics problem-solving: Learner–chatbot interaction patterns. Educational Technology Research and Development.",
       "link": ""
     },
     {
@@ -1866,13 +1911,13 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Under review",
+      "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "A Bayesian meta-analysis of virtual reality-based safety training in construction sector",
       "authors": "Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R.",
       "note": "corresponding author",
       "venue": "Virtual Reality",
-      "citation": "*‡ Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R. (Under review). A Bayesian meta-analysis of virtual reality-based safety training in construction sector. Virtual Reality.",
+      "citation": "*‡ Moon, J., Awoyemi, I., Abu, S., Kim, E., & Marchiori, R. (Revising to resubmit). A Bayesian meta-analysis of virtual reality-based safety training in construction sector. Virtual Reality.",
       "link": ""
     },
     {
@@ -1938,13 +1983,13 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Under review",
+      "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review",
       "authors": "Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J.",
       "note": "mentored collaboration",
       "venue": "TechTrends",
-      "citation": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J. (Under review). Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review. TechTrends. (ESCI-indexed journal).",
+      "citation": "* Awoyemi, I., Abu, S., Yuvaraja, H. K., Patiballa, K., & Moon, J. (Revising to resubmit). Exploring fidelity dimensions in extended reality technologies for mechanical engineering education: A systematic review. TechTrends. (ESCI-indexed journal).",
       "link": ""
     },
     {
@@ -1998,25 +2043,49 @@ window.__cvSiteData = {
     {
       "bucket": "Submitted or Under Review",
       "type": "Journal Manuscript",
-      "status": "Under review",
+      "status": "Revising to resubmit",
       "year": "Pipeline",
       "title": "Exploratory versus structured interaction: Curiosity-related expression and information retention in two digital learning environments",
       "authors": "Ham, E., & Moon, J.",
       "note": "corresponding author",
       "venue": "Behaviour & Information Technology",
-      "citation": "‡ Ham, E., & Moon, J. (Under review). Exploratory versus structured interaction: Curiosity-related expression and information retention in two digital learning environments. Behaviour & Information Technology.",
+      "citation": "‡ Ham, E., & Moon, J. (Revising to resubmit). Exploratory versus structured interaction: Curiosity-related expression and information retention in two digital learning environments. Behaviour & Information Technology.",
       "link": ""
     },
     {
       "bucket": "Submitted or Under Review",
       "type": "Book Chapter",
-      "status": "Revising to resubmit",
+      "status": "Submitted",
+      "year": "Pipeline",
+      "title": "Analytics in immersive learning experience design: Introducing the MIRROR framework",
+      "authors": "Moon, J., Awoyemi, I. D., Abu, S., Olowolafe, S., & Sharma, V.",
+      "note": "corresponding author",
+      "venue": "In Educational media and technology yearbook (Research Corner). Springer",
+      "citation": "*‡ Moon, J., Awoyemi, I. D., Abu, S., Olowolafe, S., & Sharma, V. (Submitted). Analytics in immersive learning experience design: Introducing the MIRROR framework. In Educational media and technology yearbook (Research Corner). Springer.",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Book Chapter",
+      "status": "Abstract submitted",
+      "year": "Pipeline",
+      "title": "Designing for epistemic immersion in graduate academic writing: A design journey with AI-mediated feedback",
+      "authors": "Moon, J., Cho, M., & Wong, W. L.",
+      "note": "corresponding author",
+      "venue": "In Immersive education and artificial intelligence: Critical perspectives on learning, design, and innovation (iLEAD edited volume)",
+      "citation": "‡ Moon, J., Cho, M., & Wong, W. L. (Abstract submitted). Designing for epistemic immersion in graduate academic writing: A design journey with AI-mediated feedback. In Immersive education and artificial intelligence: Critical perspectives on learning, design, and innovation (iLEAD edited volume).",
+      "link": ""
+    },
+    {
+      "bucket": "Submitted or Under Review",
+      "type": "Book Chapter",
+      "status": "Under review",
       "year": "Pipeline",
       "title": "From conversational to agentic AI: The human-AI research mentoring cycle",
       "authors": "Moon, J., & Uddin, M. M.",
       "note": "",
       "venue": "In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press",
-      "citation": "Moon, J., & Uddin, M. M. (Revising to resubmit). From conversational to agentic AI: The human-AI research mentoring cycle. In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press.",
+      "citation": "Moon, J., & Uddin, M. M. (Under review). From conversational to agentic AI: The human-AI research mentoring cycle. In D. Stoff & N. El-Bassel (Eds.), The science and practice of mentorship: Models and emerging paradigms in artificial intelligence. Cambridge University Press.",
       "link": ""
     },
     {
@@ -2053,66 +2122,6 @@ window.__cvSiteData = {
       "note": "",
       "venue": "Online Learning Innovation Summit 2027",
       "citation": "Moon, J. (Submitted). RemixEd: Intentional teaching with AI-assisted interactive learning design. Online Learning Innovation Summit 2027.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "Operationalising CEFR in L2 English writing assessment: Divergence patterns between human teachers and large language model judges",
-      "authors": "Wong, W. L., & Moon, J.",
-      "note": "",
-      "venue": "Assessing Writing",
-      "citation": "Wong, W. L., & Moon, J. (In preparation). Operationalising CEFR in L2 English writing assessment: Divergence patterns between human teachers and large language model judges. Assessing Writing.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "Revising to resubmit",
-      "year": "Pipeline",
-      "title": "When frontier LLMs disagree: Diametric scoring bias between Gemini and GPT-4o on CEFR writing in Malaysian upper primary ESL",
-      "authors": "Wong, W. L., & Moon, J.",
-      "note": "",
-      "venue": "",
-      "citation": "Wong, W. L., & Moon, J. (Revising to resubmit). When frontier LLMs disagree: Diametric scoring bias between Gemini and GPT-4o on CEFR writing in Malaysian upper primary ESL.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "Design and development research of immersive virtual reality-supported safety training for construction engineering education",
-      "authors": "Awoyemi, I. D., Moon, J., & Song, S.",
-      "note": "mentored collaboration",
-      "venue": "TechTrends",
-      "citation": "* Awoyemi, I. D., Moon, J., & Song, S. (In preparation). Design and development research of immersive virtual reality-supported safety training for construction engineering education. TechTrends.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "Judging value and credibility in feedback and dialogue with an embodied artificial intelligence agent in immersive safety training",
-      "authors": "Awoyemi, I. D., Moon, J., Abu, S., & Song, S.",
-      "note": "mentored collaboration",
-      "venue": "British Journal of Educational Technology",
-      "citation": "* Awoyemi, I. D., Moon, J., Abu, S., & Song, S. (In preparation). Judging value and credibility in feedback and dialogue with an embodied artificial intelligence agent in immersive safety training. British Journal of Educational Technology.",
-      "link": ""
-    },
-    {
-      "bucket": "In Preparation",
-      "type": "Journal Manuscript",
-      "status": "In preparation",
-      "year": "Pipeline",
-      "title": "Technology Integration and Student Outcomes in K–12 Science Education: A Meta-Analytic Review",
-      "authors": "You, H., Park, S., Hong, K., Zhu, L., Moon, J., Kourkoulou, T., Aldemir, T., Abu, S., Lee, H., & Song, D.",
-      "note": "",
-      "venue": "International Journal of Science Education",
-      "citation": "You, H., Park, S., Hong, K., Zhu, L., Moon, J., Kourkoulou, T., Aldemir, T., Abu, S., Lee, H., & Song, D. (In preparation). Technology Integration and Student Outcomes in K–12 Science Education: A Meta-Analytic Review. International Journal of Science Education.",
       "link": ""
     },
     {
@@ -2178,10 +2187,10 @@ window.__cvSiteData = {
   ],
   "workingPaperSummary": {
     "total": 42,
-    "submittedOrUnderReview": 32,
-    "inPreparation": 10,
-    "journalManuscripts": 35,
-    "bookChapters": 3,
+    "submittedOrUnderReview": 37,
+    "inPreparation": 5,
+    "journalManuscripts": 33,
+    "bookChapters": 5,
     "conferenceProposals": 4
   },
   "grants": {
@@ -2273,6 +2282,24 @@ window.__cvSiteData = {
     ],
     "pending": [
       {
+        "title": "Adaptive Teaching in South Korea’s AI-Mediated Classrooms: Testing Evidence-to-Action Training",
+        "meta": "Lead PI | Total requested KRW 24,112,000, Academy of Korean Studies (AKS), 2027 Korean Studies Grant (Academic Research) | February 2027 - January 2028",
+        "amount": "pending",
+        "amountValue": null
+      },
+      {
+        "title": "Task-Valid Variation: Synthetic Multimodal Data for Reliable Recognition of Novice Actions, Amazon Research Awards, Synthetic Data Generation for Multimodal Perception (Fall 2026; AWS Promotional Credits requested separately)",
+        "meta": "Lead PI | Total requested $73,780 | August 2027 - July 2028",
+        "amount": "$73,780",
+        "amountValue": 73780.0
+      },
+      {
+        "title": "Virtual Makerspaces in Rural and Small Libraries: An Inter-Library Network for STEM Learning",
+        "meta": "PI, UA subaward | Institute of Museum and Library Services (IMLS), National Leadership Grants for Libraries (Planning), UA subaward approximately $35,000 | August 2027 - July 2029",
+        "amount": "$35,000",
+        "amountValue": 35000.0
+      },
+      {
         "title": "Whose Ideas Get Taken Up? Separating Opportunity to Speak from Teacher Responsiveness in Mathematics Classroom Discourse",
         "meta": "Lead PI | Total requested $49,997, AIMS EduData Phase II (EDSI Benchmark Data Collection), Digital Promise | February 2027 - January 2028",
         "amount": "$49,997",
@@ -2321,12 +2348,6 @@ window.__cvSiteData = {
         "amountValue": 110669.0
       },
       {
-        "title": "TRACE-Reg: A Privacy-by-Design, Agency-Preserving Emotion-Regulation Agent for Adult Learners",
-        "meta": "Lead PI | Sony Research Award Program 2026, Faculty Innovation Award—Affective Computing, Sony Corporation, Total budget $100,000 | September 2026",
-        "amount": "$100,000",
-        "amountValue": 100000.0
-      },
-      {
         "title": "From Theme to Transfer: How Tabletop Mechanics Shape Cybersecurity Reasoning",
         "meta": "PI | Total requested €20,000 (approximately $23,362), Game in Lab 2026 International Call for Projects, Asmodee | May 2027 - April 2029",
         "amount": "$23,362",
@@ -2363,12 +2384,6 @@ window.__cvSiteData = {
         "amountValue": 35000.0
       },
       {
-        "title": "CyberAI Innovation: Teaching AI as Target and Defender through a Full-Stack Immersive AI Ecosystem",
-        "meta": "PI | National Science Foundation (NSF), Proposal 26-0572, proposed total amount $497,460.00, submission deadline April 3, 2026, submitted to sponsor March 10, 2026 | October 2026 - September 2029",
-        "amount": "$497,460",
-        "amountValue": 497460.0
-      },
-      {
         "title": "Collaborative Research: Phase I CAMEL-CN: Connecting Human Sensing with Math Understanding to Build Novel RF Datasets and Instructional Sequences",
         "meta": "Key Personnel / External Evaluator | January 2027 - December 2029",
         "amount": "pending",
@@ -2379,11 +2394,11 @@ window.__cvSiteData = {
   },
   "grantPortfolio": {
     "fundedTotal": 607683,
-    "pendingTotal": 2977744,
+    "pendingTotal": 2489064,
     "fundedCount": 14,
-    "pendingCount": 17,
+    "pendingCount": 18,
     "sourceReportedFundedTotal": 607683,
-    "sourceReportedPendingTotal": 2977744,
+    "sourceReportedPendingTotal": 2489064,
     "withdrawnTotal": 0,
     "withdrawnCount": 0,
     "sourceReportedWithdrawnTotal": 0,
@@ -2597,7 +2612,7 @@ window.__cvSiteData = {
       "label": "doctoral chairs or co-chairs"
     },
     {
-      "value": "10",
+      "value": "11",
       "label": "doctoral committee appointments"
     },
     {
@@ -2697,6 +2712,10 @@ window.__cvSiteData = {
   "serviceReviewCopy": "Review service spans 23 journals across educational technology, learning sciences, and immersive learning, alongside grant review for National Science Foundation and Swiss National Sciences Foundation.",
   "talks": [
     {
+      "title": "Technology use in K–12 science classrooms: A scoping review",
+      "meta": "Accepted for presentation at the 2027 NARST Annual International Conference, Boston, MA, United States."
+    },
+    {
       "title": "Enhancing the resolution of instructional design evaluation: Reliability and validity analysis of a multi-agent system applying Gagné’s nine events of instruction",
       "meta": "ICER 2026, Seoul, South Korea."
     },
@@ -2722,10 +2741,6 @@ window.__cvSiteData = {
     },
     {
       "title": "Modeling behavioral dynamics and cognitive states in VR safety training: A learning analytics approach",
-      "meta": "Poster Session, AERA 2026, Los Angeles, United States."
-    },
-    {
-      "title": "Feedback‐driven strategic shifts in immersive virtual reality training: A multi-phase behavioral-mining study",
       "meta": "Poster Session, AERA 2026, Los Angeles, United States."
     }
   ]
