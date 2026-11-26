@@ -672,8 +672,8 @@ def parse_grants(paragraphs: Sequence[str]) -> Dict[str, object]:
         )
         title = clean_text(after_dates[:boundary.start()].strip(" .,;")) if boundary else clean_text(after_dates)
         sponsor = clean_text(after_dates[boundary.end():].strip(" .,;")) if boundary else ""
-        title = re.sub(r"\.?\s*PENDING\.?$", "", title, flags=re.I).rstrip(" .,")
-        sponsor = re.sub(r"[,\.]?\s*PENDING\.?$", "", sponsor, flags=re.I).rstrip(" .,")
+        title = re.sub(r"\.?\s*(?:PENDING|SUBMITTED)\.?$", "", title, flags=re.I).rstrip(" .,")
+        sponsor = re.sub(r"[,\.]?\s*(?:PENDING|SUBMITTED)\.?$", "", sponsor, flags=re.I).rstrip(" .,")
 
         meta_parts = []
         if role_match:

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-26T02:07:18.389533+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-11-26T02:09:56.073633+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_System\\_projects\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "November 11, 2026",
@@ -20,7 +20,7 @@
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=b9839c882167",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=6bdb763233f4",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -55,7 +55,7 @@
       "label": "Working papers"
     },
     {
-      "value": "72",
+      "value": "73",
       "label": "Presentations"
     },
     {
@@ -2712,6 +2712,10 @@
   "serviceReviewCopy": "Review service spans 23 journals across educational technology, learning sciences, and immersive learning, alongside grant review for National Science Foundation and Swiss National Sciences Foundation.",
   "talks": [
     {
+      "title": "What works in technology-integrated K–12 science education? A meta-analysis of effects and moderators",
+      "meta": "Accepted for presentation at the 2027 NARST Annual International Conference, Boston, MA, United States."
+    },
+    {
       "title": "Technology use in K–12 science classrooms: A scoping review",
       "meta": "Accepted for presentation at the 2027 NARST Annual International Conference, Boston, MA, United States."
     },
@@ -2737,10 +2741,6 @@
     },
     {
       "title": "Embodied arts-Integrated AI literacy: A nested mixed-methods preliminary study with K-12 educators",
-      "meta": "Poster Session, AERA 2026, Los Angeles, United States."
-    },
-    {
-      "title": "Modeling behavioral dynamics and cognitive states in VR safety training: A learning analytics approach",
       "meta": "Poster Session, AERA 2026, Los Angeles, United States."
     }
   ]
