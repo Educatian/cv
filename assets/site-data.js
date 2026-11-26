@@ -1,6 +1,6 @@
 window.__cvSiteData = {
-  "generatedAt": "2026-11-26T08:06:50.130308+00:00",
-  "sourceCv": "/home/runner/work/cv/cv/CV_202605_MOON.docx",
+  "generatedAt": "2026-11-26T08:09:59.912251+00:00",
+  "sourceCv": "C:\\Users\\jewoo\\Desktop\\_projects\\cv-update\\cv\\CV_202605_MOON.docx",
   "profile": {
     "name": "Dr. Jewoong Moon",
     "cvDate": "November 11, 2026",
@@ -20,7 +20,7 @@ window.__cvSiteData = {
     "homepage": "https://educatian.github.io/cv",
     "researchgate": "https://www.researchgate.net/profile/Jewoong-Moon",
     "labWebsite": "https://educatian.github.io/adie",
-    "cvDownloadPath": "CV_202605_MOON.docx?v=61d41065fbcf",
+    "cvDownloadPath": "CV_202605_MOON.docx?v=28b2f93b4d21",
     "cvDownloadFilename": "CV_20261111_MOON.docx"
   },
   "contact": {
@@ -338,7 +338,7 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "title": "How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge",
-      "authors": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, K., & Sanders, M.",
+      "authors": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo-Hernandez, K., & Sanders, M.",
       "venue": "ZDM – International Journal on Mathematics Education",
       "link": "https://doi.org/10.1007/s11858-026-01816-1",
       "tags": [
@@ -1140,7 +1140,7 @@ window.__cvSiteData = {
     {
       "year": "2026",
       "category": "International",
-      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo Hernandez, K., & Sanders, M. (2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education. https://doi.org/10.1007/s11858-026-01816-1 [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
+      "citation": "Bicer, A., Aldemir, T., Lee, U., Moon, J., Rambo-Hernandez, K., & Sanders, M. (2026). How generative AI guided-professional development supports teachers’ engagement with mathematical creativity, content knowledge, and pedagogical content knowledge. ZDM – International Journal on Mathematics Education. https://doi.org/10.1007/s11858-026-01816-1 [SSCI-indexed, IF = 3.8, IF5 = 4.0]",
       "link": "https://doi.org/10.1007/s11858-026-01816-1"
     },
     {
